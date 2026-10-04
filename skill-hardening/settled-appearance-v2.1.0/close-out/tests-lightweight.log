@@ -1,0 +1,89 @@
+Reference regression mode: dependency-free, default concurrency
+TAP version 13
+# Subtest: example plan validates without requiring browser tooling
+ok 1 - example plan validates without requiring browser tooling
+  ---
+  duration_ms: 4.1241
+  type: 'test'
+  ...
+# Subtest: plan rejects scripts, duplicate ids, foreign navigation, private queries and unknown conditions
+ok 2 - plan rejects scripts, duplicate ids, foreign navigation, private queries and unknown conditions
+  ---
+  duration_ms: 3.7805
+  type: 'test'
+  ...
+# Subtest: shared MCP probe is a complete standalone inspectable function
+ok 3 - shared MCP probe is a complete standalone inspectable function
+  ---
+  duration_ms: 1.5723
+  type: 'test'
+  ...
+# Subtest: a bounded promise terminates missing readiness
+ok 4 - a bounded promise terminates missing readiness
+  ---
+  duration_ms: 59.6594
+  type: 'test'
+  ...
+# Subtest: visible-image timeout and missing geometry cannot count as settled
+ok 5 - visible-image timeout and missing geometry cannot count as settled
+  ---
+  duration_ms: 1.4137
+  type: 'test'
+  ...
+# Subtest: manifest closure catches corrupted, unlisted and duplicate artifacts; seal refuses reuse
+ok 6 - manifest closure catches corrupted, unlisted and duplicate artifacts; seal refuses reuse
+  ---
+  duration_ms: 54.0804
+  type: 'test'
+  ...
+# Subtest: frozen/output destination is rejected before requiring Playwright
+ok 7 - frozen/output destination is rejected before requiring Playwright
+  ---
+  duration_ms: 2.9656
+  type: 'test'
+  ...
+# Subtest: an intact hash cannot excuse malformed JSON, truncated images or broken package links
+ok 8 - an intact hash cannot excuse malformed JSON, truncated images or broken package links
+  ---
+  duration_ms: 14.5093
+  type: 'test'
+  ...
+# Subtest: public-source inspection parses maps without fetching or executing; oversized is unknown
+ok 9 - public-source inspection parses maps without fetching or executing; oversized is unknown
+  ---
+  duration_ms: 14.292
+  type: 'test'
+  ...
+# Subtest: live local fixtures: lazy images, phases, reversible states, mobile preferences, timeout, giant capture and provenance
+ok 10 - live local fixtures: lazy images, phases, reversible states, mobile preferences, timeout, giant capture and provenance # SKIP
+  ---
+  duration_ms: 0.8361
+  type: 'test'
+  ...
+# Subtest: appearance policy validates data-only assertions and bounded exceptions
+ok 11 - appearance policy validates data-only assertions and bounded exceptions
+  ---
+  duration_ms: 4.3424
+  type: 'test'
+  ...
+# Subtest: capture verification catches appearance changes without geometry changes
+ok 12 - capture verification catches appearance changes without geometry changes
+  ---
+  duration_ms: 1.1275
+  type: 'test'
+  ...
+# Subtest: synthetic settled-appearance regressions in a real browser
+ok 13 - synthetic settled-appearance regressions in a real browser # SKIP
+  ---
+  duration_ms: 0.4034
+  type: 'test'
+  ...
+1..13
+# tests 13
+# suites 0
+# pass 11
+# fail 0
+# cancelled 0
+# skipped 2
+# todo 0
+# duration_ms 390.4352

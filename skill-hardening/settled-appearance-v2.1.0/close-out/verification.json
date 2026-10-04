@@ -1,0 +1,383 @@
+{
+  "result": "PASS",
+  "checkedAtUTC": "2026-10-04T05:10:20.173Z",
+  "nodeVersion": "v24.19.0",
+  "baselineCommit": "99df74fd83a86b1ae77c842e429f3576bb295983",
+  "frozen": [
+    {
+      "root": "reference/haunted-boulder-city",
+      "unchanged": true,
+      "manifestUnchanged": true,
+      "result": "PASS",
+      "checkedAtUTC": "2026-10-04T05:10:19.327Z",
+      "files": 172,
+      "checks": {
+        "json": 39,
+        "images": 119,
+        "links": 202
+      },
+      "problems": [],
+      "limit": "Hashes/JSON/image structure/local links only; image decoding/visuals, source, semantic coverage, rights and readiness need separate review"
+    },
+    {
+      "root": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01",
+      "unchanged": true,
+      "manifestUnchanged": true,
+      "result": "PASS",
+      "checkedAtUTC": "2026-10-04T05:10:19.908Z",
+      "files": 306,
+      "checks": {
+        "json": 107,
+        "images": 147,
+        "links": 324
+      },
+      "problems": [],
+      "limit": "Hashes/JSON/image structure/local links only; image decoding/visuals, source, semantic coverage, rights and readiness need separate review"
+    }
+  ],
+  "backupMatchesOriginallyInstalled": true,
+  "installedMatchesRepository": true,
+  "skillVerification": {
+    "result": "PASS",
+    "checkedAtUTC": "2026-10-04T05:10:19.935Z",
+    "files": 24,
+    "checks": {
+      "json": 1,
+      "images": 0,
+      "links": 19
+    },
+    "problems": [],
+    "limit": "Hashes/JSON/image structure/local links only; image decoding/visuals, source, semantic coverage, rights and readiness need separate review"
+  },
+  "installedVerification": {
+    "result": "PASS",
+    "checkedAtUTC": "2026-10-04T05:10:19.949Z",
+    "files": 24,
+    "checks": {
+      "json": 1,
+      "images": 0,
+      "links": 19
+    },
+    "problems": [],
+    "limit": "Hashes/JSON/image structure/local links only; image decoding/visuals, source, semantic coverage, rights and readiness need separate review"
+  },
+  "skillFiles": [
+    {
+      "path": "agents/openai.yaml",
+      "bytes": 136,
+      "sha256": "80139fa662f33411e9d6c65ac4fe9f35c8a876b6abdf31e5796114375f03ea53"
+    },
+    {
+      "path": "assets/acceptance-plan.md",
+      "bytes": 4097,
+      "sha256": "34851dc45b6d4b2df13b250cb46af7e0fa676789d23f2405f27fbcf6ccf514dd"
+    },
+    {
+      "path": "assets/adaptation-contract.md",
+      "bytes": 2693,
+      "sha256": "df1307c7411341cd04c430bebb47660b690c933b00ffdb8f068e43aee1f70a26"
+    },
+    {
+      "path": "assets/capture-plan.example.json",
+      "bytes": 1416,
+      "sha256": "fca6a9aeb63f969f7b86c16296fcb4785b4dc359f8346abe3c869502ac1e487b"
+    },
+    {
+      "path": "assets/fidelity-scope-contract.md",
+      "bytes": 1192,
+      "sha256": "49a80341e09d789be24c9a4b9936edf22bd611d27defb600258f1feafd49b462"
+    },
+    {
+      "path": "assets/reference-evidence-package.md",
+      "bytes": 12737,
+      "sha256": "8328df8a2014d04fbb1256b6beee49f0f8c211955ed0bbf9739c888facc91970"
+    },
+    {
+      "path": "references/capture-plan.md",
+      "bytes": 10017,
+      "sha256": "f51b43d22f56a23b7b9eb18350870ffcdf2cc12232e0e302aeb9db87ece34f44"
+    },
+    {
+      "path": "references/capture.md",
+      "bytes": 4655,
+      "sha256": "cb21a3429fe5c5f924847079014713ba927552e4c869d21301ad94915a19b57f"
+    },
+    {
+      "path": "references/completeness-gate.md",
+      "bytes": 4148,
+      "sha256": "3c970c6d0f4c76a144a9140e286eaf23b42931afae4df518def1371856aa49ca"
+    },
+    {
+      "path": "references/fidelity-contract.md",
+      "bytes": 2260,
+      "sha256": "2ed19f9cfb976ad6834d62532976f7cb3972bcd58c9bfb9683540a0addd0f437"
+    },
+    {
+      "path": "references/implementation-handoff.md",
+      "bytes": 4975,
+      "sha256": "d897b06a323661442e0eb62a63f3a77874012bad506db0e554b59a39ad600a05"
+    },
+    {
+      "path": "references/inspection.md",
+      "bytes": 10608,
+      "sha256": "41a8510d6a3003862a1b036729bc03c52a9298920fe0bf7bf9634b080fb466fb"
+    },
+    {
+      "path": "references/migration-portability.md",
+      "bytes": 2183,
+      "sha256": "40079aa8b09b3e706a9e8e2eb1c762f527e5c22504e14f2342ff15a4648753b2"
+    },
+    {
+      "path": "references/settled-appearance.md",
+      "bytes": 9237,
+      "sha256": "a8d04e17809021db331cf5fd384f8cec6295bec4800ddf8a4122777f8ea0f8bb"
+    },
+    {
+      "path": "references/tool-selection.md",
+      "bytes": 3985,
+      "sha256": "ab181b89708cf7489dc56131cc37deb2dbd4b54e2dff98b04802c93396e74ea7"
+    },
+    {
+      "path": "scripts/capture.mjs",
+      "bytes": 19862,
+      "sha256": "f8daaeee6ff1672bcd4bc8943b18d523c47fff7e452cfa8d2cdaa64501106ee5"
+    },
+    {
+      "path": "scripts/package.mjs",
+      "bytes": 5733,
+      "sha256": "f27fe2ccd277b451b4eb0230209ea79aa0984e79279bc16bce40d0cf24227c7a"
+    },
+    {
+      "path": "scripts/page-probe.js",
+      "bytes": 12392,
+      "sha256": "ed4e3c3407f8bc02c200cbb41e9d499ad30c20556bc4fe5e24084cc97857ab55"
+    },
+    {
+      "path": "scripts/run-tests.mjs",
+      "bytes": 855,
+      "sha256": "0541f98d8a8f46564c09df254227a342c6d47b4f6dcab464299d15e94b40a2bc"
+    },
+    {
+      "path": "scripts/settled-appearance.mjs",
+      "bytes": 11836,
+      "sha256": "6292e0f2d3e0436ce3185ea681244d49970ce8002a9b854119be503da2f43bb2"
+    },
+    {
+      "path": "scripts/source-report.mjs",
+      "bytes": 2994,
+      "sha256": "7b9cd2bff6b0001ccc437ec07c537bb78b97ce87ca0657af55c027d4c0e3e98f"
+    },
+    {
+      "path": "scripts/test-capture.mjs",
+      "bytes": 10142,
+      "sha256": "b3633d9471a9edfe343529e8c91054765d41ee60feecb82e027346fdf4cdbac1"
+    },
+    {
+      "path": "scripts/test-settled-appearance.mjs",
+      "bytes": 13733,
+      "sha256": "5d945d47091d88d8368f1326afb479332ed40ec5da706bb9a16c7758b67d58bd"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 7438,
+      "sha256": "6e629a303b9fdf15e735b07ee155f529004b6b675b0ce9f78399d4ed7247ad5c"
+    }
+  ],
+  "contract": {
+    "path": "implementation-scope/fidelity-scope-contract.md",
+    "sha256": "1b21227ffbdf7acb7d91706f6fd88cc5d700d7f958b3425b9efb7b7fc713ed3e",
+    "unchanged": true
+  },
+  "retainedOriginalEvidence": 55,
+  "removed": 16,
+  "independentForwardEvidenceUnchanged": true,
+  "final210InspectionSourceUnchanged": true,
+  "forwardSourceComparison": [
+    {
+      "file": "page-probe.js",
+      "current": "ed4e3c3407f8bc02c200cbb41e9d499ad30c20556bc4fe5e24084cc97857ab55",
+      "independentEvaluation": "e02adad067dfba1f18613a2268da53b1c29bfe2283293eac08599ff67b523bda",
+      "matchesEarlierEvaluation": false,
+      "matchesFinal210": true
+    },
+    {
+      "file": "capture.mjs",
+      "current": "f8daaeee6ff1672bcd4bc8943b18d523c47fff7e452cfa8d2cdaa64501106ee5",
+      "independentEvaluation": "f8daaeee6ff1672bcd4bc8943b18d523c47fff7e452cfa8d2cdaa64501106ee5",
+      "matchesEarlierEvaluation": true,
+      "matchesFinal210": true
+    },
+    {
+      "file": "settled-appearance.mjs",
+      "current": "6292e0f2d3e0436ce3185ea681244d49970ce8002a9b854119be503da2f43bb2",
+      "independentEvaluation": "5ae7fbc7dc8f1a5402b2686b1d222292c3c39b35e3a6f5a9d8fc52c774a77455",
+      "matchesEarlierEvaluation": false,
+      "matchesFinal210": true
+    },
+    {
+      "file": "test-capture.mjs",
+      "current": "b3633d9471a9edfe343529e8c91054765d41ee60feecb82e027346fdf4cdbac1",
+      "independentEvaluation": "b3633d9471a9edfe343529e8c91054765d41ee60feecb82e027346fdf4cdbac1",
+      "matchesEarlierEvaluation": true,
+      "matchesFinal210": true
+    },
+    {
+      "file": "test-settled-appearance.mjs",
+      "current": "5d945d47091d88d8368f1326afb479332ed40ec5da706bb9a16c7758b67d58bd",
+      "independentEvaluation": "4ebbe26679db9488a63e2b4420b3b72e47ae714d06e678af395dab103f0e8c7c",
+      "matchesEarlierEvaluation": false,
+      "matchesFinal210": true
+    }
+  ],
+  "currentSourceForwardReplay": "PASS (parent replay, not a new independent assessment)",
+  "tests": [
+    {
+      "log": "tests-lightweight.log",
+      "mode": "default concurrency, browser disabled",
+      "tests": 13,
+      "pass": 11,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 2,
+      "todo": 0
+    },
+    {
+      "log": "tests-repository.log",
+      "mode": "serial browser",
+      "tests": 25,
+      "pass": 25,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    {
+      "log": "tests-installed.log",
+      "mode": "serial browser",
+      "tests": 25,
+      "pass": 25,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    }
+  ],
+  "diagnostics": [
+    {
+      "path": "synthetic-signals-repository.json",
+      "browserVersion": "154.0.8037.58",
+      "playwrightVersion": "1.62.1",
+      "records": 11
+    },
+    {
+      "path": "synthetic-signals-installed.json",
+      "browserVersion": "154.0.8037.58",
+      "playwrightVersion": "1.62.1",
+      "records": 11
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "close-out-report.md",
+      "bytes": 6916,
+      "sha256": "699d2e1901cd73b37b05309735ab5e79645d3c4423562d78a436579d1751de0a"
+    },
+    {
+      "path": "deletion-audit.json",
+      "bytes": 12392,
+      "sha256": "c79bed73ecaaa2893708827421c64a1bacbd919bf8ed84c13f07bce9b0d19425"
+    },
+    {
+      "path": "forward-replay.json",
+      "bytes": 522963,
+      "sha256": "d608724e9a052de755423ca17c6db9c46ef27c2c83be51db6eadc1411d8deb13"
+    },
+    {
+      "path": "quick-validation-installed.log",
+      "bytes": 17,
+      "sha256": "6cf9e7f0d34ccd36dbd28f270cd28dd04277b2e1516bd4333ce7bb501d7b18d4"
+    },
+    {
+      "path": "quick-validation-repository.log",
+      "bytes": 17,
+      "sha256": "6cf9e7f0d34ccd36dbd28f270cd28dd04277b2e1516bd4333ce7bb501d7b18d4"
+    },
+    {
+      "path": "reference-reconstruction-2.1.1.patch",
+      "bytes": 6058,
+      "sha256": "cd4bbbd98f30927d62af7b10d81e26a07019b8c7583b4f6e6830d15948445c8d"
+    },
+    {
+      "path": "replay-forward.mjs",
+      "bytes": 2852,
+      "sha256": "7b7a04c0140c136fae495ee8f3ec0332c6f2d3b7ea0cf8d0ce0ef1aabdd5762e"
+    },
+    {
+      "path": "synthetic-signals-installed.json",
+      "bytes": 1523139,
+      "sha256": "3fb2fd9b505270fd06377b2715196810c393d09d96d8a17cf80227587179690a"
+    },
+    {
+      "path": "synthetic-signals-repository.json",
+      "bytes": 1564520,
+      "sha256": "704703cd5a091646987709a5748509f9a361f5bebe3a69378f128cb5fe96dcce"
+    },
+    {
+      "path": "tests-installed.log",
+      "bytes": 6012,
+      "sha256": "7a97e1337dbee696ccdfc777e98c38651bafb0f4ca53e7e2b383cd101e1e629f"
+    },
+    {
+      "path": "tests-lightweight.log",
+      "bytes": 3131,
+      "sha256": "63bc6b575a19b0b3bec4b5b3934f74d93e19df57de15b94e5219e090d8b02806"
+    },
+    {
+      "path": "tests-repository.log",
+      "bytes": 6015,
+      "sha256": "a536c244916eddcf2bf584c84b4559896dc545674b84445eb5a60e4c35273327"
+    },
+    {
+      "path": "verify-close-out.mjs",
+      "bytes": 7858,
+      "sha256": "b009ab0d644eef8502782d66811e7c298fd45ea3c92ece2d6f8a22043b1f9342"
+    }
+  ],
+  "repositoryChanges": [
+    "skill-hardening/settled-appearance-v2.1.0/ancestor-regressions.py",
+    "skill-hardening/settled-appearance-v2.1.0/capture-verification.py",
+    "skill-hardening/settled-appearance-v2.1.0/diagnostics.py",
+    "skill-hardening/settled-appearance-v2.1.0/docs.py",
+    "skill-hardening/settled-appearance-v2.1.0/edit.py",
+    "skill-hardening/settled-appearance-v2.1.0/example.py",
+    "skill-hardening/settled-appearance-v2.1.0/finalize.py",
+    "skill-hardening/settled-appearance-v2.1.0/preserve-pending-reasons.py",
+    "skill-hardening/settled-appearance-v2.1.0/quick-validation.log",
+    "skill-hardening/settled-appearance-v2.1.0/refine.py",
+    "skill-hardening/settled-appearance-v2.1.0/reveal-regression.py",
+    "skill-hardening/settled-appearance-v2.1.0/synthetic-signals.json",
+    "skill-hardening/settled-appearance-v2.1.0/tests-appearance.log",
+    "skill-hardening/settled-appearance-v2.1.0/tests-final-stage.log",
+    "skill-hardening/settled-appearance-v2.1.0/tests-focused.log",
+    "skill-hardening/settled-appearance-v2.1.0/tests-installed-serial.log",
+    "skills/reference-reconstruction/SKILL.md",
+    "skills/reference-reconstruction/references/capture-plan.md",
+    "skills/reference-reconstruction/references/settled-appearance.md",
+    "skill-hardening/settled-appearance-v2.1.0/close-out/close-out-report.md",
+    "skill-hardening/settled-appearance-v2.1.0/close-out/deletion-audit.json",
+    "skill-hardening/settled-appearance-v2.1.0/close-out/forward-replay.json",
+    "skill-hardening/settled-appearance-v2.1.0/close-out/quick-validation-installed.log",
+    "skill-hardening/settled-appearance-v2.1.0/close-out/quick-validation-repository.log",
+    "skill-hardening/settled-appearance-v2.1.0/close-out/reference-reconstruction-2.1.1.patch",
+    "skill-hardening/settled-appearance-v2.1.0/close-out/replay-forward.mjs",
+    "skill-hardening/settled-appearance-v2.1.0/close-out/synthetic-signals-installed.json",
+    "skill-hardening/settled-appearance-v2.1.0/close-out/synthetic-signals-repository.json",
+    "skill-hardening/settled-appearance-v2.1.0/close-out/tests-installed.log",
+    "skill-hardening/settled-appearance-v2.1.0/close-out/tests-lightweight.log",
+    "skill-hardening/settled-appearance-v2.1.0/close-out/tests-repository.log",
+    "skill-hardening/settled-appearance-v2.1.0/close-out/verify-close-out.mjs",
+    "skills/reference-reconstruction/scripts/run-tests.mjs"
+  ],
+  "scratchArtifacts": [],
+  "limit": "Inspection/hardening close-out only; no implemented product fidelity acceptance. Asset decisions and target mappings retain their contract gates."
+}

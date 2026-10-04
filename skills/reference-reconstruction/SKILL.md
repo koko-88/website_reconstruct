@@ -2,7 +2,7 @@
 name: reference-reconstruction
 description: Inspect reference websites or supplied captures, produce evidence-linked fidelity specifications, and assess readiness for faithful reconstruction and content adaptation. Use for reference replication and fidelity audits, not general UI design or inspiration-only redesign.
 metadata:
-  workflow-version: "2.1.0"
+  workflow-version: "2.1.1"
 ---
 
 # Reference Reconstruction

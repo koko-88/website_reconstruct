@@ -1,0 +1,54 @@
+diff --git a/skills/reference-reconstruction/SKILL.md b/skills/reference-reconstruction/SKILL.md
+index b01ca49..179f13d 100644
+--- a/skills/reference-reconstruction/SKILL.md
++++ b/skills/reference-reconstruction/SKILL.md
+@@ -2,7 +2,7 @@
+ name: reference-reconstruction
+ description: Inspect reference websites or supplied captures, produce evidence-linked fidelity specifications, and assess readiness for faithful reconstruction and content adaptation. Use for reference replication and fidelity audits, not general UI design or inspiration-only redesign.
+ metadata:
+-  workflow-version: "2.1.0"
++  workflow-version: "2.1.1"
+ ---
+ 
+ # Reference Reconstruction
+diff --git a/skills/reference-reconstruction/references/capture-plan.md b/skills/reference-reconstruction/references/capture-plan.md
+index 2341f56..97dd42c 100644
+--- a/skills/reference-reconstruction/references/capture-plan.md
++++ b/skills/reference-reconstruction/references/capture-plan.md
+@@ -44,6 +44,6 @@ For MCP use, page-probe.js is a complete async function declaration. Read it int
+ 
+ ## Validate the helpers
+ 
+-Run `node --test scripts/test-capture.mjs scripts/test-settled-appearance.mjs` for dependency-free invariants. The local synthetic-browser test is skipped unless REFERENCE_PLAYWRIGHT_MODULE points to an installed Playwright module directory; REFERENCE_BROWSER_CHANNEL selects an installed channel (test default chrome). Set these in the host shell for the integration test. It creates and checks disposable synthetic pages only, never a reference website, and checks lazy-image exclusion, timeout/phase honesty, state replay, environment provenance and overwrite refusal.
++Run the canonical `node scripts/run-tests.mjs` for all current regressions. The local synthetic-browser tests are skipped unless REFERENCE_PLAYWRIGHT_MODULE points to an installed Playwright module directory; REFERENCE_BROWSER_CHANNEL selects an installed channel (test default chrome). Set these in the host shell for integration validation. The runner serializes these two browser-bearing suites when browser execution is enabled to avoid the observed host native-memory exhaustion; dependency-free runs retain default concurrency. It creates and checks disposable synthetic pages only, never a reference website, and checks lazy-image exclusion, timeout/phase honesty, state replay, environment provenance and overwrite refusal. See [settled-appearance.md](settled-appearance.md) for direct serial invocation and appearance diagnostics.
+ 
+ Browser startup/process shutdown can fail or hang under host sandbox policies independently of page readiness. Use the host's authorized process timeout/termination capabilities and record the failed environment; retry only with a supported changed environment. The runner's page/decode/screenshot and run budgets are bounded, but it cannot guarantee cleanup of a browser process the OS refuses to control. Never weaken browser security flags to satisfy a test.
+diff --git a/skills/reference-reconstruction/references/settled-appearance.md b/skills/reference-reconstruction/references/settled-appearance.md
+index 5c7db49..4d98b46 100644
+--- a/skills/reference-reconstruction/references/settled-appearance.md
++++ b/skills/reference-reconstruction/references/settled-appearance.md
+@@ -55,4 +55,4 @@ Every wait retains policy, total/sample/node/window budgets, elapsed time, each
+ 
+ After saving the final evidence image, compare base readiness and descendant appearance again; visual checks also recheck their scoped diagnostic signal when enabled. Any change/error invalidates appearance convergence in the sidecar. Screenshot timing still spans an interval; manual semantic review remains required for unexplained raster producers and material unknowns.
+ 
+-Run `node --test scripts/test-capture.mjs scripts/test-settled-appearance.mjs`. Set REFERENCE_PLAYWRIGHT_MODULE to an existing installation to exercise local real-browser fixtures, and REFERENCE_BROWSER_CHANNEL if needed. Optional REFERENCE_APPEARANCE_RESULTS saves sampled diagnostics to a new caller-selected file. A skipped browser suite is not a passing regression validation.
++Run the canonical `node scripts/run-tests.mjs`. Set REFERENCE_PLAYWRIGHT_MODULE to an existing installation to exercise local real-browser fixtures, and REFERENCE_BROWSER_CHANNEL if needed. With browser execution enabled, this runner uses `--test-concurrency=1` for the two browser-bearing suites: concurrent execution previously exhausted host native memory while serial execution passed. Dependency-free runs retain Node's default concurrency; this does not change unrelated tests. A direct browser-enabled invocation must likewise use `node --test --test-concurrency=1 scripts/test-capture.mjs scripts/test-settled-appearance.mjs`. Optional REFERENCE_APPEARANCE_RESULTS saves sampled diagnostics to a new caller-selected file. A skipped browser suite is not a passing regression validation.
+diff --git a/skills/reference-reconstruction/scripts/run-tests.mjs b/skills/reference-reconstruction/scripts/run-tests.mjs
+new file mode 100644
+index 0000000..64bf7ed
+--- /dev/null
++++ b/skills/reference-reconstruction/scripts/run-tests.mjs
+@@ -0,0 +1,13 @@
++import {spawnSync} from 'node:child_process';
++import {fileURLToPath} from 'node:url';
++
++// Only these two suites launch browsers. Keep their browser processes from
++// overlapping; dependency-free validation retains Node's default concurrency.
++const browserEnabled=Boolean(process.env.REFERENCE_PLAYWRIGHT_MODULE);
++const files=['test-capture.mjs','test-settled-appearance.mjs']
++  .map(file=>fileURLToPath(new URL(file,import.meta.url)));
++const args=['--test','--test-reporter=tap',...(browserEnabled?['--test-concurrency=1']:[]),...files];
++console.log('Reference regression mode: '+(browserEnabled?'browser-enabled, serial (test-concurrency=1)':'dependency-free, default concurrency'));
++const result=spawnSync(process.execPath,args,{stdio:'inherit',env:process.env});
++if(result.error) console.error(result.error.message);
++process.exitCode=result.status??1;
