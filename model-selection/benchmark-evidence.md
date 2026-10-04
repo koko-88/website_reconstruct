@@ -9,7 +9,9 @@ Deep benchmark audit performed only where already justified: [VISTA validity aud
 
 This file is a decision-oriented external evidence snapshot for the Haunted Boulder City reconstruction workload. It is **not** a forensic validity audit of every public benchmark.
 
-External benchmarks are used only to reduce the model set before project-specific evaluation. The project workload remains authoritative. Public scores do not replace the later fixed-Codex evaluation on representative HBC work.\n\nThe shortlist is also constrained by the current project operating boundary: keep **Codex as the fixed harness** and do **not** introduce new paid APIs or subscriptions just to include another leaderboard model. A model outside that execution/access boundary can remain research evidence without becoming a runnable candidate.
+External benchmarks are used only to reduce the model set before project-specific evaluation. The project workload remains authoritative. Public scores do not replace the later fixed-Codex evaluation on representative HBC work.
+
+The shortlist is also constrained by the current project operating boundary: keep **Codex as the fixed harness** and do **not** introduce new paid APIs or subscriptions just to include another leaderboard model. A model outside that execution/access boundary can remain research evidence without becoming a runnable candidate.
 
 The workload is especially sensitive to evidence-grounded repository reasoning, advanced frontend construction, visual fidelity, responsive behavior, motion and temporal state, scroll-driven behavior, browser/tool execution, debugging discipline, accessibility/reduced-motion/touch behavior, avoiding destructive simplification, and maintainable adaptation.
 

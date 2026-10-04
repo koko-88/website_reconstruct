@@ -13,6 +13,8 @@ The later comparison will use **Codex as the fixed execution harness** with the 
 
 A candidate that is not actually selectable in the fixed Codex environment at evaluation time is marked **not runnable** rather than silently switching to another coding agent.
 
+Eligibility is intentionally narrower than the public leaderboards: this gate does **not** add a new paid API or subscription just to include another model. Leaderboard labels such as `Max` describe the published configuration; the later runnable configuration must map to the model + reasoning setting that the current Codex client/account actually exposes.
+
 ## Shortlist
 
 | Candidate | Why it remains | External evidence relevant to this workload | Main uncertainty before project-specific evaluation |
