@@ -1,0 +1,55 @@
+{
+  "environment": {
+    "timestamp": "2026-10-04T00:22:01.063Z",
+    "url": "https://www.hauntedbouldercity.com/",
+    "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1440,
+      900
+    ],
+    "dpr": 1,
+    "visualViewport": {
+      "width": 1425,
+      "height": 900,
+      "scale": 1
+    },
+    "scroll": [
+      0,
+      8932,
+      1425,
+      12554
+    ],
+    "language": "en-US",
+    "timezone": "Africa/Cairo",
+    "direction": "ltr",
+    "touch": 0,
+    "dark": false,
+    "reduced": false,
+    "fonts": "loaded",
+    "ready": "complete"
+  },
+  "log": [
+    {
+      "key": "Enter",
+      "timestamp": "2026-10-04T00:22:00.333Z",
+      "state": {
+        "open": false,
+        "focusTag": "SUMMARY",
+        "outline": "rgb(185, 203, 183) solid 2px",
+        "outlineOffset": "7px",
+        "height": 77
+      }
+    },
+    {
+      "key": " ",
+      "timestamp": "2026-10-04T00:22:01.057Z",
+      "state": {
+        "open": true,
+        "focusTag": "SUMMARY",
+        "outline": "rgb(185, 203, 183) solid 2px",
+        "outlineOffset": "7px",
+        "height": 154.78125
+      }
+    }
+  ]
+}

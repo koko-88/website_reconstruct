@@ -1,0 +1,1990 @@
+[
+  {
+    "file": "captures/E-070-1440-home-settled.jpg",
+    "environment": {
+      "timestamp": "2026-10-04T00:06:41.692Z",
+      "url": "https://www.hauntedbouldercity.com/",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+      "viewport": [
+        1440,
+        900
+      ],
+      "dpr": 1,
+      "visualViewport": {
+        "width": 1425,
+        "height": 900,
+        "scale": 1
+      },
+      "scroll": [
+        0,
+        0,
+        1425,
+        12476
+      ],
+      "language": "en-US",
+      "timezone": "Africa/Cairo",
+      "direction": "ltr",
+      "touch": 0,
+      "dark": false,
+      "reduced": false,
+      "fonts": "loaded",
+      "ready": "complete"
+    },
+    "selector": "#home",
+    "readiness": {
+      "fonts": "loaded",
+      "ready": "complete",
+      "loading": false,
+      "loaderPresent": false
+    },
+    "visibleImageDecode": [
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/bz-logo.svg",
+        "complete": true,
+        "natural": [
+          300,
+          148
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/haunted-downtown-boulder-city.webp",
+        "complete": true,
+        "natural": [
+          1440,
+          810
+        ],
+        "decode": "ok"
+      }
+    ],
+    "modified": false,
+    "limits": "live fog, random spirits and video remain active; no animation freezing"
+  },
+  {
+    "file": "captures/E-070-1440-about-settled.jpg",
+    "environment": {
+      "timestamp": "2026-10-04T00:06:42.947Z",
+      "url": "https://www.hauntedbouldercity.com/",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+      "viewport": [
+        1440,
+        900
+      ],
+      "dpr": 1,
+      "visualViewport": {
+        "width": 1425,
+        "height": 900,
+        "scale": 1
+      },
+      "scroll": [
+        0,
+        882,
+        1425,
+        12476
+      ],
+      "language": "en-US",
+      "timezone": "Africa/Cairo",
+      "direction": "ltr",
+      "touch": 0,
+      "dark": false,
+      "reduced": false,
+      "fonts": "loaded",
+      "ready": "complete"
+    },
+    "selector": "#about",
+    "readiness": {
+      "fonts": "loaded",
+      "ready": "complete",
+      "loading": false,
+      "loaderPresent": false
+    },
+    "visibleImageDecode": [
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/haunted-downtown-boulder-city.webp",
+        "complete": true,
+        "natural": [
+          1440,
+          810
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/boulder-dam-hotel-960.webp",
+        "complete": true,
+        "natural": [
+          604,
+          382
+        ],
+        "decode": "ok"
+      }
+    ],
+    "modified": false,
+    "limits": "live fog, random spirits and video remain active; no animation freezing"
+  },
+  {
+    "file": "captures/E-070-1440-stories-settled.jpg",
+    "environment": {
+      "timestamp": "2026-10-04T00:06:46.726Z",
+      "url": "https://www.hauntedbouldercity.com/",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+      "viewport": [
+        1440,
+        900
+      ],
+      "dpr": 1,
+      "visualViewport": {
+        "width": 1425,
+        "height": 900,
+        "scale": 1
+      },
+      "scroll": [
+        0,
+        2311,
+        1425,
+        12476
+      ],
+      "language": "en-US",
+      "timezone": "Africa/Cairo",
+      "direction": "ltr",
+      "touch": 0,
+      "dark": false,
+      "reduced": false,
+      "fonts": "loaded",
+      "ready": "complete"
+    },
+    "selector": "#stories",
+    "readiness": {
+      "fonts": "loaded",
+      "ready": "complete",
+      "loading": false,
+      "loaderPresent": false
+    },
+    "visibleImageDecode": [
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/boulder-city-haunted-walk-tour.webp",
+        "complete": true,
+        "natural": [
+          1440,
+          959
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/boulder-city-shop.webp",
+        "complete": true,
+        "natural": [
+          1440,
+          810
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "",
+        "complete": false,
+        "natural": [
+          0,
+          0
+        ],
+        "decode": "timeout"
+      }
+    ],
+    "modified": false,
+    "limits": "live fog, random spirits and video remain active; no animation freezing"
+  },
+  {
+    "file": "captures/E-070-1440-story-ufo-settled.jpg",
+    "environment": {
+      "timestamp": "2026-10-04T00:06:47.960Z",
+      "url": "https://www.hauntedbouldercity.com/",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+      "viewport": [
+        1440,
+        900
+      ],
+      "dpr": 1,
+      "visualViewport": {
+        "width": 1425,
+        "height": 900,
+        "scale": 1
+      },
+      "scroll": [
+        0,
+        2311,
+        1425,
+        12476
+      ],
+      "language": "en-US",
+      "timezone": "Africa/Cairo",
+      "direction": "ltr",
+      "touch": 0,
+      "dark": false,
+      "reduced": false,
+      "fonts": "loaded",
+      "ready": "complete"
+    },
+    "selector": ".story-ufo",
+    "readiness": {
+      "fonts": "loaded",
+      "ready": "complete",
+      "loading": false,
+      "loaderPresent": false
+    },
+    "visibleImageDecode": [
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/boulder-city-haunted-walk-tour.webp",
+        "complete": true,
+        "natural": [
+          1440,
+          959
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/boulder-city-shop.webp",
+        "complete": true,
+        "natural": [
+          1440,
+          810
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/ufo-night.webp",
+        "complete": true,
+        "natural": [
+          1672,
+          941
+        ],
+        "decode": "ok"
+      }
+    ],
+    "modified": false,
+    "limits": "live fog, random spirits and video remain active; no animation freezing"
+  },
+  {
+    "file": "captures/E-070-1440-tour-highlights-settled.jpg",
+    "environment": {
+      "timestamp": "2026-10-04T00:06:49.403Z",
+      "url": "https://www.hauntedbouldercity.com/",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+      "viewport": [
+        1440,
+        900
+      ],
+      "dpr": 1,
+      "visualViewport": {
+        "width": 1425,
+        "height": 900,
+        "scale": 1
+      },
+      "scroll": [
+        0,
+        5371,
+        1425,
+        12476
+      ],
+      "language": "en-US",
+      "timezone": "Africa/Cairo",
+      "direction": "ltr",
+      "touch": 0,
+      "dark": false,
+      "reduced": false,
+      "fonts": "loaded",
+      "ready": "complete"
+    },
+    "selector": ".tour-highlights",
+    "readiness": {
+      "fonts": "loaded",
+      "ready": "complete",
+      "loading": false,
+      "loaderPresent": false
+    },
+    "visibleImageDecode": [
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/boulder-city-haunted-walk-tour.webp",
+        "complete": true,
+        "natural": [
+          1440,
+          959
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/boulder-city-shop.webp",
+        "complete": true,
+        "natural": [
+          1440,
+          810
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/ufo-night.webp",
+        "complete": true,
+        "natural": [
+          1672,
+          941
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/hoover-dam.webp",
+        "complete": true,
+        "natural": [
+          1440,
+          810
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/ghost-dog.webp",
+        "complete": true,
+        "natural": [
+          1440,
+          1080
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/dam-workers.webp",
+        "complete": true,
+        "natural": [
+          1440,
+          810
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/first-murderer.webp",
+        "complete": true,
+        "natural": [
+          1440,
+          1080
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/strange-celebs.webp",
+        "complete": true,
+        "natural": [
+          1440,
+          852
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/flying-saucer.webp",
+        "complete": true,
+        "natural": [
+          1440,
+          1440
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/buried-bodies.webp",
+        "complete": true,
+        "natural": [
+          1440,
+          1920
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/esp-gambling.webp",
+        "complete": true,
+        "natural": [
+          1440,
+          1081
+        ],
+        "decode": "ok"
+      }
+    ],
+    "modified": false,
+    "limits": "live fog, random spirits and video remain active; no animation freezing"
+  },
+  {
+    "file": "captures/E-070-1440-zombies-settled.jpg",
+    "environment": {
+      "timestamp": "2026-10-04T00:06:50.661Z",
+      "url": "https://www.hauntedbouldercity.com/",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+      "viewport": [
+        1440,
+        900
+      ],
+      "dpr": 1,
+      "visualViewport": {
+        "width": 1425,
+        "height": 900,
+        "scale": 1
+      },
+      "scroll": [
+        0,
+        8228,
+        1425,
+        12476
+      ],
+      "language": "en-US",
+      "timezone": "Africa/Cairo",
+      "direction": "ltr",
+      "touch": 0,
+      "dark": false,
+      "reduced": false,
+      "fonts": "loaded",
+      "ready": "complete"
+    },
+    "selector": "#zombies",
+    "readiness": {
+      "fonts": "loaded",
+      "ready": "complete",
+      "loading": false,
+      "loaderPresent": false
+    },
+    "visibleImageDecode": [
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/hoover-dam.webp",
+        "complete": true,
+        "natural": [
+          1440,
+          810
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/ghost-dog.webp",
+        "complete": true,
+        "natural": [
+          1440,
+          1080
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/dam-workers.webp",
+        "complete": true,
+        "natural": [
+          1440,
+          810
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/first-murderer.webp",
+        "complete": true,
+        "natural": [
+          1440,
+          1080
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/strange-celebs.webp",
+        "complete": true,
+        "natural": [
+          1440,
+          852
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/flying-saucer.webp",
+        "complete": true,
+        "natural": [
+          1440,
+          1440
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/buried-bodies.webp",
+        "complete": true,
+        "natural": [
+          1440,
+          1920
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/esp-gambling.webp",
+        "complete": true,
+        "natural": [
+          1440,
+          1081
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/beer-zombies-boulder-city-960.webp",
+        "complete": true,
+        "natural": [
+          835,
+          469
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/bz-logo.svg",
+        "complete": true,
+        "natural": [
+          300,
+          148
+        ],
+        "decode": "ok"
+      }
+    ],
+    "modified": false,
+    "limits": "live fog, random spirits and video remain active; no animation freezing"
+  },
+  {
+    "file": "captures/E-070-1440-plan-settled.jpg",
+    "environment": {
+      "timestamp": "2026-10-04T00:06:51.921Z",
+      "url": "https://www.hauntedbouldercity.com/",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+      "viewport": [
+        1440,
+        900
+      ],
+      "dpr": 1,
+      "visualViewport": {
+        "width": 1425,
+        "height": 900,
+        "scale": 1
+      },
+      "scroll": [
+        0,
+        9128,
+        1425,
+        12476
+      ],
+      "language": "en-US",
+      "timezone": "Africa/Cairo",
+      "direction": "ltr",
+      "touch": 0,
+      "dark": false,
+      "reduced": false,
+      "fonts": "loaded",
+      "ready": "complete"
+    },
+    "selector": "#plan",
+    "readiness": {
+      "fonts": "loaded",
+      "ready": "complete",
+      "loading": false,
+      "loaderPresent": false
+    },
+    "visibleImageDecode": [
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/hoover-dam.webp",
+        "complete": true,
+        "natural": [
+          1440,
+          810
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/ghost-dog.webp",
+        "complete": true,
+        "natural": [
+          1440,
+          1080
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/dam-workers.webp",
+        "complete": true,
+        "natural": [
+          1440,
+          810
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/first-murderer.webp",
+        "complete": true,
+        "natural": [
+          1440,
+          1080
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/strange-celebs.webp",
+        "complete": true,
+        "natural": [
+          1440,
+          852
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/flying-saucer.webp",
+        "complete": true,
+        "natural": [
+          1440,
+          1440
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/buried-bodies.webp",
+        "complete": true,
+        "natural": [
+          1440,
+          1920
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/esp-gambling.webp",
+        "complete": true,
+        "natural": [
+          1440,
+          1081
+        ],
+        "decode": "ok"
+      }
+    ],
+    "modified": false,
+    "limits": "live fog, random spirits and video remain active; no animation freezing"
+  },
+  {
+    "file": "captures/E-070-1440-local-settled.jpg",
+    "environment": {
+      "timestamp": "2026-10-04T00:06:53.157Z",
+      "url": "https://www.hauntedbouldercity.com/",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+      "viewport": [
+        1440,
+        900
+      ],
+      "dpr": 1,
+      "visualViewport": {
+        "width": 1425,
+        "height": 900,
+        "scale": 1
+      },
+      "scroll": [
+        0,
+        10088,
+        1425,
+        12476
+      ],
+      "language": "en-US",
+      "timezone": "Africa/Cairo",
+      "direction": "ltr",
+      "touch": 0,
+      "dark": false,
+      "reduced": false,
+      "fonts": "loaded",
+      "ready": "complete"
+    },
+    "selector": "#local",
+    "readiness": {
+      "fonts": "loaded",
+      "ready": "complete",
+      "loading": false,
+      "loaderPresent": false
+    },
+    "visibleImageDecode": [],
+    "modified": false,
+    "limits": "live fog, random spirits and video remain active; no animation freezing"
+  },
+  {
+    "file": "captures/E-070-1440-tickets-settled.jpg",
+    "environment": {
+      "timestamp": "2026-10-04T00:06:54.421Z",
+      "url": "https://www.hauntedbouldercity.com/",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+      "viewport": [
+        1440,
+        900
+      ],
+      "dpr": 1,
+      "visualViewport": {
+        "width": 1425,
+        "height": 900,
+        "scale": 1
+      },
+      "scroll": [
+        0,
+        11015,
+        1425,
+        12476
+      ],
+      "language": "en-US",
+      "timezone": "Africa/Cairo",
+      "direction": "ltr",
+      "touch": 0,
+      "dark": false,
+      "reduced": false,
+      "fonts": "loaded",
+      "ready": "complete"
+    },
+    "selector": "#tickets",
+    "readiness": {
+      "fonts": "loaded",
+      "ready": "complete",
+      "loading": false,
+      "loaderPresent": false
+    },
+    "visibleImageDecode": [
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/boulder-city-inn.webp",
+        "complete": true,
+        "natural": [
+          1440,
+          810
+        ],
+        "decode": "ok"
+      }
+    ],
+    "modified": false,
+    "limits": "live fog, random spirits and video remain active; no animation freezing"
+  },
+  {
+    "file": "captures/E-070-1440-creator-settled.jpg",
+    "environment": {
+      "timestamp": "2026-10-04T00:06:55.758Z",
+      "url": "https://www.hauntedbouldercity.com/",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+      "viewport": [
+        1440,
+        900
+      ],
+      "dpr": 1,
+      "visualViewport": {
+        "width": 1425,
+        "height": 900,
+        "scale": 1
+      },
+      "scroll": [
+        0,
+        11576,
+        1425,
+        12476
+      ],
+      "language": "en-US",
+      "timezone": "Africa/Cairo",
+      "direction": "ltr",
+      "touch": 0,
+      "dark": false,
+      "reduced": false,
+      "fonts": "loaded",
+      "ready": "complete"
+    },
+    "selector": "#creator",
+    "readiness": {
+      "fonts": "loaded",
+      "ready": "complete",
+      "loading": false,
+      "loaderPresent": false
+    },
+    "visibleImageDecode": [
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/boulder-city-inn.webp",
+        "complete": true,
+        "natural": [
+          1440,
+          810
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/joshua-p-warren-960.webp",
+        "complete": true,
+        "natural": [
+          960,
+          640
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/ghost-adventures.png",
+        "complete": true,
+        "natural": [
+          1800,
+          638
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/travel-channel.png",
+        "complete": true,
+        "natural": [
+          444,
+          195
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/history-current.svg",
+        "complete": true,
+        "natural": [
+          433,
+          500
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/discovery-channel.svg",
+        "complete": true,
+        "natural": [
+          300,
+          75
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/national-geographic-channel.svg",
+        "complete": true,
+        "natural": [
+          300,
+          106
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/artisan-icon.jpg",
+        "complete": true,
+        "natural": [
+          48,
+          48
+        ],
+        "decode": "ok"
+      }
+    ],
+    "modified": false,
+    "limits": "live fog, random spirits and video remain active; no animation freezing"
+  },
+  {
+    "file": "captures/E-070-1440-footer-settled.jpg",
+    "environment": {
+      "timestamp": "2026-10-04T00:06:57.007Z",
+      "url": "https://www.hauntedbouldercity.com/",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+      "viewport": [
+        1440,
+        900
+      ],
+      "dpr": 1,
+      "visualViewport": {
+        "width": 1425,
+        "height": 900,
+        "scale": 1
+      },
+      "scroll": [
+        0,
+        11576,
+        1425,
+        12476
+      ],
+      "language": "en-US",
+      "timezone": "Africa/Cairo",
+      "direction": "ltr",
+      "touch": 0,
+      "dark": false,
+      "reduced": false,
+      "fonts": "loaded",
+      "ready": "complete"
+    },
+    "selector": "footer",
+    "readiness": {
+      "fonts": "loaded",
+      "ready": "complete",
+      "loading": false,
+      "loaderPresent": false
+    },
+    "visibleImageDecode": [
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/boulder-city-inn.webp",
+        "complete": true,
+        "natural": [
+          1440,
+          810
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/joshua-p-warren-960.webp",
+        "complete": true,
+        "natural": [
+          960,
+          640
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/ghost-adventures.png",
+        "complete": true,
+        "natural": [
+          1800,
+          638
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/travel-channel.png",
+        "complete": true,
+        "natural": [
+          444,
+          195
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/history-current.svg",
+        "complete": true,
+        "natural": [
+          433,
+          500
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/discovery-channel.svg",
+        "complete": true,
+        "natural": [
+          300,
+          75
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/national-geographic-channel.svg",
+        "complete": true,
+        "natural": [
+          300,
+          106
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/artisan-icon.jpg",
+        "complete": true,
+        "natural": [
+          48,
+          48
+        ],
+        "decode": "ok"
+      }
+    ],
+    "modified": false,
+    "limits": "live fog, random spirits and video remain active; no animation freezing"
+  },
+  {
+    "file": "captures/E-070-390-home-settled.jpg",
+    "environment": {
+      "timestamp": "2026-10-04T00:07:02.476Z",
+      "url": "https://www.hauntedbouldercity.com/",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+      "viewport": [
+        390,
+        844
+      ],
+      "dpr": 1,
+      "visualViewport": {
+        "width": 390,
+        "height": 844,
+        "scale": 1
+      },
+      "scroll": [
+        0,
+        0,
+        390,
+        10569
+      ],
+      "language": "en-US",
+      "timezone": "Africa/Cairo",
+      "direction": "ltr",
+      "touch": 1,
+      "dark": false,
+      "reduced": false,
+      "fonts": "loaded",
+      "ready": "complete"
+    },
+    "selector": "#home",
+    "readiness": {
+      "fonts": "loaded",
+      "ready": "complete",
+      "loading": false,
+      "loaderPresent": false
+    },
+    "visibleImageDecode": [
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/bz-logo.svg",
+        "complete": true,
+        "natural": [
+          300,
+          148
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/haunted-downtown-boulder-city-960.webp",
+        "complete": true,
+        "natural": [
+          389,
+          219
+        ],
+        "decode": "ok"
+      }
+    ],
+    "modified": false,
+    "limits": "live fog, random spirits and video remain active; no animation freezing"
+  },
+  {
+    "file": "captures/E-070-390-about-settled.jpg",
+    "environment": {
+      "timestamp": "2026-10-04T00:07:03.701Z",
+      "url": "https://www.hauntedbouldercity.com/",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+      "viewport": [
+        390,
+        844
+      ],
+      "dpr": 1,
+      "visualViewport": {
+        "width": 390,
+        "height": 844,
+        "scale": 1
+      },
+      "scroll": [
+        0,
+        810,
+        390,
+        10569
+      ],
+      "language": "en-US",
+      "timezone": "Africa/Cairo",
+      "direction": "ltr",
+      "touch": 1,
+      "dark": false,
+      "reduced": false,
+      "fonts": "loaded",
+      "ready": "complete"
+    },
+    "selector": "#about",
+    "readiness": {
+      "fonts": "loaded",
+      "ready": "complete",
+      "loading": false,
+      "loaderPresent": false
+    },
+    "visibleImageDecode": [
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/haunted-downtown-boulder-city-960.webp",
+        "complete": true,
+        "natural": [
+          389,
+          219
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/boulder-dam-hotel-960.webp",
+        "complete": true,
+        "natural": [
+          351,
+          221
+        ],
+        "decode": "ok"
+      }
+    ],
+    "modified": false,
+    "limits": "live fog, random spirits and video remain active; no animation freezing"
+  },
+  {
+    "file": "captures/E-070-390-stories-settled.jpg",
+    "environment": {
+      "timestamp": "2026-10-04T00:07:04.924Z",
+      "url": "https://www.hauntedbouldercity.com/",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+      "viewport": [
+        390,
+        844
+      ],
+      "dpr": 1,
+      "visualViewport": {
+        "width": 390,
+        "height": 844,
+        "scale": 1
+      },
+      "scroll": [
+        0,
+        1901,
+        390,
+        10569
+      ],
+      "language": "en-US",
+      "timezone": "Africa/Cairo",
+      "direction": "ltr",
+      "touch": 1,
+      "dark": false,
+      "reduced": false,
+      "fonts": "loaded",
+      "ready": "complete"
+    },
+    "selector": "#stories",
+    "readiness": {
+      "fonts": "loaded",
+      "ready": "complete",
+      "loading": false,
+      "loaderPresent": false
+    },
+    "visibleImageDecode": [
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/boulder-city-haunted-walk-tour-960.webp",
+        "complete": true,
+        "natural": [
+          389,
+          259
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/boulder-city-shop-960.webp",
+        "complete": true,
+        "natural": [
+          389,
+          219
+        ],
+        "decode": "ok"
+      }
+    ],
+    "modified": false,
+    "limits": "live fog, random spirits and video remain active; no animation freezing"
+  },
+  {
+    "file": "captures/E-070-390-story-ufo-settled.jpg",
+    "environment": {
+      "timestamp": "2026-10-04T00:07:06.315Z",
+      "url": "https://www.hauntedbouldercity.com/",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+      "viewport": [
+        390,
+        844
+      ],
+      "dpr": 1,
+      "visualViewport": {
+        "width": 390,
+        "height": 844,
+        "scale": 1
+      },
+      "scroll": [
+        0,
+        3420,
+        390,
+        10569
+      ],
+      "language": "en-US",
+      "timezone": "Africa/Cairo",
+      "direction": "ltr",
+      "touch": 1,
+      "dark": false,
+      "reduced": false,
+      "fonts": "loaded",
+      "ready": "complete"
+    },
+    "selector": ".story-ufo",
+    "readiness": {
+      "fonts": "loaded",
+      "ready": "complete",
+      "loading": false,
+      "loaderPresent": false
+    },
+    "visibleImageDecode": [
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/boulder-city-shop-960.webp",
+        "complete": true,
+        "natural": [
+          389,
+          219
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/ufo-night.webp",
+        "complete": true,
+        "natural": [
+          1672,
+          941
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/hoover-dam-960.webp",
+        "complete": true,
+        "natural": [
+          389,
+          219
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/ghost-dog-960.webp",
+        "complete": true,
+        "natural": [
+          389,
+          292
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/dam-workers-960.webp",
+        "complete": true,
+        "natural": [
+          389,
+          219
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/first-murderer-960.webp",
+        "complete": true,
+        "natural": [
+          389,
+          292
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/strange-celebs-960.webp",
+        "complete": true,
+        "natural": [
+          389,
+          230
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/flying-saucer-960.webp",
+        "complete": true,
+        "natural": [
+          389,
+          389
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/buried-bodies-960.webp",
+        "complete": true,
+        "natural": [
+          389,
+          519
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/esp-gambling-960.webp",
+        "complete": true,
+        "natural": [
+          389,
+          292
+        ],
+        "decode": "ok"
+      }
+    ],
+    "modified": false,
+    "limits": "live fog, random spirits and video remain active; no animation freezing"
+  },
+  {
+    "file": "captures/E-070-390-tour-highlights-settled.jpg",
+    "environment": {
+      "timestamp": "2026-10-04T00:07:07.545Z",
+      "url": "https://www.hauntedbouldercity.com/",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+      "viewport": [
+        390,
+        844
+      ],
+      "dpr": 1,
+      "visualViewport": {
+        "width": 390,
+        "height": 844,
+        "scale": 1
+      },
+      "scroll": [
+        0,
+        4179,
+        390,
+        10569
+      ],
+      "language": "en-US",
+      "timezone": "Africa/Cairo",
+      "direction": "ltr",
+      "touch": 1,
+      "dark": false,
+      "reduced": false,
+      "fonts": "loaded",
+      "ready": "complete"
+    },
+    "selector": ".tour-highlights",
+    "readiness": {
+      "fonts": "loaded",
+      "ready": "complete",
+      "loading": false,
+      "loaderPresent": false
+    },
+    "visibleImageDecode": [
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/ufo-night.webp",
+        "complete": true,
+        "natural": [
+          1672,
+          941
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/hoover-dam-960.webp",
+        "complete": true,
+        "natural": [
+          389,
+          219
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/ghost-dog-960.webp",
+        "complete": true,
+        "natural": [
+          389,
+          292
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/dam-workers-960.webp",
+        "complete": true,
+        "natural": [
+          389,
+          219
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/first-murderer-960.webp",
+        "complete": true,
+        "natural": [
+          389,
+          292
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/strange-celebs-960.webp",
+        "complete": true,
+        "natural": [
+          389,
+          230
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/flying-saucer-960.webp",
+        "complete": true,
+        "natural": [
+          389,
+          389
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/buried-bodies-960.webp",
+        "complete": true,
+        "natural": [
+          389,
+          519
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/esp-gambling-960.webp",
+        "complete": true,
+        "natural": [
+          389,
+          292
+        ],
+        "decode": "ok"
+      }
+    ],
+    "modified": false,
+    "limits": "live fog, random spirits and video remain active; no animation freezing"
+  },
+  {
+    "file": "captures/E-070-390-zombies-settled.jpg",
+    "environment": {
+      "timestamp": "2026-10-04T00:07:08.786Z",
+      "url": "https://www.hauntedbouldercity.com/",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+      "viewport": [
+        390,
+        844
+      ],
+      "dpr": 1,
+      "visualViewport": {
+        "width": 390,
+        "height": 844,
+        "scale": 1
+      },
+      "scroll": [
+        0,
+        5999,
+        390,
+        10569
+      ],
+      "language": "en-US",
+      "timezone": "Africa/Cairo",
+      "direction": "ltr",
+      "touch": 1,
+      "dark": false,
+      "reduced": false,
+      "fonts": "loaded",
+      "ready": "complete"
+    },
+    "selector": "#zombies",
+    "readiness": {
+      "fonts": "loaded",
+      "ready": "complete",
+      "loading": false,
+      "loaderPresent": false
+    },
+    "visibleImageDecode": [
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/hoover-dam-960.webp",
+        "complete": true,
+        "natural": [
+          389,
+          219
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/ghost-dog-960.webp",
+        "complete": true,
+        "natural": [
+          389,
+          292
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/dam-workers-960.webp",
+        "complete": true,
+        "natural": [
+          389,
+          219
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/first-murderer-960.webp",
+        "complete": true,
+        "natural": [
+          389,
+          292
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/strange-celebs-960.webp",
+        "complete": true,
+        "natural": [
+          389,
+          230
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/flying-saucer-960.webp",
+        "complete": true,
+        "natural": [
+          389,
+          389
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/buried-bodies-960.webp",
+        "complete": true,
+        "natural": [
+          389,
+          519
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/esp-gambling-960.webp",
+        "complete": true,
+        "natural": [
+          389,
+          292
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/beer-zombies-boulder-city-960.webp",
+        "complete": true,
+        "natural": [
+          389,
+          219
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/bz-logo.svg",
+        "complete": true,
+        "natural": [
+          300,
+          148
+        ],
+        "decode": "ok"
+      }
+    ],
+    "modified": false,
+    "limits": "live fog, random spirits and video remain active; no animation freezing"
+  },
+  {
+    "file": "captures/E-070-390-plan-settled.jpg",
+    "environment": {
+      "timestamp": "2026-10-04T00:07:10.010Z",
+      "url": "https://www.hauntedbouldercity.com/",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+      "viewport": [
+        390,
+        844
+      ],
+      "dpr": 1,
+      "visualViewport": {
+        "width": 390,
+        "height": 844,
+        "scale": 1
+      },
+      "scroll": [
+        0,
+        6904,
+        390,
+        10569
+      ],
+      "language": "en-US",
+      "timezone": "Africa/Cairo",
+      "direction": "ltr",
+      "touch": 1,
+      "dark": false,
+      "reduced": false,
+      "fonts": "loaded",
+      "ready": "complete"
+    },
+    "selector": "#plan",
+    "readiness": {
+      "fonts": "loaded",
+      "ready": "complete",
+      "loading": false,
+      "loaderPresent": false
+    },
+    "visibleImageDecode": [
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/hoover-dam-960.webp",
+        "complete": true,
+        "natural": [
+          389,
+          219
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/ghost-dog-960.webp",
+        "complete": true,
+        "natural": [
+          389,
+          292
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/dam-workers-960.webp",
+        "complete": true,
+        "natural": [
+          389,
+          219
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/first-murderer-960.webp",
+        "complete": true,
+        "natural": [
+          389,
+          292
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/strange-celebs-960.webp",
+        "complete": true,
+        "natural": [
+          389,
+          230
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/flying-saucer-960.webp",
+        "complete": true,
+        "natural": [
+          389,
+          389
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/buried-bodies-960.webp",
+        "complete": true,
+        "natural": [
+          389,
+          519
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/esp-gambling-960.webp",
+        "complete": true,
+        "natural": [
+          389,
+          292
+        ],
+        "decode": "ok"
+      }
+    ],
+    "modified": false,
+    "limits": "live fog, random spirits and video remain active; no animation freezing"
+  },
+  {
+    "file": "captures/E-070-390-local-settled.jpg",
+    "environment": {
+      "timestamp": "2026-10-04T00:07:11.221Z",
+      "url": "https://www.hauntedbouldercity.com/",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+      "viewport": [
+        390,
+        844
+      ],
+      "dpr": 1,
+      "visualViewport": {
+        "width": 390,
+        "height": 844,
+        "scale": 1
+      },
+      "scroll": [
+        0,
+        8128,
+        390,
+        10569
+      ],
+      "language": "en-US",
+      "timezone": "Africa/Cairo",
+      "direction": "ltr",
+      "touch": 1,
+      "dark": false,
+      "reduced": false,
+      "fonts": "loaded",
+      "ready": "complete"
+    },
+    "selector": "#local",
+    "readiness": {
+      "fonts": "loaded",
+      "ready": "complete",
+      "loading": false,
+      "loaderPresent": false
+    },
+    "visibleImageDecode": [],
+    "modified": false,
+    "limits": "live fog, random spirits and video remain active; no animation freezing"
+  },
+  {
+    "file": "captures/E-070-390-tickets-settled.jpg",
+    "environment": {
+      "timestamp": "2026-10-04T00:07:12.450Z",
+      "url": "https://www.hauntedbouldercity.com/",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+      "viewport": [
+        390,
+        844
+      ],
+      "dpr": 1,
+      "visualViewport": {
+        "width": 390,
+        "height": 844,
+        "scale": 1
+      },
+      "scroll": [
+        0,
+        9038,
+        390,
+        10569
+      ],
+      "language": "en-US",
+      "timezone": "Africa/Cairo",
+      "direction": "ltr",
+      "touch": 1,
+      "dark": false,
+      "reduced": false,
+      "fonts": "loaded",
+      "ready": "complete"
+    },
+    "selector": "#tickets",
+    "readiness": {
+      "fonts": "loaded",
+      "ready": "complete",
+      "loading": false,
+      "loaderPresent": false
+    },
+    "visibleImageDecode": [
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/boulder-city-inn-960.webp",
+        "complete": true,
+        "natural": [
+          389,
+          219
+        ],
+        "decode": "ok"
+      }
+    ],
+    "modified": false,
+    "limits": "live fog, random spirits and video remain active; no animation freezing"
+  },
+  {
+    "file": "captures/E-070-390-creator-settled.jpg",
+    "environment": {
+      "timestamp": "2026-10-04T00:07:13.701Z",
+      "url": "https://www.hauntedbouldercity.com/",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+      "viewport": [
+        390,
+        844
+      ],
+      "dpr": 1,
+      "visualViewport": {
+        "width": 390,
+        "height": 844,
+        "scale": 1
+      },
+      "scroll": [
+        0,
+        9725,
+        390,
+        10569
+      ],
+      "language": "en-US",
+      "timezone": "Africa/Cairo",
+      "direction": "ltr",
+      "touch": 1,
+      "dark": false,
+      "reduced": false,
+      "fonts": "loaded",
+      "ready": "complete"
+    },
+    "selector": "#creator",
+    "readiness": {
+      "fonts": "loaded",
+      "ready": "complete",
+      "loading": false,
+      "loaderPresent": false
+    },
+    "visibleImageDecode": [
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/boulder-city-inn-960.webp",
+        "complete": true,
+        "natural": [
+          389,
+          219
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/joshua-p-warren-960.webp",
+        "complete": true,
+        "natural": [
+          960,
+          640
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/ghost-adventures.png",
+        "complete": true,
+        "natural": [
+          1800,
+          638
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/travel-channel.png",
+        "complete": true,
+        "natural": [
+          444,
+          195
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/history-current.svg",
+        "complete": true,
+        "natural": [
+          433,
+          500
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/discovery-channel.svg",
+        "complete": true,
+        "natural": [
+          300,
+          75
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/national-geographic-channel.svg",
+        "complete": true,
+        "natural": [
+          300,
+          106
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/artisan-icon.jpg",
+        "complete": true,
+        "natural": [
+          48,
+          48
+        ],
+        "decode": "ok"
+      }
+    ],
+    "modified": false,
+    "limits": "live fog, random spirits and video remain active; no animation freezing"
+  },
+  {
+    "file": "captures/E-070-390-footer-settled.jpg",
+    "environment": {
+      "timestamp": "2026-10-04T00:07:14.940Z",
+      "url": "https://www.hauntedbouldercity.com/",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+      "viewport": [
+        390,
+        844
+      ],
+      "dpr": 1,
+      "visualViewport": {
+        "width": 390,
+        "height": 844,
+        "scale": 1
+      },
+      "scroll": [
+        0,
+        9725,
+        390,
+        10569
+      ],
+      "language": "en-US",
+      "timezone": "Africa/Cairo",
+      "direction": "ltr",
+      "touch": 1,
+      "dark": false,
+      "reduced": false,
+      "fonts": "loaded",
+      "ready": "complete"
+    },
+    "selector": "footer",
+    "readiness": {
+      "fonts": "loaded",
+      "ready": "complete",
+      "loading": false,
+      "loaderPresent": false
+    },
+    "visibleImageDecode": [
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/boulder-city-inn-960.webp",
+        "complete": true,
+        "natural": [
+          389,
+          219
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/joshua-p-warren-960.webp",
+        "complete": true,
+        "natural": [
+          960,
+          640
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/ghost-adventures.png",
+        "complete": true,
+        "natural": [
+          1800,
+          638
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/travel-channel.png",
+        "complete": true,
+        "natural": [
+          444,
+          195
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/history-current.svg",
+        "complete": true,
+        "natural": [
+          433,
+          500
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/discovery-channel.svg",
+        "complete": true,
+        "natural": [
+          300,
+          75
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/national-geographic-channel.svg",
+        "complete": true,
+        "natural": [
+          300,
+          106
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/artisan-icon.jpg",
+        "complete": true,
+        "natural": [
+          48,
+          48
+        ],
+        "decode": "ok"
+      }
+    ],
+    "modified": false,
+    "limits": "live fog, random spirits and video remain active; no animation freezing"
+  }
+]

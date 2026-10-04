@@ -1,0 +1,37 @@
+{
+  "environment": {
+    "timestamp": "2026-10-04T00:12:10.062Z",
+    "url": "https://www.hauntedbouldercity.com/?tickets=preview",
+    "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1440,
+      900
+    ],
+    "dpr": 1,
+    "visualViewport": {
+      "width": 1440,
+      "height": 900,
+      "scale": 1
+    },
+    "scroll": [
+      0,
+      0,
+      1425,
+      12476
+    ],
+    "language": "en-US",
+    "timezone": "Africa/Cairo",
+    "direction": "ltr",
+    "touch": 0,
+    "dark": false,
+    "reduced": false,
+    "fonts": "loaded",
+    "ready": "complete"
+  },
+  "state": {
+    "modalOpen": true,
+    "focus": "ticket-modal-close",
+    "statusHidden": true,
+    "iframeCount": 1
+  }
+}

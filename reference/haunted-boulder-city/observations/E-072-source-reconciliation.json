@@ -1,0 +1,6 @@
+{
+  "polypaneAppSHA256": "a9284d1e441eedefebb5d4f1768780a5fcec8dfeae7bce26948124065eb51f3a",
+  "chromeAppSHA256": "a9284d1e441eedefebb5d4f1768780a5fcec8dfeae7bce26948124065eb51f3a",
+  "equal": true,
+  "limitation": "equal JavaScript does not guarantee browser or data-state parity"
+}

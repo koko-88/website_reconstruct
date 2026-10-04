@@ -1,0 +1,18 @@
+import fs from 'node:fs';import crypto from 'node:crypto';import {connect,root} from './cdp.mjs';const c=await connect();const sleep=ms=>new Promise(r=>setTimeout(r,ms));
+try{const manifest=[],media=[];
+for(const [w,h,mobile] of [[1440,900,false],[390,844,true]]){
+await c.call('Emulation.setDeviceMetricsOverride',{width:w,height:h,deviceScaleFactor:1,mobile});await c.call('Emulation.setTouchEmulationEnabled',{enabled:mobile,maxTouchPoints:1});await c.call('Emulation.setEmulatedMedia',{features:[{name:'prefers-reduced-motion',value:'no-preference'}]});await c.call('Page.navigate',{url:'https://www.hauntedbouldercity.com/'});await sleep(4000);
+const ready=await c.evaluate("({fonts:document.fonts.status,ready:document.readyState,loading:document.documentElement.classList.contains('is-loading'),loaderPresent:!!document.querySelector('.loader')})");
+for(const selector of ['#home','#about','#stories','.story-ufo','.tour-highlights','#zombies','#plan','#local','#tickets','#creator','footer']){
+await c.evaluate('document.querySelector('+JSON.stringify(selector)+').scrollIntoView({behavior:"instant",block:"start"})');await sleep(1100);
+const decoded=await c.evaluate("(async()=>{const out=[];for(const i of document.images){const b=i.getBoundingClientRect();if(b.bottom>=0&&b.top<innerHeight){const result=await Promise.race([i.decode().then(()=>({decode:'ok'}),e=>({decode:'failed',error:e.name})),new Promise(r=>setTimeout(()=>r({decode:'timeout'}),2500))]);out.push({src:i.currentSrc,complete:i.complete,natural:[i.naturalWidth,i.naturalHeight],...result})}}return out})()");
+const label=selector.replace(/[.#]/g,'');const file='captures/E-070-'+w+'-'+label+'-settled.jpg';await c.shot(file);manifest.push({file,environment:await c.env(),selector,readiness:ready,visibleImageDecode:decoded,modified:false,limits:'live fog, random spirits and video remain active; no animation freezing'});
+}
+const assets=await c.evaluate("(async()=>{const out=[];for(const i of document.images){const result=await Promise.race([i.decode().then(()=>({decode:'ok'}),e=>({decode:'failed',error:e.name})),new Promise(r=>setTimeout(()=>r({decode:'timeout'}),2500))]);out.push({src:i.currentSrc,srcset:i.srcset,alt:i.alt,natural:[i.naturalWidth,i.naturalHeight],...result})}return out})()");
+media.push({environment:await c.env(),assets,video:await c.evaluate("[...document.querySelectorAll('video')].map(v=>({src:v.currentSrc,data:v.dataset,duration:v.duration,currentTime:v.currentTime,readyState:v.readyState}))")});console.log('settled '+w);
+}c.save('observations/E-070-capture-conditions.json',manifest);c.save('observations/E-064-image-readiness.json',media);
+const sources=await c.evaluate("(async()=>{const o=[];for(const url of ['/styles.css','/app.js']){const r=await fetch(url);o.push({url,status:r.status,source:await r.text()})}return o})()");c.save('observations/E-071-source-integrity.json',sources.map(s=>({path:s.url,status:s.status,sha256:crypto.createHash('sha256').update(s.source).digest('hex'),characters:s.source.length,recordedAt:new Date().toISOString()})));
+const app=JSON.parse(fs.readFileSync(root+'/observations/E-006-app-runtime.json','utf8')).result.content[0].text;const old=JSON.parse(app.split('~~~json'.replace('~~~','\x60\x60\x60')+'\n')[1].split('\n'+'\x60\x60\x60')[0]).source;
+c.save('observations/E-072-source-reconciliation.json',{polypaneAppSHA256:crypto.createHash('sha256').update(old).digest('hex'),chromeAppSHA256:crypto.createHash('sha256').update(sources.find(s=>s.url==='/app.js').source).digest('hex'),equal:old===sources.find(s=>s.url==='/app.js').source,limitation:'equal JavaScript does not guarantee browser or data-state parity'});
+console.log('source integrity saved');
+}finally{c.close()}

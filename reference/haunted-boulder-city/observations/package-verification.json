@@ -1,0 +1,29 @@
+{
+  "package": "HBC-2026-10-04",
+  "revision": "1.0.0",
+  "checkedAtUTC": "2026-10-04T00:27:36.153Z",
+  "checkedAtCairo": "2026-10-04T03:27:36.153+03:00",
+  "checks": {
+    "jsonParse": "performed",
+    "jpegStructureDimensionsAndEndMarker": "performed",
+    "sha256Replay": "performed",
+    "relativeLinks": "performed",
+    "canonicalSections": "performed",
+    "gateHonesty": "BLOCKED; U-01/U-02 not waived"
+  },
+  "counts": {
+    "files": 169,
+    "json": 37,
+    "images": 119,
+    "relativeLinks": 202
+  },
+  "manifestSHA256": "46159cf355844e9f613c64241944d1cd73d28a98ac078c8d8a7521dc8b7491b0",
+  "indexSHA256": "ed5f47c58394631a00fe9dc65f732201f6722e94ee5b4b4f5f8081f4ea5bb26f",
+  "problems": [],
+  "notRun": [
+    "Implementation tests",
+    "Reconstruction visual acceptance",
+    "Physical device or assistive technology testing"
+  ],
+  "result": "PASS"
+}

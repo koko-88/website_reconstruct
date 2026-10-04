@@ -1,0 +1,2069 @@
+[
+  {
+    "reduced": false,
+    "environment": {
+      "timestamp": "2026-10-04T00:04:38.202Z",
+      "url": "https://www.hauntedbouldercity.com/",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+      "viewport": [
+        1440,
+        900
+      ],
+      "dpr": 1,
+      "visualViewport": {
+        "width": 1425,
+        "height": 900,
+        "scale": 1
+      },
+      "scroll": [
+        0,
+        0,
+        1425,
+        12476
+      ],
+      "language": "en-US",
+      "timezone": "Africa/Cairo",
+      "direction": "ltr",
+      "touch": 0,
+      "dark": false,
+      "reduced": false,
+      "fonts": "loaded",
+      "ready": "complete"
+    },
+    "frames": [
+      {
+        "afterAdditionalMs": 100,
+        "state": {
+          "timestamp": "2026-10-04T00:04:33.002Z",
+          "perf": 375.90000000596046,
+          "navigationStart": 1791072272626.8,
+          "root": "is-loading",
+          "ready": "interactive",
+          "fonts": "loading",
+          "loader": "loader",
+          "scrollY": 0,
+          "glitch": false,
+          "currentTopic": "dam",
+          "video": [
+            {
+              "src": "",
+              "currentTime": 0,
+              "duration": null,
+              "readyState": 0,
+              "seeking": false,
+              "opacity": "0"
+            }
+          ],
+          "layers": [
+            {
+              "cls": "flashlight",
+              "opacity": "1",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)",
+              "translate": "none",
+              "animation": "none"
+            },
+            {
+              "cls": "",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 35)",
+              "translate": "none",
+              "animation": "1.5s cubic-bezier(0.2, 0.7, 0.2, 1) both paused hero-in"
+            },
+            {
+              "cls": "hero-bottom",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 35)",
+              "translate": "none",
+              "animation": "1.4s 0.2s both paused hero-in"
+            }
+          ],
+          "animations": [
+            {
+              "name": "loader-breathe",
+              "duration": 3400,
+              "currentTime": 0
+            },
+            {
+              "name": "loader-drift-a",
+              "duration": 26000,
+              "currentTime": 0
+            },
+            {
+              "name": "loader-drift-b",
+              "duration": 44000,
+              "currentTime": 0
+            },
+            {
+              "name": "loader-condense",
+              "duration": 1700,
+              "currentTime": 0
+            },
+            {
+              "name": "loader-flicker",
+              "duration": 5000,
+              "currentTime": 0
+            },
+            {
+              "name": "loader-condense",
+              "duration": 1700,
+              "currentTime": 0
+            },
+            {
+              "name": "slow-spin",
+              "duration": 7000,
+              "currentTime": 0
+            },
+            {
+              "name": "loader-drift-b",
+              "duration": 32000,
+              "currentTime": 0
+            },
+            {
+              "name": "loader-drift-a",
+              "duration": 38000,
+              "currentTime": 0
+            },
+            {
+              "name": "hero-in",
+              "duration": 1200,
+              "currentTime": 0
+            },
+            {
+              "name": "loader-dot",
+              "duration": 1200,
+              "currentTime": 0
+            },
+            {
+              "name": "loader-dot",
+              "duration": 1200,
+              "currentTime": 0
+            },
+            {
+              "name": "loader-dot",
+              "duration": 1200,
+              "currentTime": 0
+            },
+            {
+              "name": "hero-in",
+              "duration": 1200,
+              "currentTime": 0
+            },
+            {
+              "name": "loader-progress",
+              "duration": 2800,
+              "currentTime": 0
+            },
+            {
+              "name": "slow-spin",
+              "duration": 24000,
+              "currentTime": 0
+            },
+            {
+              "name": "marquee",
+              "duration": 35000,
+              "currentTime": 0
+            }
+          ]
+        }
+      },
+      {
+        "afterAdditionalMs": 300,
+        "state": {
+          "timestamp": "2026-10-04T00:04:33.621Z",
+          "perf": 995.1000000238419,
+          "navigationStart": 1791072272626.8,
+          "root": "is-loading smooth-scroll motion-ready",
+          "ready": "complete",
+          "fonts": "loaded",
+          "loader": "loader",
+          "scrollY": 0,
+          "glitch": false,
+          "currentTopic": "dam",
+          "video": [
+            {
+              "src": "",
+              "currentTime": 0,
+              "duration": null,
+              "readyState": 0,
+              "seeking": false,
+              "opacity": "0"
+            }
+          ],
+          "layers": [
+            {
+              "cls": "flashlight",
+              "opacity": "1",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)",
+              "translate": "none",
+              "animation": "none"
+            },
+            {
+              "cls": "",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 35)",
+              "translate": "0px",
+              "animation": "1.5s cubic-bezier(0.2, 0.7, 0.2, 1) both paused hero-in"
+            },
+            {
+              "cls": "hero-bottom",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 35)",
+              "translate": "none",
+              "animation": "1.4s 0.2s both paused hero-in"
+            },
+            {
+              "cls": "fog-wisp",
+              "opacity": "0.53",
+              "transform": "matrix(1.09952, 0, 0, 1.09952, 20.4592, -25.2098)",
+              "translate": "none",
+              "animation": "40s ease-in-out -19s infinite alternate fog-drift"
+            },
+            {
+              "cls": "fog-wisp",
+              "opacity": "0.43",
+              "transform": "matrix(-1.06519, 0, 0, 1.06519, -111.113, 14.4458)",
+              "translate": "none",
+              "animation": "56s ease-in-out -41s infinite alternate fog-counterdrift"
+            },
+            {
+              "cls": "fog-wisp",
+              "opacity": "0.29",
+              "transform": "matrix(1.03723, 0, 0, 1.03723, 194.523, 6.47807)",
+              "translate": "none",
+              "animation": "70s ease-in-out -62s infinite alternate fog-drift"
+            },
+            {
+              "cls": "fog-wisp",
+              "opacity": "0.53",
+              "transform": "matrix(1.09952, 0, 0, 1.09952, 20.4592, -15.4348)",
+              "translate": "none",
+              "animation": "40s ease-in-out -19s infinite alternate fog-drift"
+            },
+            {
+              "cls": "fog-wisp",
+              "opacity": "0.43",
+              "transform": "matrix(-1.06519, 0, 0, 1.06519, -111.113, 8.84437)",
+              "translate": "none",
+              "animation": "56s ease-in-out -41s infinite alternate fog-counterdrift"
+            },
+            {
+              "cls": "fog-wisp",
+              "opacity": "0.29",
+              "transform": "matrix(1.03723, 0, 0, 1.03723, 194.523, 3.96612)",
+              "translate": "none",
+              "animation": "70s ease-in-out -62s infinite alternate fog-drift"
+            },
+            {
+              "cls": "spirit",
+              "opacity": "1",
+              "transform": "none",
+              "translate": "none",
+              "animation": "none"
+            }
+          ],
+          "animations": [
+            {
+              "duration": 1100,
+              "currentTime": 585.4
+            },
+            {
+              "duration": 900,
+              "currentTime": 518.4509999854956
+            },
+            {
+              "duration": 1100,
+              "currentTime": 518.4509999854956
+            },
+            {
+              "duration": 1100,
+              "currentTime": 585.4
+            },
+            {
+              "duration": 900,
+              "currentTime": 518.4509999854956
+            },
+            {
+              "duration": 1100,
+              "currentTime": 518.4509999854956
+            },
+            {
+              "duration": 700,
+              "currentTime": 585.4
+            },
+            {
+              "duration": 700,
+              "currentTime": 585.4
+            },
+            {
+              "duration": 700,
+              "currentTime": 585.4
+            },
+            {
+              "duration": 1100,
+              "currentTime": 585.4
+            },
+            {
+              "duration": 900,
+              "currentTime": 585.4
+            },
+            {
+              "duration": 1100,
+              "currentTime": 585.4
+            },
+            {
+              "duration": 1100,
+              "currentTime": 585.4
+            },
+            {
+              "duration": 900,
+              "currentTime": 585.4
+            },
+            {
+              "duration": 1100,
+              "currentTime": 585.4
+            },
+            {
+              "duration": 800,
+              "currentTime": 585.4
+            },
+            {
+              "duration": 1100,
+              "currentTime": 585.4
+            },
+            {
+              "duration": 900,
+              "currentTime": 585.4
+            },
+            {
+              "duration": 1100,
+              "currentTime": 585.4
+            },
+            {
+              "duration": 800,
+              "currentTime": 585.4
+            },
+            {
+              "duration": 1100,
+              "currentTime": 585.4
+            },
+            {
+              "duration": 900,
+              "currentTime": 585.4
+            },
+            {
+              "duration": 1100,
+              "currentTime": 585.4
+            },
+            {
+              "duration": 800,
+              "currentTime": 585.4
+            },
+            {
+              "duration": 1100,
+              "currentTime": 585.4
+            },
+            {
+              "duration": 900,
+              "currentTime": 585.4
+            },
+            {
+              "duration": 1100,
+              "currentTime": 585.4
+            },
+            {
+              "duration": 800,
+              "currentTime": 585.4
+            },
+            {
+              "duration": 1100,
+              "currentTime": 585.4
+            },
+            {
+              "duration": 900,
+              "currentTime": 585.4
+            },
+            {
+              "duration": 1100,
+              "currentTime": 585.4
+            },
+            {
+              "duration": 800,
+              "currentTime": 585.4
+            },
+            {
+              "duration": 1100,
+              "currentTime": 585.4
+            },
+            {
+              "duration": 900,
+              "currentTime": 585.4
+            },
+            {
+              "duration": 1100,
+              "currentTime": 585.4
+            },
+            {
+              "duration": 800,
+              "currentTime": 585.4
+            },
+            {
+              "duration": 1100,
+              "currentTime": 585.4
+            },
+            {
+              "duration": 900,
+              "currentTime": 585.4
+            },
+            {
+              "duration": 1100,
+              "currentTime": 585.4
+            },
+            {
+              "duration": 800,
+              "currentTime": 585.4
+            },
+            {
+              "duration": 1100,
+              "currentTime": 585.4
+            },
+            {
+              "duration": 900,
+              "currentTime": 585.4
+            },
+            {
+              "duration": 1100,
+              "currentTime": 585.4
+            },
+            {
+              "duration": 800,
+              "currentTime": 585.4
+            },
+            {
+              "duration": 1100,
+              "currentTime": 585.4
+            },
+            {
+              "duration": 900,
+              "currentTime": 518.4509999854956
+            },
+            {
+              "duration": 1100,
+              "currentTime": 518.4509999854956
+            },
+            {
+              "duration": 1100,
+              "currentTime": 585.4
+            },
+            {
+              "duration": 900,
+              "currentTime": 518.4509999854956
+            },
+            {
+              "duration": 1100,
+              "currentTime": 518.4509999854956
+            },
+            {
+              "duration": 1100,
+              "currentTime": 585.4
+            },
+            {
+              "duration": 900,
+              "currentTime": 518.4509999854956
+            },
+            {
+              "duration": 1100,
+              "currentTime": 518.4509999854956
+            },
+            {
+              "duration": 650,
+              "currentTime": 518.4509999854956
+            },
+            {
+              "duration": 650,
+              "currentTime": 518.4509999854956
+            },
+            {
+              "duration": 650,
+              "currentTime": 518.4509999854956
+            },
+            {
+              "duration": 650,
+              "currentTime": 518.4509999854956
+            },
+            {
+              "duration": 650,
+              "currentTime": 518.4509999854956
+            },
+            {
+              "duration": 650,
+              "currentTime": 518.4509999854956
+            },
+            {
+              "duration": 650,
+              "currentTime": 518.4509999854956
+            },
+            {
+              "duration": 650,
+              "currentTime": 518.4509999854956
+            },
+            {
+              "duration": 650,
+              "currentTime": 518.4509999854956
+            },
+            {
+              "duration": 1100,
+              "currentTime": 585.4
+            },
+            {
+              "duration": 900,
+              "currentTime": 518.4509999854956
+            },
+            {
+              "duration": 1100,
+              "currentTime": 518.4509999854956
+            },
+            {
+              "duration": 1100,
+              "currentTime": 585.4
+            },
+            {
+              "duration": 900,
+              "currentTime": 585.4
+            },
+            {
+              "duration": 1100,
+              "currentTime": 585.4
+            },
+            {
+              "duration": 1100,
+              "currentTime": 585.4
+            },
+            {
+              "duration": 900,
+              "currentTime": 518.4509999854956
+            },
+            {
+              "duration": 1100,
+              "currentTime": 518.4509999854956
+            },
+            {
+              "duration": 1100,
+              "currentTime": 585.4
+            },
+            {
+              "duration": 900,
+              "currentTime": 518.4509999854956
+            },
+            {
+              "duration": 1100,
+              "currentTime": 518.4509999854956
+            },
+            {
+              "name": "loader-breathe",
+              "duration": 3400,
+              "currentTime": 535.2119999917225
+            },
+            {
+              "name": "loader-drift-a",
+              "duration": 26000,
+              "currentTime": 535.2119999917225
+            },
+            {
+              "name": "loader-drift-b",
+              "duration": 44000,
+              "currentTime": 535.2119999917225
+            },
+            {
+              "name": "loader-condense",
+              "duration": 1700,
+              "currentTime": 585.974
+            },
+            {
+              "name": "loader-flicker",
+              "duration": 5000,
+              "currentTime": 585.974
+            },
+            {
+              "name": "loader-condense",
+              "duration": 1700,
+              "currentTime": 585.974
+            },
+            {
+              "name": "slow-spin",
+              "duration": 7000,
+              "currentTime": 535.2119999917225
+            },
+            {
+              "name": "loader-drift-b",
+              "duration": 32000,
+              "currentTime": 535.2119999917225
+            },
+            {
+              "name": "loader-drift-a",
+              "duration": 38000,
+              "currentTime": 535.2119999917225
+            },
+            {
+              "name": "hero-in",
+              "duration": 1200,
+              "currentTime": 585.974
+            },
+            {
+              "name": "loader-dot",
+              "duration": 1200,
+              "currentTime": 535.2119999917225
+            },
+            {
+              "name": "loader-dot",
+              "duration": 1200,
+              "currentTime": 535.2119999917225
+            },
+            {
+              "name": "loader-dot",
+              "duration": 1200,
+              "currentTime": 535.2119999917225
+            },
+            {
+              "name": "hero-in",
+              "duration": 1200,
+              "currentTime": 585.974
+            },
+            {
+              "name": "loader-progress",
+              "duration": 2800,
+              "currentTime": 535.2119999917225
+            },
+            {
+              "name": "slow-spin",
+              "duration": 24000,
+              "currentTime": 535.2119999917225
+            },
+            {
+              "name": "fog-drift",
+              "duration": 40000,
+              "currentTime": 468.33300000084563
+            },
+            {
+              "name": "fog-counterdrift",
+              "duration": 56000,
+              "currentTime": 468.33300000084563
+            },
+            {
+              "name": "fog-drift",
+              "duration": 70000,
+              "currentTime": 468.33300000084563
+            },
+            {
+              "name": "marquee",
+              "duration": 35000,
+              "currentTime": 535.2119999917225
+            },
+            {
+              "name": "fog-drift",
+              "duration": 40000,
+              "currentTime": 468.33300000084563
+            },
+            {
+              "name": "fog-counterdrift",
+              "duration": 56000,
+              "currentTime": 468.33300000084563
+            },
+            {
+              "name": "fog-drift",
+              "duration": 70000,
+              "currentTime": 468.33300000084563
+            },
+            {
+              "name": "spirit-pulse",
+              "duration": 3200,
+              "currentTime": 585.4
+            },
+            {
+              "name": "spirit-pulse",
+              "duration": 3700,
+              "currentTime": 585.4
+            },
+            {
+              "name": "spirit-pulse",
+              "duration": 4300,
+              "currentTime": 585.4
+            }
+          ]
+        }
+      },
+      {
+        "afterAdditionalMs": 700,
+        "state": {
+          "timestamp": "2026-10-04T00:04:34.531Z",
+          "perf": 1904.300000011921,
+          "navigationStart": 1791072272626.8,
+          "root": "smooth-scroll motion-ready",
+          "ready": "complete",
+          "fonts": "loaded",
+          "loader": "loader is-parting",
+          "scrollY": 0,
+          "glitch": false,
+          "currentTopic": "dam",
+          "video": [
+            {
+              "src": "",
+              "currentTime": 0,
+              "duration": null,
+              "readyState": 0,
+              "seeking": false,
+              "opacity": "0"
+            }
+          ],
+          "layers": [
+            {
+              "cls": "flashlight",
+              "opacity": "1",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)",
+              "translate": "none",
+              "animation": "none"
+            },
+            {
+              "cls": "",
+              "opacity": "0.0392652",
+              "transform": "matrix(1, 0, 0, 1, 0, 33.6257)",
+              "translate": "0px",
+              "animation": "1.5s cubic-bezier(0.2, 0.7, 0.2, 1) both hero-in"
+            },
+            {
+              "cls": "hero-bottom",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 35)",
+              "translate": "none",
+              "animation": "1.4s 0.2s both hero-in"
+            },
+            {
+              "cls": "fog-wisp",
+              "opacity": "0.53",
+              "transform": "matrix(1.09996, 0, 0, 1.09996, 22.0639, -25.5422)",
+              "translate": "none",
+              "animation": "40s ease-in-out -19s infinite alternate fog-drift"
+            },
+            {
+              "cls": "fog-wisp",
+              "opacity": "0.43",
+              "transform": "matrix(-1.06832, 0, 0, 1.06832, -123.669, 12.2436)",
+              "translate": "none",
+              "animation": "56s ease-in-out -41s infinite alternate fog-counterdrift"
+            },
+            {
+              "cls": "fog-wisp",
+              "opacity": "0.29",
+              "transform": "matrix(1.03553, 0, 0, 1.03553, 199.142, 7.33934)",
+              "translate": "none",
+              "animation": "70s ease-in-out -62s infinite alternate fog-drift"
+            },
+            {
+              "cls": "fog-wisp",
+              "opacity": "0.53",
+              "transform": "matrix(1.09996, 0, 0, 1.09996, 22.0639, -15.6383)",
+              "translate": "none",
+              "animation": "40s ease-in-out -19s infinite alternate fog-drift"
+            },
+            {
+              "cls": "fog-wisp",
+              "opacity": "0.43",
+              "transform": "matrix(-1.06832, 0, 0, 1.06832, -123.669, 7.49608)",
+              "translate": "none",
+              "animation": "56s ease-in-out -41s infinite alternate fog-counterdrift"
+            },
+            {
+              "cls": "fog-wisp",
+              "opacity": "0.29",
+              "transform": "matrix(1.03553, 0, 0, 1.03553, 199.142, 4.49342)",
+              "translate": "none",
+              "animation": "70s ease-in-out -62s infinite alternate fog-drift"
+            },
+            {
+              "cls": "spirit",
+              "opacity": "1",
+              "transform": "none",
+              "translate": "none",
+              "animation": "none"
+            }
+          ],
+          "animations": [
+            {
+              "duration": 1100,
+              "currentTime": 250.942999987537
+            },
+            {
+              "duration": 900,
+              "currentTime": 250.942999987537
+            },
+            {
+              "duration": 900,
+              "currentTime": 250.942999987537
+            },
+            {
+              "duration": 1000,
+              "currentTime": 250.942999987537
+            },
+            {
+              "duration": 1150,
+              "currentTime": 250.942999987537
+            },
+            {
+              "duration": 1000,
+              "currentTime": 250.942999987537
+            },
+            {
+              "duration": 1150,
+              "currentTime": 250.942999987537
+            },
+            {
+              "duration": 700,
+              "currentTime": 250.942999987537
+            },
+            {
+              "duration": 700,
+              "currentTime": 250.942999987537
+            },
+            {
+              "duration": 700,
+              "currentTime": 250.942999987537
+            },
+            {
+              "duration": 1000,
+              "currentTime": 250.942999987537
+            },
+            {
+              "duration": 1150,
+              "currentTime": 250.942999987537
+            },
+            {
+              "duration": 1000,
+              "currentTime": 250.942999987537
+            },
+            {
+              "duration": 1150,
+              "currentTime": 250.942999987537
+            },
+            {
+              "duration": 350,
+              "currentTime": 250.942999987537
+            },
+            {
+              "name": "loader-breathe",
+              "duration": 3400,
+              "currentTime": 1455.1119999917223
+            },
+            {
+              "name": "loader-drift-a",
+              "duration": 26000,
+              "currentTime": 1455.1119999917223
+            },
+            {
+              "name": "loader-drift-b",
+              "duration": 44000,
+              "currentTime": 1455.1119999917223
+            },
+            {
+              "name": "loader-condense",
+              "duration": 1700,
+              "currentTime": 1505.874
+            },
+            {
+              "name": "loader-flicker",
+              "duration": 5000,
+              "currentTime": 1505.874
+            },
+            {
+              "name": "loader-condense",
+              "duration": 1700,
+              "currentTime": 1505.874
+            },
+            {
+              "name": "slow-spin",
+              "duration": 7000,
+              "currentTime": 1455.1119999917223
+            },
+            {
+              "name": "loader-drift-b",
+              "duration": 32000,
+              "currentTime": 1455.1119999917223
+            },
+            {
+              "name": "loader-drift-a",
+              "duration": 38000,
+              "currentTime": 1455.1119999917223
+            },
+            {
+              "name": "hero-in",
+              "duration": 1200,
+              "currentTime": 1505.874
+            },
+            {
+              "name": "loader-dot",
+              "duration": 1200,
+              "currentTime": 1455.1119999917223
+            },
+            {
+              "name": "loader-dot",
+              "duration": 1200,
+              "currentTime": 1455.1119999917223
+            },
+            {
+              "name": "loader-dot",
+              "duration": 1200,
+              "currentTime": 1455.1119999917223
+            },
+            {
+              "name": "hero-in",
+              "duration": 1200,
+              "currentTime": 1505.874
+            },
+            {
+              "name": "loader-progress",
+              "duration": 2800,
+              "currentTime": 1455.1119999917223
+            },
+            {
+              "name": "hero-in",
+              "duration": 1500,
+              "currentTime": 16.69999999999994
+            },
+            {
+              "name": "slow-spin",
+              "duration": 24000,
+              "currentTime": 1455.1119999917223
+            },
+            {
+              "name": "hero-in",
+              "duration": 1400,
+              "currentTime": 16.69999999999994
+            },
+            {
+              "name": "hero-in",
+              "duration": 1400,
+              "currentTime": 16.69999999999994
+            },
+            {
+              "name": "fog-drift",
+              "duration": 40000,
+              "currentTime": 1388.2330000008455
+            },
+            {
+              "name": "fog-counterdrift",
+              "duration": 56000,
+              "currentTime": 1388.2330000008455
+            },
+            {
+              "name": "fog-drift",
+              "duration": 70000,
+              "currentTime": 1388.2330000008455
+            },
+            {
+              "name": "marquee",
+              "duration": 35000,
+              "currentTime": 1455.1119999917223
+            },
+            {
+              "name": "fog-drift",
+              "duration": 40000,
+              "currentTime": 1388.2330000008455
+            },
+            {
+              "name": "fog-counterdrift",
+              "duration": 56000,
+              "currentTime": 1388.2330000008455
+            },
+            {
+              "name": "fog-drift",
+              "duration": 70000,
+              "currentTime": 1388.2330000008455
+            },
+            {
+              "name": "spirit-pulse",
+              "duration": 3200,
+              "currentTime": 1505.3000000000002
+            },
+            {
+              "name": "spirit-pulse",
+              "duration": 3700,
+              "currentTime": 1505.3000000000002
+            },
+            {
+              "name": "spirit-pulse",
+              "duration": 4300,
+              "currentTime": 1505.3000000000002
+            }
+          ]
+        }
+      },
+      {
+        "afterAdditionalMs": 800,
+        "state": {
+          "timestamp": "2026-10-04T00:04:35.538Z",
+          "perf": 2911.800000011921,
+          "navigationStart": 1791072272626.8,
+          "root": "smooth-scroll motion-ready",
+          "ready": "complete",
+          "fonts": "loaded",
+          "loader": "loader is-parting",
+          "scrollY": 0,
+          "glitch": false,
+          "currentTopic": "dam",
+          "video": [
+            {
+              "src": "",
+              "currentTime": 0,
+              "duration": null,
+              "readyState": 0,
+              "seeking": false,
+              "opacity": "0"
+            }
+          ],
+          "layers": [
+            {
+              "cls": "flashlight",
+              "opacity": "1",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)",
+              "translate": "none",
+              "animation": "none"
+            },
+            {
+              "cls": "",
+              "opacity": "0.977716",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.77993)",
+              "translate": "0px",
+              "animation": "1.5s cubic-bezier(0.2, 0.7, 0.2, 1) both hero-in"
+            },
+            {
+              "cls": "hero-bottom",
+              "opacity": "0.87541",
+              "transform": "matrix(1, 0, 0, 1, 0, 4.36064)",
+              "translate": "none",
+              "animation": "1.4s 0.2s both hero-in"
+            },
+            {
+              "cls": "fog-wisp",
+              "opacity": "0.53",
+              "transform": "matrix(1.09987, 0, 0, 1.09987, 22.5537, -25.5114)",
+              "translate": "none",
+              "animation": "40s ease-in-out -19s infinite alternate fog-drift"
+            },
+            {
+              "cls": "fog-wisp",
+              "opacity": "0.43",
+              "transform": "matrix(-1.0719, 0, 0, 1.0719, -138.046, 9.72181)",
+              "translate": "none",
+              "animation": "56s ease-in-out -41s infinite alternate fog-counterdrift"
+            },
+            {
+              "cls": "fog-wisp",
+              "opacity": "0.29",
+              "transform": "matrix(1.03394, 0, 0, 1.03394, 203.459, 8.14445)",
+              "translate": "none",
+              "animation": "70s ease-in-out -62s infinite alternate fog-drift"
+            },
+            {
+              "cls": "fog-wisp",
+              "opacity": "0.53",
+              "transform": "matrix(1.09987, 0, 0, 1.09987, 22.5537, -15.6195)",
+              "translate": "none",
+              "animation": "40s ease-in-out -19s infinite alternate fog-drift"
+            },
+            {
+              "cls": "fog-wisp",
+              "opacity": "0.43",
+              "transform": "matrix(-1.0719, 0, 0, 1.0719, -138.046, 5.95213)",
+              "translate": "none",
+              "animation": "56s ease-in-out -41s infinite alternate fog-counterdrift"
+            },
+            {
+              "cls": "fog-wisp",
+              "opacity": "0.29",
+              "transform": "matrix(1.03394, 0, 0, 1.03394, 203.459, 4.98634)",
+              "translate": "none",
+              "animation": "70s ease-in-out -62s infinite alternate fog-drift"
+            },
+            {
+              "cls": "spirit",
+              "opacity": "1",
+              "transform": "none",
+              "translate": "none",
+              "animation": "none"
+            }
+          ],
+          "animations": [
+            {
+              "duration": 1100,
+              "currentTime": 1254.542999987537
+            },
+            {
+              "name": "loader-breathe",
+              "duration": 3400,
+              "currentTime": 2458.711999991722
+            },
+            {
+              "name": "loader-drift-a",
+              "duration": 26000,
+              "currentTime": 2458.711999991722
+            },
+            {
+              "name": "loader-drift-b",
+              "duration": 44000,
+              "currentTime": 2458.711999991722
+            },
+            {
+              "name": "loader-flicker",
+              "duration": 5000,
+              "currentTime": 2509.474
+            },
+            {
+              "name": "slow-spin",
+              "duration": 7000,
+              "currentTime": 2458.711999991722
+            },
+            {
+              "name": "loader-drift-b",
+              "duration": 32000,
+              "currentTime": 2458.711999991722
+            },
+            {
+              "name": "loader-drift-a",
+              "duration": 38000,
+              "currentTime": 2458.711999991722
+            },
+            {
+              "name": "loader-dot",
+              "duration": 1200,
+              "currentTime": 2458.711999991722
+            },
+            {
+              "name": "loader-dot",
+              "duration": 1200,
+              "currentTime": 2458.711999991722
+            },
+            {
+              "name": "loader-dot",
+              "duration": 1200,
+              "currentTime": 2458.711999991722
+            },
+            {
+              "name": "loader-progress",
+              "duration": 2800,
+              "currentTime": 2458.711999991722
+            },
+            {
+              "name": "hero-in",
+              "duration": 1500,
+              "currentTime": 1020.3
+            },
+            {
+              "name": "slow-spin",
+              "duration": 24000,
+              "currentTime": 2458.711999991722
+            },
+            {
+              "name": "hero-in",
+              "duration": 1400,
+              "currentTime": 1020.3
+            },
+            {
+              "name": "hero-in",
+              "duration": 1400,
+              "currentTime": 1020.3
+            },
+            {
+              "name": "fog-drift",
+              "duration": 40000,
+              "currentTime": 2391.8330000008455
+            },
+            {
+              "name": "fog-counterdrift",
+              "duration": 56000,
+              "currentTime": 2391.8330000008455
+            },
+            {
+              "name": "fog-drift",
+              "duration": 70000,
+              "currentTime": 2391.8330000008455
+            },
+            {
+              "name": "marquee",
+              "duration": 35000,
+              "currentTime": 2458.711999991722
+            },
+            {
+              "name": "fog-drift",
+              "duration": 40000,
+              "currentTime": 2391.8330000008455
+            },
+            {
+              "name": "fog-counterdrift",
+              "duration": 56000,
+              "currentTime": 2391.8330000008455
+            },
+            {
+              "name": "fog-drift",
+              "duration": 70000,
+              "currentTime": 2391.8330000008455
+            },
+            {
+              "name": "spirit-pulse",
+              "duration": 3200,
+              "currentTime": 2508.9
+            },
+            {
+              "name": "spirit-pulse",
+              "duration": 3700,
+              "currentTime": 2508.9
+            },
+            {
+              "name": "spirit-pulse",
+              "duration": 4300,
+              "currentTime": 2508.9
+            }
+          ]
+        }
+      },
+      {
+        "afterAdditionalMs": 1000,
+        "state": {
+          "timestamp": "2026-10-04T00:04:36.749Z",
+          "perf": 4122.600000023842,
+          "navigationStart": 1791072272626.8,
+          "root": "smooth-scroll motion-ready",
+          "ready": "complete",
+          "fonts": "loaded",
+          "scrollY": 0,
+          "glitch": false,
+          "currentTopic": "dam",
+          "video": [
+            {
+              "src": "",
+              "currentTime": 0,
+              "duration": null,
+              "readyState": 0,
+              "seeking": false,
+              "opacity": "0"
+            }
+          ],
+          "layers": [
+            {
+              "cls": "flashlight",
+              "opacity": "1",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)",
+              "translate": "none",
+              "animation": "none"
+            },
+            {
+              "cls": "",
+              "opacity": "1",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)",
+              "translate": "0px",
+              "animation": "1.5s cubic-bezier(0.2, 0.7, 0.2, 1) both hero-in"
+            },
+            {
+              "cls": "hero-bottom",
+              "opacity": "1",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)",
+              "translate": "none",
+              "animation": "1.4s 0.2s both hero-in"
+            },
+            {
+              "cls": "fog-wisp",
+              "opacity": "0.53",
+              "transform": "matrix(1.0988, 0, 0, 1.0988, 25.2909, -24.9603)",
+              "translate": "none",
+              "animation": "40s ease-in-out -19s infinite alternate fog-drift"
+            },
+            {
+              "cls": "fog-wisp",
+              "opacity": "0.43",
+              "transform": "matrix(-1.0763, 0, 0, 1.0763, -155.712, 6.62335)",
+              "translate": "none",
+              "animation": "56s ease-in-out -41s infinite alternate fog-counterdrift"
+            },
+            {
+              "cls": "fog-wisp",
+              "opacity": "0.29",
+              "transform": "matrix(1.0324, 0, 0, 1.0324, 207.65, 8.92587)",
+              "translate": "none",
+              "animation": "70s ease-in-out -62s infinite alternate fog-drift"
+            },
+            {
+              "cls": "fog-wisp",
+              "opacity": "0.53",
+              "transform": "matrix(1.0988, 0, 0, 1.0988, 25.2909, -15.282)",
+              "translate": "none",
+              "animation": "40s ease-in-out -19s infinite alternate fog-drift"
+            },
+            {
+              "cls": "fog-wisp",
+              "opacity": "0.43",
+              "transform": "matrix(-1.0763, 0, 0, 1.0763, -155.712, 4.05511)",
+              "translate": "none",
+              "animation": "56s ease-in-out -41s infinite alternate fog-counterdrift"
+            },
+            {
+              "cls": "fog-wisp",
+              "opacity": "0.29",
+              "transform": "matrix(1.0324, 0, 0, 1.0324, 207.65, 5.46475)",
+              "translate": "none",
+              "animation": "70s ease-in-out -62s infinite alternate fog-drift"
+            },
+            {
+              "cls": "spirit",
+              "opacity": "1",
+              "transform": "none",
+              "translate": "none",
+              "animation": "none"
+            }
+          ],
+          "animations": [
+            {
+              "name": "slow-spin",
+              "duration": 24000,
+              "currentTime": 3662.8119999917226
+            },
+            {
+              "name": "fog-drift",
+              "duration": 40000,
+              "currentTime": 3595.933000000846
+            },
+            {
+              "name": "fog-counterdrift",
+              "duration": 56000,
+              "currentTime": 3595.933000000846
+            },
+            {
+              "name": "fog-drift",
+              "duration": 70000,
+              "currentTime": 3595.933000000846
+            },
+            {
+              "name": "marquee",
+              "duration": 35000,
+              "currentTime": 3662.8119999917226
+            },
+            {
+              "name": "fog-drift",
+              "duration": 40000,
+              "currentTime": 3595.933000000846
+            },
+            {
+              "name": "fog-counterdrift",
+              "duration": 56000,
+              "currentTime": 3595.933000000846
+            },
+            {
+              "name": "fog-drift",
+              "duration": 70000,
+              "currentTime": 3595.933000000846
+            },
+            {
+              "name": "spirit-pulse",
+              "duration": 3200,
+              "currentTime": 3713.0000000000005
+            },
+            {
+              "name": "spirit-pulse",
+              "duration": 3700,
+              "currentTime": 3713.0000000000005
+            },
+            {
+              "name": "spirit-pulse",
+              "duration": 4300,
+              "currentTime": 3713.0000000000005
+            }
+          ]
+        }
+      },
+      {
+        "afterAdditionalMs": 1100,
+        "state": {
+          "timestamp": "2026-10-04T00:04:38.019Z",
+          "perf": 5392.4000000059605,
+          "navigationStart": 1791072272626.8,
+          "root": "smooth-scroll motion-ready",
+          "ready": "complete",
+          "fonts": "loaded",
+          "scrollY": 0,
+          "glitch": false,
+          "currentTopic": "dam",
+          "video": [
+            {
+              "src": "",
+              "currentTime": 0,
+              "duration": null,
+              "readyState": 0,
+              "seeking": false,
+              "opacity": "0"
+            }
+          ],
+          "layers": [
+            {
+              "cls": "flashlight",
+              "opacity": "1",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)",
+              "translate": "none",
+              "animation": "none"
+            },
+            {
+              "cls": "",
+              "opacity": "1",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)",
+              "translate": "0px",
+              "animation": "1.5s cubic-bezier(0.2, 0.7, 0.2, 1) both hero-in"
+            },
+            {
+              "cls": "hero-bottom",
+              "opacity": "1",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)",
+              "translate": "none",
+              "animation": "1.4s 0.2s both hero-in"
+            },
+            {
+              "cls": "fog-wisp",
+              "opacity": "0.53",
+              "transform": "matrix(1.0964, 0, 0, 1.0964, 31.3801, -23.7342)",
+              "translate": "none",
+              "animation": "40s ease-in-out -19s infinite alternate fog-drift"
+            },
+            {
+              "cls": "fog-wisp",
+              "opacity": "0.43",
+              "transform": "matrix(-1.08089, 0, 0, 1.08089, -174.124, 3.39391)",
+              "translate": "none",
+              "animation": "56s ease-in-out -41s infinite alternate fog-counterdrift"
+            },
+            {
+              "cls": "fog-wisp",
+              "opacity": "0.29",
+              "transform": "matrix(1.0312, 0, 0, 1.0312, 210.922, 9.5361)",
+              "translate": "none",
+              "animation": "70s ease-in-out -62s infinite alternate fog-drift"
+            },
+            {
+              "cls": "fog-wisp",
+              "opacity": "0.53",
+              "transform": "matrix(1.0964, 0, 0, 1.0964, 31.3801, -14.5314)",
+              "translate": "none",
+              "animation": "40s ease-in-out -19s infinite alternate fog-drift"
+            },
+            {
+              "cls": "fog-wisp",
+              "opacity": "0.43",
+              "transform": "matrix(-1.08089, 0, 0, 1.08089, -174.124, 2.07791)",
+              "translate": "none",
+              "animation": "56s ease-in-out -41s infinite alternate fog-counterdrift"
+            },
+            {
+              "cls": "fog-wisp",
+              "opacity": "0.29",
+              "transform": "matrix(1.0312, 0, 0, 1.0312, 210.922, 5.83835)",
+              "translate": "none",
+              "animation": "70s ease-in-out -62s infinite alternate fog-drift"
+            },
+            {
+              "cls": "spirit",
+              "opacity": "1",
+              "transform": "none",
+              "translate": "none",
+              "animation": "none"
+            }
+          ],
+          "animations": [
+            {
+              "name": "slow-spin",
+              "duration": 24000,
+              "currentTime": 4934.111999991722
+            },
+            {
+              "name": "fog-drift",
+              "duration": 40000,
+              "currentTime": 4867.233000000845
+            },
+            {
+              "name": "fog-counterdrift",
+              "duration": 56000,
+              "currentTime": 4867.233000000845
+            },
+            {
+              "name": "fog-drift",
+              "duration": 70000,
+              "currentTime": 4867.233000000845
+            },
+            {
+              "name": "marquee",
+              "duration": 35000,
+              "currentTime": 4934.111999991722
+            },
+            {
+              "name": "fog-drift",
+              "duration": 40000,
+              "currentTime": 4867.233000000845
+            },
+            {
+              "name": "fog-counterdrift",
+              "duration": 56000,
+              "currentTime": 4867.233000000845
+            },
+            {
+              "name": "fog-drift",
+              "duration": 70000,
+              "currentTime": 4867.233000000845
+            },
+            {
+              "name": "spirit-pulse",
+              "duration": 3200,
+              "currentTime": 4984.299999999999
+            },
+            {
+              "name": "spirit-pulse",
+              "duration": 3700,
+              "currentTime": 4984.299999999999
+            },
+            {
+              "name": "spirit-pulse",
+              "duration": 4300,
+              "currentTime": 4984.299999999999
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "reduced": true,
+    "environment": {
+      "timestamp": "2026-10-04T00:04:43.211Z",
+      "url": "https://www.hauntedbouldercity.com/",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+      "viewport": [
+        1440,
+        900
+      ],
+      "dpr": 1,
+      "visualViewport": {
+        "width": 1425,
+        "height": 900,
+        "scale": 1
+      },
+      "scroll": [
+        0,
+        0,
+        1425,
+        11816
+      ],
+      "language": "en-US",
+      "timezone": "Africa/Cairo",
+      "direction": "ltr",
+      "touch": 0,
+      "dark": false,
+      "reduced": true,
+      "fonts": "loaded",
+      "ready": "complete"
+    },
+    "frames": [
+      {
+        "afterAdditionalMs": 100,
+        "state": {
+          "timestamp": "2026-10-04T00:04:38.410Z",
+          "perf": 195.19999998807907,
+          "navigationStart": 1791072278215.6,
+          "root": "is-loading",
+          "ready": "loading",
+          "fonts": "loaded",
+          "scrollY": 0,
+          "glitch": false,
+          "video": [],
+          "layers": [],
+          "animations": []
+        }
+      },
+      {
+        "afterAdditionalMs": 300,
+        "state": {
+          "timestamp": "2026-10-04T00:04:39.029Z",
+          "perf": 813.5999999940395,
+          "navigationStart": 1791072278215.6,
+          "root": "",
+          "ready": "complete",
+          "fonts": "loaded",
+          "scrollY": 0,
+          "glitch": false,
+          "currentTopic": "dam",
+          "video": [
+            {
+              "src": "",
+              "currentTime": 0,
+              "duration": null,
+              "readyState": 0,
+              "seeking": false,
+              "opacity": "0"
+            }
+          ],
+          "layers": [
+            {
+              "cls": "flashlight",
+              "opacity": "1",
+              "transform": "none",
+              "translate": "none",
+              "animation": "none"
+            },
+            {
+              "cls": "",
+              "opacity": "1",
+              "transform": "none",
+              "translate": "none",
+              "animation": "none"
+            },
+            {
+              "cls": "hero-bottom",
+              "opacity": "1",
+              "transform": "none",
+              "translate": "none",
+              "animation": "none"
+            },
+            {
+              "cls": "fog-wisp",
+              "opacity": "0.53",
+              "transform": "matrix(1.04, 0, 0, 1.04, -200.07, 20.4613)",
+              "translate": "none",
+              "animation": "none"
+            },
+            {
+              "cls": "fog-wisp",
+              "opacity": "0.43",
+              "transform": "matrix(1.04, 0, 0, 1.04, -225.72, 20.1094)",
+              "translate": "none",
+              "animation": "none"
+            },
+            {
+              "cls": "fog-wisp",
+              "opacity": "0.29",
+              "transform": "none",
+              "translate": "none",
+              "animation": "none"
+            },
+            {
+              "cls": "fog-wisp",
+              "opacity": "0.53",
+              "transform": "matrix(1.04, 0, 0, 1.04, -200.07, 12.5275)",
+              "translate": "none",
+              "animation": "none"
+            },
+            {
+              "cls": "fog-wisp",
+              "opacity": "0.43",
+              "transform": "matrix(1.04, 0, 0, 1.04, -225.72, 12.3119)",
+              "translate": "none",
+              "animation": "none"
+            },
+            {
+              "cls": "fog-wisp",
+              "opacity": "0.29",
+              "transform": "none",
+              "translate": "none",
+              "animation": "none"
+            },
+            {
+              "cls": "spirit",
+              "opacity": "1",
+              "transform": "none",
+              "translate": "none",
+              "animation": "none"
+            }
+          ],
+          "animations": []
+        }
+      },
+      {
+        "afterAdditionalMs": 700,
+        "state": {
+          "timestamp": "2026-10-04T00:04:39.852Z",
+          "perf": 1636.800000011921,
+          "navigationStart": 1791072278215.6,
+          "root": "",
+          "ready": "complete",
+          "fonts": "loaded",
+          "scrollY": 0,
+          "glitch": false,
+          "currentTopic": "dam",
+          "video": [
+            {
+              "src": "",
+              "currentTime": 0,
+              "duration": null,
+              "readyState": 0,
+              "seeking": false,
+              "opacity": "0"
+            }
+          ],
+          "layers": [
+            {
+              "cls": "flashlight",
+              "opacity": "1",
+              "transform": "none",
+              "translate": "none",
+              "animation": "none"
+            },
+            {
+              "cls": "",
+              "opacity": "1",
+              "transform": "none",
+              "translate": "none",
+              "animation": "none"
+            },
+            {
+              "cls": "hero-bottom",
+              "opacity": "1",
+              "transform": "none",
+              "translate": "none",
+              "animation": "none"
+            },
+            {
+              "cls": "fog-wisp",
+              "opacity": "0.53",
+              "transform": "matrix(1.04, 0, 0, 1.04, -200.07, 20.4613)",
+              "translate": "none",
+              "animation": "none"
+            },
+            {
+              "cls": "fog-wisp",
+              "opacity": "0.43",
+              "transform": "matrix(1.04, 0, 0, 1.04, -225.72, 20.1094)",
+              "translate": "none",
+              "animation": "none"
+            },
+            {
+              "cls": "fog-wisp",
+              "opacity": "0.29",
+              "transform": "none",
+              "translate": "none",
+              "animation": "none"
+            },
+            {
+              "cls": "fog-wisp",
+              "opacity": "0.53",
+              "transform": "matrix(1.04, 0, 0, 1.04, -200.07, 12.5275)",
+              "translate": "none",
+              "animation": "none"
+            },
+            {
+              "cls": "fog-wisp",
+              "opacity": "0.43",
+              "transform": "matrix(1.04, 0, 0, 1.04, -225.72, 12.3119)",
+              "translate": "none",
+              "animation": "none"
+            },
+            {
+              "cls": "fog-wisp",
+              "opacity": "0.29",
+              "transform": "none",
+              "translate": "none",
+              "animation": "none"
+            },
+            {
+              "cls": "spirit",
+              "opacity": "1",
+              "transform": "none",
+              "translate": "none",
+              "animation": "none"
+            }
+          ],
+          "animations": []
+        }
+      },
+      {
+        "afterAdditionalMs": 800,
+        "state": {
+          "timestamp": "2026-10-04T00:04:40.765Z",
+          "perf": 2549.9000000059605,
+          "navigationStart": 1791072278215.6,
+          "root": "",
+          "ready": "complete",
+          "fonts": "loaded",
+          "scrollY": 0,
+          "glitch": false,
+          "currentTopic": "dam",
+          "video": [
+            {
+              "src": "",
+              "currentTime": 0,
+              "duration": null,
+              "readyState": 0,
+              "seeking": false,
+              "opacity": "0"
+            }
+          ],
+          "layers": [
+            {
+              "cls": "flashlight",
+              "opacity": "1",
+              "transform": "none",
+              "translate": "none",
+              "animation": "none"
+            },
+            {
+              "cls": "",
+              "opacity": "1",
+              "transform": "none",
+              "translate": "none",
+              "animation": "none"
+            },
+            {
+              "cls": "hero-bottom",
+              "opacity": "1",
+              "transform": "none",
+              "translate": "none",
+              "animation": "none"
+            },
+            {
+              "cls": "fog-wisp",
+              "opacity": "0.53",
+              "transform": "matrix(1.04, 0, 0, 1.04, -200.07, 20.4613)",
+              "translate": "none",
+              "animation": "none"
+            },
+            {
+              "cls": "fog-wisp",
+              "opacity": "0.43",
+              "transform": "matrix(1.04, 0, 0, 1.04, -225.72, 20.1094)",
+              "translate": "none",
+              "animation": "none"
+            },
+            {
+              "cls": "fog-wisp",
+              "opacity": "0.29",
+              "transform": "none",
+              "translate": "none",
+              "animation": "none"
+            },
+            {
+              "cls": "fog-wisp",
+              "opacity": "0.53",
+              "transform": "matrix(1.04, 0, 0, 1.04, -200.07, 12.5275)",
+              "translate": "none",
+              "animation": "none"
+            },
+            {
+              "cls": "fog-wisp",
+              "opacity": "0.43",
+              "transform": "matrix(1.04, 0, 0, 1.04, -225.72, 12.3119)",
+              "translate": "none",
+              "animation": "none"
+            },
+            {
+              "cls": "fog-wisp",
+              "opacity": "0.29",
+              "transform": "none",
+              "translate": "none",
+              "animation": "none"
+            },
+            {
+              "cls": "spirit",
+              "opacity": "1",
+              "transform": "none",
+              "translate": "none",
+              "animation": "none"
+            }
+          ],
+          "animations": []
+        }
+      },
+      {
+        "afterAdditionalMs": 1000,
+        "state": {
+          "timestamp": "2026-10-04T00:04:41.902Z",
+          "perf": 3687.199999988079,
+          "navigationStart": 1791072278215.6,
+          "root": "",
+          "ready": "complete",
+          "fonts": "loaded",
+          "scrollY": 0,
+          "glitch": false,
+          "currentTopic": "dam",
+          "video": [
+            {
+              "src": "",
+              "currentTime": 0,
+              "duration": null,
+              "readyState": 0,
+              "seeking": false,
+              "opacity": "0"
+            }
+          ],
+          "layers": [
+            {
+              "cls": "flashlight",
+              "opacity": "1",
+              "transform": "none",
+              "translate": "none",
+              "animation": "none"
+            },
+            {
+              "cls": "",
+              "opacity": "1",
+              "transform": "none",
+              "translate": "none",
+              "animation": "none"
+            },
+            {
+              "cls": "hero-bottom",
+              "opacity": "1",
+              "transform": "none",
+              "translate": "none",
+              "animation": "none"
+            },
+            {
+              "cls": "fog-wisp",
+              "opacity": "0.53",
+              "transform": "matrix(1.04, 0, 0, 1.04, -200.07, 20.4613)",
+              "translate": "none",
+              "animation": "none"
+            },
+            {
+              "cls": "fog-wisp",
+              "opacity": "0.43",
+              "transform": "matrix(1.04, 0, 0, 1.04, -225.72, 20.1094)",
+              "translate": "none",
+              "animation": "none"
+            },
+            {
+              "cls": "fog-wisp",
+              "opacity": "0.29",
+              "transform": "none",
+              "translate": "none",
+              "animation": "none"
+            },
+            {
+              "cls": "fog-wisp",
+              "opacity": "0.53",
+              "transform": "matrix(1.04, 0, 0, 1.04, -200.07, 12.5275)",
+              "translate": "none",
+              "animation": "none"
+            },
+            {
+              "cls": "fog-wisp",
+              "opacity": "0.43",
+              "transform": "matrix(1.04, 0, 0, 1.04, -225.72, 12.3119)",
+              "translate": "none",
+              "animation": "none"
+            },
+            {
+              "cls": "fog-wisp",
+              "opacity": "0.29",
+              "transform": "none",
+              "translate": "none",
+              "animation": "none"
+            },
+            {
+              "cls": "spirit",
+              "opacity": "1",
+              "transform": "none",
+              "translate": "none",
+              "animation": "none"
+            }
+          ],
+          "animations": []
+        }
+      },
+      {
+        "afterAdditionalMs": 1100,
+        "state": {
+          "timestamp": "2026-10-04T00:04:43.107Z",
+          "perf": 4892.199999988079,
+          "navigationStart": 1791072278215.6,
+          "root": "",
+          "ready": "complete",
+          "fonts": "loaded",
+          "scrollY": 0,
+          "glitch": false,
+          "currentTopic": "dam",
+          "video": [
+            {
+              "src": "",
+              "currentTime": 0,
+              "duration": null,
+              "readyState": 0,
+              "seeking": false,
+              "opacity": "0"
+            }
+          ],
+          "layers": [
+            {
+              "cls": "flashlight",
+              "opacity": "1",
+              "transform": "none",
+              "translate": "none",
+              "animation": "none"
+            },
+            {
+              "cls": "",
+              "opacity": "1",
+              "transform": "none",
+              "translate": "none",
+              "animation": "none"
+            },
+            {
+              "cls": "hero-bottom",
+              "opacity": "1",
+              "transform": "none",
+              "translate": "none",
+              "animation": "none"
+            },
+            {
+              "cls": "fog-wisp",
+              "opacity": "0.53",
+              "transform": "matrix(1.04, 0, 0, 1.04, -200.07, 20.4613)",
+              "translate": "none",
+              "animation": "none"
+            },
+            {
+              "cls": "fog-wisp",
+              "opacity": "0.43",
+              "transform": "matrix(1.04, 0, 0, 1.04, -225.72, 20.1094)",
+              "translate": "none",
+              "animation": "none"
+            },
+            {
+              "cls": "fog-wisp",
+              "opacity": "0.29",
+              "transform": "none",
+              "translate": "none",
+              "animation": "none"
+            },
+            {
+              "cls": "fog-wisp",
+              "opacity": "0.53",
+              "transform": "matrix(1.04, 0, 0, 1.04, -200.07, 12.5275)",
+              "translate": "none",
+              "animation": "none"
+            },
+            {
+              "cls": "fog-wisp",
+              "opacity": "0.43",
+              "transform": "matrix(1.04, 0, 0, 1.04, -225.72, 12.3119)",
+              "translate": "none",
+              "animation": "none"
+            },
+            {
+              "cls": "fog-wisp",
+              "opacity": "0.29",
+              "transform": "none",
+              "translate": "none",
+              "animation": "none"
+            },
+            {
+              "cls": "spirit",
+              "opacity": "1",
+              "transform": "none",
+              "translate": "none",
+              "animation": "none"
+            }
+          ],
+          "animations": []
+        }
+      }
+    ]
+  }
+]

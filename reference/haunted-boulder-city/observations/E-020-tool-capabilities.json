@@ -1,0 +1,67 @@
+{
+  "timestamp": "2026-10-03T23:50:01.244Z",
+  "capabilities": [
+    {
+      "status": "fulfilled",
+      "value": {
+        "content": [
+          {
+            "type": "text",
+            "text": "## Pages\n1: about:blank [selected]"
+          }
+        ]
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "content": [
+          {
+            "type": "text",
+            "text": "## Pages\n1: Monopane (polypane://browse/) [selected]\n2: Boulder City Ghost & UFO Walking Tour | Haunted... (https://www.hauntedbouldercity.com/#tickets)\n3: Boulder City Ghost & UFO Walking Tour | Haunted... (https://www.hauntedbouldercity.com/#tickets)\n4: Boulder City Ghost & UFO Walking Tour | Haunted... (https://www.hauntedbouldercity.com/#tickets)\n5: Polypane Panel (file:///C:/Program%20Files/Polypane/resources/app.asar/dist/html/panel.html#/)\n6: Boulder City Ghost & UFO Walking Tour | Haunted... (file:///C:/Program%20Files/Polypane/resources/app.asar/dist/html/index.html#/)\n7: Monopane - Monopane (file:///C:/Program%20Files/Polypane/resources/app.asar/dist/html/monopane.html)"
+          }
+        ]
+      }
+    }
+  ],
+  "polypaneProbe": [
+    {
+      "status": "fulfilled",
+      "value": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Script ran on page and returned:\n```json\n{\"url\":\"https://www.hauntedbouldercity.com/#tickets\",\"viewport\":[500,768],\"dpr\":1,\"scroll\":[0,2614],\"ua\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Polypane/31.0.0 Chrome/155.0.0.0 Safari/537.36\",\"title\":\"Boulder City Ghost & UFO Walking Tour | Haunted Boulder City\"}\n```"
+          }
+        ]
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Script ran on page and returned:\n```json\n{\"url\":\"https://www.hauntedbouldercity.com/#tickets\",\"viewport\":[320,564],\"dpr\":1,\"scroll\":[0,2623],\"ua\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Polypane/31.0.0 Chrome/155.0.0.0 Safari/537.36\",\"title\":\"Boulder City Ghost & UFO Walking Tour | Haunted Boulder City\"}\n```"
+          }
+        ]
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Script ran on page and returned:\n```json\n{\"url\":\"https://www.hauntedbouldercity.com/#tickets\",\"viewport\":[1280,800],\"dpr\":1,\"scroll\":[0,2891],\"ua\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Polypane/31.0.0 Chrome/155.0.0.0 Safari/537.36\",\"title\":\"Boulder City Ghost & UFO Walking Tour | Haunted Boulder City\"}\n```"
+          }
+        ]
+      }
+    }
+  ],
+  "limitations": [
+    "MCP file saves reject repo paths; inline artifacts copied using scoped local file writer.",
+    "Chrome stalled on awaiting lazy image decoding; subsequent calls did not return.",
+    "Polypane initial panes verified at 320x564,500x768,1280x800; synchronized states not assumed."
+  ]
+}

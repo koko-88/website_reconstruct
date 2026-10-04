@@ -1,0 +1,3994 @@
+{
+  "environment": {
+    "timestamp": "2026-10-03T23:59:03.158Z",
+    "url": "https://www.hauntedbouldercity.com/",
+    "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      390,
+      844
+    ],
+    "dpr": 1,
+    "visualViewport": {
+      "width": 390,
+      "height": 844,
+      "scale": 1
+    },
+    "scroll": [
+      0,
+      0,
+      390,
+      10603
+    ],
+    "language": "en-US",
+    "timezone": "Africa/Cairo",
+    "direction": "ltr",
+    "touch": 1,
+    "dark": false,
+    "reduced": false,
+    "fonts": "loaded",
+    "ready": "complete"
+  },
+  "observations": {
+    "timestamp": "2026-10-03T23:59:03.159Z",
+    "url": "https://www.hauntedbouldercity.com/",
+    "viewport": [
+      390,
+      844
+    ],
+    "dpr": 1,
+    "scroll": [
+      0,
+      0,
+      390,
+      10603
+    ],
+    "fonts": [
+      {
+        "family": "Display",
+        "weight": "400",
+        "status": "loaded"
+      },
+      {
+        "family": "Manticore",
+        "weight": "400",
+        "status": "loaded"
+      },
+      {
+        "family": "SpaceMono",
+        "weight": "400",
+        "status": "loaded"
+      }
+    ],
+    "elements": [
+      {
+        "selector": ".site-header",
+        "matches": [
+          {
+            "tag": "HEADER",
+            "id": "",
+            "class": "site-header",
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 390,
+              "h": 90,
+              "documentY": 0
+            },
+            "style": {
+              "display": "flex",
+              "position": "absolute",
+              "width": "390px",
+              "height": "90px",
+              "padding": "0px 24px",
+              "gap": "12px",
+              "gridTemplateColumns": "none",
+              "fontFamily": "Arial, Helvetica, sans-serif",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "fontWeight": "400",
+              "letterSpacing": "normal",
+              "color": "rgb(231, 233, 216)",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "objectFit": "fill",
+              "objectPosition": "50% 50%",
+              "overflow": "visible",
+              "zIndex": "50",
+              "transform": "none"
+            }
+          }
+        ]
+      },
+      {
+        "selector": ".hero",
+        "matches": [
+          {
+            "tag": "SECTION",
+            "id": "home",
+            "class": "hero",
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 390,
+              "h": 844,
+              "documentY": 0
+            },
+            "style": {
+              "display": "flex",
+              "position": "relative",
+              "width": "390px",
+              "height": "844px",
+              "padding": "124px 24px 55px",
+              "gap": "normal",
+              "gridTemplateColumns": "none",
+              "fontFamily": "Arial, Helvetica, sans-serif",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "fontWeight": "400",
+              "letterSpacing": "normal",
+              "color": "rgb(231, 233, 216)",
+              "backgroundColor": "rgb(9, 15, 14)",
+              "objectFit": "fill",
+              "objectPosition": "50% 50%",
+              "overflow": "hidden",
+              "zIndex": "auto",
+              "transform": "none"
+            }
+          }
+        ]
+      },
+      {
+        "selector": ".haunted-word",
+        "matches": [
+          {
+            "tag": "SPAN",
+            "id": "",
+            "class": "haunted-word",
+            "rect": {
+              "x": 24,
+              "y": 188,
+              "w": 342,
+              "h": 89,
+              "documentY": 188
+            },
+            "style": {
+              "display": "block",
+              "position": "static",
+              "width": "342px",
+              "height": "89px",
+              "padding": "0px 0px 3px",
+              "gap": "normal",
+              "gridTemplateColumns": "none",
+              "fontFamily": "Manticore, Display, Impact, \"Arial Narrow\", sans-serif",
+              "fontSize": "81.9px",
+              "lineHeight": "85.995px",
+              "fontWeight": "400",
+              "letterSpacing": "-2.8665px",
+              "color": "rgb(231, 233, 216)",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "objectFit": "fill",
+              "objectPosition": "50% 50%",
+              "overflow": "visible",
+              "zIndex": "auto",
+              "transform": "none"
+            }
+          }
+        ]
+      },
+      {
+        "selector": ".city-word",
+        "matches": [
+          {
+            "tag": "SPAN",
+            "id": "",
+            "class": "city-word",
+            "rect": {
+              "x": 24,
+              "y": 287,
+              "w": 342,
+              "h": 61.703125,
+              "documentY": 287
+            },
+            "style": {
+              "display": "block",
+              "position": "static",
+              "width": "342px",
+              "height": "61.7031px",
+              "padding": "0px",
+              "gap": "normal",
+              "gridTemplateColumns": "none",
+              "fontFamily": "Display, Impact, \"Arial Narrow\", sans-serif",
+              "fontSize": "67.08px",
+              "lineHeight": "61.7136px",
+              "fontWeight": "400",
+              "letterSpacing": "-1.3416px",
+              "color": "rgb(185, 203, 183)",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "objectFit": "fill",
+              "objectPosition": "50% 50%",
+              "overflow": "visible",
+              "zIndex": "auto",
+              "transform": "none"
+            }
+          }
+        ]
+      },
+      {
+        "selector": ".hero-intro",
+        "matches": [
+          {
+            "tag": "DIV",
+            "id": "",
+            "class": "hero-intro",
+            "rect": {
+              "x": 24,
+              "y": 581.8125,
+              "w": 283.625,
+              "h": 125.1875,
+              "documentY": 581.8125
+            },
+            "style": {
+              "display": "block",
+              "position": "static",
+              "width": "283.625px",
+              "height": "125.188px",
+              "padding": "0px",
+              "gap": "normal",
+              "gridTemplateColumns": "none",
+              "fontFamily": "Arial, Helvetica, sans-serif",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "fontWeight": "400",
+              "letterSpacing": "normal",
+              "color": "rgb(231, 233, 216)",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "objectFit": "fill",
+              "objectPosition": "50% 50%",
+              "overflow": "visible",
+              "zIndex": "auto",
+              "transform": "none"
+            }
+          }
+        ]
+      },
+      {
+        "selector": ".marquee",
+        "matches": [
+          {
+            "tag": "DIV",
+            "id": "",
+            "class": "marquee",
+            "rect": {
+              "x": -4.699395179748535,
+              "y": 825.804931640625,
+              "w": 399.4144287109375,
+              "h": 77.39013671875,
+              "documentY": 825.804931640625
+            },
+            "style": {
+              "display": "block",
+              "position": "relative",
+              "width": "397.797px",
+              "height": "67px",
+              "padding": "15px 0px",
+              "gap": "normal",
+              "gridTemplateColumns": "none",
+              "fontFamily": "Arial, Helvetica, sans-serif",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "fontWeight": "400",
+              "letterSpacing": "normal",
+              "color": "rgb(231, 233, 216)",
+              "backgroundColor": "rgb(24, 39, 32)",
+              "objectFit": "fill",
+              "objectPosition": "50% 50%",
+              "overflow": "hidden",
+              "zIndex": "2",
+              "transform": "matrix(0.999657, -0.0261769, 0.0261769, 0.999657, 0, 0)"
+            }
+          }
+        ]
+      },
+      {
+        "selector": ".intro",
+        "matches": [
+          {
+            "tag": "SECTION",
+            "id": "about",
+            "class": "intro section-pad",
+            "rect": {
+              "x": 0,
+              "y": 898,
+              "w": 390,
+              "h": 1090.515625,
+              "documentY": 898
+            },
+            "style": {
+              "display": "block",
+              "position": "relative",
+              "width": "390px",
+              "height": "1090.52px",
+              "padding": "60px 24px 65px",
+              "gap": "normal",
+              "gridTemplateColumns": "none",
+              "fontFamily": "Arial, Helvetica, sans-serif",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "fontWeight": "400",
+              "letterSpacing": "normal",
+              "color": "rgb(231, 233, 216)",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "objectFit": "fill",
+              "objectPosition": "50% 50%",
+              "overflow": "visible",
+              "zIndex": "auto",
+              "transform": "none"
+            }
+          }
+        ]
+      },
+      {
+        "selector": ".intro h2",
+        "matches": [
+          {
+            "tag": "H2",
+            "id": "",
+            "class": "reveal-word-block",
+            "rect": {
+              "x": 24,
+              "y": 1058,
+              "w": 342,
+              "h": 143.953125,
+              "documentY": 1058
+            },
+            "style": {
+              "display": "block",
+              "position": "static",
+              "width": "342px",
+              "height": "143.953px",
+              "padding": "0px",
+              "gap": "normal",
+              "gridTemplateColumns": "none",
+              "fontFamily": "Display, Impact, \"Arial Narrow\", sans-serif",
+              "fontSize": "41.73px",
+              "lineHeight": "47.9895px",
+              "fontWeight": "400",
+              "letterSpacing": "-0.4173px",
+              "color": "rgb(231, 233, 216)",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "objectFit": "fill",
+              "objectPosition": "50% 50%",
+              "overflow": "visible",
+              "zIndex": "auto",
+              "transform": "none"
+            }
+          }
+        ]
+      },
+      {
+        "selector": ".tour-facts",
+        "matches": [
+          {
+            "tag": "DIV",
+            "id": "",
+            "class": "tour-facts is-armed is-decoding",
+            "rect": {
+              "x": 24,
+              "y": 1771.515625,
+              "w": 342,
+              "h": 152,
+              "documentY": 1771.515625
+            },
+            "style": {
+              "display": "grid",
+              "position": "relative",
+              "width": "342px",
+              "height": "152px",
+              "padding": "24px 0px",
+              "gap": "normal",
+              "gridTemplateColumns": "110.406px 119.656px 111.938px",
+              "fontFamily": "Arial, Helvetica, sans-serif",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "fontWeight": "400",
+              "letterSpacing": "normal",
+              "color": "rgb(231, 233, 216)",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "objectFit": "fill",
+              "objectPosition": "50% 50%",
+              "overflow": "visible",
+              "zIndex": "auto",
+              "transform": "none"
+            }
+          }
+        ]
+      },
+      {
+        "selector": ".stories-scroll",
+        "matches": [
+          {
+            "tag": "SECTION",
+            "id": "stories",
+            "class": "stories-scroll",
+            "rect": {
+              "x": 0,
+              "y": 1988.515625,
+              "w": 390,
+              "h": 2278.78125,
+              "documentY": 1988.515625
+            },
+            "style": {
+              "display": "block",
+              "position": "relative",
+              "width": "390px",
+              "height": "2278.78px",
+              "padding": "0px",
+              "gap": "normal",
+              "gridTemplateColumns": "none",
+              "fontFamily": "Arial, Helvetica, sans-serif",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "fontWeight": "400",
+              "letterSpacing": "normal",
+              "color": "rgb(231, 233, 216)",
+              "backgroundColor": "rgb(12, 23, 19)",
+              "objectFit": "fill",
+              "objectPosition": "50% 50%",
+              "overflow": "visible",
+              "zIndex": "auto",
+              "transform": "none"
+            }
+          }
+        ]
+      },
+      {
+        "selector": ".stories-pin",
+        "matches": [
+          {
+            "tag": "DIV",
+            "id": "",
+            "class": "stories-pin",
+            "rect": {
+              "x": 0,
+              "y": 1988.515625,
+              "w": 390,
+              "h": 2278.78125,
+              "documentY": 1988.515625
+            },
+            "style": {
+              "display": "block",
+              "position": "relative",
+              "width": "390px",
+              "height": "2278.78px",
+              "padding": "0px",
+              "gap": "normal",
+              "gridTemplateColumns": "none",
+              "fontFamily": "Arial, Helvetica, sans-serif",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "fontWeight": "400",
+              "letterSpacing": "normal",
+              "color": "rgb(231, 233, 216)",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "objectFit": "fill",
+              "objectPosition": "50% 50%",
+              "overflow": "clip",
+              "zIndex": "auto",
+              "transform": "none"
+            }
+          }
+        ]
+      },
+      {
+        "selector": ".story-track",
+        "matches": [
+          {
+            "tag": "DIV",
+            "id": "",
+            "class": "story-track",
+            "rect": {
+              "x": 0,
+              "y": 1988.515625,
+              "w": 390,
+              "h": 2278.78125,
+              "documentY": 1988.515625
+            },
+            "style": {
+              "display": "block",
+              "position": "static",
+              "width": "390px",
+              "height": "2278.78px",
+              "padding": "0px",
+              "gap": "normal",
+              "gridTemplateColumns": "none",
+              "fontFamily": "Arial, Helvetica, sans-serif",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "fontWeight": "400",
+              "letterSpacing": "normal",
+              "color": "rgb(231, 233, 216)",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "objectFit": "fill",
+              "objectPosition": "50% 50%",
+              "overflow": "visible",
+              "zIndex": "auto",
+              "transform": "none"
+            }
+          }
+        ]
+      },
+      {
+        "selector": ".story",
+        "matches": [
+          {
+            "tag": "ARTICLE",
+            "id": "",
+            "class": "story story-ghost",
+            "rect": {
+              "x": 0,
+              "y": 1988.515625,
+              "w": 390,
+              "h": 759.59375,
+              "documentY": 1988.515625
+            },
+            "style": {
+              "display": "flex",
+              "position": "relative",
+              "width": "390px",
+              "height": "759.594px",
+              "padding": "95px 24px 65px",
+              "gap": "normal",
+              "gridTemplateColumns": "none",
+              "fontFamily": "Arial, Helvetica, sans-serif",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "fontWeight": "400",
+              "letterSpacing": "normal",
+              "color": "rgb(231, 233, 216)",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "objectFit": "fill",
+              "objectPosition": "50% 50%",
+              "overflow": "hidden",
+              "zIndex": "auto",
+              "transform": "none"
+            }
+          },
+          {
+            "tag": "ARTICLE",
+            "id": "",
+            "class": "story story-history",
+            "rect": {
+              "x": 0,
+              "y": 2748.109375,
+              "w": 390,
+              "h": 759.59375,
+              "documentY": 2748.109375
+            },
+            "style": {
+              "display": "flex",
+              "position": "relative",
+              "width": "390px",
+              "height": "759.594px",
+              "padding": "95px 24px 65px",
+              "gap": "normal",
+              "gridTemplateColumns": "none",
+              "fontFamily": "Arial, Helvetica, sans-serif",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "fontWeight": "400",
+              "letterSpacing": "normal",
+              "color": "rgb(231, 233, 216)",
+              "backgroundColor": "rgb(25, 42, 35)",
+              "objectFit": "fill",
+              "objectPosition": "50% 50%",
+              "overflow": "hidden",
+              "zIndex": "auto",
+              "transform": "none"
+            }
+          },
+          {
+            "tag": "ARTICLE",
+            "id": "",
+            "class": "story story-ufo",
+            "rect": {
+              "x": 0,
+              "y": 3507.703125,
+              "w": 390,
+              "h": 759.59375,
+              "documentY": 3507.703125
+            },
+            "style": {
+              "display": "flex",
+              "position": "relative",
+              "width": "390px",
+              "height": "759.594px",
+              "padding": "95px 24px 65px",
+              "gap": "normal",
+              "gridTemplateColumns": "none",
+              "fontFamily": "Arial, Helvetica, sans-serif",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "fontWeight": "400",
+              "letterSpacing": "normal",
+              "color": "rgb(231, 233, 216)",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "objectFit": "fill",
+              "objectPosition": "50% 50%",
+              "overflow": "hidden",
+              "zIndex": "auto",
+              "transform": "none"
+            }
+          }
+        ]
+      },
+      {
+        "selector": ".story h2",
+        "matches": [
+          {
+            "tag": "H2",
+            "id": "ghost-title",
+            "class": "",
+            "rect": {
+              "x": 24,
+              "y": 2263.904296875,
+              "w": 342,
+              "h": 162.703125,
+              "documentY": 2263.904296875
+            },
+            "style": {
+              "display": "block",
+              "position": "static",
+              "width": "342px",
+              "height": "162.703px",
+              "padding": "0px",
+              "gap": "normal",
+              "gridTemplateColumns": "none",
+              "fontFamily": "Display, Impact, \"Arial Narrow\", sans-serif",
+              "fontSize": "52.65px",
+              "lineHeight": "54.2295px",
+              "fontWeight": "400",
+              "letterSpacing": "-0.78975px",
+              "color": "rgb(231, 233, 216)",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "objectFit": "fill",
+              "objectPosition": "50% 50%",
+              "overflow": "visible",
+              "zIndex": "auto",
+              "transform": "none"
+            }
+          },
+          {
+            "tag": "H2",
+            "id": "history-title",
+            "class": "",
+            "rect": {
+              "x": 24,
+              "y": 3036.701171875,
+              "w": 342,
+              "h": 162.703125,
+              "documentY": 3036.701171875
+            },
+            "style": {
+              "display": "block",
+              "position": "static",
+              "width": "342px",
+              "height": "162.703px",
+              "padding": "0px",
+              "gap": "normal",
+              "gridTemplateColumns": "none",
+              "fontFamily": "Display, Impact, \"Arial Narrow\", sans-serif",
+              "fontSize": "52.65px",
+              "lineHeight": "54.2295px",
+              "fontWeight": "400",
+              "letterSpacing": "-0.78975px",
+              "color": "rgb(231, 233, 216)",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "objectFit": "fill",
+              "objectPosition": "50% 50%",
+              "overflow": "visible",
+              "zIndex": "auto",
+              "transform": "none"
+            }
+          },
+          {
+            "tag": "H2",
+            "id": "ufo-title",
+            "class": "",
+            "rect": {
+              "x": 24,
+              "y": 3796.294921875,
+              "w": 342,
+              "h": 162.703125,
+              "documentY": 3796.294921875
+            },
+            "style": {
+              "display": "block",
+              "position": "static",
+              "width": "342px",
+              "height": "162.703px",
+              "padding": "0px",
+              "gap": "normal",
+              "gridTemplateColumns": "none",
+              "fontFamily": "Display, Impact, \"Arial Narrow\", sans-serif",
+              "fontSize": "52.65px",
+              "lineHeight": "54.2295px",
+              "fontWeight": "400",
+              "letterSpacing": "-0.78975px",
+              "color": "rgb(231, 233, 216)",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "objectFit": "fill",
+              "objectPosition": "50% 50%",
+              "overflow": "visible",
+              "zIndex": "auto",
+              "transform": "none"
+            }
+          }
+        ]
+      },
+      {
+        "selector": ".story-controls",
+        "matches": [
+          {
+            "tag": "DIV",
+            "id": "",
+            "class": "story-controls",
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0,
+              "documentY": 0
+            },
+            "style": {
+              "display": "none",
+              "position": "absolute",
+              "width": "auto",
+              "height": "auto",
+              "padding": "0px",
+              "gap": "20px",
+              "gridTemplateColumns": "none",
+              "fontFamily": "Arial, Helvetica, sans-serif",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "fontWeight": "400",
+              "letterSpacing": "normal",
+              "color": "rgb(231, 233, 216)",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "objectFit": "fill",
+              "objectPosition": "50% 50%",
+              "overflow": "visible",
+              "zIndex": "3",
+              "transform": "none"
+            }
+          }
+        ]
+      },
+      {
+        "selector": ".tour-highlights",
+        "matches": [
+          {
+            "tag": "SECTION",
+            "id": "",
+            "class": "tour-highlights",
+            "rect": {
+              "x": 0,
+              "y": 4267.296875,
+              "w": 390,
+              "h": 1819.734375,
+              "documentY": 4267.296875
+            },
+            "style": {
+              "display": "block",
+              "position": "relative",
+              "width": "390px",
+              "height": "1819.73px",
+              "padding": "0px",
+              "gap": "normal",
+              "gridTemplateColumns": "none",
+              "fontFamily": "Arial, Helvetica, sans-serif",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "fontWeight": "400",
+              "letterSpacing": "normal",
+              "color": "rgb(231, 233, 216)",
+              "backgroundColor": "rgb(9, 15, 14)",
+              "objectFit": "fill",
+              "objectPosition": "50% 50%",
+              "overflow": "clip",
+              "zIndex": "auto",
+              "transform": "none"
+            }
+          }
+        ]
+      },
+      {
+        "selector": ".topic",
+        "matches": [
+          {
+            "tag": "LI",
+            "id": "",
+            "class": "topic reveal is-current",
+            "rect": {
+              "x": 24,
+              "y": 4506.146484375,
+              "w": 342,
+              "h": 198.296875,
+              "documentY": 4506.146484375
+            },
+            "style": {
+              "display": "list-item",
+              "position": "relative",
+              "width": "342px",
+              "height": "198.297px",
+              "padding": "24px 0px 32px 20px",
+              "gap": "normal",
+              "gridTemplateColumns": "none",
+              "fontFamily": "Arial, Helvetica, sans-serif",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "fontWeight": "400",
+              "letterSpacing": "normal",
+              "color": "rgb(231, 233, 216)",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "objectFit": "fill",
+              "objectPosition": "50% 50%",
+              "overflow": "visible",
+              "zIndex": "auto",
+              "transform": "matrix(1, 0, 0, 1, 0, 44.0994)"
+            }
+          },
+          {
+            "tag": "LI",
+            "id": "",
+            "class": "topic reveal",
+            "rect": {
+              "x": 24,
+              "y": 4704.79541015625,
+              "w": 342,
+              "h": 198.296875,
+              "documentY": 4704.79541015625
+            },
+            "style": {
+              "display": "list-item",
+              "position": "relative",
+              "width": "342px",
+              "height": "198.297px",
+              "padding": "24px 0px 32px 20px",
+              "gap": "normal",
+              "gridTemplateColumns": "none",
+              "fontFamily": "Arial, Helvetica, sans-serif",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "fontWeight": "400",
+              "letterSpacing": "normal",
+              "color": "rgb(231, 233, 216)",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "objectFit": "fill",
+              "objectPosition": "50% 50%",
+              "overflow": "visible",
+              "zIndex": "auto",
+              "transform": "matrix(1, 0, 0, 1, 0, 44.4518)"
+            }
+          },
+          {
+            "tag": "LI",
+            "id": "",
+            "class": "topic reveal",
+            "rect": {
+              "x": 24,
+              "y": 4903.09228515625,
+              "w": 342,
+              "h": 198.296875,
+              "documentY": 4903.09228515625
+            },
+            "style": {
+              "display": "list-item",
+              "position": "relative",
+              "width": "342px",
+              "height": "198.297px",
+              "padding": "24px 0px 32px 20px",
+              "gap": "normal",
+              "gridTemplateColumns": "none",
+              "fontFamily": "Arial, Helvetica, sans-serif",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "fontWeight": "400",
+              "letterSpacing": "normal",
+              "color": "rgb(231, 233, 216)",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "objectFit": "fill",
+              "objectPosition": "50% 50%",
+              "overflow": "visible",
+              "zIndex": "auto",
+              "transform": "matrix(1, 0, 0, 1, 0, 44.4518)"
+            }
+          },
+          {
+            "tag": "LI",
+            "id": "",
+            "class": "topic reveal",
+            "rect": {
+              "x": 24,
+              "y": 5101.38916015625,
+              "w": 342,
+              "h": 198.296875,
+              "documentY": 5101.38916015625
+            },
+            "style": {
+              "display": "list-item",
+              "position": "relative",
+              "width": "342px",
+              "height": "198.297px",
+              "padding": "24px 0px 32px 20px",
+              "gap": "normal",
+              "gridTemplateColumns": "none",
+              "fontFamily": "Arial, Helvetica, sans-serif",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "fontWeight": "400",
+              "letterSpacing": "normal",
+              "color": "rgb(231, 233, 216)",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "objectFit": "fill",
+              "objectPosition": "50% 50%",
+              "overflow": "visible",
+              "zIndex": "auto",
+              "transform": "matrix(1, 0, 0, 1, 0, 44.4518)"
+            }
+          },
+          {
+            "tag": "LI",
+            "id": "",
+            "class": "topic reveal",
+            "rect": {
+              "x": 24,
+              "y": 5299.68603515625,
+              "w": 342,
+              "h": 198.296875,
+              "documentY": 5299.68603515625
+            },
+            "style": {
+              "display": "list-item",
+              "position": "relative",
+              "width": "342px",
+              "height": "198.297px",
+              "padding": "24px 0px 32px 20px",
+              "gap": "normal",
+              "gridTemplateColumns": "none",
+              "fontFamily": "Arial, Helvetica, sans-serif",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "fontWeight": "400",
+              "letterSpacing": "normal",
+              "color": "rgb(231, 233, 216)",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "objectFit": "fill",
+              "objectPosition": "50% 50%",
+              "overflow": "visible",
+              "zIndex": "auto",
+              "transform": "matrix(1, 0, 0, 1, 0, 44.4518)"
+            }
+          },
+          {
+            "tag": "LI",
+            "id": "",
+            "class": "topic reveal",
+            "rect": {
+              "x": 24,
+              "y": 5498.07373046875,
+              "w": 342,
+              "h": 198.296875,
+              "documentY": 5498.07373046875
+            },
+            "style": {
+              "display": "list-item",
+              "position": "relative",
+              "width": "342px",
+              "height": "198.297px",
+              "padding": "24px 0px 32px 20px",
+              "gap": "normal",
+              "gridTemplateColumns": "none",
+              "fontFamily": "Arial, Helvetica, sans-serif",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "fontWeight": "400",
+              "letterSpacing": "normal",
+              "color": "rgb(231, 233, 216)",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "objectFit": "fill",
+              "objectPosition": "50% 50%",
+              "overflow": "visible",
+              "zIndex": "auto",
+              "transform": "matrix(1, 0, 0, 1, 0, 44.5423)"
+            }
+          },
+          {
+            "tag": "LI",
+            "id": "",
+            "class": "topic reveal",
+            "rect": {
+              "x": 24,
+              "y": 5696.6474609375,
+              "w": 342,
+              "h": 198.296875,
+              "documentY": 5696.6474609375
+            },
+            "style": {
+              "display": "list-item",
+              "position": "relative",
+              "width": "342px",
+              "height": "198.297px",
+              "padding": "24px 0px 32px 20px",
+              "gap": "normal",
+              "gridTemplateColumns": "none",
+              "fontFamily": "Arial, Helvetica, sans-serif",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "fontWeight": "400",
+              "letterSpacing": "normal",
+              "color": "rgb(231, 233, 216)",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "objectFit": "fill",
+              "objectPosition": "50% 50%",
+              "overflow": "visible",
+              "zIndex": "auto",
+              "transform": "matrix(1, 0, 0, 1, 0, 44.8192)"
+            }
+          },
+          {
+            "tag": "LI",
+            "id": "",
+            "class": "topic reveal",
+            "rect": {
+              "x": 24,
+              "y": 5894.9443359375,
+              "w": 342,
+              "h": 171.90625,
+              "documentY": 5894.9443359375
+            },
+            "style": {
+              "display": "list-item",
+              "position": "relative",
+              "width": "342px",
+              "height": "171.906px",
+              "padding": "24px 0px 32px 20px",
+              "gap": "normal",
+              "gridTemplateColumns": "none",
+              "fontFamily": "Arial, Helvetica, sans-serif",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "fontWeight": "400",
+              "letterSpacing": "normal",
+              "color": "rgb(231, 233, 216)",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "objectFit": "fill",
+              "objectPosition": "50% 50%",
+              "overflow": "visible",
+              "zIndex": "auto",
+              "transform": "matrix(1, 0, 0, 1, 0, 44.8192)"
+            }
+          }
+        ]
+      },
+      {
+        "selector": ".zombies",
+        "matches": [
+          {
+            "tag": "SECTION",
+            "id": "zombies",
+            "class": "zombies section-pad",
+            "rect": {
+              "x": 0,
+              "y": 6087.03125,
+              "w": 390,
+              "h": 905.265625,
+              "documentY": 6087.03125
+            },
+            "style": {
+              "display": "block",
+              "position": "relative",
+              "width": "390px",
+              "height": "905.266px",
+              "padding": "38px 24px 65px",
+              "gap": "normal",
+              "gridTemplateColumns": "none",
+              "fontFamily": "Arial, Helvetica, sans-serif",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "fontWeight": "400",
+              "letterSpacing": "normal",
+              "color": "rgb(231, 233, 216)",
+              "backgroundColor": "rgb(25, 42, 35)",
+              "objectFit": "fill",
+              "objectPosition": "50% 50%",
+              "overflow": "visible",
+              "zIndex": "auto",
+              "transform": "none"
+            }
+          }
+        ]
+      },
+      {
+        "selector": ".zombies h2",
+        "matches": [
+          {
+            "tag": "H2",
+            "id": "",
+            "class": "reveal",
+            "rect": {
+              "x": 24,
+              "y": 6261.00927734375,
+              "w": 342,
+              "h": 163.78125,
+              "documentY": 6261.00927734375
+            },
+            "style": {
+              "display": "block",
+              "position": "static",
+              "width": "342px",
+              "height": "163.781px",
+              "padding": "0px",
+              "gap": "normal",
+              "gridTemplateColumns": "none",
+              "fontFamily": "Display, Impact, \"Arial Narrow\", sans-serif",
+              "fontSize": "54.6px",
+              "lineHeight": "54.6px",
+              "fontWeight": "400",
+              "letterSpacing": "normal",
+              "color": "rgb(231, 233, 216)",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "objectFit": "fill",
+              "objectPosition": "50% 50%",
+              "overflow": "visible",
+              "zIndex": "auto",
+              "transform": "matrix(1, 0, 0, 1, 0, 44.9782)"
+            }
+          }
+        ]
+      },
+      {
+        "selector": ".plan",
+        "matches": [
+          {
+            "tag": "SECTION",
+            "id": "plan",
+            "class": "plan section-pad",
+            "rect": {
+              "x": 0,
+              "y": 6992.296875,
+              "w": 390,
+              "h": 1223.609375,
+              "documentY": 6992.296875
+            },
+            "style": {
+              "display": "block",
+              "position": "relative",
+              "width": "390px",
+              "height": "1223.61px",
+              "padding": "38px 24px 65px",
+              "gap": "normal",
+              "gridTemplateColumns": "none",
+              "fontFamily": "Arial, Helvetica, sans-serif",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "fontWeight": "400",
+              "letterSpacing": "normal",
+              "color": "rgb(231, 233, 216)",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "objectFit": "fill",
+              "objectPosition": "50% 50%",
+              "overflow": "visible",
+              "zIndex": "auto",
+              "transform": "none"
+            }
+          }
+        ]
+      },
+      {
+        "selector": ".faq",
+        "matches": [
+          {
+            "tag": "DIV",
+            "id": "",
+            "class": "faq",
+            "rect": {
+              "x": 24,
+              "y": 7456.90625,
+              "w": 342,
+              "h": 694,
+              "documentY": 7456.90625
+            },
+            "style": {
+              "display": "block",
+              "position": "static",
+              "width": "342px",
+              "height": "694px",
+              "padding": "0px",
+              "gap": "normal",
+              "gridTemplateColumns": "none",
+              "fontFamily": "Arial, Helvetica, sans-serif",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "fontWeight": "400",
+              "letterSpacing": "normal",
+              "color": "rgb(231, 233, 216)",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "objectFit": "fill",
+              "objectPosition": "50% 50%",
+              "overflow": "visible",
+              "zIndex": "auto",
+              "transform": "none"
+            }
+          }
+        ]
+      },
+      {
+        "selector": ".local",
+        "matches": [
+          {
+            "tag": "SECTION",
+            "id": "local",
+            "class": "local section-pad",
+            "rect": {
+              "x": 0,
+              "y": 8215.90625,
+              "w": 390,
+              "h": 909.65625,
+              "documentY": 8215.90625
+            },
+            "style": {
+              "display": "block",
+              "position": "relative",
+              "width": "390px",
+              "height": "909.656px",
+              "padding": "38px 24px 65px",
+              "gap": "normal",
+              "gridTemplateColumns": "none",
+              "fontFamily": "Arial, Helvetica, sans-serif",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "fontWeight": "400",
+              "letterSpacing": "normal",
+              "color": "rgb(231, 233, 216)",
+              "backgroundColor": "rgb(20, 34, 28)",
+              "objectFit": "fill",
+              "objectPosition": "50% 50%",
+              "overflow": "visible",
+              "zIndex": "auto",
+              "transform": "none"
+            }
+          }
+        ]
+      },
+      {
+        "selector": ".tickets",
+        "matches": [
+          {
+            "tag": "SECTION",
+            "id": "tickets",
+            "class": "tickets section-pad",
+            "rect": {
+              "x": 0,
+              "y": 9125.5625,
+              "w": 390,
+              "h": 800,
+              "documentY": 9125.5625
+            },
+            "style": {
+              "display": "flex",
+              "position": "relative",
+              "width": "390px",
+              "height": "800px",
+              "padding": "38px 24px 65px",
+              "gap": "normal",
+              "gridTemplateColumns": "none",
+              "fontFamily": "Arial, Helvetica, sans-serif",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "fontWeight": "400",
+              "letterSpacing": "normal",
+              "color": "rgb(231, 233, 216)",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "objectFit": "fill",
+              "objectPosition": "50% 50%",
+              "overflow": "hidden",
+              "zIndex": "auto",
+              "transform": "none"
+            }
+          }
+        ]
+      },
+      {
+        "selector": ".tickets h2",
+        "matches": [
+          {
+            "tag": "H2",
+            "id": "",
+            "class": "reveal",
+            "rect": {
+              "x": 24,
+              "y": 9355.90625,
+              "w": 342,
+              "h": 164.25,
+              "documentY": 9355.90625
+            },
+            "style": {
+              "display": "block",
+              "position": "static",
+              "width": "342px",
+              "height": "164.25px",
+              "padding": "0px",
+              "gap": "normal",
+              "gridTemplateColumns": "none",
+              "fontFamily": "Display, Impact, \"Arial Narrow\", sans-serif",
+              "fontSize": "76.05px",
+              "lineHeight": "82.134px",
+              "fontWeight": "400",
+              "letterSpacing": "normal",
+              "color": "rgb(231, 233, 216)",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "objectFit": "fill",
+              "objectPosition": "50% 50%",
+              "overflow": "visible",
+              "zIndex": "auto",
+              "transform": "matrix(1, 0, 0, 1, 0, 45)"
+            }
+          }
+        ]
+      },
+      {
+        "selector": ".button-large",
+        "matches": [
+          {
+            "tag": "A",
+            "id": "",
+            "class": "button button-large",
+            "rect": {
+              "x": 75,
+              "y": 9616.328125,
+              "w": 240,
+              "h": 73.125,
+              "documentY": 9616.328125
+            },
+            "style": {
+              "display": "inline-flex",
+              "position": "static",
+              "width": "240px",
+              "height": "73.125px",
+              "padding": "23px 30px",
+              "gap": "40px",
+              "gridTemplateColumns": "none",
+              "fontFamily": "Arial, Helvetica, sans-serif",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "fontWeight": "700",
+              "letterSpacing": "normal",
+              "color": "rgb(9, 15, 14)",
+              "backgroundColor": "rgb(217, 180, 123)",
+              "objectFit": "fill",
+              "objectPosition": "50% 50%",
+              "overflow": "visible",
+              "zIndex": "auto",
+              "transform": "none"
+            }
+          }
+        ]
+      },
+      {
+        "selector": ".creator-credit",
+        "matches": [
+          {
+            "tag": "ASIDE",
+            "id": "creator",
+            "class": "creator-credit",
+            "rect": {
+              "x": 0,
+              "y": 9925.5625,
+              "w": 390,
+              "h": 525.921875,
+              "documentY": 9925.5625
+            },
+            "style": {
+              "display": "grid",
+              "position": "relative",
+              "width": "390px",
+              "height": "525.922px",
+              "padding": "46px 24px 42px",
+              "gap": "34px",
+              "gridTemplateColumns": "342px",
+              "fontFamily": "Arial, Helvetica, sans-serif",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "fontWeight": "400",
+              "letterSpacing": "normal",
+              "color": "rgb(231, 233, 216)",
+              "backgroundColor": "rgb(17, 29, 25)",
+              "objectFit": "fill",
+              "objectPosition": "50% 50%",
+              "overflow": "visible",
+              "zIndex": "auto",
+              "transform": "none"
+            }
+          }
+        ]
+      },
+      {
+        "selector": "footer",
+        "matches": [
+          {
+            "tag": "FOOTER",
+            "id": "",
+            "class": "",
+            "rect": {
+              "x": 0,
+              "y": 10451.484375,
+              "w": 390,
+              "h": 151.390625,
+              "documentY": 10451.484375
+            },
+            "style": {
+              "display": "block",
+              "position": "static",
+              "width": "390px",
+              "height": "151.391px",
+              "padding": "32px 24px",
+              "gap": "normal",
+              "gridTemplateColumns": "none",
+              "fontFamily": "Arial, Helvetica, sans-serif",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "fontWeight": "400",
+              "letterSpacing": "normal",
+              "color": "rgb(231, 233, 216)",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "objectFit": "fill",
+              "objectPosition": "50% 50%",
+              "overflow": "visible",
+              "zIndex": "auto",
+              "transform": "none"
+            }
+          }
+        ]
+      },
+      {
+        "selector": ".site-nav",
+        "matches": [
+          {
+            "tag": "NAV",
+            "id": "site-nav",
+            "class": "site-nav",
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0,
+              "documentY": 0
+            },
+            "style": {
+              "display": "none",
+              "position": "fixed",
+              "width": "auto",
+              "height": "auto",
+              "padding": "0px",
+              "gap": "normal",
+              "gridTemplateColumns": "none",
+              "fontFamily": "Arial, Helvetica, sans-serif",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "fontWeight": "400",
+              "letterSpacing": "normal",
+              "color": "rgb(231, 233, 216)",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "objectFit": "fill",
+              "objectPosition": "50% 50%",
+              "overflow": "auto",
+              "zIndex": "49",
+              "transform": "none"
+            }
+          }
+        ]
+      },
+      {
+        "selector": ".ticket-modal-panel",
+        "matches": [
+          {
+            "tag": "DIV",
+            "id": "",
+            "class": "ticket-modal-panel",
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0,
+              "documentY": 0
+            },
+            "style": {
+              "display": "flex",
+              "position": "relative",
+              "width": "100%",
+              "height": "100%",
+              "padding": "18px 20px 14px",
+              "gap": "normal",
+              "gridTemplateColumns": "none",
+              "fontFamily": "Arial, Helvetica, sans-serif",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "fontWeight": "400",
+              "letterSpacing": "normal",
+              "color": "rgb(231, 233, 216)",
+              "backgroundColor": "rgb(14, 27, 22)",
+              "objectFit": "fill",
+              "objectPosition": "50% 50%",
+              "overflow": "auto",
+              "zIndex": "auto",
+              "transform": "none"
+            }
+          }
+        ]
+      }
+    ],
+    "assets": [
+      {
+        "tag": "IMG",
+        "src": "/assets/bz-logo.svg",
+        "currentSrc": "https://www.hauntedbouldercity.com/assets/bz-logo.svg",
+        "srcset": null,
+        "sizes": null,
+        "alt": "Beer Zombies",
+        "loading": "auto",
+        "natural": [
+          300,
+          148
+        ],
+        "id": "",
+        "class": "brand-logo",
+        "rect": {
+          "x": 24,
+          "y": 20.9375,
+          "w": 97.5,
+          "h": 48.125,
+          "documentY": 20.9375
+        },
+        "style": {
+          "display": "block",
+          "position": "static",
+          "width": "97.5px",
+          "height": "48.125px",
+          "padding": "0px",
+          "gap": "normal",
+          "gridTemplateColumns": "none",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "16px",
+          "lineHeight": "normal",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "color": "rgb(231, 233, 216)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "objectFit": "contain",
+          "objectPosition": "50% 50%",
+          "overflow": "clip",
+          "zIndex": "auto",
+          "transform": "none"
+        }
+      },
+      {
+        "tag": "IMG",
+        "src": "/assets/haunted-downtown-boulder-city.webp",
+        "currentSrc": "https://www.hauntedbouldercity.com/assets/haunted-downtown-boulder-city-960.webp",
+        "srcset": "/assets/haunted-downtown-boulder-city-960.webp 960w, /assets/haunted-downtown-boulder-city.webp 1672w",
+        "sizes": "100vw",
+        "alt": "Historic Downtown Boulder City arch and monument under a full moon on a foggy Nevada night",
+        "loading": "auto",
+        "natural": [
+          389,
+          219
+        ],
+        "id": "",
+        "class": "",
+        "rect": {
+          "x": -97.5,
+          "y": -33.75,
+          "w": 585,
+          "h": 911.5,
+          "documentY": -33.75
+        },
+        "style": {
+          "display": "block",
+          "position": "static",
+          "width": "585px",
+          "height": "911.5px",
+          "padding": "0px",
+          "gap": "normal",
+          "gridTemplateColumns": "none",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "16px",
+          "lineHeight": "normal",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "color": "rgb(231, 233, 216)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "overflow": "clip",
+          "zIndex": "auto",
+          "transform": "none"
+        }
+      },
+      {
+        "tag": "IMG",
+        "src": "/assets/boulder-dam-hotel.webp",
+        "currentSrc": "https://www.hauntedbouldercity.com/assets/boulder-dam-hotel-960.webp",
+        "srcset": "/assets/boulder-dam-hotel-960.webp 960w, /assets/boulder-dam-hotel.webp 1024w",
+        "sizes": "(max-width:760px) 90vw, 42vw",
+        "alt": "The Boulder Dam Hotel at night under a full moon, porch lights glowing through low fog",
+        "loading": "lazy",
+        "natural": [
+          351,
+          221
+        ],
+        "id": "",
+        "class": "",
+        "rect": {
+          "x": 24,
+          "y": 1246.32177734375,
+          "w": 342,
+          "h": 396.71875,
+          "documentY": 1246.32177734375
+        },
+        "style": {
+          "display": "block",
+          "position": "absolute",
+          "width": "342px",
+          "height": "396.719px",
+          "padding": "0px",
+          "gap": "normal",
+          "gridTemplateColumns": "none",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "16px",
+          "lineHeight": "normal",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "color": "rgb(231, 233, 216)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "objectFit": "cover",
+          "objectPosition": "48% 58%",
+          "overflow": "clip",
+          "zIndex": "auto",
+          "transform": "matrix(1, 0, 0, 1, 0, -6.89764)"
+        }
+      },
+      {
+        "tag": "IMG",
+        "src": "/assets/boulder-city-haunted-walk-tour.webp",
+        "currentSrc": "https://www.hauntedbouldercity.com/assets/boulder-city-haunted-walk-tour.webp",
+        "srcset": "/assets/boulder-city-haunted-walk-tour-960.webp 960w, /assets/boulder-city-haunted-walk-tour.webp 1024w",
+        "sizes": "100vw",
+        "alt": "Ghost tour group standing in fog under trees strung with lights on a night walk",
+        "loading": "lazy",
+        "natural": [
+          390,
+          259
+        ],
+        "id": "",
+        "class": "story-background",
+        "rect": {
+          "x": 0,
+          "y": 1912.5625,
+          "w": 390,
+          "h": 911.5,
+          "documentY": 1912.5625
+        },
+        "style": {
+          "display": "block",
+          "position": "absolute",
+          "width": "390px",
+          "height": "911.5px",
+          "padding": "0px",
+          "gap": "normal",
+          "gridTemplateColumns": "none",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "16px",
+          "lineHeight": "normal",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "color": "rgb(231, 233, 216)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "objectFit": "cover",
+          "objectPosition": "68% 50%",
+          "overflow": "clip",
+          "zIndex": "-1",
+          "transform": "none"
+        }
+      },
+      {
+        "tag": "IMG",
+        "src": "/assets/boulder-city-shop.webp",
+        "currentSrc": "https://www.hauntedbouldercity.com/assets/boulder-city-shop.webp",
+        "srcset": "/assets/boulder-city-shop-960.webp 960w, /assets/boulder-city-shop.webp 1672w",
+        "sizes": "100vw",
+        "alt": "Boulder City shops and streets after dark",
+        "loading": "lazy",
+        "natural": [
+          390,
+          219
+        ],
+        "id": "",
+        "class": "story-background",
+        "rect": {
+          "x": 0,
+          "y": 2672.15625,
+          "w": 390,
+          "h": 911.5,
+          "documentY": 2672.15625
+        },
+        "style": {
+          "display": "block",
+          "position": "absolute",
+          "width": "390px",
+          "height": "911.5px",
+          "padding": "0px",
+          "gap": "normal",
+          "gridTemplateColumns": "none",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "16px",
+          "lineHeight": "normal",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "color": "rgb(231, 233, 216)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "objectFit": "cover",
+          "objectPosition": "62% 50%",
+          "overflow": "clip",
+          "zIndex": "-1",
+          "transform": "none"
+        }
+      },
+      {
+        "tag": "IMG",
+        "src": "/assets/ufo-night.webp",
+        "currentSrc": "https://www.hauntedbouldercity.com/assets/ufo-night.webp",
+        "srcset": null,
+        "sizes": null,
+        "alt": "Atmospheric artwork of a mysterious light above the Nevada desert",
+        "loading": "lazy",
+        "natural": [
+          0,
+          0
+        ],
+        "id": "",
+        "class": "story-background",
+        "rect": {
+          "x": 0,
+          "y": 3431.75,
+          "w": 390,
+          "h": 911.5,
+          "documentY": 3431.75
+        },
+        "style": {
+          "display": "block",
+          "position": "absolute",
+          "width": "390px",
+          "height": "911.5px",
+          "padding": "0px",
+          "gap": "normal",
+          "gridTemplateColumns": "none",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "16px",
+          "lineHeight": "normal",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "color": "rgb(231, 233, 216)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "objectFit": "cover",
+          "objectPosition": "66% 50%",
+          "overflow": "clip",
+          "zIndex": "-1",
+          "transform": "none"
+        }
+      },
+      {
+        "tag": "VIDEO",
+        "src": "/assets/ufo-night.mp4",
+        "currentSrc": "https://www.hauntedbouldercity.com/assets/ufo-night.mp4",
+        "srcset": null,
+        "sizes": null,
+        "loading": "eager",
+        "natural": [
+          null,
+          null
+        ],
+        "duration": 8.041667,
+        "currentTime": 0,
+        "readyState": 4,
+        "id": "",
+        "class": "story-background story-video is-ready",
+        "rect": {
+          "x": 0,
+          "y": 3431.75,
+          "w": 390,
+          "h": 911.5,
+          "documentY": 3431.75
+        },
+        "style": {
+          "display": "block",
+          "position": "absolute",
+          "width": "390px",
+          "height": "911.5px",
+          "padding": "0px",
+          "gap": "normal",
+          "gridTemplateColumns": "none",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "16px",
+          "lineHeight": "normal",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "color": "rgb(231, 233, 216)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "objectFit": "cover",
+          "objectPosition": "66% 50%",
+          "overflow": "clip",
+          "zIndex": "-1",
+          "transform": "none"
+        }
+      },
+      {
+        "tag": "IMG",
+        "src": "/assets/hoover-dam.webp",
+        "currentSrc": "https://www.hauntedbouldercity.com/assets/hoover-dam.webp",
+        "srcset": "/assets/hoover-dam-960.webp 960w, /assets/hoover-dam.webp 1672w",
+        "sizes": "100vw",
+        "alt": "Six Hoover Dam construction workers in hard hats posing with jackhammer drills on the rocky canyon floor",
+        "loading": "lazy",
+        "natural": [
+          390,
+          219
+        ],
+        "id": "",
+        "class": "is-active",
+        "rect": {
+          "x": 0,
+          "y": 4205.3056640625,
+          "w": 390,
+          "h": 928.390625,
+          "documentY": 4205.3056640625
+        },
+        "style": {
+          "display": "block",
+          "position": "absolute",
+          "width": "390px",
+          "height": "928.391px",
+          "padding": "0px",
+          "gap": "normal",
+          "gridTemplateColumns": "none",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "16px",
+          "lineHeight": "normal",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "color": "rgb(231, 233, 216)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "overflow": "clip",
+          "zIndex": "auto",
+          "transform": "matrix(1, 0, 0, 1, 0, -19.8035)"
+        }
+      },
+      {
+        "tag": "IMG",
+        "src": "/assets/ghost-dog.webp",
+        "currentSrc": "https://www.hauntedbouldercity.com/assets/ghost-dog-960.webp",
+        "srcset": "/assets/ghost-dog-960.webp 960w, /assets/ghost-dog.webp 1448w",
+        "sizes": "100vw",
+        "alt": "Black dog standing beside a stone wall in drifting fog with desert mountains behind",
+        "loading": "lazy",
+        "natural": [
+          389,
+          292
+        ],
+        "id": "",
+        "class": "",
+        "rect": {
+          "x": 0,
+          "y": 4205.3056640625,
+          "w": 390,
+          "h": 928.390625,
+          "documentY": 4205.3056640625
+        },
+        "style": {
+          "display": "block",
+          "position": "absolute",
+          "width": "390px",
+          "height": "928.391px",
+          "padding": "0px",
+          "gap": "normal",
+          "gridTemplateColumns": "none",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "16px",
+          "lineHeight": "normal",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "color": "rgb(231, 233, 216)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "objectFit": "cover",
+          "objectPosition": "86% 50%",
+          "overflow": "clip",
+          "zIndex": "auto",
+          "transform": "matrix(1, 0, 0, 1, 0, -19.8035)"
+        }
+      },
+      {
+        "tag": "IMG",
+        "src": "/assets/dam-workers.webp",
+        "currentSrc": "https://www.hauntedbouldercity.com/assets/dam-workers.webp",
+        "srcset": "/assets/dam-workers-960.webp 960w, /assets/dam-workers.webp 1024w",
+        "sizes": "100vw",
+        "alt": "Two bronze dam worker statues, one seated by his boots, one standing with a shovel, on a foggy moonlit night",
+        "loading": "lazy",
+        "natural": [
+          390,
+          219
+        ],
+        "id": "",
+        "class": "",
+        "rect": {
+          "x": 0,
+          "y": 4205.3056640625,
+          "w": 390,
+          "h": 928.390625,
+          "documentY": 4205.3056640625
+        },
+        "style": {
+          "display": "block",
+          "position": "absolute",
+          "width": "390px",
+          "height": "928.391px",
+          "padding": "0px",
+          "gap": "normal",
+          "gridTemplateColumns": "none",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "16px",
+          "lineHeight": "normal",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "color": "rgb(231, 233, 216)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "objectFit": "cover",
+          "objectPosition": "68% 55%",
+          "overflow": "clip",
+          "zIndex": "auto",
+          "transform": "matrix(1, 0, 0, 1, 0, -19.8035)"
+        }
+      },
+      {
+        "tag": "IMG",
+        "src": "/assets/first-murderer.webp",
+        "currentSrc": "https://www.hauntedbouldercity.com/assets/first-murderer.webp",
+        "srcset": "/assets/first-murderer-960.webp 960w, /assets/first-murderer.webp 1024w",
+        "sizes": "100vw",
+        "alt": "A tour group standing in fog outside a white columned building under a full moon",
+        "loading": "lazy",
+        "natural": [
+          390,
+          292
+        ],
+        "id": "",
+        "class": "",
+        "rect": {
+          "x": 0,
+          "y": 4205.3056640625,
+          "w": 390,
+          "h": 928.390625,
+          "documentY": 4205.3056640625
+        },
+        "style": {
+          "display": "block",
+          "position": "absolute",
+          "width": "390px",
+          "height": "928.391px",
+          "padding": "0px",
+          "gap": "normal",
+          "gridTemplateColumns": "none",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "16px",
+          "lineHeight": "normal",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "color": "rgb(231, 233, 216)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "objectFit": "cover",
+          "objectPosition": "55% 42%",
+          "overflow": "clip",
+          "zIndex": "auto",
+          "transform": "matrix(1, 0, 0, 1, 0, -19.8035)"
+        }
+      },
+      {
+        "tag": "IMG",
+        "src": "/assets/strange-celebs.webp",
+        "currentSrc": "https://www.hauntedbouldercity.com/assets/strange-celebs-960.webp",
+        "srcset": "/assets/strange-celebs-960.webp 960w, /assets/strange-celebs.webp 1024w",
+        "sizes": "100vw",
+        "alt": "A tour group standing on a foggy, moonlit street under trees strung with lights, one person holding up a phone",
+        "loading": "lazy",
+        "natural": [
+          389,
+          230
+        ],
+        "id": "",
+        "class": "",
+        "rect": {
+          "x": 0,
+          "y": 4205.3056640625,
+          "w": 390,
+          "h": 928.390625,
+          "documentY": 4205.3056640625
+        },
+        "style": {
+          "display": "block",
+          "position": "absolute",
+          "width": "390px",
+          "height": "928.391px",
+          "padding": "0px",
+          "gap": "normal",
+          "gridTemplateColumns": "none",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "16px",
+          "lineHeight": "normal",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "color": "rgb(231, 233, 216)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "objectFit": "cover",
+          "objectPosition": "50% 48%",
+          "overflow": "clip",
+          "zIndex": "auto",
+          "transform": "matrix(1, 0, 0, 1, 0, -19.8035)"
+        }
+      },
+      {
+        "tag": "IMG",
+        "src": "/assets/flying-saucer.webp",
+        "currentSrc": "https://www.hauntedbouldercity.com/assets/flying-saucer-960.webp",
+        "srcset": "/assets/flying-saucer-960.webp 960w, /assets/flying-saucer.webp 1024w",
+        "sizes": "100vw",
+        "alt": "The Flying Saucer shopfront at night, a glowing alien figure in the doorway through fog",
+        "loading": "lazy",
+        "natural": [
+          389,
+          389
+        ],
+        "id": "",
+        "class": "",
+        "rect": {
+          "x": 0,
+          "y": 4205.3056640625,
+          "w": 390,
+          "h": 928.390625,
+          "documentY": 4205.3056640625
+        },
+        "style": {
+          "display": "block",
+          "position": "absolute",
+          "width": "390px",
+          "height": "928.391px",
+          "padding": "0px",
+          "gap": "normal",
+          "gridTemplateColumns": "none",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "16px",
+          "lineHeight": "normal",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "color": "rgb(231, 233, 216)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "objectFit": "cover",
+          "objectPosition": "52% 32%",
+          "overflow": "clip",
+          "zIndex": "auto",
+          "transform": "matrix(1, 0, 0, 1, 0, -19.8035)"
+        }
+      },
+      {
+        "tag": "IMG",
+        "src": "/assets/buried-bodies.webp",
+        "currentSrc": "https://www.hauntedbouldercity.com/assets/buried-bodies-960.webp",
+        "srcset": "/assets/buried-bodies-960.webp 960w, /assets/buried-bodies.webp 1086w",
+        "sizes": "100vw",
+        "alt": "Two people walking out of a dark tunnel toward desert mountains under a stormy sky",
+        "loading": "lazy",
+        "natural": [
+          389,
+          519
+        ],
+        "id": "",
+        "class": "",
+        "rect": {
+          "x": 0,
+          "y": 4205.3056640625,
+          "w": 390,
+          "h": 928.390625,
+          "documentY": 4205.3056640625
+        },
+        "style": {
+          "display": "block",
+          "position": "absolute",
+          "width": "390px",
+          "height": "928.391px",
+          "padding": "0px",
+          "gap": "normal",
+          "gridTemplateColumns": "none",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "16px",
+          "lineHeight": "normal",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "color": "rgb(231, 233, 216)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "objectFit": "cover",
+          "objectPosition": "50% 58%",
+          "overflow": "clip",
+          "zIndex": "auto",
+          "transform": "matrix(1, 0, 0, 1, 0, -19.8035)"
+        }
+      },
+      {
+        "tag": "IMG",
+        "src": "/assets/esp-gambling.webp",
+        "currentSrc": "https://www.hauntedbouldercity.com/assets/esp-gambling-960.webp",
+        "srcset": "/assets/esp-gambling-960.webp 960w, /assets/esp-gambling.webp 1447w",
+        "sizes": "100vw",
+        "alt": "Stacks of casino chips on a roulette table as a dealer reaches across the green felt",
+        "loading": "lazy",
+        "natural": [
+          389,
+          292
+        ],
+        "id": "",
+        "class": "",
+        "rect": {
+          "x": 0,
+          "y": 4205.3056640625,
+          "w": 390,
+          "h": 928.390625,
+          "documentY": 4205.3056640625
+        },
+        "style": {
+          "display": "block",
+          "position": "absolute",
+          "width": "390px",
+          "height": "928.391px",
+          "padding": "0px",
+          "gap": "normal",
+          "gridTemplateColumns": "none",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "16px",
+          "lineHeight": "normal",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "color": "rgb(231, 233, 216)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "objectFit": "cover",
+          "objectPosition": "45% 50%",
+          "overflow": "clip",
+          "zIndex": "auto",
+          "transform": "matrix(1, 0, 0, 1, 0, -19.8035)"
+        }
+      },
+      {
+        "tag": "IMG",
+        "src": "/assets/beer-zombies-boulder-city.webp",
+        "currentSrc": "https://www.hauntedbouldercity.com/assets/beer-zombies-boulder-city-960.webp",
+        "srcset": "/assets/beer-zombies-boulder-city-960.webp 960w, /assets/beer-zombies-boulder-city.webp 1672w",
+        "sizes": "(max-width:760px) 100vw, 58vw",
+        "alt": "Beer Zombies Boulder City Draft Room and patio under warm string lights",
+        "loading": "lazy",
+        "natural": [
+          0,
+          0
+        ],
+        "id": "",
+        "class": "",
+        "rect": {
+          "x": 27.146831512451172,
+          "y": 6633.81103515625,
+          "w": 336.9280090332031,
+          "h": 291.0166015625,
+          "documentY": 6633.81103515625
+        },
+        "style": {
+          "display": "block",
+          "position": "absolute",
+          "width": "332px",
+          "height": "285.266px",
+          "padding": "0px",
+          "gap": "normal",
+          "gridTemplateColumns": "none",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "16px",
+          "lineHeight": "normal",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "color": "rgb(231, 233, 216)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "overflow": "clip",
+          "zIndex": "auto",
+          "transform": "none"
+        }
+      },
+      {
+        "tag": "IMG",
+        "src": "/assets/bz-logo.svg",
+        "currentSrc": "https://www.hauntedbouldercity.com/assets/bz-logo.svg",
+        "srcset": null,
+        "sizes": null,
+        "alt": "Beer Zombies",
+        "loading": "lazy",
+        "natural": [
+          300,
+          148
+        ],
+        "id": "",
+        "class": "bz-wordmark",
+        "rect": {
+          "x": 214.90928649902344,
+          "y": 6617.14404296875,
+          "w": 137.6658477783203,
+          "h": 81.64013671875,
+          "documentY": 6617.14404296875
+        },
+        "style": {
+          "display": "block",
+          "position": "absolute",
+          "width": "130px",
+          "height": "64.1719px",
+          "padding": "0px",
+          "gap": "normal",
+          "gridTemplateColumns": "none",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "16px",
+          "lineHeight": "normal",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "color": "rgb(231, 233, 216)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "overflow": "clip",
+          "zIndex": "auto",
+          "transform": "matrix(0.987688, -0.156434, 0.156434, 0.987688, 0, 0)"
+        }
+      },
+      {
+        "tag": "IMG",
+        "src": "/assets/boulder-city-inn.webp",
+        "currentSrc": "https://www.hauntedbouldercity.com/assets/boulder-city-inn-960.webp",
+        "srcset": "/assets/boulder-city-inn-960.webp 960w, /assets/boulder-city-inn.webp 1672w",
+        "sizes": "100vw",
+        "alt": "Historic Boulder Dam Hotel at night, windows glowing beside a street lamp under a full moon, fog over the wet street",
+        "loading": "lazy",
+        "natural": [
+          389,
+          219
+        ],
+        "id": "",
+        "class": "",
+        "rect": {
+          "x": 0,
+          "y": 9061.5625,
+          "w": 390,
+          "h": 928,
+          "documentY": 9061.5625
+        },
+        "style": {
+          "display": "block",
+          "position": "absolute",
+          "width": "390px",
+          "height": "928px",
+          "padding": "0px",
+          "gap": "normal",
+          "gridTemplateColumns": "none",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "16px",
+          "lineHeight": "normal",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "color": "rgb(231, 233, 216)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "overflow": "clip",
+          "zIndex": "auto",
+          "transform": "none"
+        }
+      },
+      {
+        "tag": "IMG",
+        "src": "/assets/joshua-p-warren-960.webp",
+        "currentSrc": "https://www.hauntedbouldercity.com/assets/joshua-p-warren-960.webp",
+        "srcset": null,
+        "sizes": null,
+        "alt": "Joshua P. Warren, creator of Haunted Boulder City",
+        "loading": "lazy",
+        "natural": [
+          0,
+          0
+        ],
+        "id": "",
+        "class": "creator-portrait",
+        "rect": {
+          "x": 140,
+          "y": 10016.5625,
+          "w": 110,
+          "h": 146.65625,
+          "documentY": 10016.5625
+        },
+        "style": {
+          "display": "block",
+          "position": "static",
+          "width": "110px",
+          "height": "146.656px",
+          "padding": "0px",
+          "gap": "normal",
+          "gridTemplateColumns": "none",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "16px",
+          "lineHeight": "normal",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "color": "rgb(231, 233, 216)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "objectFit": "cover",
+          "objectPosition": "44% 42%",
+          "overflow": "clip",
+          "zIndex": "auto",
+          "transform": "none"
+        }
+      },
+      {
+        "tag": "IMG",
+        "src": "/assets/ghost-adventures.png",
+        "currentSrc": "https://www.hauntedbouldercity.com/assets/ghost-adventures.png",
+        "srcset": null,
+        "sizes": null,
+        "alt": "Ghost Adventures",
+        "loading": "lazy",
+        "natural": [
+          0,
+          0
+        ],
+        "id": "",
+        "class": "",
+        "rect": {
+          "x": 24,
+          "y": 10400.484375,
+          "w": 71.921875,
+          "h": 36,
+          "documentY": 10400.484375
+        },
+        "style": {
+          "display": "block",
+          "position": "static",
+          "width": "71.9219px",
+          "height": "36px",
+          "padding": "0px",
+          "gap": "normal",
+          "gridTemplateColumns": "none",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "16px",
+          "lineHeight": "normal",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "color": "rgb(231, 233, 216)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "objectFit": "contain",
+          "objectPosition": "50% 50%",
+          "overflow": "clip",
+          "zIndex": "auto",
+          "transform": "none"
+        }
+      },
+      {
+        "tag": "IMG",
+        "src": "/assets/travel-channel.png",
+        "currentSrc": "https://www.hauntedbouldercity.com/assets/travel-channel.png",
+        "srcset": null,
+        "sizes": null,
+        "alt": "Travel Channel",
+        "loading": "lazy",
+        "natural": [
+          0,
+          0
+        ],
+        "id": "",
+        "class": "",
+        "rect": {
+          "x": 107.921875,
+          "y": 10392.484375,
+          "w": 59.21875,
+          "h": 52,
+          "documentY": 10392.484375
+        },
+        "style": {
+          "display": "block",
+          "position": "static",
+          "width": "59.2188px",
+          "height": "52px",
+          "padding": "0px",
+          "gap": "normal",
+          "gridTemplateColumns": "none",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "16px",
+          "lineHeight": "normal",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "color": "rgb(231, 233, 216)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "objectFit": "contain",
+          "objectPosition": "50% 50%",
+          "overflow": "clip",
+          "zIndex": "auto",
+          "transform": "none"
+        }
+      },
+      {
+        "tag": "IMG",
+        "src": "/assets/history-current.svg",
+        "currentSrc": "https://www.hauntedbouldercity.com/assets/history-current.svg",
+        "srcset": null,
+        "sizes": null,
+        "alt": "History Channel",
+        "loading": "lazy",
+        "natural": [
+          0,
+          0
+        ],
+        "id": "",
+        "class": "media-history",
+        "rect": {
+          "x": 179.140625,
+          "y": 10392.484375,
+          "w": 25.375,
+          "h": 52,
+          "documentY": 10392.484375
+        },
+        "style": {
+          "display": "block",
+          "position": "static",
+          "width": "25.375px",
+          "height": "52px",
+          "padding": "0px",
+          "gap": "normal",
+          "gridTemplateColumns": "none",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "16px",
+          "lineHeight": "normal",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "color": "rgb(231, 233, 216)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "objectFit": "contain",
+          "objectPosition": "50% 50%",
+          "overflow": "clip",
+          "zIndex": "auto",
+          "transform": "none"
+        }
+      },
+      {
+        "tag": "IMG",
+        "src": "/assets/discovery-channel.svg",
+        "currentSrc": "https://www.hauntedbouldercity.com/assets/discovery-channel.svg",
+        "srcset": null,
+        "sizes": null,
+        "alt": "Discovery Channel",
+        "loading": "lazy",
+        "natural": [
+          0,
+          0
+        ],
+        "id": "",
+        "class": "",
+        "rect": {
+          "x": 216.515625,
+          "y": 10392.484375,
+          "w": 69.796875,
+          "h": 52,
+          "documentY": 10392.484375
+        },
+        "style": {
+          "display": "block",
+          "position": "static",
+          "width": "69.7969px",
+          "height": "52px",
+          "padding": "0px",
+          "gap": "normal",
+          "gridTemplateColumns": "none",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "16px",
+          "lineHeight": "normal",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "color": "rgb(231, 233, 216)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "objectFit": "contain",
+          "objectPosition": "50% 50%",
+          "overflow": "clip",
+          "zIndex": "auto",
+          "transform": "none"
+        }
+      },
+      {
+        "tag": "IMG",
+        "src": "/assets/national-geographic-channel.svg",
+        "currentSrc": "https://www.hauntedbouldercity.com/assets/national-geographic-channel.svg",
+        "srcset": null,
+        "sizes": null,
+        "alt": "National Geographic Channel",
+        "loading": "lazy",
+        "natural": [
+          0,
+          0
+        ],
+        "id": "",
+        "class": "",
+        "rect": {
+          "x": 298.3125,
+          "y": 10383.484375,
+          "w": 67.6875,
+          "h": 70,
+          "documentY": 10383.484375
+        },
+        "style": {
+          "display": "block",
+          "position": "static",
+          "width": "67.6875px",
+          "height": "70px",
+          "padding": "0px",
+          "gap": "normal",
+          "gridTemplateColumns": "none",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "16px",
+          "lineHeight": "normal",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "color": "rgb(231, 233, 216)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "objectFit": "contain",
+          "objectPosition": "50% 50%",
+          "overflow": "clip",
+          "zIndex": "auto",
+          "transform": "none"
+        }
+      },
+      {
+        "tag": "IMG",
+        "src": "/assets/artisan-icon.jpg",
+        "currentSrc": "https://www.hauntedbouldercity.com/assets/artisan-icon.jpg",
+        "srcset": null,
+        "sizes": null,
+        "alt": "Artisan Website Co logo",
+        "loading": "lazy",
+        "natural": [
+          0,
+          0
+        ],
+        "id": "",
+        "class": "site-credit-icon",
+        "rect": {
+          "x": 73.203125,
+          "y": 10488.484375,
+          "w": 36,
+          "h": 36,
+          "documentY": 10488.484375
+        },
+        "style": {
+          "display": "block",
+          "position": "static",
+          "width": "36px",
+          "height": "36px",
+          "padding": "0px",
+          "gap": "normal",
+          "gridTemplateColumns": "none",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "23.8px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "color": "rgb(165, 178, 161)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "objectFit": "contain",
+          "objectPosition": "50% 50%",
+          "overflow": "clip",
+          "zIndex": "auto",
+          "transform": "none"
+        }
+      }
+    ],
+    "details": [
+      {
+        "summary": "What’s the walk like?",
+        "answer": "",
+        "open": false
+      },
+      {
+        "summary": "Can the whole family come?",
+        "answer": "",
+        "open": false
+      },
+      {
+        "summary": "How scary is it?",
+        "answer": "",
+        "open": false
+      },
+      {
+        "summary": "Can I bring my dog?",
+        "answer": "",
+        "open": false
+      },
+      {
+        "summary": "Can I drink a beer on the tour?",
+        "answer": "",
+        "open": false
+      },
+      {
+        "summary": "Are wheelchairs and strollers welcome?",
+        "answer": "",
+        "open": false
+      },
+      {
+        "summary": "When should I arrive?",
+        "answer": "",
+        "open": false
+      },
+      {
+        "summary": "Can I take photos?",
+        "answer": "",
+        "open": false
+      },
+      {
+        "summary": "How do I get tickets?",
+        "answer": "",
+        "open": false
+      }
+    ],
+    "motion": [
+      {
+        "target": "tour-proof reveal",
+        "playState": "running",
+        "currentTime": 367.9999999999985,
+        "timing": {
+          "delay": 0,
+          "direction": "normal",
+          "duration": 1100,
+          "easing": "cubic-bezier(0.2, 0.75, 0.25, 1)",
+          "endDelay": 0,
+          "fill": "backwards",
+          "iterationStart": 0,
+          "iterations": 1,
+          "activeDuration": 1100,
+          "currentIteration": 0,
+          "endTime": 1100,
+          "localTime": 367.9999999999985,
+          "progress": 0.8246362699115838
+        }
+      },
+      {
+        "target": "reveal",
+        "playState": "running",
+        "currentTime": 434.89999999999895,
+        "timing": {
+          "delay": 0,
+          "direction": "normal",
+          "duration": 1100,
+          "easing": "cubic-bezier(0.2, 0.75, 0.25, 1)",
+          "endDelay": 0,
+          "fill": "backwards",
+          "iterationStart": 0,
+          "iterations": 1,
+          "activeDuration": 1100,
+          "currentIteration": 0,
+          "endTime": 1100,
+          "localTime": 434.89999999999895,
+          "progress": 0.87377735632042
+        }
+      },
+      {
+        "target": "tour-facts is-armed is-decoding",
+        "playState": "running",
+        "currentTime": 668.9000000000008,
+        "timing": {
+          "delay": 0,
+          "direction": "normal",
+          "duration": 716.1772099059361,
+          "easing": "cubic-bezier(0.2, 0.7, 0.2, 1)",
+          "endDelay": 0,
+          "fill": "backwards",
+          "iterationStart": 0,
+          "iterations": 1,
+          "activeDuration": 716.1772099059361,
+          "currentIteration": 0,
+          "endTime": 716.1772099059361,
+          "localTime": 668.9000000000008,
+          "progress": 0.9992770960618559
+        }
+      },
+      {
+        "target": "",
+        "playState": "running",
+        "currentTime": 668.9000000000008,
+        "timing": {
+          "delay": 300,
+          "direction": "normal",
+          "duration": 374.059754382884,
+          "easing": "ease",
+          "endDelay": 0,
+          "fill": "backwards",
+          "iterationStart": 0,
+          "iterations": 1,
+          "activeDuration": 374.059754382884,
+          "currentIteration": 0,
+          "endTime": 674.059754382884,
+          "localTime": 668.9000000000008,
+          "progress": 0.9998976602050035
+        }
+      },
+      {
+        "target": "story-content",
+        "playState": "running",
+        "currentTime": 418.06200000210583,
+        "timing": {
+          "delay": 0,
+          "direction": "normal",
+          "duration": 900,
+          "easing": "ease",
+          "endDelay": 0,
+          "fill": "backwards",
+          "iterationStart": 0,
+          "iterations": 1,
+          "activeDuration": 900,
+          "currentIteration": 0,
+          "endTime": 900,
+          "localTime": 418.06200000210583,
+          "progress": 0.7647230454898657
+        }
+      },
+      {
+        "target": "story-content",
+        "playState": "running",
+        "currentTime": 418.06200000210583,
+        "timing": {
+          "delay": 0,
+          "direction": "normal",
+          "duration": 750,
+          "easing": "ease",
+          "endDelay": 0,
+          "fill": "backwards",
+          "iterationStart": 0,
+          "iterations": 1,
+          "activeDuration": 750,
+          "currentIteration": 0,
+          "endTime": 750,
+          "localTime": 418.06200000210583,
+          "progress": 0.8537786617825305
+        }
+      },
+      {
+        "target": "story-content",
+        "playState": "running",
+        "currentTime": 418.06200000210583,
+        "timing": {
+          "delay": 0,
+          "direction": "normal",
+          "duration": 950,
+          "easing": "cubic-bezier(0.2, 0.75, 0.25, 1)",
+          "endDelay": 0,
+          "fill": "backwards",
+          "iterationStart": 0,
+          "iterations": 1,
+          "activeDuration": 950,
+          "currentIteration": 0,
+          "endTime": 950,
+          "localTime": 418.06200000210583,
+          "progress": 0.901159085834934
+        }
+      },
+      {
+        "target": "story-content",
+        "playState": "running",
+        "currentTime": 418.06200000210583,
+        "timing": {
+          "delay": 0,
+          "direction": "normal",
+          "duration": 900,
+          "easing": "ease",
+          "endDelay": 0,
+          "fill": "backwards",
+          "iterationStart": 0,
+          "iterations": 1,
+          "activeDuration": 900,
+          "currentIteration": 0,
+          "endTime": 900,
+          "localTime": 418.06200000210583,
+          "progress": 0.7647230454898657
+        }
+      },
+      {
+        "target": "story-content",
+        "playState": "running",
+        "currentTime": 418.06200000210583,
+        "timing": {
+          "delay": 0,
+          "direction": "normal",
+          "duration": 750,
+          "easing": "ease",
+          "endDelay": 0,
+          "fill": "backwards",
+          "iterationStart": 0,
+          "iterations": 1,
+          "activeDuration": 750,
+          "currentIteration": 0,
+          "endTime": 750,
+          "localTime": 418.06200000210583,
+          "progress": 0.8537786617825305
+        }
+      },
+      {
+        "target": "story-content",
+        "playState": "running",
+        "currentTime": 418.06200000210583,
+        "timing": {
+          "delay": 0,
+          "direction": "normal",
+          "duration": 950,
+          "easing": "cubic-bezier(0.2, 0.75, 0.25, 1)",
+          "endDelay": 0,
+          "fill": "backwards",
+          "iterationStart": 0,
+          "iterations": 1,
+          "activeDuration": 950,
+          "currentIteration": 0,
+          "endTime": 950,
+          "localTime": 418.06200000210583,
+          "progress": 0.901159085834934
+        }
+      },
+      {
+        "target": "story-background story-video is-ready",
+        "playState": "running",
+        "currentTime": 418.06200000210583,
+        "timing": {
+          "delay": 0,
+          "direction": "normal",
+          "duration": 1100,
+          "easing": "ease",
+          "endDelay": 0,
+          "fill": "backwards",
+          "iterationStart": 0,
+          "iterations": 1,
+          "activeDuration": 1100,
+          "currentIteration": 0,
+          "endTime": 1100,
+          "localTime": 418.06200000210583,
+          "progress": 0.6531101378671971
+        }
+      },
+      {
+        "target": "story-content",
+        "playState": "running",
+        "currentTime": 418.06200000210583,
+        "timing": {
+          "delay": 0,
+          "direction": "normal",
+          "duration": 900,
+          "easing": "ease",
+          "endDelay": 0,
+          "fill": "backwards",
+          "iterationStart": 0,
+          "iterations": 1,
+          "activeDuration": 900,
+          "currentIteration": 0,
+          "endTime": 900,
+          "localTime": 418.06200000210583,
+          "progress": 0.7647230454898657
+        }
+      },
+      {
+        "target": "story-content",
+        "playState": "running",
+        "currentTime": 418.06200000210583,
+        "timing": {
+          "delay": 0,
+          "direction": "normal",
+          "duration": 750,
+          "easing": "ease",
+          "endDelay": 0,
+          "fill": "backwards",
+          "iterationStart": 0,
+          "iterations": 1,
+          "activeDuration": 750,
+          "currentIteration": 0,
+          "endTime": 750,
+          "localTime": 418.06200000210583,
+          "progress": 0.8537786617825305
+        }
+      },
+      {
+        "target": "story-content",
+        "playState": "running",
+        "currentTime": 418.06200000210583,
+        "timing": {
+          "delay": 0,
+          "direction": "normal",
+          "duration": 950,
+          "easing": "cubic-bezier(0.2, 0.75, 0.25, 1)",
+          "endDelay": 0,
+          "fill": "backwards",
+          "iterationStart": 0,
+          "iterations": 1,
+          "activeDuration": 950,
+          "currentIteration": 0,
+          "endTime": 950,
+          "localTime": 418.06200000210583,
+          "progress": 0.901159085834934
+        }
+      },
+      {
+        "target": "is-active",
+        "playState": "running",
+        "currentTime": 518.4999999999959,
+        "timing": {
+          "delay": 0,
+          "direction": "normal",
+          "duration": 1100,
+          "easing": "ease",
+          "endDelay": 0,
+          "fill": "backwards",
+          "iterationStart": 0,
+          "iterations": 1,
+          "activeDuration": 1100,
+          "currentIteration": 0,
+          "endTime": 1100,
+          "localTime": 518.4999999999959,
+          "progress": 0.772382379728672
+        }
+      },
+      {
+        "target": "",
+        "playState": "running",
+        "currentTime": 969.979000006429,
+        "timing": {
+          "delay": 0,
+          "direction": "normal",
+          "duration": 1100,
+          "easing": "ease",
+          "endDelay": 0,
+          "fill": "backwards",
+          "iterationStart": 0,
+          "iterations": 1,
+          "activeDuration": 1100,
+          "currentIteration": 0,
+          "endTime": 1100,
+          "localTime": 969.979000006429,
+          "progress": 0.9919618559231634
+        }
+      },
+      {
+        "target": "reveal",
+        "playState": "running",
+        "currentTime": 819.499999999998,
+        "timing": {
+          "delay": 0,
+          "direction": "normal",
+          "duration": 1100,
+          "easing": "cubic-bezier(0.2, 0.75, 0.25, 1)",
+          "endDelay": 0,
+          "fill": "backwards",
+          "iterationStart": 0,
+          "iterations": 1,
+          "activeDuration": 1100,
+          "currentIteration": 0,
+          "endTime": 1100,
+          "localTime": 819.499999999998,
+          "progress": 0.9872314726561644
+        }
+      },
+      {
+        "target": "topic reveal is-current",
+        "playState": "running",
+        "currentTime": 819.499999999998,
+        "timing": {
+          "delay": 0,
+          "direction": "normal",
+          "duration": 1100,
+          "easing": "cubic-bezier(0.2, 0.75, 0.25, 1)",
+          "endDelay": 0,
+          "fill": "backwards",
+          "iterationStart": 0,
+          "iterations": 1,
+          "activeDuration": 1100,
+          "currentIteration": 0,
+          "endTime": 1100,
+          "localTime": 819.499999999998,
+          "progress": 0.9872314726561644
+        }
+      },
+      {
+        "target": "topic reveal is-current",
+        "playState": "running",
+        "currentTime": 418.06200000210583,
+        "timing": {
+          "delay": 0,
+          "direction": "normal",
+          "duration": 650,
+          "easing": "ease",
+          "endDelay": 0,
+          "fill": "backwards",
+          "iterationStart": 0,
+          "iterations": 1,
+          "activeDuration": 650,
+          "currentIteration": 0,
+          "endTime": 650,
+          "localTime": 418.06200000210583,
+          "progress": 0.9121055435797808
+        }
+      },
+      {
+        "target": "topic reveal",
+        "playState": "running",
+        "currentTime": 886.4999999999981,
+        "timing": {
+          "delay": 0,
+          "direction": "normal",
+          "duration": 1100,
+          "easing": "cubic-bezier(0.2, 0.75, 0.25, 1)",
+          "endDelay": 0,
+          "fill": "backwards",
+          "iterationStart": 0,
+          "iterations": 1,
+          "activeDuration": 1100,
+          "currentIteration": 0,
+          "endTime": 1100,
+          "localTime": 886.4999999999981,
+          "progress": 0.9931306677226841
+        }
+      },
+      {
+        "target": "topic reveal",
+        "playState": "running",
+        "currentTime": 886.4999999999981,
+        "timing": {
+          "delay": 0,
+          "direction": "normal",
+          "duration": 1100,
+          "easing": "cubic-bezier(0.2, 0.75, 0.25, 1)",
+          "endDelay": 0,
+          "fill": "backwards",
+          "iterationStart": 0,
+          "iterations": 1,
+          "activeDuration": 1100,
+          "currentIteration": 0,
+          "endTime": 1100,
+          "localTime": 886.4999999999981,
+          "progress": 0.9931306677226841
+        }
+      },
+      {
+        "target": "topic reveal",
+        "playState": "running",
+        "currentTime": 886.4999999999981,
+        "timing": {
+          "delay": 0,
+          "direction": "normal",
+          "duration": 1100,
+          "easing": "cubic-bezier(0.2, 0.75, 0.25, 1)",
+          "endDelay": 0,
+          "fill": "backwards",
+          "iterationStart": 0,
+          "iterations": 1,
+          "activeDuration": 1100,
+          "currentIteration": 0,
+          "endTime": 1100,
+          "localTime": 886.4999999999981,
+          "progress": 0.9931306677226841
+        }
+      },
+      {
+        "target": "topic reveal",
+        "playState": "running",
+        "currentTime": 886.4999999999981,
+        "timing": {
+          "delay": 0,
+          "direction": "normal",
+          "duration": 1100,
+          "easing": "cubic-bezier(0.2, 0.75, 0.25, 1)",
+          "endDelay": 0,
+          "fill": "backwards",
+          "iterationStart": 0,
+          "iterations": 1,
+          "activeDuration": 1100,
+          "currentIteration": 0,
+          "endTime": 1100,
+          "localTime": 886.4999999999981,
+          "progress": 0.9931306677226841
+        }
+      },
+      {
+        "target": "topic reveal",
+        "playState": "running",
+        "currentTime": 886.4999999999981,
+        "timing": {
+          "delay": 0,
+          "direction": "normal",
+          "duration": 1100,
+          "easing": "cubic-bezier(0.2, 0.75, 0.25, 1)",
+          "endDelay": 0,
+          "fill": "backwards",
+          "iterationStart": 0,
+          "iterations": 1,
+          "activeDuration": 1100,
+          "currentIteration": 0,
+          "endTime": 1100,
+          "localTime": 886.4999999999981,
+          "progress": 0.9931306677226841
+        }
+      },
+      {
+        "target": "topic reveal",
+        "playState": "running",
+        "currentTime": 969.9999999999989,
+        "timing": {
+          "delay": 0,
+          "direction": "normal",
+          "duration": 1100,
+          "easing": "cubic-bezier(0.2, 0.75, 0.25, 1)",
+          "endDelay": 0,
+          "fill": "backwards",
+          "iterationStart": 0,
+          "iterations": 1,
+          "activeDuration": 1100,
+          "currentIteration": 0,
+          "endTime": 1100,
+          "localTime": 969.9999999999989,
+          "progress": 0.9976626785971879
+        }
+      },
+      {
+        "target": "topic reveal",
+        "playState": "running",
+        "currentTime": 969.9999999999989,
+        "timing": {
+          "delay": 0,
+          "direction": "normal",
+          "duration": 1100,
+          "easing": "cubic-bezier(0.2, 0.75, 0.25, 1)",
+          "endDelay": 0,
+          "fill": "backwards",
+          "iterationStart": 0,
+          "iterations": 1,
+          "activeDuration": 1100,
+          "currentIteration": 0,
+          "endTime": 1100,
+          "localTime": 969.9999999999989,
+          "progress": 0.9976626785971879
+        }
+      },
+      {
+        "target": "reveal",
+        "playState": "running",
+        "currentTime": 1053.6999999999991,
+        "timing": {
+          "delay": 0,
+          "direction": "normal",
+          "duration": 1100,
+          "easing": "cubic-bezier(0.2, 0.75, 0.25, 1)",
+          "endDelay": 0,
+          "fill": "backwards",
+          "iterationStart": 0,
+          "iterations": 1,
+          "activeDuration": 1100,
+          "currentIteration": 0,
+          "endTime": 1100,
+          "localTime": 1053.6999999999991,
+          "progress": 0.9997262990252334
+        }
+      },
+      {
+        "target": "zombies-photo reveal",
+        "playState": "running",
+        "currentTime": 1053.6999999999991,
+        "timing": {
+          "delay": 0,
+          "direction": "normal",
+          "duration": 1100,
+          "easing": "cubic-bezier(0.2, 0.75, 0.25, 1)",
+          "endDelay": 0,
+          "fill": "backwards",
+          "iterationStart": 0,
+          "iterations": 1,
+          "activeDuration": 1100,
+          "currentIteration": 0,
+          "endTime": 1100,
+          "localTime": 1053.6999999999991,
+          "progress": 0.9997262990252334
+        }
+      },
+      {
+        "target": "reveal",
+        "playState": "running",
+        "currentTime": 1053.6999999999991,
+        "timing": {
+          "delay": 0,
+          "direction": "normal",
+          "duration": 1100,
+          "easing": "cubic-bezier(0.2, 0.75, 0.25, 1)",
+          "endDelay": 0,
+          "fill": "backwards",
+          "iterationStart": 0,
+          "iterations": 1,
+          "activeDuration": 1100,
+          "currentIteration": 0,
+          "endTime": 1100,
+          "localTime": 1053.6999999999991,
+          "progress": 0.9997262990252334
+        }
+      },
+      {
+        "target": "hero-media",
+        "name": "hero-media-shift",
+        "playState": "running",
+        "currentTime": {},
+        "timing": {
+          "delay": 0,
+          "direction": "normal",
+          "duration": {},
+          "easing": "linear",
+          "endDelay": 0,
+          "fill": "both",
+          "iterationStart": 0,
+          "iterations": 1,
+          "activeDuration": {},
+          "currentIteration": 0,
+          "endTime": {},
+          "localTime": {},
+          "progress": 0
+        }
+      },
+      {
+        "target": "",
+        "name": "hero-in",
+        "playState": "finished",
+        "currentTime": 1500,
+        "timing": {
+          "delay": 0,
+          "direction": "normal",
+          "duration": 1500,
+          "easing": "linear",
+          "endDelay": 0,
+          "fill": "both",
+          "iterationStart": 0,
+          "iterations": 1,
+          "activeDuration": 1500,
+          "currentIteration": 0,
+          "endTime": 1500,
+          "localTime": 1500,
+          "progress": 1
+        }
+      },
+      {
+        "target": "hero-topline",
+        "name": "hero-in",
+        "playState": "finished",
+        "currentTime": 1599.9999999999998,
+        "timing": {
+          "delay": 200,
+          "direction": "normal",
+          "duration": 1400,
+          "easing": "linear",
+          "endDelay": 0,
+          "fill": "both",
+          "iterationStart": 0,
+          "iterations": 1,
+          "activeDuration": 1400,
+          "currentIteration": 0,
+          "endTime": 1599.9999999999998,
+          "localTime": 1599.9999999999998,
+          "progress": 1
+        }
+      },
+      {
+        "target": "hero-bottom",
+        "name": "hero-in",
+        "playState": "finished",
+        "currentTime": 1599.9999999999998,
+        "timing": {
+          "delay": 200,
+          "direction": "normal",
+          "duration": 1400,
+          "easing": "linear",
+          "endDelay": 0,
+          "fill": "both",
+          "iterationStart": 0,
+          "iterations": 1,
+          "activeDuration": 1400,
+          "currentIteration": 0,
+          "endTime": 1599.9999999999998,
+          "localTime": 1599.9999999999998,
+          "progress": 1
+        }
+      },
+      {
+        "target": null,
+        "name": "arrow-drift",
+        "playState": "running",
+        "currentTime": 418.06200000210583,
+        "timing": {
+          "delay": 0,
+          "direction": "normal",
+          "duration": 2800,
+          "easing": "linear",
+          "endDelay": 0,
+          "fill": "none",
+          "iterationStart": 0,
+          "iterations": null,
+          "activeDuration": null,
+          "currentIteration": 0,
+          "endTime": null,
+          "localTime": 418.06200000210583,
+          "progress": 0.14930785714360922
+        }
+      },
+      {
+        "target": "fog-wisp",
+        "name": "fog-drift",
+        "playState": "running",
+        "currentTime": 4716.815999963974,
+        "timing": {
+          "delay": -19000,
+          "direction": "alternate",
+          "duration": 44000,
+          "easing": "linear",
+          "endDelay": 0,
+          "fill": "none",
+          "iterationStart": 0,
+          "iterations": null,
+          "activeDuration": null,
+          "currentIteration": 0,
+          "endTime": null,
+          "localTime": 4716.815999963974,
+          "progress": 0.5390185454537266
+        }
+      },
+      {
+        "target": "fog-wisp",
+        "name": "fog-counterdrift",
+        "playState": "running",
+        "currentTime": 4716.815999963974,
+        "timing": {
+          "delay": -41000,
+          "direction": "alternate",
+          "duration": 60000,
+          "easing": "linear",
+          "endDelay": 0,
+          "fill": "none",
+          "iterationStart": 0,
+          "iterations": null,
+          "activeDuration": null,
+          "currentIteration": 0,
+          "endTime": null,
+          "localTime": 4716.815999963974,
+          "progress": 0.7619469333327328
+        }
+      },
+      {
+        "target": "marquee-track",
+        "name": "marquee",
+        "playState": "running",
+        "currentTime": 25824.054999995136,
+        "timing": {
+          "delay": 0,
+          "direction": "normal",
+          "duration": 35000,
+          "easing": "linear",
+          "endDelay": 0,
+          "fill": "none",
+          "iterationStart": 0,
+          "iterations": null,
+          "activeDuration": null,
+          "currentIteration": 0,
+          "endTime": null,
+          "localTime": 25824.054999995136,
+          "progress": 0.7378301428570039
+        }
+      },
+      {
+        "target": "decode-char is-live is-set",
+        "name": "decode-lock",
+        "playState": "running",
+        "currentTime": 167.0999999999978,
+        "timing": {
+          "delay": 0,
+          "direction": "normal",
+          "duration": 600,
+          "easing": "linear",
+          "endDelay": 0,
+          "fill": "none",
+          "iterationStart": 0,
+          "iterations": 1,
+          "activeDuration": 600,
+          "currentIteration": 0,
+          "endTime": 600,
+          "localTime": 167.0999999999978,
+          "progress": 0.27849999999999636
+        }
+      },
+      {
+        "target": "decode-char is-live is-set",
+        "name": "decode-lock",
+        "playState": "running",
+        "currentTime": 0,
+        "timing": {
+          "delay": 0,
+          "direction": "normal",
+          "duration": 600,
+          "easing": "linear",
+          "endDelay": 0,
+          "fill": "none",
+          "iterationStart": 0,
+          "iterations": 1,
+          "activeDuration": 600,
+          "currentIteration": 0,
+          "endTime": 600,
+          "localTime": 0,
+          "progress": 0
+        }
+      },
+      {
+        "target": "decode-char is-live is-set",
+        "name": "decode-lock",
+        "playState": "running",
+        "currentTime": 100.30000000000072,
+        "timing": {
+          "delay": 0,
+          "direction": "normal",
+          "duration": 600,
+          "easing": "linear",
+          "endDelay": 0,
+          "fill": "none",
+          "iterationStart": 0,
+          "iterations": 1,
+          "activeDuration": 600,
+          "currentIteration": 0,
+          "endTime": 600,
+          "localTime": 100.30000000000072,
+          "progress": 0.16716666666666788
+        }
+      },
+      {
+        "target": "decode-char is-live is-set",
+        "name": "decode-lock",
+        "playState": "running",
+        "currentTime": 16.70000000000016,
+        "timing": {
+          "delay": 0,
+          "direction": "normal",
+          "duration": 600,
+          "easing": "linear",
+          "endDelay": 0,
+          "fill": "none",
+          "iterationStart": 0,
+          "iterations": 1,
+          "activeDuration": 600,
+          "currentIteration": 0,
+          "endTime": 600,
+          "localTime": 16.70000000000016,
+          "progress": 0.0278333333333336
+        }
+      },
+      {
+        "target": "decode-char is-live is-set",
+        "name": "decode-lock",
+        "playState": "running",
+        "currentTime": 33.40000000000032,
+        "timing": {
+          "delay": 0,
+          "direction": "normal",
+          "duration": 600,
+          "easing": "linear",
+          "endDelay": 0,
+          "fill": "none",
+          "iterationStart": 0,
+          "iterations": 1,
+          "activeDuration": 600,
+          "currentIteration": 0,
+          "endTime": 600,
+          "localTime": 33.40000000000032,
+          "progress": 0.0556666666666672
+        }
+      },
+      {
+        "target": "fog-wisp",
+        "name": "fog-drift",
+        "playState": "running",
+        "currentTime": 4800.411999975286,
+        "timing": {
+          "delay": -19000,
+          "direction": "alternate",
+          "duration": 44000,
+          "easing": "linear",
+          "endDelay": 0,
+          "fill": "none",
+          "iterationStart": 0,
+          "iterations": null,
+          "activeDuration": null,
+          "currentIteration": 0,
+          "endTime": null,
+          "localTime": 4800.411999975286,
+          "progress": 0.5409184545448928
+        }
+      },
+      {
+        "target": "fog-wisp",
+        "name": "fog-counterdrift",
+        "playState": "running",
+        "currentTime": 4800.411999975286,
+        "timing": {
+          "delay": -41000,
+          "direction": "alternate",
+          "duration": 60000,
+          "easing": "linear",
+          "endDelay": 0,
+          "fill": "none",
+          "iterationStart": 0,
+          "iterations": null,
+          "activeDuration": null,
+          "currentIteration": 0,
+          "endTime": null,
+          "localTime": 4800.411999975286,
+          "progress": 0.763340199999588
+        }
+      },
+      {
+        "target": "fog-wisp",
+        "name": "fog-drift",
+        "playState": "paused",
+        "currentTime": 2341.5769999728545,
+        "timing": {
+          "delay": -19000,
+          "direction": "alternate",
+          "duration": 44000,
+          "easing": "linear",
+          "endDelay": 0,
+          "fill": "none",
+          "iterationStart": 0,
+          "iterations": null,
+          "activeDuration": null,
+          "currentIteration": 0,
+          "endTime": null,
+          "localTime": 2341.5769999728545,
+          "progress": 0.48503584090847396
+        }
+      },
+      {
+        "target": "fog-wisp",
+        "name": "fog-counterdrift",
+        "playState": "paused",
+        "currentTime": 2341.5769999728545,
+        "timing": {
+          "delay": -41000,
+          "direction": "alternate",
+          "duration": 60000,
+          "easing": "linear",
+          "endDelay": 0,
+          "fill": "none",
+          "iterationStart": 0,
+          "iterations": null,
+          "activeDuration": null,
+          "currentIteration": 0,
+          "endTime": null,
+          "localTime": 2341.5769999728545,
+          "progress": 0.7223596166662143
+        }
+      },
+      {
+        "target": "fog-wisp",
+        "name": "fog-drift",
+        "playState": "paused",
+        "currentTime": 4699.617999955734,
+        "timing": {
+          "delay": -19000,
+          "direction": "alternate",
+          "duration": 44000,
+          "easing": "linear",
+          "endDelay": 0,
+          "fill": "none",
+          "iterationStart": 0,
+          "iterations": null,
+          "activeDuration": null,
+          "currentIteration": 0,
+          "endTime": null,
+          "localTime": 4699.617999955734,
+          "progress": 0.5386276818171758
+        }
+      },
+      {
+        "target": "fog-wisp",
+        "name": "fog-counterdrift",
+        "playState": "paused",
+        "currentTime": 4699.617999955734,
+        "timing": {
+          "delay": -41000,
+          "direction": "alternate",
+          "duration": 60000,
+          "easing": "linear",
+          "endDelay": 0,
+          "fill": "none",
+          "iterationStart": 0,
+          "iterations": null,
+          "activeDuration": null,
+          "currentIteration": 0,
+          "endTime": null,
+          "localTime": 4699.617999955734,
+          "progress": 0.7616602999992622
+        }
+      },
+      {
+        "target": "fog-wisp",
+        "name": "fog-drift",
+        "playState": "paused",
+        "currentTime": 2743.1789999181897,
+        "timing": {
+          "delay": -19000,
+          "direction": "alternate",
+          "duration": 44000,
+          "easing": "linear",
+          "endDelay": 0,
+          "fill": "none",
+          "iterationStart": 0,
+          "iterations": null,
+          "activeDuration": null,
+          "currentIteration": 0,
+          "endTime": null,
+          "localTime": 2743.1789999181897,
+          "progress": 0.4941631590890498
+        }
+      },
+      {
+        "target": "fog-wisp",
+        "name": "fog-counterdrift",
+        "playState": "paused",
+        "currentTime": 2743.1789999181897,
+        "timing": {
+          "delay": -41000,
+          "direction": "alternate",
+          "duration": 60000,
+          "easing": "linear",
+          "endDelay": 0,
+          "fill": "none",
+          "iterationStart": 0,
+          "iterations": null,
+          "activeDuration": null,
+          "currentIteration": 0,
+          "endTime": null,
+          "localTime": 2743.1789999181897,
+          "progress": 0.7290529833319698
+        }
+      },
+      {
+        "target": "fog-wisp",
+        "name": "fog-drift",
+        "playState": "paused",
+        "currentTime": 1655.7969999081301,
+        "timing": {
+          "delay": -19000,
+          "direction": "alternate",
+          "duration": 44000,
+          "easing": "linear",
+          "endDelay": 0,
+          "fill": "none",
+          "iterationStart": 0,
+          "iterations": null,
+          "activeDuration": null,
+          "currentIteration": 0,
+          "endTime": null,
+          "localTime": 1655.7969999081301,
+          "progress": 0.46944993181609385
+        }
+      },
+      {
+        "target": "fog-wisp",
+        "name": "fog-counterdrift",
+        "playState": "paused",
+        "currentTime": 1655.7969999081301,
+        "timing": {
+          "delay": -41000,
+          "direction": "alternate",
+          "duration": 60000,
+          "easing": "linear",
+          "endDelay": 0,
+          "fill": "none",
+          "iterationStart": 0,
+          "iterations": null,
+          "activeDuration": null,
+          "currentIteration": 0,
+          "endTime": null,
+          "localTime": 1655.7969999081301,
+          "progress": 0.7109299499984689
+        }
+      },
+      {
+        "target": "fog-wisp",
+        "name": "fog-drift",
+        "playState": "paused",
+        "currentTime": 1538.7039999029141,
+        "timing": {
+          "delay": -19000,
+          "direction": "alternate",
+          "duration": 44000,
+          "easing": "linear",
+          "endDelay": 0,
+          "fill": "none",
+          "iterationStart": 0,
+          "iterations": null,
+          "activeDuration": null,
+          "currentIteration": 0,
+          "endTime": null,
+          "localTime": 1538.7039999029141,
+          "progress": 0.4667887272705208
+        }
+      },
+      {
+        "target": "fog-wisp",
+        "name": "fog-counterdrift",
+        "playState": "paused",
+        "currentTime": 1538.7039999029141,
+        "timing": {
+          "delay": -41000,
+          "direction": "alternate",
+          "duration": 60000,
+          "easing": "linear",
+          "endDelay": 0,
+          "fill": "none",
+          "iterationStart": 0,
+          "iterations": null,
+          "activeDuration": null,
+          "currentIteration": 0,
+          "endTime": null,
+          "localTime": 1538.7039999029141,
+          "progress": 0.7089783999983819
+        }
+      },
+      {
+        "target": "fog-wisp",
+        "name": "fog-drift",
+        "playState": "paused",
+        "currentTime": 2842.887999929907,
+        "timing": {
+          "delay": -19000,
+          "direction": "alternate",
+          "duration": 44000,
+          "easing": "linear",
+          "endDelay": 0,
+          "fill": "none",
+          "iterationStart": 0,
+          "iterations": null,
+          "activeDuration": null,
+          "currentIteration": 0,
+          "endTime": null,
+          "localTime": 2842.887999929907,
+          "progress": 0.4964292727256797
+        }
+      },
+      {
+        "target": "fog-wisp",
+        "name": "fog-counterdrift",
+        "playState": "paused",
+        "currentTime": 2842.887999929907,
+        "timing": {
+          "delay": -41000,
+          "direction": "alternate",
+          "duration": 60000,
+          "easing": "linear",
+          "endDelay": 0,
+          "fill": "none",
+          "iterationStart": 0,
+          "iterations": null,
+          "activeDuration": null,
+          "currentIteration": 0,
+          "endTime": null,
+          "localTime": 2842.887999929907,
+          "progress": 0.7307147999988318
+        }
+      },
+      {
+        "target": "fog-wisp",
+        "name": "fog-drift",
+        "playState": "paused",
+        "currentTime": 2525.960999924365,
+        "timing": {
+          "delay": -19000,
+          "direction": "alternate",
+          "duration": 44000,
+          "easing": "linear",
+          "endDelay": 0,
+          "fill": "none",
+          "iterationStart": 0,
+          "iterations": null,
+          "activeDuration": null,
+          "currentIteration": 0,
+          "endTime": null,
+          "localTime": 2525.960999924365,
+          "progress": 0.4892263863619174
+        }
+      },
+      {
+        "target": "fog-wisp",
+        "name": "fog-counterdrift",
+        "playState": "paused",
+        "currentTime": 2525.960999924365,
+        "timing": {
+          "delay": -41000,
+          "direction": "alternate",
+          "duration": 60000,
+          "easing": "linear",
+          "endDelay": 0,
+          "fill": "none",
+          "iterationStart": 0,
+          "iterations": null,
+          "activeDuration": null,
+          "currentIteration": 0,
+          "endTime": null,
+          "localTime": 2525.960999924365,
+          "progress": 0.7254326833320728
+        }
+      },
+      {
+        "target": "fog-wisp",
+        "name": "fog-drift",
+        "playState": "paused",
+        "currentTime": 1923.3029999618907,
+        "timing": {
+          "delay": -19000,
+          "direction": "alternate",
+          "duration": 44000,
+          "easing": "linear",
+          "endDelay": 0,
+          "fill": "none",
+          "iterationStart": 0,
+          "iterations": null,
+          "activeDuration": null,
+          "currentIteration": 0,
+          "endTime": null,
+          "localTime": 1923.3029999618907,
+          "progress": 0.4755296136354975
+        }
+      },
+      {
+        "target": "fog-wisp",
+        "name": "fog-counterdrift",
+        "playState": "paused",
+        "currentTime": 1923.3029999618907,
+        "timing": {
+          "delay": -41000,
+          "direction": "alternate",
+          "duration": 60000,
+          "easing": "linear",
+          "endDelay": 0,
+          "fill": "none",
+          "iterationStart": 0,
+          "iterations": null,
+          "activeDuration": null,
+          "currentIteration": 0,
+          "endTime": null,
+          "localTime": 1923.3029999618907,
+          "progress": 0.7153883833326982
+        }
+      },
+      {
+        "target": "fog-wisp",
+        "name": "fog-drift",
+        "playState": "paused",
+        "currentTime": 6824.103999969221,
+        "timing": {
+          "delay": -19000,
+          "direction": "alternate",
+          "duration": 44000,
+          "easing": "linear",
+          "endDelay": 0,
+          "fill": "none",
+          "iterationStart": 0,
+          "iterations": null,
+          "activeDuration": null,
+          "currentIteration": 0,
+          "endTime": null,
+          "localTime": 6824.103999969221,
+          "progress": 0.586911454544755
+        }
+      },
+      {
+        "target": "fog-wisp",
+        "name": "fog-counterdrift",
+        "playState": "paused",
+        "currentTime": 6824.103999969221,
+        "timing": {
+          "delay": -41000,
+          "direction": "alternate",
+          "duration": 60000,
+          "easing": "linear",
+          "endDelay": 0,
+          "fill": "none",
+          "iterationStart": 0,
+          "iterations": null,
+          "activeDuration": null,
+          "currentIteration": 0,
+          "endTime": null,
+          "localTime": 6824.103999969221,
+          "progress": 0.7970683999994871
+        }
+      },
+      {
+        "target": "",
+        "name": "spirit-pulse",
+        "playState": "running",
+        "currentTime": 25088.259999980077,
+        "timing": {
+          "delay": 0,
+          "direction": "alternate",
+          "duration": 3200,
+          "easing": "linear",
+          "endDelay": 0,
+          "fill": "none",
+          "iterationStart": 0,
+          "iterations": null,
+          "activeDuration": null,
+          "currentIteration": 7,
+          "endTime": null,
+          "localTime": 25088.259999980077,
+          "progress": 0.15991875000622624
+        }
+      },
+      {
+        "target": "",
+        "name": "spirit-pulse",
+        "playState": "running",
+        "currentTime": 25088.259999980077,
+        "timing": {
+          "delay": -1200,
+          "direction": "alternate",
+          "duration": 3700,
+          "easing": "linear",
+          "endDelay": 0,
+          "fill": "none",
+          "iterationStart": 0,
+          "iterations": null,
+          "activeDuration": null,
+          "currentIteration": 7,
+          "endTime": null,
+          "localTime": 25088.259999980077,
+          "progress": 0.8950648648702497
+        }
+      },
+      {
+        "target": "",
+        "name": "spirit-pulse",
+        "playState": "running",
+        "currentTime": 25088.259999980077,
+        "timing": {
+          "delay": -2500,
+          "direction": "alternate",
+          "duration": 4300,
+          "easing": "linear",
+          "endDelay": 0,
+          "fill": "none",
+          "iterationStart": 0,
+          "iterations": null,
+          "activeDuration": null,
+          "currentIteration": 6,
+          "endTime": null,
+          "localTime": 25088.259999980077,
+          "progress": 0.4158744186000183
+        }
+      }
+    ]
+  }
+}

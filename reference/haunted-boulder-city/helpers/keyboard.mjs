@@ -1,0 +1,6 @@
+import {connect} from './cdp.mjs';const c=await connect();const sleep=ms=>new Promise(r=>setTimeout(r,ms));const log=[];
+try{await c.call('Emulation.setDeviceMetricsOverride',{width:1440,height:900,deviceScaleFactor:1,mobile:false});await c.call('Emulation.setEmulatedMedia',{features:[{name:'prefers-reduced-motion',value:'no-preference'}]});await c.call('Page.navigate',{url:'https://www.hauntedbouldercity.com/'});await sleep(4000);
+await c.evaluate("document.querySelector('.faq summary').scrollIntoView({behavior:'instant',block:'center'});document.querySelector('.faq summary').focus()");
+for(const [key,code] of [['Enter',13],[' ',32]]){for(const type of ['keyDown','keyUp'])await c.call('Input.dispatchKeyEvent',{type,key,windowsVirtualKeyCode:code});await sleep(700);log.push({key,timestamp:new Date().toISOString(),state:await c.evaluate("({open:document.querySelector('.faq details').open,focusTag:document.activeElement.tagName,outline:getComputedStyle(document.activeElement).outline,outlineOffset:getComputedStyle(document.activeElement).outlineOffset,height:document.querySelector('.faq details').getBoundingClientRect().height})")})}
+c.save('observations/E-090-faq-keyboard.json',{environment:await c.env(),log});await c.shot('captures/E-090-faq-keyboard-focus.jpg');console.log('FAQ keyboard evidence saved');
+}finally{c.close()}

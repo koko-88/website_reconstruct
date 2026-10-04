@@ -1,0 +1,67 @@
+[
+  {
+    "selector": ".haunted-word",
+    "result": {
+      "fonts": [
+        {
+          "familyName": "Manticore",
+          "postScriptName": "Manticore",
+          "isCustomFont": true,
+          "glyphCount": 7
+        }
+      ]
+    }
+  },
+  {
+    "selector": ".city-word",
+    "result": {
+      "fonts": [
+        {
+          "familyName": "Anton",
+          "postScriptName": "Anton-Regular",
+          "isCustomFont": true,
+          "glyphCount": 12
+        }
+      ]
+    }
+  },
+  {
+    "selector": ".section-kicker",
+    "result": {
+      "fonts": [
+        {
+          "familyName": "Space Mono",
+          "postScriptName": "SpaceMono-Regular",
+          "isCustomFont": true,
+          "glyphCount": 25
+        }
+      ]
+    }
+  },
+  {
+    "selector": ".intro p",
+    "result": {
+      "fonts": [
+        {
+          "familyName": "Arial",
+          "postScriptName": "ArialMT",
+          "isCustomFont": false,
+          "glyphCount": 157
+        }
+      ]
+    }
+  },
+  {
+    "selector": ".faq summary",
+    "result": {
+      "fonts": [
+        {
+          "familyName": "Arial",
+          "postScriptName": "ArialMT",
+          "isCustomFont": false,
+          "glyphCount": 21
+        }
+      ]
+    }
+  }
+]
