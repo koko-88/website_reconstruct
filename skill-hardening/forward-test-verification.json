@@ -1,0 +1,12 @@
+{
+  "result": "PASS",
+  "checkedAtUTC": "2026-10-04T02:55:41.659Z",
+  "files": 16,
+  "checks": {
+    "json": 7,
+    "images": 0,
+    "links": 23
+  },
+  "problems": [],
+  "limit": "Hashes/JSON/image structure/local links only; image decoding/visuals, source, semantic coverage, rights and readiness need separate review"
+}

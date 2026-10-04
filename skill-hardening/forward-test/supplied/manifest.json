@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 2,
+  "sealedAtUTC": "2026-10-04T02:34:39.652Z",
+  "metadata": {},
+  "files": [
+    {
+      "path": "app.js",
+      "bytes": 353,
+      "sha256": "bc67b0c3e761368c74eedb5d206ec568c763ea3f0d78fecde651227ace219640"
+    },
+    {
+      "path": "app.js.map",
+      "bytes": 118,
+      "sha256": "3dfeca7e1f543c8e1881caaa928d7918617e3ce0fa2da321507254d449027c55"
+    },
+    {
+      "path": "supplied.html",
+      "bytes": 758,
+      "sha256": "8dc91d04d15af7c99665c3c40d49817d3e4c5436326894a5fbe635c0f042f814"
+    }
+  ]
+}

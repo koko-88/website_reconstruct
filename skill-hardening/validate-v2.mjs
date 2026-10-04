@@ -1,0 +1,23 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+import {inventory,verify,sha256} from '../skills/reference-reconstruction/scripts/package.mjs';
+
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
+const original=path.join(root,'skill-hardening/original-reference-reconstruction/reference-reconstruction');
+const staged=path.join(root,'skills/reference-reconstruction');
+const frozen=path.join(root,'reference/haunted-boulder-city');
+const baseline=JSON.parse(fs.readFileSync(path.join(root,'skill-hardening/frozen-v1-baseline.json'),'utf8'));
+const stageFiles=inventory(staged),originalFiles=inventory(original);
+const stageByPath=new Map(stageFiles.map(f=>[f.path,f]));
+const changes=originalFiles.map(file=>({path:file.path,change:stageByPath.has(file.path)?stageByPath.get(file.path).sha256===file.sha256?'unchanged':'updated':'removed',before:file,after:stageByPath.get(file.path)}));
+for(const file of stageFiles) if(!originalFiles.some(old=>old.path===file.path)) changes.push({path:file.path,change:'added',after:file});
+const legacyManifest=JSON.parse(fs.readFileSync(path.join(frozen,'observations/artifact-manifest.json'),'utf8'));
+const legacyProblems=legacyManifest.files.filter(file=>{const bytes=fs.readFileSync(path.join(frozen,file.path));return bytes.length!==file.bytes||sha256(bytes)!==file.sha256;}).map(file=>file.path);
+const provenance=JSON.parse(fs.readFileSync(path.join(frozen,'observations/E-093-skill-provenance.json'),'utf8'));
+const originalProvenance=provenance.files.map(file=>({path:file.path.replaceAll('\\','/'),matches:sha256(fs.readFileSync(path.join(original,file.path)))===file.sha256}));
+const result={checkedAtUTC:new Date().toISOString(),frozenV1:verify(frozen,baseline),legacyManifest:{files:legacyManifest.files.length,problems:legacyProblems},originalSkillMatchesFrozenProvenance:originalProvenance,stagedResourceIntegrity:verify(staged,{files:stageFiles}),changes};
+const installed=process.argv[2];
+if(installed) result.installedMatchesStage=verify(installed,{files:stageFiles});
+console.log(JSON.stringify(result,null,2));
+if(result.frozenV1.result!=='PASS'||legacyProblems.length||originalProvenance.some(f=>!f.matches)||result.stagedResourceIntegrity.result!=='PASS'||(result.installedMatchesStage&&result.installedMatchesStage.result!=='PASS'))process.exitCode=1;

@@ -1,0 +1,296 @@
+{
+  "checkedAtUTC": "2026-10-04T02:57:29.073Z",
+  "frozenV1": {
+    "result": "PASS",
+    "checkedAtUTC": "2026-10-04T02:57:29.293Z",
+    "files": 172,
+    "checks": {
+      "json": 39,
+      "images": 119,
+      "links": 202
+    },
+    "problems": [],
+    "limit": "Hashes/JSON/image structure/local links only; image decoding/visuals, source, semantic coverage, rights and readiness need separate review"
+  },
+  "legacyManifest": {
+    "files": 169,
+    "problems": []
+  },
+  "originalSkillMatchesFrozenProvenance": [
+    {
+      "path": "SKILL.md",
+      "matches": true
+    },
+    {
+      "path": "assets/reference-evidence-package.md",
+      "matches": true
+    },
+    {
+      "path": "references/inspection.md",
+      "matches": true
+    },
+    {
+      "path": "references/tool-selection.md",
+      "matches": true
+    },
+    {
+      "path": "references/completeness-gate.md",
+      "matches": true
+    },
+    {
+      "path": "references/implementation-handoff.md",
+      "matches": true
+    }
+  ],
+  "stagedResourceIntegrity": {
+    "result": "PASS",
+    "checkedAtUTC": "2026-10-04T02:57:29.302Z",
+    "files": 20,
+    "checks": {
+      "json": 1,
+      "images": 0,
+      "links": 15
+    },
+    "problems": [],
+    "limit": "Hashes/JSON/image structure/local links only; image decoding/visuals, source, semantic coverage, rights and readiness need separate review"
+  },
+  "changes": [
+    {
+      "path": "agents/openai.yaml",
+      "change": "updated",
+      "before": {
+        "path": "agents/openai.yaml",
+        "bytes": 131,
+        "sha256": "5c89ddf3243d2950242995ce657205ae956330c50ee9c07a036a7f952dbcc00b"
+      },
+      "after": {
+        "path": "agents/openai.yaml",
+        "bytes": 136,
+        "sha256": "80139fa662f33411e9d6c65ac4fe9f35c8a876b6abdf31e5796114375f03ea53"
+      }
+    },
+    {
+      "path": "assets/acceptance-plan.md",
+      "change": "updated",
+      "before": {
+        "path": "assets/acceptance-plan.md",
+        "bytes": 3901,
+        "sha256": "3729b4419427da648e4910829ecf5c6e23ed1a49767883c9f81c2576f2f84ae6"
+      },
+      "after": {
+        "path": "assets/acceptance-plan.md",
+        "bytes": 4097,
+        "sha256": "34851dc45b6d4b2df13b250cb46af7e0fa676789d23f2405f27fbcf6ccf514dd"
+      }
+    },
+    {
+      "path": "assets/adaptation-contract.md",
+      "change": "updated",
+      "before": {
+        "path": "assets/adaptation-contract.md",
+        "bytes": 2481,
+        "sha256": "491b2a40b2fdeda0d7d26618b401edcea4b502486dbf2ddc1a883a170d09b413"
+      },
+      "after": {
+        "path": "assets/adaptation-contract.md",
+        "bytes": 2693,
+        "sha256": "df1307c7411341cd04c430bebb47660b690c933b00ffdb8f068e43aee1f70a26"
+      }
+    },
+    {
+      "path": "assets/reference-evidence-package.md",
+      "change": "updated",
+      "before": {
+        "path": "assets/reference-evidence-package.md",
+        "bytes": 9974,
+        "sha256": "a8617c1f7a97ab47dc0ec94ea9f8b6c70c2f62ad8e2969757589d9d49fa9a847"
+      },
+      "after": {
+        "path": "assets/reference-evidence-package.md",
+        "bytes": 12737,
+        "sha256": "8328df8a2014d04fbb1256b6beee49f0f8c211955ed0bbf9739c888facc91970"
+      }
+    },
+    {
+      "path": "references/completeness-gate.md",
+      "change": "updated",
+      "before": {
+        "path": "references/completeness-gate.md",
+        "bytes": 4461,
+        "sha256": "2be144ecc225ba931694065a37f3e880d72e1494995da6a7fd0fdf899f78f96e"
+      },
+      "after": {
+        "path": "references/completeness-gate.md",
+        "bytes": 4148,
+        "sha256": "3c970c6d0f4c76a144a9140e286eaf23b42931afae4df518def1371856aa49ca"
+      }
+    },
+    {
+      "path": "references/implementation-handoff.md",
+      "change": "updated",
+      "before": {
+        "path": "references/implementation-handoff.md",
+        "bytes": 4628,
+        "sha256": "70e7f43fa5ccc0d63d777b48965ea57209ee7ef5a8b469dff1ad2c3dd4279bfe"
+      },
+      "after": {
+        "path": "references/implementation-handoff.md",
+        "bytes": 4975,
+        "sha256": "d897b06a323661442e0eb62a63f3a77874012bad506db0e554b59a39ad600a05"
+      }
+    },
+    {
+      "path": "references/inspection.md",
+      "change": "updated",
+      "before": {
+        "path": "references/inspection.md",
+        "bytes": 7214,
+        "sha256": "7b69881a697f9ffe99b319e18d04c24a14d9e97af5f3010d89ee6a2b7a99cef8"
+      },
+      "after": {
+        "path": "references/inspection.md",
+        "bytes": 10608,
+        "sha256": "41a8510d6a3003862a1b036729bc03c52a9298920fe0bf7bf9634b080fb466fb"
+      }
+    },
+    {
+      "path": "references/tool-selection.md",
+      "change": "updated",
+      "before": {
+        "path": "references/tool-selection.md",
+        "bytes": 3349,
+        "sha256": "ef225557b19343b03fb30a17b78eb2f2baebe16724b865181b6797e8793a4196"
+      },
+      "after": {
+        "path": "references/tool-selection.md",
+        "bytes": 3985,
+        "sha256": "ab181b89708cf7489dc56131cc37deb2dbd4b54e2dff98b04802c93396e74ea7"
+      }
+    },
+    {
+      "path": "SKILL.md",
+      "change": "updated",
+      "before": {
+        "path": "SKILL.md",
+        "bytes": 7799,
+        "sha256": "ce84ec42d8350ab50933b5a4e04bdbe4c071e8fd7efbc66eff35a74f53d701f5"
+      },
+      "after": {
+        "path": "SKILL.md",
+        "bytes": 7124,
+        "sha256": "f8e7f5e6c26ea434c60c024bf8832200288dbea3a02475fa1ca739862dedd631"
+      }
+    },
+    {
+      "path": "assets/capture-plan.example.json",
+      "change": "added",
+      "after": {
+        "path": "assets/capture-plan.example.json",
+        "bytes": 1255,
+        "sha256": "5f4c0faa4f40ed15fde3ccc7ba2277775ee0cd37941b7266da575f54b3a9b59e"
+      }
+    },
+    {
+      "path": "assets/fidelity-scope-contract.md",
+      "change": "added",
+      "after": {
+        "path": "assets/fidelity-scope-contract.md",
+        "bytes": 1192,
+        "sha256": "49a80341e09d789be24c9a4b9936edf22bd611d27defb600258f1feafd49b462"
+      }
+    },
+    {
+      "path": "references/capture-plan.md",
+      "change": "added",
+      "after": {
+        "path": "references/capture-plan.md",
+        "bytes": 9134,
+        "sha256": "0e2be9b50cda0c80eed7ded593f3360317b3aa99fb955441a57183b267d1736a"
+      }
+    },
+    {
+      "path": "references/capture.md",
+      "change": "added",
+      "after": {
+        "path": "references/capture.md",
+        "bytes": 4143,
+        "sha256": "89245817fba0f9ea15dd2097059085445a19e01e888ab17aa6e8f182f6380be5"
+      }
+    },
+    {
+      "path": "references/fidelity-contract.md",
+      "change": "added",
+      "after": {
+        "path": "references/fidelity-contract.md",
+        "bytes": 2260,
+        "sha256": "2ed19f9cfb976ad6834d62532976f7cb3972bcd58c9bfb9683540a0addd0f437"
+      }
+    },
+    {
+      "path": "references/migration-portability.md",
+      "change": "added",
+      "after": {
+        "path": "references/migration-portability.md",
+        "bytes": 2183,
+        "sha256": "40079aa8b09b3e706a9e8e2eb1c762f527e5c22504e14f2342ff15a4648753b2"
+      }
+    },
+    {
+      "path": "scripts/capture.mjs",
+      "change": "added",
+      "after": {
+        "path": "scripts/capture.mjs",
+        "bytes": 18859,
+        "sha256": "e47132aa93a26022d8412b619425b9fadd0773292f47c62929ffa1c1403a4626"
+      }
+    },
+    {
+      "path": "scripts/package.mjs",
+      "change": "added",
+      "after": {
+        "path": "scripts/package.mjs",
+        "bytes": 5733,
+        "sha256": "f27fe2ccd277b451b4eb0230209ea79aa0984e79279bc16bce40d0cf24227c7a"
+      }
+    },
+    {
+      "path": "scripts/page-probe.js",
+      "change": "added",
+      "after": {
+        "path": "scripts/page-probe.js",
+        "bytes": 6165,
+        "sha256": "763f893f720da91b8d03ddbe54955e388baff02c2f891a9c8d32a2dc188cfd44"
+      }
+    },
+    {
+      "path": "scripts/source-report.mjs",
+      "change": "added",
+      "after": {
+        "path": "scripts/source-report.mjs",
+        "bytes": 2994,
+        "sha256": "7b9cd2bff6b0001ccc437ec07c537bb78b97ce87ca0657af55c027d4c0e3e98f"
+      }
+    },
+    {
+      "path": "scripts/test-capture.mjs",
+      "change": "added",
+      "after": {
+        "path": "scripts/test-capture.mjs",
+        "bytes": 10142,
+        "sha256": "b3633d9471a9edfe343529e8c91054765d41ee60feecb82e027346fdf4cdbac1"
+      }
+    }
+  ],
+  "installedMatchesStage": {
+    "result": "PASS",
+    "checkedAtUTC": "2026-10-04T02:57:29.314Z",
+    "files": 20,
+    "checks": {
+      "json": 1,
+      "images": 0,
+      "links": 15
+    },
+    "problems": [],
+    "limit": "Hashes/JSON/image structure/local links only; image decoding/visuals, source, semantic coverage, rights and readiness need separate review"
+  }
+}

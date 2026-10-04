@@ -1,0 +1,24 @@
+{
+  "recordedAtUTC": "2026-10-04T02:52:31.9323284Z",
+  "skillWorkflowVersion": "2.0.0",
+  "tools": [
+    {
+      "path": "K:\\website_reconstruct\\skills\\reference-reconstruction\\SKILL.md",
+      "sha256": "830d9abee7250dc44e5ea1f0edaf73dca3314362d6ef2565e8539e479e2c575e",
+      "role": "maintained skill/helper used in this forward test; source bytes treated as data"
+    },
+    {
+      "path": "K:\\website_reconstruct\\skills\\reference-reconstruction\\scripts\\source-report.mjs",
+      "sha256": "fdb6d197daf77c67ec0b2a57be51bcc14e2324cda28776eedef4c5ab1df4a0ec",
+      "role": "maintained skill/helper used in this forward test; source bytes treated as data"
+    },
+    {
+      "path": "K:\\website_reconstruct\\skills\\reference-reconstruction\\scripts\\package.mjs",
+      "sha256": "f27fe2ccd277b451b4eb0230209ea79aa0984e79279bc16bce40d0cf24227c7a",
+      "role": "maintained skill/helper used in this forward test; source bytes treated as data"
+    }
+  ],
+  "nodeExecutable": "C:\\Users\\kerol\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\bin\\node.exe",
+  "nodeVersion": "v24.19.0",
+  "provenanceScope": "Helper hashes are a final-verification snapshot. Initial source-report acquisition hashes were not captured; source-report.json and workflow-usability.md preserve the observed acquisition results from 2026-10-04T02:34:02.856Z. A later helper revision does not retroactively change those observations."
+}

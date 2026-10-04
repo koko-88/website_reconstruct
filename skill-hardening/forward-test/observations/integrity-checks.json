@@ -1,0 +1,296 @@
+{
+  "checkedAtUTC": "2026-10-04T02:52:32.432Z",
+  "phase": "pre-seal static integrity",
+  "problems": [],
+  "checks": {
+    "originalCopies": [
+      {
+        "path": "supplied/app.js",
+        "bytes": 353,
+        "sha256": "bc67b0c3e761368c74eedb5d206ec568c763ea3f0d78fecde651227ace219640",
+        "pass": true
+      },
+      {
+        "path": "supplied/app.js.map",
+        "bytes": 118,
+        "sha256": "3dfeca7e1f543c8e1881caaa928d7918617e3ce0fa2da321507254d449027c55",
+        "pass": true
+      },
+      {
+        "path": "supplied/supplied.html",
+        "bytes": 758,
+        "sha256": "8dc91d04d15af7c99665c3c40d49817d3e4c5436326894a5fbe635c0f042f814",
+        "pass": true
+      }
+    ],
+    "json": [
+      {
+        "path": "observations/inspection-environment.json",
+        "pass": true
+      },
+      {
+        "path": "observations/integrity-checks.json",
+        "pass": true
+      },
+      {
+        "path": "observations/source-inventory.json",
+        "pass": true
+      },
+      {
+        "path": "observations/source-lines.json",
+        "pass": true
+      },
+      {
+        "path": "observations/source-report.json",
+        "pass": true
+      },
+      {
+        "path": "observations/tool-provenance.json",
+        "pass": true
+      },
+      {
+        "path": "supplied/app.js.map",
+        "pass": true
+      },
+      {
+        "path": "supplied/manifest.json",
+        "pass": true
+      }
+    ],
+    "markdownLinks": [
+      {
+        "document": "fidelity-scope-contract.md",
+        "link": "authority.md",
+        "pass": true
+      },
+      {
+        "document": "handoff.md",
+        "link": "authority.md",
+        "pass": true
+      },
+      {
+        "document": "handoff.md",
+        "link": "fidelity-scope-contract.md",
+        "pass": true
+      },
+      {
+        "document": "handoff.md",
+        "link": "reference-evidence.md",
+        "pass": true
+      },
+      {
+        "document": "handoff.md",
+        "link": "observations/source-lines.json",
+        "pass": true
+      },
+      {
+        "document": "reference-evidence.md",
+        "link": "fidelity-scope-contract.md",
+        "pass": true
+      },
+      {
+        "document": "reference-evidence.md",
+        "link": "authority.md",
+        "pass": true
+      },
+      {
+        "document": "reference-evidence.md",
+        "link": "observations/source-lines.json",
+        "pass": true
+      },
+      {
+        "document": "reference-evidence.md",
+        "link": "supplied/supplied.html",
+        "pass": true
+      },
+      {
+        "document": "reference-evidence.md",
+        "link": "supplied/app.js",
+        "pass": true
+      },
+      {
+        "document": "reference-evidence.md",
+        "link": "supplied/app.js.map",
+        "pass": true
+      },
+      {
+        "document": "reference-evidence.md",
+        "link": "authority.md",
+        "pass": true
+      },
+      {
+        "document": "reference-evidence.md",
+        "link": "supplied/supplied.html",
+        "pass": true
+      },
+      {
+        "document": "reference-evidence.md",
+        "link": "supplied/app.js",
+        "pass": true
+      },
+      {
+        "document": "reference-evidence.md",
+        "link": "supplied/app.js.map",
+        "pass": true
+      },
+      {
+        "document": "reference-evidence.md",
+        "link": "observations/source-report.json",
+        "pass": true
+      },
+      {
+        "document": "reference-evidence.md",
+        "link": "observations/source-lines.json",
+        "pass": true
+      },
+      {
+        "document": "reference-evidence.md",
+        "link": "observations/source-inventory.json",
+        "pass": true
+      },
+      {
+        "document": "reference-evidence.md",
+        "link": "supplied/manifest.json",
+        "pass": true
+      },
+      {
+        "document": "reference-evidence.md",
+        "link": "observations/inspection-environment.json",
+        "pass": true
+      },
+      {
+        "document": "reference-evidence.md",
+        "link": "write-preflight.txt",
+        "pass": true
+      },
+      {
+        "document": "reference-evidence.md",
+        "link": "observations/integrity-checks.json",
+        "pass": true
+      },
+      {
+        "document": "reference-evidence.md",
+        "link": "handoff.md",
+        "pass": true
+      }
+    ],
+    "tableDeclarations": {
+      "ENV": {
+        "ids": [
+          "ENV-S",
+          "ENV-A",
+          "ENV-D",
+          "ENV-M",
+          "ENV-E"
+        ],
+        "expected": 5,
+        "pass": true
+      },
+      "E": {
+        "ids": [
+          "E-01",
+          "E-02",
+          "E-03",
+          "E-04",
+          "E-05",
+          "E-06",
+          "E-07",
+          "E-08"
+        ],
+        "expected": 8,
+        "pass": true
+      },
+      "CV": {
+        "ids": [
+          "CV-01",
+          "CV-02",
+          "CV-03",
+          "CV-04",
+          "CV-05",
+          "CV-06",
+          "CV-07",
+          "CV-08",
+          "CV-09",
+          "CV-10",
+          "CV-11",
+          "CV-12",
+          "CV-13",
+          "CV-14",
+          "CV-15",
+          "CV-16",
+          "CV-17",
+          "CV-18",
+          "CV-19",
+          "CV-20",
+          "CV-21"
+        ],
+        "expected": 21,
+        "pass": true
+      },
+      "ND": {
+        "ids": [
+          "ND-01",
+          "ND-02",
+          "ND-03",
+          "ND-04",
+          "ND-05",
+          "ND-06"
+        ],
+        "expected": 6,
+        "pass": true
+      },
+      "PA": {
+        "ids": [
+          "PA-01",
+          "PA-02",
+          "PA-03",
+          "PA-04",
+          "PA-05",
+          "PA-06",
+          "PA-07"
+        ],
+        "expected": 7,
+        "pass": true
+      },
+      "AC": {
+        "ids": [
+          "AC-00",
+          "AC-01",
+          "AC-02",
+          "AC-03",
+          "AC-04",
+          "AC-05",
+          "AC-06",
+          "AC-07"
+        ],
+        "expected": 8,
+        "pass": true
+      },
+      "U": {
+        "ids": [
+          "U-01",
+          "U-02",
+          "U-03",
+          "U-04",
+          "U-05",
+          "U-06",
+          "U-07",
+          "U-08",
+          "U-09",
+          "U-10",
+          "U-11",
+          "U-12",
+          "U-13",
+          "U-14",
+          "U-15"
+        ],
+        "expected": 15,
+        "pass": true
+      }
+    },
+    "templatePlaceholdersAbsent": true,
+    "sourceExecution": "No HTML/JS execution; helpers read supplied bytes as data only",
+    "priorAttempt": "First pre-seal check ran before its self-linked artifact existed; this complete second check resolves the self-link by checking the now-present JSON artifact. No source defect or source mutation occurred."
+  },
+  "result": "PASS"
+}

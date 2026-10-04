@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 2,
+  "sealedAtUTC": "2026-10-04T02:53:05.203Z",
+  "metadata": {},
+  "files": [
+    {
+      "path": "authority.md",
+      "bytes": 1340,
+      "sha256": "e33b5144280352ed209042e3c5de141b2af01b02623fe6826852aa93c225f1d3"
+    },
+    {
+      "path": "fidelity-scope-contract.md",
+      "bytes": 5943,
+      "sha256": "bb483d8a7de418a3d66cafb39428f807bc82f17cc0405a4fc0c881e0ccb6fbc8"
+    },
+    {
+      "path": "handoff.md",
+      "bytes": 7507,
+      "sha256": "82b8d123b3c4fb1c80e80b28230bc6111b8b73abdb77f8ab4c37e8446408b157"
+    },
+    {
+      "path": "observations/inspection-environment.json",
+      "bytes": 689,
+      "sha256": "24b53f51af699beb72d68d6a4e68418b5f44b28c618c0c298f37b071cc62ff0e"
+    },
+    {
+      "path": "observations/integrity-checks.json",
+      "bytes": 6684,
+      "sha256": "283814789ede54d0a1badf5c1c89ef225d2888a9c4d6f139a7ee9304498747e4"
+    },
+    {
+      "path": "observations/source-inventory.json",
+      "bytes": 1346,
+      "sha256": "f597050d20b81f0689a5ba7be5cd5804eebd92ef674826502d1937bf6f0776ec"
+    },
+    {
+      "path": "observations/source-lines.json",
+      "bytes": 2366,
+      "sha256": "ad777db4dc97230975d807de53ab13e7ebfe3348e25f85d73c7d1ac1d04905e2"
+    },
+    {
+      "path": "observations/source-report.json",
+      "bytes": 2044,
+      "sha256": "a40f2f82f23c5fa39a31d475cbf5fe7797248c70c9374aabbd69a765b4f1760b"
+    },
+    {
+      "path": "observations/tool-provenance.json",
+      "bytes": 1470,
+      "sha256": "02f7cb8cdc88b672b7fbd1348bee9e63c0260b13696dba6595719d6391472d84"
+    },
+    {
+      "path": "reference-evidence.md",
+      "bytes": 37263,
+      "sha256": "3ce3f958df56ea162d879e63ddf4a8beb88a81a65bca9a722a8b3ce1c555dcb7"
+    },
+    {
+      "path": "supplied/app.js",
+      "bytes": 353,
+      "sha256": "bc67b0c3e761368c74eedb5d206ec568c763ea3f0d78fecde651227ace219640"
+    },
+    {
+      "path": "supplied/app.js.map",
+      "bytes": 118,
+      "sha256": "3dfeca7e1f543c8e1881caaa928d7918617e3ce0fa2da321507254d449027c55"
+    },
+    {
+      "path": "supplied/manifest.json",
+      "bytes": 536,
+      "sha256": "e120b43fbfb5b829ced8221785f09413b297680e74584641e088cad292f23b16"
+    },
+    {
+      "path": "supplied/supplied.html",
+      "bytes": 758,
+      "sha256": "8dc91d04d15af7c99665c3c40d49817d3e4c5436326894a5fbe635c0f042f814"
+    },
+    {
+      "path": "workflow-usability.md",
+      "bytes": 4721,
+      "sha256": "2b830502011ea46e3db28a48395ab58fae1e03fcece1abfaaa94c7c6987929e8"
+    },
+    {
+      "path": "write-preflight.txt",
+      "bytes": 57,
+      "sha256": "b8db02fa6d9f2dcd94223e4a501b7f4d39c891b45b1200296a85ea3aa464aed3"
+    }
+  ]
+}

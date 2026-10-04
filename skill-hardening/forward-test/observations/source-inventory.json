@@ -1,0 +1,35 @@
+[
+  {
+    "name": "app.js",
+    "bytes": 353,
+    "sha256": "bc67b0c3e761368c74eedb5d206ec568c763ea3f0d78fecde651227ace219640",
+    "originalPath": "K:\\website_reconstruct\\skill-hardening\\forward-inputs\\app.js",
+    "packagePath": "supplied/app.js",
+    "copyVerified": true,
+    "capturedAt": "unknown",
+    "inspectedAtUTC": "2026-10-04T02:33:59.1317330Z",
+    "method": "static byte copy and SHA-256; no execution"
+  },
+  {
+    "name": "app.js.map",
+    "bytes": 118,
+    "sha256": "3dfeca7e1f543c8e1881caaa928d7918617e3ce0fa2da321507254d449027c55",
+    "originalPath": "K:\\website_reconstruct\\skill-hardening\\forward-inputs\\app.js.map",
+    "packagePath": "supplied/app.js.map",
+    "copyVerified": true,
+    "capturedAt": "unknown",
+    "inspectedAtUTC": "2026-10-04T02:33:59.1651689Z",
+    "method": "static byte copy and SHA-256; no execution"
+  },
+  {
+    "name": "supplied.html",
+    "bytes": 758,
+    "sha256": "8dc91d04d15af7c99665c3c40d49817d3e4c5436326894a5fbe635c0f042f814",
+    "originalPath": "K:\\website_reconstruct\\skill-hardening\\forward-inputs\\supplied.html",
+    "packagePath": "supplied/supplied.html",
+    "copyVerified": true,
+    "capturedAt": "unknown",
+    "inspectedAtUTC": "2026-10-04T02:33:59.1710354Z",
+    "method": "static byte copy and SHA-256; no execution"
+  }
+]

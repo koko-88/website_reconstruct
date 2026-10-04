@@ -1,0 +1,14 @@
+{
+  "inspectedAtUTC": "2026-10-04T02:34:39.5034779Z",
+  "os": "Microsoft Windows NT 10.0.19045.0",
+  "shellVersion": "7.6.5",
+  "shellEdition": "Core",
+  "culture": "en-US",
+  "hostTimezone": "Egypt Standard Time",
+  "method": "static filesystem inspection; no browser context",
+  "browser": "not used",
+  "viewport": "not applicable",
+  "captureConditions": "historical archive unknown",
+  "browserSaveRoot": "not tested; no capture attempted",
+  "capabilities": "PowerShell file reads/copies/SHA256; bundled Node running skill maintained source-report/package tools; DevTools and Polypane metadata discovered but no session enumerated or used under static-only boundary"
+}

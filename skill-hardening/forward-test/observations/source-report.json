@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 2,
+  "inspectedAtUTC": "2026-10-04T02:34:02.856Z",
+  "files": [
+    {
+      "file": "supplied.html",
+      "bytes": 758,
+      "sha256": "8dc91d04d15af7c99665c3c40d49817d3e4c5436326894a5fbe635c0f042f814",
+      "status": "inspected static bytes",
+      "sourceMapReferences": [],
+      "referencesTruncated": false,
+      "renderingSignals": [],
+      "claimType": "observed text signals; runtime renderer/use remains inference or unknown",
+      "limits": [
+        "No fetch, execution, endpoint guessing or permission inference",
+        "Absence of tokens does not exclude minified/worker/GPU rendering"
+      ]
+    },
+    {
+      "file": "app.js",
+      "bytes": 353,
+      "sha256": "bc67b0c3e761368c74eedb5d206ec568c763ea3f0d78fecde651227ace219640",
+      "status": "inspected static bytes",
+      "sourceMapReferences": [
+        {
+          "kind": "external",
+          "reference": "app.js.map"
+        }
+      ],
+      "referencesTruncated": false,
+      "renderingSignals": [],
+      "claimType": "observed text signals; runtime renderer/use remains inference or unknown",
+      "limits": [
+        "No fetch, execution, endpoint guessing or permission inference",
+        "Absence of tokens does not exclude minified/worker/GPU rendering"
+      ]
+    },
+    {
+      "file": "app.js.map",
+      "bytes": 118,
+      "sha256": "3dfeca7e1f543c8e1881caaa928d7918617e3ce0fa2da321507254d449027c55",
+      "status": "inspected static bytes",
+      "sourceMapReferences": [],
+      "referencesTruncated": false,
+      "renderingSignals": [],
+      "claimType": "observed text signals; runtime renderer/use remains inference or unknown",
+      "limits": [
+        "No fetch, execution, endpoint guessing or permission inference",
+        "Absence of tokens does not exclude minified/worker/GPU rendering"
+      ],
+      "map": {
+        "version": 3,
+        "sourceCount": 1,
+        "embeddedSourceCount": 1,
+        "indexedSections": 0
+      }
+    }
+  ]
+}

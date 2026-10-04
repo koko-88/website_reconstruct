@@ -1,0 +1,49 @@
+# Declarative capture plan and CLI
+
+The runner is an optional **raw-evidence adapter**, not an automatic inspector. Select it for repeated/environment capture or save reliability gaps. It does not crawl a site, identify every route, judge fidelity, fetch public maps, approve reuse or implement a target. Maintain one script; put website selectors/actions in data.
+
+Compare adapters before adopting: MCP offers existing live sessions and low setup cost but save roots/transport/contexts vary; Polypane adds pane comparison but owns emulation; raw CDP is dependency-light and precise but requires target/lifecycle/event handling and is Chromium-specific; Playwright provides maintained navigation/input/contexts/file capture and finite timeouts at the cost of a runtime/browser dependency. v2 uses a tool-neutral page probe plus fresh-context Playwright adapter, preserving MCP/static paths. Avoid a new CDP framework or duplicate adapters absent a demonstrated gap.
+
+## Execute
+
+Use installed Node and Playwright; do not download/install merely to inspect static artifacts. Commands are portable (quote paths in the host shell):
+
+```text
+node scripts/capture.mjs PLAN.json NEW_OUTPUT_DIR [PLAYWRIGHT_MODULE_DIR]
+node scripts/package.mjs verify RAW_OUTPUT_DIR
+node scripts/source-report.mjs PUBLIC_APP.js PUBLIC_STYLE.css PUBLIC_APP.js.map
+node scripts/package.mjs snapshot FROZEN_PACKAGE_DIR
+node scripts/package.mjs verify FROZEN_PACKAGE_DIR BASELINE.json
+```
+
+Default module resolution uses an installed playwright package accessible from the script; optional module directory selects an existing installation without changing global config. If Node is absent from PATH, discover an existing host-provided runtime (such as the desktop's bundled dependencies) before considering installation; no hard-coded host path is required. A compatible installed browser binary is required. The runner launches its own headless browser with sandbox enabled, no user profile attachment, security-disable flags or custom startup arguments. Launch/setup failure is reported, never repaired with weaker security. External browser/GPU/codec/device differences require a justified separate capture environment.
+
+NEW_OUTPUT_DIR must not exist and its parent must exist. Even empty directories are rejected. Raw runs are sealed with manifest.json; **do not append final reports inside them**. Assemble human inspection outputs in a new parent package referring to raw runs. Seal that completed revision separately; later changes require a new revision. Snapshot/verify never execute old helpers or write into the inspected root.
+
+## Plan fields
+
+Start with [assets/capture-plan.example.json](../assets/capture-plan.example.json). Its localhost URL is a schema example, not a reference requirement. validatePlan rejects unknown fields/IDs, duplicate IDs, unsupported actions, dangerous/private query keys, existing output and wrong schema before browsing.
+
+- Top level: schemaVersion 2; packageId, contractId, sourceId (portable IDs); authorization (existing capture instruction); exact allowedOrigins; publicQueryKeys (only explicit non-sensitive query keys); totalTimeoutMs (1s-10min, default 180s); optional browserChannel chrome/msedge/chromium for an already installed compatible browser, otherwise the Playwright bundled binary; environments and cases.
+- Environment: id, viewport width/height (200-8000 CSS px), deviceScaleFactor (1-4, default 1), isMobile/hasTouch (false), locale (en-US), timezoneId (UTC), colorScheme (light), reducedMotion (no-preference), required fixture/session/consent descriptions. These describe fresh anonymous context state, **not imported storage/data**. Read actual probe values; mobile emulation does not change UA to a real device. Browser zoom remains unknown.
+- Case: id, environmentId, authorized public url, named state, reset exactly fresh-context, actions and checkpoints. A new context/navigation resets each case; checkpoints within a case are sequential cumulative states. Saved plan and before/after public URLs preserve URL/query/hash recipes; check sensitive values before sharing. Main-frame navigation outside the contract is blocked and reported; child-frame/asset traffic is observed rather than silently disabled. Routing disables HTTP cache and is recorded as a condition; cache-sensitive states need existing-session MCP evidence or another justified adapter.
+- Checkpoint: id, phase settled or transient; afterMs (0-30s from navigation **start**, capture can be late and actual times are recorded), timeoutMs (100ms-30s), fullPage boolean, required visible selectors, absent visible blockers, stableSelectors and actions. Settled requires explicit geometry selectors. Defaults: 10s readiness, viewport capture, no required/blocker selectors. Name the correct ready signals; stable geometry alone does not establish the intended state.
+- Actions: scroll x/y, scrollTo selector, hover selector, click selector, press key, or sweep maxSteps/step/budgetMs. Click/press require an authority string citing the reviewed reversible transition; a string is **not verification of human authorization**, and the inspector must review all side effects before running. No fill/submit/script/network mutation primitives. Keyboard keys are restricted to Tab/Shift+Tab/Escape/Enter/Space/arrows/Home/End. Sweeps go forward then reset top, with bounded step/time and truncation record; reverse/sticky observations need named subsequent actions/checkpoints.
+
+## Outcomes and limits
+
+Probe reads include environment, bounded DOM geometry, visible-image decode under one shared budget, DOM-visible rendering surfaces and public source references. No runtime hooking/context creation, cookies, storage export, requests, arbitrary HTML/text dump or eval supplied in plans. Read source artifacts separately as bounded static bytes with source-report.mjs; it never fetches/executes them. Same-origin frames/worker/shadow content still need focused separate inspection if material; no renderer absence claim from these limited probes.
+
+Static source reports use case-insensitive substring signals, including comments: manual review establishes their meaning, never automatic renderer use. Empty signals cannot establish renderer absence. Map summaries expose absent file/mappings fields and empty mappings; even valid nonempty maps need manual bundle/source correspondence review. The CLI records its helper hash. Package verification checks JSON/image structure/local links and byte closure; evidence/coverage ID declarations and semantic completeness remain manual obligations.
+
+Settled needs fonts/document/required controls, absent blockers, all sampled visible images decoded and three stable half-pixel geometry samples. Offscreen lazy images do not block; sweep coverage remains separate. Timeout saves pending reasons and an **unsettled** artifact. Post-screenshot readiness/geometry is checked. Active ambient frames are preserved, so deterministic procedure does not promise identical live pixels. Full-page screenshots over 30 million device pixels are refused; use sections.
+
+PNG bytes and JSON sidecars carry unique case/checkpoint IDs, actual phase/readiness, environment/time origins, action log linkage, screenshot start/end/dimensions/hash, runner/probe/plan hashes and source/contract IDs. run.json carries finite sanitized response metadata (500 entries per case, truncation explicit), errors and all attempted cases. CAPTURED means raw checkpoints ran; INCOMPLETE exits nonzero. Neither is a gate result. manifest.json verifies file inventory only. Inspect originals, derive both mandatory reports and matrices, then assess the four gates.
+
+For MCP use, page-probe.js is a complete async function declaration. Read it into a string, syntax-check as a parenthesized expression, supply it in the installed tool's function field, and pass JSON options through its supported arguments. Do not paste a filename/undefined function reference into evaluate_script. Unsupported argument/save capabilities call for a smaller explicit read or alternate adapter, not malformed calls.
+
+## Validate the helpers
+
+Run `node --test scripts/test-capture.mjs` for dependency-free invariants. The local synthetic-browser test is skipped unless REFERENCE_PLAYWRIGHT_MODULE points to an installed Playwright module directory; REFERENCE_BROWSER_CHANNEL selects an installed channel (test default chrome). Set these in the host shell for the integration test. It creates and checks disposable synthetic pages only, never a reference website, and checks lazy-image exclusion, timeout/phase honesty, state replay, environment provenance and overwrite refusal.
+
+Browser startup/process shutdown can fail or hang under host sandbox policies independently of page readiness. Use the host's authorized process timeout/termination capabilities and record the failed environment; retry only with a supported changed environment. The runner's page/decode/screenshot and run budgets are bounded, but it cannot guarantee cleanup of a browser process the OS refuses to control. Never weaken browser security flags to satisfy a test.

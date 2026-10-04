@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "inspectedAtUTC": "2026-10-04T02:55:41.497Z",
+  "tool": {
+    "name": "source-report.mjs",
+    "sha256": "7b9cd2bff6b0001ccc437ec07c537bb78b97ce87ca0657af55c027d4c0e3e98f"
+  },
+  "files": [
+    {
+      "file": "app.js",
+      "bytes": 353,
+      "sha256": "bc67b0c3e761368c74eedb5d206ec568c763ea3f0d78fecde651227ace219640",
+      "status": "inspected static bytes",
+      "sourceMapReferences": [
+        {
+          "kind": "external",
+          "reference": "app.js.map"
+        }
+      ],
+      "referencesTruncated": false,
+      "renderingSignals": [
+        "Worker"
+      ],
+      "signalScan": "Case-insensitive substring signals include comments and unrelated text; they do not prove runtime use",
+      "claimType": "observed text signals; runtime renderer/use remains inference or unknown",
+      "limits": [
+        "No fetch, execution, endpoint guessing or permission inference",
+        "Map reference query values/fragments omitted; original bytes retain directives",
+        "Absence of tokens does not exclude minified/worker/GPU rendering"
+      ]
+    },
+    {
+      "file": "app.js.map",
+      "bytes": 118,
+      "sha256": "3dfeca7e1f543c8e1881caaa928d7918617e3ce0fa2da321507254d449027c55",
+      "status": "inspected static bytes",
+      "sourceMapReferences": [],
+      "referencesTruncated": false,
+      "renderingSignals": [],
+      "signalScan": "Case-insensitive substring signals include comments and unrelated text; they do not prove runtime use",
+      "claimType": "observed text signals; runtime renderer/use remains inference or unknown",
+      "limits": [
+        "No fetch, execution, endpoint guessing or permission inference",
+        "Map reference query values/fragments omitted; original bytes retain directives",
+        "Absence of tokens does not exclude minified/worker/GPU rendering"
+      ],
+      "map": {
+        "version": 3,
+        "fileFieldPresent": false,
+        "mappingsPresent": true,
+        "mappingsCharacters": 0,
+        "emptyMappings": true,
+        "sourceRootPresent": false,
+        "sourceCount": 1,
+        "embeddedSourceCount": 1,
+        "indexedSections": 0,
+        "limit": "Valid structure/nonempty mappings do not establish bundle match or useful original-source correspondence"
+      }
+    }
+  ]
+}

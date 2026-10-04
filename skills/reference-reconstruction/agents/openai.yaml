@@ -1,0 +1,3 @@
+interface:
+  display_name: "Reference Reconstruction"
+  short_description: "Inspect reference fidelity and implementation readiness"

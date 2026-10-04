@@ -1,0 +1,68 @@
+[
+  {
+    "file": "supplied/supplied.html",
+    "method": "UTF-8 text read only; original line numbers",
+    "lines": [
+      {
+        "line": 1,
+        "text": "<!doctype html>"
+      },
+      {
+        "line": 2,
+        "text": "<html lang=\"en\"><head><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><style>"
+      },
+      {
+        "line": 3,
+        "text": ":root{--ink:#162321}body{margin:0;background:var(--ink);color:#f3eadb}main{max-width:1120px;margin:auto;padding:40px}h1{font:64px serif}#menu-panel[hidden]{display:none}"
+      },
+      {
+        "line": 4,
+        "text": "@media(max-width:700px){main{padding:24px}h1{font-size:40px}}"
+      },
+      {
+        "line": 5,
+        "text": "</style><script src=\"./app.js\" defer></script></head><body><main><h1>Harbor Tours</h1><button id=\"menu\" aria-expanded=\"false\">Menu</button><nav id=\"menu-panel\" hidden><a href=\"#visit\">Visit</a></nav><section id=\"visit\"><h2>Visit the harbor</h2><canvas id=\"scene\" width=\"640\" height=\"240\"></canvas><iframe title=\"Booking\" src=\"https://booking.example.invalid/public-event\"></iframe></section></main></body></html>"
+      }
+    ]
+  },
+  {
+    "file": "supplied/app.js",
+    "method": "UTF-8 text read only; original line numbers",
+    "lines": [
+      {
+        "line": 1,
+        "text": "document.querySelector('#menu').addEventListener('click',()=>{"
+      },
+      {
+        "line": 2,
+        "text": "  const panel=document.querySelector('#menu-panel');panel.hidden=!panel.hidden;"
+      },
+      {
+        "line": 3,
+        "text": "  document.querySelector('#menu').setAttribute('aria-expanded',String(!panel.hidden));"
+      },
+      {
+        "line": 4,
+        "text": "});"
+      },
+      {
+        "line": 5,
+        "text": "// The archived application referred to a separate renderer worker, not supplied here."
+      },
+      {
+        "line": 6,
+        "text": "//# sourceMappingURL=app.js.map"
+      }
+    ]
+  },
+  {
+    "file": "supplied/app.js.map",
+    "method": "UTF-8 text read only; original line numbers",
+    "lines": [
+      {
+        "line": 1,
+        "text": "{\"version\":3,\"sources\":[\"menu.js\"],\"sourcesContent\":[\"// Public archived menu source only\"],\"names\":[],\"mappings\":\"\"}"
+      }
+    ]
+  }
+]
