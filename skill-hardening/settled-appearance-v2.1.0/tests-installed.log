@@ -1,0 +1,53 @@
+✔ example plan validates without requiring browser tooling (6.1494ms)
+✔ plan rejects scripts, duplicate ids, foreign navigation, private queries and unknown conditions (3.1755ms)
+✔ shared MCP probe is a complete standalone inspectable function (1.3184ms)
+✖ C:\Users\kerol\.agents\skills\reference-reconstruction\scripts\test-capture.mjs (421.5739ms)
+
+<--- Last few GCs --->
+
+[75056:000001D1A1DDA000]       69 ms: Scavenge 6.4 (8.5) -> 6.2 (11.2) MB, pooled: 0 MB, 1.22 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+[75056:000001D1A1DDA000]      221 ms: Scavenge 17.0 (19.5) -> 16.0 (24.3) MB, pooled: 0 MB, 1.23 / 0.02 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+
+FATAL ERROR: Zone Allocation failed - process out of memory
+----- Native stack trace -----
+
+ 1: 00007FF629B450BF node::OnFatalError+1343
+ 2: 00007FF62876DD27 v8::Function::NewInstance+423
+ 3: 00007FF6280E5BC6 v8::SnapshotCreator::GetIsolate+56918
+ 4: 00007FF627CD9DA1 std::vector<v8::CpuProfileDeoptInfo,std::allocator<v8::CpuProfileDeoptInfo> >::_Tidy+44289
+ 5: 00007FF628370C9F v8::TypecheckWitness::TypecheckWitness+1615
+ 6: 00007FF62846BDCD v8::Promise::MarkAsSilent+625117
+ 7: 00007FF628473EB4 v8::Promise::MarkAsSilent+658116
+ 8: 00007FF628474823 v8::Promise::MarkAsSilent+660531
+ 9: 00007FF628461FC5 v8::Promise::MarkAsSilent+584661
+10: 00007FF62845F7DB v8::Promise::MarkAsSilent+574443
+11: 00007FF62845EC4F v8::Promise::MarkAsSilent+571487
+12: 00007FF62845D45F v8::Promise::MarkAsSilent+565359
+13: 00007FF628454706 v8::Promise::MarkAsSilent+529174
+14: 00007FF6286F2ABF X509_STORE_CTX_get_check_issued+66303
+15: 00007FF6286E93D8 X509_STORE_CTX_get_check_issued+27672
+16: 00007FF6286EBB74 X509_STORE_CTX_get_check_issued+37812
+17: 00007FF6286EE571 X509_STORE_CTX_get_check_issued+48561
+18: 00007FF6287771E3 v8::ScriptCompiler::CompileFunction+1011
+19: 00007FF629B62A5F node::GetCurrentEnvironment+22351
+20: 00007FF629B60FB3 node::GetCurrentEnvironment+15523
+21: 000001D1DA38F64D 
+✖ C:\Users\kerol\.agents\skills\reference-reconstruction\scripts\test-settled-appearance.mjs (517.1662ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 3
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 556.5086
+
+✖ failing tests:
+
+test at C:\Users\kerol\.agents\skills\reference-reconstruction\scripts\test-capture.mjs:1:1
+✖ C:\Users\kerol\.agents\skills\reference-reconstruction\scripts\test-capture.mjs (421.5739ms)
+  'test failed'
+
+test at C:\Users\kerol\.agents\skills\reference-reconstruction\scripts\test-settled-appearance.mjs:1:1
+✖ C:\Users\kerol\.agents\skills\reference-reconstruction\scripts\test-settled-appearance.mjs (517.1662ms)
+  'test failed'

@@ -1,0 +1,34 @@
+✔ example plan validates without requiring browser tooling (4.9764ms)
+✔ plan rejects scripts, duplicate ids, foreign navigation, private queries and unknown conditions (5.4044ms)
+✔ shared MCP probe is a complete standalone inspectable function (2.3001ms)
+✔ a bounded promise terminates missing readiness (60.0599ms)
+✔ visible-image timeout and missing geometry cannot count as settled (1.1109ms)
+✔ manifest closure catches corrupted, unlisted and duplicate artifacts; seal refuses reuse (45.1906ms)
+✔ frozen/output destination is rejected before requiring Playwright (3.8278ms)
+✔ an intact hash cannot excuse malformed JSON, truncated images or broken package links (30.2579ms)
+✔ public-source inspection parses maps without fetching or executing; oversized is unknown (8.4488ms)
+✔ live local fixtures: lazy images, phases, reversible states, mobile preferences, timeout, giant capture and provenance (6541.3427ms)
+✔ appearance policy validates data-only assertions and bounded exceptions (4.3802ms)
+✔ capture verification catches appearance changes without geometry changes (0.9505ms)
+▶ synthetic settled-appearance regressions in a real browser
+  ✔ stable parent does not pass a delayed child opacity assertion (1106.0267ms)
+  ✔ delayed finite transform/filter animation blocks even without a semantic assertion (1172.23ms)
+  ✔ region readiness includes ancestors with delayed finite motion (1183.7545ms)
+  ✔ classified ambient motion stays observable and does not block static region convergence (541.6591ms)
+  ✔ unclassified continuous motion cannot be silently ignored (627.457ms)
+  ✔ cross-origin frame shell is not inner visual readiness (1048.103ms)
+  ✔ viewport cannot be promoted to full-page appearance, even after a reveal sweep and reset (2048.6751ms)
+  ✔ timeout preserves pending signals instead of force passing (625.3011ms)
+  ✔ sample-budget exhaustion is honest and distinct from timeout (408.8811ms)
+  ✔ region visual convergence detects changing canvas pixels beyond DOM geometry (766.5077ms)
+  ✔ sample truncation and unavailable screenshot capability remain unresolved (841.7287ms)
+  ✔ screenshot pixel refusal invalidates successful viewport appearance (2053.4889ms)
+✔ synthetic settled-appearance regressions in a real browser (13981.8807ms)
+ℹ tests 25
+ℹ suites 0
+ℹ pass 25
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 21171.33

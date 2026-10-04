@@ -34,7 +34,6 @@
       "required": ["main"],
       "absent": ["[aria-busy='true']"],
       "stableSelectors": ["main"],
-      "appearance": {"scope": "viewport", "assertions": [{"selector": "main", "visible": true, "minOpacity": 0.99}]},
       "timeoutMs": 10000,
       "fullPage": false,
       "actions": []

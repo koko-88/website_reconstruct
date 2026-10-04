@@ -1,0 +1,45 @@
+✔ appearance policy validates data-only assertions and bounded exceptions (9.2714ms)
+✔ capture verification catches appearance changes without geometry changes (2.8175ms)
+▶ synthetic settled-appearance regressions in a real browser
+  ✔ stable parent does not pass a delayed child opacity assertion (1107.2625ms)
+  ✔ delayed finite transform/filter animation blocks even without a semantic assertion (1241.4666ms)
+  ✖ classified ambient motion stays observable and does not block static region convergence (2221.3018ms)
+  ✔ unclassified continuous motion cannot be silently ignored (621.4025ms)
+  ✔ cross-origin frame shell is not inner visual readiness (1053.6421ms)
+  ✔ viewport cannot be promoted to full-page appearance, even after a reveal sweep and reset (2008.4725ms)
+  ✔ timeout preserves pending signals instead of force passing (624.194ms)
+  ✔ sample-budget exhaustion is honest and distinct from timeout (408.1777ms)
+  ✔ region visual convergence detects changing canvas pixels beyond DOM geometry (1277.3455ms)
+  ✔ sample truncation and unavailable screenshot capability remain unresolved (849.6757ms)
+✖ synthetic settled-appearance regressions in a real browser (13129.4312ms)
+ℹ tests 13
+ℹ suites 0
+ℹ pass 11
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 13362.0153
+
+✖ failing tests:
+
+test at skills\reference-reconstruction\scripts\test-settled-appearance.mjs:62:13
+✖ classified ambient motion stays observable and does not block static region convergence (2221.3018ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 'unsettled'
+  - 'settled'
+  
+      at TestContext.<anonymous> (file:///K:/website_reconstruct/skills/reference-reconstruction/scripts/test-settled-appearance.mjs:64:47)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async TestContext.<anonymous> (file:///K:/website_reconstruct/skills/reference-reconstruction/scripts/test-settled-appearance.mjs:62:5)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'unsettled',
+    expected: 'settled',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

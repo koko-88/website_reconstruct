@@ -1,0 +1,1660 @@
+{
+  "method": "Portable data-only evaluation; no browser, network, live site, installed-file mutation, or frozen evidence access",
+  "changingRegion": {
+    "status": "settled",
+    "state": "settled-static",
+    "convergence": {
+      "pass": true,
+      "stableSamples": 4,
+      "stableForMs": 334,
+      "visual": null
+    },
+    "effectiveOpacitySamples": [
+      0.2,
+      0.30000000000000004,
+      0.4,
+      0.5
+    ],
+    "ancestorAnimationSampled": false,
+    "record": {
+      "status": "settled",
+      "elapsedMs": 366,
+      "snapshot": {
+        "schemaVersion": 2,
+        "appearance": {
+          "scope": "region",
+          "region": {
+            "count": 1,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 200,
+              "height": 100
+            },
+            "inViewport": true,
+            "clip": {
+              "x": 0,
+              "y": 0,
+              "width": 200,
+              "height": 100
+            }
+          },
+          "nodes": [
+            {
+              "key": "3:main",
+              "tag": "main",
+              "rect": {
+                "x": 0,
+                "y": 0,
+                "width": 200,
+                "height": 100
+              },
+              "layout": {
+                "x": 0,
+                "y": 0,
+                "width": 200,
+                "height": 100
+              },
+              "computed": {
+                "display": "block",
+                "visibility": "visible",
+                "opacity": "1",
+                "transform": "none",
+                "filter": "none",
+                "clipPath": "none",
+                "color": "rgb(0, 0, 0)",
+                "backgroundColor": "rgba(0, 0, 0, 0)",
+                "fontFamily": "sans-serif",
+                "fontSize": "16px",
+                "fontWeight": "400",
+                "lineHeight": "normal",
+                "letterSpacing": "normal"
+              },
+              "effectiveOpacity": 0.5,
+              "pseudo": [
+                {
+                  "pseudo": "::before",
+                  "display": "block",
+                  "visibility": "visible",
+                  "opacity": "1",
+                  "transform": "none",
+                  "filter": "none",
+                  "clipPath": "none",
+                  "color": "rgb(0, 0, 0)",
+                  "backgroundColor": "rgba(0, 0, 0, 0)",
+                  "fontFamily": "sans-serif",
+                  "fontSize": "16px",
+                  "fontWeight": "400",
+                  "lineHeight": "normal",
+                  "letterSpacing": "normal",
+                  "content": "none"
+                },
+                {
+                  "pseudo": "::after",
+                  "display": "block",
+                  "visibility": "visible",
+                  "opacity": "1",
+                  "transform": "none",
+                  "filter": "none",
+                  "clipPath": "none",
+                  "color": "rgb(0, 0, 0)",
+                  "backgroundColor": "rgba(0, 0, 0, 0)",
+                  "fontFamily": "sans-serif",
+                  "fontSize": "16px",
+                  "fontWeight": "400",
+                  "lineHeight": "normal",
+                  "letterSpacing": "normal",
+                  "content": "none"
+                }
+              ],
+              "ambientProperties": [],
+              "animations": [],
+              "animationCapability": true
+            },
+            {
+              "key": "4:div",
+              "tag": "div",
+              "rect": {
+                "x": 0,
+                "y": 0,
+                "width": 200,
+                "height": 100
+              },
+              "layout": {
+                "x": 0,
+                "y": 0,
+                "width": 200,
+                "height": 100
+              },
+              "computed": {
+                "display": "block",
+                "visibility": "visible",
+                "opacity": "1",
+                "transform": "none",
+                "filter": "none",
+                "clipPath": "none",
+                "color": "rgb(0, 0, 0)",
+                "backgroundColor": "rgba(0, 0, 0, 0)",
+                "fontFamily": "sans-serif",
+                "fontSize": "16px",
+                "fontWeight": "400",
+                "lineHeight": "normal",
+                "letterSpacing": "normal"
+              },
+              "effectiveOpacity": 0.5,
+              "pseudo": [
+                {
+                  "pseudo": "::before",
+                  "display": "block",
+                  "visibility": "visible",
+                  "opacity": "1",
+                  "transform": "none",
+                  "filter": "none",
+                  "clipPath": "none",
+                  "color": "rgb(0, 0, 0)",
+                  "backgroundColor": "rgba(0, 0, 0, 0)",
+                  "fontFamily": "sans-serif",
+                  "fontSize": "16px",
+                  "fontWeight": "400",
+                  "lineHeight": "normal",
+                  "letterSpacing": "normal",
+                  "content": "none"
+                },
+                {
+                  "pseudo": "::after",
+                  "display": "block",
+                  "visibility": "visible",
+                  "opacity": "1",
+                  "transform": "none",
+                  "filter": "none",
+                  "clipPath": "none",
+                  "color": "rgb(0, 0, 0)",
+                  "backgroundColor": "rgba(0, 0, 0, 0)",
+                  "fontFamily": "sans-serif",
+                  "fontSize": "16px",
+                  "fontWeight": "400",
+                  "lineHeight": "normal",
+                  "letterSpacing": "normal",
+                  "content": "none"
+                }
+              ],
+              "ambientProperties": [],
+              "animations": [],
+              "animationCapability": true
+            }
+          ],
+          "frames": [],
+          "assertions": [
+            {
+              "selector": "#toggle",
+              "count": 1,
+              "pass": true,
+              "failures": [],
+              "observed": [
+                {
+                  "computed": {
+                    "display": "block",
+                    "visibility": "visible",
+                    "opacity": "1",
+                    "transform": "none",
+                    "filter": "none",
+                    "clipPath": "none",
+                    "color": "rgb(0, 0, 0)",
+                    "backgroundColor": "rgba(0, 0, 0, 0)",
+                    "fontFamily": "sans-serif",
+                    "fontSize": "16px",
+                    "fontWeight": "400",
+                    "lineHeight": "normal",
+                    "letterSpacing": "normal"
+                  },
+                  "attributes": {
+                    "aria-expanded": "true"
+                  },
+                  "effectiveOpacity": 1,
+                  "visible": true
+                }
+              ]
+            }
+          ],
+          "scanned": 5,
+          "truncated": false,
+          "limits": [
+            "Light DOM and generated before/after styles only; shadow trees, raster producers and frame internals require an independent signal."
+          ]
+        },
+        "timestampUTC": "2026-10-04T04:24:54.460Z",
+        "performanceMs": 0,
+        "timeOrigin": 0,
+        "environment": {
+          "url": {
+            "origin": "http://fixture.example",
+            "path": "/",
+            "queryKeys": [],
+            "fragmentPresent": false
+          },
+          "userAgent": "Synthetic",
+          "platform": "Synthetic",
+          "cssViewport": {
+            "width": 640,
+            "height": 480
+          },
+          "clientWidth": 640,
+          "scrollbarWidth": 0,
+          "dpr": 1,
+          "visualViewport": null,
+          "zoom": "unknown; visual scale is not browser zoom",
+          "language": "en-US",
+          "timezone": "Africa/Cairo",
+          "direction": "ltr",
+          "dark": false,
+          "reducedMotion": false,
+          "coarsePointer": false,
+          "maxTouchPoints": 0,
+          "scroll": {
+            "x": 0,
+            "y": 0,
+            "width": 640,
+            "height": 480
+          }
+        },
+        "readiness": {
+          "documentState": "complete",
+          "fonts": "loaded",
+          "required": [
+            {
+              "selector": "main",
+              "count": 1,
+              "visible": true,
+              "rects": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "width": 200,
+                  "height": 100
+                }
+              ],
+              "samples": [
+                {
+                  "tag": "main",
+                  "id": "",
+                  "role": null,
+                  "expanded": null,
+                  "selected": null,
+                  "open": false,
+                  "hidden": false,
+                  "focused": false,
+                  "textLength": 7,
+                  "computed": {
+                    "display": "block",
+                    "color": "rgb(0, 0, 0)",
+                    "backgroundColor": "rgba(0, 0, 0, 0)",
+                    "fontFamily": "sans-serif",
+                    "fontSize": "16px",
+                    "fontWeight": "400",
+                    "lineHeight": "normal",
+                    "letterSpacing": "normal",
+                    "opacity": "1",
+                    "transform": "none"
+                  }
+                }
+              ],
+              "measurementType": "computed CSS and observed DOM state; declared font stack is not actual rendered font proof",
+              "truncated": false
+            }
+          ],
+          "absent": [],
+          "geometry": [
+            {
+              "selector": "main",
+              "count": 1,
+              "visible": true,
+              "rects": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "width": 200,
+                  "height": 100
+                }
+              ],
+              "samples": [
+                {
+                  "tag": "main",
+                  "id": "",
+                  "role": null,
+                  "expanded": null,
+                  "selected": null,
+                  "open": false,
+                  "hidden": false,
+                  "focused": false,
+                  "textLength": 7,
+                  "computed": {
+                    "display": "block",
+                    "color": "rgb(0, 0, 0)",
+                    "backgroundColor": "rgba(0, 0, 0, 0)",
+                    "fontFamily": "sans-serif",
+                    "fontSize": "16px",
+                    "fontWeight": "400",
+                    "lineHeight": "normal",
+                    "letterSpacing": "normal",
+                    "opacity": "1",
+                    "transform": "none"
+                  }
+                }
+              ],
+              "measurementType": "computed CSS and observed DOM state; declared font stack is not actual rendered font proof",
+              "truncated": false
+            }
+          ],
+          "images": [],
+          "imageCount": 0,
+          "visibleImageCount": 0,
+          "truncated": false
+        },
+        "nonDOM": {
+          "status": "observed DOM surfaces only",
+          "surfaces": [],
+          "truncated": false,
+          "limits": [
+            "No context creation or renderer hook",
+            "WebGL/WebGPU/2D use unknown without corroboration",
+            "OffscreenCanvas, workers, closed shadow roots and cross-origin internals not inspected",
+            "API availability does not prove renderer use"
+          ]
+        },
+        "publicArtifacts": {
+          "status": "observed references; bodies/maps not inspected by this probe",
+          "references": [],
+          "truncated": false,
+          "inlineScriptCount": 0,
+          "limits": [
+            "Query values and fragments omitted; exact public navigation recipe is in the plan",
+            "No map endpoint guessing or source execution"
+          ]
+        }
+      },
+      "reasons": [],
+      "samplesStable": 4,
+      "appearance": {
+        "state": "settled-static",
+        "why": "converged within bounded observation window",
+        "claim": "region sampled appearance; iframe interiors excluded unless independently proven",
+        "policy": {
+          "scope": "region",
+          "selector": "main",
+          "assertions": [
+            {
+              "selector": "#toggle",
+              "attributes": {
+                "aria-expanded": "true"
+              },
+              "minCount": 1,
+              "maxCount": 2000
+            }
+          ],
+          "mode": "appearance",
+          "intervalMs": 100,
+          "minStableMs": 300,
+          "stableSamples": 3,
+          "maxSamples": 100,
+          "maxNodes": 400,
+          "ambient": [],
+          "frames": [],
+          "visual": false
+        },
+        "budget": {
+          "timeoutMs": 1000,
+          "maxSamples": 100,
+          "maxNodes": 400,
+          "intervalMs": 100,
+          "minStableMs": 300,
+          "stableSamples": 3
+        },
+        "convergence": {
+          "pass": true,
+          "stableSamples": 4,
+          "stableForMs": 334,
+          "visual": null
+        },
+        "samples": [
+          {
+            "index": 0,
+            "elapsedMs": 0,
+            "geometrySignature": "[{\"selector\":\"main\",\"count\":1,\"rects\":[{\"x\":0,\"y\":0,\"width\":200,\"height\":100}]}]",
+            "appearance": {
+              "scope": "region",
+              "region": {
+                "count": 1,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 200,
+                  "height": 100
+                },
+                "inViewport": true,
+                "clip": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 200,
+                  "height": 100
+                }
+              },
+              "nodes": [
+                {
+                  "key": "3:main",
+                  "tag": "main",
+                  "rect": {
+                    "x": 0,
+                    "y": 0,
+                    "width": 200,
+                    "height": 100
+                  },
+                  "layout": {
+                    "x": 0,
+                    "y": 0,
+                    "width": 200,
+                    "height": 100
+                  },
+                  "computed": {
+                    "display": "block",
+                    "visibility": "visible",
+                    "opacity": "1",
+                    "transform": "none",
+                    "filter": "none",
+                    "clipPath": "none",
+                    "color": "rgb(0, 0, 0)",
+                    "backgroundColor": "rgba(0, 0, 0, 0)",
+                    "fontFamily": "sans-serif",
+                    "fontSize": "16px",
+                    "fontWeight": "400",
+                    "lineHeight": "normal",
+                    "letterSpacing": "normal"
+                  },
+                  "effectiveOpacity": 0.2,
+                  "pseudo": [
+                    {
+                      "pseudo": "::before",
+                      "display": "block",
+                      "visibility": "visible",
+                      "opacity": "1",
+                      "transform": "none",
+                      "filter": "none",
+                      "clipPath": "none",
+                      "color": "rgb(0, 0, 0)",
+                      "backgroundColor": "rgba(0, 0, 0, 0)",
+                      "fontFamily": "sans-serif",
+                      "fontSize": "16px",
+                      "fontWeight": "400",
+                      "lineHeight": "normal",
+                      "letterSpacing": "normal",
+                      "content": "none"
+                    },
+                    {
+                      "pseudo": "::after",
+                      "display": "block",
+                      "visibility": "visible",
+                      "opacity": "1",
+                      "transform": "none",
+                      "filter": "none",
+                      "clipPath": "none",
+                      "color": "rgb(0, 0, 0)",
+                      "backgroundColor": "rgba(0, 0, 0, 0)",
+                      "fontFamily": "sans-serif",
+                      "fontSize": "16px",
+                      "fontWeight": "400",
+                      "lineHeight": "normal",
+                      "letterSpacing": "normal",
+                      "content": "none"
+                    }
+                  ],
+                  "ambientProperties": [],
+                  "animations": [],
+                  "animationCapability": true
+                },
+                {
+                  "key": "4:div",
+                  "tag": "div",
+                  "rect": {
+                    "x": 0,
+                    "y": 0,
+                    "width": 200,
+                    "height": 100
+                  },
+                  "layout": {
+                    "x": 0,
+                    "y": 0,
+                    "width": 200,
+                    "height": 100
+                  },
+                  "computed": {
+                    "display": "block",
+                    "visibility": "visible",
+                    "opacity": "1",
+                    "transform": "none",
+                    "filter": "none",
+                    "clipPath": "none",
+                    "color": "rgb(0, 0, 0)",
+                    "backgroundColor": "rgba(0, 0, 0, 0)",
+                    "fontFamily": "sans-serif",
+                    "fontSize": "16px",
+                    "fontWeight": "400",
+                    "lineHeight": "normal",
+                    "letterSpacing": "normal"
+                  },
+                  "effectiveOpacity": 0.2,
+                  "pseudo": [
+                    {
+                      "pseudo": "::before",
+                      "display": "block",
+                      "visibility": "visible",
+                      "opacity": "1",
+                      "transform": "none",
+                      "filter": "none",
+                      "clipPath": "none",
+                      "color": "rgb(0, 0, 0)",
+                      "backgroundColor": "rgba(0, 0, 0, 0)",
+                      "fontFamily": "sans-serif",
+                      "fontSize": "16px",
+                      "fontWeight": "400",
+                      "lineHeight": "normal",
+                      "letterSpacing": "normal",
+                      "content": "none"
+                    },
+                    {
+                      "pseudo": "::after",
+                      "display": "block",
+                      "visibility": "visible",
+                      "opacity": "1",
+                      "transform": "none",
+                      "filter": "none",
+                      "clipPath": "none",
+                      "color": "rgb(0, 0, 0)",
+                      "backgroundColor": "rgba(0, 0, 0, 0)",
+                      "fontFamily": "sans-serif",
+                      "fontSize": "16px",
+                      "fontWeight": "400",
+                      "lineHeight": "normal",
+                      "letterSpacing": "normal",
+                      "content": "none"
+                    }
+                  ],
+                  "ambientProperties": [],
+                  "animations": [],
+                  "animationCapability": true
+                }
+              ],
+              "frames": [],
+              "assertions": [
+                {
+                  "selector": "#toggle",
+                  "count": 1,
+                  "pass": true,
+                  "failures": [],
+                  "observed": [
+                    {
+                      "computed": {
+                        "display": "block",
+                        "visibility": "visible",
+                        "opacity": "1",
+                        "transform": "none",
+                        "filter": "none",
+                        "clipPath": "none",
+                        "color": "rgb(0, 0, 0)",
+                        "backgroundColor": "rgba(0, 0, 0, 0)",
+                        "fontFamily": "sans-serif",
+                        "fontSize": "16px",
+                        "fontWeight": "400",
+                        "lineHeight": "normal",
+                        "letterSpacing": "normal"
+                      },
+                      "attributes": {
+                        "aria-expanded": "true"
+                      },
+                      "effectiveOpacity": 1,
+                      "visible": true
+                    }
+                  ]
+                }
+              ],
+              "scanned": 5,
+              "truncated": false,
+              "limits": [
+                "Light DOM and generated before/after styles only; shadow trees, raster producers and frame internals require an independent signal."
+              ]
+            },
+            "baseReadiness": {
+              "documentState": "complete",
+              "fonts": "loaded",
+              "required": [
+                {
+                  "selector": "main",
+                  "count": 1,
+                  "visible": true,
+                  "rects": [
+                    {
+                      "x": 0,
+                      "y": 0,
+                      "width": 200,
+                      "height": 100
+                    }
+                  ],
+                  "samples": [
+                    {
+                      "tag": "main",
+                      "id": "",
+                      "role": null,
+                      "expanded": null,
+                      "selected": null,
+                      "open": false,
+                      "hidden": false,
+                      "focused": false,
+                      "textLength": 7,
+                      "computed": {
+                        "display": "block",
+                        "color": "rgb(0, 0, 0)",
+                        "backgroundColor": "rgba(0, 0, 0, 0)",
+                        "fontFamily": "sans-serif",
+                        "fontSize": "16px",
+                        "fontWeight": "400",
+                        "lineHeight": "normal",
+                        "letterSpacing": "normal",
+                        "opacity": "1",
+                        "transform": "none"
+                      }
+                    }
+                  ],
+                  "measurementType": "computed CSS and observed DOM state; declared font stack is not actual rendered font proof",
+                  "truncated": false
+                }
+              ],
+              "absent": [],
+              "geometry": [
+                {
+                  "selector": "main",
+                  "count": 1,
+                  "visible": true,
+                  "rects": [
+                    {
+                      "x": 0,
+                      "y": 0,
+                      "width": 200,
+                      "height": 100
+                    }
+                  ],
+                  "samples": [
+                    {
+                      "tag": "main",
+                      "id": "",
+                      "role": null,
+                      "expanded": null,
+                      "selected": null,
+                      "open": false,
+                      "hidden": false,
+                      "focused": false,
+                      "textLength": 7,
+                      "computed": {
+                        "display": "block",
+                        "color": "rgb(0, 0, 0)",
+                        "backgroundColor": "rgba(0, 0, 0, 0)",
+                        "fontFamily": "sans-serif",
+                        "fontSize": "16px",
+                        "fontWeight": "400",
+                        "lineHeight": "normal",
+                        "letterSpacing": "normal",
+                        "opacity": "1",
+                        "transform": "none"
+                      }
+                    }
+                  ],
+                  "measurementType": "computed CSS and observed DOM state; declared font stack is not actual rendered font proof",
+                  "truncated": false
+                }
+              ],
+              "images": [],
+              "imageCount": 0,
+              "visibleImageCount": 0,
+              "truncated": false
+            },
+            "visual": null,
+            "changedSignals": [
+              "initial-sample"
+            ],
+            "stableSamples": 1,
+            "stableForMs": 0,
+            "reasons": []
+          },
+          {
+            "index": 1,
+            "elapsedMs": 146,
+            "geometrySignature": "[{\"selector\":\"main\",\"count\":1,\"rects\":[{\"x\":0,\"y\":0,\"width\":200,\"height\":100}]}]",
+            "appearance": {
+              "scope": "region",
+              "region": {
+                "count": 1,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 200,
+                  "height": 100
+                },
+                "inViewport": true,
+                "clip": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 200,
+                  "height": 100
+                }
+              },
+              "nodes": [
+                {
+                  "key": "3:main",
+                  "tag": "main",
+                  "rect": {
+                    "x": 0,
+                    "y": 0,
+                    "width": 200,
+                    "height": 100
+                  },
+                  "layout": {
+                    "x": 0,
+                    "y": 0,
+                    "width": 200,
+                    "height": 100
+                  },
+                  "computed": {
+                    "display": "block",
+                    "visibility": "visible",
+                    "opacity": "1",
+                    "transform": "none",
+                    "filter": "none",
+                    "clipPath": "none",
+                    "color": "rgb(0, 0, 0)",
+                    "backgroundColor": "rgba(0, 0, 0, 0)",
+                    "fontFamily": "sans-serif",
+                    "fontSize": "16px",
+                    "fontWeight": "400",
+                    "lineHeight": "normal",
+                    "letterSpacing": "normal"
+                  },
+                  "effectiveOpacity": 0.30000000000000004,
+                  "pseudo": [
+                    {
+                      "pseudo": "::before",
+                      "display": "block",
+                      "visibility": "visible",
+                      "opacity": "1",
+                      "transform": "none",
+                      "filter": "none",
+                      "clipPath": "none",
+                      "color": "rgb(0, 0, 0)",
+                      "backgroundColor": "rgba(0, 0, 0, 0)",
+                      "fontFamily": "sans-serif",
+                      "fontSize": "16px",
+                      "fontWeight": "400",
+                      "lineHeight": "normal",
+                      "letterSpacing": "normal",
+                      "content": "none"
+                    },
+                    {
+                      "pseudo": "::after",
+                      "display": "block",
+                      "visibility": "visible",
+                      "opacity": "1",
+                      "transform": "none",
+                      "filter": "none",
+                      "clipPath": "none",
+                      "color": "rgb(0, 0, 0)",
+                      "backgroundColor": "rgba(0, 0, 0, 0)",
+                      "fontFamily": "sans-serif",
+                      "fontSize": "16px",
+                      "fontWeight": "400",
+                      "lineHeight": "normal",
+                      "letterSpacing": "normal",
+                      "content": "none"
+                    }
+                  ],
+                  "ambientProperties": [],
+                  "animations": [],
+                  "animationCapability": true
+                },
+                {
+                  "key": "4:div",
+                  "tag": "div",
+                  "rect": {
+                    "x": 0,
+                    "y": 0,
+                    "width": 200,
+                    "height": 100
+                  },
+                  "layout": {
+                    "x": 0,
+                    "y": 0,
+                    "width": 200,
+                    "height": 100
+                  },
+                  "computed": {
+                    "display": "block",
+                    "visibility": "visible",
+                    "opacity": "1",
+                    "transform": "none",
+                    "filter": "none",
+                    "clipPath": "none",
+                    "color": "rgb(0, 0, 0)",
+                    "backgroundColor": "rgba(0, 0, 0, 0)",
+                    "fontFamily": "sans-serif",
+                    "fontSize": "16px",
+                    "fontWeight": "400",
+                    "lineHeight": "normal",
+                    "letterSpacing": "normal"
+                  },
+                  "effectiveOpacity": 0.30000000000000004,
+                  "pseudo": [
+                    {
+                      "pseudo": "::before",
+                      "display": "block",
+                      "visibility": "visible",
+                      "opacity": "1",
+                      "transform": "none",
+                      "filter": "none",
+                      "clipPath": "none",
+                      "color": "rgb(0, 0, 0)",
+                      "backgroundColor": "rgba(0, 0, 0, 0)",
+                      "fontFamily": "sans-serif",
+                      "fontSize": "16px",
+                      "fontWeight": "400",
+                      "lineHeight": "normal",
+                      "letterSpacing": "normal",
+                      "content": "none"
+                    },
+                    {
+                      "pseudo": "::after",
+                      "display": "block",
+                      "visibility": "visible",
+                      "opacity": "1",
+                      "transform": "none",
+                      "filter": "none",
+                      "clipPath": "none",
+                      "color": "rgb(0, 0, 0)",
+                      "backgroundColor": "rgba(0, 0, 0, 0)",
+                      "fontFamily": "sans-serif",
+                      "fontSize": "16px",
+                      "fontWeight": "400",
+                      "lineHeight": "normal",
+                      "letterSpacing": "normal",
+                      "content": "none"
+                    }
+                  ],
+                  "ambientProperties": [],
+                  "animations": [],
+                  "animationCapability": true
+                }
+              ],
+              "frames": [],
+              "assertions": [
+                {
+                  "selector": "#toggle",
+                  "count": 1,
+                  "pass": true,
+                  "failures": [],
+                  "observed": [
+                    {
+                      "computed": {
+                        "display": "block",
+                        "visibility": "visible",
+                        "opacity": "1",
+                        "transform": "none",
+                        "filter": "none",
+                        "clipPath": "none",
+                        "color": "rgb(0, 0, 0)",
+                        "backgroundColor": "rgba(0, 0, 0, 0)",
+                        "fontFamily": "sans-serif",
+                        "fontSize": "16px",
+                        "fontWeight": "400",
+                        "lineHeight": "normal",
+                        "letterSpacing": "normal"
+                      },
+                      "attributes": {
+                        "aria-expanded": "true"
+                      },
+                      "effectiveOpacity": 1,
+                      "visible": true
+                    }
+                  ]
+                }
+              ],
+              "scanned": 5,
+              "truncated": false,
+              "limits": [
+                "Light DOM and generated before/after styles only; shadow trees, raster producers and frame internals require an independent signal."
+              ]
+            },
+            "baseReadiness": {
+              "documentState": "complete",
+              "fonts": "loaded",
+              "required": [
+                {
+                  "selector": "main",
+                  "count": 1,
+                  "visible": true,
+                  "rects": [
+                    {
+                      "x": 0,
+                      "y": 0,
+                      "width": 200,
+                      "height": 100
+                    }
+                  ],
+                  "samples": [
+                    {
+                      "tag": "main",
+                      "id": "",
+                      "role": null,
+                      "expanded": null,
+                      "selected": null,
+                      "open": false,
+                      "hidden": false,
+                      "focused": false,
+                      "textLength": 7,
+                      "computed": {
+                        "display": "block",
+                        "color": "rgb(0, 0, 0)",
+                        "backgroundColor": "rgba(0, 0, 0, 0)",
+                        "fontFamily": "sans-serif",
+                        "fontSize": "16px",
+                        "fontWeight": "400",
+                        "lineHeight": "normal",
+                        "letterSpacing": "normal",
+                        "opacity": "1",
+                        "transform": "none"
+                      }
+                    }
+                  ],
+                  "measurementType": "computed CSS and observed DOM state; declared font stack is not actual rendered font proof",
+                  "truncated": false
+                }
+              ],
+              "absent": [],
+              "geometry": [
+                {
+                  "selector": "main",
+                  "count": 1,
+                  "visible": true,
+                  "rects": [
+                    {
+                      "x": 0,
+                      "y": 0,
+                      "width": 200,
+                      "height": 100
+                    }
+                  ],
+                  "samples": [
+                    {
+                      "tag": "main",
+                      "id": "",
+                      "role": null,
+                      "expanded": null,
+                      "selected": null,
+                      "open": false,
+                      "hidden": false,
+                      "focused": false,
+                      "textLength": 7,
+                      "computed": {
+                        "display": "block",
+                        "color": "rgb(0, 0, 0)",
+                        "backgroundColor": "rgba(0, 0, 0, 0)",
+                        "fontFamily": "sans-serif",
+                        "fontSize": "16px",
+                        "fontWeight": "400",
+                        "lineHeight": "normal",
+                        "letterSpacing": "normal",
+                        "opacity": "1",
+                        "transform": "none"
+                      }
+                    }
+                  ],
+                  "measurementType": "computed CSS and observed DOM state; declared font stack is not actual rendered font proof",
+                  "truncated": false
+                }
+              ],
+              "images": [],
+              "imageCount": 0,
+              "visibleImageCount": 0,
+              "truncated": false
+            },
+            "visual": null,
+            "changedSignals": [],
+            "stableSamples": 2,
+            "stableForMs": 116,
+            "reasons": []
+          },
+          {
+            "index": 2,
+            "elapsedMs": 255,
+            "geometrySignature": "[{\"selector\":\"main\",\"count\":1,\"rects\":[{\"x\":0,\"y\":0,\"width\":200,\"height\":100}]}]",
+            "appearance": {
+              "scope": "region",
+              "region": {
+                "count": 1,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 200,
+                  "height": 100
+                },
+                "inViewport": true,
+                "clip": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 200,
+                  "height": 100
+                }
+              },
+              "nodes": [
+                {
+                  "key": "3:main",
+                  "tag": "main",
+                  "rect": {
+                    "x": 0,
+                    "y": 0,
+                    "width": 200,
+                    "height": 100
+                  },
+                  "layout": {
+                    "x": 0,
+                    "y": 0,
+                    "width": 200,
+                    "height": 100
+                  },
+                  "computed": {
+                    "display": "block",
+                    "visibility": "visible",
+                    "opacity": "1",
+                    "transform": "none",
+                    "filter": "none",
+                    "clipPath": "none",
+                    "color": "rgb(0, 0, 0)",
+                    "backgroundColor": "rgba(0, 0, 0, 0)",
+                    "fontFamily": "sans-serif",
+                    "fontSize": "16px",
+                    "fontWeight": "400",
+                    "lineHeight": "normal",
+                    "letterSpacing": "normal"
+                  },
+                  "effectiveOpacity": 0.4,
+                  "pseudo": [
+                    {
+                      "pseudo": "::before",
+                      "display": "block",
+                      "visibility": "visible",
+                      "opacity": "1",
+                      "transform": "none",
+                      "filter": "none",
+                      "clipPath": "none",
+                      "color": "rgb(0, 0, 0)",
+                      "backgroundColor": "rgba(0, 0, 0, 0)",
+                      "fontFamily": "sans-serif",
+                      "fontSize": "16px",
+                      "fontWeight": "400",
+                      "lineHeight": "normal",
+                      "letterSpacing": "normal",
+                      "content": "none"
+                    },
+                    {
+                      "pseudo": "::after",
+                      "display": "block",
+                      "visibility": "visible",
+                      "opacity": "1",
+                      "transform": "none",
+                      "filter": "none",
+                      "clipPath": "none",
+                      "color": "rgb(0, 0, 0)",
+                      "backgroundColor": "rgba(0, 0, 0, 0)",
+                      "fontFamily": "sans-serif",
+                      "fontSize": "16px",
+                      "fontWeight": "400",
+                      "lineHeight": "normal",
+                      "letterSpacing": "normal",
+                      "content": "none"
+                    }
+                  ],
+                  "ambientProperties": [],
+                  "animations": [],
+                  "animationCapability": true
+                },
+                {
+                  "key": "4:div",
+                  "tag": "div",
+                  "rect": {
+                    "x": 0,
+                    "y": 0,
+                    "width": 200,
+                    "height": 100
+                  },
+                  "layout": {
+                    "x": 0,
+                    "y": 0,
+                    "width": 200,
+                    "height": 100
+                  },
+                  "computed": {
+                    "display": "block",
+                    "visibility": "visible",
+                    "opacity": "1",
+                    "transform": "none",
+                    "filter": "none",
+                    "clipPath": "none",
+                    "color": "rgb(0, 0, 0)",
+                    "backgroundColor": "rgba(0, 0, 0, 0)",
+                    "fontFamily": "sans-serif",
+                    "fontSize": "16px",
+                    "fontWeight": "400",
+                    "lineHeight": "normal",
+                    "letterSpacing": "normal"
+                  },
+                  "effectiveOpacity": 0.4,
+                  "pseudo": [
+                    {
+                      "pseudo": "::before",
+                      "display": "block",
+                      "visibility": "visible",
+                      "opacity": "1",
+                      "transform": "none",
+                      "filter": "none",
+                      "clipPath": "none",
+                      "color": "rgb(0, 0, 0)",
+                      "backgroundColor": "rgba(0, 0, 0, 0)",
+                      "fontFamily": "sans-serif",
+                      "fontSize": "16px",
+                      "fontWeight": "400",
+                      "lineHeight": "normal",
+                      "letterSpacing": "normal",
+                      "content": "none"
+                    },
+                    {
+                      "pseudo": "::after",
+                      "display": "block",
+                      "visibility": "visible",
+                      "opacity": "1",
+                      "transform": "none",
+                      "filter": "none",
+                      "clipPath": "none",
+                      "color": "rgb(0, 0, 0)",
+                      "backgroundColor": "rgba(0, 0, 0, 0)",
+                      "fontFamily": "sans-serif",
+                      "fontSize": "16px",
+                      "fontWeight": "400",
+                      "lineHeight": "normal",
+                      "letterSpacing": "normal",
+                      "content": "none"
+                    }
+                  ],
+                  "ambientProperties": [],
+                  "animations": [],
+                  "animationCapability": true
+                }
+              ],
+              "frames": [],
+              "assertions": [
+                {
+                  "selector": "#toggle",
+                  "count": 1,
+                  "pass": true,
+                  "failures": [],
+                  "observed": [
+                    {
+                      "computed": {
+                        "display": "block",
+                        "visibility": "visible",
+                        "opacity": "1",
+                        "transform": "none",
+                        "filter": "none",
+                        "clipPath": "none",
+                        "color": "rgb(0, 0, 0)",
+                        "backgroundColor": "rgba(0, 0, 0, 0)",
+                        "fontFamily": "sans-serif",
+                        "fontSize": "16px",
+                        "fontWeight": "400",
+                        "lineHeight": "normal",
+                        "letterSpacing": "normal"
+                      },
+                      "attributes": {
+                        "aria-expanded": "true"
+                      },
+                      "effectiveOpacity": 1,
+                      "visible": true
+                    }
+                  ]
+                }
+              ],
+              "scanned": 5,
+              "truncated": false,
+              "limits": [
+                "Light DOM and generated before/after styles only; shadow trees, raster producers and frame internals require an independent signal."
+              ]
+            },
+            "baseReadiness": {
+              "documentState": "complete",
+              "fonts": "loaded",
+              "required": [
+                {
+                  "selector": "main",
+                  "count": 1,
+                  "visible": true,
+                  "rects": [
+                    {
+                      "x": 0,
+                      "y": 0,
+                      "width": 200,
+                      "height": 100
+                    }
+                  ],
+                  "samples": [
+                    {
+                      "tag": "main",
+                      "id": "",
+                      "role": null,
+                      "expanded": null,
+                      "selected": null,
+                      "open": false,
+                      "hidden": false,
+                      "focused": false,
+                      "textLength": 7,
+                      "computed": {
+                        "display": "block",
+                        "color": "rgb(0, 0, 0)",
+                        "backgroundColor": "rgba(0, 0, 0, 0)",
+                        "fontFamily": "sans-serif",
+                        "fontSize": "16px",
+                        "fontWeight": "400",
+                        "lineHeight": "normal",
+                        "letterSpacing": "normal",
+                        "opacity": "1",
+                        "transform": "none"
+                      }
+                    }
+                  ],
+                  "measurementType": "computed CSS and observed DOM state; declared font stack is not actual rendered font proof",
+                  "truncated": false
+                }
+              ],
+              "absent": [],
+              "geometry": [
+                {
+                  "selector": "main",
+                  "count": 1,
+                  "visible": true,
+                  "rects": [
+                    {
+                      "x": 0,
+                      "y": 0,
+                      "width": 200,
+                      "height": 100
+                    }
+                  ],
+                  "samples": [
+                    {
+                      "tag": "main",
+                      "id": "",
+                      "role": null,
+                      "expanded": null,
+                      "selected": null,
+                      "open": false,
+                      "hidden": false,
+                      "focused": false,
+                      "textLength": 7,
+                      "computed": {
+                        "display": "block",
+                        "color": "rgb(0, 0, 0)",
+                        "backgroundColor": "rgba(0, 0, 0, 0)",
+                        "fontFamily": "sans-serif",
+                        "fontSize": "16px",
+                        "fontWeight": "400",
+                        "lineHeight": "normal",
+                        "letterSpacing": "normal",
+                        "opacity": "1",
+                        "transform": "none"
+                      }
+                    }
+                  ],
+                  "measurementType": "computed CSS and observed DOM state; declared font stack is not actual rendered font proof",
+                  "truncated": false
+                }
+              ],
+              "images": [],
+              "imageCount": 0,
+              "visibleImageCount": 0,
+              "truncated": false
+            },
+            "visual": null,
+            "changedSignals": [],
+            "stableSamples": 3,
+            "stableForMs": 224,
+            "reasons": []
+          },
+          {
+            "index": 3,
+            "elapsedMs": 365,
+            "geometrySignature": "[{\"selector\":\"main\",\"count\":1,\"rects\":[{\"x\":0,\"y\":0,\"width\":200,\"height\":100}]}]",
+            "appearance": {
+              "scope": "region",
+              "region": {
+                "count": 1,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 200,
+                  "height": 100
+                },
+                "inViewport": true,
+                "clip": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 200,
+                  "height": 100
+                }
+              },
+              "nodes": [
+                {
+                  "key": "3:main",
+                  "tag": "main",
+                  "rect": {
+                    "x": 0,
+                    "y": 0,
+                    "width": 200,
+                    "height": 100
+                  },
+                  "layout": {
+                    "x": 0,
+                    "y": 0,
+                    "width": 200,
+                    "height": 100
+                  },
+                  "computed": {
+                    "display": "block",
+                    "visibility": "visible",
+                    "opacity": "1",
+                    "transform": "none",
+                    "filter": "none",
+                    "clipPath": "none",
+                    "color": "rgb(0, 0, 0)",
+                    "backgroundColor": "rgba(0, 0, 0, 0)",
+                    "fontFamily": "sans-serif",
+                    "fontSize": "16px",
+                    "fontWeight": "400",
+                    "lineHeight": "normal",
+                    "letterSpacing": "normal"
+                  },
+                  "effectiveOpacity": 0.5,
+                  "pseudo": [
+                    {
+                      "pseudo": "::before",
+                      "display": "block",
+                      "visibility": "visible",
+                      "opacity": "1",
+                      "transform": "none",
+                      "filter": "none",
+                      "clipPath": "none",
+                      "color": "rgb(0, 0, 0)",
+                      "backgroundColor": "rgba(0, 0, 0, 0)",
+                      "fontFamily": "sans-serif",
+                      "fontSize": "16px",
+                      "fontWeight": "400",
+                      "lineHeight": "normal",
+                      "letterSpacing": "normal",
+                      "content": "none"
+                    },
+                    {
+                      "pseudo": "::after",
+                      "display": "block",
+                      "visibility": "visible",
+                      "opacity": "1",
+                      "transform": "none",
+                      "filter": "none",
+                      "clipPath": "none",
+                      "color": "rgb(0, 0, 0)",
+                      "backgroundColor": "rgba(0, 0, 0, 0)",
+                      "fontFamily": "sans-serif",
+                      "fontSize": "16px",
+                      "fontWeight": "400",
+                      "lineHeight": "normal",
+                      "letterSpacing": "normal",
+                      "content": "none"
+                    }
+                  ],
+                  "ambientProperties": [],
+                  "animations": [],
+                  "animationCapability": true
+                },
+                {
+                  "key": "4:div",
+                  "tag": "div",
+                  "rect": {
+                    "x": 0,
+                    "y": 0,
+                    "width": 200,
+                    "height": 100
+                  },
+                  "layout": {
+                    "x": 0,
+                    "y": 0,
+                    "width": 200,
+                    "height": 100
+                  },
+                  "computed": {
+                    "display": "block",
+                    "visibility": "visible",
+                    "opacity": "1",
+                    "transform": "none",
+                    "filter": "none",
+                    "clipPath": "none",
+                    "color": "rgb(0, 0, 0)",
+                    "backgroundColor": "rgba(0, 0, 0, 0)",
+                    "fontFamily": "sans-serif",
+                    "fontSize": "16px",
+                    "fontWeight": "400",
+                    "lineHeight": "normal",
+                    "letterSpacing": "normal"
+                  },
+                  "effectiveOpacity": 0.5,
+                  "pseudo": [
+                    {
+                      "pseudo": "::before",
+                      "display": "block",
+                      "visibility": "visible",
+                      "opacity": "1",
+                      "transform": "none",
+                      "filter": "none",
+                      "clipPath": "none",
+                      "color": "rgb(0, 0, 0)",
+                      "backgroundColor": "rgba(0, 0, 0, 0)",
+                      "fontFamily": "sans-serif",
+                      "fontSize": "16px",
+                      "fontWeight": "400",
+                      "lineHeight": "normal",
+                      "letterSpacing": "normal",
+                      "content": "none"
+                    },
+                    {
+                      "pseudo": "::after",
+                      "display": "block",
+                      "visibility": "visible",
+                      "opacity": "1",
+                      "transform": "none",
+                      "filter": "none",
+                      "clipPath": "none",
+                      "color": "rgb(0, 0, 0)",
+                      "backgroundColor": "rgba(0, 0, 0, 0)",
+                      "fontFamily": "sans-serif",
+                      "fontSize": "16px",
+                      "fontWeight": "400",
+                      "lineHeight": "normal",
+                      "letterSpacing": "normal",
+                      "content": "none"
+                    }
+                  ],
+                  "ambientProperties": [],
+                  "animations": [],
+                  "animationCapability": true
+                }
+              ],
+              "frames": [],
+              "assertions": [
+                {
+                  "selector": "#toggle",
+                  "count": 1,
+                  "pass": true,
+                  "failures": [],
+                  "observed": [
+                    {
+                      "computed": {
+                        "display": "block",
+                        "visibility": "visible",
+                        "opacity": "1",
+                        "transform": "none",
+                        "filter": "none",
+                        "clipPath": "none",
+                        "color": "rgb(0, 0, 0)",
+                        "backgroundColor": "rgba(0, 0, 0, 0)",
+                        "fontFamily": "sans-serif",
+                        "fontSize": "16px",
+                        "fontWeight": "400",
+                        "lineHeight": "normal",
+                        "letterSpacing": "normal"
+                      },
+                      "attributes": {
+                        "aria-expanded": "true"
+                      },
+                      "effectiveOpacity": 1,
+                      "visible": true
+                    }
+                  ]
+                }
+              ],
+              "scanned": 5,
+              "truncated": false,
+              "limits": [
+                "Light DOM and generated before/after styles only; shadow trees, raster producers and frame internals require an independent signal."
+              ]
+            },
+            "baseReadiness": {
+              "documentState": "complete",
+              "fonts": "loaded",
+              "required": [
+                {
+                  "selector": "main",
+                  "count": 1,
+                  "visible": true,
+                  "rects": [
+                    {
+                      "x": 0,
+                      "y": 0,
+                      "width": 200,
+                      "height": 100
+                    }
+                  ],
+                  "samples": [
+                    {
+                      "tag": "main",
+                      "id": "",
+                      "role": null,
+                      "expanded": null,
+                      "selected": null,
+                      "open": false,
+                      "hidden": false,
+                      "focused": false,
+                      "textLength": 7,
+                      "computed": {
+                        "display": "block",
+                        "color": "rgb(0, 0, 0)",
+                        "backgroundColor": "rgba(0, 0, 0, 0)",
+                        "fontFamily": "sans-serif",
+                        "fontSize": "16px",
+                        "fontWeight": "400",
+                        "lineHeight": "normal",
+                        "letterSpacing": "normal",
+                        "opacity": "1",
+                        "transform": "none"
+                      }
+                    }
+                  ],
+                  "measurementType": "computed CSS and observed DOM state; declared font stack is not actual rendered font proof",
+                  "truncated": false
+                }
+              ],
+              "absent": [],
+              "geometry": [
+                {
+                  "selector": "main",
+                  "count": 1,
+                  "visible": true,
+                  "rects": [
+                    {
+                      "x": 0,
+                      "y": 0,
+                      "width": 200,
+                      "height": 100
+                    }
+                  ],
+                  "samples": [
+                    {
+                      "tag": "main",
+                      "id": "",
+                      "role": null,
+                      "expanded": null,
+                      "selected": null,
+                      "open": false,
+                      "hidden": false,
+                      "focused": false,
+                      "textLength": 7,
+                      "computed": {
+                        "display": "block",
+                        "color": "rgb(0, 0, 0)",
+                        "backgroundColor": "rgba(0, 0, 0, 0)",
+                        "fontFamily": "sans-serif",
+                        "fontSize": "16px",
+                        "fontWeight": "400",
+                        "lineHeight": "normal",
+                        "letterSpacing": "normal",
+                        "opacity": "1",
+                        "transform": "none"
+                      }
+                    }
+                  ],
+                  "measurementType": "computed CSS and observed DOM state; declared font stack is not actual rendered font proof",
+                  "truncated": false
+                }
+              ],
+              "images": [],
+              "imageCount": 0,
+              "visibleImageCount": 0,
+              "truncated": false
+            },
+            "visual": null,
+            "changedSignals": [],
+            "stableSamples": 4,
+            "stableForMs": 334,
+            "reasons": []
+          }
+        ],
+        "limits": [
+          "Finite observations cannot rule out future timer/network changes; assertions must describe the expected named state.",
+          "DOM/style convergence is not renderer, glyph, video, canvas, shadow-root or provider-internal proof.",
+          "Viewport/region success does not cover offscreen reveals."
+        ]
+      }
+    }
+  },
+  "policyControls": {
+    "unsampledProviderUnresolved": true,
+    "shellOnlyExplicitlyBounded": true,
+    "fullPageRevealCoverageUnproven": true,
+    "invalidAmbientPropertyRejected": true
+  },
+  "refusedScreenshot": {
+    "runResult": "INCOMPLETE",
+    "phase": "settled",
+    "appearanceState": "settled-static",
+    "convergencePass": true,
+    "screenshotError": "Pixel budget exceeded; use section captures",
+    "pngPresent": false
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 2,
+  "result": "INCOMPLETE",
+  "cases": [
+    {
+      "caseId": "GIANT",
+      "environmentId": "ENV-D",
+      "state": "Static viewport",
+      "fixture": "Public page content; version unknown until inspected",
+      "session": "Fresh anonymous context; no imported storage",
+      "consent": "No consent interaction; inspect actual default",
+      "reset": "fresh-context",
+      "actions": [],
+      "captures": [
+        {
+          "evidenceId": "GIANT--VIEWPORT",
+          "path": "GIANT--VIEWPORT.json",
+          "phase": "settled"
+        }
+      ],
+      "network": [],
+      "navigationStartedUTC": "2026-10-04T04:24:54.545Z"
+    }
+  ],
+  "errors": [
+    "GIANT--VIEWPORT: screenshot pixel budget"
+  ],
+  "provenance": {
+    "schemaVersion": 2,
+    "packageId": "EXAMPLE-REV-2",
+    "contractId": "FC-01",
+    "sourceId": "S-01",
+    "playwrightVersion": "0.0.0",
+    "runnerSHA256": "2787b08e2a1b54c50b5414eed5414fb2e2800c82a83d6781ef982a4888ed1693",
+    "probeSHA256": "47af7034f128c9741822a9e8dee92c6f98f5d5b3ba44a99d257b1d120fec714a",
+    "appearancePolicySHA256": "f6949b73518a2300d530129c4d39ac773a3d9ccc7482fa8f0c8fae17783a56ba",
+    "planSHA256": "7bdef957be5b0d297e5f8edf4d2e4c7823e5b73129a280edd1cbbf0ba660caca",
+    "hostOS": {
+      "platform": "win32",
+      "release": "10.0.19045",
+      "version": "Windows 10 Pro",
+      "architecture": "x64"
+    },
+    "headless": true,
+    "modifications": [
+      "Fresh browser context per case",
+      "Main-frame navigation guard via routing; HTTP cache disabled by interception",
+      "No source style/content/animation changes"
+    ],
+    "limits": [
+      "No auth/storage import",
+      "No physical-device/AT/browser-zoom/GPU parity claim",
+      "Same plan does not freeze live content, randomness or ambient frames"
+    ],
+    "browserChannel": "Playwright bundled Chromium",
+    "browserVersion": "data-only"
+  },
+  "limits": "Raw capture status only; semantic coverage, reports, gates and asset decisions require inspection"
+}

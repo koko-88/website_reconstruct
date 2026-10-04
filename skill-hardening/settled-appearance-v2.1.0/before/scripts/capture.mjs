@@ -5,7 +5,6 @@ import os from 'node:os';
 import {createRequire} from 'node:module';
 import {fileURLToPath,pathToFileURL} from 'node:url';
 import {seal,sha256} from './package.mjs';
-import {appearancePolicy,probeOptions,waitAppearance,postAppearanceReasons,visualSample} from './settled-appearance.mjs';
 
 const here=path.dirname(fileURLToPath(import.meta.url));
 const probeSource=fs.readFileSync(path.join(here,'page-probe.js'),'utf8');
@@ -81,7 +80,7 @@ export function validatePlan(plan) {
     if(!Array.isArray(item.checkpoints)||!item.checkpoints.length||item.checkpoints.length>100) throw Error('Expected 1-100 checkpoints');
     const cpIDs=new Set();
     for(const cp of item.checkpoints) {
-      keys(cp,['id','phase','afterMs','required','absent','stableSelectors','timeoutMs','fullPage','actions','appearance'],'checkpoint'); id(cp.id,'checkpoint id');
+      keys(cp,['id','phase','afterMs','required','absent','stableSelectors','timeoutMs','fullPage','actions'],'checkpoint'); id(cp.id,'checkpoint id');
       if(cpIDs.has(cp.id)) throw Error('Duplicate checkpoint'); cpIDs.add(cp.id);
       if(!['settled','transient'].includes(cp.phase)) throw Error('Phase must be settled or transient');
       cp.afterMs??=0; cp.timeoutMs??=10000; cp.fullPage??=false;
@@ -89,7 +88,6 @@ export function validatePlan(plan) {
       if(typeof cp.fullPage!=='boolean') throw Error('fullPage must be boolean');
       for(const name of ['required','absent','stableSelectors']) { cp[name]??=[]; strings(cp[name],name); }
       if(cp.phase==='settled'&&!cp.stableSelectors.length) throw Error('Settled capture needs explicit stable geometry selectors');
-      appearancePolicy(cp);
       cp.actions??=[]; actions(cp.actions);
     }
   }
@@ -108,7 +106,19 @@ export function readyReasons(snapshot) {
 }
 export const geometrySignature = snapshot => JSON.stringify(snapshot.readiness.geometry.map(s=>({selector:s.selector,count:s.count,rects:s.rects.map(r=>Object.fromEntries(Object.entries(r).map(([k,v])=>[k,Math.round(v*2)/2])))})));
 export async function waitReady(page,cp) {
-  return waitAppearance(page,cp,probe,readyReasons,geometrySignature);
+  const started=Date.now(),deadline=started+cp.timeoutMs;
+  let snapshot,prior='',streak=0,reasons=['not sampled'];
+  while(Date.now()<deadline) {
+    const remaining=deadline-Date.now();
+    snapshot=await bounded(page.evaluate(probe,{required:cp.required,absent:cp.absent,stableSelectors:cp.stableSelectors,decodeMs:Math.min(500,remaining),limit:200}),remaining,'probe');
+    reasons=readyReasons(snapshot);
+    const signature=geometrySignature(snapshot);
+    streak=signature===prior?streak+1:0; prior=signature;
+    if(!reasons.length&&streak>=2) return {status:'settled',elapsedMs:Date.now()-started,snapshot,reasons:[],samplesStable:streak+1};
+    await sleep(Math.min(100,Math.max(0,deadline-Date.now())));
+  }
+  if(streak<2) reasons.push('geometry-not-stable');
+  return {status:'unsettled',elapsedMs:Date.now()-started,snapshot,reasons};
 }
 async function perform(page,actions,log) {
   for(const action of actions) {
@@ -145,7 +155,7 @@ export async function capture(planInput,out,modulePath) {
   const write=(rel,data)=>fs.writeFileSync(path.join(out,rel),typeof data==='string'||Buffer.isBuffer(data)?data:JSON.stringify(data,null,2)+'\n',{flag:'wx'});
   write('plan.json',plan);
   const runnerSHA256=sha256(fs.readFileSync(fileURLToPath(import.meta.url)));
-  const provenance={schemaVersion:2,packageId:plan.packageId,contractId:plan.contractId,sourceId:plan.sourceId,playwrightVersion:version,runnerSHA256,probeSHA256:sha256(probeSource),appearancePolicySHA256:sha256(fs.readFileSync(path.join(here,'settled-appearance.mjs'))),planSHA256:sha256(fs.readFileSync(path.join(out,'plan.json'))),hostOS:{platform:os.platform(),release:os.release(),version:os.version(),architecture:os.arch()},headless:true,modifications:['Fresh browser context per case','Main-frame navigation guard via routing; HTTP cache disabled by interception','No source style/content/animation changes'],limits:['No auth/storage import','No physical-device/AT/browser-zoom/GPU parity claim','Same plan does not freeze live content, randomness or ambient frames']};
+  const provenance={schemaVersion:2,packageId:plan.packageId,contractId:plan.contractId,sourceId:plan.sourceId,playwrightVersion:version,runnerSHA256,probeSHA256:sha256(probeSource),planSHA256:sha256(fs.readFileSync(path.join(out,'plan.json'))),hostOS:{platform:os.platform(),release:os.release(),version:os.version(),architecture:os.arch()},headless:true,modifications:['Fresh browser context per case','Main-frame navigation guard via routing; HTTP cache disabled by interception','No source style/content/animation changes'],limits:['No auth/storage import','No physical-device/AT/browser-zoom/GPU parity claim','Same plan does not freeze live content, randomness or ambient frames']};
   let browser,timer,timedOut=false;
   const cases=[],errors=[];
   try {
@@ -186,29 +196,21 @@ export async function capture(planInput,out,modulePath) {
           await sleep(Math.max(0,navigationStarted+cp.afterMs-Date.now()));
           let readiness;
           if(cp.phase==='settled') readiness=await waitReady(page,cp);
-          else readiness={status:'transient',snapshot:await bounded(page.evaluate(probe,probeOptions(cp)),cp.timeoutMs,'transient probe'),reasons:[],appearance:{state:'transient',why:'Requested temporal checkpoint; no convergence claim',policy:appearancePolicy(cp),limits:['No settled appearance claim']},elapsedMs:Date.now()-navigationStarted};
+          else readiness={status:'transient',snapshot:await bounded(page.evaluate(probe,{required:cp.required,absent:cp.absent,stableSelectors:cp.stableSelectors,limit:200}),cp.timeoutMs,'transient probe'),reasons:[],elapsedMs:Date.now()-navigationStarted};
           const prefix=item.id+'--'+cp.id,record={evidenceId:prefix,sourceId:plan.sourceId,contractId:plan.contractId,caseId:item.id,checkpointId:cp.id,environmentId:envID,requestedPhase:cp.phase,phase:readiness.status,readiness,actionsThroughCheckpoint:row.actions.length,provenance};
           record.actualPublicURLBefore=checkURL(page.url());
           const before=readiness.snapshot;
-          const pixels=before?(cp.fullPage?before.environment.scroll.width*before.environment.scroll.height:env.viewport.width*env.viewport.height)*env.deviceScaleFactor**2:Infinity;
+          if(!before) throw Error('No observable snapshot');
+          const pixels=(cp.fullPage?before.environment.scroll.width*before.environment.scroll.height:env.viewport.width*env.viewport.height)*env.deviceScaleFactor**2;
           try {
-          if(!before) {record.phase='unsettled';record.screenshotError='No observable snapshot';record.readiness.reasons.push('capture-snapshot-unavailable');errors.push(prefix+': no observable snapshot');}
-          else if(pixels>30_000_000) { record.screenshotError='Pixel budget exceeded; use section captures';errors.push(prefix+': screenshot pixel budget');if(cp.phase==='settled'){record.phase='unsettled';record.readiness.reasons.push('capture-pixel-budget-exceeded');} }
+          if(pixels>30_000_000) { record.screenshotError='Pixel budget exceeded; use section captures';errors.push(prefix+': screenshot pixel budget'); }
           else {
             record.screenshotStartedUTC=new Date().toISOString();
             const bytes=await page.screenshot({type:'png',fullPage:cp.fullPage,animations:'allow',caret:'initial',timeout:10000});
             record.screenshotEndedUTC=new Date().toISOString();
             write(prefix+'.png',bytes);record.screenshot={path:prefix+'.png',bytes:bytes.length,sha256:sha256(bytes),width:bytes.readUInt32BE(16),height:bytes.readUInt32BE(20),format:'png',fullPage:cp.fullPage,animations:'allow',caret:'initial'};
-            record.after=await bounded(page.evaluate(probe,{...probeOptions(cp),decodeMs:500}),3000,'post-capture probe');
+            record.after=await bounded(page.evaluate(probe,{required:cp.required,absent:cp.absent,stableSelectors:cp.stableSelectors,decodeMs:500,limit:200}),3000,'post-capture probe');
             record.captureChanged=geometrySignature(before)!==geometrySignature(record.after);
-            const appearanceChanged=cp.phase==='settled'?postAppearanceReasons(before,record.after,cp):[];
-            const policy=appearancePolicy(cp);
-            if(cp.phase==='settled'&&policy.visual&&policy.mode==='appearance'&&readiness.appearance.convergence.visual) {
-              record.postVisual=await visualSample(page,record.after,policy,3000);
-              if(record.postVisual.sha256!==readiness.appearance.convergence.visual.sha256) appearanceChanged.push('visual-changed-during-screenshot');
-            }
-            record.appearanceChanged=appearanceChanged.length>0;
-            if(appearanceChanged.length) {record.phase='unsettled';record.readiness.reasons.push(...appearanceChanged.map(r=>'post-capture:'+r));}
             if(cp.phase==='settled'&&record.captureChanged) { record.phase='unsettled';record.readiness.reasons.push('geometry-changed-during-screenshot'); }
             if(cp.phase==='settled'&&readyReasons(record.after).length) { record.phase='unsettled';record.readiness.reasons.push(...readyReasons(record.after).map(reason=>'post-capture:'+reason)); }
           }
@@ -217,7 +219,6 @@ export async function capture(planInput,out,modulePath) {
             record.phase='unsettled';record.screenshotError=error.message;
             record.readiness.reasons.push('capture-operation-failed');errors.push(prefix+': '+error.message);
           }
-          if(cp.phase==='settled'&&record.phase!=='settled') { record.readiness.appearance.state='unresolved';record.readiness.appearance.convergence.pass=false;record.readiness.appearance.why='Readiness or capture verification unresolved'; }
           if(cp.phase==='settled'&&record.phase!=='settled') errors.push(prefix+': '+record.readiness.reasons.join(', '));
           write(prefix+'.json',record);row.captures.push({evidenceId:prefix,path:prefix+'.json',phase:record.phase});
         }

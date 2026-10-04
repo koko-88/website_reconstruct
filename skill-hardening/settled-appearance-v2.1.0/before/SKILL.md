@@ -2,7 +2,7 @@
 name: reference-reconstruction
 description: Inspect reference websites or supplied captures, produce evidence-linked fidelity specifications, and assess readiness for faithful reconstruction and content adaptation. Use for reference replication and fidelity audits, not general UI design or inspiration-only redesign.
 metadata:
-  workflow-version: "2.1.0"
+  workflow-version: "2.0.0"
 ---
 
 # Reference Reconstruction
@@ -34,7 +34,7 @@ Every inspection must deliver, including static-only or blocked inspections:
 3. **Non-DOM Rendering Detection report**: canvas/2D/WebGL/WebGPU, OffscreenCanvas/workers, SVG, media and embedded surfaces; observed signals, inferred renderer, inaccessible internals, impact and escalation decision. An unavailable probe is unknown, never a negative result.
 4. **Public Artifact / source-map inspection report**: reachable document/CSS/JS/manifest/worker/asset evidence, map references and public availability, findings and limits. Report not attempted/unavailable with reasons; no speculative endpoint crawl.
 
-An empty heading or tool-used assertion is not an output. Reports may be sections of one package; retain the same fields across tools. Measure appearance, responsive edges, interactions, temporal motion and visible data contracts with provenance. Bound every readiness wait. Keep transient, settled, simulated and modified captures distinct. For appearance checkpoints apply [references/settled-appearance.md](references/settled-appearance.md): descendant styles, named-state assertions and bounded convergence supplement geometry; retain ambient motion and explicit iframe/offscreen limits. Never promote a geometry-only checkpoint to settled appearance.
+An empty heading or tool-used assertion is not an output. Reports may be sections of one package; retain the same fields across tools. Measure appearance, responsive edges, interactions, temporal motion and visible data contracts with provenance. Bound every readiness wait. Keep transient, settled, simulated and modified captures distinct.
 
 Read [references/capture.md](references/capture.md) when capturing or repairing saves/readiness/transfers. Reuse [scripts/page-probe.js](scripts/page-probe.js) for bounded structured browser reads. When repeated capture or local saves have a concrete gap, use the maintained declarative [scripts/capture.mjs](scripts/capture.mjs), not new website-specific helpers. [references/capture-plan.md](references/capture-plan.md) defines its plan and limitations. Static inspection and package hashing do not require Playwright.
 

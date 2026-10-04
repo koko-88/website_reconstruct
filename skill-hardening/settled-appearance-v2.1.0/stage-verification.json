@@ -1,0 +1,181 @@
+{
+  "checkedAtUTC": "2026-10-04T04:39:02.842Z",
+  "frozen": [
+    {
+      "root": "reference/haunted-boulder-city",
+      "unchanged": true,
+      "manifestUnchanged": true,
+      "verified": {
+        "result": "PASS",
+        "checkedAtUTC": "2026-10-04T04:39:02.234Z",
+        "files": 172,
+        "checks": {
+          "json": 39,
+          "images": 119,
+          "links": 202
+        },
+        "problems": [],
+        "limit": "Hashes/JSON/image structure/local links only; image decoding/visuals, source, semantic coverage, rights and readiness need separate review"
+      }
+    },
+    {
+      "root": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01",
+      "unchanged": true,
+      "manifestUnchanged": true,
+      "verified": {
+        "result": "PASS",
+        "checkedAtUTC": "2026-10-04T04:39:02.809Z",
+        "files": 306,
+        "checks": {
+          "json": 107,
+          "images": 147,
+          "links": 324
+        },
+        "problems": [],
+        "limit": "Hashes/JSON/image structure/local links only; image decoding/visuals, source, semantic coverage, rights and readiness need separate review"
+      }
+    }
+  ],
+  "skill": {
+    "result": "PASS",
+    "checkedAtUTC": "2026-10-04T04:39:02.828Z",
+    "files": 23,
+    "checks": {
+      "json": 1,
+      "images": 0,
+      "links": 18
+    },
+    "problems": [],
+    "limit": "Hashes/JSON/image structure/local links only; image decoding/visuals, source, semantic coverage, rights and readiness need separate review"
+  },
+  "backupMatchesOriginallyInstalled": true,
+  "installedMatchesStage": true,
+  "installedVerification": {
+    "result": "PASS",
+    "checkedAtUTC": "2026-10-04T04:39:02.842Z",
+    "files": 23,
+    "checks": {
+      "json": 1,
+      "images": 0,
+      "links": 18
+    },
+    "problems": [],
+    "limit": "Hashes/JSON/image structure/local links only; image decoding/visuals, source, semantic coverage, rights and readiness need separate review"
+  },
+  "changes": [
+    {
+      "path": "assets/capture-plan.example.json",
+      "kind": "updated",
+      "before": {
+        "path": "assets/capture-plan.example.json",
+        "bytes": 1255,
+        "sha256": "5f4c0faa4f40ed15fde3ccc7ba2277775ee0cd37941b7266da575f54b3a9b59e"
+      },
+      "after": {
+        "path": "assets/capture-plan.example.json",
+        "bytes": 1416,
+        "sha256": "fca6a9aeb63f969f7b86c16296fcb4785b4dc359f8346abe3c869502ac1e487b"
+      }
+    },
+    {
+      "path": "references/capture-plan.md",
+      "kind": "updated",
+      "before": {
+        "path": "references/capture-plan.md",
+        "bytes": 9134,
+        "sha256": "0e2be9b50cda0c80eed7ded593f3360317b3aa99fb955441a57183b267d1736a"
+      },
+      "after": {
+        "path": "references/capture-plan.md",
+        "bytes": 9749,
+        "sha256": "9a9a535ea664c74c95045f5cd4a69195e139669309ef555ba106a0355deb3f94"
+      }
+    },
+    {
+      "path": "references/capture.md",
+      "kind": "updated",
+      "before": {
+        "path": "references/capture.md",
+        "bytes": 4143,
+        "sha256": "89245817fba0f9ea15dd2097059085445a19e01e888ab17aa6e8f182f6380be5"
+      },
+      "after": {
+        "path": "references/capture.md",
+        "bytes": 4655,
+        "sha256": "cb21a3429fe5c5f924847079014713ba927552e4c869d21301ad94915a19b57f"
+      }
+    },
+    {
+      "path": "scripts/capture.mjs",
+      "kind": "updated",
+      "before": {
+        "path": "scripts/capture.mjs",
+        "bytes": 18859,
+        "sha256": "e47132aa93a26022d8412b619425b9fadd0773292f47c62929ffa1c1403a4626"
+      },
+      "after": {
+        "path": "scripts/capture.mjs",
+        "bytes": 19862,
+        "sha256": "f8daaeee6ff1672bcd4bc8943b18d523c47fff7e452cfa8d2cdaa64501106ee5"
+      }
+    },
+    {
+      "path": "scripts/page-probe.js",
+      "kind": "updated",
+      "before": {
+        "path": "scripts/page-probe.js",
+        "bytes": 6165,
+        "sha256": "763f893f720da91b8d03ddbe54955e388baff02c2f891a9c8d32a2dc188cfd44"
+      },
+      "after": {
+        "path": "scripts/page-probe.js",
+        "bytes": 12392,
+        "sha256": "ed4e3c3407f8bc02c200cbb41e9d499ad30c20556bc4fe5e24084cc97857ab55"
+      }
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "updated",
+      "before": {
+        "path": "SKILL.md",
+        "bytes": 7124,
+        "sha256": "f8e7f5e6c26ea434c60c024bf8832200288dbea3a02475fa1ca739862dedd631"
+      },
+      "after": {
+        "path": "SKILL.md",
+        "bytes": 7438,
+        "sha256": "2b2eb300ea0b6858b4a009ac33ff2f038533ee010503e2e7274047d29a8a7849"
+      }
+    },
+    {
+      "path": "references/settled-appearance.md",
+      "kind": "added",
+      "before": null,
+      "after": {
+        "path": "references/settled-appearance.md",
+        "bytes": 8824,
+        "sha256": "58feedb47095530a21c425690f60243b66ce410f9dd12da1cf13c2ef3c0e0a8a"
+      }
+    },
+    {
+      "path": "scripts/settled-appearance.mjs",
+      "kind": "added",
+      "before": null,
+      "after": {
+        "path": "scripts/settled-appearance.mjs",
+        "bytes": 11836,
+        "sha256": "6292e0f2d3e0436ce3185ea681244d49970ce8002a9b854119be503da2f43bb2"
+      }
+    },
+    {
+      "path": "scripts/test-settled-appearance.mjs",
+      "kind": "added",
+      "before": null,
+      "after": {
+        "path": "scripts/test-settled-appearance.mjs",
+        "bytes": 13733,
+        "sha256": "5d945d47091d88d8368f1326afb479332ed40ec5da706bb9a16c7758b67d58bd"
+      }
+    }
+  ]
+}

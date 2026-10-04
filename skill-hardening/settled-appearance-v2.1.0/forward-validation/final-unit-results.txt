@@ -1,0 +1,21 @@
+✔ example plan validates without requiring browser tooling (3.876ms)
+✔ plan rejects scripts, duplicate ids, foreign navigation, private queries and unknown conditions (3.8573ms)
+✔ shared MCP probe is a complete standalone inspectable function (1.6094ms)
+✔ a bounded promise terminates missing readiness (58.8023ms)
+✔ visible-image timeout and missing geometry cannot count as settled (0.622ms)
+✔ manifest closure catches corrupted, unlisted and duplicate artifacts; seal refuses reuse (143.9177ms)
+✔ frozen/output destination is rejected before requiring Playwright (2.6052ms)
+✔ an intact hash cannot excuse malformed JSON, truncated images or broken package links (126.9073ms)
+✔ public-source inspection parses maps without fetching or executing; oversized is unknown (85.7411ms)
+﹣ live local fixtures: lazy images, phases, reversible states, mobile preferences, timeout, giant capture and provenance (0.4781ms) # SKIP
+✔ appearance policy validates data-only assertions and bounded exceptions (4.043ms)
+✔ capture verification catches appearance changes without geometry changes (0.9405ms)
+﹣ synthetic settled-appearance regressions in a real browser (0.3524ms) # SKIP
+ℹ tests 13
+ℹ suites 0
+ℹ pass 11
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 2
+ℹ todo 0
+ℹ duration_ms 669.5586

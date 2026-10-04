@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 2,
+  "packageId": "EXAMPLE-REV-2",
+  "contractId": "FC-01",
+  "sourceId": "S-01",
+  "authorization": "Example only: replace with the existing public read-only inspection instruction and reviewed reversible flows",
+  "allowedOrigins": [
+    "http://fixture.example"
+  ],
+  "publicQueryKeys": [],
+  "totalTimeoutMs": 60000,
+  "environments": [
+    {
+      "id": "ENV-D",
+      "viewport": {
+        "width": 8000,
+        "height": 8000
+      },
+      "deviceScaleFactor": 1,
+      "hasTouch": false,
+      "isMobile": false,
+      "locale": "en-US",
+      "timezoneId": "UTC",
+      "colorScheme": "light",
+      "reducedMotion": "no-preference",
+      "fixture": "Public page content; version unknown until inspected",
+      "session": "Fresh anonymous context; no imported storage",
+      "consent": "No consent interaction; inspect actual default"
+    }
+  ],
+  "cases": [
+    {
+      "id": "GIANT",
+      "environmentId": "ENV-D",
+      "url": "http://fixture.example/",
+      "state": "Static viewport",
+      "reset": "fresh-context",
+      "checkpoints": [
+        {
+          "id": "VIEWPORT",
+          "phase": "settled",
+          "required": [],
+          "absent": [],
+          "stableSelectors": [
+            "main"
+          ],
+          "timeoutMs": 1000,
+          "fullPage": false,
+          "appearance": {},
+          "afterMs": 0,
+          "actions": []
+        }
+      ],
+      "actions": []
+    }
+  ]
+}

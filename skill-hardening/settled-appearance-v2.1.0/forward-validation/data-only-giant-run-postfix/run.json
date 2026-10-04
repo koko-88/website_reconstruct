@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 2,
+  "result": "INCOMPLETE",
+  "cases": [
+    {
+      "caseId": "GIANT",
+      "environmentId": "ENV-D",
+      "state": "Static viewport",
+      "fixture": "Public page content; version unknown until inspected",
+      "session": "Fresh anonymous context; no imported storage",
+      "consent": "No consent interaction; inspect actual default",
+      "reset": "fresh-context",
+      "actions": [],
+      "captures": [
+        {
+          "evidenceId": "GIANT--VIEWPORT",
+          "path": "GIANT--VIEWPORT.json",
+          "phase": "unsettled"
+        }
+      ],
+      "network": [],
+      "navigationStartedUTC": "2026-10-04T04:26:05.411Z"
+    }
+  ],
+  "errors": [
+    "GIANT--VIEWPORT: screenshot pixel budget",
+    "GIANT--VIEWPORT: capture-pixel-budget-exceeded"
+  ],
+  "provenance": {
+    "schemaVersion": 2,
+    "packageId": "EXAMPLE-REV-2",
+    "contractId": "FC-01",
+    "sourceId": "S-01",
+    "playwrightVersion": "0.0.0",
+    "runnerSHA256": "f8daaeee6ff1672bcd4bc8943b18d523c47fff7e452cfa8d2cdaa64501106ee5",
+    "probeSHA256": "47af7034f128c9741822a9e8dee92c6f98f5d5b3ba44a99d257b1d120fec714a",
+    "appearancePolicySHA256": "5ae7fbc7dc8f1a5402b2686b1d222292c3c39b35e3a6f5a9d8fc52c774a77455",
+    "planSHA256": "7bdef957be5b0d297e5f8edf4d2e4c7823e5b73129a280edd1cbbf0ba660caca",
+    "hostOS": {
+      "platform": "win32",
+      "release": "10.0.19045",
+      "version": "Windows 10 Pro",
+      "architecture": "x64"
+    },
+    "headless": true,
+    "modifications": [
+      "Fresh browser context per case",
+      "Main-frame navigation guard via routing; HTTP cache disabled by interception",
+      "No source style/content/animation changes"
+    ],
+    "limits": [
+      "No auth/storage import",
+      "No physical-device/AT/browser-zoom/GPU parity claim",
+      "Same plan does not freeze live content, randomness or ambient frames"
+    ],
+    "browserChannel": "Playwright bundled Chromium",
+    "browserVersion": "data-only"
+  },
+  "limits": "Raw capture status only; semantic coverage, reports, gates and asset decisions require inspection"
+}

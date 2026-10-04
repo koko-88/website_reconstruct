@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 2,
+  "sealedAtUTC": "2026-10-04T04:26:05.758Z",
+  "metadata": {
+    "packageId": "EXAMPLE-REV-2",
+    "kind": "raw-capture-run",
+    "result": "INCOMPLETE"
+  },
+  "files": [
+    {
+      "path": "GIANT--VIEWPORT.json",
+      "bytes": 49441,
+      "sha256": "a886d9930648b907166abe48908e18e50de6e127617868da39f9a10c3cd36a22"
+    },
+    {
+      "path": "plan.json",
+      "bytes": 1449,
+      "sha256": "7bdef957be5b0d297e5f8edf4d2e4c7823e5b73129a280edd1cbbf0ba660caca"
+    },
+    {
+      "path": "run.json",
+      "bytes": 2083,
+      "sha256": "02438ca3174cf7204f6e12631fe2c49a86f38641fda46339cc52bd6aa140da41"
+    }
+  ]
+}

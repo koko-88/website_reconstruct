@@ -1,0 +1,32 @@
+✔ example plan validates without requiring browser tooling (4.125ms)
+✔ plan rejects scripts, duplicate ids, foreign navigation, private queries and unknown conditions (3.6029ms)
+✔ shared MCP probe is a complete standalone inspectable function (2.8376ms)
+✔ a bounded promise terminates missing readiness (65.3322ms)
+✔ visible-image timeout and missing geometry cannot count as settled (0.5874ms)
+✔ manifest closure catches corrupted, unlisted and duplicate artifacts; seal refuses reuse (39.1571ms)
+✔ frozen/output destination is rejected before requiring Playwright (5.691ms)
+✔ an intact hash cannot excuse malformed JSON, truncated images or broken package links (15.7846ms)
+✔ public-source inspection parses maps without fetching or executing; oversized is unknown (14.8704ms)
+✔ live local fixtures: lazy images, phases, reversible states, mobile preferences, timeout, giant capture and provenance (7443.8584ms)
+✔ appearance policy validates data-only assertions and bounded exceptions (4.693ms)
+✔ capture verification catches appearance changes without geometry changes (1.0936ms)
+▶ synthetic settled-appearance regressions in a real browser
+  ✔ stable parent does not pass a delayed child opacity assertion (1149.4879ms)
+  ✔ delayed finite transform/filter animation blocks even without a semantic assertion (1227.6399ms)
+  ✔ classified ambient motion stays observable and does not block static region convergence (527.1991ms)
+  ✔ unclassified continuous motion cannot be silently ignored (623.4118ms)
+  ✔ cross-origin frame shell is not inner visual readiness (1047.2424ms)
+  ✔ viewport cannot be promoted to full-page appearance, even after a reveal sweep and reset (2003.5715ms)
+  ✔ timeout preserves pending signals instead of force passing (619.5997ms)
+  ✔ sample-budget exhaustion is honest and distinct from timeout (408.3626ms)
+  ✔ region visual convergence detects changing canvas pixels beyond DOM geometry (1231.6577ms)
+  ✔ sample truncation and unavailable screenshot capability remain unresolved (854.9317ms)
+✔ synthetic settled-appearance regressions in a real browser (11278.0145ms)
+ℹ tests 23
+ℹ suites 0
+ℹ pass 23
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 11547.154

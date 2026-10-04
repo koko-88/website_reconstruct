@@ -1,0 +1,593 @@
+diff --git a/skills/reference-reconstruction/SKILL.md b/skills/reference-reconstruction/SKILL.md
+index 061081b..b01ca49 100644
+--- a/skills/reference-reconstruction/SKILL.md
++++ b/skills/reference-reconstruction/SKILL.md
+@@ -2,7 +2,7 @@
+ name: reference-reconstruction
+ description: Inspect reference websites or supplied captures, produce evidence-linked fidelity specifications, and assess readiness for faithful reconstruction and content adaptation. Use for reference replication and fidelity audits, not general UI design or inspiration-only redesign.
+ metadata:
+-  workflow-version: "2.0.0"
++  workflow-version: "2.1.0"
+ ---
+ 
+ # Reference Reconstruction
+@@ -34,7 +34,7 @@ Every inspection must deliver, including static-only or blocked inspections:
+ 3. **Non-DOM Rendering Detection report**: canvas/2D/WebGL/WebGPU, OffscreenCanvas/workers, SVG, media and embedded surfaces; observed signals, inferred renderer, inaccessible internals, impact and escalation decision. An unavailable probe is unknown, never a negative result.
+ 4. **Public Artifact / source-map inspection report**: reachable document/CSS/JS/manifest/worker/asset evidence, map references and public availability, findings and limits. Report not attempted/unavailable with reasons; no speculative endpoint crawl.
+ 
+-An empty heading or tool-used assertion is not an output. Reports may be sections of one package; retain the same fields across tools. Measure appearance, responsive edges, interactions, temporal motion and visible data contracts with provenance. Bound every readiness wait. Keep transient, settled, simulated and modified captures distinct.
++An empty heading or tool-used assertion is not an output. Reports may be sections of one package; retain the same fields across tools. Measure appearance, responsive edges, interactions, temporal motion and visible data contracts with provenance. Bound every readiness wait. Keep transient, settled, simulated and modified captures distinct. For appearance checkpoints apply [references/settled-appearance.md](references/settled-appearance.md): descendant styles, named-state assertions and bounded convergence supplement geometry; retain ambient motion and explicit iframe/offscreen limits. Never promote a geometry-only checkpoint to settled appearance.
+ 
+ Read [references/capture.md](references/capture.md) when capturing or repairing saves/readiness/transfers. Reuse [scripts/page-probe.js](scripts/page-probe.js) for bounded structured browser reads. When repeated capture or local saves have a concrete gap, use the maintained declarative [scripts/capture.mjs](scripts/capture.mjs), not new website-specific helpers. [references/capture-plan.md](references/capture-plan.md) defines its plan and limitations. Static inspection and package hashing do not require Playwright.
+ 
+diff --git a/skills/reference-reconstruction/assets/capture-plan.example.json b/skills/reference-reconstruction/assets/capture-plan.example.json
+index beb577f..cefad07 100644
+--- a/skills/reference-reconstruction/assets/capture-plan.example.json
++++ b/skills/reference-reconstruction/assets/capture-plan.example.json
+@@ -34,6 +34,7 @@
+       "required": ["main"],
+       "absent": ["[aria-busy='true']"],
+       "stableSelectors": ["main"],
++      "appearance": {"scope": "viewport", "assertions": [{"selector": "main", "visible": true, "minOpacity": 0.99}]},
+       "timeoutMs": 10000,
+       "fullPage": false,
+       "actions": []
+diff --git a/skills/reference-reconstruction/references/capture-plan.md b/skills/reference-reconstruction/references/capture-plan.md
+index 524738c..2341f56 100644
+--- a/skills/reference-reconstruction/references/capture-plan.md
++++ b/skills/reference-reconstruction/references/capture-plan.md
+@@ -27,7 +27,7 @@ Start with [assets/capture-plan.example.json](../assets/capture-plan.example.jso
+ - Top level: schemaVersion 2; packageId, contractId, sourceId (portable IDs); authorization (existing capture instruction); exact allowedOrigins; publicQueryKeys (only explicit non-sensitive query keys); totalTimeoutMs (1s-10min, default 180s); optional browserChannel chrome/msedge/chromium for an already installed compatible browser, otherwise the Playwright bundled binary; environments and cases.
+ - Environment: id, viewport width/height (200-8000 CSS px), deviceScaleFactor (1-4, default 1), isMobile/hasTouch (false), locale (en-US), timezoneId (UTC), colorScheme (light), reducedMotion (no-preference), required fixture/session/consent descriptions. These describe fresh anonymous context state, **not imported storage/data**. Read actual probe values; mobile emulation does not change UA to a real device. Browser zoom remains unknown.
+ - Case: id, environmentId, authorized public url, named state, reset exactly fresh-context, actions and checkpoints. A new context/navigation resets each case; checkpoints within a case are sequential cumulative states. Saved plan and before/after public URLs preserve URL/query/hash recipes; check sensitive values before sharing. Main-frame navigation outside the contract is blocked and reported; child-frame/asset traffic is observed rather than silently disabled. Routing disables HTTP cache and is recorded as a condition; cache-sensitive states need existing-session MCP evidence or another justified adapter.
+-- Checkpoint: id, phase settled or transient; afterMs (0-30s from navigation **start**, capture can be late and actual times are recorded), timeoutMs (100ms-30s), fullPage boolean, required visible selectors, absent visible blockers, stableSelectors and actions. Settled requires explicit geometry selectors. Defaults: 10s readiness, viewport capture, no required/blocker selectors. Name the correct ready signals; stable geometry alone does not establish the intended state.
++- Checkpoint: id, phase settled or transient; afterMs (0-30s from navigation **start**, capture can be late and actual times are recorded), timeoutMs (100ms-30s), fullPage boolean, required visible selectors, absent visible blockers, stableSelectors, actions and optional appearance policy ([schema and limits](settled-appearance.md)). Settled requires explicit geometry selectors. Defaults: 10s readiness, viewport capture, no required/blocker selectors. Name the correct ready signals; stable geometry alone does not establish the intended state.
+ - Actions: scroll x/y, scrollTo selector, hover selector, click selector, press key, or sweep maxSteps/step/budgetMs. Click/press require an authority string citing the reviewed reversible transition; a string is **not verification of human authorization**, and the inspector must review all side effects before running. No fill/submit/script/network mutation primitives. Keyboard keys are restricted to Tab/Shift+Tab/Escape/Enter/Space/arrows/Home/End. Sweeps go forward then reset top, with bounded step/time and truncation record; reverse/sticky observations need named subsequent actions/checkpoints.
+ 
+ ## Outcomes and limits
+@@ -36,7 +36,7 @@ Probe reads include environment, bounded DOM geometry, visible-image decode unde
+ 
+ Static source reports use case-insensitive substring signals, including comments: manual review establishes their meaning, never automatic renderer use. Empty signals cannot establish renderer absence. Map summaries expose absent file/mappings fields and empty mappings; even valid nonempty maps need manual bundle/source correspondence review. The CLI records its helper hash. Package verification checks JSON/image structure/local links and byte closure; evidence/coverage ID declarations and semantic completeness remain manual obligations.
+ 
+-Settled needs fonts/document/required controls, absent blockers, all sampled visible images decoded and three stable half-pixel geometry samples. Offscreen lazy images do not block; sweep coverage remains separate. Timeout saves pending reasons and an **unsettled** artifact. Post-screenshot readiness/geometry is checked. Active ambient frames are preserved, so deterministic procedure does not promise identical live pixels. Full-page screenshots over 30 million device pixels are refused; use sections.
++Settled retains fonts/document/required controls, absent blockers and sampled visible-image decode, and adds bounded descendant/pseudo style convergence with finite-motion checks, explicit named-state assertions where required, and optional scoped screenshots. Default minimum window is 300ms with at least three matching healthy samples; this is a configurable observation window, never a hard-coded website delay. Full-page appearance and unproven iframe content remain unresolved. An explicit geometry-only claim permits context capture without appearance clearance. Offscreen lazy images do not block a viewport; sweep coverage remains separate. Timeout saves pending reasons and an **unsettled** artifact. Post-screenshot base readiness, geometry and appearance are checked. Active ambient frames are preserved, so deterministic procedure does not promise identical live pixels. Full-page screenshots over 30 million device pixels are refused; use sections.
+ 
+ PNG bytes and JSON sidecars carry unique case/checkpoint IDs, actual phase/readiness, environment/time origins, action log linkage, screenshot start/end/dimensions/hash, runner/probe/plan hashes and source/contract IDs. run.json carries finite sanitized response metadata (500 entries per case, truncation explicit), errors and all attempted cases. CAPTURED means raw checkpoints ran; INCOMPLETE exits nonzero. Neither is a gate result. manifest.json verifies file inventory only. Inspect originals, derive both mandatory reports and matrices, then assess the four gates.
+ 
+@@ -44,6 +44,6 @@ For MCP use, page-probe.js is a complete async function declaration. Read it int
+ 
+ ## Validate the helpers
+ 
+-Run `node --test scripts/test-capture.mjs` for dependency-free invariants. The local synthetic-browser test is skipped unless REFERENCE_PLAYWRIGHT_MODULE points to an installed Playwright module directory; REFERENCE_BROWSER_CHANNEL selects an installed channel (test default chrome). Set these in the host shell for the integration test. It creates and checks disposable synthetic pages only, never a reference website, and checks lazy-image exclusion, timeout/phase honesty, state replay, environment provenance and overwrite refusal.
++Run `node --test scripts/test-capture.mjs scripts/test-settled-appearance.mjs` for dependency-free invariants. The local synthetic-browser test is skipped unless REFERENCE_PLAYWRIGHT_MODULE points to an installed Playwright module directory; REFERENCE_BROWSER_CHANNEL selects an installed channel (test default chrome). Set these in the host shell for the integration test. It creates and checks disposable synthetic pages only, never a reference website, and checks lazy-image exclusion, timeout/phase honesty, state replay, environment provenance and overwrite refusal.
+ 
+ Browser startup/process shutdown can fail or hang under host sandbox policies independently of page readiness. Use the host's authorized process timeout/termination capabilities and record the failed environment; retry only with a supported changed environment. The runner's page/decode/screenshot and run budgets are bounded, but it cannot guarantee cleanup of a browser process the OS refuses to control. Never weaken browser security flags to satisfy a test.
+diff --git a/skills/reference-reconstruction/references/capture.md b/skills/reference-reconstruction/references/capture.md
+index 9584e4f..68a6b89 100644
+--- a/skills/reference-reconstruction/references/capture.md
++++ b/skills/reference-reconstruction/references/capture.md
+@@ -8,11 +8,11 @@ Prefer binary files/local writes. Never embed large base64 in shell arguments, s
+ 
+ ## Readiness and phases
+ 
+-Set a total deadline and finite scroll/image limits before capture. Poll document/fonts, required visible selectors, absent loaders, visible-image load/decode and stability of specified geometry. Offscreen lazy images are not prerequisites for top-of-page captures. Decode visible images concurrently under **one shared budget**, never an unbounded serial all-image loop. A timeout produces an unsettled artifact and the pending list; it does not silently become settled. Network-idle alone cannot establish readiness on polling/video pages.
++Set a total deadline and finite scroll/image limits before capture. Poll document/fonts, required visible selectors, absent loaders, visible-image load/decode and stability of specified geometry. Offscreen lazy images are not prerequisites for top-of-page captures. Decode visible images concurrently under **one shared budget**, never an unbounded serial all-image loop. A timeout produces an unsettled artifact and the pending list; it does not silently become settled. Network-idle alone cannot establish readiness on polling/video pages. Apply [Settled-Appearance](settled-appearance.md) for descendant/pseudo style convergence, semantic assertions, bounded temporal samples and optional scoped visual signals; stationary hidden content is not proof of the intended final state.
+ 
+ Forward/reverse scroll sweeps have max steps and time; record truncation and inserted infinite-scroll content. Capture per-section/sticky/scroll-state checkpoints separately from full-page context. Full-page stitching can preserve the last scroll state's opacity/chapter and cannot prove sticky behavior. Reset to a named state before the screenshot. Bound dimensions/total pixels; use section captures for oversized pages.
+ 
+-Record phase: transient, settled, simulated, modified, or unsettled. Preserve early frames and final checkpoints separately with time origin and reset. Do not disable animations, inject CSS, fix a clock, block resources or emulate reduced motion without recording it. Screenshot stability is not motion equivalence. Ambient loops may coexist with stable layout; name the geometry checked and residual variable regions.
++Record phase: transient, settled, simulated, modified, or unsettled. Preserve early frames and final checkpoints separately with time origin and reset. Do not disable animations, inject CSS, fix a clock, block resources or emulate reduced motion without recording it. Screenshot stability is not motion equivalence. Ambient loops may coexist with stable layout; classify the justified regions/properties explicitly, preserve unmasked motion evidence, and record whether appearance is settled-static, settled-with-ambient-motion or unresolved. Stable iframe shells never clear unproven internals. Full-page settled geometry never clears offscreen reveal appearance.
+ 
+ ## Evaluation calls
+ 
+diff --git a/skills/reference-reconstruction/references/settled-appearance.md b/skills/reference-reconstruction/references/settled-appearance.md
+new file mode 100644
+index 0000000..5c7db49
+--- /dev/null
++++ b/skills/reference-reconstruction/references/settled-appearance.md
+@@ -0,0 +1,58 @@
++# Settled-Appearance policy
++
++Use this policy for named appearance checkpoints and capture repair. A stable parent rectangle, loaded host fonts and decoded host images are prerequisites, not proof that the intended state has appeared. Keep the reference's motion observable.
++
++## Choose a claim and its signals
++
++- **Viewport / region appearance:** sample descendants and generated `::before`/`::after` styles as well as specified geometry. A region must uniquely match and fit inside the current viewport; sampling never scrolls it into a different state. Explicit actions perform any required navigation/scroll first.
++- **Named semantic state:** declare expected state using count, visibility, effective opacity through ancestors, computed styles or attributes. For example, an open menu may require all its relevant items to reach opacity 1 and the toggle to expose `aria-expanded=true`. Use selectors discovered from the actual reference as plan data; no site selectors in helpers. A stationary opacity-0 child can be legitimate or a not-yet-triggered reveal. Finite sampling cannot distinguish these without an expected state. Generic convergence with no assertions supports only the observed window, never semantic completion of an arbitrary page.
++- **Geometry only:** explicitly declare `appearance.mode=geometry-only` with a reason. A legacy `phase=settled` then describes only the selected geometry; `readiness.appearance.state=unresolved` and `convergence.pass=false` prohibit an appearance claim. This preserves useful full-page context captures without falsely clearing reveal coverage.
++- **Full-page appearance:** the adapter conservatively remains unresolved, even if a sweep/reset or whole-page pixels look stable. Offscreen/lazy/rearmed reveals need named section/scroll-state evidence. Full-page pixels and a viewport sample cannot prove that coverage.
++- **Frames:** every in-scope iframe is content-unresolved by default, including same-origin frames this collector has not sampled. `frames` may explicitly bound a checkpoint to a `shell-only` obligation with a reason; it never clears provider contents. If content is material, use a capable independently bounded frame adapter and expected provider state/image/font signals, or retain unresolved/manual visual evidence. Playwright Frame/FrameLocator access, if actually available and authorized, is an additional capability; document-ready/load events, elapsed time and screenshots of a stationary blank shell are insufficient.
++
++## Plan data
++
++The existing schema2 checkpoint accepts optional `appearance`:
++
++```json
++{
++  "scope": "region",
++  "selector": "[role='dialog']",
++  "assertions": [
++    {"selector": "[role='dialog'] [role='menuitem']", "minCount": 3, "maxCount": 3, "visible": true, "minOpacity": 0.99},
++    {"selector": "[aria-controls='navigation']", "attributes": {"aria-expanded": "true"}}
++  ],
++  "visual": true,
++  "intervalMs": 100,
++  "minStableMs": 300,
++  "stableSamples": 3,
++  "maxSamples": 100,
++  "maxNodes": 400,
++  "ambient": [{"selector": "[data-effect='ambient']", "properties": ["transform"], "reason": "Observed continuous decorative motion; the semantic state is independent of its phase"}],
++  "frames": [{"selector": "iframe", "mode": "shell-only", "reason": "Host wrapper obligation only; provider content remains unresolved"}]
++}
++```
++
++Selectors/attributes above are illustrative fixture data, not a required website vocabulary. Assertions apply to **every match**, with explicit minimum/maximum count; `styles` accepts exact computed values for display, visibility, opacity, transform, filter, clipPath, color, backgroundColor, fontFamily, fontSize, fontWeight, lineHeight, letterSpacing. Missing attributes can be asserted with null. Scope defaults to viewport, mode to appearance, visual to false. Sampling defaults are shown. Timeout still comes from checkpoint timeoutMs. All budgets and exceptions are validated before browsing; no arbitrary executable predicates in plans.
++
++## Temporal and motion handling
++
++Compare consecutive descendant geometry/style signatures for the minimum observation window and sample count. Keep document/fonts/required/absent/images healthy for that same window. Read Web Animations where available: active finite animations/transitions, including delayed or paused finite motion, block completion; unclassified continuous motion remains unresolved. Sampling works without this API but the capability gap is recorded and semantic assertions become especially important.
++
++Ambient exceptions name selectors, reasons and only justified opacity/transform/filter properties. Infinite duration alone never classifies an effect as ambient. Finite transitions inside an ambient region still block. Membership, presence, display/visibility and non-exempt properties still converge. Transform exclusions compare the element's layout footprint rather than its moving transformed rectangle. Do not exempt a meaningful reveal, entire changing provider or text/data transition as ambient. Legacy stableSelectors still constrain their declared geometry; select static layout anchors around ambient movement.
++
++States are `transient`, `settled-static`, `settled-with-ambient-motion`, `unresolved`. Legacy top-level raw phases remain `transient` / `settled` / `unsettled` for schema2 consumers. Consumers must read appearance claim/state and limits; `settled` alone grants no semantic gate.
++
++## Scoped screenshot convergence
++
++Optional `visual=true` supplements DOM/style and semantic readiness for a viewport or region, including raster changes outside DOM styles. The adapter uses maintained public `page.screenshot`, a region clip, and masks for explicitly classified ambient regions **only in diagnostic comparison images**. Evidence PNGs remain unmasked with animations allowed and caret unchanged. Select a stable bounded ambient wrapper when using masks: a moving transformed mask rectangle itself produces changing pixels and must not be force-passed. Exact consecutive PNG byte hashes are a conservative signal with no pixel tolerance; differences may over-block, while equal samples cannot disprove a future delayed change. Preserve sample hashes, clips, bytes, masks, sample times and comparison method. Unavailable required screenshot/mask capabilities remain unresolved.
++
++Playwright Test's [toHaveScreenshot](https://playwright.dev/docs/api/class-pageassertions#page-assertions-to-have-screenshot-1) waits for consecutive screenshots, then compares to an expected snapshot. It is useful in a configured test project with a meaningful baseline and tolerances; it requires the test runner and disables animations by default. Do not import its defaults or create a fabricated expected reference snapshot merely to obtain readiness. Set animations to allow and record any justified masks when using it. This portable core does not require Playwright Test, pixelmatch or a baseline; an adapter may provide a decoded pixel comparator if its thresholds and capabilities are recorded. [page.screenshot](https://playwright.dev/docs/api/class-page#page-screenshot) supplies the maintained capture primitive. [Element.getAnimations](https://developer.mozilla.org/en-US/docs/Web/API/Element/getAnimations) includes scheduled animations; record actual availability.
++
++## Diagnostics and capture verification
++
++Every wait retains policy, total/sample/node/window budgets, elapsed time, each sample's geometry signature, descendant/pseudo styles, animation status, assertions with observed values and failures, images/base readiness, optional visual hashes, streak/window result, pending reasons and limits. Node/scan/assertion truncation, missing region, unclassified motion, iframe contents, full-page coverage, unsupported capability and timeout are explicit reasons. A sampling error resets convergence; timeout/sample exhaustion cannot force-pass. Static DOM agreement does not establish fonts actually rendered, background-image decode, closed roots, canvas/media semantics or inner-frame completeness.
++
++After saving the final evidence image, compare base readiness and descendant appearance again; visual checks also recheck their scoped diagnostic signal when enabled. Any change/error invalidates appearance convergence in the sidecar. Screenshot timing still spans an interval; manual semantic review remains required for unexplained raster producers and material unknowns.
++
++Run `node --test scripts/test-capture.mjs scripts/test-settled-appearance.mjs`. Set REFERENCE_PLAYWRIGHT_MODULE to an existing installation to exercise local real-browser fixtures, and REFERENCE_BROWSER_CHANNEL if needed. Optional REFERENCE_APPEARANCE_RESULTS saves sampled diagnostics to a new caller-selected file. A skipped browser suite is not a passing regression validation.
+diff --git a/skills/reference-reconstruction/scripts/capture.mjs b/skills/reference-reconstruction/scripts/capture.mjs
+index bc21250..1ac8bc5 100644
+--- a/skills/reference-reconstruction/scripts/capture.mjs
++++ b/skills/reference-reconstruction/scripts/capture.mjs
+@@ -5,6 +5,7 @@ import os from 'node:os';
+ import {createRequire} from 'node:module';
+ import {fileURLToPath,pathToFileURL} from 'node:url';
+ import {seal,sha256} from './package.mjs';
++import {appearancePolicy,probeOptions,waitAppearance,postAppearanceReasons,visualSample} from './settled-appearance.mjs';
+ 
+ const here=path.dirname(fileURLToPath(import.meta.url));
+ const probeSource=fs.readFileSync(path.join(here,'page-probe.js'),'utf8');
+@@ -80,7 +81,7 @@ export function validatePlan(plan) {
+     if(!Array.isArray(item.checkpoints)||!item.checkpoints.length||item.checkpoints.length>100) throw Error('Expected 1-100 checkpoints');
+     const cpIDs=new Set();
+     for(const cp of item.checkpoints) {
+-      keys(cp,['id','phase','afterMs','required','absent','stableSelectors','timeoutMs','fullPage','actions'],'checkpoint'); id(cp.id,'checkpoint id');
++      keys(cp,['id','phase','afterMs','required','absent','stableSelectors','timeoutMs','fullPage','actions','appearance'],'checkpoint'); id(cp.id,'checkpoint id');
+       if(cpIDs.has(cp.id)) throw Error('Duplicate checkpoint'); cpIDs.add(cp.id);
+       if(!['settled','transient'].includes(cp.phase)) throw Error('Phase must be settled or transient');
+       cp.afterMs??=0; cp.timeoutMs??=10000; cp.fullPage??=false;
+@@ -88,6 +89,7 @@ export function validatePlan(plan) {
+       if(typeof cp.fullPage!=='boolean') throw Error('fullPage must be boolean');
+       for(const name of ['required','absent','stableSelectors']) { cp[name]??=[]; strings(cp[name],name); }
+       if(cp.phase==='settled'&&!cp.stableSelectors.length) throw Error('Settled capture needs explicit stable geometry selectors');
++      appearancePolicy(cp);
+       cp.actions??=[]; actions(cp.actions);
+     }
+   }
+@@ -106,19 +108,7 @@ export function readyReasons(snapshot) {
+ }
+ export const geometrySignature = snapshot => JSON.stringify(snapshot.readiness.geometry.map(s=>({selector:s.selector,count:s.count,rects:s.rects.map(r=>Object.fromEntries(Object.entries(r).map(([k,v])=>[k,Math.round(v*2)/2])))})));
+ export async function waitReady(page,cp) {
+-  const started=Date.now(),deadline=started+cp.timeoutMs;
+-  let snapshot,prior='',streak=0,reasons=['not sampled'];
+-  while(Date.now()<deadline) {
+-    const remaining=deadline-Date.now();
+-    snapshot=await bounded(page.evaluate(probe,{required:cp.required,absent:cp.absent,stableSelectors:cp.stableSelectors,decodeMs:Math.min(500,remaining),limit:200}),remaining,'probe');
+-    reasons=readyReasons(snapshot);
+-    const signature=geometrySignature(snapshot);
+-    streak=signature===prior?streak+1:0; prior=signature;
+-    if(!reasons.length&&streak>=2) return {status:'settled',elapsedMs:Date.now()-started,snapshot,reasons:[],samplesStable:streak+1};
+-    await sleep(Math.min(100,Math.max(0,deadline-Date.now())));
+-  }
+-  if(streak<2) reasons.push('geometry-not-stable');
+-  return {status:'unsettled',elapsedMs:Date.now()-started,snapshot,reasons};
++  return waitAppearance(page,cp,probe,readyReasons,geometrySignature);
+ }
+ async function perform(page,actions,log) {
+   for(const action of actions) {
+@@ -155,7 +145,7 @@ export async function capture(planInput,out,modulePath) {
+   const write=(rel,data)=>fs.writeFileSync(path.join(out,rel),typeof data==='string'||Buffer.isBuffer(data)?data:JSON.stringify(data,null,2)+'\n',{flag:'wx'});
+   write('plan.json',plan);
+   const runnerSHA256=sha256(fs.readFileSync(fileURLToPath(import.meta.url)));
+-  const provenance={schemaVersion:2,packageId:plan.packageId,contractId:plan.contractId,sourceId:plan.sourceId,playwrightVersion:version,runnerSHA256,probeSHA256:sha256(probeSource),planSHA256:sha256(fs.readFileSync(path.join(out,'plan.json'))),hostOS:{platform:os.platform(),release:os.release(),version:os.version(),architecture:os.arch()},headless:true,modifications:['Fresh browser context per case','Main-frame navigation guard via routing; HTTP cache disabled by interception','No source style/content/animation changes'],limits:['No auth/storage import','No physical-device/AT/browser-zoom/GPU parity claim','Same plan does not freeze live content, randomness or ambient frames']};
++  const provenance={schemaVersion:2,packageId:plan.packageId,contractId:plan.contractId,sourceId:plan.sourceId,playwrightVersion:version,runnerSHA256,probeSHA256:sha256(probeSource),appearancePolicySHA256:sha256(fs.readFileSync(path.join(here,'settled-appearance.mjs'))),planSHA256:sha256(fs.readFileSync(path.join(out,'plan.json'))),hostOS:{platform:os.platform(),release:os.release(),version:os.version(),architecture:os.arch()},headless:true,modifications:['Fresh browser context per case','Main-frame navigation guard via routing; HTTP cache disabled by interception','No source style/content/animation changes'],limits:['No auth/storage import','No physical-device/AT/browser-zoom/GPU parity claim','Same plan does not freeze live content, randomness or ambient frames']};
+   let browser,timer,timedOut=false;
+   const cases=[],errors=[];
+   try {
+@@ -196,21 +186,29 @@ export async function capture(planInput,out,modulePath) {
+           await sleep(Math.max(0,navigationStarted+cp.afterMs-Date.now()));
+           let readiness;
+           if(cp.phase==='settled') readiness=await waitReady(page,cp);
+-          else readiness={status:'transient',snapshot:await bounded(page.evaluate(probe,{required:cp.required,absent:cp.absent,stableSelectors:cp.stableSelectors,limit:200}),cp.timeoutMs,'transient probe'),reasons:[],elapsedMs:Date.now()-navigationStarted};
++          else readiness={status:'transient',snapshot:await bounded(page.evaluate(probe,probeOptions(cp)),cp.timeoutMs,'transient probe'),reasons:[],appearance:{state:'transient',why:'Requested temporal checkpoint; no convergence claim',policy:appearancePolicy(cp),limits:['No settled appearance claim']},elapsedMs:Date.now()-navigationStarted};
+           const prefix=item.id+'--'+cp.id,record={evidenceId:prefix,sourceId:plan.sourceId,contractId:plan.contractId,caseId:item.id,checkpointId:cp.id,environmentId:envID,requestedPhase:cp.phase,phase:readiness.status,readiness,actionsThroughCheckpoint:row.actions.length,provenance};
+           record.actualPublicURLBefore=checkURL(page.url());
+           const before=readiness.snapshot;
+-          if(!before) throw Error('No observable snapshot');
+-          const pixels=(cp.fullPage?before.environment.scroll.width*before.environment.scroll.height:env.viewport.width*env.viewport.height)*env.deviceScaleFactor**2;
++          const pixels=before?(cp.fullPage?before.environment.scroll.width*before.environment.scroll.height:env.viewport.width*env.viewport.height)*env.deviceScaleFactor**2:Infinity;
+           try {
+-          if(pixels>30_000_000) { record.screenshotError='Pixel budget exceeded; use section captures';errors.push(prefix+': screenshot pixel budget'); }
++          if(!before) {record.phase='unsettled';record.screenshotError='No observable snapshot';record.readiness.reasons.push('capture-snapshot-unavailable');errors.push(prefix+': no observable snapshot');}
++          else if(pixels>30_000_000) { record.screenshotError='Pixel budget exceeded; use section captures';errors.push(prefix+': screenshot pixel budget');if(cp.phase==='settled'){record.phase='unsettled';record.readiness.reasons.push('capture-pixel-budget-exceeded');} }
+           else {
+             record.screenshotStartedUTC=new Date().toISOString();
+             const bytes=await page.screenshot({type:'png',fullPage:cp.fullPage,animations:'allow',caret:'initial',timeout:10000});
+             record.screenshotEndedUTC=new Date().toISOString();
+             write(prefix+'.png',bytes);record.screenshot={path:prefix+'.png',bytes:bytes.length,sha256:sha256(bytes),width:bytes.readUInt32BE(16),height:bytes.readUInt32BE(20),format:'png',fullPage:cp.fullPage,animations:'allow',caret:'initial'};
+-            record.after=await bounded(page.evaluate(probe,{required:cp.required,absent:cp.absent,stableSelectors:cp.stableSelectors,decodeMs:500,limit:200}),3000,'post-capture probe');
++            record.after=await bounded(page.evaluate(probe,{...probeOptions(cp),decodeMs:500}),3000,'post-capture probe');
+             record.captureChanged=geometrySignature(before)!==geometrySignature(record.after);
++            const appearanceChanged=cp.phase==='settled'?postAppearanceReasons(before,record.after,cp):[];
++            const policy=appearancePolicy(cp);
++            if(cp.phase==='settled'&&policy.visual&&policy.mode==='appearance'&&readiness.appearance.convergence.visual) {
++              record.postVisual=await visualSample(page,record.after,policy,3000);
++              if(record.postVisual.sha256!==readiness.appearance.convergence.visual.sha256) appearanceChanged.push('visual-changed-during-screenshot');
++            }
++            record.appearanceChanged=appearanceChanged.length>0;
++            if(appearanceChanged.length) {record.phase='unsettled';record.readiness.reasons.push(...appearanceChanged.map(r=>'post-capture:'+r));}
+             if(cp.phase==='settled'&&record.captureChanged) { record.phase='unsettled';record.readiness.reasons.push('geometry-changed-during-screenshot'); }
+             if(cp.phase==='settled'&&readyReasons(record.after).length) { record.phase='unsettled';record.readiness.reasons.push(...readyReasons(record.after).map(reason=>'post-capture:'+reason)); }
+           }
+@@ -219,6 +217,7 @@ export async function capture(planInput,out,modulePath) {
+             record.phase='unsettled';record.screenshotError=error.message;
+             record.readiness.reasons.push('capture-operation-failed');errors.push(prefix+': '+error.message);
+           }
++          if(cp.phase==='settled'&&record.phase!=='settled') { record.readiness.appearance.state='unresolved';record.readiness.appearance.convergence.pass=false;record.readiness.appearance.why='Readiness or capture verification unresolved'; }
+           if(cp.phase==='settled'&&record.phase!=='settled') errors.push(prefix+': '+record.readiness.reasons.join(', '));
+           write(prefix+'.json',record);row.captures.push({evidenceId:prefix,path:prefix+'.json',phase:record.phase});
+         }
+diff --git a/skills/reference-reconstruction/scripts/page-probe.js b/skills/reference-reconstruction/scripts/page-probe.js
+index 97d4aa1..0151192 100644
+--- a/skills/reference-reconstruction/scripts/page-probe.js
++++ b/skills/reference-reconstruction/scripts/page-probe.js
+@@ -46,9 +46,71 @@ async function referenceProbe(options = {}) {
+   });
+   const sourceNodes=[...document.querySelectorAll('script[src],link[rel~="stylesheet"],link[rel="manifest"]')];
+   const sourceRecords=sourceNodes.slice(0,limit).map(el=>({tag:el.tagName.toLowerCase(),rel:el.getAttribute('rel'),source:cleanURL(el.src||el.href)}));
++
++  // Optional appearance policy is plain data, usable through any evaluate adapter.
++  let appearance;
++  if(options.appearance) {
++    const policy=options.appearance;
++    const properties=['display','visibility','opacity','transform','filter','clipPath','color','backgroundColor','fontFamily','fontSize','fontWeight','lineHeight','letterSpacing'];
++    const styleRecord=(node,pseudo)=>{const s=getComputedStyle(node,pseudo);return Object.fromEntries(properties.map(k=>[k,s[k]]));};
++    const effectiveOpacity=node=>{let alpha=1;for(let el=node;el;el=el.parentElement){const s=getComputedStyle(el);if(s.display==='none'||s.visibility==='hidden'||s.visibility==='collapse')return 0;alpha*=Number(s.opacity);}return alpha;};
++    const intersects=(a,b)=>a.width>0&&a.height>0&&a.x+a.width>b.x&&a.y+a.height>b.y&&a.x<b.x+b.width&&a.y<b.y+b.height;
++    try {
++      const viewport={x:0,y:0,width:innerWidth,height:innerHeight};
++      const regionNodes=policy.scope==='region'?[...document.querySelectorAll(policy.selector)]:[];
++      const regionRect=regionNodes.length===1?rect(regionNodes[0]):null;
++      const inViewport=regionRect&&regionRect.x>=0&&regionRect.y>=0&&regionRect.x+regionRect.width<=innerWidth&&regionRect.y+regionRect.height<=innerHeight&&regionRect.width>0&&regionRect.height>0;
++      const scopeRect=regionRect||viewport;
++      const region=policy.scope==='region'?{count:regionNodes.length,rect:regionRect,inViewport:!!inViewport,clip:inViewport?{...regionRect,x:regionRect.x+scrollX,y:regionRect.y+scrollY}:null}:null;
++      const walker=document.createTreeWalker(document.documentElement,NodeFilter.SHOW_ELEMENT);
++      const nodes=[],frames=[];let scanned=0,truncated=false,node=walker.currentNode;
++      while(node) {
++        if(++scanned>10000) {truncated=true;break;}
++        const r=rect(node),belongs=policy.scope!=='region'||regionNodes.some(root=>root===node||root.contains(node));
++        const scopeAncestor=policy.scope==='region'&&regionNodes.some(root=>node!==root&&node.contains(root));
++        if(scopeAncestor||(belongs&&(policy.scope==='full-page'||intersects(r,scopeRect)))) {
++          if(nodes.length>=policy.maxNodes) {truncated=true;break;}
++          const matchesAmbient=policy.ambient.filter(a=>node.matches(a.selector)||!!node.closest(a.selector));
++          const ambientProperties=[...new Set(matchesAmbient.flatMap(a=>a.properties))];
++          let animations=[];
++          if(typeof node.getAnimations==='function') animations=node.getAnimations().map(animation=>{
++            const timing=animation.effect?.getComputedTiming();
++            const keyframes=animation.effect?.getKeyframes()||[];
++            return {active:animation.playState!=='finished'&&animation.playState!=='idle',playState:animation.playState,pending:animation.pending,currentTime:typeof animation.currentTime==='number'?animation.currentTime:null,delay:timing?.delay,duration:timing?.duration,endTime:Number.isFinite(timing?.endTime)?timing.endTime:null,iterations:Number.isFinite(timing?.iterations)?timing.iterations:null,properties:[...new Set(keyframes.flatMap(f=>Object.keys(f).filter(k=>!['offset','computedOffset','easing','composite'].includes(k))))]};
++          });
++          const key=scanned+':'+node.tagName.toLowerCase();
++          const layout=ambientProperties.includes('transform')?{x:node.offsetLeft,y:node.offsetTop,width:node.offsetWidth,height:node.offsetHeight}:Object.fromEntries(Object.entries(r).map(([k,v])=>[k,Math.round(v*2)/2]));
++          nodes.push({key,tag:node.tagName.toLowerCase(),rect:r,layout,computed:styleRecord(node),effectiveOpacity:effectiveOpacity(node),pseudo:['::before','::after'].map(pseudo=>({pseudo,...styleRecord(node,pseudo),content:getComputedStyle(node,pseudo).content})),ambientProperties,animations,animationCapability:typeof node.getAnimations==='function'});
++          if(node.tagName==='IFRAME') {
++            const framePolicy=policy.frames.find(f=>node.matches(f.selector));
++            let inspectability;try {inspectability=node.contentDocument?'same-origin document accessible, not sampled':'cross-origin or not loaded';}catch {inspectability='cross-origin inaccessible';}
++            frames.push({key,mode:framePolicy?.mode||'content',selector:framePolicy?.selector||null,inspectability,reason:framePolicy?.reason||'No trustworthy content readiness signal supplied'});
++          }
++        }
++        node=walker.nextNode();
++      }
++      const assertions=policy.assertions.map(assertion=>{
++        const matches=[...document.querySelectorAll(assertion.selector)],failures=[],observed=[];
++        if(matches.length<assertion.minCount||matches.length>assertion.maxCount) failures.push('count');
++        if(matches.length>policy.maxNodes) failures.push('assertion-node-budget');
++        for(const el of matches.slice(0,policy.maxNodes)) {
++          const computed=styleRecord(el),opacity=effectiveOpacity(el),isVisible=visible(el)&&opacity>0;
++          const attributes=Object.fromEntries(Object.keys(assertion.attributes||{}).map(k=>[k,el.getAttribute(k)]));
++          observed.push({computed,attributes,effectiveOpacity:opacity,visible:isVisible});
++          if(assertion.visible!==undefined&&assertion.visible!==isVisible) failures.push('visible');
++          if(assertion.minOpacity!==undefined&&opacity<assertion.minOpacity) failures.push('opacity');
++          for(const [k,v] of Object.entries(assertion.styles||{})) if(computed[k]!==v) failures.push('style:'+k);
++          for(const [k,v] of Object.entries(assertion.attributes||{})) if(attributes[k]!==v) failures.push('attribute:'+k);
++        }
++        return {selector:assertion.selector,count:matches.length,pass:!failures.length,failures:[...new Set(failures)],observed};
++      });
++      appearance={scope:policy.scope,region,nodes,frames,assertions,scanned,scanBudget:10000,truncated,limits:['Light DOM and generated before/after styles only; shadow trees, raster producers and frame internals require an independent signal.']};
++    } catch(error) {appearance={scope:policy.scope,error:error.message,nodes:[],frames:[],assertions:[],truncated:false};}
++  }
++
+   const root=document.documentElement;
+   return {
+-    schemaVersion:2,timestampUTC:new Date().toISOString(),performanceMs:performance.now(),timeOrigin:performance.timeOrigin,
++    schemaVersion:2,appearance,timestampUTC:new Date().toISOString(),performanceMs:performance.now(),timeOrigin:performance.timeOrigin,
+     environment:{url:cleanURL(location.href),userAgent:navigator.userAgent,platform:navigator.platform,cssViewport:{width:innerWidth,height:innerHeight},clientWidth:root.clientWidth,scrollbarWidth:innerWidth-root.clientWidth,dpr:devicePixelRatio,visualViewport:visualViewport?{width:visualViewport.width,height:visualViewport.height,scale:visualViewport.scale}:null,zoom:'unknown; visual scale is not browser zoom',language:navigator.language,timezone:Intl.DateTimeFormat().resolvedOptions().timeZone,direction:getComputedStyle(root).direction,dark:matchMedia('(prefers-color-scheme:dark)').matches,reducedMotion:matchMedia('(prefers-reduced-motion:reduce)').matches,coarsePointer:matchMedia('(pointer:coarse)').matches,maxTouchPoints:navigator.maxTouchPoints,scroll:{x:scrollX,y:scrollY,width:root.scrollWidth,height:root.scrollHeight}},
+     readiness:{documentState:document.readyState,fonts:document.fonts?document.fonts.status:'unsupported',required:selection(options.required),absent:selection(options.absent),geometry:selection(options.stableSelectors),images:imageRecords,imageCount:allImages.length,visibleImageCount:visibleImages.length,truncated:visibleImages.length>limit},
+     nonDOM:{status:'observed DOM surfaces only',surfaces:surfaceRecords,truncated:surfaces.length>limit,limits:['No context creation or renderer hook','WebGL/WebGPU/2D use unknown without corroboration','OffscreenCanvas, workers, closed shadow roots and cross-origin internals not inspected','API availability does not prove renderer use']},
+diff --git a/skills/reference-reconstruction/scripts/settled-appearance.mjs b/skills/reference-reconstruction/scripts/settled-appearance.mjs
+new file mode 100644
+index 0000000..fd4c10f
+--- /dev/null
++++ b/skills/reference-reconstruction/scripts/settled-appearance.mjs
+@@ -0,0 +1,135 @@
++// Portable policy and bounded orchestration; browser reads live in page-probe.js.
++import {sha256} from './package.mjs';
++
++const STYLE_PROPERTIES=['display','visibility','opacity','transform','filter','clipPath','color','backgroundColor','fontFamily','fontSize','fontWeight','lineHeight','letterSpacing'];
++const MOTION_PROPERTIES=['opacity','transform','filter'];
++const sleep=ms=>new Promise(resolve=>setTimeout(resolve,ms));
++function object(v,allowed,label) {
++  if(!v||typeof v!=='object'||Array.isArray(v)) throw Error(label+' must be an object');
++  for(const key of Object.keys(v)) if(!allowed.includes(key)) throw Error('Unknown '+label+' field: '+key);
++}
++function integer(v,min,max,label) { if(!Number.isInteger(v)||v<min||v>max) throw Error('Invalid '+label); }
++function selector(v) { if(typeof v!=='string'||!v.trim()||v.length>500) throw Error('Invalid appearance selector'); }
++function reason(v) { if(typeof v!=='string'||!v.trim()||v.length>1000) throw Error('Record scoped limitation/motion reason'); }
++export function appearancePolicy(cp) {
++  const p=structuredClone(cp.appearance||{});
++  object(p,['mode','scope','selector','intervalMs','minStableMs','stableSamples','maxSamples','maxNodes','assertions','ambient','frames','visual','reason'],'appearance');
++  p.mode??='appearance'; p.scope??='viewport'; p.intervalMs??=100; p.minStableMs??=300;
++  p.stableSamples??=3;p.maxSamples??=100;p.maxNodes??=400;p.assertions??=[];p.ambient??=[];p.frames??=[];p.visual??=false;
++  if(!['appearance','geometry-only'].includes(p.mode)) throw Error('Invalid appearance mode');
++  if(!['viewport','region','full-page'].includes(p.scope)) throw Error('Invalid appearance scope');
++  if(p.scope==='region') selector(p.selector);
++  if(p.mode==='geometry-only') reason(p.reason);
++  for(const [k,min,max] of [['intervalMs',20,1000],['minStableMs',100,10000],['stableSamples',3,20],['maxSamples',3,300],['maxNodes',10,2000]]) integer(p[k],min,max,k);
++  if(typeof p.visual!=='boolean') throw Error('Invalid visual convergence flag');
++  for(const k of ['assertions','ambient','frames']) if(!Array.isArray(p[k])||p[k].length>100) throw Error('Invalid '+k);
++  for(const a of p.assertions) {
++    object(a,['selector','minCount','maxCount','visible','minOpacity','styles','attributes'],'assertion');selector(a.selector);
++    a.minCount??=1;a.maxCount??=2000;integer(a.minCount,0,2000,'minCount');integer(a.maxCount,a.minCount,2000,'maxCount');
++    if(a.visible!==undefined&&typeof a.visible!=='boolean') throw Error('Invalid assertion visibility');
++    if(a.minOpacity!==undefined&&(typeof a.minOpacity!=='number'||a.minOpacity<0||a.minOpacity>1)) throw Error('Invalid minimum opacity');
++    if(a.styles!==undefined) { object(a.styles,STYLE_PROPERTIES,'asserted styles');for(const v of Object.values(a.styles)) if(typeof v!=='string'||v.length>500) throw Error('Invalid style expectation'); }
++    if(a.attributes!==undefined) { if(!a.attributes||typeof a.attributes!=='object'||Array.isArray(a.attributes)) throw Error('Invalid attributes');for(const [k,v] of Object.entries(a.attributes)) if(!/^[a-zA-Z][a-zA-Z0-9:_-]{0,79}$/.test(k)||(v!==null&&(typeof v!=='string'||v.length>500))) throw Error('Invalid attribute expectation'); }
++    if(!['visible','minOpacity','styles','attributes'].some(k=>a[k]!==undefined)&&a.minCount===1&&a.maxCount===2000) throw Error('Assertion needs an explicit state or count expectation');
++  }
++  for(const a of p.ambient) {
++    object(a,['selector','properties','reason'],'ambient');selector(a.selector);reason(a.reason);
++    if(!Array.isArray(a.properties)||!a.properties.length||a.properties.some(k=>!MOTION_PROPERTIES.includes(k))) throw Error('Only justified opacity/transform/filter motion may be excluded');
++  }
++  for(const f of p.frames) {
++    object(f,['selector','mode','reason'],'frame');selector(f.selector);reason(f.reason);
++    if(!['shell-only','content'].includes(f.mode)) throw Error('Invalid frame scope');
++  }
++  return p;
++}
++export const probeOptions=(cp,p=appearancePolicy(cp))=>({required:cp.required,absent:cp.absent,stableSelectors:cp.stableSelectors,limit:200,appearance:p});
++export function appearanceSignature(snapshot) {
++  const a=snapshot.appearance;
++  if(!a) return null;
++  return JSON.stringify({scope:a.scope,region:a.region,nodes:a.nodes.map(n=>({key:n.key,layout:n.layout,effectiveOpacity:n.ambientProperties.includes('opacity')?null:n.effectiveOpacity,computed:Object.fromEntries(Object.entries(n.computed).filter(([k])=>!n.ambientProperties.includes(k))),pseudo:n.pseudo.map(s=>Object.fromEntries(Object.entries(s).filter(([k])=>!n.ambientProperties.includes(k))))})),assertions:a.assertions,frames:a.frames});
++}
++export function appearanceReasons(snapshot,cp,p=appearancePolicy(cp)) {
++  if(p.mode==='geometry-only') return [];
++  const a=snapshot.appearance,reasons=[];
++  if(!a) return ['appearance-probe-unavailable'];
++  if(a.error) reasons.push('appearance-probe:'+a.error);
++  if(a.truncated) reasons.push('appearance-node-budget');
++  if(!a.nodes.length) reasons.push('appearance-empty-scope');
++  if(p.scope==='region'&&(!a.region||a.region.count!==1||!a.region.inViewport)) reasons.push('appearance-region-not-uniquely-in-viewport');
++  if(cp.fullPage||p.scope==='full-page') reasons.push('full-page-reveal-coverage-unproven');
++  for(const assertion of a.assertions) if(!assertion.pass) reasons.push('assertion:'+assertion.selector+':'+assertion.failures.join('|'));
++  for(const frame of a.frames) if(frame.mode!=='shell-only') reasons.push('iframe-content-unresolved:'+frame.key);
++  for(const node of a.nodes) {
++    if(node.animations.some(a=>a.active&&a.iterations!==null)) reasons.push('finite-motion:'+node.key);
++    if(node.animations.some(a=>a.active&&a.iterations===null&&(!node.ambientProperties.length||a.properties.some(k=>!node.ambientProperties.includes(k))))) reasons.push('unclassified-motion:'+node.key);
++  }
++  return [...new Set(reasons)];
++}
++export function postAppearanceReasons(before,after,cp) {
++  const p=appearancePolicy(cp),reasons=appearanceReasons(after,cp,p);
++  if(p.mode!=='geometry-only'&&appearanceSignature(before)!==appearanceSignature(after)) reasons.push('appearance-changed-during-screenshot');
++  return reasons;
++}
++async function bounded(promise,ms,label) {
++  let timer;try { return await Promise.race([promise,new Promise((_,reject)=>{timer=setTimeout(()=>reject(Error(label+' deadline exceeded')),Math.max(1,ms));})]); } finally {clearTimeout(timer);}
++}
++export async function visualSample(page,snapshot,p,remaining) {
++  if(typeof page.screenshot!=='function') throw Error('scoped-screenshot capability unavailable');
++  const options={type:'png',animations:'allow',caret:'initial',timeout:Math.max(1,remaining)};
++  if(p.scope==='region') {
++    const r=snapshot.appearance.region;
++    if(!r||!r.inViewport||r.count!==1) throw Error('region clip unavailable');
++    options.clip=r.clip;
++  }
++  const env=snapshot.environment;
++  const area=options.clip?options.clip.width*options.clip.height:env.cssViewport.width*env.cssViewport.height;
++  if(area*env.dpr**2>30_000_000) throw Error("visual sample pixel budget exceeded");
++  if(p.ambient.length) {
++    if(typeof page.locator!=='function') throw Error('ambient mask capability unavailable');
++    options.mask=p.ambient.map(a=>page.locator(a.selector));
++  }
++  // Exact lossless PNG byte equality is conservative; no tolerance or fabricated baseline.
++  const bytes=await bounded(page.screenshot(options),remaining,'visual sample');
++  return {sha256:sha256(bytes),bytes:bytes.length,scope:p.scope,clip:options.clip||null,maskedSelectors:p.ambient.map(a=>a.selector),animations:'allow',comparison:'exact PNG bytes'};
++}
++export async function waitAppearance(page,cp,probe,baseReasons,geometrySignature) {
++  const p=appearancePolicy(cp),started=Date.now(),deadline=started+cp.timeoutMs,samples=[];
++  let snapshot,prior=null,stableSince=null,streak=0,reasons=['not-sampled'],lastVisual=null,priorSignals=null;
++  const limits=['Finite observations cannot rule out future timer/network changes; assertions must describe the expected named state.','DOM/style convergence is not renderer, glyph, video, canvas, shadow-root or provider-internal proof.','Viewport/region success does not cover offscreen reveals.'];
++  if(!p.assertions.length) limits.push('No semantic assertions supplied; result only supports the sampled appearance window.');
++  if(p.mode==='geometry-only') limits.push('Geometry-only evidence: '+p.reason+'; no settled appearance claim.');
++  for(const f of p.frames) if(f.mode==='shell-only') limits.push('Iframe shell only: '+f.selector+'; '+f.reason+'; internals remain unresolved.');
++  while(Date.now()<deadline&&samples.length<p.maxSamples) {
++    const sample={index:samples.length,elapsedMs:Date.now()-started};
++    try {
++      snapshot=await bounded(page.evaluate(probe,{...probeOptions(cp,p),decodeMs:Math.min(500,deadline-Date.now())}),deadline-Date.now(),'probe');
++      reasons=[...baseReasons(snapshot),...appearanceReasons(snapshot,cp,p)];
++      sample.geometrySignature=geometrySignature(snapshot);sample.appearance=snapshot.appearance||null;sample.baseReadiness=snapshot.readiness;
++      let visual=null;
++      if(p.visual&&p.mode!=='geometry-only'&&p.scope!=='full-page'&&!cp.fullPage) visual=await visualSample(page,snapshot,p,deadline-Date.now());
++      sample.visual=visual;lastVisual=visual;
++      const signals={geometry:sample.geometrySignature,appearance:p.mode==='geometry-only'?null:appearanceSignature(snapshot),visual:visual?.sha256||null};
++      sample.changedSignals=priorSignals?Object.keys(signals).filter(k=>signals[k]!==priorSignals[k]):['initial-sample'];
++      priorSignals=signals;
++      const signature=JSON.stringify(signals);
++      const now=Date.now();
++      if(!reasons.length&&signature===prior) streak++;
++      else {streak=reasons.length?0:1;stableSince=reasons.length?null:now;}
++      prior=signature;
++      sample.stableSamples=streak;sample.stableForMs=stableSince===null?0:now-stableSince;sample.reasons=[...reasons];samples.push(sample);
++      if(now<deadline&&!reasons.length&&streak>=p.stableSamples&&sample.stableForMs>=p.minStableMs) {
++        const ambient=p.mode!=='geometry-only'&&(snapshot.appearance?.nodes.some(n=>n.ambientProperties.length)||p.ambient.length>0);
++        return result('settled',p.mode==='geometry-only'?'unresolved':ambient?'settled-with-ambient-motion':'settled-static','converged within bounded observation window');
++      }
++    } catch(error) {
++      reasons=[...new Set([...reasons,'sample-operation:'+error.message])];sample.reasons=[...reasons];samples.push(sample);streak=0;stableSince=null;prior=null;priorSignals=null;
++    }
++    await sleep(Math.min(p.intervalMs,Math.max(0,deadline-Date.now())));
++  }
++  if(streak<p.stableSamples||stableSince===null||Date.now()-stableSince<p.minStableMs) reasons.push('appearance-not-converged');
++  reasons.push(Date.now()>=deadline?'readiness-deadline':'sample-budget-exhausted');
++  return result('unsettled','unresolved','budget exhausted without all required signals');
++  function result(status,state,why) {
++    return {status,elapsedMs:Date.now()-started,snapshot,reasons:[...new Set(reasons)],samplesStable:streak,appearance:{state,why,claim:p.mode==='geometry-only'?'selected geometry only':p.scope+' sampled appearance; iframe interiors excluded unless independently proven',policy:p,budget:{timeoutMs:cp.timeoutMs,maxSamples:p.maxSamples,maxNodes:p.maxNodes,maxScannedNodes:10000,intervalMs:p.intervalMs,minStableMs:p.minStableMs,stableSamples:p.stableSamples},convergence:{pass:status==='settled'&&p.mode!=='geometry-only',stableSamples:streak,stableForMs:stableSince===null?0:Date.now()-stableSince,visual:lastVisual},samples,limits}};
++  }
++}
+diff --git a/skills/reference-reconstruction/scripts/test-settled-appearance.mjs b/skills/reference-reconstruction/scripts/test-settled-appearance.mjs
+new file mode 100644
+index 0000000..c94dd1c
+--- /dev/null
++++ b/skills/reference-reconstruction/scripts/test-settled-appearance.mjs
+@@ -0,0 +1,121 @@
++import test from 'node:test';
++import assert from 'node:assert/strict';
++import http from 'node:http';
++import fs from 'node:fs';
++import path from 'node:path';
++import os from 'node:os';
++import {createRequire} from 'node:module';
++import {waitReady,validatePlan,capture} from './capture.mjs';
++import {appearancePolicy,appearanceSignature,postAppearanceReasons} from './settled-appearance.mjs';
++
++const checkpoint=(extra={})=>({id:'STATE',phase:'settled',required:['main'],absent:[],stableSelectors:['main'],timeoutMs:2200,fullPage:false,...extra});
++const stateAssertion={selector:'#child',visible:true,minOpacity:0.99};
++test('appearance policy validates data-only assertions and bounded exceptions',()=>{
++  assert.equal(appearancePolicy(checkpoint()).scope,'viewport');
++  for(const appearance of [{evaluate:'unsafe'}, {intervalMs:0},{maxNodes:1},{ambient:[{selector:'body',properties:['visibility'],reason:'bad'}]},{frames:[{selector:'iframe',mode:'shell-only'}]},{assertions:[{selector:'body',styles:{unlisted:'x'}}]},{mode:'geometry-only'}]) assert.throws(()=>appearancePolicy(checkpoint({appearance})));
++  const example=JSON.parse(fs.readFileSync(new URL('../assets/capture-plan.example.json',import.meta.url),'utf8'));
++  example.cases[0].checkpoints[0].appearance={assertions:[stateAssertion]};assert.equal(validatePlan(example).plan.schemaVersion,2);
++});
++test('capture verification catches appearance changes without geometry changes',()=>{
++  const make=opacity=>({appearance:{scope:'viewport',region:null,nodes:[{key:'1:main',layout:{x:0,y:0,width:100,height:100},computed:{opacity},pseudo:[],animations:[],ambientProperties:[]}],assertions:[],frames:[],truncated:false}});
++  assert.notEqual(appearanceSignature(make('0')),appearanceSignature(make('1')));
++  assert.ok(postAppearanceReasons(make('0'),make('1'),checkpoint()).includes('appearance-changed-during-screenshot'));
++});
++const modulePath=process.env.REFERENCE_PLAYWRIGHT_MODULE;
++test('synthetic settled-appearance regressions in a real browser',{skip:!modulePath,timeout:90000},async t=>{
++  const require=createRequire(import.meta.url),playwright=require(modulePath),records=[];
++  const provider=http.createServer((req,res)=>{res.setHeader('Content-Type','text/html');res.end('<body><div style="opacity:0" id="provider">Not yet painted</div><script>setTimeout(()=>document.querySelector("#provider").style.opacity=1,1800)</script>');});
++  await new Promise(r=>provider.listen(0,'127.0.0.1',r));
++  const providerURL='http://127.0.0.1:'+provider.address().port;
++  const base=body=>'<!doctype html><html><head><style>body{margin:0}main{width:300px;height:160px;background:white}#child{width:100px;height:40px;background:blue}'+(body.css||'')+'</style></head><body>'+body.html+'<script>'+(body.js||'')+'</script></body></html>';
++  const fixtures={
++    '/opacity':base({html:'<main><div id="child" style="opacity:0">Menu child</div></main>',js:'setTimeout(()=>document.querySelector("#child").style.opacity=1,650)'}),
++    '/ancestor':base({css:'#ancestor{opacity:0;animation:parentReveal 250ms 500ms forwards}@keyframes parentReveal{to{opacity:1}}',html:'<section id="ancestor"><main><div id="child">Nested region</div></main></section>'}),
++    '/transition':base({css:'#child{transform:translateX(20px);filter:blur(4px);animation:reveal 250ms 500ms forwards}@keyframes reveal{to{transform:none;filter:blur(0px)}}',html:'<main><div id="child">Transition</div></main>'}),
++    '/ambient':base({css:'#ambient{width:120px;height:120px;overflow:hidden}#child{animation:ambient 2s linear infinite}@keyframes ambient{to{transform:rotate(360deg)}}',html:'<main><section id="ambient"><div id="child">Ambient</div></section></main>'}),
++    '/frame':base({html:'<main><iframe src="'+providerURL+'" width="200" height="100"></iframe></main>'}),
++    '/offscreen':base({html:'<main>Top</main><div style="height:1500px"></div><div id="child" style="opacity:0">Offscreen reveal</div>',js:'addEventListener("scroll",()=>{document.querySelector("#child").style.opacity=scrollY>1200?1:0})'}),
++    '/never':base({html:'<main><div id="child" style="opacity:0">Never ready</div></main>'}),
++    '/static':base({html:'<main><div id="child">Static</div></main>'}),
++    '/visual':base({html:'<main><canvas id="pixels" width="100" height="40"></canvas></main>',js:'const c=document.querySelector("canvas").getContext("2d");let n=0;const timer=setInterval(()=>{c.fillStyle=(++n%2)?"red":"blue";c.fillRect(0,0,100,40);if(n===8)clearInterval(timer)},80)'})
++  };
++  const server=http.createServer((req,res)=>{res.setHeader('Content-Type','text/html');res.end(fixtures[req.url]||fixtures['/static']);});
++  await new Promise(r=>server.listen(0,'127.0.0.1',r));
++  let browser,context;
++  try {
++    browser=await playwright.chromium.launch({headless:true,chromiumSandbox:true,channel:process.env.REFERENCE_BROWSER_CHANNEL||'chrome',timeout:30000});
++    context=await browser.newContext({viewport:{width:640,height:480}});
++    const page=await context.newPage();
++    async function run(url,cp) {
++      await page.goto('http://127.0.0.1:'+server.address().port+url,{waitUntil:'commit'});
++      const result=await waitReady(page,cp);records.push({fixture:url,checkpoint:cp,result});return result;
++    }
++    await t.test('stable parent does not pass a delayed child opacity assertion',async()=>{
++      const r=await run('/opacity',checkpoint({appearance:{assertions:[stateAssertion]}}));
++      assert.equal(r.status,'settled');assert.equal(r.appearance.state,'settled-static');assert.ok(r.elapsedMs>=650);
++      assert.ok(r.appearance.samples.some(s=>s.reasons.some(reason=>reason.startsWith('assertion:'))));
++      assert.equal(r.snapshot.appearance.assertions[0].observed[0].computed.opacity,'1');
++    });
++    await t.test('delayed finite transform/filter animation blocks even without a semantic assertion',async()=>{
++      const r=await run('/transition',checkpoint());assert.equal(r.status,'settled');assert.ok(r.elapsedMs>=750);
++      assert.ok(r.appearance.samples.some(s=>s.reasons.some(reason=>reason.startsWith('finite-motion:'))));
++      const node=r.snapshot.appearance.nodes.find(n=>n.tag==='div');assert.equal(node.computed.filter,'blur(0px)');
++    });
++    await t.test('region readiness includes ancestors with delayed finite motion',async()=>{
++      const r=await run('/ancestor',checkpoint({appearance:{scope:'region',selector:'main'}}));assert.equal(r.status,'settled');assert.ok(r.elapsedMs>=750);assert.ok(r.appearance.samples.some(s=>s.reasons.some(reason=>reason.startsWith('finite-motion:'))));
++    });
++    await t.test('classified ambient motion stays observable and does not block static region convergence',async()=>{
++      const cp=checkpoint({appearance:{visual:true,ambient:[{selector:'#ambient',properties:['transform'],reason:'Continuous decorative rotation; preserve movement and compare its surrounding layout'}]}});
++      const r=await run('/ambient',cp);assert.equal(r.status,'settled');assert.equal(r.appearance.state,'settled-with-ambient-motion');
++      assert.ok(r.snapshot.appearance.nodes.some(n=>n.animations.some(a=>a.active&&a.iterations===null)));
++      assert.deepEqual(r.appearance.convergence.visual.maskedSelectors,['#ambient']);
++      const transforms=r.appearance.samples.map(s=>s.appearance.nodes.find(n=>n.tag==='div').computed.transform);assert.ok(new Set(transforms).size>1);
++      assert.equal(await page.locator('#child').evaluate(e=>e.getAnimations()[0].playState),'running');
++    });
++    await t.test('unclassified continuous motion cannot be silently ignored',async()=>{
++      const r=await run('/ambient',checkpoint({timeoutMs:600}));assert.equal(r.status,'unsettled');assert.ok(r.reasons.some(s=>s.startsWith('unclassified-motion:')));
++    });
++    await t.test('cross-origin frame shell is not inner visual readiness',async()=>{
++      const r=await run('/frame',checkpoint({timeoutMs:600}));assert.equal(r.status,'unsettled');assert.equal(r.appearance.state,'unresolved');assert.ok(r.reasons.some(s=>s.startsWith('iframe-content-unresolved:')));
++      assert.match(r.snapshot.appearance.frames[0].inspectability,/cross-origin/);
++      const shell=await run('/frame',checkpoint({appearance:{frames:[{selector:'iframe',mode:'shell-only',reason:'This checkpoint measures host wrapper only; provider content is a separate obligation'}]}}));
++      assert.equal(shell.status,'settled');assert.ok(shell.appearance.limits.some(s=>s.includes('internals remain unresolved')));
++    });
++    await t.test('viewport cannot be promoted to full-page appearance, even after a reveal sweep and reset',async()=>{
++      const cp=checkpoint({fullPage:true,timeoutMs:600});const r=await run('/offscreen',cp);assert.equal(r.status,'unsettled');assert.ok(r.reasons.includes('full-page-reveal-coverage-unproven'));
++      await page.evaluate(()=>scrollTo(0,1600));await page.waitForFunction(()=>getComputedStyle(document.querySelector("#child")).opacity==="1",{},{timeout:1000});
++      await page.evaluate(()=>scrollTo(0,0));await page.waitForFunction(()=>getComputedStyle(document.querySelector("#child")).opacity==="0",{},{timeout:1000});const reset=await waitReady(page,cp);assert.equal(reset.status,'unsettled');
++      const geometry=await waitReady(page,checkpoint({fullPage:true,appearance:{mode:'geometry-only',reason:'Context geometry only; per-section reveal checkpoints carry appearance'}}));
++      assert.equal(geometry.status,'settled');assert.equal(geometry.appearance.state,'unresolved');assert.equal(geometry.appearance.convergence.pass,false);
++      const top=await waitReady(page,checkpoint());assert.equal(top.status,'settled');assert.match(top.appearance.claim,/viewport/);
++    });
++    await t.test('timeout preserves pending signals instead of force passing',async()=>{
++      const r=await run('/never',checkpoint({timeoutMs:600,appearance:{assertions:[stateAssertion]}}));assert.equal(r.status,'unsettled');assert.equal(r.appearance.convergence.pass,false);assert.ok(r.reasons.includes('readiness-deadline'));assert.ok(r.reasons.some(s=>s.startsWith('assertion:')));assert.ok(r.appearance.samples.length>=3);assert.ok(r.elapsedMs<1500);
++    });
++    await t.test('sample-budget exhaustion is honest and distinct from timeout',async()=>{
++      const r=await run('/static',checkpoint({appearance:{maxSamples:3,minStableMs:1000}}));assert.equal(r.status,'unsettled');assert.ok(r.reasons.includes('sample-budget-exhausted'));assert.equal(r.appearance.samples.length,3);
++    });
++    await t.test('region visual convergence detects changing canvas pixels beyond DOM geometry',async()=>{
++      const r=await run('/visual',checkpoint({appearance:{scope:'region',selector:'main',visual:true,minStableMs:350}}));assert.equal(r.status,'settled');assert.ok(r.elapsedMs>=640);const hashes=r.appearance.samples.map(s=>s.visual?.sha256).filter(Boolean);assert.ok(new Set(hashes).size>1);assert.equal(r.appearance.convergence.visual.scope,'region');
++    });
++    await t.test('sample truncation and unavailable screenshot capability remain unresolved',async()=>{
++      await page.goto('http://127.0.0.1:'+server.address().port+'/static');await page.evaluate(()=>{for(let n=0;n<30;n++)document.querySelector('main').appendChild(document.createElement('span')).textContent='x'});
++      const capped=await waitReady(page,checkpoint({timeoutMs:400,appearance:{maxNodes:10}}));assert.equal(capped.status,'unsettled');assert.ok(capped.reasons.includes('appearance-node-budget'));
++      const unsupported=await waitReady({evaluate:page.evaluate.bind(page)},checkpoint({timeoutMs:400,appearance:{visual:true}}));assert.equal(unsupported.status,'unsettled');assert.ok(unsupported.reasons.some(s=>s.includes('capability unavailable')));
++    });
++    await t.test('screenshot pixel refusal invalidates successful viewport appearance',async()=>{
++      const dir=fs.mkdtempSync(path.join(os.tmpdir(),'reference-appearance-test-'));
++      try {
++        const plan=JSON.parse(fs.readFileSync(new URL('../assets/capture-plan.example.json',import.meta.url),'utf8'));
++        const origin='http://127.0.0.1:'+server.address().port;plan.allowedOrigins=[origin];plan.browserChannel=process.env.REFERENCE_BROWSER_CHANNEL||'chrome';plan.environments[0].viewport={width:8000,height:8000};
++        plan.cases=[{id:'PIXEL',environmentId:'ENV-D',url:origin+'/static',state:'Stable but no screenshot',reset:'fresh-context',checkpoints:[checkpoint()]}];
++        const output=path.join(dir,'run'),r=await capture(plan,output,modulePath);assert.equal(r.result,'INCOMPLETE');
++        const record=JSON.parse(fs.readFileSync(path.join(output,'PIXEL--STATE.json'),'utf8'));assert.equal(record.phase,'unsettled');assert.equal(record.readiness.appearance.state,'unresolved');assert.equal(record.readiness.appearance.convergence.pass,false);assert.ok(record.readiness.reasons.includes('capture-pixel-budget-exceeded'));assert.ok(!record.screenshot);
++      } finally {if(path.dirname(path.resolve(dir))!==path.resolve(os.tmpdir())||!path.basename(dir).startsWith('reference-appearance-test-'))throw Error('Unexpected cleanup target');fs.rmSync(dir,{recursive:true,force:true});}
++    });
++  } finally {
++    if(context)await context.close();if(browser)await browser.close();
++    server.closeAllConnections();provider.closeAllConnections();await Promise.all([new Promise(r=>server.close(r)),new Promise(r=>provider.close(r))]);
++    if(process.env.REFERENCE_APPEARANCE_RESULTS) fs.writeFileSync(path.resolve(process.env.REFERENCE_APPEARANCE_RESULTS),JSON.stringify({browserVersion:browser?.version(),playwrightVersion:require(path.join(modulePath,'package.json')).version,records},null,2)+'\n');
++  }
++});
