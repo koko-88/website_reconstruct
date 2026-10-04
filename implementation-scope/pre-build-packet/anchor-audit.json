@@ -1,0 +1,545 @@
+{
+  "contractRevision": 2,
+  "matrixPath": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/state-route-matrix.md",
+  "obligationSRMembership": {
+    "TF-01": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      24,
+      25,
+      34
+    ],
+    "TF-02": [
+      1,
+      42
+    ],
+    "TF-03": [
+      6,
+      12,
+      28,
+      35,
+      36,
+      45
+    ],
+    "TF-04": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      37,
+      38,
+      39
+    ],
+    "TF-05": [
+      6,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      29,
+      30,
+      34
+    ],
+    "TF-06": [
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32
+    ],
+    "TR-01": [
+      42
+    ],
+    "TX-01": [
+      33,
+      44
+    ],
+    "TU-01": [
+      38,
+      40,
+      45
+    ],
+    "U-01": [
+      33
+    ],
+    "U-02": [
+      42
+    ]
+  },
+  "rows": [
+    {
+      "id": "SR-01",
+      "purpose": "/ and /#home: Fresh settled hero/default",
+      "acceptance": "AC2-01: fresh navigation/top/loader absent/fonts/visible decode",
+      "targetObligations": [
+        "TF-01",
+        "TF-02"
+      ],
+      "prospectiveNote": "No new interpretation correction; retain scoped evidence limits"
+    },
+    {
+      "id": "SR-02",
+      "purpose": "/#about: Intro/photo/facts section",
+      "acceptance": "AC2-02: scroll to about; compare named per-section v1 baseline, not top full-page stitched opacity",
+      "targetObligations": [
+        "TF-01"
+      ],
+      "prospectiveNote": "No new interpretation correction; retain scoped evidence limits"
+    },
+    {
+      "id": "SR-03",
+      "purpose": "/#stories: Chapter 0 Ghosts, forward/reverse",
+      "acceptance": "AC2-03: fresh normal, scroll/tab0->1->2->1->0; no new hash on tabs",
+      "targetObligations": [
+        "TF-01",
+        "TF-04"
+      ],
+      "prospectiveNote": "No new interpretation correction; retain scoped evidence limits"
+    },
+    {
+      "id": "SR-04",
+      "purpose": "/#stories: Chapter 1 Dark history, forward/reverse",
+      "acceptance": "AC2-03: fresh normal, scroll/tab0->1->2->1->0; no new hash on tabs",
+      "targetObligations": [
+        "TF-01",
+        "TF-04"
+      ],
+      "prospectiveNote": "No new interpretation correction; retain scoped evidence limits"
+    },
+    {
+      "id": "SR-05",
+      "purpose": "/#stories: Chapter 2 UFO, forward/reverse",
+      "acceptance": "AC2-03: fresh normal, scroll/tab0->1->2->1->0; no new hash on tabs",
+      "targetObligations": [
+        "TF-01",
+        "TF-04"
+      ],
+      "prospectiveNote": "No new interpretation correction; retain scoped evidence limits"
+    },
+    {
+      "id": "SR-06",
+      "purpose": "/#stories: Fresh reduced vertical chapters and UFO still",
+      "acceptance": "AC2-04: create reduced context before navigation, sweep then UFO",
+      "targetObligations": [
+        "TF-01",
+        "TF-03",
+        "TF-04",
+        "TF-05"
+      ],
+      "prospectiveNote": "No new interpretation correction; retain scoped evidence limits"
+    },
+    {
+      "id": "SR-07",
+      "purpose": "/ unnamed .tour-highlights: Eight topics: dam,dog,murder,area51,bodies,celebs,ghostmeter,esp",
+      "acceptance": "AC2-03: fresh normal forward/reverse topic list; hover meter",
+      "targetObligations": [
+        "TF-01",
+        "TF-04"
+      ],
+      "prospectiveNote": "COR-03 identifiers are dam,ghost,murderer,sky,bodies,celebs,guide,esp"
+    },
+    {
+      "id": "SR-08",
+      "purpose": "/#zombies: Venue/default/directions",
+      "acceptance": "AC2-02: scroll venue; inventory href without navigating/submitting",
+      "targetObligations": [
+        "TF-01"
+      ],
+      "prospectiveNote": "No new interpretation correction; retain scoped evidence limits"
+    },
+    {
+      "id": "SR-09",
+      "purpose": "/#plan: Default nine disclosures closed",
+      "acceptance": "AC2-05: fresh reset, scroll plan, nine closed",
+      "targetObligations": [
+        "TF-01"
+      ],
+      "prospectiveNote": "No new interpretation correction; retain scoped evidence limits"
+    },
+    {
+      "id": "SR-10",
+      "purpose": "/ menu: Closed default",
+      "acceptance": "AC2-01",
+      "targetObligations": [
+        "TF-04"
+      ],
+      "prospectiveNote": "No new interpretation correction; retain scoped evidence limits"
+    },
+    {
+      "id": "SR-11",
+      "purpose": "/ menu: Desktop open, first-link focus, close/Escape",
+      "acceptance": "AC2-06: repair02 D exact actions/deadlines",
+      "targetObligations": [
+        "TF-04",
+        "TF-05"
+      ],
+      "prospectiveNote": "No new interpretation correction; retain scoped evidence limits"
+    },
+    {
+      "id": "SR-12",
+      "purpose": "/ menu: Touch open, first-link focus, close/Escape",
+      "acceptance": "AC2-06: repair02 M",
+      "targetObligations": [
+        "TF-03",
+        "TF-04",
+        "TF-05"
+      ],
+      "prospectiveNote": "No new interpretation correction; retain scoped evidence limits"
+    },
+    {
+      "id": "SR-13",
+      "purpose": "/#about,#stories,#zombies,#plan,#tickets,#creator,#home; #local source ID: Section navigation, hash/history, reverse/reload",
+      "acceptance": "AC2-07: navigate every observed href; back/forward; fresh reset",
+      "targetObligations": [
+        "TF-04",
+        "TF-05"
+      ],
+      "prospectiveNote": "No new interpretation correction; retain scoped evidence limits"
+    },
+    {
+      "id": "SR-14",
+      "purpose": "/#plan: FAQ 1 Walk: closed->open->closed",
+      "acceptance": "AC2-05: nth details summary activation/reclose; repeat each; never conflate answers",
+      "targetObligations": [
+        "TF-04",
+        "TF-05"
+      ],
+      "prospectiveNote": "No new interpretation correction; retain scoped evidence limits"
+    },
+    {
+      "id": "SR-15",
+      "purpose": "/#plan: FAQ 2 Family: closed->open->closed",
+      "acceptance": "AC2-05: nth details summary activation/reclose; repeat each; never conflate answers",
+      "targetObligations": [
+        "TF-04",
+        "TF-05"
+      ],
+      "prospectiveNote": "No new interpretation correction; retain scoped evidence limits"
+    },
+    {
+      "id": "SR-16",
+      "purpose": "/#plan: FAQ 3 Scary: closed->open->closed",
+      "acceptance": "AC2-05: nth details summary activation/reclose; repeat each; never conflate answers",
+      "targetObligations": [
+        "TF-04",
+        "TF-05"
+      ],
+      "prospectiveNote": "No new interpretation correction; retain scoped evidence limits"
+    },
+    {
+      "id": "SR-17",
+      "purpose": "/#plan: FAQ 4 Dog: closed->open->closed",
+      "acceptance": "AC2-05: nth details summary activation/reclose; repeat each; never conflate answers",
+      "targetObligations": [
+        "TF-04",
+        "TF-05"
+      ],
+      "prospectiveNote": "No new interpretation correction; retain scoped evidence limits"
+    },
+    {
+      "id": "SR-18",
+      "purpose": "/#plan: FAQ 5 Beer: closed->open->closed",
+      "acceptance": "AC2-05: nth details summary activation/reclose; repeat each; never conflate answers",
+      "targetObligations": [
+        "TF-04",
+        "TF-05"
+      ],
+      "prospectiveNote": "No new interpretation correction; retain scoped evidence limits"
+    },
+    {
+      "id": "SR-19",
+      "purpose": "/#plan: FAQ 6 Wheelchairs/strollers: closed->open->closed",
+      "acceptance": "AC2-05: nth details summary activation/reclose; repeat each; never conflate answers",
+      "targetObligations": [
+        "TF-04",
+        "TF-05"
+      ],
+      "prospectiveNote": "No new interpretation correction; retain scoped evidence limits"
+    },
+    {
+      "id": "SR-20",
+      "purpose": "/#plan: FAQ 7 Arrival: closed->open->closed",
+      "acceptance": "AC2-05: nth details summary activation/reclose; repeat each; never conflate answers",
+      "targetObligations": [
+        "TF-04",
+        "TF-05"
+      ],
+      "prospectiveNote": "No new interpretation correction; retain scoped evidence limits"
+    },
+    {
+      "id": "SR-21",
+      "purpose": "/#plan: FAQ 8 Photos: closed->open->closed",
+      "acceptance": "AC2-05: nth details summary activation/reclose; repeat each; never conflate answers",
+      "targetObligations": [
+        "TF-04",
+        "TF-05"
+      ],
+      "prospectiveNote": "No new interpretation correction; retain scoped evidence limits"
+    },
+    {
+      "id": "SR-22",
+      "purpose": "/#plan: FAQ 9 Tickets: closed->open->closed",
+      "acceptance": "AC2-05: nth details summary activation/reclose; repeat each; never conflate answers",
+      "targetObligations": [
+        "TF-04",
+        "TF-05"
+      ],
+      "prospectiveNote": "No new interpretation correction; retain scoped evidence limits"
+    },
+    {
+      "id": "SR-23",
+      "purpose": "/#plan: Multiple open, animated reversal, Enter/Space/focus",
+      "acceptance": "AC2-05: multiple details, Enter then Space, interruption",
+      "targetObligations": [
+        "TF-04",
+        "TF-05"
+      ],
+      "prospectiveNote": "COR-01 zero/one settled FAQ; historical multi-open claim not normative"
+    },
+    {
+      "id": "SR-24",
+      "purpose": "/#local outbound links: Three local destinations; Tripadvisor/agency/contact links",
+      "acceptance": "AC2-08: inspect URLs/target; no contact submission",
+      "targetObligations": [
+        "TF-01"
+      ],
+      "prospectiveNote": "No new interpretation correction; retain scoped evidence limits"
+    },
+    {
+      "id": "SR-25",
+      "purpose": "/#tickets: Host ticket section/default",
+      "acceptance": "AC2-02",
+      "targetObligations": [
+        "TF-01",
+        "TF-06"
+      ],
+      "prospectiveNote": "No new interpretation correction; retain scoped evidence limits"
+    },
+    {
+      "id": "SR-26",
+      "purpose": "/#tickets dialog: Opening/loading/asynchronous embed",
+      "acceptance": "AC2-09: open reviewed CTA, capture actual navigation/performance origin",
+      "targetObligations": [
+        "TF-06"
+      ],
+      "prospectiveNote": "No new interpretation correction; retain scoped evidence limits"
+    },
+    {
+      "id": "SR-27",
+      "purpose": "/#tickets dialog: Postponed desktop provider; order image loaded",
+      "acceptance": "AC2-09: delayed provider then reopened checkpoint, AX/pixel review",
+      "targetObligations": [
+        "TF-06"
+      ],
+      "prospectiveNote": "No new interpretation correction; retain scoped evidence limits"
+    },
+    {
+      "id": "SR-28",
+      "purpose": "/#tickets dialog: Postponed touch provider",
+      "acceptance": "AC2-09: fresh touch, open, provider text/pixel review",
+      "targetObligations": [
+        "TF-03",
+        "TF-06"
+      ],
+      "prospectiveNote": "No new interpretation correction; retain scoped evidence limits"
+    },
+    {
+      "id": "SR-29",
+      "purpose": "/#tickets dialog: Escape/button/veil close, restoration, reopen retained iframe",
+      "acceptance": "AC2-09: close three methods/reopen; no external write",
+      "targetObligations": [
+        "TF-05",
+        "TF-06"
+      ],
+      "prospectiveNote": "No new interpretation correction; retain scoped evidence limits"
+    },
+    {
+      "id": "SR-30",
+      "purpose": "/#tickets dialog: Tab escape into background reference defect",
+      "acceptance": "AC2-10: capture repeated Tab while dialog open; any future fix is a deviation",
+      "targetObligations": [
+        "TF-05",
+        "TF-06"
+      ],
+      "prospectiveNote": "No new interpretation correction; retain scoped evidence limits"
+    },
+    {
+      "id": "SR-31",
+      "purpose": "/?tickets=preview: Source-discovered auto-open at600ms",
+      "acceptance": "AC2-11: fresh public preview; no alternate query crawl",
+      "targetObligations": [
+        "TF-06"
+      ],
+      "prospectiveNote": "No new interpretation correction; retain scoped evidence limits"
+    },
+    {
+      "id": "SR-32",
+      "purpose": "/#tickets dialog: Script-block induced fallback/contact branch",
+      "acceptance": "AC2-12: only authorized controlled simulation later; no new simulation now",
+      "targetObligations": [
+        "TF-06"
+      ],
+      "prospectiveNote": "No new interpretation correction; retain scoped evidence limits"
+    },
+    {
+      "id": "SR-33",
+      "purpose": "/#tickets provider: Selectable dates/tickets, selection/back, no inventory/error/retry/pre-submit",
+      "acceptance": "AC2-13: authorized selectable fixture; read-only selection/cancel/retry before submission",
+      "targetObligations": [
+        "TX-01",
+        "U-01"
+      ],
+      "prospectiveNote": "TX-01 removes commerce dependency, historical incomplete unchanged"
+    },
+    {
+      "id": "SR-34",
+      "purpose": "/#creator and footer: Portrait/proof/logos/back home",
+      "acceptance": "AC2-02",
+      "targetObligations": [
+        "TF-01",
+        "TF-05"
+      ],
+      "prospectiveNote": "No new interpretation correction; retain scoped evidence limits"
+    },
+    {
+      "id": "SR-35",
+      "purpose": "/ width rules: 759/760/761,1099/1100/1101,1799/1800/1801",
+      "acceptance": "AC2-14: exact recorded widths/DPR1; below/at/above",
+      "targetObligations": [
+        "TF-03"
+      ],
+      "prospectiveNote": "No new interpretation correction; retain scoped evidence limits"
+    },
+    {
+      "id": "SR-36",
+      "purpose": "/ height/tablet: 1024x768,768x1024,844x390,1440x400",
+      "acceptance": "AC2-14: recreate original environment if dependent comparison",
+      "targetObligations": [
+        "TF-03"
+      ],
+      "prospectiveNote": "No new interpretation correction; retain scoped evidence limits"
+    },
+    {
+      "id": "SR-37",
+      "purpose": "/ fresh entry: Loader normal frames and reduced entry",
+      "acceptance": "AC2-04: fresh normal/reduced with original time origin; no all-image wait",
+      "targetObligations": [
+        "TF-04"
+      ],
+      "prospectiveNote": "No new interpretation correction; retain scoped evidence limits"
+    },
+    {
+      "id": "SR-38",
+      "purpose": "/ all sections: Fog/star/marquee/scene motion/interruptions",
+      "acceptance": "AC2-03/04",
+      "targetObligations": [
+        "TF-04",
+        "TU-01"
+      ],
+      "prospectiveNote": "No new interpretation correction; retain scoped evidence limits"
+    },
+    {
+      "id": "SR-39",
+      "purpose": "/#about,.tour-highlights,#tickets: Fact decoding/rearm, meter glitch, spirit paths",
+      "acceptance": "AC2-03/04: hover/scroll/out-in plus reduced",
+      "targetObligations": [
+        "TF-04"
+      ],
+      "prospectiveNote": "No new interpretation correction; retain scoped evidence limits"
+    },
+    {
+      "id": "SR-40",
+      "purpose": "/ and public artifacts: Canvas/SVG/CSS noise/video/iframe/worker/map detection",
+      "acceptance": "AC2-15: rerun maintained probe + bounded identified source read",
+      "targetObligations": [
+        "TU-01"
+      ],
+      "prospectiveNote": "No new interpretation correction; retain scoped evidence limits"
+    },
+    {
+      "id": "SR-41",
+      "purpose": "/ evidence files: Conditions/phases/hash/closure/visual review",
+      "acceptance": "AC2-00: verify package/raw manifests and authoritative assessment table",
+      "targetObligations": [],
+      "prospectiveNote": "No new interpretation correction; retain scoped evidence limits"
+    },
+    {
+      "id": "SR-42",
+      "purpose": "/ type/media/code: Identified assets + viable reuse/replacements",
+      "acceptance": "AC2-16: owner decisions per group before implementation",
+      "targetObligations": [
+        "TF-02",
+        "TR-01",
+        "U-02"
+      ],
+      "prospectiveNote": "No new interpretation correction; retain scoped evidence limits"
+    },
+    {
+      "id": "SR-43",
+      "purpose": "/ host: Host forms/search/pagination/validation/empty states",
+      "acceptance": "AC2-08",
+      "targetObligations": [],
+      "prospectiveNote": "No new interpretation correction; retain scoped evidence limits"
+    },
+    {
+      "id": "SR-44",
+      "purpose": "External transactions: Purchase/payment/submission/messages/account changes and external page designs",
+      "acceptance": "AC2-13 pre-submit stop",
+      "targetObligations": [
+        "TX-01"
+      ],
+      "prospectiveNote": "No new interpretation correction; retain scoped evidence limits"
+    },
+    {
+      "id": "SR-45",
+      "purpose": "/ expanded device scope: Physical device/zoom/AT/other engines/RTL/dark/DPR2+",
+      "acceptance": "AC2-17 only if scope expands",
+      "targetObligations": [
+        "TF-03",
+        "TU-01"
+      ],
+      "prospectiveNote": "No new interpretation correction; retain scoped evidence limits"
+    },
+    {
+      "id": "SR-46",
+      "purpose": "Package/handoff: Portable original dependency + replay + four gates",
+      "acceptance": "AC2-00",
+      "targetObligations": [],
+      "prospectiveNote": "No new interpretation correction; retain scoped evidence limits"
+    }
+  ]
+}

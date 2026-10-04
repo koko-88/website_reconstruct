@@ -1,0 +1,446 @@
+{
+  "packetId": "IP-HBC-01",
+  "root": "repository",
+  "entries": {
+    "STATE-ROUTE-MATRIX": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/state-route-matrix.md",
+      "note": "SR-01..46 retained purposes/dispositions, historical FAQ wording corrected prospectively"
+    },
+    "ENVIRONMENT-MATRIX": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/environment-matrix.md",
+      "note": "ENV2 and inherited ENV1 reset/limits"
+    },
+    "NON-DOM-RENDERING": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/non-dom-rendering.md",
+      "note": "Mandatory rendering report; inaccessible internals remain unknown"
+    },
+    "PUBLIC-ARTIFACTS": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/public-artifacts.md",
+      "note": "Mandatory public-source/map report"
+    },
+    "ASSET-REUSE": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/asset-reuse.md",
+      "note": "Historical rights register; current policy differs but specific choices pending"
+    },
+    "HANDOFF": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/handoff.md",
+      "note": "AC2-00..17; apply packet scope/FAQ corrections"
+    },
+    "ARTIFACT-INDEX": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/artifact-index.md",
+      "note": "Qualified raw IDs and supersession"
+    },
+    "READINESS-GATES": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/readiness-gates.md",
+      "note": "Historical commerce-blocked gate; not current target scope"
+    },
+    "E2-004": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/observations/E2-004-live-inventory.json",
+      "note": "Current retained evidence; original conditions apply"
+    },
+    "E2-006": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/observations/E2-006-browser-hashes.json",
+      "note": "Current retained evidence; original conditions apply"
+    },
+    "E2-010": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/observations/E2-010-font-widget-fetch.json",
+      "note": "Current retained evidence; original conditions apply"
+    },
+    "E2-013": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/observations/E2-013-capture-assessment.json",
+      "note": "Current retained evidence; original conditions apply"
+    },
+    "E2-014": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/observations/E2-014-current-geometry.json",
+      "note": "Current retained evidence; original conditions apply"
+    },
+    "E-001-inventory": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/observations/E-001-inventory.json",
+      "note": "Inherited original runtime/measurement; not a new observation"
+    },
+    "E-005-css-runtime": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/observations/E-005-css-runtime.json",
+      "note": "Inherited original runtime/measurement; not a new observation"
+    },
+    "E-030-1024x768-geometry": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/observations/E-030-1024x768-geometry.json",
+      "note": "Inherited original runtime/measurement; not a new observation"
+    },
+    "E-030-1024x768-scroll": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/observations/E-030-1024x768-scroll.json",
+      "note": "Inherited original runtime/measurement; not a new observation"
+    },
+    "E-030-1440x900-geometry": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/observations/E-030-1440x900-geometry.json",
+      "note": "Inherited original runtime/measurement; not a new observation"
+    },
+    "E-030-1440x900-scroll": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/observations/E-030-1440x900-scroll.json",
+      "note": "Inherited original runtime/measurement; not a new observation"
+    },
+    "E-030-390x844-geometry": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/observations/E-030-390x844-geometry.json",
+      "note": "Inherited original runtime/measurement; not a new observation"
+    },
+    "E-030-390x844-scroll": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/observations/E-030-390x844-scroll.json",
+      "note": "Inherited original runtime/measurement; not a new observation"
+    },
+    "E-030-768x1024-geometry": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/observations/E-030-768x1024-geometry.json",
+      "note": "Inherited original runtime/measurement; not a new observation"
+    },
+    "E-030-768x1024-scroll": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/observations/E-030-768x1024-scroll.json",
+      "note": "Inherited original runtime/measurement; not a new observation"
+    },
+    "E-040-boundaries": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/observations/E-040-boundaries.json",
+      "note": "Inherited original runtime/measurement; not a new observation"
+    },
+    "E-041-preferences-height": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/observations/E-041-preferences-height.json",
+      "note": "Inherited original runtime/measurement; not a new observation"
+    },
+    "E-050-1440-journeys": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/observations/E-050-1440-journeys.json",
+      "note": "Inherited original runtime/measurement; not a new observation"
+    },
+    "E-050-390-journeys": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/observations/E-050-390-journeys.json",
+      "note": "Inherited original runtime/measurement; not a new observation"
+    },
+    "E-055-rendered-fonts": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/observations/E-055-rendered-fonts.json",
+      "note": "Inherited original runtime/measurement; not a new observation"
+    },
+    "E-060-loader-timeline": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/observations/E-060-loader-timeline.json",
+      "note": "Inherited original runtime/measurement; not a new observation"
+    },
+    "E-062-distinctive-motion": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/observations/E-062-distinctive-motion.json",
+      "note": "Inherited original runtime/measurement; not a new observation"
+    },
+    "E-064-image-readiness": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/observations/E-064-image-readiness.json",
+      "note": "Inherited original runtime/measurement; not a new observation"
+    },
+    "E-070-capture-conditions": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/observations/E-070-capture-conditions.json",
+      "note": "Inherited original runtime/measurement; not a new observation"
+    },
+    "E-080-reversal-focus-ufo": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/observations/E-080-reversal-focus-ufo.json",
+      "note": "Inherited original runtime/measurement; not a new observation"
+    },
+    "E-081-simulated-widget-failure": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/observations/E-081-simulated-widget-failure.json",
+      "note": "Inherited original runtime/measurement; not a new observation"
+    },
+    "E-085-facts-timeline": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/observations/E-085-facts-timeline.json",
+      "note": "Inherited original runtime/measurement; not a new observation"
+    },
+    "E-086-preview-query": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/observations/E-086-preview-query.json",
+      "note": "Inherited original runtime/measurement; not a new observation"
+    },
+    "E-090-faq-keyboard": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/observations/E-090-faq-keyboard.json",
+      "note": "Inherited original runtime/measurement; not a new observation"
+    },
+    "V1-REPORT": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/reference-evidence.md",
+      "note": "Historical requirements, explicit source/runtime distinctions; FAQ prose corrected"
+    },
+    "V1-INDEX": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/observations/artifact-index.md",
+      "note": "All original screenshot/JSON paths and timestamps"
+    },
+    "FONT-DISPLAY": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/public/display.ttf",
+      "note": "Inspection bytes only; not reuse authorization"
+    },
+    "FONT-MANTICORE": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/public/manticore.woff2",
+      "note": "Inspection bytes only; not reuse authorization"
+    },
+    "FONT-MONO": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/public/space-mono-400.woff2",
+      "note": "Inspection bytes only; not reuse authorization"
+    },
+    "PLAN-capture-geometry-01": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/plans/capture-geometry-01.json",
+      "note": "Retained replay recipe; do not execute in evidence preparation"
+    },
+    "PLAN-capture-real-01": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/plans/capture-real-01.json",
+      "note": "Retained replay recipe; do not execute in evidence preparation"
+    },
+    "PLAN-capture-repair-01": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/plans/capture-repair-01.json",
+      "note": "Retained replay recipe; do not execute in evidence preparation"
+    },
+    "PLAN-capture-repair-02": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/plans/capture-repair-02.json",
+      "note": "Retained replay recipe; do not execute in evidence preparation"
+    },
+    "JS-LOADER": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/public/app.js",
+      "note": "Source declaration only; lines 1..38; final cascade/context required",
+      "lines": [
+        1,
+        38
+      ]
+    },
+    "JS-MENU": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/public/app.js",
+      "note": "Source declaration only; lines 39..79; final cascade/context required",
+      "lines": [
+        39,
+        79
+      ]
+    },
+    "JS-TOPICS": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/public/app.js",
+      "note": "Source declaration only; lines 97..158; final cascade/context required",
+      "lines": [
+        97,
+        158
+      ]
+    },
+    "JS-UFO": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/public/app.js",
+      "note": "Source declaration only; lines 159..200; final cascade/context required",
+      "lines": [
+        159,
+        200
+      ]
+    },
+    "JS-FOG": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/public/app.js",
+      "note": "Source declaration only; lines 202..241; final cascade/context required",
+      "lines": [
+        202,
+        241
+      ]
+    },
+    "JS-SPIRIT": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/public/app.js",
+      "note": "Source declaration only; lines 242..306; final cascade/context required",
+      "lines": [
+        242,
+        306
+      ]
+    },
+    "JS-FACTS": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/public/app.js",
+      "note": "Source declaration only; lines 307..398; final cascade/context required",
+      "lines": [
+        307,
+        398
+      ]
+    },
+    "JS-REVEAL": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/public/app.js",
+      "note": "Source declaration only; lines 399..432; final cascade/context required",
+      "lines": [
+        399,
+        432
+      ]
+    },
+    "JS-MEASURE": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/public/app.js",
+      "note": "Source declaration only; lines 433..456; final cascade/context required",
+      "lines": [
+        433,
+        456
+      ]
+    },
+    "JS-RENDER": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/public/app.js",
+      "note": "Source declaration only; lines 457..572; final cascade/context required",
+      "lines": [
+        457,
+        572
+      ]
+    },
+    "JS-SCROLL": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/public/app.js",
+      "note": "Source declaration only; lines 568..657; final cascade/context required",
+      "lines": [
+        568,
+        657
+      ]
+    },
+    "JS-FAQ": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/public/app.js",
+      "note": "Source declaration only; lines 658..740; final cascade/context required",
+      "lines": [
+        658,
+        740
+      ]
+    },
+    "JS-GLOW": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/public/app.js",
+      "note": "Source declaration only; lines 741..797; final cascade/context required",
+      "lines": [
+        741,
+        797
+      ]
+    },
+    "JS-MODAL": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/public/app.js",
+      "note": "Source declaration only; lines 798..893; final cascade/context required",
+      "lines": [
+        798,
+        893
+      ]
+    },
+    "CSS-BASE": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/public/styles.css",
+      "note": "Source declaration only; lines 1..28; final cascade/context required",
+      "lines": [
+        1,
+        28
+      ]
+    },
+    "CSS-TYPE": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/public/styles.css",
+      "note": "Source declaration only; lines 1..920; final cascade/context required",
+      "lines": [
+        1,
+        920
+      ]
+    },
+    "CSS-FOG": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/public/styles.css",
+      "note": "Source declaration only; lines 115..195; final cascade/context required",
+      "lines": [
+        115,
+        195
+      ]
+    },
+    "CSS-REVEAL": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/public/styles.css",
+      "note": "Source declaration only; lines 13..398; final cascade/context required",
+      "lines": [
+        13,
+        398
+      ]
+    },
+    "CSS-FAQ": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/public/styles.css",
+      "note": "Source declaration only; lines 298..343; final cascade/context required",
+      "lines": [
+        298,
+        343
+      ]
+    },
+    "CSS-GLOW": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/public/styles.css",
+      "note": "Source declaration only; lines 506..515; final cascade/context required",
+      "lines": [
+        506,
+        515
+      ]
+    },
+    "CSS-TOUCH-HERO": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/public/styles.css",
+      "note": "Source declaration only; lines 517..541; final cascade/context required",
+      "lines": [
+        517,
+        541
+      ]
+    },
+    "CSS-LOADER": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/public/styles.css",
+      "note": "Source declaration only; lines 543..607; final cascade/context required",
+      "lines": [
+        543,
+        607
+      ]
+    },
+    "CSS-MENU": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/public/styles.css",
+      "note": "Source declaration only; lines 609..682; final cascade/context required",
+      "lines": [
+        609,
+        682
+      ]
+    },
+    "CSS-SPIRIT": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/public/styles.css",
+      "note": "Source declaration only; lines 684..754; final cascade/context required",
+      "lines": [
+        684,
+        754
+      ]
+    },
+    "CSS-UFO": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/public/styles.css",
+      "note": "Source declaration only; lines 756..764; final cascade/context required",
+      "lines": [
+        756,
+        764
+      ]
+    },
+    "CSS-GLITCH": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/public/styles.css",
+      "note": "Source declaration only; lines 766..843; final cascade/context required",
+      "lines": [
+        766,
+        843
+      ]
+    },
+    "CSS-FACTS": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/public/styles.css",
+      "note": "Source declaration only; lines 845..866; final cascade/context required",
+      "lines": [
+        845,
+        866
+      ]
+    },
+    "CSS-MODAL": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/public/styles.css",
+      "note": "Source declaration only; lines 868..920; final cascade/context required",
+      "lines": [
+        868,
+        920
+      ]
+    },
+    "CSS-TOPICS": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/public/styles.css",
+      "note": "Source declaration only; lines 411..471; final cascade/context required",
+      "lines": [
+        411,
+        471
+      ]
+    },
+    "HTML-TOPICS": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/public/index.html",
+      "note": "Source declaration only; lines 557..578; final cascade/context required",
+      "lines": [
+        557,
+        578
+      ]
+    },
+    "HTML": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/public/index.html",
+      "note": "Source declaration only; lines 1..657; final cascade/context required",
+      "lines": [
+        1,
+        657
+      ]
+    },
+    "CSS-REDUCE": {
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/public/styles.css",
+      "note": "Source declaration only; lines 1..920; final cascade/context required",
+      "lines": [
+        1,
+        920
+      ]
+    }
+  }
+}

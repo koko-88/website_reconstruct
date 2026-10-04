@@ -1,0 +1,110 @@
+{
+  "packetId": "IP-HBC-01",
+  "verifiedAtUTC": "2026-10-04T06:22:13.990315+00:00",
+  "result": "PASS",
+  "failures": [],
+  "immutableReference": {
+    "files": 481,
+    "beforeTreeSHA256": "5df9ef1328726e4bd7a6f6284c1216c351997c97482b6e6c5b0eead2f28412f9",
+    "afterTreeSHA256": "5df9ef1328726e4bd7a6f6284c1216c351997c97482b6e6c5b0eead2f28412f9"
+  },
+  "checks": {
+    "reference_byte_identity": {
+      "result": "PASS",
+      "detail": {
+        "files": 481,
+        "beforeSHA256": "5df9ef1328726e4bd7a6f6284c1216c351997c97482b6e6c5b0eead2f28412f9",
+        "afterSHA256": "5df9ef1328726e4bd7a6f6284c1216c351997c97482b6e6c5b0eead2f28412f9"
+      }
+    },
+    "sealed_and_frozen_manifest_hashes": {
+      "result": "PASS",
+      "detail": {
+        "entries": 475,
+        "mismatches": []
+      }
+    },
+    "evidence_locator_paths_and_line_bounds": {
+      "result": "PASS",
+      "detail": {
+        "locators": 78,
+        "errors": []
+      }
+    },
+    "source_mechanics_traceability": {
+      "result": "PASS",
+      "detail": {
+        "sourceSystems": 15,
+        "errors": []
+      }
+    },
+    "all_SR_purposes_and_acceptance_cells": {
+      "result": "PASS",
+      "detail": {
+        "rows": 46,
+        "mismatches": []
+      }
+    },
+    "writable_contract_SR_membership": {
+      "result": "PASS",
+      "detail": {
+        "obligations": [
+          "TF-01",
+          "TF-02",
+          "TF-03",
+          "TF-04",
+          "TF-05",
+          "TF-06",
+          "TR-01",
+          "TU-01"
+        ],
+        "errors": []
+      }
+    },
+    "topic_label_identifier_image_crosswalk": {
+      "result": "PASS",
+      "detail": {
+        "rows": 8,
+        "imageBindings": 8
+      }
+    },
+    "FAQ_correction_grounded_in_runtime": {
+      "result": "PASS",
+      "detail": {
+        "settledDesktopSamples": 9,
+        "interruptedEndAllClosed": true
+      }
+    },
+    "canonical_and_superseded_phase_precedence": {
+      "result": "PASS",
+      "detail": {
+        "canonical": 12,
+        "superseded": 6,
+        "errors": []
+      }
+    },
+    "all_linked_repository_paths_and_Markdown_anchors": {
+      "result": "PASS",
+      "detail": {
+        "links": 450,
+        "MarkdownFiles": 21,
+        "pathErrors": [],
+        "fragmentErrors": []
+      }
+    },
+    "evidence_only_changes": {
+      "result": "PASS",
+      "detail": {
+        "changedFiles": 12,
+        "outsideImplementationScope": [],
+        "liveCapture": false,
+        "websiteImplementation": false,
+        "basis": "Local-only tools; git scope plus reference byte identity; no browser/network/app command executed"
+      }
+    },
+    "independent_gates_preserved": {
+      "result": "PASS",
+      "detail": "Bounded design evidence readiness does not authorize originals or target adaptation"
+    }
+  }
+}
