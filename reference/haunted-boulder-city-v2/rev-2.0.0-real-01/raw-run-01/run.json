@@ -1,0 +1,2039 @@
+{
+  "schemaVersion": 2,
+  "result": "CAPTURED",
+  "cases": [
+    {
+      "caseId": "D",
+      "environmentId": "ENV2-D",
+      "state": "Fresh home then menu, full bounded sweep, FAQ and box-office states",
+      "fixture": "Public live 2026-10-04; source hashes reconciled separately",
+      "session": "Fresh anonymous context no imported storage; HTTP cache disabled by runner routing",
+      "consent": "No consent interaction; record default",
+      "reset": "fresh-context",
+      "actions": [
+        {
+          "action": {
+            "kind": "click",
+            "selector": ".menu-toggle",
+            "authority": "FC-EX-01/FC-X-01: reviewed reversible public menu/FAQ/dialog action; no form submit or external navigation."
+          },
+          "start": "2026-10-04T03:24:22.826Z",
+          "end": "2026-10-04T03:24:22.917Z"
+        },
+        {
+          "action": {
+            "kind": "press",
+            "key": "Escape",
+            "authority": "FC-EX-01/FC-X-01: reviewed reversible public menu/FAQ/dialog action; no form submit or external navigation."
+          },
+          "start": "2026-10-04T03:24:23.709Z",
+          "end": "2026-10-04T03:24:23.718Z"
+        },
+        {
+          "action": {
+            "kind": "sweep",
+            "maxSteps": 30,
+            "step": 700,
+            "budgetMs": 6000
+          },
+          "start": "2026-10-04T03:24:24.707Z",
+          "samples": [
+            {
+              "y": 0,
+              "height": 12505,
+              "viewport": 900,
+              "time": 6051.799999982119
+            },
+            {
+              "y": 700,
+              "height": 12505,
+              "viewport": 900,
+              "time": 6167.199999988079
+            },
+            {
+              "y": 1400,
+              "height": 12505,
+              "viewport": 900,
+              "time": 6277.4000000059605
+            },
+            {
+              "y": 2100,
+              "height": 12505,
+              "viewport": 900,
+              "time": 6381
+            },
+            {
+              "y": 2800,
+              "height": 12505,
+              "viewport": 900,
+              "time": 6489.5
+            },
+            {
+              "y": 3500,
+              "height": 12505,
+              "viewport": 900,
+              "time": 6596.4000000059605
+            },
+            {
+              "y": 4200,
+              "height": 12505,
+              "viewport": 900,
+              "time": 6728.199999988079
+            },
+            {
+              "y": 4900,
+              "height": 12505,
+              "viewport": 900,
+              "time": 6841.799999982119
+            },
+            {
+              "y": 5600,
+              "height": 12505,
+              "viewport": 900,
+              "time": 6950.299999982119
+            },
+            {
+              "y": 6300,
+              "height": 12505,
+              "viewport": 900,
+              "time": 7058.0999999940395
+            },
+            {
+              "y": 7000,
+              "height": 12505,
+              "viewport": 900,
+              "time": 7167.4000000059605
+            },
+            {
+              "y": 7700,
+              "height": 12505,
+              "viewport": 900,
+              "time": 7272.199999988079
+            },
+            {
+              "y": 8400,
+              "height": 12505,
+              "viewport": 900,
+              "time": 7384.199999988079
+            },
+            {
+              "y": 9100,
+              "height": 12505,
+              "viewport": 900,
+              "time": 7495.4000000059605
+            },
+            {
+              "y": 9800,
+              "height": 12505,
+              "viewport": 900,
+              "time": 7605.799999982119
+            },
+            {
+              "y": 10500,
+              "height": 12505,
+              "viewport": 900,
+              "time": 7718
+            },
+            {
+              "y": 11200,
+              "height": 12505,
+              "viewport": 900,
+              "time": 7824.9000000059605
+            },
+            {
+              "y": 11605,
+              "height": 12505,
+              "viewport": 900,
+              "time": 7935.5
+            }
+          ],
+          "truncated": false,
+          "end": "2026-10-04T03:24:26.594Z"
+        },
+        {
+          "action": {
+            "kind": "scrollTo",
+            "selector": "#plan"
+          },
+          "start": "2026-10-04T03:24:26.595Z",
+          "end": "2026-10-04T03:24:26.663Z"
+        },
+        {
+          "action": {
+            "kind": "click",
+            "selector": "#plan details:first-of-type summary",
+            "authority": "FC-EX-01/FC-X-01: reviewed reversible public menu/FAQ/dialog action; no form submit or external navigation."
+          },
+          "start": "2026-10-04T03:24:26.663Z",
+          "end": "2026-10-04T03:24:26.712Z"
+        },
+        {
+          "action": {
+            "kind": "click",
+            "selector": "#tickets a[aria-haspopup=dialog]",
+            "authority": "FC-EX-01/FC-X-01: reviewed reversible public menu/FAQ/dialog action; no form submit or external navigation."
+          },
+          "start": "2026-10-04T03:24:28.704Z",
+          "end": "2026-10-04T03:24:28.760Z"
+        },
+        {
+          "action": {
+            "kind": "press",
+            "key": "Escape",
+            "authority": "FC-EX-01/FC-X-01: reviewed reversible public menu/FAQ/dialog action; no form submit or external navigation."
+          },
+          "start": "2026-10-04T03:24:32.736Z",
+          "end": "2026-10-04T03:24:32.742Z"
+        }
+      ],
+      "captures": [
+        {
+          "evidenceId": "D--HOME",
+          "path": "D--HOME.json",
+          "phase": "settled"
+        },
+        {
+          "evidenceId": "D--MENU",
+          "path": "D--MENU.json",
+          "phase": "settled"
+        },
+        {
+          "evidenceId": "D--MENU-CLOSED",
+          "path": "D--MENU-CLOSED.json",
+          "phase": "settled"
+        },
+        {
+          "evidenceId": "D--FAQ",
+          "path": "D--FAQ.json",
+          "phase": "settled"
+        },
+        {
+          "evidenceId": "D--TICKETS",
+          "path": "D--TICKETS.json",
+          "phase": "settled"
+        },
+        {
+          "evidenceId": "D--CLOSED",
+          "path": "D--CLOSED.json",
+          "phase": "settled"
+        }
+      ],
+      "network": [
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "document"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/styles.css",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "stylesheet"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/haunted-downtown-boulder-city.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/bz-logo.svg",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/fog.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/display.ttf",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "font"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/manticore.woff2",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "font"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/space-mono-400.woff2",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "font"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/app.js",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/_vercel/insights/script.js",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "origin": "https://www.googletagmanager.com",
+          "path": "/gtag/js",
+          "queryKeys": [
+            "id"
+          ],
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/boulder-dam-hotel-960.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/spirit.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/favicon-32.png",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "other"
+        },
+        {
+          "origin": "https://www.google-analytics.com",
+          "path": "/g/collect",
+          "queryKeys": [
+            "v",
+            "tid",
+            "gtm",
+            "_p",
+            "gcd",
+            "npa",
+            "dma",
+            "cid",
+            "frm",
+            "ngs",
+            "pscdl",
+            "rcb",
+            "sr",
+            "uaa",
+            "uab",
+            "uafvl",
+            "uam",
+            "uamb",
+            "uap",
+            "uapv",
+            "uaw",
+            "ul",
+            "_s",
+            "tag_exp",
+            "sid",
+            "sct",
+            "seg",
+            "dl",
+            "dt",
+            "en",
+            "_fv",
+            "_nsi",
+            "_ss",
+            "_ee",
+            "tfd"
+          ],
+          "status": 204,
+          "resourceType": "fetch"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/boulder-city-haunted-walk-tour.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/boulder-city-shop.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/ufo-night.mp4",
+          "queryKeys": [],
+          "status": 206,
+          "resourceType": "media"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/ufo-night.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/hoover-dam.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/first-murderer.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/dam-workers.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/ghost-dog.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/flying-saucer.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/strange-celebs.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/buried-bodies.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/esp-gambling.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/ufo-night.mp4",
+          "queryKeys": [],
+          "status": 206,
+          "resourceType": "media"
+        },
+        {
+          "origin": "https://www.google-analytics.com",
+          "path": "/g/collect",
+          "queryKeys": [
+            "v",
+            "tid",
+            "gtm",
+            "_p",
+            "gcd",
+            "npa",
+            "dma",
+            "_eu",
+            "ae",
+            "cid",
+            "frm",
+            "ngs",
+            "pscdl",
+            "rcb",
+            "sr",
+            "uaa",
+            "uab",
+            "uafvl",
+            "uam",
+            "uamb",
+            "uap",
+            "uapv",
+            "uaw",
+            "ul",
+            "_s",
+            "tag_exp",
+            "sid",
+            "sct",
+            "seg",
+            "dl",
+            "dt",
+            "en",
+            "epn.percent_scrolled",
+            "_et",
+            "tfd"
+          ],
+          "status": 204,
+          "resourceType": "fetch"
+        },
+        {
+          "origin": "https://www.eventbrite.com",
+          "path": "/static/widgets/eb_widgets.js",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/beer-zombies-boulder-city-960.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/boulder-city-inn.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/ghost-adventures.png",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/history-current.svg",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/national-geographic-channel.svg",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/artisan-icon.jpg",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/joshua-p-warren-960.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/discovery-channel.svg",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/travel-channel.png",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/ufo-night.mp4",
+          "queryKeys": [],
+          "status": 206,
+          "resourceType": "media"
+        },
+        {
+          "origin": "https://www.eventbrite.com",
+          "path": "/checkout-external",
+          "queryKeys": [
+            "eid",
+            "parent",
+            "theme"
+          ],
+          "status": 200,
+          "resourceType": "document"
+        },
+        {
+          "origin": "https://cdn.evbstatic.com",
+          "path": "/s3-build/fe/build/8290.8c5b220bf6f482881a90.css",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "stylesheet"
+        },
+        {
+          "origin": "https://cdn.evbstatic.com",
+          "path": "/s3-build/fe/build/checkout.5a299713740eb57a7f5f.css",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "stylesheet"
+        },
+        {
+          "origin": "https://cdn.evbstatic.com",
+          "path": "/s3-build/fe/build/checkout--24.82.0--eds-4.3.392.css",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "stylesheet"
+        },
+        {
+          "origin": "https://cdn.evbstatic.com",
+          "path": "/s3-build/fe/build/5964.29ac4ba3d5441dad4aab.css",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "stylesheet"
+        },
+        {
+          "origin": "https://cdntranscend.eventbrite.com",
+          "path": "/cm/f2747157-cf59-4ef1-8703-018defe51764/airgap.js",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "origin": "https://cdn.evbstatic.com",
+          "path": "/s3-build/fe/build/vendor.7a473bf5fd2abac8a5d7.dll.js",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "origin": "https://cdn.evbstatic.com",
+          "path": "/s3-build/fe/build/1202.e2d587e2f8902c26a92e.css",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "stylesheet"
+        },
+        {
+          "origin": "https://cdn.evbstatic.com",
+          "path": "/s3-build/fe/build/8488.18b5a16930fafbd6c030.css",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "stylesheet"
+        },
+        {
+          "origin": "https://cdn.evbstatic.com",
+          "path": "/s3-build/fe/dist/font-loader/1.6.2/browser/founders-grotesk.js",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "origin": "https://cdntranscend.eventbrite.com",
+          "path": "/cm/f2747157-cf59-4ef1-8703-018defe51764/xdi.js",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "origin": "https://cdntranscend.eventbrite.com",
+          "path": "/cm/f2747157-cf59-4ef1-8703-018defe51764/ui.js",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "origin": "https://cdn.evbstatic.com",
+          "path": "/s3-build/fe/build/vendor.2dec023f9ccd6636d143.web.js",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "origin": "https://cdntranscend.eventbrite.com",
+          "path": "/cm/f2747157-cf59-4ef1-8703-018defe51764/cm.css",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "stylesheet"
+        },
+        {
+          "origin": "https://cdntranscend.eventbrite.com",
+          "path": "/cm/f2747157-cf59-4ef1-8703-018defe51764/translations/en.json",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "fetch"
+        },
+        {
+          "origin": "https://www.eventbrite.com",
+          "path": "/metrics/",
+          "queryKeys": [
+            "id"
+          ],
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "origin": "https://cdn.evbstatic.com",
+          "path": "/s3-build/fe/build/checkout.f7522c5059013d678be7.web.js",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "origin": "https://cdn.evbstatic.com",
+          "path": "/s3-build/fe/build/5091.b2db5d86184884c8f225.async.web.js",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "origin": "https://cdn.evbstatic.com",
+          "path": "/s3-build/fe/build/1480.3564054255b835464a00.async.web.js",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "script"
+        }
+      ],
+      "navigationStartedUTC": "2026-10-04T03:24:18.643Z"
+    },
+    {
+      "caseId": "M",
+      "environmentId": "ENV2-M",
+      "state": "Fresh home then menu, full bounded sweep, FAQ and box-office states",
+      "fixture": "Same live public reference; fresh touch emulation",
+      "session": "Fresh anonymous context no imported storage; HTTP cache disabled",
+      "consent": "No consent interaction",
+      "reset": "fresh-context",
+      "actions": [
+        {
+          "action": {
+            "kind": "click",
+            "selector": ".menu-toggle",
+            "authority": "FC-EX-01/FC-X-01: reviewed reversible public menu/FAQ/dialog action; no form submit or external navigation."
+          },
+          "start": "2026-10-04T03:24:37.747Z",
+          "end": "2026-10-04T03:24:37.815Z"
+        },
+        {
+          "action": {
+            "kind": "press",
+            "key": "Escape",
+            "authority": "FC-EX-01/FC-X-01: reviewed reversible public menu/FAQ/dialog action; no form submit or external navigation."
+          },
+          "start": "2026-10-04T03:24:38.272Z",
+          "end": "2026-10-04T03:24:38.277Z"
+        },
+        {
+          "action": {
+            "kind": "sweep",
+            "maxSteps": 30,
+            "step": 700,
+            "budgetMs": 6000
+          },
+          "start": "2026-10-04T03:24:38.748Z",
+          "samples": [
+            {
+              "y": 0,
+              "height": 10569,
+              "viewport": 844,
+              "time": 4612.199999988079
+            },
+            {
+              "y": 700,
+              "height": 10569,
+              "viewport": 844,
+              "time": 4720
+            },
+            {
+              "y": 1400,
+              "height": 10569,
+              "viewport": 844,
+              "time": 4831.399999976158
+            },
+            {
+              "y": 2100,
+              "height": 10569,
+              "viewport": 844,
+              "time": 4936.5
+            },
+            {
+              "y": 2800,
+              "height": 10569,
+              "viewport": 844,
+              "time": 5047.899999976158
+            },
+            {
+              "y": 3500,
+              "height": 10569,
+              "viewport": 844,
+              "time": 5156.399999976158
+            },
+            {
+              "y": 4200,
+              "height": 10569,
+              "viewport": 844,
+              "time": 5266.899999976158
+            },
+            {
+              "y": 4900,
+              "height": 10569,
+              "viewport": 844,
+              "time": 5369.699999988079
+            },
+            {
+              "y": 5600,
+              "height": 10569,
+              "viewport": 844,
+              "time": 5473.399999976158
+            },
+            {
+              "y": 6300,
+              "height": 10569,
+              "viewport": 844,
+              "time": 5576
+            },
+            {
+              "y": 7000,
+              "height": 10569,
+              "viewport": 844,
+              "time": 5684.5
+            },
+            {
+              "y": 7700,
+              "height": 10569,
+              "viewport": 844,
+              "time": 5791.299999982119
+            },
+            {
+              "y": 8400,
+              "height": 10569,
+              "viewport": 844,
+              "time": 5897
+            },
+            {
+              "y": 9100,
+              "height": 10569,
+              "viewport": 844,
+              "time": 6006.799999982119
+            },
+            {
+              "y": 9725,
+              "height": 10569,
+              "viewport": 844,
+              "time": 6119.899999976158
+            }
+          ],
+          "truncated": false,
+          "end": "2026-10-04T03:24:40.259Z"
+        },
+        {
+          "action": {
+            "kind": "scrollTo",
+            "selector": "#plan"
+          },
+          "start": "2026-10-04T03:24:40.259Z",
+          "end": "2026-10-04T03:24:40.325Z"
+        },
+        {
+          "action": {
+            "kind": "click",
+            "selector": "#plan details:first-of-type summary",
+            "authority": "FC-EX-01/FC-X-01: reviewed reversible public menu/FAQ/dialog action; no form submit or external navigation."
+          },
+          "start": "2026-10-04T03:24:40.325Z",
+          "end": "2026-10-04T03:24:40.369Z"
+        },
+        {
+          "action": {
+            "kind": "click",
+            "selector": "#tickets a[aria-haspopup=dialog]",
+            "authority": "FC-EX-01/FC-X-01: reviewed reversible public menu/FAQ/dialog action; no form submit or external navigation."
+          },
+          "start": "2026-10-04T03:24:41.548Z",
+          "end": "2026-10-04T03:24:41.601Z"
+        },
+        {
+          "action": {
+            "kind": "press",
+            "key": "Escape",
+            "authority": "FC-EX-01/FC-X-01: reviewed reversible public menu/FAQ/dialog action; no form submit or external navigation."
+          },
+          "start": "2026-10-04T03:24:44.432Z",
+          "end": "2026-10-04T03:24:44.441Z"
+        }
+      ],
+      "captures": [
+        {
+          "evidenceId": "M--HOME",
+          "path": "M--HOME.json",
+          "phase": "settled"
+        },
+        {
+          "evidenceId": "M--MENU",
+          "path": "M--MENU.json",
+          "phase": "settled"
+        },
+        {
+          "evidenceId": "M--MENU-CLOSED",
+          "path": "M--MENU-CLOSED.json",
+          "phase": "settled"
+        },
+        {
+          "evidenceId": "M--FAQ",
+          "path": "M--FAQ.json",
+          "phase": "settled"
+        },
+        {
+          "evidenceId": "M--TICKETS",
+          "path": "M--TICKETS.json",
+          "phase": "settled"
+        },
+        {
+          "evidenceId": "M--CLOSED",
+          "path": "M--CLOSED.json",
+          "phase": "settled"
+        }
+      ],
+      "network": [
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "document"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/fog.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/styles.css",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "stylesheet"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/bz-logo.svg",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/haunted-downtown-boulder-city-960.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/manticore.woff2",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "font"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/display.ttf",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "font"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/_vercel/insights/script.js",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/app.js",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/space-mono-400.woff2",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "font"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/spirit.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/boulder-dam-hotel-960.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.googletagmanager.com",
+          "path": "/gtag/js",
+          "queryKeys": [
+            "id"
+          ],
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/boulder-city-haunted-walk-tour-960.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/favicon-32.png",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "other"
+        },
+        {
+          "origin": "https://www.google-analytics.com",
+          "path": "/g/collect",
+          "queryKeys": [
+            "v",
+            "tid",
+            "gtm",
+            "_p",
+            "gcd",
+            "npa",
+            "dma",
+            "cid",
+            "frm",
+            "ngs",
+            "pscdl",
+            "rcb",
+            "sr",
+            "uaa",
+            "uab",
+            "uafvl",
+            "uam",
+            "uamb",
+            "uap",
+            "uapv",
+            "uaw",
+            "ul",
+            "_s",
+            "tag_exp",
+            "sid",
+            "sct",
+            "seg",
+            "dl",
+            "dt",
+            "en",
+            "_fv",
+            "_nsi",
+            "_ss",
+            "_ee",
+            "tfd"
+          ],
+          "status": 204,
+          "resourceType": "fetch"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/boulder-city-shop-960.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/ufo-night.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/hoover-dam-960.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/ghost-dog-960.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/first-murderer-960.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/dam-workers-960.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/buried-bodies-960.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/esp-gambling-960.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/strange-celebs-960.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/ufo-night-960.mp4",
+          "queryKeys": [],
+          "status": 206,
+          "resourceType": "media"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/flying-saucer-960.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/beer-zombies-boulder-city-960.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/ufo-night-960.mp4",
+          "queryKeys": [],
+          "status": 206,
+          "resourceType": "media"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/boulder-city-inn-960.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/ghost-adventures.png",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/joshua-p-warren-960.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/artisan-icon.jpg",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/national-geographic-channel.svg",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/travel-channel.png",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/discovery-channel.svg",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/history-current.svg",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.google-analytics.com",
+          "path": "/g/collect",
+          "queryKeys": [
+            "v",
+            "tid",
+            "gtm",
+            "_p",
+            "gcd",
+            "npa",
+            "dma",
+            "_eu",
+            "ae",
+            "cid",
+            "frm",
+            "ngs",
+            "pscdl",
+            "rcb",
+            "sr",
+            "uaa",
+            "uab",
+            "uafvl",
+            "uam",
+            "uamb",
+            "uap",
+            "uapv",
+            "uaw",
+            "ul",
+            "_s",
+            "tag_exp",
+            "sid",
+            "sct",
+            "seg",
+            "dl",
+            "dt",
+            "en",
+            "epn.percent_scrolled",
+            "_et",
+            "tfd"
+          ],
+          "status": 204,
+          "resourceType": "fetch"
+        },
+        {
+          "origin": "https://www.eventbrite.com",
+          "path": "/static/widgets/eb_widgets.js",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "origin": "https://www.eventbrite.com",
+          "path": "/checkout-external",
+          "queryKeys": [
+            "eid",
+            "parent",
+            "theme"
+          ],
+          "status": 200,
+          "resourceType": "document"
+        },
+        {
+          "origin": "https://cdn.evbstatic.com",
+          "path": "/s3-build/fe/build/8290.8c5b220bf6f482881a90.css",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "stylesheet"
+        },
+        {
+          "origin": "https://cdn.evbstatic.com",
+          "path": "/s3-build/fe/build/8488.18b5a16930fafbd6c030.css",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "stylesheet"
+        },
+        {
+          "origin": "https://cdn.evbstatic.com",
+          "path": "/s3-build/fe/build/1202.e2d587e2f8902c26a92e.css",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "stylesheet"
+        },
+        {
+          "origin": "https://cdn.evbstatic.com",
+          "path": "/s3-build/fe/build/5964.29ac4ba3d5441dad4aab.css",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "stylesheet"
+        },
+        {
+          "origin": "https://cdn.evbstatic.com",
+          "path": "/s3-build/fe/build/checkout.5a299713740eb57a7f5f.css",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "stylesheet"
+        },
+        {
+          "origin": "https://cdn.evbstatic.com",
+          "path": "/s3-build/fe/build/checkout--24.82.0--eds-4.3.392.css",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "stylesheet"
+        },
+        {
+          "origin": "https://cdntranscend.eventbrite.com",
+          "path": "/cm/f2747157-cf59-4ef1-8703-018defe51764/airgap.js",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "origin": "https://cdn.evbstatic.com",
+          "path": "/s3-build/fe/build/vendor.7a473bf5fd2abac8a5d7.dll.js",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "origin": "https://cdn.evbstatic.com",
+          "path": "/s3-build/fe/build/vendor.2dec023f9ccd6636d143.web.js",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "origin": "https://cdn.evbstatic.com",
+          "path": "/s3-build/fe/build/5400.c59b35550dd01eab845b.async.web.js",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "origin": "https://cdn.evbstatic.com",
+          "path": "/s3-build/fe/build/9156.59d3a662d40681c01dc3.async.web.js",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "origin": "https://cdn.evbstatic.com",
+          "path": "/s3-build/fe/build/5091.b2db5d86184884c8f225.async.web.js",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "origin": "https://cdntranscend.eventbrite.com",
+          "path": "/cm/f2747157-cf59-4ef1-8703-018defe51764/xdi.js",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "origin": "https://cdn.evbstatic.com",
+          "path": "/s3-build/fe/build/1480.3564054255b835464a00.async.web.js",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "origin": "https://cdn.evbstatic.com",
+          "path": "/s3-build/fe/build/5653.9a7ca3063a64af5d19e4.async.web.js",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "origin": "https://cdn.evbstatic.com",
+          "path": "/s3-build/fe/build/4514.449fbccba8872de7c514.async.web.js",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "origin": "https://cdn.evbstatic.com",
+          "path": "/s3-build/fe/build/8619.4f1bc15b555ee5b24dd4.async.web.js",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "origin": "https://cdn.evbstatic.com",
+          "path": "/s3-build/fe/build/1540.f2ed84727dd5ae09d3a0.async.web.js",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "origin": "https://cdn.evbstatic.com",
+          "path": "/s3-build/fe/build/2135.2e029c6f8f152f0528ad.async.web.js",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "origin": "https://cdn.evbstatic.com",
+          "path": "/s3-build/fe/build/checkout.f7522c5059013d678be7.web.js",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "origin": "https://cdn.evbstatic.com",
+          "path": "/s3-build/fe/build/6924.68b6049e1f2b353a2d4e.async.web.js",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "origin": "https://cdn.evbstatic.com",
+          "path": "/s3-build/fe/build/2958.86600854c2be249bab8e.async.web.js",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "origin": "https://cdn.evbstatic.com",
+          "path": "/s3-build/fe/build/175.6896d7d6d40c6acc7735.async.web.js",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "origin": "https://cdn.evbstatic.com",
+          "path": "/s3-build/fe/build/3291.a33fd3cee80323f16331.async.web.js",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "origin": "https://cdn.evbstatic.com",
+          "path": "/s3-build/fe/build/3290.98723940a8a8ba08cfcc.async.web.js",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "origin": "https://cdn.evbstatic.com",
+          "path": "/s3-build/fe/build/8560.f0aa4011fd22b798fe76.async.web.js",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "origin": "https://cdn.evbstatic.com",
+          "path": "/s3-build/fe/build/1001.25146568db9f7caa3c97.async.web.js",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "origin": "https://cdn.evbstatic.com",
+          "path": "/s3-build/fe/build/3136.a8b95b14bc9fb99890b3.async.web.js",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "origin": "https://cdn.evbstatic.com",
+          "path": "/s3-build/fe/build/8675.88e9f22e4534ba0097f4.async.web.js",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "origin": "https://cdn.evbstatic.com",
+          "path": "/s3-build/fe/build/7446.85469ff001b228c62786.async.web.js",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "origin": "https://cdn.evbstatic.com",
+          "path": "/s3-build/fe/build/SeriesModule-0ae28258.8952f8269473ea5241dd.async.web.js",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "origin": "https://cdn.evbstatic.com",
+          "path": "/s3-build/fe/build/SeriesModule-bee20475.9f850f1997b86f7f61a2.async.web.js",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "origin": "https://cdntranscend.eventbrite.com",
+          "path": "/cm/f2747157-cf59-4ef1-8703-018defe51764/ui.js",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "origin": "https://cdn.evbstatic.com",
+          "path": "/s3-build/fe/build/8769.10f0f2b6b50dad8cc228.async.web.js",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "origin": "https://cdn.evbstatic.com",
+          "path": "/s3-build/fe/build/8333.0de264cf3021e4031854.async.web.js",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "origin": "https://cdn.evbstatic.com",
+          "path": "/s3-build/fe/build/SeriesModule-ea73be41.1336374fd7347527984f.async.web.js",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "origin": "https://cdn.evbstatic.com",
+          "path": "/s3-build/fe/build/9128.e1938afa8b6f023cf363.async.web.js",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "origin": "https://cdn.evbstatic.com",
+          "path": "/s3-build/fe/build/SeriesModule-3edcb53d.01819a03d1b14070b9bc.async.web.js",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "origin": "https://cdn.evbstatic.com",
+          "path": "/s3-build/fe/build/SeriesModule-9acf4d28.714a6508c17971962316.async.web.js",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "origin": "https://cdn.evbstatic.com",
+          "path": "/s3-build/fe/build/HCaptchaVendorWidget.50401d01ca1f23455887.async.web.js",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "origin": "https://cdn.evbstatic.com",
+          "path": "/s3-build/fe/dist/font-loader/1.6.2/browser/founders-grotesk.js",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "origin": "https://www.eventbrite.com",
+          "path": "/metrics/",
+          "queryKeys": [
+            "id"
+          ],
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "origin": "https://cdn.evbstatic.com",
+          "path": "/s3-build/fe/build/2474.27320c7f3ab5c73f21c3.async.web.js",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "origin": "https://cdntranscend.eventbrite.com",
+          "path": "/cm/f2747157-cf59-4ef1-8703-018defe51764/cm.css",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "stylesheet"
+        }
+      ],
+      "navigationStartedUTC": "2026-10-04T03:24:34.119Z"
+    },
+    {
+      "caseId": "R",
+      "environmentId": "ENV2-R",
+      "state": "Fresh reduced motion home then all story-video source region",
+      "fixture": "Fresh reduced-motion public reference",
+      "session": "Fresh anonymous context no imported storage; HTTP cache disabled",
+      "consent": "No consent interaction",
+      "reset": "fresh-context",
+      "actions": [
+        {
+          "action": {
+            "kind": "sweep",
+            "maxSteps": 30,
+            "step": 700,
+            "budgetMs": 6000
+          },
+          "start": "2026-10-04T03:24:47.387Z",
+          "samples": [
+            {
+              "y": 0,
+              "height": 10690,
+              "viewport": 844,
+              "time": 1472.300000011921
+            },
+            {
+              "y": 700,
+              "height": 10690,
+              "viewport": 844,
+              "time": 1576.9000000059605
+            },
+            {
+              "y": 1400,
+              "height": 10690,
+              "viewport": 844,
+              "time": 1687.800000011921
+            },
+            {
+              "y": 2100,
+              "height": 10690,
+              "viewport": 844,
+              "time": 1794.800000011921
+            },
+            {
+              "y": 2800,
+              "height": 10690,
+              "viewport": 844,
+              "time": 1902.300000011921
+            },
+            {
+              "y": 3500,
+              "height": 10690,
+              "viewport": 844,
+              "time": 2005.5
+            },
+            {
+              "y": 4200,
+              "height": 10690,
+              "viewport": 844,
+              "time": 2107.5999999940395
+            },
+            {
+              "y": 4900,
+              "height": 10690,
+              "viewport": 844,
+              "time": 2211.0999999940395
+            },
+            {
+              "y": 5600,
+              "height": 10690,
+              "viewport": 844,
+              "time": 2315.9000000059605
+            },
+            {
+              "y": 6300,
+              "height": 10690,
+              "viewport": 844,
+              "time": 2426.5
+            },
+            {
+              "y": 7000,
+              "height": 10690,
+              "viewport": 844,
+              "time": 2536.2000000178814
+            },
+            {
+              "y": 7700,
+              "height": 10690,
+              "viewport": 844,
+              "time": 2644.4000000059605
+            },
+            {
+              "y": 8400,
+              "height": 10690,
+              "viewport": 844,
+              "time": 2756.0999999940395
+            },
+            {
+              "y": 9100,
+              "height": 10690,
+              "viewport": 844,
+              "time": 2866.5999999940395
+            },
+            {
+              "y": 9800,
+              "height": 10690,
+              "viewport": 844,
+              "time": 2970
+            },
+            {
+              "y": 9846,
+              "height": 10690,
+              "viewport": 844,
+              "time": 3084
+            }
+          ],
+          "truncated": false,
+          "end": "2026-10-04T03:24:49.004Z"
+        },
+        {
+          "action": {
+            "kind": "scrollTo",
+            "selector": ".story-ufo"
+          },
+          "start": "2026-10-04T03:24:49.004Z",
+          "end": "2026-10-04T03:24:49.223Z"
+        }
+      ],
+      "captures": [
+        {
+          "evidenceId": "R--HOME",
+          "path": "R--HOME.json",
+          "phase": "settled"
+        },
+        {
+          "evidenceId": "R--UFO",
+          "path": "R--UFO.json",
+          "phase": "settled"
+        }
+      ],
+      "network": [
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "document"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/fog.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/haunted-downtown-boulder-city-960.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/bz-logo.svg",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/styles.css",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "stylesheet"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/manticore.woff2",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "font"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/display.ttf",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "font"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/_vercel/insights/script.js",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/app.js",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/boulder-dam-hotel-960.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.googletagmanager.com",
+          "path": "/gtag/js",
+          "queryKeys": [
+            "id"
+          ],
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/space-mono-400.woff2",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "font"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/boulder-city-haunted-walk-tour-960.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/favicon-32.png",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "other"
+        },
+        {
+          "origin": "https://www.google-analytics.com",
+          "path": "/g/collect",
+          "queryKeys": [
+            "v",
+            "tid",
+            "gtm",
+            "_p",
+            "gcd",
+            "npa",
+            "dma",
+            "cid",
+            "frm",
+            "ngs",
+            "pscdl",
+            "rcb",
+            "sr",
+            "uaa",
+            "uab",
+            "uafvl",
+            "uam",
+            "uamb",
+            "uap",
+            "uapv",
+            "uaw",
+            "ul",
+            "_s",
+            "tag_exp",
+            "sid",
+            "sct",
+            "seg",
+            "dl",
+            "dt",
+            "en",
+            "_fv",
+            "_nsi",
+            "_ss",
+            "_ee",
+            "tfd"
+          ],
+          "status": 204,
+          "resourceType": "fetch"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/boulder-city-shop-960.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/ufo-night.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/dam-workers-960.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/buried-bodies-960.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/strange-celebs-960.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/first-murderer-960.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/ghost-dog-960.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/flying-saucer-960.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/esp-gambling-960.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/hoover-dam-960.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/beer-zombies-boulder-city-960.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/boulder-city-inn-960.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/ghost-adventures.png",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/travel-channel.png",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/joshua-p-warren-960.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/history-current.svg",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/discovery-channel.svg",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/national-geographic-channel.svg",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/artisan-icon.jpg",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        }
+      ],
+      "navigationStartedUTC": "2026-10-04T03:24:45.898Z"
+    }
+  ],
+  "errors": [],
+  "provenance": {
+    "schemaVersion": 2,
+    "packageId": "HBC-V2-REAL-01",
+    "contractId": "FC-HBC-V2-01",
+    "sourceId": "S2-LIVE",
+    "playwrightVersion": "1.62.1",
+    "runnerSHA256": "e47132aa93a26022d8412b619425b9fadd0773292f47c62929ffa1c1403a4626",
+    "probeSHA256": "763f893f720da91b8d03ddbe54955e388baff02c2f891a9c8d32a2dc188cfd44",
+    "planSHA256": "40e1830324879f5ae234c7dda48365e19cea1942d3ce904f9a10258eb6b98aa7",
+    "hostOS": {
+      "platform": "win32",
+      "release": "10.0.19045",
+      "version": "Windows 10 Pro",
+      "architecture": "x64"
+    },
+    "headless": true,
+    "modifications": [
+      "Fresh browser context per case",
+      "Main-frame navigation guard via routing; HTTP cache disabled by interception",
+      "No source style/content/animation changes"
+    ],
+    "limits": [
+      "No auth/storage import",
+      "No physical-device/AT/browser-zoom/GPU parity claim",
+      "Same plan does not freeze live content, randomness or ambient frames"
+    ],
+    "browserChannel": "chrome",
+    "browserVersion": "154.0.8037.58"
+  },
+  "limits": "Raw capture status only; semantic coverage, reports, gates and asset decisions require inspection"
+}

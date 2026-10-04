@@ -1,0 +1,297 @@
+{
+  "timestampUTC": "2026-10-04T03:22:07.954Z",
+  "url": "https://www.hauntedbouldercity.com/#tickets",
+  "sections": [
+    {
+      "id": "home",
+      "classes": "hero"
+    },
+    {
+      "id": "about",
+      "classes": "intro section-pad"
+    },
+    {
+      "id": "stories",
+      "classes": "stories-scroll"
+    },
+    {
+      "id": "",
+      "classes": "tour-highlights"
+    },
+    {
+      "id": "zombies",
+      "classes": "zombies section-pad"
+    },
+    {
+      "id": "plan",
+      "classes": "plan section-pad"
+    },
+    {
+      "id": "local",
+      "classes": "local section-pad"
+    },
+    {
+      "id": "tickets",
+      "classes": "tickets section-pad"
+    },
+    {
+      "id": "creator",
+      "classes": "creator-credit"
+    }
+  ],
+  "controls": [
+    {
+      "tag": "BUTTON",
+      "id": "",
+      "classes": "menu-toggle",
+      "role": null,
+      "text": "Menu",
+      "hidden": false
+    },
+    {
+      "tag": "BUTTON",
+      "id": "",
+      "classes": "is-active",
+      "role": null,
+      "text": "01 Ghosts",
+      "hidden": false
+    },
+    {
+      "tag": "BUTTON",
+      "id": "",
+      "classes": "",
+      "role": null,
+      "text": "02 Dark history",
+      "hidden": false
+    },
+    {
+      "tag": "BUTTON",
+      "id": "",
+      "classes": "",
+      "role": null,
+      "text": "03 UFOs",
+      "hidden": false
+    },
+    {
+      "tag": "DETAILS",
+      "id": "",
+      "classes": "",
+      "role": null,
+      "text": "What’s the walk like?About an hour and less than half a mile, on level public sidewalks. A",
+      "hidden": false
+    },
+    {
+      "tag": "DETAILS",
+      "id": "",
+      "classes": "",
+      "role": null,
+      "text": "Can the whole family come?Yes! All ages are welcome on the tour and at Beer Zombies Boulde",
+      "hidden": false
+    },
+    {
+      "tag": "DETAILS",
+      "id": "",
+      "classes": "",
+      "role": null,
+      "text": "How scary is it?Expect spooky stories and an eerie atmosphere, with no jump scares. The to",
+      "hidden": false
+    },
+    {
+      "tag": "DETAILS",
+      "id": "",
+      "classes": "",
+      "role": null,
+      "text": "Can I bring my dog?Absolutely. Well-behaved dogs are welcome at Beer Zombies Boulder City ",
+      "hidden": false
+    },
+    {
+      "tag": "DETAILS",
+      "id": "",
+      "classes": "",
+      "role": null,
+      "text": "Can I drink a beer on the tour?It's perfectly legal to drink a beer while you take our wal",
+      "hidden": false
+    },
+    {
+      "tag": "DETAILS",
+      "id": "",
+      "classes": "",
+      "role": null,
+      "text": "Are wheelchairs and strollers welcome?Yes. Wheelchairs and strollers can participate in th",
+      "hidden": false
+    },
+    {
+      "tag": "DETAILS",
+      "id": "",
+      "classes": "",
+      "role": null,
+      "text": "When should I arrive?Please arrive at least 10 minutes before your scheduled tour. Meet in",
+      "hidden": false
+    },
+    {
+      "tag": "DETAILS",
+      "id": "",
+      "classes": "",
+      "role": null,
+      "text": "Can I take photos?Photos are welcome. Audio and video recording are not permitted.",
+      "hidden": false
+    },
+    {
+      "tag": "DETAILS",
+      "id": "",
+      "classes": "",
+      "role": null,
+      "text": "How do I get tickets?Select Get Tickets to choose an available date and purchase through E",
+      "hidden": false
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "classes": "ticket-modal",
+      "role": "dialog",
+      "text": "The box office\n          PICK YOUR NIGHT.\n        \n        \n      \n      \n        \n       ",
+      "hidden": true
+    },
+    {
+      "tag": "BUTTON",
+      "id": "",
+      "classes": "ticket-modal-close",
+      "role": null,
+      "text": "",
+      "hidden": false
+    }
+  ],
+  "links": [
+    {
+      "text": "Skip to content",
+      "href": "#about",
+      "target": ""
+    },
+    {
+      "text": "",
+      "href": "/",
+      "target": ""
+    },
+    {
+      "text": "Get tickets",
+      "href": "#tickets",
+      "target": ""
+    },
+    {
+      "text": "01The tourOne hour on foot, full of stories",
+      "href": "#about",
+      "target": ""
+    },
+    {
+      "text": "02The strange stuffGhosts, dark history & UFOs",
+      "href": "#stories",
+      "target": ""
+    },
+    {
+      "text": "03Beer ZombiesWhere the night starts",
+      "href": "#zombies",
+      "target": ""
+    },
+    {
+      "text": "04Plan your visitArrival, parking & FAQ",
+      "href": "#plan",
+      "target": ""
+    },
+    {
+      "text": "Get tickets",
+      "href": "#tickets",
+      "target": ""
+    },
+    {
+      "text": "Directions",
+      "href": "https://www.google.com/maps/dir/?api=1&destination=Beer+Zombies%2C+567+Nevada+Way%2C+Boulder+City%2C+NV+89005",
+      "target": "_blank"
+    },
+    {
+      "text": "Experience by Joshua P. Warren",
+      "href": "#creator",
+      "target": ""
+    },
+    {
+      "text": "",
+      "href": "#about",
+      "target": ""
+    },
+    {
+      "text": "Get Directions",
+      "href": "https://www.google.com/maps/dir/?api=1&destination=Beer+Zombies%2C+567+Nevada+Way%2C+Boulder+City%2C+NV+89005",
+      "target": "_blank"
+    },
+    {
+      "text": "Find your tour",
+      "href": "#tickets",
+      "target": ""
+    },
+    {
+      "text": "01 / Fuel upFOX SMOKEHOUSE BBQSmokehouse favorites before the stories.",
+      "href": "https://www.foxsmokehousebbq.com/",
+      "target": "_blank"
+    },
+    {
+      "text": "02 / Stick aroundCLEVELAND’S LOUNGEA drink downstairs at the Boulder Dam Hotel.",
+      "href": "https://clevelandslounge.com/",
+      "target": "_blank"
+    },
+    {
+      "text": "03 / More monstersTOM DEVLIN’S MONSTER MUSEUMMore monsters. This time, up close.",
+      "href": "https://tomdevlinsmonstermuseum.com/",
+      "target": "_blank"
+    },
+    {
+      "text": "Get tickets",
+      "href": "https://www.eventbrite.com/e/haunted-boulder-city-tour-tickets-2000657664932",
+      "target": "_blank"
+    },
+    {
+      "text": "4.9/5\n        Excellenton Tripadvisor",
+      "href": "https://www.tripadvisor.com/Attraction_Review-g60881-d23608698-Reviews-Boulder_City_Ghost_Tour_Haunted_Boulder_City_Ghost_UFO_Tour-Boulder_City_Nevada.html",
+      "target": "_blank"
+    },
+    {
+      "text": "Website by Artisan Website Co.",
+      "href": "https://www.artisanwebsite.com",
+      "target": "_blank"
+    },
+    {
+      "text": "Back to the start",
+      "href": "#home",
+      "target": ""
+    },
+    {
+      "text": "Contact Beer Zombies",
+      "href": "https://www.thebeerzombies.com/contact",
+      "target": "_blank"
+    }
+  ],
+  "artifacts": [
+    {
+      "tag": "LINK",
+      "src": "/styles.css",
+      "type": ""
+    },
+    {
+      "tag": "SCRIPT",
+      "src": "/app.js",
+      "type": ""
+    },
+    {
+      "tag": "SCRIPT",
+      "src": "https://www.googletagmanager.com/gtag/js?id=G-1WPQPVRTSC",
+      "type": ""
+    },
+    {
+      "tag": "SCRIPT",
+      "src": "/_vercel/insights/script.js",
+      "type": ""
+    },
+    {
+      "tag": "VIDEO",
+      "src": "/assets/ufo-night-960.mp4"
+    }
+  ]
+}

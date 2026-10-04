@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 2,
+  "packageId": "HBC-V2-REAL-01",
+  "revision": "2.0.0-real-01",
+  "root": "rev-2.0.0-real-01",
+  "sealedAtUTC": "2026-10-04T03:52:31.045Z",
+  "manifestSHA256": "5e62127d8448bd6bad07b8b6178c6725bdb7f18510ce879daba026ae4f990d18",
+  "verification": {
+    "result": "PASS",
+    "checkedAtUTC": "2026-10-04T03:52:31.677Z",
+    "files": 306,
+    "checks": {
+      "json": 107,
+      "images": 147,
+      "links": 324
+    },
+    "problems": [],
+    "limit": "Hashes/JSON/image structure/local links only; image decoding/visuals, source, semantic coverage, rights and readiness need separate review"
+  },
+  "frozenV1UnchangedAfterSeal": true,
+  "gates": {
+    "integrity": "PASS",
+    "fidelity": "BLOCKED",
+    "adaptation": "NOT REQUIRED",
+    "assetReuse": "BLOCKED"
+  },
+  "clearance": "none; evidence-only phase complete",
+  "report": "rev-2.0.0-real-01/validation-report.md",
+  "limit": "Receipt is outside sealed package to avoid modifying closure; rerun verification to check retained files"
+}

@@ -1,0 +1,18 @@
+{
+  "timestampUTC": "2026-10-04T03:32:30.157Z",
+  "frozenV1": {
+    "files": 172,
+    "bytes": 16145427,
+    "unchangedBeforeAfter": true,
+    "carriedCopyIdentical": true,
+    "matchesPriorFrozenBaseline": true,
+    "inventorySHA256": "2aeaaa5138f0f571d7b5427ef6a8d07d646f2e337061df26bd40d33ad1afd9c0"
+  },
+  "tooling": {
+    "repoInstalledIdentical": true,
+    "files": 20,
+    "runnerSHA256": "e47132aa93a26022d8412b619425b9fadd0773292f47c62929ffa1c1403a4626",
+    "probeSHA256": "763f893f720da91b8d03ddbe54955e388baff02c2f891a9c8d32a2dc188cfd44"
+  },
+  "limit": "Content/path/byte hashes, not original filesystem mtimes or source authenticity"
+}

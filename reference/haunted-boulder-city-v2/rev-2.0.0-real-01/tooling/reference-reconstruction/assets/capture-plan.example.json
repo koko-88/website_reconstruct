@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 2,
+  "packageId": "EXAMPLE-REV-2",
+  "contractId": "FC-01",
+  "sourceId": "S-01",
+  "authorization": "Example only: replace with the existing public read-only inspection instruction and reviewed reversible flows",
+  "allowedOrigins": ["http://127.0.0.1:8080"],
+  "publicQueryKeys": [],
+  "totalTimeoutMs": 60000,
+  "environments": [{
+    "id": "ENV-D",
+    "viewport": {"width": 1440, "height": 900},
+    "deviceScaleFactor": 1,
+    "hasTouch": false,
+    "isMobile": false,
+    "locale": "en-US",
+    "timezoneId": "UTC",
+    "colorScheme": "light",
+    "reducedMotion": "no-preference",
+    "fixture": "Public page content; version unknown until inspected",
+    "session": "Fresh anonymous context; no imported storage",
+    "consent": "No consent interaction; inspect actual default"
+  }],
+  "cases": [{
+    "id": "ROOT-D",
+    "environmentId": "ENV-D",
+    "url": "http://127.0.0.1:8080/",
+    "state": "Root settled at top",
+    "reset": "fresh-context",
+    "actions": [],
+    "checkpoints": [{
+      "id": "TOP",
+      "phase": "settled",
+      "required": ["main"],
+      "absent": ["[aria-busy='true']"],
+      "stableSelectors": ["main"],
+      "timeoutMs": 10000,
+      "fullPage": false,
+      "actions": []
+    }]
+  }]
+}

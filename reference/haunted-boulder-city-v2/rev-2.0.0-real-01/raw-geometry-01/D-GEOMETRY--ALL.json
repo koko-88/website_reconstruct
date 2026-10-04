@@ -1,0 +1,2560 @@
+{
+  "evidenceId": "D-GEOMETRY--ALL",
+  "sourceId": "S2-LIVE",
+  "contractId": "FC-HBC-V2-01",
+  "caseId": "D-GEOMETRY",
+  "checkpointId": "ALL",
+  "environmentId": "ENV2-D",
+  "requestedPhase": "settled",
+  "phase": "settled",
+  "readiness": {
+    "status": "settled",
+    "elapsedMs": 303,
+    "snapshot": {
+      "schemaVersion": 2,
+      "timestampUTC": "2026-10-04T03:35:38.359Z",
+      "performanceMs": 6506.0999999940395,
+      "timeOrigin": 1791084931853,
+      "environment": {
+        "url": {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/",
+          "queryKeys": [],
+          "fragmentPresent": false
+        },
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+        "platform": "Win32",
+        "cssViewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "clientWidth": 1440,
+        "scrollbarWidth": 0,
+        "dpr": 1,
+        "visualViewport": {
+          "width": 1440,
+          "height": 900,
+          "scale": 1
+        },
+        "zoom": "unknown; visual scale is not browser zoom",
+        "language": "en-US",
+        "timezone": "Africa/Cairo",
+        "direction": "ltr",
+        "dark": false,
+        "reducedMotion": false,
+        "coarsePointer": false,
+        "maxTouchPoints": 0,
+        "scroll": {
+          "x": 0,
+          "y": 0,
+          "width": 1425,
+          "height": 12505
+        }
+      },
+      "readiness": {
+        "documentState": "complete",
+        "fonts": "loaded",
+        "required": [
+          {
+            "selector": ".hero h1",
+            "count": 1,
+            "visible": true,
+            "rects": [
+              {
+                "x": 66.234375,
+                "y": 241.03125,
+                "width": 1292.53125,
+                "height": 362.25
+              }
+            ],
+            "samples": [
+              {
+                "tag": "h1",
+                "id": "hero-title",
+                "role": null,
+                "expanded": null,
+                "selected": null,
+                "open": false,
+                "hidden": false,
+                "focused": false,
+                "textLength": 19,
+                "computed": {
+                  "display": "block",
+                  "position": "relative",
+                  "boxSizing": "border-box",
+                  "width": "1292.53px",
+                  "height": "362.25px",
+                  "maxWidth": "none",
+                  "paddingTop": "0px",
+                  "paddingRight": "0px",
+                  "paddingBottom": "0px",
+                  "paddingLeft": "0px",
+                  "marginTop": "95.04px",
+                  "marginRight": "0px",
+                  "marginBottom": "0px",
+                  "marginLeft": "0px",
+                  "gap": "normal",
+                  "gridTemplateColumns": "none",
+                  "flexDirection": "row",
+                  "overflowX": "visible",
+                  "overflowY": "visible",
+                  "zIndex": "auto",
+                  "color": "rgb(185, 203, 183)",
+                  "backgroundColor": "rgba(0, 0, 0, 0)",
+                  "fontFamily": "Arial, Helvetica, sans-serif",
+                  "fontSize": "32px",
+                  "fontWeight": "400",
+                  "fontStyle": "normal",
+                  "fontStretch": "100%",
+                  "lineHeight": "29.44px",
+                  "letterSpacing": "normal",
+                  "textTransform": "none",
+                  "textAlign": "start",
+                  "borderRadius": "0px",
+                  "opacity": "1",
+                  "transform": "matrix(1, 0, 0, 1, 0, 0)"
+                }
+              }
+            ],
+            "measurementType": "computed CSS and observed DOM state; declared font stack is not actual rendered font proof",
+            "truncated": false
+          }
+        ],
+        "absent": [
+          {
+            "selector": ".loader",
+            "count": 0,
+            "visible": false,
+            "rects": [],
+            "samples": [],
+            "measurementType": "computed CSS and observed DOM state; declared font stack is not actual rendered font proof",
+            "truncated": false
+          }
+        ],
+        "geometry": [
+          {
+            "selector": "#home",
+            "count": 1,
+            "visible": true,
+            "rects": [
+              {
+                "x": 0,
+                "y": 0,
+                "width": 1425,
+                "height": 900
+              }
+            ],
+            "samples": [
+              {
+                "tag": "section",
+                "id": "home",
+                "role": null,
+                "expanded": null,
+                "selected": null,
+                "open": false,
+                "hidden": false,
+                "focused": false,
+                "textLength": 244,
+                "computed": {
+                  "display": "flex",
+                  "position": "relative",
+                  "boxSizing": "border-box",
+                  "width": "1425px",
+                  "height": "900px",
+                  "maxWidth": "none",
+                  "paddingTop": "146px",
+                  "paddingRight": "66.24px",
+                  "paddingBottom": "55px",
+                  "paddingLeft": "66.24px",
+                  "marginTop": "0px",
+                  "marginRight": "0px",
+                  "marginBottom": "0px",
+                  "marginLeft": "0px",
+                  "gap": "normal",
+                  "gridTemplateColumns": "none",
+                  "flexDirection": "column",
+                  "overflowX": "hidden",
+                  "overflowY": "hidden",
+                  "zIndex": "auto",
+                  "color": "rgb(231, 233, 216)",
+                  "backgroundColor": "rgb(9, 15, 14)",
+                  "fontFamily": "Arial, Helvetica, sans-serif",
+                  "fontSize": "16px",
+                  "fontWeight": "400",
+                  "fontStyle": "normal",
+                  "fontStretch": "100%",
+                  "lineHeight": "normal",
+                  "letterSpacing": "normal",
+                  "textTransform": "none",
+                  "textAlign": "start",
+                  "borderRadius": "0px",
+                  "opacity": "1",
+                  "transform": "none"
+                }
+              }
+            ],
+            "measurementType": "computed CSS and observed DOM state; declared font stack is not actual rendered font proof",
+            "truncated": false
+          },
+          {
+            "selector": "#about",
+            "count": 1,
+            "visible": false,
+            "rects": [
+              {
+                "x": 0,
+                "y": 970,
+                "width": 1425,
+                "height": 1433.34375
+              }
+            ],
+            "samples": [
+              {
+                "tag": "section",
+                "id": "about",
+                "role": null,
+                "expanded": null,
+                "selected": null,
+                "open": false,
+                "hidden": false,
+                "focused": false,
+                "textLength": 406,
+                "computed": {
+                  "display": "block",
+                  "position": "relative",
+                  "boxSizing": "border-box",
+                  "width": "1425px",
+                  "height": "1433.34px",
+                  "maxWidth": "none",
+                  "paddingTop": "78px",
+                  "paddingRight": "66.24px",
+                  "paddingBottom": "95px",
+                  "paddingLeft": "66.24px",
+                  "marginTop": "0px",
+                  "marginRight": "0px",
+                  "marginBottom": "0px",
+                  "marginLeft": "0px",
+                  "gap": "normal",
+                  "gridTemplateColumns": "none",
+                  "flexDirection": "row",
+                  "overflowX": "visible",
+                  "overflowY": "visible",
+                  "zIndex": "auto",
+                  "color": "rgb(231, 233, 216)",
+                  "backgroundColor": "rgba(0, 0, 0, 0)",
+                  "fontFamily": "Arial, Helvetica, sans-serif",
+                  "fontSize": "16px",
+                  "fontWeight": "400",
+                  "fontStyle": "normal",
+                  "fontStretch": "100%",
+                  "lineHeight": "normal",
+                  "letterSpacing": "normal",
+                  "textTransform": "none",
+                  "textAlign": "start",
+                  "borderRadius": "0px",
+                  "opacity": "1",
+                  "transform": "none"
+                }
+              }
+            ],
+            "measurementType": "computed CSS and observed DOM state; declared font stack is not actual rendered font proof",
+            "truncated": false
+          },
+          {
+            "selector": "#stories",
+            "count": 1,
+            "visible": false,
+            "rects": [
+              {
+                "x": 0,
+                "y": 2403.34375,
+                "width": 1425,
+                "height": 3060
+              }
+            ],
+            "samples": [
+              {
+                "tag": "section",
+                "id": "stories",
+                "role": null,
+                "expanded": null,
+                "selected": null,
+                "open": false,
+                "hidden": false,
+                "focused": false,
+                "textLength": 831,
+                "computed": {
+                  "display": "block",
+                  "position": "relative",
+                  "boxSizing": "border-box",
+                  "width": "1425px",
+                  "height": "3060px",
+                  "maxWidth": "none",
+                  "paddingTop": "0px",
+                  "paddingRight": "0px",
+                  "paddingBottom": "0px",
+                  "paddingLeft": "0px",
+                  "marginTop": "0px",
+                  "marginRight": "0px",
+                  "marginBottom": "0px",
+                  "marginLeft": "0px",
+                  "gap": "normal",
+                  "gridTemplateColumns": "none",
+                  "flexDirection": "row",
+                  "overflowX": "visible",
+                  "overflowY": "visible",
+                  "zIndex": "auto",
+                  "color": "rgb(231, 233, 216)",
+                  "backgroundColor": "rgb(12, 23, 19)",
+                  "fontFamily": "Arial, Helvetica, sans-serif",
+                  "fontSize": "16px",
+                  "fontWeight": "400",
+                  "fontStyle": "normal",
+                  "fontStretch": "100%",
+                  "lineHeight": "normal",
+                  "letterSpacing": "normal",
+                  "textTransform": "none",
+                  "textAlign": "start",
+                  "borderRadius": "0px",
+                  "opacity": "1",
+                  "transform": "none"
+                }
+              }
+            ],
+            "measurementType": "computed CSS and observed DOM state; declared font stack is not actual rendered font proof",
+            "truncated": false
+          },
+          {
+            "selector": ".tour-highlights",
+            "count": 1,
+            "visible": false,
+            "rects": [
+              {
+                "x": 0,
+                "y": 5463.34375,
+                "width": 1425,
+                "height": 2872.59375
+              }
+            ],
+            "samples": [
+              {
+                "tag": "section",
+                "id": "",
+                "role": null,
+                "expanded": null,
+                "selected": null,
+                "open": false,
+                "hidden": false,
+                "focused": false,
+                "textLength": 795,
+                "computed": {
+                  "display": "block",
+                  "position": "relative",
+                  "boxSizing": "border-box",
+                  "width": "1425px",
+                  "height": "2872.59px",
+                  "maxWidth": "none",
+                  "paddingTop": "0px",
+                  "paddingRight": "0px",
+                  "paddingBottom": "0px",
+                  "paddingLeft": "0px",
+                  "marginTop": "0px",
+                  "marginRight": "0px",
+                  "marginBottom": "0px",
+                  "marginLeft": "0px",
+                  "gap": "normal",
+                  "gridTemplateColumns": "none",
+                  "flexDirection": "row",
+                  "overflowX": "clip",
+                  "overflowY": "clip",
+                  "zIndex": "auto",
+                  "color": "rgb(231, 233, 216)",
+                  "backgroundColor": "rgb(9, 15, 14)",
+                  "fontFamily": "Arial, Helvetica, sans-serif",
+                  "fontSize": "16px",
+                  "fontWeight": "400",
+                  "fontStyle": "normal",
+                  "fontStretch": "100%",
+                  "lineHeight": "normal",
+                  "letterSpacing": "normal",
+                  "textTransform": "none",
+                  "textAlign": "start",
+                  "borderRadius": "0px",
+                  "opacity": "1",
+                  "transform": "none"
+                }
+              }
+            ],
+            "measurementType": "computed CSS and observed DOM state; declared font stack is not actual rendered font proof",
+            "truncated": false
+          },
+          {
+            "selector": "#zombies",
+            "count": 1,
+            "visible": false,
+            "rects": [
+              {
+                "x": 0,
+                "y": 8335.9375,
+                "width": 1425,
+                "height": 900
+              }
+            ],
+            "samples": [
+              {
+                "tag": "section",
+                "id": "zombies",
+                "role": null,
+                "expanded": null,
+                "selected": null,
+                "open": false,
+                "hidden": false,
+                "focused": false,
+                "textLength": 308,
+                "computed": {
+                  "display": "flex",
+                  "position": "relative",
+                  "boxSizing": "border-box",
+                  "width": "1425px",
+                  "height": "900px",
+                  "maxWidth": "none",
+                  "paddingTop": "45px",
+                  "paddingRight": "66.24px",
+                  "paddingBottom": "45px",
+                  "paddingLeft": "66.24px",
+                  "marginTop": "0px",
+                  "marginRight": "0px",
+                  "marginBottom": "0px",
+                  "marginLeft": "0px",
+                  "gap": "normal",
+                  "gridTemplateColumns": "none",
+                  "flexDirection": "column",
+                  "overflowX": "visible",
+                  "overflowY": "visible",
+                  "zIndex": "auto",
+                  "color": "rgb(231, 233, 216)",
+                  "backgroundColor": "rgb(25, 42, 35)",
+                  "fontFamily": "Arial, Helvetica, sans-serif",
+                  "fontSize": "16px",
+                  "fontWeight": "400",
+                  "fontStyle": "normal",
+                  "fontStretch": "100%",
+                  "lineHeight": "normal",
+                  "letterSpacing": "normal",
+                  "textTransform": "none",
+                  "textAlign": "start",
+                  "borderRadius": "0px",
+                  "opacity": "1",
+                  "transform": "none"
+                }
+              }
+            ],
+            "measurementType": "computed CSS and observed DOM state; declared font stack is not actual rendered font proof",
+            "truncated": false
+          },
+          {
+            "selector": "#plan",
+            "count": 1,
+            "visible": false,
+            "rects": [
+              {
+                "x": 0,
+                "y": 9235.9375,
+                "width": 1425,
+                "height": 960
+              }
+            ],
+            "samples": [
+              {
+                "tag": "section",
+                "id": "plan",
+                "role": null,
+                "expanded": null,
+                "selected": null,
+                "open": false,
+                "hidden": false,
+                "focused": false,
+                "textLength": 1575,
+                "computed": {
+                  "display": "block",
+                  "position": "relative",
+                  "boxSizing": "border-box",
+                  "width": "1425px",
+                  "height": "960px",
+                  "maxWidth": "none",
+                  "paddingTop": "55px",
+                  "paddingRight": "66.24px",
+                  "paddingBottom": "95px",
+                  "paddingLeft": "66.24px",
+                  "marginTop": "0px",
+                  "marginRight": "0px",
+                  "marginBottom": "0px",
+                  "marginLeft": "0px",
+                  "gap": "normal",
+                  "gridTemplateColumns": "none",
+                  "flexDirection": "row",
+                  "overflowX": "visible",
+                  "overflowY": "visible",
+                  "zIndex": "auto",
+                  "color": "rgb(231, 233, 216)",
+                  "backgroundColor": "rgba(0, 0, 0, 0)",
+                  "fontFamily": "Arial, Helvetica, sans-serif",
+                  "fontSize": "16px",
+                  "fontWeight": "400",
+                  "fontStyle": "normal",
+                  "fontStretch": "100%",
+                  "lineHeight": "normal",
+                  "letterSpacing": "normal",
+                  "textTransform": "none",
+                  "textAlign": "start",
+                  "borderRadius": "0px",
+                  "opacity": "1",
+                  "transform": "none"
+                }
+              }
+            ],
+            "measurementType": "computed CSS and observed DOM state; declared font stack is not actual rendered font proof",
+            "truncated": false
+          },
+          {
+            "selector": "#local",
+            "count": 1,
+            "visible": false,
+            "rects": [
+              {
+                "x": 0,
+                "y": 10195.9375,
+                "width": 1425,
+                "height": 930.546875
+              }
+            ],
+            "samples": [
+              {
+                "tag": "section",
+                "id": "local",
+                "role": null,
+                "expanded": null,
+                "selected": null,
+                "open": false,
+                "hidden": false,
+                "focused": false,
+                "textLength": 411,
+                "computed": {
+                  "display": "block",
+                  "position": "relative",
+                  "boxSizing": "border-box",
+                  "width": "1425px",
+                  "height": "930.547px",
+                  "maxWidth": "none",
+                  "paddingTop": "50px",
+                  "paddingRight": "66.24px",
+                  "paddingBottom": "95px",
+                  "paddingLeft": "66.24px",
+                  "marginTop": "0px",
+                  "marginRight": "0px",
+                  "marginBottom": "0px",
+                  "marginLeft": "0px",
+                  "gap": "normal",
+                  "gridTemplateColumns": "none",
+                  "flexDirection": "row",
+                  "overflowX": "visible",
+                  "overflowY": "visible",
+                  "zIndex": "auto",
+                  "color": "rgb(231, 233, 216)",
+                  "backgroundColor": "rgb(20, 34, 28)",
+                  "fontFamily": "Arial, Helvetica, sans-serif",
+                  "fontSize": "16px",
+                  "fontWeight": "400",
+                  "fontStyle": "normal",
+                  "fontStretch": "100%",
+                  "lineHeight": "normal",
+                  "letterSpacing": "normal",
+                  "textTransform": "none",
+                  "textAlign": "start",
+                  "borderRadius": "0px",
+                  "opacity": "1",
+                  "transform": "none"
+                }
+              }
+            ],
+            "measurementType": "computed CSS and observed DOM state; declared font stack is not actual rendered font proof",
+            "truncated": false
+          },
+          {
+            "selector": "#tickets",
+            "count": 1,
+            "visible": false,
+            "rects": [
+              {
+                "x": 0,
+                "y": 11126.484375,
+                "width": 1425,
+                "height": 943.640625
+              }
+            ],
+            "samples": [
+              {
+                "tag": "section",
+                "id": "tickets",
+                "role": null,
+                "expanded": null,
+                "selected": null,
+                "open": false,
+                "hidden": false,
+                "focused": false,
+                "textLength": 327,
+                "computed": {
+                  "display": "flex",
+                  "position": "relative",
+                  "boxSizing": "border-box",
+                  "width": "1425px",
+                  "height": "943.641px",
+                  "maxWidth": "none",
+                  "paddingTop": "45px",
+                  "paddingRight": "66.24px",
+                  "paddingBottom": "85px",
+                  "paddingLeft": "66.24px",
+                  "marginTop": "0px",
+                  "marginRight": "0px",
+                  "marginBottom": "0px",
+                  "marginLeft": "0px",
+                  "gap": "normal",
+                  "gridTemplateColumns": "none",
+                  "flexDirection": "column",
+                  "overflowX": "hidden",
+                  "overflowY": "hidden",
+                  "zIndex": "auto",
+                  "color": "rgb(231, 233, 216)",
+                  "backgroundColor": "rgba(0, 0, 0, 0)",
+                  "fontFamily": "Arial, Helvetica, sans-serif",
+                  "fontSize": "16px",
+                  "fontWeight": "400",
+                  "fontStyle": "normal",
+                  "fontStretch": "100%",
+                  "lineHeight": "normal",
+                  "letterSpacing": "normal",
+                  "textTransform": "none",
+                  "textAlign": "start",
+                  "borderRadius": "0px",
+                  "opacity": "1",
+                  "transform": "none"
+                }
+              }
+            ],
+            "measurementType": "computed CSS and observed DOM state; declared font stack is not actual rendered font proof",
+            "truncated": false
+          },
+          {
+            "selector": "#creator",
+            "count": 1,
+            "visible": false,
+            "rects": [
+              {
+                "x": 0,
+                "y": 12070.125,
+                "width": 1425,
+                "height": 326.1875
+              }
+            ],
+            "samples": [
+              {
+                "tag": "aside",
+                "id": "creator",
+                "role": null,
+                "expanded": null,
+                "selected": null,
+                "open": false,
+                "hidden": false,
+                "focused": false,
+                "textLength": 282,
+                "computed": {
+                  "display": "grid",
+                  "position": "relative",
+                  "boxSizing": "border-box",
+                  "width": "1425px",
+                  "height": "326.188px",
+                  "maxWidth": "none",
+                  "paddingTop": "60px",
+                  "paddingRight": "66.24px",
+                  "paddingBottom": "54px",
+                  "paddingLeft": "66.24px",
+                  "marginTop": "0px",
+                  "marginRight": "0px",
+                  "marginBottom": "0px",
+                  "marginLeft": "0px",
+                  "gap": "48px",
+                  "gridTemplateColumns": "665.672px 578.859px",
+                  "flexDirection": "row",
+                  "overflowX": "visible",
+                  "overflowY": "visible",
+                  "zIndex": "auto",
+                  "color": "rgb(231, 233, 216)",
+                  "backgroundColor": "rgb(17, 29, 25)",
+                  "fontFamily": "Arial, Helvetica, sans-serif",
+                  "fontSize": "16px",
+                  "fontWeight": "400",
+                  "fontStyle": "normal",
+                  "fontStretch": "100%",
+                  "lineHeight": "normal",
+                  "letterSpacing": "normal",
+                  "textTransform": "none",
+                  "textAlign": "start",
+                  "borderRadius": "0px",
+                  "opacity": "1",
+                  "transform": "none"
+                }
+              }
+            ],
+            "measurementType": "computed CSS and observed DOM state; declared font stack is not actual rendered font proof",
+            "truncated": false
+          },
+          {
+            "selector": "footer",
+            "count": 1,
+            "visible": false,
+            "rects": [
+              {
+                "x": 0,
+                "y": 12396.3125,
+                "width": 1425,
+                "height": 109
+              }
+            ],
+            "samples": [
+              {
+                "tag": "footer",
+                "id": "",
+                "role": null,
+                "expanded": null,
+                "selected": null,
+                "open": false,
+                "hidden": false,
+                "focused": false,
+                "textLength": 48,
+                "computed": {
+                  "display": "block",
+                  "position": "static",
+                  "boxSizing": "border-box",
+                  "width": "1425px",
+                  "height": "109px",
+                  "maxWidth": "none",
+                  "paddingTop": "32px",
+                  "paddingRight": "66.24px",
+                  "paddingBottom": "32px",
+                  "paddingLeft": "66.24px",
+                  "marginTop": "0px",
+                  "marginRight": "0px",
+                  "marginBottom": "0px",
+                  "marginLeft": "0px",
+                  "gap": "normal",
+                  "gridTemplateColumns": "none",
+                  "flexDirection": "row",
+                  "overflowX": "visible",
+                  "overflowY": "visible",
+                  "zIndex": "auto",
+                  "color": "rgb(231, 233, 216)",
+                  "backgroundColor": "rgba(0, 0, 0, 0)",
+                  "fontFamily": "Arial, Helvetica, sans-serif",
+                  "fontSize": "16px",
+                  "fontWeight": "400",
+                  "fontStyle": "normal",
+                  "fontStretch": "100%",
+                  "lineHeight": "normal",
+                  "letterSpacing": "normal",
+                  "textTransform": "none",
+                  "textAlign": "start",
+                  "borderRadius": "0px",
+                  "opacity": "1",
+                  "transform": "none"
+                }
+              }
+            ],
+            "measurementType": "computed CSS and observed DOM state; declared font stack is not actual rendered font proof",
+            "truncated": false
+          }
+        ],
+        "images": [
+          {
+            "source": {
+              "origin": "https://www.hauntedbouldercity.com",
+              "path": "/assets/bz-logo.svg",
+              "queryKeys": [],
+              "fragmentPresent": false
+            },
+            "rect": {
+              "x": 66.234375,
+              "y": 17.96875,
+              "width": 150,
+              "height": 74.046875
+            },
+            "complete": true,
+            "naturalWidth": 300,
+            "naturalHeight": 148,
+            "loading": "auto",
+            "objectFit": "contain",
+            "objectPosition": "50% 50%",
+            "decode": "ok"
+          },
+          {
+            "source": {
+              "origin": "https://www.hauntedbouldercity.com",
+              "path": "/assets/haunted-downtown-boulder-city.webp",
+              "queryKeys": [],
+              "fragmentPresent": false
+            },
+            "rect": {
+              "x": -57,
+              "y": -36,
+              "width": 1539,
+              "height": 972
+            },
+            "complete": true,
+            "naturalWidth": 1440,
+            "naturalHeight": 810,
+            "loading": "auto",
+            "objectFit": "cover",
+            "objectPosition": "50% 60%",
+            "decode": "ok"
+          }
+        ],
+        "imageCount": 24,
+        "visibleImageCount": 2,
+        "truncated": false
+      },
+      "nonDOM": {
+        "status": "observed DOM surfaces only",
+        "surfaces": [
+          {
+            "tag": "svg",
+            "rect": {
+              "x": 1217.109375,
+              "y": 42.4375,
+              "width": 24,
+              "height": 24
+            },
+            "visible": true,
+            "source": null
+          },
+          {
+            "tag": "svg",
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0
+            },
+            "visible": false,
+            "source": null
+          },
+          {
+            "tag": "svg",
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0
+            },
+            "visible": false,
+            "source": null
+          },
+          {
+            "tag": "svg",
+            "rect": {
+              "x": 966.3972778320312,
+              "y": 480.88165283203125,
+              "width": 100.36175537109375,
+              "height": 100.3616943359375
+            },
+            "visible": true,
+            "source": null
+          },
+          {
+            "tag": "svg",
+            "rect": {
+              "x": 1312.265625,
+              "y": 798.5,
+              "width": 28,
+              "height": 28
+            },
+            "visible": true,
+            "source": null
+          },
+          {
+            "tag": "svg",
+            "rect": {
+              "x": 189.79116821289062,
+              "y": 928.5025634765625,
+              "width": 26.67169189453125,
+              "height": 26.67169189453125
+            },
+            "visible": false,
+            "source": null
+          },
+          {
+            "tag": "svg",
+            "rect": {
+              "x": 563.5536499023438,
+              "y": 918.7152099609375,
+              "width": 26.67169189453125,
+              "height": 26.6717529296875
+            },
+            "visible": false,
+            "source": null
+          },
+          {
+            "tag": "svg",
+            "rect": {
+              "x": 966.7123413085938,
+              "y": 908.1581420898438,
+              "width": 26.67169189453125,
+              "height": 26.67169189453125
+            },
+            "visible": false,
+            "source": null
+          },
+          {
+            "tag": "svg",
+            "rect": {
+              "x": 1433.88037109375,
+              "y": 895.9249267578125,
+              "width": 26.671630859375,
+              "height": 26.67169189453125
+            },
+            "visible": true,
+            "source": null
+          },
+          {
+            "tag": "svg",
+            "rect": {
+              "x": 1807.642822265625,
+              "y": 886.1376342773438,
+              "width": 26.671630859375,
+              "height": 26.67169189453125
+            },
+            "visible": false,
+            "source": null
+          },
+          {
+            "tag": "svg",
+            "rect": {
+              "x": 2210.801513671875,
+              "y": 875.58056640625,
+              "width": 26.671630859375,
+              "height": 26.671630859375
+            },
+            "visible": false,
+            "source": null
+          },
+          {
+            "tag": "svg",
+            "rect": {
+              "x": 500.7764892578125,
+              "y": 1515.8858642578125,
+              "width": 105.915771484375,
+              "height": 105.915771484375
+            },
+            "visible": false,
+            "source": null
+          },
+          {
+            "tag": "svg",
+            "rect": {
+              "x": 1346.765625,
+              "y": 2438.78125,
+              "width": 12,
+              "height": 12
+            },
+            "visible": false,
+            "source": null
+          },
+          {
+            "tag": "video",
+            "rect": {
+              "x": 2180.25,
+              "y": 2403.34375,
+              "width": 1482,
+              "height": 900
+            },
+            "visible": false,
+            "source": {
+              "origin": "https://www.hauntedbouldercity.com",
+              "path": "/assets/ufo-night.mp4",
+              "queryKeys": [],
+              "fragmentPresent": false
+            },
+            "readyState": 1,
+            "currentTime": 3.202415,
+            "duration": 8.041667,
+            "paused": true
+          },
+          {
+            "tag": "svg",
+            "rect": {
+              "x": 194.9375,
+              "y": 9034.625,
+              "width": 14,
+              "height": 14
+            },
+            "visible": false,
+            "source": null
+          },
+          {
+            "tag": "svg",
+            "rect": {
+              "x": 240.671875,
+              "y": 9765.328125,
+              "width": 24,
+              "height": 24
+            },
+            "visible": false,
+            "source": null
+          },
+          {
+            "tag": "svg",
+            "rect": {
+              "x": 1329.765625,
+              "y": 9436.9375,
+              "width": 18,
+              "height": 18
+            },
+            "visible": false,
+            "source": null
+          },
+          {
+            "tag": "svg",
+            "rect": {
+              "x": 1329.765625,
+              "y": 9513.9375,
+              "width": 18,
+              "height": 18
+            },
+            "visible": false,
+            "source": null
+          },
+          {
+            "tag": "svg",
+            "rect": {
+              "x": 1329.765625,
+              "y": 9590.9375,
+              "width": 18,
+              "height": 18
+            },
+            "visible": false,
+            "source": null
+          },
+          {
+            "tag": "svg",
+            "rect": {
+              "x": 1329.765625,
+              "y": 9667.9375,
+              "width": 18,
+              "height": 18
+            },
+            "visible": false,
+            "source": null
+          },
+          {
+            "tag": "svg",
+            "rect": {
+              "x": 1329.765625,
+              "y": 9744.9375,
+              "width": 18,
+              "height": 18
+            },
+            "visible": false,
+            "source": null
+          },
+          {
+            "tag": "svg",
+            "rect": {
+              "x": 1329.765625,
+              "y": 9821.9375,
+              "width": 18,
+              "height": 18
+            },
+            "visible": false,
+            "source": null
+          },
+          {
+            "tag": "svg",
+            "rect": {
+              "x": 1329.765625,
+              "y": 9898.9375,
+              "width": 18,
+              "height": 18
+            },
+            "visible": false,
+            "source": null
+          },
+          {
+            "tag": "svg",
+            "rect": {
+              "x": 1329.765625,
+              "y": 9975.9375,
+              "width": 18,
+              "height": 18
+            },
+            "visible": false,
+            "source": null
+          },
+          {
+            "tag": "svg",
+            "rect": {
+              "x": 1329.765625,
+              "y": 10052.9375,
+              "width": 18,
+              "height": 18
+            },
+            "visible": false,
+            "source": null
+          },
+          {
+            "tag": "svg",
+            "rect": {
+              "x": 1323.765625,
+              "y": 10670.78125,
+              "width": 30,
+              "height": 30
+            },
+            "visible": false,
+            "source": null
+          },
+          {
+            "tag": "svg",
+            "rect": {
+              "x": 1323.765625,
+              "y": 10808.296875,
+              "width": 30,
+              "height": 30
+            },
+            "visible": false,
+            "source": null
+          },
+          {
+            "tag": "svg",
+            "rect": {
+              "x": 1323.765625,
+              "y": 10945.8125,
+              "width": 30,
+              "height": 30
+            },
+            "visible": false,
+            "source": null
+          },
+          {
+            "tag": "svg",
+            "rect": {
+              "x": 792.484375,
+              "y": 11806.015625,
+              "width": 24,
+              "height": 24
+            },
+            "visible": false,
+            "source": null
+          },
+          {
+            "tag": "svg",
+            "rect": {
+              "x": 796.125,
+              "y": 11939.125,
+              "width": 20,
+              "height": 20
+            },
+            "visible": false,
+            "source": null
+          },
+          {
+            "tag": "svg",
+            "rect": {
+              "x": 1346.765625,
+              "y": 12445.296875,
+              "width": 12,
+              "height": 12
+            },
+            "visible": false,
+            "source": null
+          },
+          {
+            "tag": "svg",
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0
+            },
+            "visible": false,
+            "source": null
+          },
+          {
+            "tag": "svg",
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0
+            },
+            "visible": false,
+            "source": null
+          }
+        ],
+        "truncated": false,
+        "limits": [
+          "No context creation or renderer hook",
+          "WebGL/WebGPU/2D use unknown without corroboration",
+          "OffscreenCanvas, workers, closed shadow roots and cross-origin internals not inspected",
+          "API availability does not prove renderer use"
+        ]
+      },
+      "publicArtifacts": {
+        "status": "observed references; bodies/maps not inspected by this probe",
+        "references": [
+          {
+            "tag": "link",
+            "rel": "stylesheet",
+            "source": {
+              "origin": "https://www.hauntedbouldercity.com",
+              "path": "/styles.css",
+              "queryKeys": [],
+              "fragmentPresent": false
+            }
+          },
+          {
+            "tag": "script",
+            "rel": null,
+            "source": {
+              "origin": "https://www.hauntedbouldercity.com",
+              "path": "/app.js",
+              "queryKeys": [],
+              "fragmentPresent": false
+            }
+          },
+          {
+            "tag": "script",
+            "rel": null,
+            "source": {
+              "origin": "https://www.googletagmanager.com",
+              "path": "/gtag/js",
+              "queryKeys": [
+                "id"
+              ],
+              "fragmentPresent": false
+            }
+          },
+          {
+            "tag": "script",
+            "rel": null,
+            "source": {
+              "origin": "https://www.hauntedbouldercity.com",
+              "path": "/_vercel/insights/script.js",
+              "queryKeys": [],
+              "fragmentPresent": false
+            }
+          }
+        ],
+        "truncated": false,
+        "inlineScriptCount": 4,
+        "limits": [
+          "Query values and fragments omitted; exact public navigation recipe is in the plan",
+          "No map endpoint guessing or source execution"
+        ]
+      }
+    },
+    "reasons": [],
+    "samplesStable": 3
+  },
+  "actionsThroughCheckpoint": 1,
+  "provenance": {
+    "schemaVersion": 2,
+    "packageId": "HBC-V2-GEOMETRY-01",
+    "contractId": "FC-HBC-V2-01",
+    "sourceId": "S2-LIVE",
+    "playwrightVersion": "1.62.1",
+    "runnerSHA256": "e47132aa93a26022d8412b619425b9fadd0773292f47c62929ffa1c1403a4626",
+    "probeSHA256": "763f893f720da91b8d03ddbe54955e388baff02c2f891a9c8d32a2dc188cfd44",
+    "planSHA256": "767a672c9496873d9eae561b6c6126fef52ff392c9d824941abc4a1dbd8d11c6",
+    "hostOS": {
+      "platform": "win32",
+      "release": "10.0.19045",
+      "version": "Windows 10 Pro",
+      "architecture": "x64"
+    },
+    "headless": true,
+    "modifications": [
+      "Fresh browser context per case",
+      "Main-frame navigation guard via routing; HTTP cache disabled by interception",
+      "No source style/content/animation changes"
+    ],
+    "limits": [
+      "No auth/storage import",
+      "No physical-device/AT/browser-zoom/GPU parity claim",
+      "Same plan does not freeze live content, randomness or ambient frames"
+    ],
+    "browserChannel": "chrome",
+    "browserVersion": "154.0.8037.58"
+  },
+  "actualPublicURLBefore": "https://www.hauntedbouldercity.com/",
+  "screenshotStartedUTC": "2026-10-04T03:35:38.385Z",
+  "screenshotEndedUTC": "2026-10-04T03:35:41.193Z",
+  "screenshot": {
+    "path": "D-GEOMETRY--ALL.png",
+    "bytes": 4447246,
+    "sha256": "7f58e0fecc64bbf9a46b37846b31ce11fd342c6d5a0f9c1c644389e8a97e1ce4",
+    "width": 1440,
+    "height": 12505,
+    "format": "png",
+    "fullPage": true,
+    "animations": "allow",
+    "caret": "initial"
+  },
+  "after": {
+    "schemaVersion": 2,
+    "timestampUTC": "2026-10-04T03:35:41.272Z",
+    "performanceMs": 9419.40000000596,
+    "timeOrigin": 1791084931853,
+    "environment": {
+      "url": {
+        "origin": "https://www.hauntedbouldercity.com",
+        "path": "/",
+        "queryKeys": [],
+        "fragmentPresent": false
+      },
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+      "platform": "Win32",
+      "cssViewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "clientWidth": 1440,
+      "scrollbarWidth": 0,
+      "dpr": 1,
+      "visualViewport": {
+        "width": 1440,
+        "height": 900,
+        "scale": 1
+      },
+      "zoom": "unknown; visual scale is not browser zoom",
+      "language": "en-US",
+      "timezone": "Africa/Cairo",
+      "direction": "ltr",
+      "dark": false,
+      "reducedMotion": false,
+      "coarsePointer": false,
+      "maxTouchPoints": 0,
+      "scroll": {
+        "x": 0,
+        "y": 0,
+        "width": 1425,
+        "height": 12505
+      }
+    },
+    "readiness": {
+      "documentState": "complete",
+      "fonts": "loaded",
+      "required": [
+        {
+          "selector": ".hero h1",
+          "count": 1,
+          "visible": true,
+          "rects": [
+            {
+              "x": 66.234375,
+              "y": 241.03125,
+              "width": 1292.53125,
+              "height": 362.25
+            }
+          ],
+          "samples": [
+            {
+              "tag": "h1",
+              "id": "hero-title",
+              "role": null,
+              "expanded": null,
+              "selected": null,
+              "open": false,
+              "hidden": false,
+              "focused": false,
+              "textLength": 19,
+              "computed": {
+                "display": "block",
+                "position": "relative",
+                "boxSizing": "border-box",
+                "width": "1292.53px",
+                "height": "362.25px",
+                "maxWidth": "none",
+                "paddingTop": "0px",
+                "paddingRight": "0px",
+                "paddingBottom": "0px",
+                "paddingLeft": "0px",
+                "marginTop": "95.04px",
+                "marginRight": "0px",
+                "marginBottom": "0px",
+                "marginLeft": "0px",
+                "gap": "normal",
+                "gridTemplateColumns": "none",
+                "flexDirection": "row",
+                "overflowX": "visible",
+                "overflowY": "visible",
+                "zIndex": "auto",
+                "color": "rgb(185, 203, 183)",
+                "backgroundColor": "rgba(0, 0, 0, 0)",
+                "fontFamily": "Arial, Helvetica, sans-serif",
+                "fontSize": "32px",
+                "fontWeight": "400",
+                "fontStyle": "normal",
+                "fontStretch": "100%",
+                "lineHeight": "29.44px",
+                "letterSpacing": "normal",
+                "textTransform": "none",
+                "textAlign": "start",
+                "borderRadius": "0px",
+                "opacity": "1",
+                "transform": "matrix(1, 0, 0, 1, 0, 0)"
+              }
+            }
+          ],
+          "measurementType": "computed CSS and observed DOM state; declared font stack is not actual rendered font proof",
+          "truncated": false
+        }
+      ],
+      "absent": [
+        {
+          "selector": ".loader",
+          "count": 0,
+          "visible": false,
+          "rects": [],
+          "samples": [],
+          "measurementType": "computed CSS and observed DOM state; declared font stack is not actual rendered font proof",
+          "truncated": false
+        }
+      ],
+      "geometry": [
+        {
+          "selector": "#home",
+          "count": 1,
+          "visible": true,
+          "rects": [
+            {
+              "x": 0,
+              "y": 0,
+              "width": 1425,
+              "height": 900
+            }
+          ],
+          "samples": [
+            {
+              "tag": "section",
+              "id": "home",
+              "role": null,
+              "expanded": null,
+              "selected": null,
+              "open": false,
+              "hidden": false,
+              "focused": false,
+              "textLength": 244,
+              "computed": {
+                "display": "flex",
+                "position": "relative",
+                "boxSizing": "border-box",
+                "width": "1425px",
+                "height": "900px",
+                "maxWidth": "none",
+                "paddingTop": "146px",
+                "paddingRight": "66.24px",
+                "paddingBottom": "55px",
+                "paddingLeft": "66.24px",
+                "marginTop": "0px",
+                "marginRight": "0px",
+                "marginBottom": "0px",
+                "marginLeft": "0px",
+                "gap": "normal",
+                "gridTemplateColumns": "none",
+                "flexDirection": "column",
+                "overflowX": "hidden",
+                "overflowY": "hidden",
+                "zIndex": "auto",
+                "color": "rgb(231, 233, 216)",
+                "backgroundColor": "rgb(9, 15, 14)",
+                "fontFamily": "Arial, Helvetica, sans-serif",
+                "fontSize": "16px",
+                "fontWeight": "400",
+                "fontStyle": "normal",
+                "fontStretch": "100%",
+                "lineHeight": "normal",
+                "letterSpacing": "normal",
+                "textTransform": "none",
+                "textAlign": "start",
+                "borderRadius": "0px",
+                "opacity": "1",
+                "transform": "none"
+              }
+            }
+          ],
+          "measurementType": "computed CSS and observed DOM state; declared font stack is not actual rendered font proof",
+          "truncated": false
+        },
+        {
+          "selector": "#about",
+          "count": 1,
+          "visible": false,
+          "rects": [
+            {
+              "x": 0,
+              "y": 970,
+              "width": 1425,
+              "height": 1433.34375
+            }
+          ],
+          "samples": [
+            {
+              "tag": "section",
+              "id": "about",
+              "role": null,
+              "expanded": null,
+              "selected": null,
+              "open": false,
+              "hidden": false,
+              "focused": false,
+              "textLength": 406,
+              "computed": {
+                "display": "block",
+                "position": "relative",
+                "boxSizing": "border-box",
+                "width": "1425px",
+                "height": "1433.34px",
+                "maxWidth": "none",
+                "paddingTop": "78px",
+                "paddingRight": "66.24px",
+                "paddingBottom": "95px",
+                "paddingLeft": "66.24px",
+                "marginTop": "0px",
+                "marginRight": "0px",
+                "marginBottom": "0px",
+                "marginLeft": "0px",
+                "gap": "normal",
+                "gridTemplateColumns": "none",
+                "flexDirection": "row",
+                "overflowX": "visible",
+                "overflowY": "visible",
+                "zIndex": "auto",
+                "color": "rgb(231, 233, 216)",
+                "backgroundColor": "rgba(0, 0, 0, 0)",
+                "fontFamily": "Arial, Helvetica, sans-serif",
+                "fontSize": "16px",
+                "fontWeight": "400",
+                "fontStyle": "normal",
+                "fontStretch": "100%",
+                "lineHeight": "normal",
+                "letterSpacing": "normal",
+                "textTransform": "none",
+                "textAlign": "start",
+                "borderRadius": "0px",
+                "opacity": "1",
+                "transform": "none"
+              }
+            }
+          ],
+          "measurementType": "computed CSS and observed DOM state; declared font stack is not actual rendered font proof",
+          "truncated": false
+        },
+        {
+          "selector": "#stories",
+          "count": 1,
+          "visible": false,
+          "rects": [
+            {
+              "x": 0,
+              "y": 2403.34375,
+              "width": 1425,
+              "height": 3060
+            }
+          ],
+          "samples": [
+            {
+              "tag": "section",
+              "id": "stories",
+              "role": null,
+              "expanded": null,
+              "selected": null,
+              "open": false,
+              "hidden": false,
+              "focused": false,
+              "textLength": 831,
+              "computed": {
+                "display": "block",
+                "position": "relative",
+                "boxSizing": "border-box",
+                "width": "1425px",
+                "height": "3060px",
+                "maxWidth": "none",
+                "paddingTop": "0px",
+                "paddingRight": "0px",
+                "paddingBottom": "0px",
+                "paddingLeft": "0px",
+                "marginTop": "0px",
+                "marginRight": "0px",
+                "marginBottom": "0px",
+                "marginLeft": "0px",
+                "gap": "normal",
+                "gridTemplateColumns": "none",
+                "flexDirection": "row",
+                "overflowX": "visible",
+                "overflowY": "visible",
+                "zIndex": "auto",
+                "color": "rgb(231, 233, 216)",
+                "backgroundColor": "rgb(12, 23, 19)",
+                "fontFamily": "Arial, Helvetica, sans-serif",
+                "fontSize": "16px",
+                "fontWeight": "400",
+                "fontStyle": "normal",
+                "fontStretch": "100%",
+                "lineHeight": "normal",
+                "letterSpacing": "normal",
+                "textTransform": "none",
+                "textAlign": "start",
+                "borderRadius": "0px",
+                "opacity": "1",
+                "transform": "none"
+              }
+            }
+          ],
+          "measurementType": "computed CSS and observed DOM state; declared font stack is not actual rendered font proof",
+          "truncated": false
+        },
+        {
+          "selector": ".tour-highlights",
+          "count": 1,
+          "visible": false,
+          "rects": [
+            {
+              "x": 0,
+              "y": 5463.34375,
+              "width": 1425,
+              "height": 2872.59375
+            }
+          ],
+          "samples": [
+            {
+              "tag": "section",
+              "id": "",
+              "role": null,
+              "expanded": null,
+              "selected": null,
+              "open": false,
+              "hidden": false,
+              "focused": false,
+              "textLength": 795,
+              "computed": {
+                "display": "block",
+                "position": "relative",
+                "boxSizing": "border-box",
+                "width": "1425px",
+                "height": "2872.59px",
+                "maxWidth": "none",
+                "paddingTop": "0px",
+                "paddingRight": "0px",
+                "paddingBottom": "0px",
+                "paddingLeft": "0px",
+                "marginTop": "0px",
+                "marginRight": "0px",
+                "marginBottom": "0px",
+                "marginLeft": "0px",
+                "gap": "normal",
+                "gridTemplateColumns": "none",
+                "flexDirection": "row",
+                "overflowX": "clip",
+                "overflowY": "clip",
+                "zIndex": "auto",
+                "color": "rgb(231, 233, 216)",
+                "backgroundColor": "rgb(9, 15, 14)",
+                "fontFamily": "Arial, Helvetica, sans-serif",
+                "fontSize": "16px",
+                "fontWeight": "400",
+                "fontStyle": "normal",
+                "fontStretch": "100%",
+                "lineHeight": "normal",
+                "letterSpacing": "normal",
+                "textTransform": "none",
+                "textAlign": "start",
+                "borderRadius": "0px",
+                "opacity": "1",
+                "transform": "none"
+              }
+            }
+          ],
+          "measurementType": "computed CSS and observed DOM state; declared font stack is not actual rendered font proof",
+          "truncated": false
+        },
+        {
+          "selector": "#zombies",
+          "count": 1,
+          "visible": false,
+          "rects": [
+            {
+              "x": 0,
+              "y": 8335.9375,
+              "width": 1425,
+              "height": 900
+            }
+          ],
+          "samples": [
+            {
+              "tag": "section",
+              "id": "zombies",
+              "role": null,
+              "expanded": null,
+              "selected": null,
+              "open": false,
+              "hidden": false,
+              "focused": false,
+              "textLength": 308,
+              "computed": {
+                "display": "flex",
+                "position": "relative",
+                "boxSizing": "border-box",
+                "width": "1425px",
+                "height": "900px",
+                "maxWidth": "none",
+                "paddingTop": "45px",
+                "paddingRight": "66.24px",
+                "paddingBottom": "45px",
+                "paddingLeft": "66.24px",
+                "marginTop": "0px",
+                "marginRight": "0px",
+                "marginBottom": "0px",
+                "marginLeft": "0px",
+                "gap": "normal",
+                "gridTemplateColumns": "none",
+                "flexDirection": "column",
+                "overflowX": "visible",
+                "overflowY": "visible",
+                "zIndex": "auto",
+                "color": "rgb(231, 233, 216)",
+                "backgroundColor": "rgb(25, 42, 35)",
+                "fontFamily": "Arial, Helvetica, sans-serif",
+                "fontSize": "16px",
+                "fontWeight": "400",
+                "fontStyle": "normal",
+                "fontStretch": "100%",
+                "lineHeight": "normal",
+                "letterSpacing": "normal",
+                "textTransform": "none",
+                "textAlign": "start",
+                "borderRadius": "0px",
+                "opacity": "1",
+                "transform": "none"
+              }
+            }
+          ],
+          "measurementType": "computed CSS and observed DOM state; declared font stack is not actual rendered font proof",
+          "truncated": false
+        },
+        {
+          "selector": "#plan",
+          "count": 1,
+          "visible": false,
+          "rects": [
+            {
+              "x": 0,
+              "y": 9235.9375,
+              "width": 1425,
+              "height": 960
+            }
+          ],
+          "samples": [
+            {
+              "tag": "section",
+              "id": "plan",
+              "role": null,
+              "expanded": null,
+              "selected": null,
+              "open": false,
+              "hidden": false,
+              "focused": false,
+              "textLength": 1575,
+              "computed": {
+                "display": "block",
+                "position": "relative",
+                "boxSizing": "border-box",
+                "width": "1425px",
+                "height": "960px",
+                "maxWidth": "none",
+                "paddingTop": "55px",
+                "paddingRight": "66.24px",
+                "paddingBottom": "95px",
+                "paddingLeft": "66.24px",
+                "marginTop": "0px",
+                "marginRight": "0px",
+                "marginBottom": "0px",
+                "marginLeft": "0px",
+                "gap": "normal",
+                "gridTemplateColumns": "none",
+                "flexDirection": "row",
+                "overflowX": "visible",
+                "overflowY": "visible",
+                "zIndex": "auto",
+                "color": "rgb(231, 233, 216)",
+                "backgroundColor": "rgba(0, 0, 0, 0)",
+                "fontFamily": "Arial, Helvetica, sans-serif",
+                "fontSize": "16px",
+                "fontWeight": "400",
+                "fontStyle": "normal",
+                "fontStretch": "100%",
+                "lineHeight": "normal",
+                "letterSpacing": "normal",
+                "textTransform": "none",
+                "textAlign": "start",
+                "borderRadius": "0px",
+                "opacity": "1",
+                "transform": "none"
+              }
+            }
+          ],
+          "measurementType": "computed CSS and observed DOM state; declared font stack is not actual rendered font proof",
+          "truncated": false
+        },
+        {
+          "selector": "#local",
+          "count": 1,
+          "visible": false,
+          "rects": [
+            {
+              "x": 0,
+              "y": 10195.9375,
+              "width": 1425,
+              "height": 930.546875
+            }
+          ],
+          "samples": [
+            {
+              "tag": "section",
+              "id": "local",
+              "role": null,
+              "expanded": null,
+              "selected": null,
+              "open": false,
+              "hidden": false,
+              "focused": false,
+              "textLength": 411,
+              "computed": {
+                "display": "block",
+                "position": "relative",
+                "boxSizing": "border-box",
+                "width": "1425px",
+                "height": "930.547px",
+                "maxWidth": "none",
+                "paddingTop": "50px",
+                "paddingRight": "66.24px",
+                "paddingBottom": "95px",
+                "paddingLeft": "66.24px",
+                "marginTop": "0px",
+                "marginRight": "0px",
+                "marginBottom": "0px",
+                "marginLeft": "0px",
+                "gap": "normal",
+                "gridTemplateColumns": "none",
+                "flexDirection": "row",
+                "overflowX": "visible",
+                "overflowY": "visible",
+                "zIndex": "auto",
+                "color": "rgb(231, 233, 216)",
+                "backgroundColor": "rgb(20, 34, 28)",
+                "fontFamily": "Arial, Helvetica, sans-serif",
+                "fontSize": "16px",
+                "fontWeight": "400",
+                "fontStyle": "normal",
+                "fontStretch": "100%",
+                "lineHeight": "normal",
+                "letterSpacing": "normal",
+                "textTransform": "none",
+                "textAlign": "start",
+                "borderRadius": "0px",
+                "opacity": "1",
+                "transform": "none"
+              }
+            }
+          ],
+          "measurementType": "computed CSS and observed DOM state; declared font stack is not actual rendered font proof",
+          "truncated": false
+        },
+        {
+          "selector": "#tickets",
+          "count": 1,
+          "visible": false,
+          "rects": [
+            {
+              "x": 0,
+              "y": 11126.484375,
+              "width": 1425,
+              "height": 943.640625
+            }
+          ],
+          "samples": [
+            {
+              "tag": "section",
+              "id": "tickets",
+              "role": null,
+              "expanded": null,
+              "selected": null,
+              "open": false,
+              "hidden": false,
+              "focused": false,
+              "textLength": 327,
+              "computed": {
+                "display": "flex",
+                "position": "relative",
+                "boxSizing": "border-box",
+                "width": "1425px",
+                "height": "943.641px",
+                "maxWidth": "none",
+                "paddingTop": "45px",
+                "paddingRight": "66.24px",
+                "paddingBottom": "85px",
+                "paddingLeft": "66.24px",
+                "marginTop": "0px",
+                "marginRight": "0px",
+                "marginBottom": "0px",
+                "marginLeft": "0px",
+                "gap": "normal",
+                "gridTemplateColumns": "none",
+                "flexDirection": "column",
+                "overflowX": "hidden",
+                "overflowY": "hidden",
+                "zIndex": "auto",
+                "color": "rgb(231, 233, 216)",
+                "backgroundColor": "rgba(0, 0, 0, 0)",
+                "fontFamily": "Arial, Helvetica, sans-serif",
+                "fontSize": "16px",
+                "fontWeight": "400",
+                "fontStyle": "normal",
+                "fontStretch": "100%",
+                "lineHeight": "normal",
+                "letterSpacing": "normal",
+                "textTransform": "none",
+                "textAlign": "start",
+                "borderRadius": "0px",
+                "opacity": "1",
+                "transform": "none"
+              }
+            }
+          ],
+          "measurementType": "computed CSS and observed DOM state; declared font stack is not actual rendered font proof",
+          "truncated": false
+        },
+        {
+          "selector": "#creator",
+          "count": 1,
+          "visible": false,
+          "rects": [
+            {
+              "x": 0,
+              "y": 12070.125,
+              "width": 1425,
+              "height": 326.1875
+            }
+          ],
+          "samples": [
+            {
+              "tag": "aside",
+              "id": "creator",
+              "role": null,
+              "expanded": null,
+              "selected": null,
+              "open": false,
+              "hidden": false,
+              "focused": false,
+              "textLength": 282,
+              "computed": {
+                "display": "grid",
+                "position": "relative",
+                "boxSizing": "border-box",
+                "width": "1425px",
+                "height": "326.188px",
+                "maxWidth": "none",
+                "paddingTop": "60px",
+                "paddingRight": "66.24px",
+                "paddingBottom": "54px",
+                "paddingLeft": "66.24px",
+                "marginTop": "0px",
+                "marginRight": "0px",
+                "marginBottom": "0px",
+                "marginLeft": "0px",
+                "gap": "48px",
+                "gridTemplateColumns": "665.672px 578.859px",
+                "flexDirection": "row",
+                "overflowX": "visible",
+                "overflowY": "visible",
+                "zIndex": "auto",
+                "color": "rgb(231, 233, 216)",
+                "backgroundColor": "rgb(17, 29, 25)",
+                "fontFamily": "Arial, Helvetica, sans-serif",
+                "fontSize": "16px",
+                "fontWeight": "400",
+                "fontStyle": "normal",
+                "fontStretch": "100%",
+                "lineHeight": "normal",
+                "letterSpacing": "normal",
+                "textTransform": "none",
+                "textAlign": "start",
+                "borderRadius": "0px",
+                "opacity": "1",
+                "transform": "none"
+              }
+            }
+          ],
+          "measurementType": "computed CSS and observed DOM state; declared font stack is not actual rendered font proof",
+          "truncated": false
+        },
+        {
+          "selector": "footer",
+          "count": 1,
+          "visible": false,
+          "rects": [
+            {
+              "x": 0,
+              "y": 12396.3125,
+              "width": 1425,
+              "height": 109
+            }
+          ],
+          "samples": [
+            {
+              "tag": "footer",
+              "id": "",
+              "role": null,
+              "expanded": null,
+              "selected": null,
+              "open": false,
+              "hidden": false,
+              "focused": false,
+              "textLength": 48,
+              "computed": {
+                "display": "block",
+                "position": "static",
+                "boxSizing": "border-box",
+                "width": "1425px",
+                "height": "109px",
+                "maxWidth": "none",
+                "paddingTop": "32px",
+                "paddingRight": "66.24px",
+                "paddingBottom": "32px",
+                "paddingLeft": "66.24px",
+                "marginTop": "0px",
+                "marginRight": "0px",
+                "marginBottom": "0px",
+                "marginLeft": "0px",
+                "gap": "normal",
+                "gridTemplateColumns": "none",
+                "flexDirection": "row",
+                "overflowX": "visible",
+                "overflowY": "visible",
+                "zIndex": "auto",
+                "color": "rgb(231, 233, 216)",
+                "backgroundColor": "rgba(0, 0, 0, 0)",
+                "fontFamily": "Arial, Helvetica, sans-serif",
+                "fontSize": "16px",
+                "fontWeight": "400",
+                "fontStyle": "normal",
+                "fontStretch": "100%",
+                "lineHeight": "normal",
+                "letterSpacing": "normal",
+                "textTransform": "none",
+                "textAlign": "start",
+                "borderRadius": "0px",
+                "opacity": "1",
+                "transform": "none"
+              }
+            }
+          ],
+          "measurementType": "computed CSS and observed DOM state; declared font stack is not actual rendered font proof",
+          "truncated": false
+        }
+      ],
+      "images": [
+        {
+          "source": {
+            "origin": "https://www.hauntedbouldercity.com",
+            "path": "/assets/bz-logo.svg",
+            "queryKeys": [],
+            "fragmentPresent": false
+          },
+          "rect": {
+            "x": 66.234375,
+            "y": 17.96875,
+            "width": 150,
+            "height": 74.046875
+          },
+          "complete": true,
+          "naturalWidth": 300,
+          "naturalHeight": 148,
+          "loading": "auto",
+          "objectFit": "contain",
+          "objectPosition": "50% 50%",
+          "decode": "ok"
+        },
+        {
+          "source": {
+            "origin": "https://www.hauntedbouldercity.com",
+            "path": "/assets/haunted-downtown-boulder-city.webp",
+            "queryKeys": [],
+            "fragmentPresent": false
+          },
+          "rect": {
+            "x": -57,
+            "y": -36,
+            "width": 1539,
+            "height": 972
+          },
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 810,
+          "loading": "auto",
+          "objectFit": "cover",
+          "objectPosition": "50% 60%",
+          "decode": "ok"
+        }
+      ],
+      "imageCount": 24,
+      "visibleImageCount": 2,
+      "truncated": false
+    },
+    "nonDOM": {
+      "status": "observed DOM surfaces only",
+      "surfaces": [
+        {
+          "tag": "svg",
+          "rect": {
+            "x": 1217.109375,
+            "y": 42.4375,
+            "width": 24,
+            "height": 24
+          },
+          "visible": true,
+          "source": null
+        },
+        {
+          "tag": "svg",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "visible": false,
+          "source": null
+        },
+        {
+          "tag": "svg",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "visible": false,
+          "source": null
+        },
+        {
+          "tag": "svg",
+          "rect": {
+            "x": 953.4750366210938,
+            "y": 467.95941162109375,
+            "width": 126.20611572265625,
+            "height": 126.2061767578125
+          },
+          "visible": true,
+          "source": null
+        },
+        {
+          "tag": "svg",
+          "rect": {
+            "x": 1312.265625,
+            "y": 798.5,
+            "width": 28,
+            "height": 28
+          },
+          "visible": true,
+          "source": null
+        },
+        {
+          "tag": "svg",
+          "rect": {
+            "x": 88.21714782714844,
+            "y": 931.162353515625,
+            "width": 26.67169189453125,
+            "height": 26.67169189453125
+          },
+          "visible": false,
+          "source": null
+        },
+        {
+          "tag": "svg",
+          "rect": {
+            "x": 461.9796447753906,
+            "y": 921.3750610351562,
+            "width": 26.67169189453125,
+            "height": 26.67169189453125
+          },
+          "visible": false,
+          "source": null
+        },
+        {
+          "tag": "svg",
+          "rect": {
+            "x": 865.1383056640625,
+            "y": 910.8179931640625,
+            "width": 26.67169189453125,
+            "height": 26.67169189453125
+          },
+          "visible": false,
+          "source": null
+        },
+        {
+          "tag": "svg",
+          "rect": {
+            "x": 1332.3062744140625,
+            "y": 898.584716796875,
+            "width": 26.671630859375,
+            "height": 26.6717529296875
+          },
+          "visible": true,
+          "source": null
+        },
+        {
+          "tag": "svg",
+          "rect": {
+            "x": 1706.0687255859375,
+            "y": 888.7974243164062,
+            "width": 26.6717529296875,
+            "height": 26.67169189453125
+          },
+          "visible": false,
+          "source": null
+        },
+        {
+          "tag": "svg",
+          "rect": {
+            "x": 2109.2275390625,
+            "y": 878.2403564453125,
+            "width": 26.671630859375,
+            "height": 26.67169189453125
+          },
+          "visible": false,
+          "source": null
+        },
+        {
+          "tag": "svg",
+          "rect": {
+            "x": 500.7764892578125,
+            "y": 1515.8858642578125,
+            "width": 105.915771484375,
+            "height": 105.915771484375
+          },
+          "visible": false,
+          "source": null
+        },
+        {
+          "tag": "svg",
+          "rect": {
+            "x": 1346.765625,
+            "y": 2438.78125,
+            "width": 12,
+            "height": 12
+          },
+          "visible": false,
+          "source": null
+        },
+        {
+          "tag": "video",
+          "rect": {
+            "x": 2180.25,
+            "y": 2403.34375,
+            "width": 1482,
+            "height": 900
+          },
+          "visible": false,
+          "source": {
+            "origin": "https://www.hauntedbouldercity.com",
+            "path": "/assets/ufo-night.mp4",
+            "queryKeys": [],
+            "fragmentPresent": false
+          },
+          "readyState": 4,
+          "currentTime": 0,
+          "duration": 8.041667,
+          "paused": true
+        },
+        {
+          "tag": "svg",
+          "rect": {
+            "x": 194.9375,
+            "y": 9034.625,
+            "width": 14,
+            "height": 14
+          },
+          "visible": false,
+          "source": null
+        },
+        {
+          "tag": "svg",
+          "rect": {
+            "x": 240.671875,
+            "y": 9765.328125,
+            "width": 24,
+            "height": 24
+          },
+          "visible": false,
+          "source": null
+        },
+        {
+          "tag": "svg",
+          "rect": {
+            "x": 1329.765625,
+            "y": 9436.9375,
+            "width": 18,
+            "height": 18
+          },
+          "visible": false,
+          "source": null
+        },
+        {
+          "tag": "svg",
+          "rect": {
+            "x": 1329.765625,
+            "y": 9513.9375,
+            "width": 18,
+            "height": 18
+          },
+          "visible": false,
+          "source": null
+        },
+        {
+          "tag": "svg",
+          "rect": {
+            "x": 1329.765625,
+            "y": 9590.9375,
+            "width": 18,
+            "height": 18
+          },
+          "visible": false,
+          "source": null
+        },
+        {
+          "tag": "svg",
+          "rect": {
+            "x": 1329.765625,
+            "y": 9667.9375,
+            "width": 18,
+            "height": 18
+          },
+          "visible": false,
+          "source": null
+        },
+        {
+          "tag": "svg",
+          "rect": {
+            "x": 1329.765625,
+            "y": 9744.9375,
+            "width": 18,
+            "height": 18
+          },
+          "visible": false,
+          "source": null
+        },
+        {
+          "tag": "svg",
+          "rect": {
+            "x": 1329.765625,
+            "y": 9821.9375,
+            "width": 18,
+            "height": 18
+          },
+          "visible": false,
+          "source": null
+        },
+        {
+          "tag": "svg",
+          "rect": {
+            "x": 1329.765625,
+            "y": 9898.9375,
+            "width": 18,
+            "height": 18
+          },
+          "visible": false,
+          "source": null
+        },
+        {
+          "tag": "svg",
+          "rect": {
+            "x": 1329.765625,
+            "y": 9975.9375,
+            "width": 18,
+            "height": 18
+          },
+          "visible": false,
+          "source": null
+        },
+        {
+          "tag": "svg",
+          "rect": {
+            "x": 1329.765625,
+            "y": 10052.9375,
+            "width": 18,
+            "height": 18
+          },
+          "visible": false,
+          "source": null
+        },
+        {
+          "tag": "svg",
+          "rect": {
+            "x": 1323.765625,
+            "y": 10670.78125,
+            "width": 30,
+            "height": 30
+          },
+          "visible": false,
+          "source": null
+        },
+        {
+          "tag": "svg",
+          "rect": {
+            "x": 1323.765625,
+            "y": 10808.296875,
+            "width": 30,
+            "height": 30
+          },
+          "visible": false,
+          "source": null
+        },
+        {
+          "tag": "svg",
+          "rect": {
+            "x": 1323.765625,
+            "y": 10945.8125,
+            "width": 30,
+            "height": 30
+          },
+          "visible": false,
+          "source": null
+        },
+        {
+          "tag": "svg",
+          "rect": {
+            "x": 792.484375,
+            "y": 11806.015625,
+            "width": 24,
+            "height": 24
+          },
+          "visible": false,
+          "source": null
+        },
+        {
+          "tag": "svg",
+          "rect": {
+            "x": 796.125,
+            "y": 11939.125,
+            "width": 20,
+            "height": 20
+          },
+          "visible": false,
+          "source": null
+        },
+        {
+          "tag": "svg",
+          "rect": {
+            "x": 1346.765625,
+            "y": 12445.296875,
+            "width": 12,
+            "height": 12
+          },
+          "visible": false,
+          "source": null
+        },
+        {
+          "tag": "svg",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "visible": false,
+          "source": null
+        },
+        {
+          "tag": "svg",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "visible": false,
+          "source": null
+        }
+      ],
+      "truncated": false,
+      "limits": [
+        "No context creation or renderer hook",
+        "WebGL/WebGPU/2D use unknown without corroboration",
+        "OffscreenCanvas, workers, closed shadow roots and cross-origin internals not inspected",
+        "API availability does not prove renderer use"
+      ]
+    },
+    "publicArtifacts": {
+      "status": "observed references; bodies/maps not inspected by this probe",
+      "references": [
+        {
+          "tag": "link",
+          "rel": "stylesheet",
+          "source": {
+            "origin": "https://www.hauntedbouldercity.com",
+            "path": "/styles.css",
+            "queryKeys": [],
+            "fragmentPresent": false
+          }
+        },
+        {
+          "tag": "script",
+          "rel": null,
+          "source": {
+            "origin": "https://www.hauntedbouldercity.com",
+            "path": "/app.js",
+            "queryKeys": [],
+            "fragmentPresent": false
+          }
+        },
+        {
+          "tag": "script",
+          "rel": null,
+          "source": {
+            "origin": "https://www.googletagmanager.com",
+            "path": "/gtag/js",
+            "queryKeys": [
+              "id"
+            ],
+            "fragmentPresent": false
+          }
+        },
+        {
+          "tag": "script",
+          "rel": null,
+          "source": {
+            "origin": "https://www.hauntedbouldercity.com",
+            "path": "/_vercel/insights/script.js",
+            "queryKeys": [],
+            "fragmentPresent": false
+          }
+        }
+      ],
+      "truncated": false,
+      "inlineScriptCount": 4,
+      "limits": [
+        "Query values and fragments omitted; exact public navigation recipe is in the plan",
+        "No map endpoint guessing or source execution"
+      ]
+    }
+  },
+  "captureChanged": false,
+  "actualPublicURLAfter": "https://www.hauntedbouldercity.com/"
+}

@@ -1,0 +1,256 @@
+{
+  "timestampUTC": "2026-10-04T03:28:30.488Z",
+  "rows": [
+    {
+      "reqid": 1,
+      "status": 200,
+      "url": "truncated URL omitted"
+    },
+    {
+      "reqid": 3,
+      "status": 200,
+      "url": "truncated URL omitted"
+    },
+    {
+      "reqid": 4,
+      "status": 200,
+      "url": "truncated URL omitted"
+    },
+    {
+      "reqid": 5,
+      "status": 200,
+      "url": "truncated URL omitted"
+    },
+    {
+      "reqid": 6,
+      "status": 200,
+      "url": "truncated URL omitted"
+    },
+    {
+      "reqid": 7,
+      "status": 200,
+      "url": "truncated URL omitted"
+    },
+    {
+      "reqid": 8,
+      "status": 200,
+      "url": "truncated URL omitted"
+    },
+    {
+      "reqid": 9,
+      "status": 200,
+      "url": "truncated URL omitted"
+    },
+    {
+      "reqid": 10,
+      "status": 304,
+      "url": "truncated URL omitted"
+    },
+    {
+      "reqid": 11,
+      "status": 200,
+      "url": "truncated URL omitted"
+    },
+    {
+      "reqid": 12,
+      "status": 200,
+      "url": "truncated URL omitted"
+    },
+    {
+      "reqid": 13,
+      "status": 200,
+      "url": "truncated URL omitted"
+    },
+    {
+      "reqid": 14,
+      "status": 200,
+      "url": "truncated URL omitted"
+    },
+    {
+      "reqid": 15,
+      "status": 200,
+      "url": "truncated URL omitted"
+    },
+    {
+      "reqid": 16,
+      "status": 200,
+      "url": "truncated URL omitted"
+    },
+    {
+      "reqid": 17,
+      "status": 200,
+      "url": "truncated URL omitted"
+    },
+    {
+      "reqid": 18,
+      "status": 200,
+      "url": "truncated URL omitted"
+    },
+    {
+      "reqid": 19,
+      "status": 200,
+      "url": "truncated URL omitted"
+    },
+    {
+      "reqid": 20,
+      "status": 200,
+      "url": "truncated URL omitted"
+    },
+    {
+      "reqid": 21,
+      "status": 200,
+      "url": "truncated URL omitted"
+    },
+    {
+      "reqid": 22,
+      "status": 200,
+      "url": "truncated URL omitted"
+    },
+    {
+      "reqid": 23,
+      "status": 200,
+      "url": "truncated URL omitted"
+    },
+    {
+      "reqid": 24,
+      "status": 200,
+      "url": "truncated URL omitted"
+    },
+    {
+      "reqid": 25,
+      "status": 200,
+      "url": "truncated URL omitted"
+    },
+    {
+      "reqid": 26,
+      "status": 200,
+      "url": "truncated URL omitted"
+    },
+    {
+      "reqid": 27,
+      "status": 200,
+      "url": "truncated URL omitted"
+    },
+    {
+      "reqid": 28,
+      "status": 200,
+      "url": "truncated URL omitted"
+    },
+    {
+      "reqid": 29,
+      "status": 200,
+      "url": "truncated URL omitted"
+    },
+    {
+      "reqid": 30,
+      "status": 200,
+      "url": "truncated URL omitted"
+    },
+    {
+      "reqid": 31,
+      "status": 200,
+      "url": "truncated URL omitted"
+    },
+    {
+      "reqid": 32,
+      "status": 200,
+      "url": "truncated URL omitted"
+    },
+    {
+      "reqid": 33,
+      "status": 200,
+      "url": "truncated URL omitted"
+    },
+    {
+      "reqid": 34,
+      "status": 200,
+      "url": "truncated URL omitted"
+    },
+    {
+      "reqid": 35,
+      "status": 200,
+      "url": "truncated URL omitted"
+    },
+    {
+      "reqid": 36,
+      "status": 200,
+      "url": "truncated URL omitted"
+    },
+    {
+      "reqid": 37,
+      "status": 200,
+      "url": "truncated URL omitted"
+    },
+    {
+      "reqid": 38,
+      "status": 200,
+      "url": "truncated URL omitted"
+    },
+    {
+      "reqid": 39,
+      "status": 200,
+      "url": "truncated URL omitted"
+    },
+    {
+      "reqid": 40,
+      "status": 200,
+      "url": "truncated URL omitted"
+    },
+    {
+      "reqid": 41,
+      "status": 200,
+      "url": "truncated URL omitted"
+    },
+    {
+      "reqid": 42,
+      "status": 200,
+      "url": "truncated URL omitted"
+    },
+    {
+      "reqid": 43,
+      "status": 304,
+      "url": "truncated URL omitted"
+    },
+    {
+      "reqid": 44,
+      "status": 304,
+      "url": "truncated URL omitted"
+    },
+    {
+      "reqid": 45,
+      "status": 200,
+      "url": "truncated URL omitted"
+    },
+    {
+      "reqid": 46,
+      "status": 200,
+      "url": "truncated URL omitted"
+    },
+    {
+      "reqid": 49,
+      "status": 200,
+      "url": "truncated URL omitted"
+    },
+    {
+      "reqid": 53,
+      "status": 200,
+      "url": "truncated URL omitted"
+    },
+    {
+      "reqid": 55,
+      "status": 304,
+      "url": "truncated URL omitted"
+    },
+    {
+      "reqid": 64,
+      "status": 200,
+      "url": "truncated URL omitted"
+    },
+    {
+      "reqid": 70,
+      "status": 200,
+      "url": "truncated URL omitted"
+    }
+  ],
+  "limits": "Only sanitized ordinary response metadata. Query values, fragments, inline bytes and credentials omitted. No request headers or bodies."
+}

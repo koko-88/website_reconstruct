@@ -1,0 +1,428 @@
+{
+  "schemaVersion": 2,
+  "result": "CAPTURED",
+  "cases": [
+    {
+      "caseId": "D-MENU-REPAIR",
+      "environmentId": "ENV2-D",
+      "state": "Repair staggered menu readiness only; no duplicated full route capture",
+      "fixture": "Public live 2026-10-04; source hashes reconciled separately",
+      "session": "Fresh anonymous context no imported storage; HTTP cache disabled by runner routing",
+      "consent": "No consent interaction; record default",
+      "reset": "fresh-context",
+      "actions": [
+        {
+          "action": {
+            "kind": "click",
+            "selector": ".menu-toggle",
+            "authority": "FC-EX-01 reversible menu toggle"
+          },
+          "start": "2026-10-04T03:30:24.020Z",
+          "end": "2026-10-04T03:30:24.107Z"
+        },
+        {
+          "action": {
+            "kind": "press",
+            "key": "Escape",
+            "authority": "FC-EX-01 reversible close; focus restoration"
+          },
+          "start": "2026-10-04T03:30:32.487Z",
+          "end": "2026-10-04T03:30:32.497Z"
+        }
+      ],
+      "captures": [
+        {
+          "evidenceId": "D-MENU-REPAIR--HOME",
+          "path": "D-MENU-REPAIR--HOME.json",
+          "phase": "settled"
+        },
+        {
+          "evidenceId": "D-MENU-REPAIR--OPEN",
+          "path": "D-MENU-REPAIR--OPEN.json",
+          "phase": "settled"
+        },
+        {
+          "evidenceId": "D-MENU-REPAIR--CLOSED",
+          "path": "D-MENU-REPAIR--CLOSED.json",
+          "phase": "settled"
+        }
+      ],
+      "network": [
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "document"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/fog.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/styles.css",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "stylesheet"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/haunted-downtown-boulder-city.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/bz-logo.svg",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/display.ttf",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "font"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/manticore.woff2",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "font"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/_vercel/insights/script.js",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/app.js",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/space-mono-400.woff2",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "font"
+        },
+        {
+          "origin": "https://www.googletagmanager.com",
+          "path": "/gtag/js",
+          "queryKeys": [
+            "id"
+          ],
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/spirit.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/boulder-dam-hotel-960.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/favicon-32.png",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "other"
+        },
+        {
+          "origin": "https://www.google-analytics.com",
+          "path": "/g/collect",
+          "queryKeys": [
+            "v",
+            "tid",
+            "gtm",
+            "_p",
+            "gcd",
+            "npa",
+            "dma",
+            "cid",
+            "frm",
+            "ngs",
+            "pscdl",
+            "rcb",
+            "sr",
+            "uaa",
+            "uab",
+            "uafvl",
+            "uam",
+            "uamb",
+            "uap",
+            "uapv",
+            "uaw",
+            "ul",
+            "_s",
+            "tag_exp",
+            "sid",
+            "sct",
+            "seg",
+            "dl",
+            "dt",
+            "en",
+            "_fv",
+            "_nsi",
+            "_ss",
+            "_ee",
+            "tfd"
+          ],
+          "status": 204,
+          "resourceType": "fetch"
+        }
+      ],
+      "navigationStartedUTC": "2026-10-04T03:30:19.815Z"
+    },
+    {
+      "caseId": "M-MENU-REPAIR",
+      "environmentId": "ENV2-M",
+      "state": "Repair staggered menu readiness only; no duplicated full route capture",
+      "fixture": "Same live public reference; fresh touch emulation",
+      "session": "Fresh anonymous context no imported storage; HTTP cache disabled",
+      "consent": "No consent interaction",
+      "reset": "fresh-context",
+      "actions": [
+        {
+          "action": {
+            "kind": "click",
+            "selector": ".menu-toggle",
+            "authority": "FC-EX-01 reversible menu toggle"
+          },
+          "start": "2026-10-04T03:30:38.153Z",
+          "end": "2026-10-04T03:30:38.234Z"
+        },
+        {
+          "action": {
+            "kind": "press",
+            "key": "Escape",
+            "authority": "FC-EX-01 reversible close; focus restoration"
+          },
+          "start": "2026-10-04T03:30:46.678Z",
+          "end": "2026-10-04T03:30:46.684Z"
+        }
+      ],
+      "captures": [
+        {
+          "evidenceId": "M-MENU-REPAIR--HOME",
+          "path": "M-MENU-REPAIR--HOME.json",
+          "phase": "settled"
+        },
+        {
+          "evidenceId": "M-MENU-REPAIR--OPEN",
+          "path": "M-MENU-REPAIR--OPEN.json",
+          "phase": "settled"
+        },
+        {
+          "evidenceId": "M-MENU-REPAIR--CLOSED",
+          "path": "M-MENU-REPAIR--CLOSED.json",
+          "phase": "settled"
+        }
+      ],
+      "network": [
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "document"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/fog.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/haunted-downtown-boulder-city-960.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/manticore.woff2",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "font"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/bz-logo.svg",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/styles.css",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "stylesheet"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/display.ttf",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "font"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/_vercel/insights/script.js",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/app.js",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/space-mono-400.woff2",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "font"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/spirit.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/boulder-city-haunted-walk-tour-960.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/boulder-dam-hotel-960.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.googletagmanager.com",
+          "path": "/gtag/js",
+          "queryKeys": [
+            "id"
+          ],
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/favicon-32.png",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "other"
+        },
+        {
+          "origin": "https://www.google-analytics.com",
+          "path": "/g/collect",
+          "queryKeys": [
+            "v",
+            "tid",
+            "gtm",
+            "_p",
+            "gcd",
+            "npa",
+            "dma",
+            "cid",
+            "frm",
+            "ngs",
+            "pscdl",
+            "rcb",
+            "sr",
+            "uaa",
+            "uab",
+            "uafvl",
+            "uam",
+            "uamb",
+            "uap",
+            "uapv",
+            "uaw",
+            "ul",
+            "_s",
+            "tag_exp",
+            "sid",
+            "sct",
+            "seg",
+            "dl",
+            "dt",
+            "en",
+            "_fv",
+            "_nsi",
+            "_ss",
+            "_ee",
+            "tfd"
+          ],
+          "status": 204,
+          "resourceType": "fetch"
+        }
+      ],
+      "navigationStartedUTC": "2026-10-04T03:30:34.210Z"
+    }
+  ],
+  "errors": [],
+  "provenance": {
+    "schemaVersion": 2,
+    "packageId": "HBC-V2-REPAIR-02",
+    "contractId": "FC-HBC-V2-01",
+    "sourceId": "S2-LIVE",
+    "playwrightVersion": "1.62.1",
+    "runnerSHA256": "e47132aa93a26022d8412b619425b9fadd0773292f47c62929ffa1c1403a4626",
+    "probeSHA256": "763f893f720da91b8d03ddbe54955e388baff02c2f891a9c8d32a2dc188cfd44",
+    "planSHA256": "6f2f219640d7d27ae5b6523502e60c20f0231d09f525905c94d04b7bb8fc7586",
+    "hostOS": {
+      "platform": "win32",
+      "release": "10.0.19045",
+      "version": "Windows 10 Pro",
+      "architecture": "x64"
+    },
+    "headless": true,
+    "modifications": [
+      "Fresh browser context per case",
+      "Main-frame navigation guard via routing; HTTP cache disabled by interception",
+      "No source style/content/animation changes"
+    ],
+    "limits": [
+      "No auth/storage import",
+      "No physical-device/AT/browser-zoom/GPU parity claim",
+      "Same plan does not freeze live content, randomness or ambient frames"
+    ],
+    "browserChannel": "chrome",
+    "browserVersion": "154.0.8037.58"
+  },
+  "limits": "Raw capture status only; semantic coverage, reports, gates and asset decisions require inspection"
+}

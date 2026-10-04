@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 2,
+  "inspectedAtUTC": "2026-10-04T03:31:28.443Z",
+  "tool": {
+    "name": "source-report.mjs",
+    "sha256": "7b9cd2bff6b0001ccc437ec07c537bb78b97ce87ca0657af55c027d4c0e3e98f"
+  },
+  "files": [
+    {
+      "file": "eb_widgets.js",
+      "bytes": 14805,
+      "sha256": "5de0299fce3160ea086e82ff6c8dcc38912cd93d599b782c7aa62f71c0984931",
+      "status": "inspected static bytes",
+      "sourceMapReferences": [],
+      "referencesTruncated": false,
+      "renderingSignals": [],
+      "signalScan": "Case-insensitive substring signals include comments and unrelated text; they do not prove runtime use",
+      "claimType": "observed text signals; runtime renderer/use remains inference or unknown",
+      "limits": [
+        "No fetch, execution, endpoint guessing or permission inference",
+        "Map reference query values/fragments omitted; original bytes retain directives",
+        "Absence of tokens does not exclude minified/worker/GPU rendering"
+      ]
+    }
+  ]
+}

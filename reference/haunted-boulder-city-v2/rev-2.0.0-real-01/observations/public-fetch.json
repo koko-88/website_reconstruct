@@ -1,0 +1,38 @@
+[
+  {
+    "name": "index.html",
+    "url": "https://www.hauntedbouldercity.com/",
+    "status": 200,
+    "finalURL": "https://www.hauntedbouldercity.com/",
+    "contentType": "text/html; charset=utf-8",
+    "sourceMap": null,
+    "xSourceMap": null,
+    "bytes": 54176,
+    "sha256": "50a08ba046926b0df25dc4ad1bd47a3d8adba01de7e871f11ed362a4e5c92d68",
+    "timestampUTC": "2026-10-04T03:22:45.558Z"
+  },
+  {
+    "name": "styles.css",
+    "url": "https://www.hauntedbouldercity.com/styles.css",
+    "status": 200,
+    "finalURL": "https://www.hauntedbouldercity.com/styles.css",
+    "contentType": "text/css; charset=utf-8",
+    "sourceMap": null,
+    "xSourceMap": null,
+    "bytes": 78371,
+    "sha256": "84f8d4afd287dec6d138861661793fee8f4c1fc72ea7afa9f3d8f6a11c6848dc",
+    "timestampUTC": "2026-10-04T03:22:45.661Z"
+  },
+  {
+    "name": "app.js",
+    "url": "https://www.hauntedbouldercity.com/app.js",
+    "status": 200,
+    "finalURL": "https://www.hauntedbouldercity.com/app.js",
+    "contentType": "application/javascript; charset=utf-8",
+    "sourceMap": null,
+    "xSourceMap": null,
+    "bytes": 48041,
+    "sha256": "a9284d1e441eedefebb5d4f1768780a5fcec8dfeae7bce26948124065eb51f3a",
+    "timestampUTC": "2026-10-04T03:22:45.745Z"
+  }
+]

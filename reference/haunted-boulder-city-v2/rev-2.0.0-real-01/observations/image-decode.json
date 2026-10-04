@@ -1,0 +1,1036 @@
+{
+  "result": "PASS",
+  "images": 147,
+  "method": "Pillow full image load; unchanged originals",
+  "records": [
+    {
+      "path": "inherited-v1/captures/E-004-polypane-1280-story.jpg",
+      "format": "JPEG",
+      "width": 1280,
+      "height": 800,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-010-top-4.jpg",
+      "format": "JPEG",
+      "width": 1280,
+      "height": 800,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-030-1024x768-footer.jpg",
+      "format": "JPEG",
+      "width": 1024,
+      "height": 768,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-030-1024x768-full.jpg",
+      "format": "JPEG",
+      "width": 1009,
+      "height": 11043,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-030-1024x768-top.jpg",
+      "format": "JPEG",
+      "width": 1024,
+      "height": 768,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-030-1440x900-about.jpg",
+      "format": "JPEG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-030-1440x900-creator.jpg",
+      "format": "JPEG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-030-1440x900-footer.jpg",
+      "format": "JPEG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-030-1440x900-full.jpg",
+      "format": "JPEG",
+      "width": 1425,
+      "height": 12476,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-030-1440x900-local.jpg",
+      "format": "JPEG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-030-1440x900-plan.jpg",
+      "format": "JPEG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-030-1440x900-stories.jpg",
+      "format": "JPEG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-030-1440x900-tickets.jpg",
+      "format": "JPEG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-030-1440x900-top.jpg",
+      "format": "JPEG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-030-1440x900-tour-highlights.jpg",
+      "format": "JPEG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-030-1440x900-zombies.jpg",
+      "format": "JPEG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-030-390x844-about.jpg",
+      "format": "JPEG",
+      "width": 390,
+      "height": 844,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-030-390x844-creator.jpg",
+      "format": "JPEG",
+      "width": 390,
+      "height": 844,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-030-390x844-footer.jpg",
+      "format": "JPEG",
+      "width": 390,
+      "height": 844,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-030-390x844-full.jpg",
+      "format": "JPEG",
+      "width": 390,
+      "height": 10603,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-030-390x844-local.jpg",
+      "format": "JPEG",
+      "width": 390,
+      "height": 844,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-030-390x844-plan.jpg",
+      "format": "JPEG",
+      "width": 390,
+      "height": 844,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-030-390x844-stories.jpg",
+      "format": "JPEG",
+      "width": 390,
+      "height": 844,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-030-390x844-tickets.jpg",
+      "format": "JPEG",
+      "width": 390,
+      "height": 844,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-030-390x844-top.jpg",
+      "format": "JPEG",
+      "width": 390,
+      "height": 844,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-030-390x844-tour-highlights.jpg",
+      "format": "JPEG",
+      "width": 390,
+      "height": 844,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-030-390x844-zombies.jpg",
+      "format": "JPEG",
+      "width": 390,
+      "height": 844,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-030-768x1024-footer.jpg",
+      "format": "JPEG",
+      "width": 768,
+      "height": 1024,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-030-768x1024-full.jpg",
+      "format": "JPEG",
+      "width": 753,
+      "height": 12229,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-030-768x1024-top.jpg",
+      "format": "JPEG",
+      "width": 768,
+      "height": 1024,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-040-boundary-1099.jpg",
+      "format": "JPEG",
+      "width": 1099,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-040-boundary-1100.jpg",
+      "format": "JPEG",
+      "width": 1100,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-040-boundary-1101.jpg",
+      "format": "JPEG",
+      "width": 1101,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-040-boundary-1799.jpg",
+      "format": "JPEG",
+      "width": 1799,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-040-boundary-1800.jpg",
+      "format": "JPEG",
+      "width": 1800,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-040-boundary-1801.jpg",
+      "format": "JPEG",
+      "width": 1801,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-040-boundary-759.jpg",
+      "format": "JPEG",
+      "width": 759,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-040-boundary-760.jpg",
+      "format": "JPEG",
+      "width": 760,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-040-boundary-761.jpg",
+      "format": "JPEG",
+      "width": 761,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-041-1440x400-normal-stories.jpg",
+      "format": "JPEG",
+      "width": 1440,
+      "height": 400,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-041-1440x400-normal-top.jpg",
+      "format": "JPEG",
+      "width": 1440,
+      "height": 400,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-041-1440x900-reduced-stories.jpg",
+      "format": "JPEG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-041-1440x900-reduced-top.jpg",
+      "format": "JPEG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-041-390x844-reduced-stories.jpg",
+      "format": "JPEG",
+      "width": 390,
+      "height": 844,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-041-390x844-reduced-top.jpg",
+      "format": "JPEG",
+      "width": 390,
+      "height": 844,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-041-844x390-normal-stories.jpg",
+      "format": "JPEG",
+      "width": 844,
+      "height": 390,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-041-844x390-normal-top.jpg",
+      "format": "JPEG",
+      "width": 844,
+      "height": 390,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-050-1440-menu-closed-focus.jpg",
+      "format": "JPEG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-050-1440-menu-open.jpg",
+      "format": "JPEG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-050-390-menu-closed-focus.jpg",
+      "format": "JPEG",
+      "width": 390,
+      "height": 844,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-050-390-menu-open.jpg",
+      "format": "JPEG",
+      "width": 390,
+      "height": 844,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-051-1440-faq-1.jpg",
+      "format": "JPEG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-051-1440-faq-9.jpg",
+      "format": "JPEG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-051-390-faq-1.jpg",
+      "format": "JPEG",
+      "width": 390,
+      "height": 844,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-051-390-faq-9.jpg",
+      "format": "JPEG",
+      "width": 390,
+      "height": 844,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-052-story-0-22.jpg",
+      "format": "JPEG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-052-story-1-23.jpg",
+      "format": "JPEG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-052-story-1-25.jpg",
+      "format": "JPEG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-052-story-2-24.jpg",
+      "format": "JPEG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-053-1440-ticket-loading.jpg",
+      "format": "JPEG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-053-1440-ticket-settled.jpg",
+      "format": "JPEG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-053-390-ticket-loading.jpg",
+      "format": "JPEG",
+      "width": 390,
+      "height": 844,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-053-390-ticket-settled.jpg",
+      "format": "JPEG",
+      "width": 390,
+      "height": 844,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-060-loader-normal-1.jpg",
+      "format": "JPEG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-060-loader-normal-2.jpg",
+      "format": "JPEG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-060-loader-normal-3.jpg",
+      "format": "JPEG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-060-loader-normal-4.jpg",
+      "format": "JPEG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-060-loader-normal-5.jpg",
+      "format": "JPEG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-060-loader-normal-6.jpg",
+      "format": "JPEG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-060-loader-reduced-1.jpg",
+      "format": "JPEG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-060-loader-reduced-2.jpg",
+      "format": "JPEG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-060-loader-reduced-3.jpg",
+      "format": "JPEG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-060-loader-reduced-4.jpg",
+      "format": "JPEG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-060-loader-reduced-5.jpg",
+      "format": "JPEG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-060-loader-reduced-6.jpg",
+      "format": "JPEG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-061-settled-desktop-top.jpg",
+      "format": "JPEG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-062-buttonlarge-1800.jpg",
+      "format": "JPEG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-062-buttonlarge-200.jpg",
+      "format": "JPEG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-062-topicdatatopicguide-1800.jpg",
+      "format": "JPEG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-062-topicdatatopicguide-200.jpg",
+      "format": "JPEG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-062-tourfacts-1800.jpg",
+      "format": "JPEG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-062-tourfacts-200.jpg",
+      "format": "JPEG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-063-ufo-phase-0.8-10.jpg",
+      "format": "JPEG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-063-ufo-phase-0.8-8.jpg",
+      "format": "JPEG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-063-ufo-phase-1-9.jpg",
+      "format": "JPEG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-070-1440-about-settled.jpg",
+      "format": "JPEG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-070-1440-creator-settled.jpg",
+      "format": "JPEG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-070-1440-footer-settled.jpg",
+      "format": "JPEG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-070-1440-home-settled.jpg",
+      "format": "JPEG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-070-1440-local-settled.jpg",
+      "format": "JPEG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-070-1440-plan-settled.jpg",
+      "format": "JPEG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-070-1440-stories-settled.jpg",
+      "format": "JPEG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-070-1440-story-ufo-settled.jpg",
+      "format": "JPEG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-070-1440-tickets-settled.jpg",
+      "format": "JPEG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-070-1440-tour-highlights-settled.jpg",
+      "format": "JPEG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-070-1440-zombies-settled.jpg",
+      "format": "JPEG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-070-390-about-settled.jpg",
+      "format": "JPEG",
+      "width": 390,
+      "height": 844,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-070-390-creator-settled.jpg",
+      "format": "JPEG",
+      "width": 390,
+      "height": 844,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-070-390-footer-settled.jpg",
+      "format": "JPEG",
+      "width": 390,
+      "height": 844,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-070-390-home-settled.jpg",
+      "format": "JPEG",
+      "width": 390,
+      "height": 844,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-070-390-local-settled.jpg",
+      "format": "JPEG",
+      "width": 390,
+      "height": 844,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-070-390-plan-settled.jpg",
+      "format": "JPEG",
+      "width": 390,
+      "height": 844,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-070-390-stories-settled.jpg",
+      "format": "JPEG",
+      "width": 390,
+      "height": 844,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-070-390-story-ufo-settled.jpg",
+      "format": "JPEG",
+      "width": 390,
+      "height": 844,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-070-390-tickets-settled.jpg",
+      "format": "JPEG",
+      "width": 390,
+      "height": 844,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-070-390-tour-highlights-settled.jpg",
+      "format": "JPEG",
+      "width": 390,
+      "height": 844,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-070-390-zombies-settled.jpg",
+      "format": "JPEG",
+      "width": 390,
+      "height": 844,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-080-ufo-0.65-18.jpg",
+      "format": "JPEG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-080-ufo-0.8-19.jpg",
+      "format": "JPEG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-080-ufo-0.8-21.jpg",
+      "format": "JPEG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-080-ufo-1-20.jpg",
+      "format": "JPEG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-081-simulated-widget-failure.jpg",
+      "format": "JPEG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-085-facts-1.jpg",
+      "format": "JPEG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-085-facts-2.jpg",
+      "format": "JPEG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-085-facts-3.jpg",
+      "format": "JPEG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-085-facts-4.jpg",
+      "format": "JPEG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-085-facts-5.jpg",
+      "format": "JPEG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-086-preview-query.jpg",
+      "format": "JPEG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "inherited-v1/captures/E-090-faq-keyboard-focus.jpg",
+      "format": "JPEG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "raw-geometry-01/D-GEOMETRY--ALL.png",
+      "format": "PNG",
+      "width": 1440,
+      "height": 12505,
+      "decoded": true
+    },
+    {
+      "path": "raw-geometry-01/D-GEOMETRY--TOP.png",
+      "format": "PNG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "raw-geometry-01/M-GEOMETRY--ALL.png",
+      "format": "PNG",
+      "width": 390,
+      "height": 10569,
+      "decoded": true
+    },
+    {
+      "path": "raw-geometry-01/M-GEOMETRY--TOP.png",
+      "format": "PNG",
+      "width": 390,
+      "height": 844,
+      "decoded": true
+    },
+    {
+      "path": "raw-repair-01/D-REPAIR--BASE.png",
+      "format": "PNG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "raw-repair-01/D-REPAIR--LOADING.png",
+      "format": "PNG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "raw-repair-01/D-REPAIR--PROVIDER.png",
+      "format": "PNG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "raw-repair-01/D-REPAIR--REOPEN.png",
+      "format": "PNG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "raw-repair-02/D-MENU-REPAIR--CLOSED.png",
+      "format": "PNG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "raw-repair-02/D-MENU-REPAIR--HOME.png",
+      "format": "PNG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "raw-repair-02/D-MENU-REPAIR--OPEN.png",
+      "format": "PNG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "raw-repair-02/M-MENU-REPAIR--CLOSED.png",
+      "format": "PNG",
+      "width": 390,
+      "height": 844,
+      "decoded": true
+    },
+    {
+      "path": "raw-repair-02/M-MENU-REPAIR--HOME.png",
+      "format": "PNG",
+      "width": 390,
+      "height": 844,
+      "decoded": true
+    },
+    {
+      "path": "raw-repair-02/M-MENU-REPAIR--OPEN.png",
+      "format": "PNG",
+      "width": 390,
+      "height": 844,
+      "decoded": true
+    },
+    {
+      "path": "raw-run-01/D--CLOSED.png",
+      "format": "PNG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "raw-run-01/D--FAQ.png",
+      "format": "PNG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "raw-run-01/D--HOME.png",
+      "format": "PNG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "raw-run-01/D--MENU-CLOSED.png",
+      "format": "PNG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "raw-run-01/D--MENU.png",
+      "format": "PNG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "raw-run-01/D--TICKETS.png",
+      "format": "PNG",
+      "width": 1440,
+      "height": 900,
+      "decoded": true
+    },
+    {
+      "path": "raw-run-01/M--CLOSED.png",
+      "format": "PNG",
+      "width": 390,
+      "height": 844,
+      "decoded": true
+    },
+    {
+      "path": "raw-run-01/M--FAQ.png",
+      "format": "PNG",
+      "width": 390,
+      "height": 844,
+      "decoded": true
+    },
+    {
+      "path": "raw-run-01/M--HOME.png",
+      "format": "PNG",
+      "width": 390,
+      "height": 844,
+      "decoded": true
+    },
+    {
+      "path": "raw-run-01/M--MENU-CLOSED.png",
+      "format": "PNG",
+      "width": 390,
+      "height": 844,
+      "decoded": true
+    },
+    {
+      "path": "raw-run-01/M--MENU.png",
+      "format": "PNG",
+      "width": 390,
+      "height": 844,
+      "decoded": true
+    },
+    {
+      "path": "raw-run-01/M--TICKETS.png",
+      "format": "PNG",
+      "width": 390,
+      "height": 844,
+      "decoded": true
+    },
+    {
+      "path": "raw-run-01/R--HOME.png",
+      "format": "PNG",
+      "width": 390,
+      "height": 844,
+      "decoded": true
+    },
+    {
+      "path": "raw-run-01/R--UFO.png",
+      "format": "PNG",
+      "width": 390,
+      "height": 844,
+      "decoded": true
+    }
+  ]
+}

@@ -1,0 +1,788 @@
+{
+  "schemaVersion": 2,
+  "result": "CAPTURED",
+  "cases": [
+    {
+      "caseId": "D-GEOMETRY",
+      "environmentId": "ENV2-D",
+      "state": "Fresh all-section geometry at top after bounded lazy-content sweep; current offsets replace historical numeric offsets",
+      "fixture": "Public live 2026-10-04; source hashes reconciled separately",
+      "session": "Fresh anonymous context no imported storage; HTTP cache disabled by runner routing",
+      "consent": "No consent interaction; record default",
+      "reset": "fresh-context",
+      "actions": [
+        {
+          "action": {
+            "kind": "sweep",
+            "maxSteps": 30,
+            "step": 700,
+            "budgetMs": 6000
+          },
+          "start": "2026-10-04T03:35:36.219Z",
+          "samples": [
+            {
+              "y": 0,
+              "height": 12505,
+              "viewport": 900,
+              "time": 4369
+            },
+            {
+              "y": 700,
+              "height": 12505,
+              "viewport": 900,
+              "time": 4471.5
+            },
+            {
+              "y": 1400,
+              "height": 12505,
+              "viewport": 900,
+              "time": 4581.5999999940395
+            },
+            {
+              "y": 2100,
+              "height": 12505,
+              "viewport": 900,
+              "time": 4685
+            },
+            {
+              "y": 2800,
+              "height": 12505,
+              "viewport": 900,
+              "time": 4799.5999999940395
+            },
+            {
+              "y": 3500,
+              "height": 12505,
+              "viewport": 900,
+              "time": 4907.5999999940395
+            },
+            {
+              "y": 4200,
+              "height": 12505,
+              "viewport": 900,
+              "time": 5009.300000011921
+            },
+            {
+              "y": 4900,
+              "height": 12505,
+              "viewport": 900,
+              "time": 5122
+            },
+            {
+              "y": 5600,
+              "height": 12505,
+              "viewport": 900,
+              "time": 5231.4000000059605
+            },
+            {
+              "y": 6300,
+              "height": 12505,
+              "viewport": 900,
+              "time": 5339.4000000059605
+            },
+            {
+              "y": 7000,
+              "height": 12505,
+              "viewport": 900,
+              "time": 5449.800000011921
+            },
+            {
+              "y": 7700,
+              "height": 12505,
+              "viewport": 900,
+              "time": 5558.0999999940395
+            },
+            {
+              "y": 8400,
+              "height": 12505,
+              "viewport": 900,
+              "time": 5666.800000011921
+            },
+            {
+              "y": 9100,
+              "height": 12505,
+              "viewport": 900,
+              "time": 5775.699999988079
+            },
+            {
+              "y": 9800,
+              "height": 12505,
+              "viewport": 900,
+              "time": 5886
+            },
+            {
+              "y": 10500,
+              "height": 12505,
+              "viewport": 900,
+              "time": 5997.300000011921
+            },
+            {
+              "y": 11200,
+              "height": 12505,
+              "viewport": 900,
+              "time": 6107.4000000059605
+            },
+            {
+              "y": 11605,
+              "height": 12505,
+              "viewport": 900,
+              "time": 6217.199999988079
+            }
+          ],
+          "truncated": false,
+          "end": "2026-10-04T03:35:38.072Z"
+        }
+      ],
+      "captures": [
+        {
+          "evidenceId": "D-GEOMETRY--TOP",
+          "path": "D-GEOMETRY--TOP.json",
+          "phase": "settled"
+        },
+        {
+          "evidenceId": "D-GEOMETRY--ALL",
+          "path": "D-GEOMETRY--ALL.json",
+          "phase": "settled"
+        }
+      ],
+      "network": [
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "document"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/haunted-downtown-boulder-city.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/fog.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/bz-logo.svg",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/manticore.woff2",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "font"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/display.ttf",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "font"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/styles.css",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "stylesheet"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/app.js",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/_vercel/insights/script.js",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/boulder-dam-hotel-960.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/space-mono-400.woff2",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "font"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/spirit.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.googletagmanager.com",
+          "path": "/gtag/js",
+          "queryKeys": [
+            "id"
+          ],
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "origin": "https://www.google-analytics.com",
+          "path": "/g/collect",
+          "queryKeys": [
+            "v",
+            "tid",
+            "gtm",
+            "_p",
+            "gcd",
+            "npa",
+            "dma",
+            "cid",
+            "frm",
+            "ngs",
+            "pscdl",
+            "rcb",
+            "sr",
+            "uaa",
+            "uab",
+            "uafvl",
+            "uam",
+            "uamb",
+            "uap",
+            "uapv",
+            "uaw",
+            "ul",
+            "_s",
+            "tag_exp",
+            "sid",
+            "sct",
+            "seg",
+            "dl",
+            "dt",
+            "en",
+            "_fv",
+            "_nsi",
+            "_ss",
+            "_ee",
+            "tfd"
+          ],
+          "status": 204,
+          "resourceType": "fetch"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/favicon-32.png",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "other"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/boulder-city-shop.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/ufo-night.mp4",
+          "queryKeys": [],
+          "status": 206,
+          "resourceType": "media"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/boulder-city-haunted-walk-tour.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/ufo-night.mp4",
+          "queryKeys": [],
+          "status": 206,
+          "resourceType": "media"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/ufo-night.mp4",
+          "queryKeys": [],
+          "status": 206,
+          "resourceType": "media"
+        }
+      ],
+      "navigationStartedUTC": "2026-10-04T03:35:31.844Z"
+    },
+    {
+      "caseId": "M-GEOMETRY",
+      "environmentId": "ENV2-M",
+      "state": "Fresh all-section geometry at top after bounded lazy-content sweep; current offsets replace historical numeric offsets",
+      "fixture": "Same live public reference; fresh touch emulation",
+      "session": "Fresh anonymous context no imported storage; HTTP cache disabled",
+      "consent": "No consent interaction",
+      "reset": "fresh-context",
+      "actions": [
+        {
+          "action": {
+            "kind": "sweep",
+            "maxSteps": 30,
+            "step": 700,
+            "budgetMs": 6000
+          },
+          "start": "2026-10-04T03:35:45.415Z",
+          "samples": [
+            {
+              "y": 0,
+              "height": 10569,
+              "viewport": 844,
+              "time": 3774.0999999940395
+            },
+            {
+              "y": 700,
+              "height": 10569,
+              "viewport": 844,
+              "time": 3883
+            },
+            {
+              "y": 1400,
+              "height": 10569,
+              "viewport": 844,
+              "time": 3987.199999988079
+            },
+            {
+              "y": 2100,
+              "height": 10569,
+              "viewport": 844,
+              "time": 4091.7999999821186
+            },
+            {
+              "y": 2800,
+              "height": 10569,
+              "viewport": 844,
+              "time": 4194.199999988079
+            },
+            {
+              "y": 3500,
+              "height": 10569,
+              "viewport": 844,
+              "time": 4300.799999982119
+            },
+            {
+              "y": 4200,
+              "height": 10569,
+              "viewport": 844,
+              "time": 4411.699999988079
+            },
+            {
+              "y": 4900,
+              "height": 10569,
+              "viewport": 844,
+              "time": 4525.799999982119
+            },
+            {
+              "y": 5600,
+              "height": 10569,
+              "viewport": 844,
+              "time": 4643.899999976158
+            },
+            {
+              "y": 6300,
+              "height": 10569,
+              "viewport": 844,
+              "time": 4752.199999988079
+            },
+            {
+              "y": 7000,
+              "height": 10569,
+              "viewport": 844,
+              "time": 4861.899999976158
+            },
+            {
+              "y": 7700,
+              "height": 10569,
+              "viewport": 844,
+              "time": 4964.899999976158
+            },
+            {
+              "y": 8400,
+              "height": 10569,
+              "viewport": 844,
+              "time": 5066.799999982119
+            },
+            {
+              "y": 9100,
+              "height": 10569,
+              "viewport": 844,
+              "time": 5177.5
+            },
+            {
+              "y": 9725,
+              "height": 10569,
+              "viewport": 844,
+              "time": 5278.899999976158
+            }
+          ],
+          "truncated": false,
+          "end": "2026-10-04T03:35:46.924Z"
+        }
+      ],
+      "captures": [
+        {
+          "evidenceId": "M-GEOMETRY--TOP",
+          "path": "M-GEOMETRY--TOP.json",
+          "phase": "settled"
+        },
+        {
+          "evidenceId": "M-GEOMETRY--ALL",
+          "path": "M-GEOMETRY--ALL.json",
+          "phase": "settled"
+        }
+      ],
+      "network": [
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "document"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/fog.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/manticore.woff2",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "font"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/bz-logo.svg",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/styles.css",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "stylesheet"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/haunted-downtown-boulder-city-960.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/display.ttf",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "font"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/_vercel/insights/script.js",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/app.js",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/space-mono-400.woff2",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "font"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/boulder-dam-hotel-960.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/boulder-city-haunted-walk-tour-960.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.googletagmanager.com",
+          "path": "/gtag/js",
+          "queryKeys": [
+            "id"
+          ],
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/spirit.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/favicon-32.png",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "other"
+        },
+        {
+          "origin": "https://www.google-analytics.com",
+          "path": "/g/collect",
+          "queryKeys": [
+            "v",
+            "tid",
+            "gtm",
+            "_p",
+            "gcd",
+            "npa",
+            "dma",
+            "cid",
+            "frm",
+            "ngs",
+            "pscdl",
+            "rcb",
+            "sr",
+            "uaa",
+            "uab",
+            "uafvl",
+            "uam",
+            "uamb",
+            "uap",
+            "uapv",
+            "uaw",
+            "ul",
+            "_s",
+            "tag_exp",
+            "sid",
+            "sct",
+            "seg",
+            "dl",
+            "dt",
+            "en",
+            "_fv",
+            "_nsi",
+            "_ss",
+            "_ee",
+            "tfd"
+          ],
+          "status": 204,
+          "resourceType": "fetch"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/boulder-city-shop-960.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/ufo-night-960.mp4",
+          "queryKeys": [],
+          "status": 206,
+          "resourceType": "media"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/ufo-night.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/hoover-dam-960.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/first-murderer-960.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/strange-celebs-960.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/dam-workers-960.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/buried-bodies-960.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/esp-gambling-960.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/ghost-dog-960.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/flying-saucer-960.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/ufo-night-960.mp4",
+          "queryKeys": [],
+          "status": 206,
+          "resourceType": "media"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/beer-zombies-boulder-city-960.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/boulder-city-inn-960.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/joshua-p-warren-960.webp",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/ghost-adventures.png",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/national-geographic-channel.svg",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/discovery-channel.svg",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/artisan-icon.jpg",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/history-current.svg",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        },
+        {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/travel-channel.png",
+          "queryKeys": [],
+          "status": 200,
+          "resourceType": "image"
+        }
+      ],
+      "navigationStartedUTC": "2026-10-04T03:35:41.637Z"
+    }
+  ],
+  "errors": [],
+  "provenance": {
+    "schemaVersion": 2,
+    "packageId": "HBC-V2-GEOMETRY-01",
+    "contractId": "FC-HBC-V2-01",
+    "sourceId": "S2-LIVE",
+    "playwrightVersion": "1.62.1",
+    "runnerSHA256": "e47132aa93a26022d8412b619425b9fadd0773292f47c62929ffa1c1403a4626",
+    "probeSHA256": "763f893f720da91b8d03ddbe54955e388baff02c2f891a9c8d32a2dc188cfd44",
+    "planSHA256": "767a672c9496873d9eae561b6c6126fef52ff392c9d824941abc4a1dbd8d11c6",
+    "hostOS": {
+      "platform": "win32",
+      "release": "10.0.19045",
+      "version": "Windows 10 Pro",
+      "architecture": "x64"
+    },
+    "headless": true,
+    "modifications": [
+      "Fresh browser context per case",
+      "Main-frame navigation guard via routing; HTTP cache disabled by interception",
+      "No source style/content/animation changes"
+    ],
+    "limits": [
+      "No auth/storage import",
+      "No physical-device/AT/browser-zoom/GPU parity claim",
+      "Same plan does not freeze live content, randomness or ambient frames"
+    ],
+    "browserChannel": "chrome",
+    "browserVersion": "154.0.8037.58"
+  },
+  "limits": "Raw capture status only; semantic coverage, reports, gates and asset decisions require inspection"
+}

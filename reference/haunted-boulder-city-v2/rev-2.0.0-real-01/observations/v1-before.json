@@ -1,0 +1,865 @@
+{
+  "schemaVersion": 2,
+  "files": [
+    {
+      "path": "captures/E-004-polypane-1280-story.jpg",
+      "bytes": 26556,
+      "sha256": "17420b6484016d24ae7ff7d28d23ad933c7e2c18d719855862a76fc09bcd6e87"
+    },
+    {
+      "path": "captures/E-010-top-4.jpg",
+      "bytes": 134620,
+      "sha256": "5b11bf1eb01f8457bf4b11d95a7a4c9735e1b4d5755b5db469599d93234f9e26"
+    },
+    {
+      "path": "captures/E-030-1024x768-footer.jpg",
+      "bytes": 47015,
+      "sha256": "034419cfb39cb9e89a122b274d84ee57009214ed8c75617df1629a2d9fa91a41"
+    },
+    {
+      "path": "captures/E-030-1024x768-full.jpg",
+      "bytes": 506684,
+      "sha256": "ebbb7acaab7993529995545202805fc33582fac565095365835a218ca4c9916a"
+    },
+    {
+      "path": "captures/E-030-1024x768-top.jpg",
+      "bytes": 119226,
+      "sha256": "6695637a018d65efb8d79d82b4f0d9c13e49ccc93410eca8786f85b89104a212"
+    },
+    {
+      "path": "captures/E-030-1440x900-about.jpg",
+      "bytes": 99013,
+      "sha256": "fb1dd5830770ccbd25e5a7ff800251202b5fd7ce2b9b66f7b464184eda7d1afc"
+    },
+    {
+      "path": "captures/E-030-1440x900-creator.jpg",
+      "bytes": 80722,
+      "sha256": "96b2cfc12e95c2a9c4e689c794a46d75b8916e8a4619668d958df338940face6"
+    },
+    {
+      "path": "captures/E-030-1440x900-footer.jpg",
+      "bytes": 83245,
+      "sha256": "ec2809ee5aa119a31f1fc69206655d0e326fd235abb8f9a7d236c7cafde0076c"
+    },
+    {
+      "path": "captures/E-030-1440x900-full.jpg",
+      "bytes": 690153,
+      "sha256": "cf17810e3a1fdba2957be9a17ce6575908f3bf9ad019b406be2c13bf95f860bc"
+    },
+    {
+      "path": "captures/E-030-1440x900-local.jpg",
+      "bytes": 92844,
+      "sha256": "3ecfcf361ebd4e17a6e2989694679724ad97371572367faa4611420a641319dd"
+    },
+    {
+      "path": "captures/E-030-1440x900-plan.jpg",
+      "bytes": 88399,
+      "sha256": "d559e1b726567825c049d2f211ebf402dc1bd50104f374101a4c97c176613ebd"
+    },
+    {
+      "path": "captures/E-030-1440x900-stories.jpg",
+      "bytes": 155179,
+      "sha256": "33e7b4ed864e51f020931fd931cd4929a2e5e97f6828841afe43a9fc17bd92d7"
+    },
+    {
+      "path": "captures/E-030-1440x900-tickets.jpg",
+      "bytes": 85870,
+      "sha256": "4f555ca6c5f62d9cbf1bbebe3bac4364653cc96898aa7ce77ff1c19b6d0eebe9"
+    },
+    {
+      "path": "captures/E-030-1440x900-top.jpg",
+      "bytes": 153344,
+      "sha256": "92a36ca3837de90c7d530146231d04f71eea1f32208a2f5801b16f6c52982e23"
+    },
+    {
+      "path": "captures/E-030-1440x900-tour-highlights.jpg",
+      "bytes": 58166,
+      "sha256": "c66fbc49bc6b9412a2c7429e13ffc2baf340bbc43f26cce66ff9ee253c44363c"
+    },
+    {
+      "path": "captures/E-030-1440x900-zombies.jpg",
+      "bytes": 58552,
+      "sha256": "c64e25a24696f8c47728907a209dd5aea0f4e2498d3e602a37d445cc047af027"
+    },
+    {
+      "path": "captures/E-030-390x844-about.jpg",
+      "bytes": 31435,
+      "sha256": "0e6a56a59ac65e3cf50c0ba53864b2590479690f53da8c58314c457bef043279"
+    },
+    {
+      "path": "captures/E-030-390x844-creator.jpg",
+      "bytes": 20337,
+      "sha256": "2105764a7f6339e0b6d9cfed9c859cdae123cda3d9f431d54186062c22c56267"
+    },
+    {
+      "path": "captures/E-030-390x844-footer.jpg",
+      "bytes": 23337,
+      "sha256": "11a77d732da552143312d4c0b8cbda1372a6bbc679842d8ddf51bd6834055a97"
+    },
+    {
+      "path": "captures/E-030-390x844-full.jpg",
+      "bytes": 303611,
+      "sha256": "039260fde4164be6ad35a66c365861019a879616e4ef9091e49c18ba5c02f798"
+    },
+    {
+      "path": "captures/E-030-390x844-local.jpg",
+      "bytes": 38830,
+      "sha256": "2fbdda2355d6ee389f21a51c46858f77eb5cbc9cf4afbcea1935d4bfd1777402"
+    },
+    {
+      "path": "captures/E-030-390x844-plan.jpg",
+      "bytes": 27060,
+      "sha256": "6aecade10089508c457380f3d5f30a5470466592d89d4f837c4feb126463bce0"
+    },
+    {
+      "path": "captures/E-030-390x844-stories.jpg",
+      "bytes": 36335,
+      "sha256": "2c9211d1d3e44920e8816088d8ecea4067eaa4e5ecfae89b1b23355a2c7fc9ca"
+    },
+    {
+      "path": "captures/E-030-390x844-tickets.jpg",
+      "bytes": 37940,
+      "sha256": "c0386696e766b038539383ad60b59f14223bf166e677b9539de72f6657082aff"
+    },
+    {
+      "path": "captures/E-030-390x844-top.jpg",
+      "bytes": 58349,
+      "sha256": "7b4996b548a937b6461f8f8a8fad72b2838eee44f0615fa915451d57b51d3175"
+    },
+    {
+      "path": "captures/E-030-390x844-tour-highlights.jpg",
+      "bytes": 20485,
+      "sha256": "22d37b23d6663dde3102b43d2006472087133a417ce36c74cd0939f5b399e1e6"
+    },
+    {
+      "path": "captures/E-030-390x844-zombies.jpg",
+      "bytes": 23160,
+      "sha256": "3ee43a56a3ab32b788960195f0b4f46745f148188da6751946ea521d2ee7d703"
+    },
+    {
+      "path": "captures/E-030-768x1024-footer.jpg",
+      "bytes": 64567,
+      "sha256": "5918ab3a5a33e86dc27a1c3663591ae7e55a2fcc4d44fb2d3f445fb8d0b66158"
+    },
+    {
+      "path": "captures/E-030-768x1024-full.jpg",
+      "bytes": 461030,
+      "sha256": "feb56e79b82ee6340ca9ffa82d695e6c334d4d0f81a7222fa8d52d1e7464a429"
+    },
+    {
+      "path": "captures/E-030-768x1024-top.jpg",
+      "bytes": 104659,
+      "sha256": "a06909228a58f3cf40b8f4f16f1e750bb3dab531af442ad337175a892549a557"
+    },
+    {
+      "path": "captures/E-040-boundary-1099.jpg",
+      "bytes": 130471,
+      "sha256": "70c4a1e1161d7146f864a7c9e915e455f164bcf9e3dbc8c9f8b1d56eeca056ac"
+    },
+    {
+      "path": "captures/E-040-boundary-1100.jpg",
+      "bytes": 138052,
+      "sha256": "db081afff7d964848a28bd29bf96b121dccc4dd8dc24419b0987b13e329bd0bc"
+    },
+    {
+      "path": "captures/E-040-boundary-1101.jpg",
+      "bytes": 138610,
+      "sha256": "a4bad1c333f1cef756e6b24272c44b620c6501b3f8eaa0bb5188003d99e30f32"
+    },
+    {
+      "path": "captures/E-040-boundary-1799.jpg",
+      "bytes": 197196,
+      "sha256": "d20da5f34825ff237aa41e3fa989a509e8019058dc57368b1c465afb388d20a3"
+    },
+    {
+      "path": "captures/E-040-boundary-1800.jpg",
+      "bytes": 205895,
+      "sha256": "b0830f02b5da4cc5fa1a6cfc278a506400522574bbdc8f4273917d99b2c82ade"
+    },
+    {
+      "path": "captures/E-040-boundary-1801.jpg",
+      "bytes": 201235,
+      "sha256": "5cd2db69b5ac6a0099c2695a89166389d2a7d002521b4fc136d7223f38d327df"
+    },
+    {
+      "path": "captures/E-040-boundary-759.jpg",
+      "bytes": 97384,
+      "sha256": "6f4ad4b4540ae3a6a7b8bb2c8044368fe5d5a438719949d76b573dd8c0d585f8"
+    },
+    {
+      "path": "captures/E-040-boundary-760.jpg",
+      "bytes": 98789,
+      "sha256": "d3aa547ca01c001e1582e33271e6881a3bba5bdfd97d6f5ef9e17ba2f89492d7"
+    },
+    {
+      "path": "captures/E-040-boundary-761.jpg",
+      "bytes": 95799,
+      "sha256": "7c644d0a655633ddf939ee3ac5841a8ed5e3947bc5e7e396941c99fa54704325"
+    },
+    {
+      "path": "captures/E-041-1440x400-normal-stories.jpg",
+      "bytes": 71519,
+      "sha256": "432f51a558bc23e70f6c720ba5d66b917535ac0d02c2d002669809d4607676f1"
+    },
+    {
+      "path": "captures/E-041-1440x400-normal-top.jpg",
+      "bytes": 73253,
+      "sha256": "5c338874362bd95a590e16468058a94aa1ca5d082747927aea5c43316c23788f"
+    },
+    {
+      "path": "captures/E-041-1440x900-reduced-stories.jpg",
+      "bytes": 158359,
+      "sha256": "14e3dbaf8c1e2b04b98c655c9776c92501b3820554763510e9a934e9f958c4c3"
+    },
+    {
+      "path": "captures/E-041-1440x900-reduced-top.jpg",
+      "bytes": 186899,
+      "sha256": "292a9fabca4dc982216775a287859890774c64df0124a3b69133443d0b84652b"
+    },
+    {
+      "path": "captures/E-041-390x844-reduced-stories.jpg",
+      "bytes": 54535,
+      "sha256": "d8f2b2f7a1d481269bb55a1efe681907b22b2d2280bba83946911aaf65edca01"
+    },
+    {
+      "path": "captures/E-041-390x844-reduced-top.jpg",
+      "bytes": 61645,
+      "sha256": "66235206fd4c97032e953eaaa9294281ae81cd43688364e87d112b2843ce267f"
+    },
+    {
+      "path": "captures/E-041-844x390-normal-stories.jpg",
+      "bytes": 50211,
+      "sha256": "da2d4b0464ff91ea378680491c7cb00a134e14901aa2fecdb232beb83e174e97"
+    },
+    {
+      "path": "captures/E-041-844x390-normal-top.jpg",
+      "bytes": 46438,
+      "sha256": "af877f639b183f693da035d979b2e7733f44f3c45fa3a6779641d72f4edeab38"
+    },
+    {
+      "path": "captures/E-050-1440-menu-closed-focus.jpg",
+      "bytes": 180989,
+      "sha256": "8fd225b2cd779ca6e26cf74dea6bde3bd340f5af72e020ea64e4cbd70cbc48dd"
+    },
+    {
+      "path": "captures/E-050-1440-menu-open.jpg",
+      "bytes": 99232,
+      "sha256": "a11f50f360eb7465e16ba722c88f22d220a81e7ec044a16918f46e2b6b4d298e"
+    },
+    {
+      "path": "captures/E-050-390-menu-closed-focus.jpg",
+      "bytes": 60169,
+      "sha256": "c9b313140e0947c8e68934018e4c0d6ecaa89a6ae992618425a8c0f9aed8895d"
+    },
+    {
+      "path": "captures/E-050-390-menu-open.jpg",
+      "bytes": 42033,
+      "sha256": "e7542222003911b26cfe500c2e8983b039cd7e58fa596851f1cff403cf26224f"
+    },
+    {
+      "path": "captures/E-051-1440-faq-1.jpg",
+      "bytes": 104387,
+      "sha256": "0c8e6731376321119cfc8dde910bb052320432b82a9771417602ca7ced7f20ec"
+    },
+    {
+      "path": "captures/E-051-1440-faq-9.jpg",
+      "bytes": 97105,
+      "sha256": "5b58037b61c0a9db4dfb962fd253d6c964c2836c2536e794249c5cf49c0223a6"
+    },
+    {
+      "path": "captures/E-051-390-faq-1.jpg",
+      "bytes": 32756,
+      "sha256": "b136063830312ee0f1c6e72a64d2a51b8c70f4fa8d262b12bfa5e06ed8fb2fdf"
+    },
+    {
+      "path": "captures/E-051-390-faq-9.jpg",
+      "bytes": 41219,
+      "sha256": "bd640e6f4303f8733e183d6ea8ae40b99c77ce59da808665c3cf0b2ed233dfbc"
+    },
+    {
+      "path": "captures/E-052-story-0-22.jpg",
+      "bytes": 163428,
+      "sha256": "3b84588f10b8223621c48480d06144402e6efeef1480c5db9294e5247fd32d26"
+    },
+    {
+      "path": "captures/E-052-story-1-23.jpg",
+      "bytes": 165496,
+      "sha256": "c24a0cf861927ad4657cea3276e5b6447973eab5f8fd9d4dbc144bbced1676b7"
+    },
+    {
+      "path": "captures/E-052-story-1-25.jpg",
+      "bytes": 165516,
+      "sha256": "e2023abc75ca322ec2e573a95c2ddbea4a4851437a92eaac086732113114b826"
+    },
+    {
+      "path": "captures/E-052-story-2-24.jpg",
+      "bytes": 111140,
+      "sha256": "76e0484f1a02ff8ad88cfcbb5c5ef9da247a582d12995d8cca2f96e2ca3e0f08"
+    },
+    {
+      "path": "captures/E-053-1440-ticket-loading.jpg",
+      "bytes": 84115,
+      "sha256": "631c06cef6338fb08c0f6e68cc8b5f322ecdced11e0695df68b4a08e72bd6184"
+    },
+    {
+      "path": "captures/E-053-1440-ticket-settled.jpg",
+      "bytes": 76516,
+      "sha256": "69e7db77e49796204e67a4ae8b7471e7648a637595010e2432d593f75dc353dc"
+    },
+    {
+      "path": "captures/E-053-390-ticket-loading.jpg",
+      "bytes": 35218,
+      "sha256": "f576e22de3dbffa1245ced953800ca06d61bd8765c86daeea1e22484fd1ae190"
+    },
+    {
+      "path": "captures/E-053-390-ticket-settled.jpg",
+      "bytes": 22651,
+      "sha256": "10f78724cba5f5721e92de0e188ac0e88a1b9d1208f3c069dc010ffb2d30474c"
+    },
+    {
+      "path": "captures/E-060-loader-normal-1.jpg",
+      "bytes": 62848,
+      "sha256": "5956cb6cb3fb16909bf1aa21b88c4acee1773ccc0446676a2e8f763a9dc618f5"
+    },
+    {
+      "path": "captures/E-060-loader-normal-2.jpg",
+      "bytes": 75160,
+      "sha256": "3419b16ce3c6001839e4dcd4db393b6847ab17cf0e25657737b80ea99705b6f6"
+    },
+    {
+      "path": "captures/E-060-loader-normal-3.jpg",
+      "bytes": 45320,
+      "sha256": "aafb8f31bb6bba9f6b150ade8b266842f9800a3f43fae46ed681114dbda9af58"
+    },
+    {
+      "path": "captures/E-060-loader-normal-4.jpg",
+      "bytes": 175119,
+      "sha256": "b7fd354a6c0844e9e03c8ebf7f8ef1fb3465bf3e62ac9196f74a2bc9d64a3ab3"
+    },
+    {
+      "path": "captures/E-060-loader-normal-5.jpg",
+      "bytes": 179935,
+      "sha256": "88695b5376064e288a3283424c6cb34a60d090d7b1fd1b3007af6b159d9a22a2"
+    },
+    {
+      "path": "captures/E-060-loader-normal-6.jpg",
+      "bytes": 179836,
+      "sha256": "f0288781fc00034f0b49d1627e519854a32e926fbeb9b462a4c746c45258ba0f"
+    },
+    {
+      "path": "captures/E-060-loader-reduced-1.jpg",
+      "bytes": 186951,
+      "sha256": "92433d409b01b585d606d0fe3ec496758944f254fa21a837db1ea1c7eb8c396c"
+    },
+    {
+      "path": "captures/E-060-loader-reduced-2.jpg",
+      "bytes": 186951,
+      "sha256": "92433d409b01b585d606d0fe3ec496758944f254fa21a837db1ea1c7eb8c396c"
+    },
+    {
+      "path": "captures/E-060-loader-reduced-3.jpg",
+      "bytes": 186951,
+      "sha256": "92433d409b01b585d606d0fe3ec496758944f254fa21a837db1ea1c7eb8c396c"
+    },
+    {
+      "path": "captures/E-060-loader-reduced-4.jpg",
+      "bytes": 186951,
+      "sha256": "92433d409b01b585d606d0fe3ec496758944f254fa21a837db1ea1c7eb8c396c"
+    },
+    {
+      "path": "captures/E-060-loader-reduced-5.jpg",
+      "bytes": 186951,
+      "sha256": "92433d409b01b585d606d0fe3ec496758944f254fa21a837db1ea1c7eb8c396c"
+    },
+    {
+      "path": "captures/E-060-loader-reduced-6.jpg",
+      "bytes": 186951,
+      "sha256": "92433d409b01b585d606d0fe3ec496758944f254fa21a837db1ea1c7eb8c396c"
+    },
+    {
+      "path": "captures/E-061-settled-desktop-top.jpg",
+      "bytes": 180141,
+      "sha256": "2870ff7bdc4adbe13bd630279edb3b6dac1f099a6e9f534a37ac13c273deb8fb"
+    },
+    {
+      "path": "captures/E-062-buttonlarge-1800.jpg",
+      "bytes": 120625,
+      "sha256": "cea1dcbe80896278d0528a573dc5d13bbb9239bb7c249fe8ec9ee443d137a366"
+    },
+    {
+      "path": "captures/E-062-buttonlarge-200.jpg",
+      "bytes": 113702,
+      "sha256": "f17b028698f349867f955c0ca375b21acb541adc8db81edc718403b2b6ae69e6"
+    },
+    {
+      "path": "captures/E-062-topicdatatopicguide-1800.jpg",
+      "bytes": 104374,
+      "sha256": "984fdb3915481c3f04fe14d8169db27e2bbbcf91f053e8979f61b5d18a562455"
+    },
+    {
+      "path": "captures/E-062-topicdatatopicguide-200.jpg",
+      "bytes": 76402,
+      "sha256": "b6fb98de87e981305a8b247e20617f35ae467c4e0297707fc903e61c22ae901c"
+    },
+    {
+      "path": "captures/E-062-tourfacts-1800.jpg",
+      "bytes": 148855,
+      "sha256": "db1e90738d0bfe1dca1d68ee772818bc474b7c0a64a8a8837d9f20e1b015d5d1"
+    },
+    {
+      "path": "captures/E-062-tourfacts-200.jpg",
+      "bytes": 102785,
+      "sha256": "0667d1a3f466f56b8b58452f0106a2002d6fdc5781577c6edef00266d4157e35"
+    },
+    {
+      "path": "captures/E-063-ufo-phase-0.8-10.jpg",
+      "bytes": 129586,
+      "sha256": "d432981917215f3e4ac8276f489b1acf1d171038a1a0e7d9f423781e0a390bc1"
+    },
+    {
+      "path": "captures/E-063-ufo-phase-0.8-8.jpg",
+      "bytes": 129588,
+      "sha256": "334b440d184c7b9e9e5cdc66036f264c92422da8185bc7b14943d39cdc34bf91"
+    },
+    {
+      "path": "captures/E-063-ufo-phase-1-9.jpg",
+      "bytes": 126416,
+      "sha256": "d4856e5492f3ef74e1f98cc78bd4ec75373f00f7d275bfb7f5105e39184c1e83"
+    },
+    {
+      "path": "captures/E-070-1440-about-settled.jpg",
+      "bytes": 110470,
+      "sha256": "dee04303b9ead917c5475825bcde0d40ddeda1bb644ea273325cf34ef8928ef9"
+    },
+    {
+      "path": "captures/E-070-1440-creator-settled.jpg",
+      "bytes": 127894,
+      "sha256": "e89bd9e966766283e0566ad395985068d178b79291fe2e964229844b09b86834"
+    },
+    {
+      "path": "captures/E-070-1440-footer-settled.jpg",
+      "bytes": 127876,
+      "sha256": "2f23bc22ca17695cdd78856220f79a430ad40f3532a3be7f0f1a6672736a0be3"
+    },
+    {
+      "path": "captures/E-070-1440-home-settled.jpg",
+      "bytes": 179839,
+      "sha256": "1ffd1817d2086a43a736c91d0c5e38784926367825f1cf68acb099402521cf24"
+    },
+    {
+      "path": "captures/E-070-1440-local-settled.jpg",
+      "bytes": 103061,
+      "sha256": "dc786d71c337947edc3d6d96458af2dac2942abadf97ec744055477d2dd27380"
+    },
+    {
+      "path": "captures/E-070-1440-plan-settled.jpg",
+      "bytes": 97125,
+      "sha256": "56a072ec84027375a9fd95c0f275728b6dcbb9c260a0e59c7a3ab8ab249c823b"
+    },
+    {
+      "path": "captures/E-070-1440-stories-settled.jpg",
+      "bytes": 156376,
+      "sha256": "448d5f26eacb3b0380750510902aa35a57ac8dc7b3be19afaa286d2f91b5921d"
+    },
+    {
+      "path": "captures/E-070-1440-story-ufo-settled.jpg",
+      "bytes": 82282,
+      "sha256": "31038bb0b32ce5ab770a53c5056bc4b94df9efd633db97cc30bb565fdd7e9ab5"
+    },
+    {
+      "path": "captures/E-070-1440-tickets-settled.jpg",
+      "bytes": 123594,
+      "sha256": "bf45b4fc7c9e4e0a59c22fd811fee3af5a1664a5b309fe550e981589a280fe32"
+    },
+    {
+      "path": "captures/E-070-1440-tour-highlights-settled.jpg",
+      "bytes": 140004,
+      "sha256": "cde1fb761a6d047434a73587a483295bfec7ad61cd38b1f91563d04450433bc4"
+    },
+    {
+      "path": "captures/E-070-1440-zombies-settled.jpg",
+      "bytes": 137368,
+      "sha256": "1d26225c97453c7e72b01ee263b7d943178927f9cb8ca252eab78752cd8ba18e"
+    },
+    {
+      "path": "captures/E-070-390-about-settled.jpg",
+      "bytes": 53212,
+      "sha256": "adae0c48bcce3ff4ae292056f07155e659db2786083f48e2072fe6c68f22e0e6"
+    },
+    {
+      "path": "captures/E-070-390-creator-settled.jpg",
+      "bytes": 37044,
+      "sha256": "66a80812e02d83ad1e160b84ab03c0320235118f12ebc21776d102ec42c5601b"
+    },
+    {
+      "path": "captures/E-070-390-footer-settled.jpg",
+      "bytes": 37553,
+      "sha256": "3054456251695c2fd31edb83cee3de39587e433bb00cb2930b0d3614b178eab9"
+    },
+    {
+      "path": "captures/E-070-390-home-settled.jpg",
+      "bytes": 58289,
+      "sha256": "be29ffa5e5471b8d45355a4c1b4e38a1c63f848784eab9e91fd9922a799213a7"
+    },
+    {
+      "path": "captures/E-070-390-local-settled.jpg",
+      "bytes": 44722,
+      "sha256": "d3de3acb8b275d03242d664c19cd8a6fbe7ba8181810cfcefd621711ce593a30"
+    },
+    {
+      "path": "captures/E-070-390-plan-settled.jpg",
+      "bytes": 32284,
+      "sha256": "8c3ba5d5090014b2a929262ec83ac6fd71bd01a33de94106647c1f520645ca85"
+    },
+    {
+      "path": "captures/E-070-390-stories-settled.jpg",
+      "bytes": 53299,
+      "sha256": "99ba449f70ccd67bc7b748ddc64d432a9bd209c83742e5693b08def5d6b51844"
+    },
+    {
+      "path": "captures/E-070-390-story-ufo-settled.jpg",
+      "bytes": 35722,
+      "sha256": "c85c3eaaac13148911a96467cb97c13f56736bfacaa5ee2296befc5a55800b98"
+    },
+    {
+      "path": "captures/E-070-390-tickets-settled.jpg",
+      "bytes": 45754,
+      "sha256": "94d062b4fd13610e44227146fd679bbb501994eb13e795b46770ad5467f0b5f0"
+    },
+    {
+      "path": "captures/E-070-390-tour-highlights-settled.jpg",
+      "bytes": 51893,
+      "sha256": "fd136c86c6f27fa142e938cb3b2f43530d51893fb831d64696113596acffd367"
+    },
+    {
+      "path": "captures/E-070-390-zombies-settled.jpg",
+      "bytes": 51999,
+      "sha256": "32b5954df490602a9b5d27a8566659ebf8b3f3cd8755849e80f9a5316b0f5a06"
+    },
+    {
+      "path": "captures/E-080-ufo-0.65-18.jpg",
+      "bytes": 159946,
+      "sha256": "bb24356bfc6d18aeb5f35ab9cf45826d933988c33f31e1a103d0cca24890b972"
+    },
+    {
+      "path": "captures/E-080-ufo-0.8-19.jpg",
+      "bytes": 119709,
+      "sha256": "716574fc1bf5ef525531b71d9de2b62f5236a5268de96fcdfed2d24baa6b34ff"
+    },
+    {
+      "path": "captures/E-080-ufo-0.8-21.jpg",
+      "bytes": 119471,
+      "sha256": "5a6ee0c6c4eca5d00e443f3ed4f46cdb07eb1bfb773eecaa41e9a544f63ede63"
+    },
+    {
+      "path": "captures/E-080-ufo-1-20.jpg",
+      "bytes": 111392,
+      "sha256": "59725d1a0796d5f0f16512b313b6f0a4a8203a73f16b583afc93541fea8472f7"
+    },
+    {
+      "path": "captures/E-081-simulated-widget-failure.jpg",
+      "bytes": 59224,
+      "sha256": "5c924e096023bd365c5ac8c433cbba0b3686fef36d61cce0fb31c3176e795f60"
+    },
+    {
+      "path": "captures/E-085-facts-1.jpg",
+      "bytes": 83220,
+      "sha256": "5ead7549a2dc38eb1849becd510b530419f1bd73795692fbf899f67b4ebdc0d6"
+    },
+    {
+      "path": "captures/E-085-facts-2.jpg",
+      "bytes": 96741,
+      "sha256": "3e112d2b17b9448c06022b16761bcda0747d0b7aabcd261d6dae221e00404fc0"
+    },
+    {
+      "path": "captures/E-085-facts-3.jpg",
+      "bytes": 145064,
+      "sha256": "3b61c463bd13ab7be9a4d2f6e914f9cc1eb3b9e2df1bceb173c09431d129d61c"
+    },
+    {
+      "path": "captures/E-085-facts-4.jpg",
+      "bytes": 148698,
+      "sha256": "6efda9dc63aea49b5c4b0924f518eb21ffc4158a5c320ed04d8231c6640aa865"
+    },
+    {
+      "path": "captures/E-085-facts-5.jpg",
+      "bytes": 148710,
+      "sha256": "3d898ba613419839429c45ac5b8672ed7c1af140624299a6276ac4c335f81737"
+    },
+    {
+      "path": "captures/E-086-preview-query.jpg",
+      "bytes": 77469,
+      "sha256": "43c00790cace675233affd5e9438eeaa966b54ddb11b6d95846ba272c812a406"
+    },
+    {
+      "path": "captures/E-090-faq-keyboard-focus.jpg",
+      "bytes": 112682,
+      "sha256": "ef6ecd0b59d98d8dbc20baf80befd86592fd1f939f47dbe442fe41fd1fe7e885"
+    },
+    {
+      "path": "helpers/additional.mjs",
+      "bytes": 1692,
+      "sha256": "c50b5956705f5923957010dc146df093db5e03940b4ea2cc187f4ffe28a8a3f7"
+    },
+    {
+      "path": "helpers/baseline.mjs",
+      "bytes": 3221,
+      "sha256": "e143e215bd51f3bcbe47aa77c3742d8fadee1db3f5a249e3dfa20388d99e5d53"
+    },
+    {
+      "path": "helpers/cdp.mjs",
+      "bytes": 2786,
+      "sha256": "be7e4af36656299b130ae3daa5c4d417f110a031943494fd0e65fbbe1973df55"
+    },
+    {
+      "path": "helpers/edge-states.mjs",
+      "bytes": 4946,
+      "sha256": "442bb24fcf3f81f6d4e0f26da10c9d6367b0a169b44e046567526f078b5df982"
+    },
+    {
+      "path": "helpers/interactions.mjs",
+      "bytes": 7067,
+      "sha256": "a302695da837cebc0a3e7eda38f61ec0f051d93ac183db4d9608b8be720c2433"
+    },
+    {
+      "path": "helpers/keyboard.mjs",
+      "bytes": 1346,
+      "sha256": "512e24f049911c75d470eb0c67440411d0405136f911e702d12f555e21dff301"
+    },
+    {
+      "path": "helpers/measure-function.js",
+      "bytes": 2074,
+      "sha256": "4d2423daf76a82ff447ffdbc3b483f79692b0b592be53389001b09ef715897e0"
+    },
+    {
+      "path": "helpers/motion.mjs",
+      "bytes": 4590,
+      "sha256": "32e6c7a6fe0a6b3f986964bee07885dc24642280b5a614f7850778269e7af94e"
+    },
+    {
+      "path": "helpers/README.md",
+      "bytes": 2915,
+      "sha256": "f03ab5ccb8cae21dc1736e1c28b0cbd240504e529987262aa5c9cc3c364852a7"
+    },
+    {
+      "path": "helpers/responsive.mjs",
+      "bytes": 2884,
+      "sha256": "1ed9b9ba888d27cf92c55f1d5f4c5ce1f3acb038cf0694ec16f9e8ae27085327"
+    },
+    {
+      "path": "helpers/settled.mjs",
+      "bytes": 3735,
+      "sha256": "921aba7688a6d8bfc39d58a7f46413fe91c82e8292202c477e3a3cb8add9b719"
+    },
+    {
+      "path": "helpers/verify-package.mjs",
+      "bytes": 8442,
+      "sha256": "3086f3d6dac9b7ae8092c49bbf07cd9bb2840a85e2dce098602ee04f66622cb3"
+    },
+    {
+      "path": "observations/artifact-index.md",
+      "bytes": 29896,
+      "sha256": "ed5f47c58394631a00fe9dc65f732201f6722e94ee5b4b4f5f8081f4ea5bb26f"
+    },
+    {
+      "path": "observations/artifact-manifest.json",
+      "bytes": 292452,
+      "sha256": "46159cf355844e9f613c64241944d1cd73d28a98ac078c8d8a7521dc8b7491b0"
+    },
+    {
+      "path": "observations/E-001-inventory.json",
+      "bytes": 15940,
+      "sha256": "e2984b54765c9130e5a1bb2426e0126093851c4b1b31b6ba6f8603afc9ae12e6"
+    },
+    {
+      "path": "observations/E-005-css-runtime.json",
+      "bytes": 80117,
+      "sha256": "52a9840113608e40a1fcf404c4e17c46f2b98babd40351d0cb2c031d6d477a2c"
+    },
+    {
+      "path": "observations/E-006-app-runtime.json",
+      "bytes": 50156,
+      "sha256": "e7d77ea7c57025beccac5fca529966f5d9434e93c6739f1f781549d991e82b56"
+    },
+    {
+      "path": "observations/E-007-accessibility-desktop.json",
+      "bytes": 35374,
+      "sha256": "547942a9deae996b2fb86d335077f3d5dbedbf37df29b808191b4311c1edf712"
+    },
+    {
+      "path": "observations/E-008-geometry-4.json",
+      "bytes": 73507,
+      "sha256": "c1ba0c7d9e572b8691e3dd563c11cf54012d77dbdffc838fdc96186c831dd77d"
+    },
+    {
+      "path": "observations/E-009-geometry-2.json",
+      "bytes": 67257,
+      "sha256": "096b78373ba55ff2933e554974c0f5aed653a6bce0c0e23a06c1c310c0717b6f"
+    },
+    {
+      "path": "observations/E-020-tool-capabilities.json",
+      "bytes": 3115,
+      "sha256": "d959f1c659b244a8edb087a0ea56d4b8ac637ad7db87b57af11811dbc3466e06"
+    },
+    {
+      "path": "observations/E-021-cdp-session.json",
+      "bytes": 1228,
+      "sha256": "1fc1d0cdf4d0d5228d2eb9463b03017b1336fe370b8259a92ac045af49c8c4f2"
+    },
+    {
+      "path": "observations/E-022-capture-summary.json",
+      "bytes": 384,
+      "sha256": "a4a7279785e8b48f9b69c703639a898ecc2f0dd9d0dd9e431afce47a0b59e39e"
+    },
+    {
+      "path": "observations/E-030-1024x768-geometry.json",
+      "bytes": 121582,
+      "sha256": "9c4804868623affd39bf7ccddde22e69977326eaedaa5944c2fafa0cadbd9d2b"
+    },
+    {
+      "path": "observations/E-030-1024x768-scroll.json",
+      "bytes": 16697,
+      "sha256": "86b10f8d26da207049782050f0ab462a99d94929600bfddd45f23ba2eba41012"
+    },
+    {
+      "path": "observations/E-030-1440x900-geometry.json",
+      "bytes": 140633,
+      "sha256": "5d3f00bc73e3cd0dda28119202559817f013f8f225f97dbb0cb336e3ff5fd6b5"
+    },
+    {
+      "path": "observations/E-030-1440x900-scroll.json",
+      "bytes": 16673,
+      "sha256": "674883cb8f43a9b8b4fae5a9a34a6bd570a97ca7d9a7b2bc6294d6ad10bbb04d"
+    },
+    {
+      "path": "observations/E-030-390x844-geometry.json",
+      "bytes": 119484,
+      "sha256": "500d8bf70e8910cfecebc7d671630748a70bb2ceab52d37905cbe09d2d1f6725"
+    },
+    {
+      "path": "observations/E-030-390x844-scroll.json",
+      "bytes": 14789,
+      "sha256": "e44a774f94067f5d30e7e7256153fdfb46c6497ba76bebf2ba90cdb0f84997d0"
+    },
+    {
+      "path": "observations/E-030-768x1024-geometry.json",
+      "bytes": 120486,
+      "sha256": "e253041b36eed272ca51124da0be70740bd9c479a857498de07f98cd396e73bb"
+    },
+    {
+      "path": "observations/E-030-768x1024-scroll.json",
+      "bytes": 14704,
+      "sha256": "af9a31f0e81d45f62bcbb0011b3b7c07a891387ac718c16241930e7ab7e4f730"
+    },
+    {
+      "path": "observations/E-040-boundaries.json",
+      "bytes": 52893,
+      "sha256": "6969f7ddd765ddcf58c46ba98f8f5ca8178011993dde761fc29fd35586e39516"
+    },
+    {
+      "path": "observations/E-041-preferences-height.json",
+      "bytes": 15941,
+      "sha256": "bd2d45013fc3898643685e580b4e8b88e2d5389e93c3b91140a520cdc65bccbd"
+    },
+    {
+      "path": "observations/E-050-1440-journeys.json",
+      "bytes": 143447,
+      "sha256": "1bc3b7e09515ebcbc1b4a441b42d1c4730013a323426ac5e91f82bd086136084"
+    },
+    {
+      "path": "observations/E-050-390-journeys.json",
+      "bytes": 114597,
+      "sha256": "d2d8756805387ba9306e488d5c0937a4b253cfceb219a8b2fda5bf1044b4c5bc"
+    },
+    {
+      "path": "observations/E-054-network-console.json",
+      "bytes": 7107,
+      "sha256": "9d91d18ceb95f9944177858194a170c9ebaef8475074e1bdacdadb28f6d9e187"
+    },
+    {
+      "path": "observations/E-055-rendered-fonts.json",
+      "bytes": 1224,
+      "sha256": "20f722a5fe112dc45b334b9f8b3ed70a85afc11fad16eec56609848bf5de86a7"
+    },
+    {
+      "path": "observations/E-056-accessibility.json",
+      "bytes": 380387,
+      "sha256": "bb70f0a889391026a787b36f1324a2369db4bcfaeb4249db44b36fa2cbf3d71c"
+    },
+    {
+      "path": "observations/E-060-loader-timeline.json",
+      "bytes": 60440,
+      "sha256": "a1df938c51cd78b780f522429e28c32a18a719d7421dc1126dffb72797665fa1"
+    },
+    {
+      "path": "observations/E-061-settled-desktop.json",
+      "bytes": 109746,
+      "sha256": "7510ed0e3d4f5ce7f49eb53c23d6297290856f242758caab0a58e4e28a9b329c"
+    },
+    {
+      "path": "observations/E-062-distinctive-motion.json",
+      "bytes": 141684,
+      "sha256": "87a9c2c9969e4b784b7c6ebfc5fda9bdc3be65c37c81e33e4d483d76ba15471c"
+    },
+    {
+      "path": "observations/E-064-image-readiness.json",
+      "bytes": 17789,
+      "sha256": "54df675a4cdcf58f14136e1df2c55631cb22748564c672f0fa7918037534525b"
+    },
+    {
+      "path": "observations/E-070-capture-conditions.json",
+      "bytes": 47998,
+      "sha256": "e523fe19b472df8b351a9b3dce324b3ef1ad3f5cdeaecb053de2f7482d06a88b"
+    },
+    {
+      "path": "observations/E-071-source-integrity.json",
+      "bytes": 412,
+      "sha256": "f891b8a5606fa17442c145282fe95f252132e4549a8c72b719628ed55f34c2dd"
+    },
+    {
+      "path": "observations/E-072-source-reconciliation.json",
+      "bytes": 283,
+      "sha256": "847758383f62e8286db95c3aa5d31b258d8c8b9a7743bd790010c780078863e2"
+    },
+    {
+      "path": "observations/E-080-reversal-focus-ufo.json",
+      "bytes": 154409,
+      "sha256": "8a15eb1699e9bb0a09de82ffc26143bf97cb732021ab7631c9b2f1b36148e066"
+    },
+    {
+      "path": "observations/E-081-simulated-widget-failure.json",
+      "bytes": 4229,
+      "sha256": "29dc1f65a3c24befab235f3e79ed910bb15b596bbb466c105ecaf75a6305fa18"
+    },
+    {
+      "path": "observations/E-085-facts-timeline.json",
+      "bytes": 19668,
+      "sha256": "ca07c853fe1e378d48e1a731f0ff2c88e333423602f108962565134439c42812"
+    },
+    {
+      "path": "observations/E-086-preview-query.json",
+      "bytes": 794,
+      "sha256": "cf65aabd57e67cca58c22d7483fcdffc130921cd0f867bc1fa404ad69def2383"
+    },
+    {
+      "path": "observations/E-090-faq-keyboard.json",
+      "bytes": 1205,
+      "sha256": "c7d39eebfac6148b8d6aab9a1448e5b6bb4b8fdcc4a6bfce02153d6803c91b46"
+    },
+    {
+      "path": "observations/E-093-skill-provenance.json",
+      "bytes": 1015,
+      "sha256": "26a8a2f60a4a2be1438edc6aeae64c86cc70e40869585db38f2d906a6e842b0d"
+    },
+    {
+      "path": "observations/package-verification.json",
+      "bytes": 865,
+      "sha256": "c3273bb3e9e0b77f5929b7f6f2ccc794035c452d93d4e0161c5c81ff20ed8b0b"
+    },
+    {
+      "path": "reference-evidence.md",
+      "bytes": 47755,
+      "sha256": "eb3f94c372f67572c14e47b27475a2085b3e2ebdcbbe0e0e3be77e0928364e49"
+    }
+  ]
+}

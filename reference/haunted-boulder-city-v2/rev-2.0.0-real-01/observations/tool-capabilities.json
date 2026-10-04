@@ -1,0 +1,33 @@
+{
+  "startup": {
+    "timestampUTC": "2026-10-04T03:17:58.081Z",
+    "chrome": {
+      "error": "Configured chrome-profile is already running; list_pages failed. No targets enumerated. Process command-line inspection unavailable (Access denied). No process closed, no profile/server settings changed."
+    },
+    "polypane": {
+      "pageIds": [
+        2,
+        3,
+        4
+      ],
+      "url": "https://www.hauntedbouldercity.com/#tickets"
+    },
+    "gap": "Chrome MCP live discovery unavailable; use accessible Polypane for structured live reads. Maintained isolated runner justified for bounded fresh contexts and reliable local saves."
+  },
+  "savePreflight": {
+    "local": true,
+    "toolAllowedRoot": false,
+    "error": "MCP configured workspace roots reject repository path",
+    "resolution": "Inline structured reads saved via local filesystem; maintained runner for binary screenshots"
+  },
+  "evaluationAdapter": {
+    "initialProbeErrors": "Snapshots required per page; args interpreted as element UIDs, not arbitrary JSON",
+    "remedy": "Complete shared function wrapped with explicit bounded JSON options; no source/style modification"
+  },
+  "captureEscalation": {
+    "gap": "fresh anonymous normal/reduced desktop/touch and reliable local binary saves; Chrome MCP unavailable, MCP root denied, panes have divergent inherited state/video readiness",
+    "capability": "maintained capture.mjs + installed Playwright/Chrome fresh contexts",
+    "authority": "FC-HBC-V2-01 user request",
+    "stop": "one bounded run; diagnose meaningful failed conditions before any repair"
+  }
+}

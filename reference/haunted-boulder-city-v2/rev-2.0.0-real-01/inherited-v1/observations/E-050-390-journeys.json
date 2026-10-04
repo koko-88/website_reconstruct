@@ -1,0 +1,4726 @@
+{
+  "environment": {
+    "timestamp": "2026-10-04T00:02:28.468Z",
+    "url": "https://www.hauntedbouldercity.com/#about",
+    "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      390,
+      844
+    ],
+    "dpr": 1,
+    "visualViewport": {
+      "width": 390,
+      "height": 844,
+      "scale": 1
+    },
+    "scroll": [
+      0,
+      9226,
+      390,
+      10707
+    ],
+    "language": "en-US",
+    "timezone": "Africa/Cairo",
+    "direction": "ltr",
+    "touch": 1,
+    "dark": false,
+    "reduced": false,
+    "fonts": "loaded",
+    "ready": "complete"
+  },
+  "input": "emulated touch and keyboard",
+  "log": [
+    {
+      "action": "reset",
+      "state": {
+        "timestamp": "2026-10-04T00:02:02.398Z",
+        "perf": 206413.5,
+        "url": "https://www.hauntedbouldercity.com/#about",
+        "scrollY": 0,
+        "root": "motion-ready",
+        "focus": {
+          "tag": "A",
+          "cls": "button button-large",
+          "text": "Get tickets"
+        },
+        "menu": {
+          "hidden": true,
+          "open": false,
+          "expanded": "false",
+          "opacity": "1"
+        },
+        "modal": {
+          "hidden": true,
+          "open": false,
+          "opacity": "1",
+          "statusHidden": true,
+          "fallbackHidden": true,
+          "frames": [
+            {
+              "title": "",
+              "srcHost": "www.eventbrite.com",
+              "path": "/checkout-external"
+            }
+          ]
+        },
+        "details": [
+          {
+            "open": true,
+            "height": 181.171875
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          }
+        ],
+        "track": "none",
+        "count": "03 / 03",
+        "animations": [
+          {
+            "duration": 250,
+            "currentTime": 167.29999999998313
+          },
+          {
+            "duration": 250,
+            "currentTime": 167.32899998658013
+          },
+          {
+            "duration": 250,
+            "currentTime": 167.29999999998313
+          },
+          {
+            "duration": 250,
+            "currentTime": 167.32899998658013
+          },
+          {
+            "duration": 250,
+            "currentTime": 167.29999999998313
+          },
+          {
+            "duration": 250,
+            "currentTime": 167.32899998658013
+          },
+          {
+            "duration": 250,
+            "currentTime": 167.29999999998313
+          },
+          {
+            "duration": 250,
+            "currentTime": 167.32899998658013
+          },
+          {
+            "duration": 250,
+            "currentTime": 167.29999999998313
+          },
+          {
+            "duration": 250,
+            "currentTime": 167.32899998658013
+          },
+          {
+            "duration": 250,
+            "currentTime": 167.29999999998313
+          },
+          {
+            "duration": 250,
+            "currentTime": 167.32899998658013
+          },
+          {
+            "duration": 900,
+            "currentTime": 250.79999999999814
+          },
+          {
+            "duration": 750,
+            "currentTime": 250.79999999999814
+          },
+          {
+            "duration": 950,
+            "currentTime": 250.79999999999814
+          },
+          {
+            "duration": 900,
+            "currentTime": 250.79999999999814
+          },
+          {
+            "duration": 750,
+            "currentTime": 250.79999999999814
+          },
+          {
+            "duration": 950,
+            "currentTime": 250.79999999999814
+          },
+          {
+            "duration": 1100,
+            "currentTime": 250.79999999999814
+          },
+          {
+            "duration": 900,
+            "currentTime": 250.79999999999814
+          },
+          {
+            "duration": 750,
+            "currentTime": 250.79999999999814
+          },
+          {
+            "duration": 950,
+            "currentTime": 250.79999999999814
+          },
+          {
+            "duration": 1100,
+            "currentTime": 234.1890000074045
+          },
+          {
+            "duration": 650,
+            "currentTime": 250.79999999999814
+          },
+          {
+            "duration": 300,
+            "currentTime": 250.79999999999814
+          },
+          {
+            "duration": 300,
+            "currentTime": 250.79999999999814
+          },
+          {
+            "duration": 300,
+            "currentTime": 250.79999999999814
+          },
+          {
+            "duration": 300,
+            "currentTime": 250.79999999999814
+          },
+          {
+            "duration": 300,
+            "currentTime": 250.79999999999814
+          },
+          {
+            "duration": 300,
+            "currentTime": 250.79999999999814
+          },
+          {
+            "duration": 1100,
+            "currentTime": 217.40599997917798
+          },
+          {
+            "duration": 900,
+            "currentTime": 217.40599997917798
+          },
+          {
+            "duration": 1100,
+            "currentTime": 217.40599997917798
+          },
+          {
+            "duration": 187.31161832320922,
+            "currentTime": 167.36799999998198
+          },
+          {
+            "duration": 187.31161832320922,
+            "currentTime": 167.36799999998198
+          },
+          {
+            "name": "hero-media-shift",
+            "duration": {},
+            "currentTime": {}
+          },
+          {
+            "name": "arrow-drift",
+            "duration": 2800,
+            "currentTime": 250.79999999999814
+          },
+          {
+            "name": "fog-drift",
+            "duration": 44000,
+            "currentTime": 5904.017999991169
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 60000,
+            "currentTime": 5904.017999991169
+          },
+          {
+            "name": "marquee",
+            "duration": 35000,
+            "currentTime": 122179.92900000297
+          },
+          {
+            "name": "fog-drift",
+            "duration": 44000,
+            "currentTime": 5904.017999991169
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 60000,
+            "currentTime": 5904.017999991169
+          },
+          {
+            "name": "spirit-sheen",
+            "duration": 2488,
+            "currentTime": 2007.007999983557
+          },
+          {
+            "name": "spirit-flare",
+            "duration": 2488,
+            "currentTime": 2007.007999983557
+          },
+          {
+            "name": "spirit-dip",
+            "duration": 2488,
+            "currentTime": 2007.007999983557
+          },
+          {
+            "name": "spirit-dip",
+            "duration": 2488,
+            "currentTime": 2007.007999983557
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3200,
+            "currentTime": 122196.49999999999
+          },
+          {
+            "name": "spirit-dip",
+            "duration": 2488,
+            "currentTime": 2007.007999983557
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3700,
+            "currentTime": 122196.49999999999
+          },
+          {
+            "name": "spirit-dip",
+            "duration": 2488,
+            "currentTime": 2007.007999983557
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 4300,
+            "currentTime": 122196.49999999999
+          }
+        ]
+      }
+    },
+    {
+      "action": "menu-open after additional 0ms",
+      "state": {
+        "timestamp": "2026-10-04T00:02:02.479Z",
+        "perf": 206495.10000002384,
+        "url": "https://www.hauntedbouldercity.com/#about",
+        "scrollY": 0,
+        "root": "motion-ready menu-open",
+        "focus": {
+          "tag": "A",
+          "cls": "",
+          "text": "01\nTHE TOUR\nONE HOUR ON FOOT, FULL OF STORIES"
+        },
+        "menu": {
+          "hidden": false,
+          "open": true,
+          "expanded": "true",
+          "opacity": "1"
+        },
+        "modal": {
+          "hidden": true,
+          "open": false,
+          "opacity": "1",
+          "statusHidden": true,
+          "fallbackHidden": true,
+          "frames": [
+            {
+              "title": "",
+              "srcHost": "www.eventbrite.com",
+              "path": "/checkout-external"
+            }
+          ]
+        },
+        "details": [
+          {
+            "open": true,
+            "height": 181.171875
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          }
+        ],
+        "track": "none",
+        "count": "03 / 03",
+        "animations": [
+          {
+            "duration": 250,
+            "currentTime": 0
+          },
+          {
+            "duration": 0,
+            "currentTime": 0
+          },
+          {
+            "duration": 300,
+            "currentTime": 0
+          },
+          {
+            "duration": 300,
+            "currentTime": 0
+          },
+          {
+            "duration": 450,
+            "currentTime": 0
+          },
+          {
+            "duration": 800,
+            "currentTime": 0
+          },
+          {
+            "duration": 1000,
+            "currentTime": 0
+          },
+          {
+            "duration": 800,
+            "currentTime": 0
+          },
+          {
+            "duration": 1000,
+            "currentTime": 0
+          },
+          {
+            "duration": 800,
+            "currentTime": 0
+          },
+          {
+            "duration": 1000,
+            "currentTime": 0
+          },
+          {
+            "duration": 600,
+            "currentTime": 0
+          },
+          {
+            "duration": 600,
+            "currentTime": 0
+          },
+          {
+            "duration": 700,
+            "currentTime": 0
+          },
+          {
+            "duration": 600,
+            "currentTime": 0
+          },
+          {
+            "duration": 600,
+            "currentTime": 0
+          },
+          {
+            "duration": 700,
+            "currentTime": 0
+          },
+          {
+            "duration": 600,
+            "currentTime": 0
+          },
+          {
+            "duration": 600,
+            "currentTime": 0
+          },
+          {
+            "duration": 700,
+            "currentTime": 0
+          },
+          {
+            "duration": 600,
+            "currentTime": 0
+          },
+          {
+            "duration": 600,
+            "currentTime": 0
+          },
+          {
+            "duration": 700,
+            "currentTime": 0
+          },
+          {
+            "duration": 600,
+            "currentTime": 0
+          },
+          {
+            "duration": 600,
+            "currentTime": 0
+          },
+          {
+            "duration": 700,
+            "currentTime": 0
+          },
+          {
+            "duration": 900,
+            "currentTime": 334.40000000001646
+          },
+          {
+            "duration": 750,
+            "currentTime": 334.40000000001646
+          },
+          {
+            "duration": 950,
+            "currentTime": 334.40000000001646
+          },
+          {
+            "duration": 900,
+            "currentTime": 334.40000000001646
+          },
+          {
+            "duration": 750,
+            "currentTime": 334.40000000001646
+          },
+          {
+            "duration": 950,
+            "currentTime": 334.40000000001646
+          },
+          {
+            "duration": 1100,
+            "currentTime": 334.40000000001646
+          },
+          {
+            "duration": 900,
+            "currentTime": 334.40000000001646
+          },
+          {
+            "duration": 750,
+            "currentTime": 334.40000000001646
+          },
+          {
+            "duration": 950,
+            "currentTime": 334.40000000001646
+          },
+          {
+            "duration": 1100,
+            "currentTime": 317.7890000074228
+          },
+          {
+            "duration": 650,
+            "currentTime": 334.40000000001646
+          },
+          {
+            "duration": 1100,
+            "currentTime": 301.0059999791963
+          },
+          {
+            "duration": 900,
+            "currentTime": 301.0059999791963
+          },
+          {
+            "duration": 1100,
+            "currentTime": 301.0059999791963
+          },
+          {
+            "name": "loader-drift-a",
+            "duration": 30000,
+            "currentTime": 0
+          },
+          {
+            "name": "loader-drift-b",
+            "duration": 38000,
+            "currentTime": 0
+          },
+          {
+            "name": "loader-drift-a",
+            "duration": 44000,
+            "currentTime": 0
+          },
+          {
+            "name": "hero-media-shift",
+            "duration": {},
+            "currentTime": {}
+          },
+          {
+            "name": "arrow-drift",
+            "duration": 2800,
+            "currentTime": 334.40000000001646
+          },
+          {
+            "name": "fog-drift",
+            "duration": 44000,
+            "currentTime": 5987.617999991187
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 60000,
+            "currentTime": 5987.617999991187
+          },
+          {
+            "name": "marquee",
+            "duration": 35000,
+            "currentTime": 122263.52900000299
+          },
+          {
+            "name": "fog-drift",
+            "duration": 44000,
+            "currentTime": 5987.617999991187
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 60000,
+            "currentTime": 5987.617999991187
+          },
+          {
+            "name": "spirit-sheen",
+            "duration": 2488,
+            "currentTime": 2090.6079999835756
+          },
+          {
+            "name": "spirit-flare",
+            "duration": 2488,
+            "currentTime": 2090.6079999835756
+          },
+          {
+            "name": "spirit-dip",
+            "duration": 2488,
+            "currentTime": 2090.6079999835756
+          },
+          {
+            "name": "spirit-dip",
+            "duration": 2488,
+            "currentTime": 2090.6079999835756
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3200,
+            "currentTime": 122280.1
+          },
+          {
+            "name": "spirit-dip",
+            "duration": 2488,
+            "currentTime": 2090.6079999835756
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3700,
+            "currentTime": 122280.1
+          },
+          {
+            "name": "spirit-dip",
+            "duration": 2488,
+            "currentTime": 2090.6079999835756
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 4300,
+            "currentTime": 122280.1
+          }
+        ]
+      }
+    },
+    {
+      "action": "menu-open after additional 100ms",
+      "state": {
+        "timestamp": "2026-10-04T00:02:02.584Z",
+        "perf": 206599.90000000596,
+        "url": "https://www.hauntedbouldercity.com/#about",
+        "scrollY": 0,
+        "root": "motion-ready menu-open",
+        "focus": {
+          "tag": "A",
+          "cls": "",
+          "text": "01\nTHE TOUR\nONE HOUR ON FOOT, FULL OF STORIES"
+        },
+        "menu": {
+          "hidden": false,
+          "open": true,
+          "expanded": "true",
+          "opacity": "1"
+        },
+        "modal": {
+          "hidden": true,
+          "open": false,
+          "opacity": "1",
+          "statusHidden": true,
+          "fallbackHidden": true,
+          "frames": [
+            {
+              "title": "",
+              "srcHost": "www.eventbrite.com",
+              "path": "/checkout-external"
+            }
+          ]
+        },
+        "details": [
+          {
+            "open": true,
+            "height": 181.171875
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          }
+        ],
+        "track": "none",
+        "count": "03 / 03",
+        "animations": [
+          {
+            "duration": 250,
+            "currentTime": 83.67999999990161
+          },
+          {
+            "duration": 0,
+            "currentTime": 83.67999999990161
+          },
+          {
+            "duration": 300,
+            "currentTime": 83.67999999990161
+          },
+          {
+            "duration": 300,
+            "currentTime": 83.67999999990161
+          },
+          {
+            "duration": 450,
+            "currentTime": 83.67999999990161
+          },
+          {
+            "duration": 800,
+            "currentTime": 83.67999999990161
+          },
+          {
+            "duration": 1000,
+            "currentTime": 83.67999999990161
+          },
+          {
+            "duration": 800,
+            "currentTime": 83.67999999990161
+          },
+          {
+            "duration": 1000,
+            "currentTime": 83.67999999990161
+          },
+          {
+            "duration": 800,
+            "currentTime": 83.67999999990161
+          },
+          {
+            "duration": 1000,
+            "currentTime": 83.67999999990161
+          },
+          {
+            "duration": 600,
+            "currentTime": 83.67999999990161
+          },
+          {
+            "duration": 600,
+            "currentTime": 83.67999999990161
+          },
+          {
+            "duration": 700,
+            "currentTime": 83.67999999990161
+          },
+          {
+            "duration": 600,
+            "currentTime": 83.67999999990161
+          },
+          {
+            "duration": 600,
+            "currentTime": 83.67999999990161
+          },
+          {
+            "duration": 700,
+            "currentTime": 83.67999999990161
+          },
+          {
+            "duration": 600,
+            "currentTime": 83.67999999990161
+          },
+          {
+            "duration": 600,
+            "currentTime": 83.67999999990161
+          },
+          {
+            "duration": 700,
+            "currentTime": 83.67999999990161
+          },
+          {
+            "duration": 600,
+            "currentTime": 83.67999999990161
+          },
+          {
+            "duration": 600,
+            "currentTime": 83.67999999990161
+          },
+          {
+            "duration": 700,
+            "currentTime": 83.67999999990161
+          },
+          {
+            "duration": 600,
+            "currentTime": 83.67999999990161
+          },
+          {
+            "duration": 600,
+            "currentTime": 83.67999999990161
+          },
+          {
+            "duration": 700,
+            "currentTime": 83.67999999990161
+          },
+          {
+            "duration": 900,
+            "currentTime": 434.80000000002406
+          },
+          {
+            "duration": 750,
+            "currentTime": 434.80000000002406
+          },
+          {
+            "duration": 950,
+            "currentTime": 434.80000000002406
+          },
+          {
+            "duration": 900,
+            "currentTime": 434.80000000002406
+          },
+          {
+            "duration": 750,
+            "currentTime": 434.80000000002406
+          },
+          {
+            "duration": 950,
+            "currentTime": 434.80000000002406
+          },
+          {
+            "duration": 1100,
+            "currentTime": 434.80000000002406
+          },
+          {
+            "duration": 900,
+            "currentTime": 434.80000000002406
+          },
+          {
+            "duration": 750,
+            "currentTime": 434.80000000002406
+          },
+          {
+            "duration": 950,
+            "currentTime": 434.80000000002406
+          },
+          {
+            "duration": 1100,
+            "currentTime": 418.1890000074304
+          },
+          {
+            "duration": 650,
+            "currentTime": 434.80000000002406
+          },
+          {
+            "duration": 1100,
+            "currentTime": 401.4059999792039
+          },
+          {
+            "duration": 900,
+            "currentTime": 401.4059999792039
+          },
+          {
+            "duration": 1100,
+            "currentTime": 401.4059999792039
+          },
+          {
+            "name": "loader-drift-a",
+            "duration": 30000,
+            "currentTime": 83.67999999990161
+          },
+          {
+            "name": "loader-drift-b",
+            "duration": 38000,
+            "currentTime": 83.67999999990161
+          },
+          {
+            "name": "loader-drift-a",
+            "duration": 44000,
+            "currentTime": 83.67999999990161
+          },
+          {
+            "name": "hero-media-shift",
+            "duration": {},
+            "currentTime": {}
+          },
+          {
+            "name": "arrow-drift",
+            "duration": 2800,
+            "currentTime": 434.80000000002406
+          },
+          {
+            "name": "fog-drift",
+            "duration": 44000,
+            "currentTime": 6088.017999991194
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 60000,
+            "currentTime": 6088.017999991194
+          },
+          {
+            "name": "marquee",
+            "duration": 35000,
+            "currentTime": 122363.929000003
+          },
+          {
+            "name": "fog-drift",
+            "duration": 44000,
+            "currentTime": 6088.017999991194
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 60000,
+            "currentTime": 6088.017999991194
+          },
+          {
+            "name": "spirit-sheen",
+            "duration": 2488,
+            "currentTime": 2191.007999983583
+          },
+          {
+            "name": "spirit-flare",
+            "duration": 2488,
+            "currentTime": 2191.007999983583
+          },
+          {
+            "name": "spirit-dip",
+            "duration": 2488,
+            "currentTime": 2191.007999983583
+          },
+          {
+            "name": "spirit-dip",
+            "duration": 2488,
+            "currentTime": 2191.007999983583
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3200,
+            "currentTime": 122380.50000000001
+          },
+          {
+            "name": "spirit-dip",
+            "duration": 2488,
+            "currentTime": 2191.007999983583
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3700,
+            "currentTime": 122380.50000000001
+          },
+          {
+            "name": "spirit-dip",
+            "duration": 2488,
+            "currentTime": 2191.007999983583
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 4300,
+            "currentTime": 122380.50000000001
+          }
+        ]
+      }
+    },
+    {
+      "action": "menu-open after additional 250ms",
+      "state": {
+        "timestamp": "2026-10-04T00:02:02.851Z",
+        "perf": 206866.30000001192,
+        "url": "https://www.hauntedbouldercity.com/#about",
+        "scrollY": 0,
+        "root": "motion-ready menu-open",
+        "focus": {
+          "tag": "A",
+          "cls": "",
+          "text": "01\nTHE TOUR\nONE HOUR ON FOOT, FULL OF STORIES"
+        },
+        "menu": {
+          "hidden": false,
+          "open": true,
+          "expanded": "true",
+          "opacity": "1"
+        },
+        "modal": {
+          "hidden": true,
+          "open": false,
+          "opacity": "1",
+          "statusHidden": true,
+          "fallbackHidden": true,
+          "frames": [
+            {
+              "title": "",
+              "srcHost": "www.eventbrite.com",
+              "path": "/checkout-external"
+            }
+          ]
+        },
+        "details": [
+          {
+            "open": true,
+            "height": 181.171875
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          }
+        ],
+        "track": "none",
+        "count": "03 / 03",
+        "animations": [
+          {
+            "duration": 450,
+            "currentTime": 351.279999999889
+          },
+          {
+            "duration": 800,
+            "currentTime": 351.279999999889
+          },
+          {
+            "duration": 1000,
+            "currentTime": 351.279999999889
+          },
+          {
+            "duration": 800,
+            "currentTime": 351.279999999889
+          },
+          {
+            "duration": 1000,
+            "currentTime": 351.279999999889
+          },
+          {
+            "duration": 800,
+            "currentTime": 351.279999999889
+          },
+          {
+            "duration": 1000,
+            "currentTime": 351.279999999889
+          },
+          {
+            "duration": 600,
+            "currentTime": 351.279999999889
+          },
+          {
+            "duration": 600,
+            "currentTime": 351.279999999889
+          },
+          {
+            "duration": 700,
+            "currentTime": 351.279999999889
+          },
+          {
+            "duration": 600,
+            "currentTime": 351.279999999889
+          },
+          {
+            "duration": 600,
+            "currentTime": 351.279999999889
+          },
+          {
+            "duration": 700,
+            "currentTime": 351.279999999889
+          },
+          {
+            "duration": 600,
+            "currentTime": 351.279999999889
+          },
+          {
+            "duration": 600,
+            "currentTime": 351.279999999889
+          },
+          {
+            "duration": 700,
+            "currentTime": 351.279999999889
+          },
+          {
+            "duration": 600,
+            "currentTime": 351.279999999889
+          },
+          {
+            "duration": 600,
+            "currentTime": 351.279999999889
+          },
+          {
+            "duration": 700,
+            "currentTime": 351.279999999889
+          },
+          {
+            "duration": 600,
+            "currentTime": 351.279999999889
+          },
+          {
+            "duration": 600,
+            "currentTime": 351.279999999889
+          },
+          {
+            "duration": 700,
+            "currentTime": 351.279999999889
+          },
+          {
+            "duration": 900,
+            "currentTime": 702.4000000000115
+          },
+          {
+            "duration": 750,
+            "currentTime": 702.4000000000115
+          },
+          {
+            "duration": 950,
+            "currentTime": 702.4000000000115
+          },
+          {
+            "duration": 900,
+            "currentTime": 702.4000000000115
+          },
+          {
+            "duration": 750,
+            "currentTime": 702.4000000000115
+          },
+          {
+            "duration": 950,
+            "currentTime": 702.4000000000115
+          },
+          {
+            "duration": 1100,
+            "currentTime": 702.4000000000115
+          },
+          {
+            "duration": 900,
+            "currentTime": 702.4000000000115
+          },
+          {
+            "duration": 750,
+            "currentTime": 702.4000000000115
+          },
+          {
+            "duration": 950,
+            "currentTime": 702.4000000000115
+          },
+          {
+            "duration": 1100,
+            "currentTime": 685.7890000074178
+          },
+          {
+            "duration": 1100,
+            "currentTime": 669.0059999791913
+          },
+          {
+            "duration": 900,
+            "currentTime": 669.0059999791913
+          },
+          {
+            "duration": 1100,
+            "currentTime": 669.0059999791913
+          },
+          {
+            "name": "loader-drift-a",
+            "duration": 30000,
+            "currentTime": 351.279999999889
+          },
+          {
+            "name": "loader-drift-b",
+            "duration": 38000,
+            "currentTime": 351.279999999889
+          },
+          {
+            "name": "loader-drift-a",
+            "duration": 44000,
+            "currentTime": 351.279999999889
+          },
+          {
+            "name": "hero-media-shift",
+            "duration": {},
+            "currentTime": {}
+          },
+          {
+            "name": "arrow-drift",
+            "duration": 2800,
+            "currentTime": 702.4000000000115
+          },
+          {
+            "name": "fog-drift",
+            "duration": 44000,
+            "currentTime": 6355.617999991182
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 60000,
+            "currentTime": 6355.617999991182
+          },
+          {
+            "name": "marquee",
+            "duration": 35000,
+            "currentTime": 122631.52900000298
+          },
+          {
+            "name": "fog-drift",
+            "duration": 44000,
+            "currentTime": 6355.617999991182
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 60000,
+            "currentTime": 6355.617999991182
+          },
+          {
+            "name": "spirit-sheen",
+            "duration": 2488,
+            "currentTime": 2458.60799998357
+          },
+          {
+            "name": "spirit-flare",
+            "duration": 2488,
+            "currentTime": 2458.60799998357
+          },
+          {
+            "name": "spirit-dip",
+            "duration": 2488,
+            "currentTime": 2458.60799998357
+          },
+          {
+            "name": "spirit-dip",
+            "duration": 2488,
+            "currentTime": 2458.60799998357
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3200,
+            "currentTime": 122648.1
+          },
+          {
+            "name": "spirit-dip",
+            "duration": 2488,
+            "currentTime": 2458.60799998357
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3700,
+            "currentTime": 122648.1
+          },
+          {
+            "name": "spirit-dip",
+            "duration": 2488,
+            "currentTime": 2458.60799998357
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 4300,
+            "currentTime": 122648.1
+          }
+        ]
+      }
+    },
+    {
+      "action": "menu-open after additional 450ms",
+      "state": {
+        "timestamp": "2026-10-04T00:02:03.319Z",
+        "perf": 207334.30000001192,
+        "url": "https://www.hauntedbouldercity.com/#about",
+        "scrollY": 0,
+        "root": "motion-ready menu-open",
+        "focus": {
+          "tag": "A",
+          "cls": "",
+          "text": "01\nTHE TOUR\nONE HOUR ON FOOT, FULL OF STORIES"
+        },
+        "menu": {
+          "hidden": false,
+          "open": true,
+          "expanded": "true",
+          "opacity": "1"
+        },
+        "modal": {
+          "hidden": true,
+          "open": false,
+          "opacity": "1",
+          "statusHidden": true,
+          "fallbackHidden": true,
+          "frames": [
+            {
+              "title": "",
+              "srcHost": "www.eventbrite.com",
+              "path": "/checkout-external"
+            }
+          ]
+        },
+        "details": [
+          {
+            "open": true,
+            "height": 181.171875
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          }
+        ],
+        "track": "none",
+        "count": "03 / 03",
+        "animations": [
+          {
+            "duration": 1000,
+            "currentTime": 819.6459999998922
+          },
+          {
+            "duration": 800,
+            "currentTime": 819.6459999998922
+          },
+          {
+            "duration": 1000,
+            "currentTime": 819.6459999998922
+          },
+          {
+            "duration": 800,
+            "currentTime": 819.6459999998922
+          },
+          {
+            "duration": 1000,
+            "currentTime": 819.6459999998922
+          },
+          {
+            "duration": 600,
+            "currentTime": 819.6459999998922
+          },
+          {
+            "duration": 600,
+            "currentTime": 819.6459999998922
+          },
+          {
+            "duration": 700,
+            "currentTime": 819.6459999998922
+          },
+          {
+            "duration": 600,
+            "currentTime": 819.6459999998922
+          },
+          {
+            "duration": 600,
+            "currentTime": 819.6459999998922
+          },
+          {
+            "duration": 700,
+            "currentTime": 819.6459999998922
+          },
+          {
+            "duration": 600,
+            "currentTime": 819.6459999998922
+          },
+          {
+            "duration": 600,
+            "currentTime": 819.6459999998922
+          },
+          {
+            "duration": 700,
+            "currentTime": 819.6459999998922
+          },
+          {
+            "duration": 600,
+            "currentTime": 819.6459999998922
+          },
+          {
+            "duration": 600,
+            "currentTime": 819.6459999998922
+          },
+          {
+            "duration": 700,
+            "currentTime": 819.6459999998922
+          },
+          {
+            "duration": 600,
+            "currentTime": 819.6459999998922
+          },
+          {
+            "duration": 600,
+            "currentTime": 819.6459999998922
+          },
+          {
+            "duration": 700,
+            "currentTime": 819.6459999998922
+          },
+          {
+            "name": "loader-drift-a",
+            "duration": 30000,
+            "currentTime": 819.6459999998922
+          },
+          {
+            "name": "loader-drift-b",
+            "duration": 38000,
+            "currentTime": 819.6459999998922
+          },
+          {
+            "name": "loader-drift-a",
+            "duration": 44000,
+            "currentTime": 819.6459999998922
+          },
+          {
+            "name": "hero-media-shift",
+            "duration": {},
+            "currentTime": {}
+          },
+          {
+            "name": "arrow-drift",
+            "duration": 2800,
+            "currentTime": 1170.7660000000146
+          },
+          {
+            "name": "fog-drift",
+            "duration": 44000,
+            "currentTime": 6823.983999991186
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 60000,
+            "currentTime": 6823.983999991186
+          },
+          {
+            "name": "marquee",
+            "duration": 35000,
+            "currentTime": 123099.89500000299
+          },
+          {
+            "name": "fog-drift",
+            "duration": 44000,
+            "currentTime": 6823.983999991186
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 60000,
+            "currentTime": 6823.983999991186
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3200,
+            "currentTime": 123116.466
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3700,
+            "currentTime": 123116.466
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 4300,
+            "currentTime": 123116.466
+          }
+        ]
+      }
+    },
+    {
+      "action": "menu Tab",
+      "state": {
+        "timestamp": "2026-10-04T00:02:03.415Z",
+        "perf": 207430.70000001788,
+        "url": "https://www.hauntedbouldercity.com/#about",
+        "scrollY": 0,
+        "root": "motion-ready menu-open",
+        "focus": {
+          "tag": "A",
+          "cls": "",
+          "text": "02\nTHE STRANGE STUFF\nGHOSTS, DARK HISTORY & UFOS"
+        },
+        "menu": {
+          "hidden": false,
+          "open": true,
+          "expanded": "true",
+          "opacity": "1"
+        },
+        "modal": {
+          "hidden": true,
+          "open": false,
+          "opacity": "1",
+          "statusHidden": true,
+          "fallbackHidden": true,
+          "frames": [
+            {
+              "title": "",
+              "srcHost": "www.eventbrite.com",
+              "path": "/checkout-external"
+            }
+          ]
+        },
+        "details": [
+          {
+            "open": true,
+            "height": 181.171875
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          }
+        ],
+        "track": "none",
+        "count": "03 / 03",
+        "animations": [
+          {
+            "duration": 1000,
+            "currentTime": 919.9799999998959
+          },
+          {
+            "duration": 1000,
+            "currentTime": 919.9799999998959
+          },
+          {
+            "duration": 1000,
+            "currentTime": 919.9799999998959
+          },
+          {
+            "duration": 700,
+            "currentTime": 919.9799999998959
+          },
+          {
+            "duration": 600,
+            "currentTime": 919.9799999998959
+          },
+          {
+            "duration": 600,
+            "currentTime": 919.9799999998959
+          },
+          {
+            "duration": 700,
+            "currentTime": 919.9799999998959
+          },
+          {
+            "duration": 600,
+            "currentTime": 919.9799999998959
+          },
+          {
+            "duration": 600,
+            "currentTime": 919.9799999998959
+          },
+          {
+            "duration": 700,
+            "currentTime": 919.9799999998959
+          },
+          {
+            "duration": 600,
+            "currentTime": 919.9799999998959
+          },
+          {
+            "duration": 600,
+            "currentTime": 919.9799999998959
+          },
+          {
+            "duration": 700,
+            "currentTime": 919.9799999998959
+          },
+          {
+            "duration": 600,
+            "currentTime": 919.9799999998959
+          },
+          {
+            "duration": 600,
+            "currentTime": 919.9799999998959
+          },
+          {
+            "duration": 700,
+            "currentTime": 919.9799999998959
+          },
+          {
+            "name": "loader-drift-a",
+            "duration": 30000,
+            "currentTime": 919.9799999998959
+          },
+          {
+            "name": "loader-drift-b",
+            "duration": 38000,
+            "currentTime": 919.9799999998959
+          },
+          {
+            "name": "loader-drift-a",
+            "duration": 44000,
+            "currentTime": 919.9799999998959
+          },
+          {
+            "name": "hero-media-shift",
+            "duration": {},
+            "currentTime": {}
+          },
+          {
+            "name": "arrow-drift",
+            "duration": 2800,
+            "currentTime": 1271.1000000000183
+          },
+          {
+            "name": "fog-drift",
+            "duration": 44000,
+            "currentTime": 6924.317999991189
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 60000,
+            "currentTime": 6924.317999991189
+          },
+          {
+            "name": "marquee",
+            "duration": 35000,
+            "currentTime": 123200.22900000299
+          },
+          {
+            "name": "fog-drift",
+            "duration": 44000,
+            "currentTime": 6924.317999991189
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 60000,
+            "currentTime": 6924.317999991189
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3200,
+            "currentTime": 123216.8
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3700,
+            "currentTime": 123216.8
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 4300,
+            "currentTime": 123216.8
+          }
+        ]
+      }
+    },
+    {
+      "action": "menu Shift+Tab",
+      "state": {
+        "timestamp": "2026-10-04T00:02:03.420Z",
+        "perf": 207436.10000002384,
+        "url": "https://www.hauntedbouldercity.com/#about",
+        "scrollY": 0,
+        "root": "motion-ready menu-open",
+        "focus": {
+          "tag": "A",
+          "cls": "",
+          "text": "01\nTHE TOUR\nONE HOUR ON FOOT, FULL OF STORIES"
+        },
+        "menu": {
+          "hidden": false,
+          "open": true,
+          "expanded": "true",
+          "opacity": "1"
+        },
+        "modal": {
+          "hidden": true,
+          "open": false,
+          "opacity": "1",
+          "statusHidden": true,
+          "fallbackHidden": true,
+          "frames": [
+            {
+              "title": "",
+              "srcHost": "www.eventbrite.com",
+              "path": "/checkout-external"
+            }
+          ]
+        },
+        "details": [
+          {
+            "open": true,
+            "height": 181.171875
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          }
+        ],
+        "track": "none",
+        "count": "03 / 03",
+        "animations": [
+          {
+            "duration": 1000,
+            "currentTime": 919.9799999998959
+          },
+          {
+            "duration": 1000,
+            "currentTime": 919.9799999998959
+          },
+          {
+            "duration": 1000,
+            "currentTime": 919.9799999998959
+          },
+          {
+            "duration": 700,
+            "currentTime": 919.9799999998959
+          },
+          {
+            "duration": 600,
+            "currentTime": 919.9799999998959
+          },
+          {
+            "duration": 600,
+            "currentTime": 919.9799999998959
+          },
+          {
+            "duration": 700,
+            "currentTime": 919.9799999998959
+          },
+          {
+            "duration": 600,
+            "currentTime": 919.9799999998959
+          },
+          {
+            "duration": 600,
+            "currentTime": 919.9799999998959
+          },
+          {
+            "duration": 700,
+            "currentTime": 919.9799999998959
+          },
+          {
+            "duration": 600,
+            "currentTime": 919.9799999998959
+          },
+          {
+            "duration": 600,
+            "currentTime": 919.9799999998959
+          },
+          {
+            "duration": 700,
+            "currentTime": 919.9799999998959
+          },
+          {
+            "duration": 600,
+            "currentTime": 919.9799999998959
+          },
+          {
+            "duration": 600,
+            "currentTime": 919.9799999998959
+          },
+          {
+            "duration": 700,
+            "currentTime": 919.9799999998959
+          },
+          {
+            "name": "loader-drift-a",
+            "duration": 30000,
+            "currentTime": 919.9799999998959
+          },
+          {
+            "name": "loader-drift-b",
+            "duration": 38000,
+            "currentTime": 919.9799999998959
+          },
+          {
+            "name": "loader-drift-a",
+            "duration": 44000,
+            "currentTime": 919.9799999998959
+          },
+          {
+            "name": "hero-media-shift",
+            "duration": {},
+            "currentTime": {}
+          },
+          {
+            "name": "arrow-drift",
+            "duration": 2800,
+            "currentTime": 1271.1000000000183
+          },
+          {
+            "name": "fog-drift",
+            "duration": 44000,
+            "currentTime": 6924.317999991189
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 60000,
+            "currentTime": 6924.317999991189
+          },
+          {
+            "name": "marquee",
+            "duration": 35000,
+            "currentTime": 123200.22900000299
+          },
+          {
+            "name": "fog-drift",
+            "duration": 44000,
+            "currentTime": 6924.317999991189
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 60000,
+            "currentTime": 6924.317999991189
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3200,
+            "currentTime": 123216.8
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3700,
+            "currentTime": 123216.8
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 4300,
+            "currentTime": 123216.8
+          }
+        ]
+      }
+    },
+    {
+      "action": "menu Escape",
+      "state": {
+        "timestamp": "2026-10-04T00:02:04.091Z",
+        "perf": 208106.30000001192,
+        "url": "https://www.hauntedbouldercity.com/#about",
+        "scrollY": 0,
+        "root": "motion-ready",
+        "focus": {
+          "tag": "BUTTON",
+          "cls": "menu-toggle",
+          "text": "MENU"
+        },
+        "menu": {
+          "hidden": true,
+          "open": false,
+          "expanded": "false",
+          "opacity": "1"
+        },
+        "modal": {
+          "hidden": true,
+          "open": false,
+          "opacity": "1",
+          "statusHidden": true,
+          "fallbackHidden": true,
+          "frames": [
+            {
+              "title": "",
+              "srcHost": "www.eventbrite.com",
+              "path": "/checkout-external"
+            }
+          ]
+        },
+        "details": [
+          {
+            "open": true,
+            "height": 181.171875
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          }
+        ],
+        "track": "none",
+        "count": "03 / 03",
+        "animations": [
+          {
+            "name": "hero-media-shift",
+            "duration": {},
+            "currentTime": {}
+          },
+          {
+            "name": "arrow-drift",
+            "duration": 2800,
+            "currentTime": 1940.166000000005
+          },
+          {
+            "name": "fog-drift",
+            "duration": 44000,
+            "currentTime": 7593.383999991175
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 60000,
+            "currentTime": 7593.383999991175
+          },
+          {
+            "name": "marquee",
+            "duration": 35000,
+            "currentTime": 123869.29500000298
+          },
+          {
+            "name": "fog-drift",
+            "duration": 44000,
+            "currentTime": 7593.383999991175
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 60000,
+            "currentTime": 7593.383999991175
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3200,
+            "currentTime": 123885.866
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3700,
+            "currentTime": 123885.866
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 4300,
+            "currentTime": 123885.866
+          }
+        ]
+      }
+    },
+    {
+      "action": "menu about navigation",
+      "state": {
+        "timestamp": "2026-10-04T00:02:07.311Z",
+        "perf": 211326.30000001192,
+        "url": "https://www.hauntedbouldercity.com/#about",
+        "scrollY": 810,
+        "root": "motion-ready",
+        "focus": {
+          "tag": "SECTION",
+          "cls": "intro section-pad",
+          "text": "01 / WELCOME TO THE WEIRD\nNICE LITTLE TOWN.\nSTRANGE LITTLE\nSECRETS.\n\nWalk through historic downtown Boulder City, where "
+        },
+        "menu": {
+          "hidden": true,
+          "open": false,
+          "expanded": "false",
+          "opacity": "1"
+        },
+        "modal": {
+          "hidden": true,
+          "open": false,
+          "opacity": "1",
+          "statusHidden": true,
+          "fallbackHidden": true,
+          "frames": [
+            {
+              "title": "",
+              "srcHost": "www.eventbrite.com",
+              "path": "/checkout-external"
+            }
+          ]
+        },
+        "details": [
+          {
+            "open": true,
+            "height": 181.171875
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          }
+        ],
+        "track": "none",
+        "count": "03 / 03",
+        "animations": [
+          {
+            "name": "arrow-drift",
+            "duration": 2800,
+            "currentTime": 5168.1000000000095
+          },
+          {
+            "name": "fog-drift",
+            "duration": 44000,
+            "currentTime": 10821.31799999118
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 60000,
+            "currentTime": 10821.31799999118
+          },
+          {
+            "name": "marquee",
+            "duration": 35000,
+            "currentTime": 127097.22900000299
+          },
+          {
+            "name": "fog-drift",
+            "duration": 44000,
+            "currentTime": 10821.31799999118
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 60000,
+            "currentTime": 10821.31799999118
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3200,
+            "currentTime": 127113.8
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3700,
+            "currentTime": 127113.8
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 4300,
+            "currentTime": 127113.8
+          }
+        ]
+      }
+    },
+    {
+      "action": "history back",
+      "state": {
+        "timestamp": "2026-10-04T00:02:07.623Z",
+        "perf": 211638.60000002384,
+        "url": "https://www.hauntedbouldercity.com/",
+        "scrollY": 63,
+        "root": "motion-ready",
+        "focus": {
+          "tag": "SECTION",
+          "cls": "intro section-pad",
+          "text": "01 / WELCOME TO THE WEIRD\nNICE LITTLE TOWN.\nSTRANGE LITTLE\nSECRETS.\n\nWalk through historic downtown Boulder City, where "
+        },
+        "menu": {
+          "hidden": true,
+          "open": false,
+          "expanded": "false",
+          "opacity": "1"
+        },
+        "modal": {
+          "hidden": true,
+          "open": false,
+          "opacity": "1",
+          "statusHidden": true,
+          "fallbackHidden": true,
+          "frames": [
+            {
+              "title": "",
+              "srcHost": "www.eventbrite.com",
+              "path": "/checkout-external"
+            }
+          ]
+        },
+        "details": [
+          {
+            "open": true,
+            "height": 181.171875
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          }
+        ],
+        "track": "none",
+        "count": "03 / 03",
+        "animations": [
+          {
+            "duration": 250,
+            "currentTime": 117.03599999569292
+          },
+          {
+            "duration": 250,
+            "currentTime": 117.03599999569292
+          },
+          {
+            "duration": 250,
+            "currentTime": 133.84399998145113
+          },
+          {
+            "duration": 250,
+            "currentTime": 133.84399998145113
+          },
+          {
+            "duration": 250,
+            "currentTime": 133.84399998145113
+          },
+          {
+            "duration": 250,
+            "currentTime": 133.84399998145113
+          },
+          {
+            "duration": 250,
+            "currentTime": 150.5129999856365
+          },
+          {
+            "duration": 250,
+            "currentTime": 150.5129999856365
+          },
+          {
+            "duration": 250,
+            "currentTime": 150.5129999856365
+          },
+          {
+            "duration": 250,
+            "currentTime": 150.5129999856365
+          },
+          {
+            "duration": 250,
+            "currentTime": 150.5129999856365
+          },
+          {
+            "duration": 250,
+            "currentTime": 150.5129999856365
+          },
+          {
+            "duration": 1100,
+            "currentTime": 133.84399998145113
+          },
+          {
+            "duration": 900,
+            "currentTime": 133.84399998145113
+          },
+          {
+            "duration": 1100,
+            "currentTime": 133.84399998145113
+          },
+          {
+            "name": "hero-media-shift",
+            "duration": {},
+            "currentTime": {}
+          },
+          {
+            "name": "arrow-drift",
+            "duration": 2800,
+            "currentTime": 5469.200000000001
+          },
+          {
+            "name": "fog-drift",
+            "duration": 44000,
+            "currentTime": 11122.417999991172
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 60000,
+            "currentTime": 11122.417999991172
+          },
+          {
+            "name": "marquee",
+            "duration": 35000,
+            "currentTime": 127398.32900000298
+          },
+          {
+            "name": "fog-drift",
+            "duration": 44000,
+            "currentTime": 11122.417999991172
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 60000,
+            "currentTime": 11122.417999991172
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3200,
+            "currentTime": 127414.9
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3700,
+            "currentTime": 127414.9
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 4300,
+            "currentTime": 127414.9
+          }
+        ]
+      }
+    },
+    {
+      "action": "history forward",
+      "state": {
+        "timestamp": "2026-10-04T00:02:07.936Z",
+        "perf": 211951.60000002384,
+        "url": "https://www.hauntedbouldercity.com/#about",
+        "scrollY": 0,
+        "root": "motion-ready",
+        "focus": {
+          "tag": "SECTION",
+          "cls": "intro section-pad",
+          "text": "01 / WELCOME TO THE WEIRD\nNICE LITTLE TOWN.\nSTRANGE LITTLE\nSECRETS.\n\nWalk through historic downtown Boulder City, where "
+        },
+        "menu": {
+          "hidden": true,
+          "open": false,
+          "expanded": "false",
+          "opacity": "1"
+        },
+        "modal": {
+          "hidden": true,
+          "open": false,
+          "opacity": "1",
+          "statusHidden": true,
+          "fallbackHidden": true,
+          "frames": [
+            {
+              "title": "",
+              "srcHost": "www.eventbrite.com",
+              "path": "/checkout-external"
+            }
+          ]
+        },
+        "details": [
+          {
+            "open": true,
+            "height": 181.171875
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          }
+        ],
+        "track": "none",
+        "count": "03 / 03",
+        "animations": [
+          {
+            "duration": 1100,
+            "currentTime": 451.5439999814532
+          },
+          {
+            "duration": 900,
+            "currentTime": 451.5439999814532
+          },
+          {
+            "duration": 1100,
+            "currentTime": 451.5439999814532
+          },
+          {
+            "name": "hero-media-shift",
+            "duration": {},
+            "currentTime": {}
+          },
+          {
+            "name": "arrow-drift",
+            "duration": 2800,
+            "currentTime": 5786.900000000003
+          },
+          {
+            "name": "fog-drift",
+            "duration": 44000,
+            "currentTime": 11440.117999991173
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 60000,
+            "currentTime": 11440.117999991173
+          },
+          {
+            "name": "marquee",
+            "duration": 35000,
+            "currentTime": 127716.02900000298
+          },
+          {
+            "name": "fog-drift",
+            "duration": 44000,
+            "currentTime": 11440.117999991173
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 60000,
+            "currentTime": 11440.117999991173
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3200,
+            "currentTime": 127732.59999999999
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3700,
+            "currentTime": 127732.59999999999
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 4300,
+            "currentTime": 127732.59999999999
+          }
+        ]
+      }
+    },
+    {
+      "action": "FAQ 1 open",
+      "state": {
+        "timestamp": "2026-10-04T00:02:08.674Z",
+        "perf": 212689.80000001192,
+        "url": "https://www.hauntedbouldercity.com/#about",
+        "scrollY": 7030,
+        "root": "motion-ready",
+        "focus": {
+          "tag": "SUMMARY",
+          "cls": "",
+          "text": "What’s the walk like?"
+        },
+        "menu": {
+          "hidden": true,
+          "open": false,
+          "expanded": "false",
+          "opacity": "1"
+        },
+        "modal": {
+          "hidden": true,
+          "open": false,
+          "opacity": "1",
+          "statusHidden": true,
+          "fallbackHidden": true,
+          "frames": [
+            {
+              "title": "",
+              "srcHost": "www.eventbrite.com",
+              "path": "/checkout-external"
+            }
+          ]
+        },
+        "details": [
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          }
+        ],
+        "track": "none",
+        "count": "03 / 03",
+        "animations": [
+          {
+            "duration": 1100,
+            "currentTime": 702.5340000000142
+          },
+          {
+            "duration": 900,
+            "currentTime": 702.5870000027226
+          },
+          {
+            "duration": 1100,
+            "currentTime": 702.5870000027226
+          },
+          {
+            "name": "arrow-drift",
+            "duration": 2800,
+            "currentTime": 6522.9000000000215
+          },
+          {
+            "name": "marquee",
+            "duration": 35000,
+            "currentTime": 128452.02900000299
+          },
+          {
+            "name": "fog-drift",
+            "duration": 44000,
+            "currentTime": 5720.073000004249
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 60000,
+            "currentTime": 5720.073000004249
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3200,
+            "currentTime": 128468.6
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3700,
+            "currentTime": 128468.6
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 4300,
+            "currentTime": 128468.6
+          }
+        ]
+      }
+    },
+    {
+      "action": "FAQ 2 open",
+      "state": {
+        "timestamp": "2026-10-04T00:02:09.537Z",
+        "perf": 213552.60000002384,
+        "url": "https://www.hauntedbouldercity.com/#about",
+        "scrollY": 7107,
+        "root": "motion-ready",
+        "focus": {
+          "tag": "SUMMARY",
+          "cls": "",
+          "text": "Can the whole family come?"
+        },
+        "menu": {
+          "hidden": true,
+          "open": false,
+          "expanded": "false",
+          "opacity": "1"
+        },
+        "modal": {
+          "hidden": true,
+          "open": false,
+          "opacity": "1",
+          "statusHidden": true,
+          "fallbackHidden": true,
+          "frames": [
+            {
+              "title": "",
+              "srcHost": "www.eventbrite.com",
+              "path": "/checkout-external"
+            }
+          ]
+        },
+        "details": [
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": true,
+            "height": 181.171875
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          }
+        ],
+        "track": "none",
+        "count": "03 / 03",
+        "animations": [
+          {
+            "name": "arrow-drift",
+            "duration": 2800,
+            "currentTime": 7392.600000000016
+          },
+          {
+            "name": "marquee",
+            "duration": 35000,
+            "currentTime": 129321.72900000299
+          },
+          {
+            "name": "fog-drift",
+            "duration": 44000,
+            "currentTime": 6589.773000004243
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 60000,
+            "currentTime": 6589.773000004243
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3200,
+            "currentTime": 129338.3
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3700,
+            "currentTime": 129338.3
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 4300,
+            "currentTime": 129338.3
+          }
+        ]
+      }
+    },
+    {
+      "action": "FAQ 3 open",
+      "state": {
+        "timestamp": "2026-10-04T00:02:10.291Z",
+        "perf": 214307.30000001192,
+        "url": "https://www.hauntedbouldercity.com/#about",
+        "scrollY": 7288,
+        "root": "motion-ready",
+        "focus": {
+          "tag": "SUMMARY",
+          "cls": "",
+          "text": "How scary is it?"
+        },
+        "menu": {
+          "hidden": true,
+          "open": false,
+          "expanded": "false",
+          "opacity": "1"
+        },
+        "modal": {
+          "hidden": true,
+          "open": false,
+          "opacity": "1",
+          "statusHidden": true,
+          "fallbackHidden": true,
+          "frames": [
+            {
+              "title": "",
+              "srcHost": "www.eventbrite.com",
+              "path": "/checkout-external"
+            }
+          ]
+        },
+        "details": [
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": true,
+            "height": 286.734375
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          }
+        ],
+        "track": "none",
+        "count": "03 / 03",
+        "animations": [
+          {
+            "name": "arrow-drift",
+            "duration": 2800,
+            "currentTime": 8145.30000000002
+          },
+          {
+            "name": "marquee",
+            "duration": 35000,
+            "currentTime": 130074.42900000299
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3200,
+            "currentTime": 130091.00000000001
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3700,
+            "currentTime": 130091.00000000001
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 4300,
+            "currentTime": 130091.00000000001
+          }
+        ]
+      }
+    },
+    {
+      "action": "FAQ 4 open",
+      "state": {
+        "timestamp": "2026-10-04T00:02:11.048Z",
+        "perf": 215063.5,
+        "url": "https://www.hauntedbouldercity.com/#about",
+        "scrollY": 7471,
+        "root": "motion-ready",
+        "focus": {
+          "tag": "SUMMARY",
+          "cls": "",
+          "text": "Can I bring my dog?"
+        },
+        "menu": {
+          "hidden": true,
+          "open": false,
+          "expanded": "false",
+          "opacity": "1"
+        },
+        "modal": {
+          "hidden": true,
+          "open": false,
+          "opacity": "1",
+          "statusHidden": true,
+          "fallbackHidden": true,
+          "frames": [
+            {
+              "title": "",
+              "srcHost": "www.eventbrite.com",
+              "path": "/checkout-external"
+            }
+          ]
+        },
+        "details": [
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": true,
+            "height": 207.5625
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          }
+        ],
+        "track": "none",
+        "count": "03 / 03",
+        "animations": [
+          {
+            "duration": 1100,
+            "currentTime": 719.1339999999968
+          },
+          {
+            "duration": 900,
+            "currentTime": 719.2069999830437
+          },
+          {
+            "duration": 1100,
+            "currentTime": 719.2069999830437
+          },
+          {
+            "name": "arrow-drift",
+            "duration": 2800,
+            "currentTime": 8897.900000000021
+          },
+          {
+            "name": "marquee",
+            "duration": 35000,
+            "currentTime": 130827.02900000299
+          },
+          {
+            "name": "fog-drift",
+            "duration": 44000,
+            "currentTime": 5285.375999984012
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 60000,
+            "currentTime": 5285.375999984012
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3200,
+            "currentTime": 130843.6
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3700,
+            "currentTime": 130843.6
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 4300,
+            "currentTime": 130843.6
+          }
+        ]
+      }
+    },
+    {
+      "action": "FAQ 5 open",
+      "state": {
+        "timestamp": "2026-10-04T00:02:11.786Z",
+        "perf": 215801.70000001788,
+        "url": "https://www.hauntedbouldercity.com/#about",
+        "scrollY": 7468,
+        "root": "motion-ready",
+        "focus": {
+          "tag": "SUMMARY",
+          "cls": "",
+          "text": "Can I drink a beer on the tour?"
+        },
+        "menu": {
+          "hidden": true,
+          "open": false,
+          "expanded": "false",
+          "opacity": "1"
+        },
+        "modal": {
+          "hidden": true,
+          "open": false,
+          "opacity": "1",
+          "statusHidden": true,
+          "fallbackHidden": true,
+          "frames": [
+            {
+              "title": "",
+              "srcHost": "www.eventbrite.com",
+              "path": "/checkout-external"
+            }
+          ]
+        },
+        "details": [
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": true,
+            "height": 154.78125
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          }
+        ],
+        "track": "none",
+        "count": "03 / 03",
+        "animations": [
+          {
+            "name": "arrow-drift",
+            "duration": 2800,
+            "currentTime": 9633.800000000008
+          },
+          {
+            "name": "marquee",
+            "duration": 35000,
+            "currentTime": 131562.92900000297
+          },
+          {
+            "name": "fog-drift",
+            "duration": 44000,
+            "currentTime": 6021.275999983999
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 60000,
+            "currentTime": 6021.275999983999
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3200,
+            "currentTime": 131579.5
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3700,
+            "currentTime": 131579.5
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 4300,
+            "currentTime": 131579.5
+          }
+        ]
+      }
+    },
+    {
+      "action": "FAQ 6 open",
+      "state": {
+        "timestamp": "2026-10-04T00:02:12.531Z",
+        "perf": 216546.80000001192,
+        "url": "https://www.hauntedbouldercity.com/#about",
+        "scrollY": 7493,
+        "root": "motion-ready",
+        "focus": {
+          "tag": "SUMMARY",
+          "cls": "",
+          "text": "Are wheelchairs and strollers welcome?"
+        },
+        "menu": {
+          "hidden": true,
+          "open": false,
+          "expanded": "false",
+          "opacity": "1"
+        },
+        "modal": {
+          "hidden": true,
+          "open": false,
+          "opacity": "1",
+          "statusHidden": true,
+          "fallbackHidden": true,
+          "frames": [
+            {
+              "title": "",
+              "srcHost": "www.eventbrite.com",
+              "path": "/checkout-external"
+            }
+          ]
+        },
+        "details": [
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": true,
+            "height": 233.953125
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          }
+        ],
+        "track": "none",
+        "count": "03 / 03",
+        "animations": [
+          {
+            "name": "arrow-drift",
+            "duration": 2800,
+            "currentTime": 10386.400000000009
+          },
+          {
+            "name": "marquee",
+            "duration": 35000,
+            "currentTime": 132315.52900000298
+          },
+          {
+            "name": "fog-drift",
+            "duration": 44000,
+            "currentTime": 6773.875999984
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 60000,
+            "currentTime": 6773.875999984
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3200,
+            "currentTime": 132332.1
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3700,
+            "currentTime": 132332.1
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 4300,
+            "currentTime": 132332.1
+          }
+        ]
+      }
+    },
+    {
+      "action": "FAQ 7 open",
+      "state": {
+        "timestamp": "2026-10-04T00:02:13.283Z",
+        "perf": 217298.5,
+        "url": "https://www.hauntedbouldercity.com/#about",
+        "scrollY": 7649,
+        "root": "motion-ready",
+        "focus": {
+          "tag": "SUMMARY",
+          "cls": "",
+          "text": "When should I arrive?"
+        },
+        "menu": {
+          "hidden": true,
+          "open": false,
+          "expanded": "false",
+          "opacity": "1"
+        },
+        "modal": {
+          "hidden": true,
+          "open": false,
+          "opacity": "1",
+          "statusHidden": true,
+          "fallbackHidden": true,
+          "frames": [
+            {
+              "title": "",
+              "srcHost": "www.eventbrite.com",
+              "path": "/checkout-external"
+            }
+          ]
+        },
+        "details": [
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": true,
+            "height": 272.34375
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          }
+        ],
+        "track": "none",
+        "count": "03 / 03",
+        "animations": [
+          {
+            "name": "arrow-drift",
+            "duration": 2800,
+            "currentTime": 11139.166000000017
+          },
+          {
+            "name": "marquee",
+            "duration": 35000,
+            "currentTime": 133068.29500000298
+          },
+          {
+            "name": "fog-drift",
+            "duration": 44000,
+            "currentTime": 7526.641999984008
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 60000,
+            "currentTime": 7526.641999984008
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3200,
+            "currentTime": 133084.866
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3700,
+            "currentTime": 133084.866
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 4300,
+            "currentTime": 133084.866
+          }
+        ]
+      }
+    },
+    {
+      "action": "FAQ 8 open",
+      "state": {
+        "timestamp": "2026-10-04T00:02:14.029Z",
+        "perf": 218044.80000001192,
+        "url": "https://www.hauntedbouldercity.com/#about",
+        "scrollY": 7764,
+        "root": "motion-ready",
+        "focus": {
+          "tag": "SUMMARY",
+          "cls": "",
+          "text": "Can I take photos?"
+        },
+        "menu": {
+          "hidden": true,
+          "open": false,
+          "expanded": "false",
+          "opacity": "1"
+        },
+        "modal": {
+          "hidden": true,
+          "open": false,
+          "opacity": "1",
+          "statusHidden": true,
+          "fallbackHidden": true,
+          "frames": [
+            {
+              "title": "",
+              "srcHost": "www.eventbrite.com",
+              "path": "/checkout-external"
+            }
+          ]
+        },
+        "details": [
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": true,
+            "height": 154.78125
+          },
+          {
+            "open": false,
+            "height": 77
+          }
+        ],
+        "track": "none",
+        "count": "03 / 03",
+        "animations": [
+          {
+            "duration": 1100,
+            "currentTime": 652.2649999889438
+          },
+          {
+            "duration": 900,
+            "currentTime": 652.2649999889438
+          },
+          {
+            "duration": 1100,
+            "currentTime": 652.2649999889438
+          },
+          {
+            "name": "arrow-drift",
+            "duration": 2800,
+            "currentTime": 11875
+          },
+          {
+            "name": "marquee",
+            "duration": 35000,
+            "currentTime": 133804.12900000298
+          },
+          {
+            "name": "fog-drift",
+            "duration": 44000,
+            "currentTime": 8262.475999983992
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 60000,
+            "currentTime": 8262.475999983992
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3200,
+            "currentTime": 133820.69999999998
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3700,
+            "currentTime": 133820.69999999998
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 4300,
+            "currentTime": 133820.69999999998
+          }
+        ]
+      }
+    },
+    {
+      "action": "FAQ 9 open",
+      "state": {
+        "timestamp": "2026-10-04T00:02:14.794Z",
+        "perf": 218809.5,
+        "url": "https://www.hauntedbouldercity.com/#about",
+        "scrollY": 7724,
+        "root": "motion-ready",
+        "focus": {
+          "tag": "SUMMARY",
+          "cls": "",
+          "text": "How do I get tickets?"
+        },
+        "menu": {
+          "hidden": true,
+          "open": false,
+          "expanded": "false",
+          "opacity": "1"
+        },
+        "modal": {
+          "hidden": true,
+          "open": false,
+          "opacity": "1",
+          "statusHidden": true,
+          "fallbackHidden": true,
+          "frames": [
+            {
+              "title": "",
+              "srcHost": "www.eventbrite.com",
+              "path": "/checkout-external"
+            }
+          ]
+        },
+        "details": [
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": true,
+            "height": 154.78125
+          }
+        ],
+        "track": "none",
+        "count": "03 / 03",
+        "animations": [
+          {
+            "name": "arrow-drift",
+            "duration": 2800,
+            "currentTime": 12644.40000000002
+          },
+          {
+            "name": "marquee",
+            "duration": 35000,
+            "currentTime": 134573.52900000298
+          },
+          {
+            "name": "fog-drift",
+            "duration": 44000,
+            "currentTime": 9031.87599998401
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 60000,
+            "currentTime": 9031.87599998401
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3200,
+            "currentTime": 134590.1
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3700,
+            "currentTime": 134590.1
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 4300,
+            "currentTime": 134590.1
+          }
+        ]
+      }
+    },
+    {
+      "action": "FAQ 1 close; remaining answers open",
+      "state": {
+        "timestamp": "2026-10-04T00:02:15.373Z",
+        "perf": 219388.90000000596,
+        "url": "https://www.hauntedbouldercity.com/#about",
+        "scrollY": 7030,
+        "root": "motion-ready",
+        "focus": {
+          "tag": "SUMMARY",
+          "cls": "",
+          "text": "What’s the walk like?"
+        },
+        "menu": {
+          "hidden": true,
+          "open": false,
+          "expanded": "false",
+          "opacity": "1"
+        },
+        "modal": {
+          "hidden": true,
+          "open": false,
+          "opacity": "1",
+          "statusHidden": true,
+          "fallbackHidden": true,
+          "frames": [
+            {
+              "title": "",
+              "srcHost": "www.eventbrite.com",
+              "path": "/checkout-external"
+            }
+          ]
+        },
+        "details": [
+          {
+            "open": true,
+            "height": 179.96875
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          }
+        ],
+        "track": "none",
+        "count": "03 / 03",
+        "animations": [
+          {
+            "duration": 1100,
+            "currentTime": 468.2999999999993
+          },
+          {
+            "duration": 900,
+            "currentTime": 468.32999997977254
+          },
+          {
+            "duration": 1100,
+            "currentTime": 468.32999997977254
+          },
+          {
+            "duration": 650,
+            "currentTime": 451.54200000078504
+          },
+          {
+            "duration": 650,
+            "currentTime": 451.54200000078504
+          },
+          {
+            "duration": 1100,
+            "currentTime": 468.2999999999993
+          },
+          {
+            "duration": 900,
+            "currentTime": 468.32999997977254
+          },
+          {
+            "duration": 1100,
+            "currentTime": 468.32999997977254
+          },
+          {
+            "name": "arrow-drift",
+            "duration": 2800,
+            "currentTime": 13229.800000000012
+          },
+          {
+            "name": "marquee",
+            "duration": 35000,
+            "currentTime": 135158.92900000297
+          },
+          {
+            "name": "fog-drift",
+            "duration": 44000,
+            "currentTime": 7091.602999984019
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 60000,
+            "currentTime": 7091.602999984019
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3200,
+            "currentTime": 135175.5
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3700,
+            "currentTime": 135175.5
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 4300,
+            "currentTime": 135175.5
+          },
+          {
+            "duration": 620,
+            "currentTime": 451.54200000078504
+          },
+          {
+            "duration": 550,
+            "currentTime": 451.54200000078504
+          }
+        ]
+      }
+    },
+    {
+      "action": "ticket dialog immediate",
+      "state": {
+        "timestamp": "2026-10-04T00:02:15.437Z",
+        "perf": 219453.10000002384,
+        "url": "https://www.hauntedbouldercity.com/#about",
+        "scrollY": 9226,
+        "root": "motion-ready modal-open",
+        "focus": {
+          "tag": "BUTTON",
+          "cls": "ticket-modal-close",
+          "text": ""
+        },
+        "menu": {
+          "hidden": true,
+          "open": false,
+          "expanded": "false",
+          "opacity": "1"
+        },
+        "modal": {
+          "hidden": false,
+          "open": true,
+          "opacity": "1",
+          "statusHidden": true,
+          "fallbackHidden": true,
+          "frames": [
+            {
+              "title": "",
+              "srcHost": "www.eventbrite.com",
+              "path": "/checkout-external"
+            }
+          ]
+        },
+        "details": [
+          {
+            "open": false,
+            "height": 180.796875
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          }
+        ],
+        "track": "none",
+        "count": "03 / 03",
+        "animations": [
+          {
+            "duration": 810.5105498453814,
+            "currentTime": 33.366000000000895
+          },
+          {
+            "duration": 754.5837146571652,
+            "currentTime": 50.166000000018585
+          },
+          {
+            "duration": 991.7969225067624,
+            "currentTime": 50.166000000018585
+          },
+          {
+            "duration": 650,
+            "currentTime": 518.4080000007896
+          },
+          {
+            "duration": 650,
+            "currentTime": 518.4080000007896
+          },
+          {
+            "duration": 1100,
+            "currentTime": 535.1660000000038
+          },
+          {
+            "duration": 900,
+            "currentTime": 535.1959999797771
+          },
+          {
+            "duration": 1100,
+            "currentTime": 535.1959999797771
+          },
+          {
+            "duration": 1100,
+            "currentTime": 33.366000000000895
+          },
+          {
+            "duration": 900,
+            "currentTime": 33.39900000443663
+          },
+          {
+            "duration": 1100,
+            "currentTime": 33.39900000443663
+          },
+          {
+            "duration": 400,
+            "currentTime": 0
+          },
+          {
+            "duration": 800,
+            "currentTime": 0
+          },
+          {
+            "duration": 1000,
+            "currentTime": 0
+          },
+          {
+            "duration": 800,
+            "currentTime": 0
+          },
+          {
+            "duration": 1000,
+            "currentTime": 0
+          },
+          {
+            "duration": 550,
+            "currentTime": 0
+          },
+          {
+            "duration": 550,
+            "currentTime": 0
+          },
+          {
+            "duration": 650,
+            "currentTime": 0
+          },
+          {
+            "name": "arrow-drift",
+            "duration": 2800,
+            "currentTime": 13296.666000000016
+          },
+          {
+            "name": "marquee",
+            "duration": 35000,
+            "currentTime": 135225.79500000298
+          },
+          {
+            "name": "spirit-sheen",
+            "duration": 3155,
+            "currentTime": 0
+          },
+          {
+            "name": "spirit-flare",
+            "duration": 3155,
+            "currentTime": 0
+          },
+          {
+            "name": "spirit-dip",
+            "duration": 3155,
+            "currentTime": 0
+          },
+          {
+            "name": "fog-drift",
+            "duration": 44000,
+            "currentTime": 13112.850000008733
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 60000,
+            "currentTime": 13112.850000008733
+          },
+          {
+            "name": "fog-drift",
+            "duration": 44000,
+            "currentTime": 13196.35000000875
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 60000,
+            "currentTime": 13196.35000000875
+          },
+          {
+            "name": "spirit-dip",
+            "duration": 3155,
+            "currentTime": 0
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3200,
+            "currentTime": 135242.366
+          },
+          {
+            "name": "spirit-dip",
+            "duration": 3155,
+            "currentTime": 0
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3700,
+            "currentTime": 135242.366
+          },
+          {
+            "name": "spirit-dip",
+            "duration": 3155,
+            "currentTime": 0
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 4300,
+            "currentTime": 135242.366
+          },
+          {
+            "name": "loader-drift-a",
+            "duration": 34000,
+            "currentTime": 0
+          },
+          {
+            "name": "loader-drift-b",
+            "duration": 42000,
+            "currentTime": 0
+          },
+          {
+            "duration": 620,
+            "currentTime": 518.4080000007896
+          },
+          {
+            "duration": 550,
+            "currentTime": 518.4080000007896
+          }
+        ]
+      }
+    },
+    {
+      "action": "ticket dialog after 11 seconds",
+      "state": {
+        "timestamp": "2026-10-04T00:02:26.597Z",
+        "perf": 230612.90000000596,
+        "url": "https://www.hauntedbouldercity.com/#about",
+        "scrollY": 9226,
+        "root": "motion-ready modal-open",
+        "focus": {
+          "tag": "BUTTON",
+          "cls": "ticket-modal-close",
+          "text": ""
+        },
+        "menu": {
+          "hidden": true,
+          "open": false,
+          "expanded": "false",
+          "opacity": "1"
+        },
+        "modal": {
+          "hidden": false,
+          "open": true,
+          "opacity": "1",
+          "statusHidden": true,
+          "fallbackHidden": true,
+          "frames": [
+            {
+              "title": "",
+              "srcHost": "www.eventbrite.com",
+              "path": "/checkout-external"
+            }
+          ]
+        },
+        "details": [
+          {
+            "open": true,
+            "height": 181.171875
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          }
+        ],
+        "track": "none",
+        "count": "03 / 03",
+        "animations": [
+          {
+            "name": "arrow-drift",
+            "duration": 2800,
+            "currentTime": 24452.600000000017
+          },
+          {
+            "name": "marquee",
+            "duration": 35000,
+            "currentTime": 146381.729000003
+          },
+          {
+            "name": "fog-drift",
+            "duration": 44000,
+            "currentTime": 24268.784000008738
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 60000,
+            "currentTime": 24268.784000008738
+          },
+          {
+            "name": "fog-drift",
+            "duration": 44000,
+            "currentTime": 24352.284000008753
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 60000,
+            "currentTime": 24352.284000008753
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3200,
+            "currentTime": 146398.30000000002
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3700,
+            "currentTime": 146398.30000000002
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 4300,
+            "currentTime": 146398.30000000002
+          },
+          {
+            "name": "loader-drift-a",
+            "duration": 34000,
+            "currentTime": 11155.882999987256
+          },
+          {
+            "name": "loader-drift-b",
+            "duration": 42000,
+            "currentTime": 11155.882999987256
+          }
+        ]
+      }
+    },
+    {
+      "action": "ticket Tab",
+      "state": {
+        "timestamp": "2026-10-04T00:02:26.693Z",
+        "perf": 230708.20000001788,
+        "url": "https://www.hauntedbouldercity.com/#about",
+        "scrollY": 9226,
+        "root": "motion-ready modal-open",
+        "focus": {
+          "tag": "BODY",
+          "cls": "",
+          "text": "Skip to content\nGet tickets\nMENU\nHAUNTED\nBOULDER CITY\nEXPERIENCE BY JOSHUA P. WARREN\n\nA one-hour guided walking tour thr"
+        },
+        "menu": {
+          "hidden": true,
+          "open": false,
+          "expanded": "false",
+          "opacity": "1"
+        },
+        "modal": {
+          "hidden": false,
+          "open": true,
+          "opacity": "1",
+          "statusHidden": true,
+          "fallbackHidden": true,
+          "frames": [
+            {
+              "title": "",
+              "srcHost": "www.eventbrite.com",
+              "path": "/checkout-external"
+            }
+          ]
+        },
+        "details": [
+          {
+            "open": true,
+            "height": 181.171875
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          }
+        ],
+        "track": "none",
+        "count": "03 / 03",
+        "animations": [
+          {
+            "name": "arrow-drift",
+            "duration": 2800,
+            "currentTime": 24536.200000000008
+          },
+          {
+            "name": "marquee",
+            "duration": 35000,
+            "currentTime": 146465.329000003
+          },
+          {
+            "name": "fog-drift",
+            "duration": 44000,
+            "currentTime": 24352.384000008726
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 60000,
+            "currentTime": 24352.384000008726
+          },
+          {
+            "name": "fog-drift",
+            "duration": 44000,
+            "currentTime": 24435.88400000874
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 60000,
+            "currentTime": 24435.88400000874
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3200,
+            "currentTime": 146481.9
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3700,
+            "currentTime": 146481.9
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 4300,
+            "currentTime": 146481.9
+          },
+          {
+            "name": "loader-drift-a",
+            "duration": 34000,
+            "currentTime": 11239.482999987245
+          },
+          {
+            "name": "loader-drift-b",
+            "duration": 42000,
+            "currentTime": 11239.482999987245
+          }
+        ]
+      }
+    },
+    {
+      "action": "ticket Escape focus return",
+      "state": {
+        "timestamp": "2026-10-04T00:02:27.264Z",
+        "perf": 231279.90000000596,
+        "url": "https://www.hauntedbouldercity.com/#about",
+        "scrollY": 9226,
+        "root": "motion-ready",
+        "focus": {
+          "tag": "A",
+          "cls": "button button-large",
+          "text": "Get tickets"
+        },
+        "menu": {
+          "hidden": true,
+          "open": false,
+          "expanded": "false",
+          "opacity": "1"
+        },
+        "modal": {
+          "hidden": true,
+          "open": false,
+          "opacity": "1",
+          "statusHidden": true,
+          "fallbackHidden": true,
+          "frames": [
+            {
+              "title": "",
+              "srcHost": "www.eventbrite.com",
+              "path": "/checkout-external"
+            }
+          ]
+        },
+        "details": [
+          {
+            "open": true,
+            "height": 181.171875
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          }
+        ],
+        "track": "none",
+        "count": "03 / 03",
+        "animations": [
+          {
+            "name": "arrow-drift",
+            "duration": 2800,
+            "currentTime": 25121.600000000002
+          },
+          {
+            "name": "marquee",
+            "duration": 35000,
+            "currentTime": 147050.72900000296
+          },
+          {
+            "name": "spirit-sheen",
+            "duration": 2520,
+            "currentTime": 551.8699999890657
+          },
+          {
+            "name": "spirit-flare",
+            "duration": 2520,
+            "currentTime": 551.8699999890657
+          },
+          {
+            "name": "spirit-dip",
+            "duration": 2520,
+            "currentTime": 551.8699999890657
+          },
+          {
+            "name": "fog-drift",
+            "duration": 44000,
+            "currentTime": 24937.78400000872
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 60000,
+            "currentTime": 24937.78400000872
+          },
+          {
+            "name": "fog-drift",
+            "duration": 44000,
+            "currentTime": 25021.284000008734
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 60000,
+            "currentTime": 25021.284000008734
+          },
+          {
+            "name": "spirit-dip",
+            "duration": 2520,
+            "currentTime": 551.8699999890657
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3200,
+            "currentTime": 147067.3
+          },
+          {
+            "name": "spirit-dip",
+            "duration": 2520,
+            "currentTime": 551.8699999890657
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3700,
+            "currentTime": 147067.3
+          },
+          {
+            "name": "spirit-dip",
+            "duration": 2520,
+            "currentTime": 551.8699999890657
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 4300,
+            "currentTime": 147067.3
+          }
+        ]
+      }
+    },
+    {
+      "action": "ticket reopen",
+      "state": {
+        "timestamp": "2026-10-04T00:02:27.874Z",
+        "perf": 231889.90000000596,
+        "url": "https://www.hauntedbouldercity.com/#about",
+        "scrollY": 9226,
+        "root": "motion-ready modal-open",
+        "focus": {
+          "tag": "BUTTON",
+          "cls": "ticket-modal-close",
+          "text": ""
+        },
+        "menu": {
+          "hidden": true,
+          "open": false,
+          "expanded": "false",
+          "opacity": "1"
+        },
+        "modal": {
+          "hidden": false,
+          "open": true,
+          "opacity": "1",
+          "statusHidden": true,
+          "fallbackHidden": true,
+          "frames": [
+            {
+              "title": "",
+              "srcHost": "www.eventbrite.com",
+              "path": "/checkout-external"
+            }
+          ]
+        },
+        "details": [
+          {
+            "open": true,
+            "height": 181.171875
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          }
+        ],
+        "track": "none",
+        "count": "03 / 03",
+        "animations": [
+          {
+            "duration": 249.44387647156262,
+            "currentTime": 150.50000000002228
+          },
+          {
+            "duration": 800,
+            "currentTime": 551.9869999838534
+          },
+          {
+            "duration": 1000,
+            "currentTime": 551.9869999838534
+          },
+          {
+            "duration": 800,
+            "currentTime": 551.9869999838534
+          },
+          {
+            "duration": 1000,
+            "currentTime": 551.9869999838534
+          },
+          {
+            "duration": 550,
+            "currentTime": 551.9869999838534
+          },
+          {
+            "duration": 550,
+            "currentTime": 551.9869999838534
+          },
+          {
+            "duration": 650,
+            "currentTime": 551.9869999838534
+          },
+          {
+            "duration": 650,
+            "currentTime": 551.9869999838534
+          },
+          {
+            "name": "arrow-drift",
+            "duration": 2800,
+            "currentTime": 25723.80000000001
+          },
+          {
+            "name": "marquee",
+            "duration": 35000,
+            "currentTime": 147652.92900000297
+          },
+          {
+            "name": "spirit-sheen",
+            "duration": 2520,
+            "currentTime": 1154.0699999890762
+          },
+          {
+            "name": "spirit-flare",
+            "duration": 2520,
+            "currentTime": 1154.0699999890762
+          },
+          {
+            "name": "spirit-dip",
+            "duration": 2520,
+            "currentTime": 1154.0699999890762
+          },
+          {
+            "name": "fog-drift",
+            "duration": 44000,
+            "currentTime": 25539.984000008728
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 60000,
+            "currentTime": 25539.984000008728
+          },
+          {
+            "name": "fog-drift",
+            "duration": 44000,
+            "currentTime": 25623.484000008746
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 60000,
+            "currentTime": 25623.484000008746
+          },
+          {
+            "name": "spirit-dip",
+            "duration": 2520,
+            "currentTime": 1154.0699999890762
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3200,
+            "currentTime": 147669.5
+          },
+          {
+            "name": "spirit-dip",
+            "duration": 2520,
+            "currentTime": 1154.0699999890762
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3700,
+            "currentTime": 147669.5
+          },
+          {
+            "name": "spirit-dip",
+            "duration": 2520,
+            "currentTime": 1154.0699999890762
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 4300,
+            "currentTime": 147669.5
+          },
+          {
+            "name": "loader-drift-a",
+            "duration": 34000,
+            "currentTime": 551.9869999838534
+          },
+          {
+            "name": "loader-drift-b",
+            "duration": 42000,
+            "currentTime": 551.9869999838534
+          }
+        ]
+      }
+    },
+    {
+      "action": "ticket close button",
+      "state": {
+        "timestamp": "2026-10-04T00:02:28.464Z",
+        "perf": 232479.40000000596,
+        "url": "https://www.hauntedbouldercity.com/#about",
+        "scrollY": 9226,
+        "root": "motion-ready",
+        "focus": {
+          "tag": "A",
+          "cls": "button button-large",
+          "text": "Get tickets"
+        },
+        "menu": {
+          "hidden": true,
+          "open": false,
+          "expanded": "false",
+          "opacity": "1"
+        },
+        "modal": {
+          "hidden": true,
+          "open": false,
+          "opacity": "1",
+          "statusHidden": true,
+          "fallbackHidden": true,
+          "frames": [
+            {
+              "title": "",
+              "srcHost": "www.eventbrite.com",
+              "path": "/checkout-external"
+            }
+          ]
+        },
+        "details": [
+          {
+            "open": true,
+            "height": 181.171875
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          }
+        ],
+        "track": "none",
+        "count": "03 / 03",
+        "animations": [
+          {
+            "name": "arrow-drift",
+            "duration": 2800,
+            "currentTime": 26309.200000000004
+          },
+          {
+            "name": "marquee",
+            "duration": 35000,
+            "currentTime": 148238.32900000297
+          },
+          {
+            "name": "spirit-sheen",
+            "duration": 2520,
+            "currentTime": 1739.469999989069
+          },
+          {
+            "name": "spirit-flare",
+            "duration": 2520,
+            "currentTime": 1739.469999989069
+          },
+          {
+            "name": "spirit-dip",
+            "duration": 2520,
+            "currentTime": 1739.469999989069
+          },
+          {
+            "name": "fog-drift",
+            "duration": 44000,
+            "currentTime": 26125.384000008722
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 60000,
+            "currentTime": 26125.384000008722
+          },
+          {
+            "name": "fog-drift",
+            "duration": 44000,
+            "currentTime": 26208.884000008737
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 60000,
+            "currentTime": 26208.884000008737
+          },
+          {
+            "name": "spirit-dip",
+            "duration": 2520,
+            "currentTime": 1739.469999989069
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3200,
+            "currentTime": 148254.9
+          },
+          {
+            "name": "spirit-dip",
+            "duration": 2520,
+            "currentTime": 1739.469999989069
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3700,
+            "currentTime": 148254.9
+          },
+          {
+            "name": "spirit-dip",
+            "duration": 2520,
+            "currentTime": 1739.469999989069
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 4300,
+            "currentTime": 148254.9
+          }
+        ]
+      }
+    }
+  ]
+}

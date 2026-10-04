@@ -1,0 +1,195 @@
+{
+  "environment": {
+    "timestamp": "2026-10-04T00:09:29.550Z",
+    "url": "https://www.hauntedbouldercity.com/",
+    "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1440,
+      900
+    ],
+    "dpr": 1,
+    "visualViewport": {
+      "width": 1440,
+      "height": 900,
+      "scale": 1
+    },
+    "scroll": [
+      0,
+      11222,
+      1425,
+      12476
+    ],
+    "language": "en-US",
+    "timezone": "Africa/Cairo",
+    "direction": "ltr",
+    "touch": 0,
+    "dark": false,
+    "reduced": false,
+    "fonts": "loaded",
+    "ready": "complete"
+  },
+  "modification": "Network.setBlockedURLs blocks only public Eventbrite widget script; induced reference failure, not naturally observed service failure",
+  "state": {
+    "timestamp": "2026-10-04T00:09:29.552Z",
+    "perf": 5409.199999988079,
+    "scrollY": 11222,
+    "focus": {
+      "tag": "BUTTON",
+      "cls": "ticket-modal-close",
+      "text": ""
+    },
+    "root": "smooth-scroll motion-ready modal-open",
+    "menuHidden": true,
+    "menuOpen": false,
+    "modalHidden": false,
+    "modalOpen": true,
+    "fallbackHidden": false,
+    "statusHidden": true,
+    "track": "matrix(1, 0, 0, 1, -2850, 0)",
+    "count": "03 / 03",
+    "video": [
+      {
+        "src": "",
+        "currentTime": 0,
+        "duration": null,
+        "readyState": 0,
+        "seeking": false
+      }
+    ],
+    "details": [
+      {
+        "open": false,
+        "height": 77
+      },
+      {
+        "open": false,
+        "height": 77
+      },
+      {
+        "open": false,
+        "height": 77
+      },
+      {
+        "open": false,
+        "height": 77
+      },
+      {
+        "open": false,
+        "height": 77
+      },
+      {
+        "open": false,
+        "height": 77
+      },
+      {
+        "open": false,
+        "height": 77
+      },
+      {
+        "open": false,
+        "height": 77
+      },
+      {
+        "open": false,
+        "height": 77
+      }
+    ],
+    "animations": [
+      {
+        "name": "slow-spin",
+        "duration": 24000,
+        "currentTime": 5101.381000006013
+      },
+      {
+        "name": "marquee",
+        "duration": 35000,
+        "currentTime": 5101.381000006013
+      },
+      {
+        "name": "spirit-sheen",
+        "duration": 2453,
+        "currentTime": 1271.1000000000006
+      },
+      {
+        "name": "spirit-flare",
+        "duration": 2453,
+        "currentTime": 1271.1000000000006
+      },
+      {
+        "name": "spirit-dip",
+        "duration": 2453,
+        "currentTime": 1237.7730000209067
+      },
+      {
+        "name": "fog-drift",
+        "duration": 40000,
+        "currentTime": 1187.488000016101
+      },
+      {
+        "name": "fog-counterdrift",
+        "duration": 56000,
+        "currentTime": 1187.488000016101
+      },
+      {
+        "name": "fog-drift",
+        "duration": 70000,
+        "currentTime": 1187.488000016101
+      },
+      {
+        "name": "fog-drift",
+        "duration": 40000,
+        "currentTime": 1187.488000016101
+      },
+      {
+        "name": "fog-counterdrift",
+        "duration": 56000,
+        "currentTime": 1187.488000016101
+      },
+      {
+        "name": "fog-drift",
+        "duration": 70000,
+        "currentTime": 1187.488000016101
+      },
+      {
+        "name": "spirit-dip",
+        "duration": 2453,
+        "currentTime": 1237.7730000209067
+      },
+      {
+        "name": "spirit-pulse",
+        "duration": 3200,
+        "currentTime": 5034.5
+      },
+      {
+        "name": "spirit-dip",
+        "duration": 2453,
+        "currentTime": 1237.7730000209067
+      },
+      {
+        "name": "spirit-pulse",
+        "duration": 3700,
+        "currentTime": 5034.5
+      },
+      {
+        "name": "spirit-dip",
+        "duration": 2453,
+        "currentTime": 1237.7730000209067
+      },
+      {
+        "name": "spirit-pulse",
+        "duration": 4300,
+        "currentTime": 5034.5
+      },
+      {
+        "name": "loader-drift-a",
+        "duration": 34000,
+        "currentTime": 1220.9890000141695
+      },
+      {
+        "name": "loader-drift-b",
+        "duration": 42000,
+        "currentTime": 1220.9890000141695
+      }
+    ]
+  }
+}

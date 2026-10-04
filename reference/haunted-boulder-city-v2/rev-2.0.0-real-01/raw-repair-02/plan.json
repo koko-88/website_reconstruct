@@ -1,0 +1,205 @@
+{
+  "schemaVersion": 2,
+  "packageId": "HBC-V2-REPAIR-02",
+  "contractId": "FC-HBC-V2-01",
+  "sourceId": "S2-LIVE",
+  "authorization": "User requested complete v2 inspection only. FC-HBC-V2-01 permits public navigation, menu/FAQ toggles and opening/closing current checkout without selection/submission/purchase.",
+  "allowedOrigins": [
+    "https://www.hauntedbouldercity.com"
+  ],
+  "publicQueryKeys": [
+    "tickets"
+  ],
+  "totalTimeoutMs": 90000,
+  "browserChannel": "chrome",
+  "environments": [
+    {
+      "id": "ENV2-D",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "deviceScaleFactor": 1,
+      "hasTouch": false,
+      "isMobile": false,
+      "locale": "en-US",
+      "timezoneId": "Africa/Cairo",
+      "colorScheme": "light",
+      "reducedMotion": "no-preference",
+      "fixture": "Public live 2026-10-04; source hashes reconciled separately",
+      "session": "Fresh anonymous context no imported storage; HTTP cache disabled by runner routing",
+      "consent": "No consent interaction; record default"
+    },
+    {
+      "id": "ENV2-M",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "deviceScaleFactor": 1,
+      "hasTouch": true,
+      "isMobile": true,
+      "locale": "en-US",
+      "timezoneId": "Africa/Cairo",
+      "colorScheme": "light",
+      "reducedMotion": "no-preference",
+      "fixture": "Same live public reference; fresh touch emulation",
+      "session": "Fresh anonymous context no imported storage; HTTP cache disabled",
+      "consent": "No consent interaction"
+    }
+  ],
+  "cases": [
+    {
+      "id": "D-MENU-REPAIR",
+      "environmentId": "ENV2-D",
+      "url": "https://www.hauntedbouldercity.com/",
+      "state": "Repair staggered menu readiness only; no duplicated full route capture",
+      "reset": "fresh-context",
+      "actions": [],
+      "checkpoints": [
+        {
+          "id": "HOME",
+          "phase": "settled",
+          "required": [
+            ".hero h1"
+          ],
+          "absent": [
+            ".loader"
+          ],
+          "stableSelectors": [
+            ".hero h1"
+          ],
+          "timeoutMs": 10000,
+          "fullPage": false,
+          "actions": [],
+          "afterMs": 0
+        },
+        {
+          "id": "OPEN",
+          "phase": "settled",
+          "afterMs": 12000,
+          "required": [
+            ".site-nav.is-open",
+            ".site-nav-list a"
+          ],
+          "absent": [
+            ".loader"
+          ],
+          "stableSelectors": [
+            ".site-nav-list li",
+            ".site-nav-footer"
+          ],
+          "timeoutMs": 10000,
+          "fullPage": false,
+          "actions": [
+            {
+              "kind": "click",
+              "selector": ".menu-toggle",
+              "authority": "FC-EX-01 reversible menu toggle"
+            }
+          ]
+        },
+        {
+          "id": "CLOSED",
+          "phase": "settled",
+          "required": [
+            ".hero h1"
+          ],
+          "absent": [
+            ".loader",
+            ".site-nav:not([hidden])"
+          ],
+          "stableSelectors": [
+            ".hero h1"
+          ],
+          "timeoutMs": 10000,
+          "fullPage": false,
+          "actions": [
+            {
+              "kind": "press",
+              "key": "Escape",
+              "authority": "FC-EX-01 reversible close; focus restoration"
+            }
+          ],
+          "afterMs": 0
+        }
+      ]
+    },
+    {
+      "id": "M-MENU-REPAIR",
+      "environmentId": "ENV2-M",
+      "url": "https://www.hauntedbouldercity.com/",
+      "state": "Repair staggered menu readiness only; no duplicated full route capture",
+      "reset": "fresh-context",
+      "actions": [],
+      "checkpoints": [
+        {
+          "id": "HOME",
+          "phase": "settled",
+          "required": [
+            ".hero h1"
+          ],
+          "absent": [
+            ".loader"
+          ],
+          "stableSelectors": [
+            ".hero h1"
+          ],
+          "timeoutMs": 10000,
+          "fullPage": false,
+          "actions": [],
+          "afterMs": 0
+        },
+        {
+          "id": "OPEN",
+          "phase": "settled",
+          "afterMs": 12000,
+          "required": [
+            ".site-nav.is-open",
+            ".site-nav-list a"
+          ],
+          "absent": [
+            ".loader"
+          ],
+          "stableSelectors": [
+            ".site-nav-list li",
+            ".site-nav-footer"
+          ],
+          "timeoutMs": 10000,
+          "fullPage": false,
+          "actions": [
+            {
+              "kind": "click",
+              "selector": ".menu-toggle",
+              "authority": "FC-EX-01 reversible menu toggle"
+            }
+          ]
+        },
+        {
+          "id": "CLOSED",
+          "phase": "settled",
+          "required": [
+            ".hero h1"
+          ],
+          "absent": [
+            ".loader",
+            ".site-nav:not([hidden])"
+          ],
+          "stableSelectors": [
+            ".hero h1"
+          ],
+          "timeoutMs": 10000,
+          "fullPage": false,
+          "actions": [
+            {
+              "kind": "press",
+              "key": "Escape",
+              "authority": "FC-EX-01 reversible close; focus restoration"
+            }
+          ],
+          "afterMs": 0
+        }
+      ]
+    }
+  ]
+}

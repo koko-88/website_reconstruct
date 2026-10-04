@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 2,
+  "packageId": "HBC-V2-REAL-01",
+  "revision": "2.0.0-real-01",
+  "contractId": "FC-HBC-V2-01",
+  "assessedAtUTC": "2026-10-04T03:49:39.864Z",
+  "timezone": "Africa/Cairo",
+  "assessor": "Codex reference inspector",
+  "gates": [
+    {
+      "id": "G2-INTEGRITY",
+      "result": "PASS",
+      "scope": "New parent package plus portable unchanged v1 and individually sealed raw runs; corrected phase/provenance overlay",
+      "evidence": [
+        "observations/E2-012-preservation-tooling.json",
+        "observations/E2-013-capture-assessment.json",
+        "observations/image-decode.json",
+        "observations/integrity-preseal.json",
+        "manifest.json"
+      ],
+      "limit": "File closure/identity/provenance, not fidelity or rights. Final post-seal verification lives in immutable sibling receipt."
+    },
+    {
+      "id": "G2-FIDELITY",
+      "result": "BLOCKED",
+      "scope": "FC-EX-01 plus FC-EX-02 public landing/safe interaction/selectable-ticket journey within recorded Chromium environments",
+      "evidence": [
+        "state-route-matrix.md",
+        "environment-matrix.md",
+        "non-dom-rendering.md",
+        "public-artifacts.md"
+      ],
+      "blockers": [
+        {
+          "issue": "U-01",
+          "coverage": "SR-33",
+          "impact": "high",
+          "reason": "Current reference event is postponed; available dates/ticket selection/back/empty/error/retry/pre-submit states not inspectable",
+          "resolution": "Authorized selectable public/test reference fixture captured at desktop/touch through pre-submission boundary",
+          "owner": "Reference owner and inspector"
+        }
+      ],
+      "limits": "Inherited behavior stays historical, fresh offsets differ; no full-page/offscreen or unavailable renderer negative claim."
+    },
+    {
+      "id": "G2-ADAPTATION",
+      "result": "NOT REQUIRED",
+      "scope": "Reference-only evidence validation; target content/data/action mapping and implementation expressly outside phase",
+      "evidence": [
+        "fidelity-scope-contract.md"
+      ],
+      "reopen": "Actual adaptation request requires separate target mapping/overflow/invariant/deviation contract"
+    },
+    {
+      "id": "G2-ASSET-REUSE",
+      "result": "BLOCKED",
+      "scope": "Future use of distinctive fonts/photos/video/logos/textures and host code/provider integration",
+      "evidence": [
+        "asset-reuse.md",
+        "observations/E2-010-font-widget-fetch.json"
+      ],
+      "blockers": [
+        {
+          "issue": "U-02",
+          "coverage": "SR-42",
+          "impact": "high",
+          "reason": "No reuse/license/source/attribution or authorized replacement decision",
+          "resolution": "Owner decisions per asset group or explicit approved replacement with fidelity consequences",
+          "owner": "Reference/target owner"
+        }
+      ],
+      "limit": "Public availability, maps and inspection acquisition do not confer rights"
+    }
+  ],
+  "evidenceOnlyDeliveryComplete": true,
+  "reconstructionCleared": false,
+  "adaptationCleared": false,
+  "exactImplementationClearance": "none",
+  "frozenV1GateChange": "none; original schema1 BLOCKED remains byte-identical",
+  "retainedNonBlockingUnknowns": [
+    "U-03 uninspected expanded parity within bounded scope",
+    "U-04 stochastic motion/live fixture variability",
+    "U-05 inaccessible renderer/provider internals and undeclared maps",
+    "U-06 historical-current asset/glyph equality not asserted"
+  ],
+  "reopenTriggers": [
+    "live document/app/CSS/asset or provider fixture change",
+    "material unexplained state/rendering gap",
+    "expanded browser/device/content/reuse scope",
+    "resolved selectable/reuse inputs",
+    "evidence/provenance correction"
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 2,
+  "sealedAtUTC": "2026-10-04T03:30:47.827Z",
+  "metadata": {
+    "packageId": "HBC-V2-REPAIR-02",
+    "kind": "raw-capture-run",
+    "result": "CAPTURED"
+  },
+  "files": [
+    {
+      "path": "D-MENU-REPAIR--CLOSED.json",
+      "bytes": 39157,
+      "sha256": "9262262530b253ae4e42b2aad826b2b0c996642f014366670b4381c9fa248d5f"
+    },
+    {
+      "path": "D-MENU-REPAIR--CLOSED.png",
+      "bytes": 1579424,
+      "sha256": "7cb81ee8adb607a38a45b21959935833d9d062bc354c2a830739502893f4b21b"
+    },
+    {
+      "path": "D-MENU-REPAIR--HOME.json",
+      "bytes": 38499,
+      "sha256": "db38f180a41fe56721538674791a148547d8ddc6ac1e20e5ea06cfe8da8cdbbd"
+    },
+    {
+      "path": "D-MENU-REPAIR--HOME.png",
+      "bytes": 1589777,
+      "sha256": "05c8869d68324cf90ee31b08b817f283aedf5913e8e0e1c67ae3072adf974948"
+    },
+    {
+      "path": "D-MENU-REPAIR--OPEN.json",
+      "bytes": 70233,
+      "sha256": "761a05f3520f4085397148df337a18dbc57a6472a4fdd7ed8c88667871256980"
+    },
+    {
+      "path": "D-MENU-REPAIR--OPEN.png",
+      "bytes": 649118,
+      "sha256": "3174b894447da124c7ea70722f84a6e3210b394280ba38d88b1d29476193cb4e"
+    },
+    {
+      "path": "M-MENU-REPAIR--CLOSED.json",
+      "bytes": 38679,
+      "sha256": "cd18e0c3a9a38393fb42e34ac08c1678b1cc387aa5a84744e45961232a45a408"
+    },
+    {
+      "path": "M-MENU-REPAIR--CLOSED.png",
+      "bytes": 414729,
+      "sha256": "0c68dcd8ae5a390bc4597ed6853a3651bfdbba0b4bbe36b81a19a6d11a6cb971"
+    },
+    {
+      "path": "M-MENU-REPAIR--HOME.json",
+      "bytes": 38097,
+      "sha256": "bf1216e0ac44c5c35d713676d21d546906637329b8f3ce64a28a42aed4fd07bd"
+    },
+    {
+      "path": "M-MENU-REPAIR--HOME.png",
+      "bytes": 414843,
+      "sha256": "22c86cf87abe4f37e4e7770fc0fc94c01b1fd33ccec9ce61d748fecc095da322"
+    },
+    {
+      "path": "M-MENU-REPAIR--OPEN.json",
+      "bytes": 69564,
+      "sha256": "ccedf9badfcdf4d65098f5d4ec4800149a6cd1a2b11e8dd89bb8d20db85c04ec"
+    },
+    {
+      "path": "M-MENU-REPAIR--OPEN.png",
+      "bytes": 250440,
+      "sha256": "02250d635adf8c320bcf84b72a6b98f73a0d79d3711d18b2a68e1cdeb9955b80"
+    },
+    {
+      "path": "plan.json",
+      "bytes": 5343,
+      "sha256": "6f2f219640d7d27ae5b6523502e60c20f0231d09f525905c94d04b7bb8fc7586"
+    },
+    {
+      "path": "run.json",
+      "bytes": 12197,
+      "sha256": "18c89bc1573c91c9517e9359e054aad61185cd911b35b15c38e9a0573812caff"
+    }
+  ]
+}

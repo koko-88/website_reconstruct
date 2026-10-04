@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 2,
+  "result": "PASS",
+  "checkedAtUTC": "2026-10-04T03:52:24.216Z",
+  "coverageRows": 46,
+  "dispositions": {
+    "Complete": 41,
+    "Incomplete": 3,
+    "N/A": 1,
+    "Excluded": 1
+  },
+  "captureRecords": 28,
+  "canonicalCorrections": 8,
+  "rawRuns": [
+    {
+      "dir": "raw-run-01",
+      "result": "PASS",
+      "files": 30
+    },
+    {
+      "dir": "raw-repair-01",
+      "result": "PASS",
+      "files": 10
+    },
+    {
+      "dir": "raw-repair-02",
+      "result": "PASS",
+      "files": 14
+    },
+    {
+      "dir": "raw-geometry-01",
+      "result": "PASS",
+      "files": 10
+    }
+  ],
+  "requiredOutputs": [
+    "fidelity-scope-contract.md",
+    "state-route-matrix.md",
+    "environment-matrix.md",
+    "non-dom-rendering.md",
+    "public-artifacts.md",
+    "reference-evidence.md",
+    "readiness-gates.md",
+    "asset-reuse.md",
+    "handoff.md",
+    "validation-report.md",
+    "artifact-index.md"
+  ],
+  "semanticReview": "Inspector reviewed source declarations versus execution, matrices, source/phase precedence, all28 new images and four independent gates. Automated checks validate structure/provenance closure, not unseen UI or rights.",
+  "frozenV1Unchanged": true,
+  "carriedV1Identical": true,
+  "carriedToolingIdentical": true,
+  "tokenRedactionVerified": true,
+  "problems": [],
+  "markdownJSONDispositionsAgree": true
+}

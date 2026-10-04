@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "sealedAtUTC": "2026-10-04T03:29:09.439Z",
+  "metadata": {
+    "packageId": "HBC-V2-REPAIR-01",
+    "kind": "raw-capture-run",
+    "result": "CAPTURED"
+  },
+  "files": [
+    {
+      "path": "D-REPAIR--BASE.json",
+      "bytes": 37089,
+      "sha256": "f0b62185d367e68d40492ec6e97a48e18c3c85fe3ed7492508e1171347dc6d4b"
+    },
+    {
+      "path": "D-REPAIR--BASE.png",
+      "bytes": 1295108,
+      "sha256": "5fdcc4804f97ddada12f952adf0772b2b5cc66efebeba4fd252f065d98a1a835"
+    },
+    {
+      "path": "D-REPAIR--LOADING.json",
+      "bytes": 33180,
+      "sha256": "28079fb37a8f619c0b6ac843dedc33b4f1edd211d3b98481404eefdf33591e4d"
+    },
+    {
+      "path": "D-REPAIR--LOADING.png",
+      "bytes": 663116,
+      "sha256": "e6105241b9a02870cbad698ca0b1638cadcfe168783388d0beb3e4284c6ea869"
+    },
+    {
+      "path": "D-REPAIR--PROVIDER.json",
+      "bytes": 47737,
+      "sha256": "6e0e0942ca0b73ce9f2ed657fe338145f0a32b57dd9473fc26e6568bb4d5df8c"
+    },
+    {
+      "path": "D-REPAIR--PROVIDER.png",
+      "bytes": 264493,
+      "sha256": "622ac3629821b1b86c60b04eb48689ca589bad4407d71a27f89629dec2d72c23"
+    },
+    {
+      "path": "D-REPAIR--REOPEN.json",
+      "bytes": 56390,
+      "sha256": "e66f9ae08da99ab0bb8e28e80e66d73f57bcd0e844f81817b4843189097c7fe0"
+    },
+    {
+      "path": "D-REPAIR--REOPEN.png",
+      "bytes": 418260,
+      "sha256": "c642c1aa08d5b070ca0a97ad9c16dc56c656ff9c2fc2d2aac945e40dfb5edfa9"
+    },
+    {
+      "path": "plan.json",
+      "bytes": 3569,
+      "sha256": "86f614c70d22b0e5263385fbf093b717e21b27395c72c0ffbe3d189d1870a9c8"
+    },
+    {
+      "path": "run.json",
+      "bytes": 99223,
+      "sha256": "946e6bf7e5e35eb9b7d5838ef8121b5bfaa8b94c864884a474be7130661502bd"
+    }
+  ]
+}

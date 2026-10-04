@@ -1,0 +1,657 @@
+<!doctype html>
+<!-- Designed and built by Artisan Website Co. https://www.artisanwebsite.com -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="max-image-preview:large">
+  <meta name="author" content="Artisan Website Co">
+  <meta name="theme-color" content="#090f0e">
+  <!-- Loading screen switch. Only scripted visits show it; the timer is a failsafe
+       so a script that never arrives cannot leave anyone behind the veil. -->
+  <script>document.documentElement.classList.add('is-loading');setTimeout(function(){document.documentElement.classList.remove('is-loading')},7000)</script>
+  <link rel="preload" href="/assets/fog.webp" as="image" type="image/webp">
+  <link rel="preload" href="/assets/manticore.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/display.ttf" as="font" type="font/ttf" crossorigin>
+  <meta name="description" content="Meet the stranger side of Boulder City. Discover local ghost stories, desert mysteries and UFO folklore on a one-hour walking tour with Beer Zombies.">
+  <title>Boulder City Ghost &amp; UFO Walking Tour | Haunted Boulder City</title>
+  <link rel="canonical" href="https://www.hauntedbouldercity.com/">
+  <!-- Social card URLs are absolute: crawlers (Facebook, X, iMessage, Slack) need a
+       full https URL for the preview image. The www host is canonical; the apex redirects to it. -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="https://www.hauntedbouldercity.com/">
+  <meta property="og:site_name" content="Haunted Boulder City">
+  <meta property="og:title" content="Haunted Boulder City | Ghosts, UFOs &amp; Beer Zombies">
+  <meta property="og:description" content="Meet the stranger side of Boulder City. Discover local ghost stories, desert mysteries and UFO folklore on a one-hour walking tour with Beer Zombies.">
+  <meta property="og:image" content="https://www.hauntedbouldercity.com/assets/haunted-boulder-city-open-graph.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1024">
+  <meta property="og:image:height" content="538">
+  <meta property="og:image:alt" content="Haunted Boulder City, a ghost and UFO walking tour, over a moonlit historic downtown street">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Haunted Boulder City | Ghosts, UFOs &amp; Beer Zombies">
+  <meta name="twitter:description" content="Meet the stranger side of Boulder City. Discover local ghost stories, desert mysteries and UFO folklore on a one-hour walking tour with Beer Zombies.">
+  <meta name="twitter:image" content="https://www.hauntedbouldercity.com/assets/haunted-boulder-city-open-graph.jpg">
+  <meta name="twitter:image:alt" content="Haunted Boulder City, a ghost and UFO walking tour, over a moonlit historic downtown street">
+  <!-- Structured data (schema.org JSON-LD). Every value mirrors visible page copy;
+       if the tour, venue, FAQ or creator copy changes, update the matching field here. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://www.hauntedbouldercity.com/#website",
+        "url": "https://www.hauntedbouldercity.com/",
+        "name": "Haunted Boulder City",
+        "inLanguage": "en-US",
+        "publisher": { "@id": "https://www.hauntedbouldercity.com/#beer-zombies" },
+        "creator": { "@id": "https://www.artisanwebsite.com/#organization" },
+        "author": { "@id": "https://www.artisanwebsite.com/#organization" }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://www.artisanwebsite.com/#organization",
+        "name": "Artisan Website Co",
+        "url": "https://www.artisanwebsite.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "@id": "https://www.artisanwebsite.com/#logo",
+          "url": "https://www.artisanwebsite.com/images/artisan-website-logo.png",
+          "contentUrl": "https://www.artisanwebsite.com/images/artisan-website-logo.png",
+          "width": {
+            "@type": "QuantitativeValue",
+            "value": 607,
+            "unitCode": "E37"
+          },
+          "height": {
+            "@type": "QuantitativeValue",
+            "value": 281,
+            "unitCode": "E37"
+          },
+          "encodingFormat": "image/png",
+          "caption": "Artisan Website Co"
+        },
+        "sameAs": [
+          "https://contra.com/zackbujazia"
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://www.hauntedbouldercity.com/#webpage",
+        "url": "https://www.hauntedbouldercity.com/",
+        "name": "Boulder City Ghost & UFO Walking Tour | Haunted Boulder City",
+        "description": "Meet the stranger side of Boulder City. Discover local ghost stories, desert mysteries and UFO folklore on a one-hour walking tour with Beer Zombies.",
+        "inLanguage": "en-US",
+        "isPartOf": { "@id": "https://www.hauntedbouldercity.com/#website" },
+        "primaryImageOfPage": { "@id": "https://www.hauntedbouldercity.com/#primaryimage" },
+        "image": { "@id": "https://www.hauntedbouldercity.com/#primaryimage" },
+        "mainEntity": { "@id": "https://www.hauntedbouldercity.com/#tour" },
+        "about": { "@id": "https://www.hauntedbouldercity.com/#tour" },
+        "mentions": [
+          { "@id": "https://www.hauntedbouldercity.com/#beer-zombies" },
+          { "@id": "https://www.hauntedbouldercity.com/#joshua-p-warren" },
+          { "@id": "https://www.hauntedbouldercity.com/#topics" },
+          { "@id": "https://www.hauntedbouldercity.com/#boulder-city" }
+        ],
+        "hasPart": { "@id": "https://www.hauntedbouldercity.com/#faq" },
+        "publisher": { "@id": "https://www.hauntedbouldercity.com/#beer-zombies" }
+      },
+      {
+        "@type": "ImageObject",
+        "@id": "https://www.hauntedbouldercity.com/#primaryimage",
+        "url": "https://www.hauntedbouldercity.com/assets/haunted-boulder-city-open-graph.jpg",
+        "contentUrl": "https://www.hauntedbouldercity.com/assets/haunted-boulder-city-open-graph.jpg",
+        "width": {
+          "@type": "QuantitativeValue",
+          "value": 1024,
+          "unitCode": "E37"
+        },
+        "height": {
+          "@type": "QuantitativeValue",
+          "value": 538,
+          "unitCode": "E37"
+        },
+        "encodingFormat": "image/jpeg",
+        "caption": "Haunted Boulder City, a ghost and UFO walking tour, over a moonlit historic downtown street",
+        "representativeOfPage": true
+      },
+      {
+        "@type": [
+          "TouristTrip",
+          "Service"
+        ],
+        "@id": "https://www.hauntedbouldercity.com/#tour",
+        "name": "Haunted Boulder City",
+        "alternateName": "Boulder City Ghost & UFO Walking Tour",
+        "description": "A one-hour guided walking tour through Boulder City’s ghost stories, unusual history, and UFO folklore. Starting at Beer Zombies. Walk through historic downtown Boulder City, where ghost stories, desert legends, and a few unsettling tales give these familiar streets a different reputation. Experience by Joshua P. Warren.",
+        "url": "https://www.hauntedbouldercity.com/",
+        "mainEntityOfPage": { "@id": "https://www.hauntedbouldercity.com/#webpage" },
+        "image": [
+          { "@id": "https://www.hauntedbouldercity.com/#primaryimage" },
+          {
+            "@type": "ImageObject",
+            "@id": "https://www.hauntedbouldercity.com/#image-hero",
+            "url": "https://www.hauntedbouldercity.com/assets/haunted-downtown-boulder-city.webp",
+            "contentUrl": "https://www.hauntedbouldercity.com/assets/haunted-downtown-boulder-city.webp",
+            "width": {
+              "@type": "QuantitativeValue",
+              "value": 1672,
+              "unitCode": "E37"
+            },
+            "height": {
+              "@type": "QuantitativeValue",
+              "value": 941,
+              "unitCode": "E37"
+            },
+            "encodingFormat": "image/webp",
+            "caption": "Historic Downtown Boulder City arch and monument under a full moon on a foggy Nevada night"
+          },
+          {
+            "@type": "ImageObject",
+            "@id": "https://www.hauntedbouldercity.com/#image-hotel",
+            "url": "https://www.hauntedbouldercity.com/assets/boulder-dam-hotel.webp",
+            "contentUrl": "https://www.hauntedbouldercity.com/assets/boulder-dam-hotel.webp",
+            "width": {
+              "@type": "QuantitativeValue",
+              "value": 1024,
+              "unitCode": "E37"
+            },
+            "height": {
+              "@type": "QuantitativeValue",
+              "value": 647,
+              "unitCode": "E37"
+            },
+            "encodingFormat": "image/webp",
+            "caption": "The Boulder Dam Hotel at night under a full moon, porch lights glowing through low fog"
+          }
+        ],
+        "sameAs": [
+          "https://www.tripadvisor.com/Attraction_Review-g60881-d23608698-Reviews-Boulder_City_Ghost_Tour_Haunted_Boulder_City_Ghost_UFO_Tour-Boulder_City_Nevada.html",
+          "https://www.eventbrite.com/e/haunted-boulder-city-tour-tickets-2000657664932"
+        ],
+        "serviceType": "Guided walking tour",
+        "category": [
+          "Ghost stories & local folklore",
+          "History with a dark side",
+          "UFOs & unexplained encounters"
+        ],
+        "touristType": { "@id": "https://www.hauntedbouldercity.com/#tour-audience" },
+        "audience": { "@id": "https://www.hauntedbouldercity.com/#tour-audience" },
+        "tripOrigin": { "@id": "https://www.hauntedbouldercity.com/#beer-zombies" },
+        "itinerary": { "@id": "https://www.hauntedbouldercity.com/#tour-route" },
+        "areaServed": { "@id": "https://www.hauntedbouldercity.com/#boulder-city" },
+        "provider": { "@id": "https://www.hauntedbouldercity.com/#beer-zombies" },
+        "offers": { "@id": "https://www.hauntedbouldercity.com/#tour-offer" },
+        "termsOfService": "Late arrivals are not eligible for a refund."
+      },
+      {
+        "@type": "PeopleAudience",
+        "@id": "https://www.hauntedbouldercity.com/#tour-audience",
+        "name": "All ages welcome",
+        "audienceType": "All ages",
+        "description": "Yes! All ages are welcome on the tour and at Beer Zombies Boulder City. You don’t have to be a beer drinker to join the fun.",
+        "suggestedMinAge": 0
+      },
+      {
+        "@type": "Place",
+        "@id": "https://www.hauntedbouldercity.com/#tour-route",
+        "name": "Historic downtown Boulder City",
+        "description": "The route follows level public sidewalks for less than half a mile, with an easy pace and stops along the way for stories.",
+        "containedInPlace": { "@id": "https://www.hauntedbouldercity.com/#boulder-city" }
+      },
+      {
+        "@type": "City",
+        "@id": "https://www.hauntedbouldercity.com/#boulder-city",
+        "name": "Boulder City",
+        "containedInPlace": {
+          "@type": "State",
+          "name": "Nevada"
+        }
+      },
+      {
+        "@type": "Offer",
+        "@id": "https://www.hauntedbouldercity.com/#tour-offer",
+        "name": "Tickets",
+        "description": "View available dates and book through Eventbrite.",
+        "category": "Tickets",
+        "url": "https://www.eventbrite.com/e/haunted-boulder-city-tour-tickets-2000657664932",
+        "itemOffered": { "@id": "https://www.hauntedbouldercity.com/#tour" },
+        "seller": { "@id": "https://www.hauntedbouldercity.com/#beer-zombies" }
+      },
+      {
+        "@type": "BarOrPub",
+        "@id": "https://www.hauntedbouldercity.com/#beer-zombies",
+        "name": "Beer Zombies Boulder City",
+        "alternateName": "Beer Zombies",
+        "description": "The tour has a new home with Beer Zombies. Meet at the Boulder City Draft Room, settle in, and get ready to see the neighborhood a little differently.",
+        "url": "https://www.thebeerzombies.com/",
+        "sameAs": [
+          "https://www.eventbrite.com/o/beer-zombies-96431487113"
+        ],
+        "logo": {
+          "@type": "ImageObject",
+          "@id": "https://www.hauntedbouldercity.com/#image-logo",
+          "url": "https://www.hauntedbouldercity.com/assets/bz-logo.svg",
+          "contentUrl": "https://www.hauntedbouldercity.com/assets/bz-logo.svg",
+          "width": {
+            "@type": "QuantitativeValue",
+            "value": 1326,
+            "unitCode": "E37"
+          },
+          "height": {
+            "@type": "QuantitativeValue",
+            "value": 655,
+            "unitCode": "E37"
+          },
+          "encodingFormat": "image/svg+xml",
+          "caption": "Beer Zombies"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "567 Nevada Way",
+          "addressLocality": "Boulder City",
+          "addressRegion": "NV",
+          "postalCode": "89005",
+          "addressCountry": "US"
+        },
+        "hasMap": "https://www.google.com/maps/dir/?api=1&destination=Beer+Zombies%2C+567+Nevada+Way%2C+Boulder+City%2C+NV+89005",
+        "containedInPlace": { "@id": "https://www.hauntedbouldercity.com/#boulder-city" },
+        "image": {
+          "@type": "ImageObject",
+          "@id": "https://www.hauntedbouldercity.com/#image-venue",
+          "url": "https://www.hauntedbouldercity.com/assets/beer-zombies-boulder-city.webp",
+          "contentUrl": "https://www.hauntedbouldercity.com/assets/beer-zombies-boulder-city.webp",
+          "width": {
+            "@type": "QuantitativeValue",
+            "value": 1672,
+            "unitCode": "E37"
+          },
+          "height": {
+            "@type": "QuantitativeValue",
+            "value": 941,
+            "unitCode": "E37"
+          },
+          "encodingFormat": "image/webp",
+          "caption": "Beer Zombies Boulder City Draft Room and patio under warm string lights"
+        },
+        "amenityFeature": {
+          "@type": "LocationFeatureSpecification",
+          "name": "Dogs welcome",
+          "value": true
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "url": "https://www.thebeerzombies.com/contact"
+        },
+        "makesOffer": { "@id": "https://www.hauntedbouldercity.com/#tour-offer" }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://www.hauntedbouldercity.com/#joshua-p-warren",
+        "name": "Joshua P. Warren",
+        "givenName": "Joshua",
+        "additionalName": "P.",
+        "familyName": "Warren",
+        "jobTitle": [
+          "Author",
+          "Paranormal researcher",
+          "Tour creator"
+        ],
+        "description": "Creator of Haunted Boulder City. Author. Paranormal researcher. Tour creator. His television appearances include Ghost Adventures, Travel Channel, History Channel, Discovery Channel and National Geographic Channel.",
+        "image": {
+          "@type": "ImageObject",
+          "@id": "https://www.hauntedbouldercity.com/#image-creator",
+          "url": "https://www.hauntedbouldercity.com/assets/joshua-p-warren-960.webp",
+          "contentUrl": "https://www.hauntedbouldercity.com/assets/joshua-p-warren-960.webp",
+          "width": {
+            "@type": "QuantitativeValue",
+            "value": 960,
+            "unitCode": "E37"
+          },
+          "height": {
+            "@type": "QuantitativeValue",
+            "value": 640,
+            "unitCode": "E37"
+          },
+          "encodingFormat": "image/webp",
+          "caption": "Joshua P. Warren, creator of Haunted Boulder City"
+        },
+        "knowsAbout": [
+          "Paranormal research",
+          { "@id": "https://www.hauntedbouldercity.com/#tour" }
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://www.hauntedbouldercity.com/#topics",
+        "name": "You’ll learn about...",
+        "numberOfItems": 8,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Hoover Dam",
+            "description": "The lives lost building Hoover Dam, and the ghost stories that followed."
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Ghost Dog",
+            "description": "The ghost dog that still wanders the streets at night"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "First Murderer",
+            "description": "The story of the woman who became Boulder City’s first murderer."
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Area 51",
+            "description": "Area 51 lore and strange sightings in the Nevada sky."
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Buried Bodies",
+            "description": "Gangster lore and the desert’s darker secrets."
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "name": "Strange Celebs",
+            "description": "Boris Karloff, Bette Davis, and unexpected connections to the town."
+          },
+          {
+            "@type": "ListItem",
+            "position": 7,
+            "name": "Ghost Meter",
+            "description": "How to turn your body into a human “Ghost Meter”"
+          },
+          {
+            "@type": "ListItem",
+            "position": 8,
+            "name": "ESP",
+            "description": "An ESP gambling tip"
+          }
+        ]
+      },
+      {
+        "@type": "WebPageElement",
+        "@id": "https://www.hauntedbouldercity.com/#faq",
+        "url": "https://www.hauntedbouldercity.com/#plan",
+        "name": "Before you head out",
+        "description": "A little less mystery. A few useful details.",
+        "inLanguage": "en-US",
+        "isPartOf": { "@id": "https://www.hauntedbouldercity.com/#webpage" },
+        "about": { "@id": "https://www.hauntedbouldercity.com/#tour" },
+        "hasPart": [
+          {
+            "@type": "Question",
+            "name": "What’s the walk like?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "About an hour and less than half a mile, on level public sidewalks. An easy pace, with plenty of time for stories."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can the whole family come?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes! All ages are welcome on the tour and at Beer Zombies Boulder City. You don’t have to be a beer drinker to join the fun."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How scary is it?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Expect spooky stories and an eerie atmosphere, with no jump scares. The tour explores ghosts, local legends, and darker moments in Boulder City’s history. Parents can use their judgment about how comfortable their children are with those subjects."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I bring my dog?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Absolutely. Well-behaved dogs are welcome at Beer Zombies Boulder City and on the tour. Bring your four-legged ghost hunter along for the adventure."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I drink a beer on the tour?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It's perfectly legal to drink a beer while you take our walking tour!"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are wheelchairs and strollers welcome?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Wheelchairs and strollers can participate in the tour. The route follows level public sidewalks for less than half a mile, with an easy pace and stops along the way for stories."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "When should I arrive?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Please arrive at least 10 minutes before your scheduled tour. Meet inside Beer Zombies at 567 Nevada Way, or outside if the venue is closed. Most downtown parking is free. Late arrivals are not eligible for a refund."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I take photos?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Photos are welcome. Audio and video recording are not permitted."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I get tickets?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Select Get Tickets to choose an available date and purchase through Eventbrite."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <link rel="icon" href="/assets/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="/assets/favicon-192.png" sizes="192x192" type="image/png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="/styles.css">
+  <script defer src="/app.js"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1WPQPVRTSC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-1WPQPVRTSC');
+  </script>
+  <!-- Vercel Web Analytics (plain HTML install). Vercel serves the script itself
+       once Analytics is enabled on the project; locally it simply 404s. -->
+  <script>
+    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+  </script>
+  <script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body>
+  <div class="loader" role="status" aria-live="polite">
+    <div class="loader-veil" aria-hidden="true"></div>
+    <div class="loader-lantern" aria-hidden="true"></div>
+    <div class="loader-fog loader-fog--back" aria-hidden="true"><span></span><span></span></div>
+    <div class="loader-title" aria-hidden="true"><span class="loader-word loader-word--haunted">HAUNTED</span><span class="loader-word loader-word--city">BOULDER CITY<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 2v20M2 12h20M5 5l14 14M5 19 19 5"/></svg></span></div>
+    <div class="loader-fog loader-fog--front" aria-hidden="true"><span></span><span></span></div>
+    <div class="loader-foot">
+      <p class="loader-status">Gathering the mist<span class="loader-dots" aria-hidden="true"><i></i><i></i><i></i></span></p>
+      <div class="loader-coords" aria-hidden="true">35°58′ N &nbsp; 114°50′ W</div>
+      <div class="loader-progress" aria-hidden="true"><span></span></div>
+    </div>
+  </div>
+  <div class="flashlight" aria-hidden="true"></div>
+  <a class="skip-link" href="#about">Skip to content</a>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <header class="site-header">
+    <a href="/" class="brand" aria-label="Beer Zombies, Haunted Boulder City home"><img class="brand-logo" src="/assets/bz-logo.svg" alt="Beer Zombies" width="1326" height="655"></a>
+    <div class="header-actions"><a class="button button-small" href="#tickets">Get tickets <span aria-hidden="true"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></span></a><button class="menu-toggle" aria-expanded="false" aria-controls="site-nav"><span class="menu-toggle-lines" aria-hidden="true"><i></i><i></i></span><span class="menu-toggle-text">Menu</span></button></div>
+  </header>
+  <nav id="site-nav" class="site-nav" aria-label="Site navigation" hidden>
+    <div class="site-nav-fog" aria-hidden="true"><span></span><span></span><span></span></div>
+    <div class="site-nav-inner">
+      <ol class="site-nav-list">
+        <li><a href="#about"><span class="site-nav-index" aria-hidden="true">01</span><span class="site-nav-label">The tour</span><span class="site-nav-note">One hour on foot, full of stories</span></a></li>
+        <li><a href="#stories"><span class="site-nav-index" aria-hidden="true">02</span><span class="site-nav-label">The strange stuff</span><span class="site-nav-note">Ghosts, dark history &amp; UFOs</span></a></li>
+        <li><a href="#zombies"><span class="site-nav-index" aria-hidden="true">03</span><span class="site-nav-label">Beer Zombies</span><span class="site-nav-note">Where the night starts</span></a></li>
+        <li><a href="#plan"><span class="site-nav-index" aria-hidden="true">04</span><span class="site-nav-label">Plan your visit</span><span class="site-nav-note">Arrival, parking &amp; FAQ</span></a></li>
+      </ol>
+      <div class="site-nav-footer">
+        <a class="button site-nav-cta" href="#tickets">Get tickets <span aria-hidden="true"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></span></a>
+        <p class="site-nav-meet"><span class="site-nav-meet-label">Tours meet at</span><strong>Beer Zombies, 567 Nevada Way</strong><a href="https://www.google.com/maps/dir/?api=1&amp;destination=Beer+Zombies%2C+567+Nevada+Way%2C+Boulder+City%2C+NV+89005" target="_blank" rel="noopener">Directions <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></a></p>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-media"><img src="/assets/haunted-downtown-boulder-city.webp" srcset="/assets/haunted-downtown-boulder-city-960.webp 960w, /assets/haunted-downtown-boulder-city.webp 1672w" sizes="100vw" alt="Historic Downtown Boulder City arch and monument under a full moon on a foggy Nevada night" fetchpriority="high" width="1672" height="941"></div>
+      <div class="hero-shade" aria-hidden="true"></div>
+      <h1 id="hero-title"><span class="haunted-word">HAUNTED</span><span class="city-word">BOULDER CITY<span class="title-star" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 2v20M2 12h20M5 5l14 14M5 19 19 5"/></svg></span></span></h1>
+      <div class="hero-topline"><a class="hero-creator" href="#creator">Experience by <strong>Joshua P. Warren</strong></a></div>
+      <div class="hero-bottom"><div class="hero-intro"><p><span class="hero-intro-sentence">A one-hour guided walking tour through Boulder City’s ghost stories, unusual history, and UFO folklore.</span><span class="hero-intro-sentence">Starting at Beer Zombies.</span></p></div><a href="#about" class="explore-link" aria-label="Explore the tour"><span class="round-arrow" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 4v16M5 13l7 7 7-7"/></svg></span></a></div>
+      <div class="hero-coordinates" aria-hidden="true">35°58′ N &nbsp; 114°50′ W</div>
+    </section>
+    <div class="marquee-shell">
+      <div class="marquee" aria-hidden="true"><div class="marquee-track"><span>Quiet streets. Restless spirits.</span><i><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 2v20M2 12h20M5 5l14 14M5 19 19 5"/></svg></i><span>Keep an eye on the sky.</span><i><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 2v20M2 12h20M5 5l14 14M5 19 19 5"/></svg></i><span>Some locals never leave.</span><i><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 2v20M2 12h20M5 5l14 14M5 19 19 5"/></svg></i><span>Quiet streets. Restless spirits.</span><i><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 2v20M2 12h20M5 5l14 14M5 19 19 5"/></svg></i><span>Keep an eye on the sky.</span><i><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 2v20M2 12h20M5 5l14 14M5 19 19 5"/></svg></i><span>Some locals never leave.</span><i><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 2v20M2 12h20M5 5l14 14M5 19 19 5"/></svg></i></div></div>
+    </div>
+    <section id="about" class="intro section-pad">
+      <div class="section-kicker"><span>01 / Welcome to the weird</span><span>Just 30 minutes from Las Vegas</span></div>
+      <h2 class="reveal-word-block">NICE LITTLE TOWN.<br><span>STRANGE LITTLE</span><br>SECRETS.</h2>
+      <div class="intro-bottom"><figure class="tour-proof reveal"><div class="photo-window"><img src="/assets/boulder-dam-hotel.webp" srcset="/assets/boulder-dam-hotel-960.webp 960w, /assets/boulder-dam-hotel.webp 1024w" sizes="(max-width:760px) 90vw, 42vw" alt="The Boulder Dam Hotel at night under a full moon, porch lights glowing through low fog" loading="lazy" width="1024" height="647"></div><span class="large-asterisk" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 2v20M2 12h20M5 5l14 14M5 19 19 5"/></svg></span></figure><p class="reveal">Walk through historic downtown Boulder City, where ghost stories, desert legends, and a few unsettling tales give these familiar streets a different reputation.</p></div>
+      <div class="tour-facts"><div><strong>60</strong><span>Minutes of mystery</span></div><div><strong>½<span>mi</span></strong><span>Less than half a&nbsp;mile</span></div><div><strong>ALL</strong><span>Ages welcome</span></div></div>
+
+    </section>
+    <section class="stories-scroll" id="stories" aria-label="The stories on the tour">
+      <div class="stories-pin">
+        <div class="stories-heading"><span>02 / The strange stuff</span><span class="scroll-instruction">Keep scrolling. It gets stranger. <span aria-hidden="true"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12h16M13 5l7 7-7 7"/></svg></span></span></div>
+        <div class="story-track">
+          <article class="story story-ghost" aria-labelledby="ghost-title"><img class="story-background" src="/assets/boulder-city-haunted-walk-tour.webp" srcset="/assets/boulder-city-haunted-walk-tour-960.webp 960w, /assets/boulder-city-haunted-walk-tour.webp 1024w" sizes="100vw" alt="Ghost tour group standing in fog under trees strung with lights on a night walk" loading="lazy" width="1024" height="682"><div class="story-scrim"></div><div class="story-content"><span class="eyebrow">Case file 01 / The ones who stayed</span><h2 id="ghost-title">NOT EVERY<br>LOCAL<br><em>IS LIVING.</em></h2><p>A ghost dog. Unsettling encounters. Locals who may have overstayed their welcome. Hear the stories that give downtown Boulder City its haunted&nbsp;reputation.</p><span class="story-tag">Ghost stories & local folklore</span></div><span class="story-number" aria-hidden="true">01</span></article>
+          <article class="story story-history" aria-labelledby="history-title"><img class="story-background" src="/assets/boulder-city-shop.webp" srcset="/assets/boulder-city-shop-960.webp 960w, /assets/boulder-city-shop.webp 1672w" sizes="100vw" alt="Boulder City shops and streets after dark" loading="lazy" width="1672" height="941"><div class="story-scrim"></div><div class="story-content"><span class="eyebrow">Case file 02 / Beneath the surface</span><h2 id="history-title">THE PAST<br>DOESN’T<br><em>STAY BURIED.</em></h2><p>Discover the darker side of this postcard town through Hoover Dam lore, the story of its first murderer, and tales of gangsters in&nbsp;the&nbsp;desert.</p><span class="story-tag">History with a dark side</span></div><span class="story-number" aria-hidden="true">02</span></article>
+          <article class="story story-ufo" aria-labelledby="ufo-title"><img class="story-background" src="/assets/ufo-night.webp" alt="Atmospheric artwork of a mysterious light above the Nevada desert" loading="lazy" width="1672" height="941"><video class="story-background story-video" muted playsinline preload="none" disablepictureinpicture disableremoteplayback aria-hidden="true" tabindex="-1" width="1280" height="720" data-src="/assets/ufo-night.mp4" data-src-small="/assets/ufo-night-960.mp4"></video><div class="story-scrim"></div><div class="story-content"><span class="eyebrow">Case file 03 / Look up</span><h2 id="ufo-title">SOMETHING<br>IS OUT<br><em>THERE.</em></h2><p>Area 51 lore, strange sightings, and unexplained lights. Nevada has plenty of room for a good&nbsp;mystery.</p><span class="story-tag">UFOs & unexplained encounters</span></div><span class="story-number" aria-hidden="true">03</span></article>
+        </div>
+        <div class="story-controls"><div class="story-tabs" aria-label="Jump to a story"><button class="is-active" data-story="0" aria-pressed="true"><span>01</span> Ghosts</button><button data-story="1" aria-pressed="false"><span>02</span> Dark history</button><button data-story="2" aria-pressed="false"><span>03</span> UFOs</button></div><span class="story-count" aria-live="polite">01 / 03</span></div>
+      </div>
+    </section>
+    <section class="tour-highlights" aria-labelledby="highlights-title">
+      <div class="highlights-atmosphere" aria-hidden="true">
+        <img class="is-active" data-topic-image="dam" src="/assets/hoover-dam.webp" srcset="/assets/hoover-dam-960.webp 960w, /assets/hoover-dam.webp 1672w" sizes="100vw" alt="Six Hoover Dam construction workers in hard hats posing with jackhammer drills on the rocky canyon floor" loading="lazy" width="1672" height="941">
+        <img data-topic-image="ghost" src="/assets/ghost-dog.webp" srcset="/assets/ghost-dog-960.webp 960w, /assets/ghost-dog.webp 1448w" sizes="100vw" alt="Black dog standing beside a stone wall in drifting fog with desert mountains behind" loading="lazy" width="1448" height="1086">
+        <img data-topic-image="bodies" src="/assets/dam-workers.webp" srcset="/assets/dam-workers-960.webp 960w, /assets/dam-workers.webp 1024w" sizes="100vw" alt="Two bronze dam worker statues, one seated by his boots, one standing with a shovel, on a foggy moonlit night" loading="lazy" width="1024" height="576">
+        <img data-topic-image="murderer" src="/assets/first-murderer.webp" srcset="/assets/first-murderer-960.webp 960w, /assets/first-murderer.webp 1024w" sizes="100vw" alt="A tour group standing in fog outside a white columned building under a full moon" loading="lazy" width="1024" height="768">
+        <img data-topic-image="celebs" src="/assets/strange-celebs.webp" srcset="/assets/strange-celebs-960.webp 960w, /assets/strange-celebs.webp 1024w" sizes="100vw" alt="A tour group standing on a foggy, moonlit street under trees strung with lights, one person holding up a phone" loading="lazy" width="1024" height="606">
+        <img data-topic-image="sky" src="/assets/flying-saucer.webp" srcset="/assets/flying-saucer-960.webp 960w, /assets/flying-saucer.webp 1024w" sizes="100vw" alt="The Flying Saucer shopfront at night, a glowing alien figure in the doorway through fog" loading="lazy" width="1024" height="1024">
+        <img data-topic-image="guide" src="/assets/buried-bodies.webp" srcset="/assets/buried-bodies-960.webp 960w, /assets/buried-bodies.webp 1086w" sizes="100vw" alt="Two people walking out of a dark tunnel toward desert mountains under a stormy sky" loading="lazy" width="1086" height="1448">
+        <img data-topic-image="esp" src="/assets/esp-gambling.webp" srcset="/assets/esp-gambling-960.webp 960w, /assets/esp-gambling.webp 1447w" sizes="100vw" alt="Stacks of casino chips on a roulette table as a dealer reaches across the green felt" loading="lazy" width="1447" height="1087">
+      </div>
+      <div class="highlights-content section-pad">
+        <div class="highlights-heading">
+          <h2 class="reveal" id="highlights-title">YOU’LL LEARN<br><span>ABOUT...</span></h2>
+        </div>
+        <ol class="tour-highlights-list" role="list">
+          <li class="topic reveal is-current" data-topic="dam"><span class="topic-index" aria-hidden="true">01 /</span><h3>HOOVER DAM</h3><p>The lives lost building Hoover Dam, and the ghost stories that&nbsp;followed.</p></li>
+          <li class="topic reveal" data-topic="ghost"><span class="topic-index" aria-hidden="true">02 /</span><h3>GHOST DOG</h3><p>The ghost dog that still wanders the streets&nbsp;at&nbsp;night</p></li>
+          <li class="topic reveal" data-topic="murderer"><span class="topic-index" aria-hidden="true">03 /</span><h3>FIRST MURDERER</h3><p>The story of the woman who became Boulder City’s first&nbsp;murderer.</p></li>
+          <li class="topic reveal" data-topic="sky"><span class="topic-index" aria-hidden="true">04 /</span><h3>AREA 51</h3><p>Area 51 lore and strange sightings in the Nevada&nbsp;sky.</p></li>
+          <li class="topic reveal" data-topic="bodies"><span class="topic-index" aria-hidden="true">05 /</span><h3>BURIED BODIES</h3><p>Gangster lore and the desert’s darker&nbsp;secrets.</p></li>
+          <li class="topic reveal" data-topic="celebs"><span class="topic-index" aria-hidden="true">06 /</span><h3>STRANGE CELEBS</h3><p>Boris Karloff, Bette Davis, and unexpected connections to&nbsp;the&nbsp;town.</p></li>
+          <li class="topic reveal" data-topic="guide"><span class="topic-index" aria-hidden="true">07 /</span><h3>GHOST METER</h3><p>How to turn your body into a human&nbsp;“Ghost&nbsp;Meter”</p></li>
+          <li class="topic reveal" data-topic="esp"><span class="topic-index" aria-hidden="true">08 /</span><h3>ESP</h3><p>An ESP&nbsp;gambling&nbsp;tip</p></li>
+        </ol>
+      </div>
+    </section>
+    <section id="zombies" class="zombies section-pad">
+      <div class="section-kicker"><span>03 / Your night starts here</span><span>Zombie owned. Spirit approved.</span></div>
+      <div class="zombies-layout"><div class="zombies-copy"><h2 class="reveal">COLD BEER.<br>CHILLING<br><span>STORIES.</span></h2><div class="zombies-description"><p>The tour has a new home with Beer Zombies. Meet at the Boulder City Draft Room, settle in, and get ready to see the neighborhood a&nbsp;little&nbsp;differently.</p><a class="text-link dark-link" href="https://www.google.com/maps/dir/?api=1&amp;destination=Beer+Zombies%2C+567+Nevada+Way%2C+Boulder+City%2C+NV+89005" target="_blank" rel="noopener">Get Directions <span aria-hidden="true"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></span></a></div></div><figure class="zombies-photo reveal"><div class="photo-window"><img src="/assets/beer-zombies-boulder-city.webp" srcset="/assets/beer-zombies-boulder-city-960.webp 960w, /assets/beer-zombies-boulder-city.webp 1672w" sizes="(max-width:760px) 100vw, 58vw" alt="Beer Zombies Boulder City Draft Room and patio under warm string lights" loading="lazy" width="1672" height="941"></div><figcaption><span>Beer Zombies / Boulder City</span><span>567 Nevada Way</span></figcaption><img class="bz-wordmark" src="/assets/bz-logo.svg" alt="Beer Zombies" loading="lazy" width="1326" height="655"></figure></div>
+    </section>
+    <section class="plan section-pad" id="plan">
+      <div class="section-kicker"><span>04 / Before you cross over</span><span>A little less mystery. A few useful details.</span></div>
+      <div class="plan-layout"><div class="plan-title"><h2 class="reveal">BEFORE<br>YOU<br><span>HEAD OUT.</span></h2><a class="button" href="#tickets">Find your tour <span aria-hidden="true"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></span></a></div><div class="plan-details"><div class="faq"><details><summary>What’s the walk like?<span aria-hidden="true"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>About an hour and less than half a mile, on level public sidewalks. An easy pace, with plenty of time for stories.</p></details><details><summary>Can the whole family come?<span aria-hidden="true"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>Yes! All ages are welcome on the tour and at Beer Zombies Boulder City. You don’t have to be a beer drinker to join&nbsp;the&nbsp;fun.</p></details><details><summary>How scary is it?<span aria-hidden="true"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>Expect spooky stories and an eerie atmosphere, with no jump scares. The tour explores ghosts, local legends, and darker moments in Boulder City’s history. Parents can use their judgment about how comfortable their children are with those&nbsp;subjects.</p></details><details><summary>Can I bring my dog?<span aria-hidden="true"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>Absolutely. Well-behaved dogs are welcome at Beer Zombies Boulder City and on the tour. Bring your four-legged ghost hunter along for the&nbsp;adventure.</p></details><details><summary>Can I drink a beer on the tour?<span aria-hidden="true"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>It's perfectly legal to drink a beer while you take our walking tour!</p></details><details><summary>Are wheelchairs and strollers welcome?<span aria-hidden="true"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>Yes. Wheelchairs and strollers can participate in the tour. The route follows level public sidewalks for less than half a mile, with an easy pace and stops along the way for&nbsp;stories.</p></details><details><summary>When should I arrive?<span aria-hidden="true"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>Please arrive at least 10 minutes before your scheduled tour. Meet inside Beer Zombies at 567 Nevada Way, or outside if the venue is closed. Most downtown parking is free.</p><p><strong>Late arrivals are not eligible for a refund.</strong></p></details><details><summary>Can I take photos?<span aria-hidden="true"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>Photos are welcome. Audio and video recording are not permitted.</p></details><details><summary>How do I get tickets?<span aria-hidden="true"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>Select Get Tickets to choose an available date and purchase through Eventbrite.</p></details></div></div></div>
+    </section>
+    <section class="local section-pad" id="local">
+      <div class="section-kicker"><span>05 / Keep the night alive</span><span>Good company. Strange company.</span></div>
+      <div class="local-heading"><h2 class="reveal">MORE GOOD<br><span>HAUNTS.</span></h2><p>Grab a bite, stop for a drink, or keep the monster theme going at these nearby&nbsp;spots.</p></div>
+      <div class="local-links"><a href="https://www.foxsmokehousebbq.com/" target="_blank" rel="noopener"><span class="local-index">01 / Fuel up</span><h3>FOX SMOKEHOUSE BBQ</h3><span class="local-description">Smokehouse favorites before the stories.</span><span class="local-arrow" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></span></a><a href="https://clevelandslounge.com/" target="_blank" rel="noopener"><span class="local-index">02 / Stick around</span><h3>CLEVELAND’S LOUNGE</h3><span class="local-description">A drink downstairs at the Boulder Dam Hotel.</span><span class="local-arrow" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></span></a><a href="https://tomdevlinsmonstermuseum.com/" target="_blank" rel="noopener"><span class="local-index">03 / More monsters</span><h3>TOM DEVLIN’S MONSTER MUSEUM</h3><span class="local-description">More monsters. This time, up close.</span><span class="local-arrow" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></span></a></div>
+    </section>
+    <section class="tickets section-pad" id="tickets">
+      <div class="ticket-background" aria-hidden="true"><img src="/assets/boulder-city-inn.webp" srcset="/assets/boulder-city-inn-960.webp 960w, /assets/boulder-city-inn.webp 1672w" sizes="100vw" alt="Historic Boulder Dam Hotel at night, windows glowing beside a street lamp under a full moon, fog over the wet street" loading="lazy" width="1672" height="941"></div>
+      <div class="section-kicker"><span>06 / You coming?</span><span>The ordinary can wait.</span></div>
+      <div class="ticket-content"><h2 class="reveal">LET’S GET<br><span>STRANGE.</span></h2><p>Pick a date. Round up your people.<br>Meet us at Beer Zombies for an hour exploring Boulder City’s stranger&nbsp;side.</p><a class="button button-large" href="https://www.eventbrite.com/e/haunted-boulder-city-tour-tickets-2000657664932" target="_blank" rel="noopener">Get tickets <span aria-hidden="true"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></span></a><span class="ticket-note">View available dates and book through Eventbrite.</span>
+      <a class="review-proof" href="https://www.tripadvisor.com/Attraction_Review-g60881-d23608698-Reviews-Boulder_City_Ghost_Tour_Haunted_Boulder_City_Ghost_UFO_Tour-Boulder_City_Nevada.html" target="_blank" rel="noopener" aria-label="Rated 4.9 out of 5, Excellent on Tripadvisor. Read the reviews.">
+        <span class="review-proof-score">4.9<span>/5</span></span>
+        <span class="review-proof-copy"><strong>Excellent</strong><span>on Tripadvisor</span></span>
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg>
+      </a>
+      </div>
+    </section>
+    <!-- Creator and media credits: https://www.joshuapwarren.com/about.html
+         Original tour credits: https://freecharm.com/HauntedBoulderCity/HauntedBoulderCity.html -->
+    <aside class="creator-credit" id="creator" aria-labelledby="creator-title">
+      <div class="creator-copy reveal">
+        <img class="creator-portrait" src="/assets/joshua-p-warren-960.webp" alt="Joshua P. Warren, creator of Haunted Boulder City" loading="lazy" width="960" height="640">
+        <div class="creator-bio">
+          <span class="creator-label">Experience by</span>
+          <h2 id="creator-title">JOSHUA P. WARREN</h2>
+          <p>Author. Paranormal researcher. Tour&nbsp;creator.</p>
+        </div>
+      </div>
+      <div class="creator-media reveal">
+        <span class="creator-media-label" id="creator-media-label">His television appearances include</span>
+        <ul class="creator-media-list" aria-labelledby="creator-media-label">
+          <li><img src="/assets/ghost-adventures.png" alt="Ghost Adventures" loading="lazy" width="1800" height="638"></li>
+          <li><img src="/assets/travel-channel.png" alt="Travel Channel" loading="lazy" width="444" height="195"></li>
+          <li><img class="media-history" src="/assets/history-current.svg" alt="History Channel" loading="lazy" width="433" height="500"></li>
+          <li><img src="/assets/discovery-channel.svg" alt="Discovery Channel" loading="lazy" width="1800" height="449"></li>
+          <li><img src="/assets/national-geographic-channel.svg" alt="National Geographic Channel" loading="lazy" width="300" height="106"></li>
+        </ul>
+      </div>
+    </aside>
+  </main>
+  <footer><div class="footer-bottom"><a class="site-credit" href="https://www.artisanwebsite.com" target="_blank" rel="sponsored noopener"><img class="site-credit-icon" src="/assets/artisan-icon.jpg" alt="Artisan Website Co logo" width="36" height="36" loading="lazy"><span class="site-credit-copy">Website by <span class="site-credit-name">Artisan Website Co.</span></span></a><a href="#home">Back to the start <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 20V4M5 11l7-7 7 7"/></svg></a></div></footer>
+  <!-- The box office. Eventbrite checkout renders inside this modal once an
+       event ID is configured at the top of app.js; until then the Get Tickets
+       button keeps its ordinary link. Preview the panel at /?tickets=preview -->
+  <div class="ticket-modal" role="dialog" aria-modal="true" aria-labelledby="ticket-modal-title" hidden>
+    <div class="ticket-modal-veil" aria-hidden="true"></div>
+    <div class="ticket-modal-fog" aria-hidden="true"><span></span><span></span></div>
+    <div class="ticket-modal-panel">
+      <header class="ticket-modal-head">
+        <div>
+          <span class="ticket-modal-eyebrow">The box office</span>
+          <h2 id="ticket-modal-title">PICK YOUR <span>NIGHT.</span></h2>
+        </div>
+        <button class="ticket-modal-close" type="button" aria-label="Close checkout"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button>
+      </header>
+      <div class="ticket-modal-stage">
+        <div id="eventbrite-checkout" class="ticket-modal-checkout"></div>
+        <p class="ticket-modal-status" role="status">Opening the box office<span class="loader-dots" aria-hidden="true"><i></i><i></i><i></i></span></p>
+        <div class="ticket-modal-fallback" hidden>
+          <h3>THE BOX OFFICE IS DARK RIGHT NOW.</h3>
+          <p>Tickets will be sold right here. In the meantime, reach Beer Zombies directly and they’ll get you on a&nbsp;tour.</p>
+          <a class="text-link" href="https://www.thebeerzombies.com/contact" target="_blank" rel="noopener">Contact Beer Zombies <span aria-hidden="true"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></span></a>
+        </div>
+      </div>
+      <p class="ticket-modal-note"><span>Secure checkout by Eventbrite</span><span>Beer Zombies · 567 Nevada Way</span></p>
+    </div>
+  </div>
+</body>
+</html>

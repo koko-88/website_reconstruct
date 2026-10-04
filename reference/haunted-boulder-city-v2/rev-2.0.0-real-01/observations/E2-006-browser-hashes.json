@@ -1,0 +1,17 @@
+{
+  "timestampUTC": "2026-10-04T03:24:49.975Z",
+  "records": [
+    {
+      "path": "/styles.css",
+      "status": 200,
+      "bytes": 78371,
+      "sha256": "84f8d4afd287dec6d138861661793fee8f4c1fc72ea7afa9f3d8f6a11c6848dc"
+    },
+    {
+      "path": "/app.js",
+      "status": 200,
+      "bytes": 48041,
+      "sha256": "a9284d1e441eedefebb5d4f1768780a5fcec8dfeae7bce26948124065eb51f3a"
+    }
+  ]
+}

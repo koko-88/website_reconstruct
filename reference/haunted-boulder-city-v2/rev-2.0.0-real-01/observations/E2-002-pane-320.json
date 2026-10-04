@@ -1,0 +1,642 @@
+{
+  "schemaVersion": 2,
+  "timestampUTC": "2026-10-04T03:21:59.490Z",
+  "performanceMs": 16646320.5,
+  "timeOrigin": 1791067473169.8,
+  "environment": {
+    "url": {
+      "origin": "https://www.hauntedbouldercity.com",
+      "path": "/",
+      "queryKeys": [],
+      "fragmentPresent": true
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Polypane/31.0.0 Chrome/155.0.0.0 Safari/537.36",
+    "platform": "Win32",
+    "cssViewport": {
+      "width": 320,
+      "height": 565
+    },
+    "clientWidth": 305,
+    "scrollbarWidth": 15,
+    "dpr": 1,
+    "visualViewport": {
+      "width": 305,
+      "height": 565,
+      "scale": 1
+    },
+    "zoom": "unknown; visual scale is not browser zoom",
+    "language": "en-US",
+    "timezone": "Africa/Cairo",
+    "direction": "ltr",
+    "dark": false,
+    "reducedMotion": false,
+    "coarsePointer": false,
+    "maxTouchPoints": 0,
+    "scroll": {
+      "x": 0,
+      "y": 8511,
+      "width": 305,
+      "height": 10467
+    }
+  },
+  "readiness": {
+    "documentState": "complete",
+    "fonts": "loaded",
+    "required": [
+      {
+        "selector": "main",
+        "count": 1,
+        "visible": true,
+        "rects": [
+          {
+            "x": 0,
+            "y": -8511,
+            "width": 305,
+            "height": 10315.625
+          }
+        ],
+        "samples": [
+          {
+            "tag": "main",
+            "id": "",
+            "role": null,
+            "expanded": null,
+            "selected": null,
+            "open": false,
+            "hidden": false,
+            "focused": false,
+            "textLength": 5407,
+            "computed": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "305px",
+              "height": "10315.6px",
+              "maxWidth": "none",
+              "paddingTop": "0px",
+              "paddingRight": "0px",
+              "paddingBottom": "0px",
+              "paddingLeft": "0px",
+              "marginTop": "0px",
+              "marginRight": "0px",
+              "marginBottom": "0px",
+              "marginLeft": "0px",
+              "gap": "normal",
+              "gridTemplateColumns": "none",
+              "flexDirection": "row",
+              "overflowX": "visible",
+              "overflowY": "visible",
+              "zIndex": "auto",
+              "color": "rgb(231, 233, 216)",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "fontFamily": "Arial, Helvetica, sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "fontStyle": "normal",
+              "fontStretch": "100%",
+              "lineHeight": "normal",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "opacity": "1",
+              "transform": "none"
+            }
+          }
+        ],
+        "measurementType": "computed CSS and observed DOM state; declared font stack is not actual rendered font proof",
+        "truncated": false
+      }
+    ],
+    "absent": [],
+    "geometry": [
+      {
+        "selector": "body",
+        "count": 1,
+        "visible": true,
+        "rects": [
+          {
+            "x": 0,
+            "y": -8511,
+            "width": 305,
+            "height": 10467.015625
+          }
+        ],
+        "samples": [
+          {
+            "tag": "body",
+            "id": "",
+            "role": null,
+            "expanded": null,
+            "selected": null,
+            "open": false,
+            "hidden": false,
+            "focused": false,
+            "textLength": 6308,
+            "computed": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "305px",
+              "height": "10467px",
+              "maxWidth": "none",
+              "paddingTop": "0px",
+              "paddingRight": "0px",
+              "paddingBottom": "0px",
+              "paddingLeft": "0px",
+              "marginTop": "0px",
+              "marginRight": "0px",
+              "marginBottom": "0px",
+              "marginLeft": "0px",
+              "gap": "normal",
+              "gridTemplateColumns": "none",
+              "flexDirection": "row",
+              "overflowX": "clip",
+              "overflowY": "visible",
+              "zIndex": "auto",
+              "color": "rgb(231, 233, 216)",
+              "backgroundColor": "rgb(9, 15, 14)",
+              "fontFamily": "Arial, Helvetica, sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "fontStyle": "normal",
+              "fontStretch": "100%",
+              "lineHeight": "normal",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "opacity": "1",
+              "transform": "none"
+            }
+          }
+        ],
+        "measurementType": "computed CSS and observed DOM state; declared font stack is not actual rendered font proof",
+        "truncated": false
+      }
+    ],
+    "images": [
+      {
+        "source": {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/boulder-city-inn-960.webp",
+          "queryKeys": [],
+          "fragmentPresent": false
+        },
+        "rect": {
+          "x": 0,
+          "y": 402.65777587890625,
+          "width": 305,
+          "height": 927.9999389648438
+        },
+        "complete": true,
+        "naturalWidth": 320,
+        "naturalHeight": 180,
+        "loading": "lazy",
+        "objectFit": "cover",
+        "objectPosition": "50% 50%",
+        "decode": "ok"
+      }
+    ],
+    "imageCount": 24,
+    "visibleImageCount": 1,
+    "truncated": false
+  },
+  "nonDOM": {
+    "status": "observed DOM surfaces only",
+    "surfaces": [
+      {
+        "tag": "svg",
+        "rect": {
+          "x": 189.359375,
+          "y": -8478.5625,
+          "width": 24,
+          "height": 24
+        },
+        "visible": false,
+        "source": null
+      },
+      {
+        "tag": "svg",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "visible": false,
+        "source": null
+      },
+      {
+        "tag": "svg",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "visible": false,
+        "source": null
+      },
+      {
+        "tag": "svg",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "visible": false,
+        "source": null
+      },
+      {
+        "tag": "svg",
+        "rect": {
+          "x": 244,
+          "y": -7844.34765625,
+          "width": 24,
+          "height": 24
+        },
+        "visible": false,
+        "source": null
+      },
+      {
+        "tag": "svg",
+        "rect": {
+          "x": -258.5849304199219,
+          "y": -7733.42041015625,
+          "width": 26.67169189453125,
+          "height": 26.671875
+        },
+        "visible": false,
+        "source": null
+      },
+      {
+        "tag": "svg",
+        "rect": {
+          "x": 42.999183654785156,
+          "y": -7741.31787109375,
+          "width": 26.67169189453125,
+          "height": 26.671875
+        },
+        "visible": false,
+        "source": null
+      },
+      {
+        "tag": "svg",
+        "rect": {
+          "x": 369.62158203125,
+          "y": -7749.87060546875,
+          "width": 26.67169189453125,
+          "height": 26.671875
+        },
+        "visible": false,
+        "source": null
+      },
+      {
+        "tag": "svg",
+        "rect": {
+          "x": 750.772216796875,
+          "y": -7759.8515625,
+          "width": 26.67169189453125,
+          "height": 26.671875
+        },
+        "visible": false,
+        "source": null
+      },
+      {
+        "tag": "svg",
+        "rect": {
+          "x": 1052.356201171875,
+          "y": -7767.74853515625,
+          "width": 26.6717529296875,
+          "height": 26.67138671875
+        },
+        "visible": false,
+        "source": null
+      },
+      {
+        "tag": "svg",
+        "rect": {
+          "x": 1378.9786376953125,
+          "y": -7776.3017578125,
+          "width": 26.6717529296875,
+          "height": 26.671875
+        },
+        "visible": false,
+        "source": null
+      },
+      {
+        "tag": "svg",
+        "rect": {
+          "x": 240.79649353027344,
+          "y": -7354.60986328125,
+          "width": 60.40702819824219,
+          "height": 60.4072265625
+        },
+        "visible": false,
+        "source": null
+      },
+      {
+        "tag": "svg",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "visible": false,
+        "source": null
+      },
+      {
+        "tag": "video",
+        "rect": {
+          "x": 0,
+          "y": -5351.453125,
+          "width": 305,
+          "height": 804
+        },
+        "visible": false,
+        "source": {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/assets/ufo-night-960.mp4",
+          "queryKeys": [],
+          "fragmentPresent": false
+        },
+        "readyState": 0,
+        "currentTime": 0,
+        "duration": null,
+        "paused": true
+      },
+      {
+        "tag": "svg",
+        "rect": {
+          "x": 152.703125,
+          "y": -2138.375,
+          "width": 14,
+          "height": 14
+        },
+        "visible": false,
+        "source": null
+      },
+      {
+        "tag": "svg",
+        "rect": {
+          "x": 198.4375,
+          "y": -1426.34375,
+          "width": 24,
+          "height": 24
+        },
+        "visible": false,
+        "source": null
+      },
+      {
+        "tag": "svg",
+        "rect": {
+          "x": 252,
+          "y": -1290.21875,
+          "width": 18,
+          "height": 18
+        },
+        "visible": false,
+        "source": null
+      },
+      {
+        "tag": "svg",
+        "rect": {
+          "x": 252,
+          "y": -1206.03125,
+          "width": 18,
+          "height": 18
+        },
+        "visible": false,
+        "source": null
+      },
+      {
+        "tag": "svg",
+        "rect": {
+          "x": 252,
+          "y": -1121.84375,
+          "width": 18,
+          "height": 18
+        },
+        "visible": false,
+        "source": null
+      },
+      {
+        "tag": "svg",
+        "rect": {
+          "x": 252,
+          "y": -1044.84375,
+          "width": 18,
+          "height": 18
+        },
+        "visible": false,
+        "source": null
+      },
+      {
+        "tag": "svg",
+        "rect": {
+          "x": 252,
+          "y": -960.65625,
+          "width": 18,
+          "height": 18
+        },
+        "visible": false,
+        "source": null
+      },
+      {
+        "tag": "svg",
+        "rect": {
+          "x": 252,
+          "y": -869.28125,
+          "width": 18,
+          "height": 18
+        },
+        "visible": false,
+        "source": null
+      },
+      {
+        "tag": "svg",
+        "rect": {
+          "x": 252,
+          "y": -785.09375,
+          "width": 18,
+          "height": 18
+        },
+        "visible": false,
+        "source": null
+      },
+      {
+        "tag": "svg",
+        "rect": {
+          "x": 252,
+          "y": -708.09375,
+          "width": 18,
+          "height": 18
+        },
+        "visible": false,
+        "source": null
+      },
+      {
+        "tag": "svg",
+        "rect": {
+          "x": 252,
+          "y": -631.09375,
+          "width": 18,
+          "height": 18
+        },
+        "visible": false,
+        "source": null
+      },
+      {
+        "tag": "svg",
+        "rect": {
+          "x": 251,
+          "y": -68.34375,
+          "width": 30,
+          "height": 30
+        },
+        "visible": false,
+        "source": null
+      },
+      {
+        "tag": "svg",
+        "rect": {
+          "x": 251,
+          "y": 131.4375,
+          "width": 30,
+          "height": 30
+        },
+        "visible": true,
+        "source": null
+      },
+      {
+        "tag": "svg",
+        "rect": {
+          "x": 251,
+          "y": 321.46875,
+          "width": 30,
+          "height": 30
+        },
+        "visible": true,
+        "source": null
+      },
+      {
+        "tag": "svg",
+        "rect": {
+          "x": 217.5,
+          "y": 1003.578125,
+          "width": 24,
+          "height": 24
+        },
+        "visible": false,
+        "source": null
+      },
+      {
+        "tag": "svg",
+        "rect": {
+          "x": 232.140625,
+          "y": 1161.46875,
+          "width": 20,
+          "height": 20
+        },
+        "visible": false,
+        "source": null
+      },
+      {
+        "tag": "svg",
+        "rect": {
+          "x": 193.859375,
+          "y": 1907.8125,
+          "width": 12,
+          "height": 12
+        },
+        "visible": false,
+        "source": null
+      },
+      {
+        "tag": "svg",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "visible": false,
+        "source": null
+      },
+      {
+        "tag": "svg",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "visible": false,
+        "source": null
+      }
+    ],
+    "truncated": false,
+    "limits": [
+      "No context creation or renderer hook",
+      "WebGL/WebGPU/2D use unknown without corroboration",
+      "OffscreenCanvas, workers, closed shadow roots and cross-origin internals not inspected",
+      "API availability does not prove renderer use"
+    ]
+  },
+  "publicArtifacts": {
+    "status": "observed references; bodies/maps not inspected by this probe",
+    "references": [
+      {
+        "tag": "link",
+        "rel": "stylesheet",
+        "source": {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/styles.css",
+          "queryKeys": [],
+          "fragmentPresent": false
+        }
+      },
+      {
+        "tag": "script",
+        "rel": null,
+        "source": {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/app.js",
+          "queryKeys": [],
+          "fragmentPresent": false
+        }
+      },
+      {
+        "tag": "script",
+        "rel": null,
+        "source": {
+          "origin": "https://www.googletagmanager.com",
+          "path": "/gtag/js",
+          "queryKeys": [
+            "id"
+          ],
+          "fragmentPresent": false
+        }
+      },
+      {
+        "tag": "script",
+        "rel": null,
+        "source": {
+          "origin": "https://www.hauntedbouldercity.com",
+          "path": "/_vercel/insights/script.js",
+          "queryKeys": [],
+          "fragmentPresent": false
+        }
+      }
+    ],
+    "truncated": false,
+    "inlineScriptCount": 4,
+    "limits": [
+      "Query values and fragments omitted; exact public navigation recipe is in the plan",
+      "No map endpoint guessing or source execution"
+    ]
+  }
+}

@@ -1,0 +1,631 @@
+{
+  "environment": {
+    "timestamp": "2026-10-03T23:59:10.589Z",
+    "url": "https://www.hauntedbouldercity.com/",
+    "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      390,
+      844
+    ],
+    "dpr": 1,
+    "visualViewport": {
+      "width": 390,
+      "height": 844,
+      "scale": 1
+    },
+    "scroll": [
+      0,
+      475,
+      390,
+      10603
+    ],
+    "language": "en-US",
+    "timezone": "Africa/Cairo",
+    "direction": "ltr",
+    "touch": 0,
+    "dark": false,
+    "reduced": false,
+    "fonts": "loaded",
+    "ready": "complete"
+  },
+  "forward": [
+    {
+      "timestamp": "2026-10-03T23:59:03.578Z",
+      "scrollY": 0,
+      "root": "motion-ready",
+      "headerRect": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 90,
+        "top": 0,
+        "right": 390,
+        "bottom": 90,
+        "left": 0
+      },
+      "storyTrack": "none",
+      "count": "01 / 03",
+      "video": [
+        {
+          "currentTime": 0,
+          "readyState": 4,
+          "duration": 8.041667,
+          "src": "https://www.hauntedbouldercity.com/assets/ufo-night.mp4"
+        }
+      ],
+      "topics": [
+        "dam"
+      ]
+    },
+    {
+      "timestamp": "2026-10-03T23:59:03.735Z",
+      "scrollY": 675,
+      "root": "motion-ready",
+      "headerRect": {
+        "x": 0,
+        "y": -675,
+        "width": 390,
+        "height": 90,
+        "top": -675,
+        "right": 390,
+        "bottom": -585,
+        "left": 0
+      },
+      "storyTrack": "none",
+      "count": "01 / 03",
+      "video": [
+        {
+          "currentTime": 0,
+          "readyState": 4,
+          "duration": 8.041667,
+          "src": "https://www.hauntedbouldercity.com/assets/ufo-night.mp4"
+        }
+      ],
+      "topics": [
+        "dam"
+      ]
+    },
+    {
+      "timestamp": "2026-10-03T23:59:03.892Z",
+      "scrollY": 1350,
+      "root": "motion-ready",
+      "headerRect": {
+        "x": 0,
+        "y": -1350,
+        "width": 390,
+        "height": 90,
+        "top": -1350,
+        "right": 390,
+        "bottom": -1260,
+        "left": 0
+      },
+      "storyTrack": "none",
+      "count": "01 / 03",
+      "video": [
+        {
+          "currentTime": 0,
+          "readyState": 4,
+          "duration": 8.041667,
+          "src": "https://www.hauntedbouldercity.com/assets/ufo-night.mp4"
+        }
+      ],
+      "topics": [
+        "dam"
+      ]
+    },
+    {
+      "timestamp": "2026-10-03T23:59:04.047Z",
+      "scrollY": 2025,
+      "root": "motion-ready",
+      "headerRect": {
+        "x": 0,
+        "y": -2025,
+        "width": 390,
+        "height": 90,
+        "top": -2025,
+        "right": 390,
+        "bottom": -1935,
+        "left": 0
+      },
+      "storyTrack": "none",
+      "count": "01 / 03",
+      "video": [
+        {
+          "currentTime": 0,
+          "readyState": 4,
+          "duration": 8.041667,
+          "src": "https://www.hauntedbouldercity.com/assets/ufo-night.mp4"
+        }
+      ],
+      "topics": [
+        "dam"
+      ]
+    },
+    {
+      "timestamp": "2026-10-03T23:59:04.204Z",
+      "scrollY": 2700,
+      "root": "motion-ready",
+      "headerRect": {
+        "x": 0,
+        "y": -2700,
+        "width": 390,
+        "height": 90,
+        "top": -2700,
+        "right": 390,
+        "bottom": -2610,
+        "left": 0
+      },
+      "storyTrack": "none",
+      "count": "01 / 03",
+      "video": [
+        {
+          "currentTime": 0.241185,
+          "readyState": 4,
+          "duration": 8.041667,
+          "src": "https://www.hauntedbouldercity.com/assets/ufo-night.mp4"
+        }
+      ],
+      "topics": [
+        "dam"
+      ]
+    },
+    {
+      "timestamp": "2026-10-03T23:59:04.372Z",
+      "scrollY": 3375,
+      "root": "motion-ready",
+      "headerRect": {
+        "x": 0,
+        "y": -3375,
+        "width": 390,
+        "height": 90,
+        "top": -3375,
+        "right": 390,
+        "bottom": -3285,
+        "left": 0
+      },
+      "storyTrack": "none",
+      "count": "01 / 03",
+      "video": [
+        {
+          "currentTime": 4.726423,
+          "readyState": 4,
+          "duration": 8.041667,
+          "src": "https://www.hauntedbouldercity.com/assets/ufo-night.mp4"
+        }
+      ],
+      "topics": [
+        "dam"
+      ]
+    },
+    {
+      "timestamp": "2026-10-03T23:59:04.527Z",
+      "scrollY": 4050,
+      "root": "motion-ready",
+      "headerRect": {
+        "x": 0,
+        "y": -4050,
+        "width": 390,
+        "height": 90,
+        "top": -4050,
+        "right": 390,
+        "bottom": -3960,
+        "left": 0
+      },
+      "storyTrack": "none",
+      "count": "01 / 03",
+      "video": [
+        {
+          "currentTime": 7.991667,
+          "readyState": 4,
+          "duration": 8.041667,
+          "src": "https://www.hauntedbouldercity.com/assets/ufo-night.mp4"
+        }
+      ],
+      "topics": [
+        "dam"
+      ]
+    },
+    {
+      "timestamp": "2026-10-03T23:59:04.685Z",
+      "scrollY": 4725,
+      "root": "motion-ready",
+      "headerRect": {
+        "x": 0,
+        "y": -4725,
+        "width": 390,
+        "height": 90,
+        "top": -4725,
+        "right": 390,
+        "bottom": -4635,
+        "left": 0
+      },
+      "storyTrack": "none",
+      "count": "01 / 03",
+      "video": [
+        {
+          "currentTime": 7.991667,
+          "readyState": 4,
+          "duration": 8.041667,
+          "src": "https://www.hauntedbouldercity.com/assets/ufo-night.mp4"
+        }
+      ],
+      "topics": [
+        "sky"
+      ]
+    },
+    {
+      "timestamp": "2026-10-03T23:59:04.853Z",
+      "scrollY": 5400,
+      "root": "motion-ready is-glitching",
+      "headerRect": {
+        "x": 0,
+        "y": -5400,
+        "width": 390,
+        "height": 90,
+        "top": -5400,
+        "right": 390,
+        "bottom": -5310,
+        "left": 0
+      },
+      "storyTrack": "none",
+      "count": "01 / 03",
+      "video": [
+        {
+          "currentTime": 7.991667,
+          "readyState": 4,
+          "duration": 8.041667,
+          "src": "https://www.hauntedbouldercity.com/assets/ufo-night.mp4"
+        }
+      ],
+      "topics": [
+        "guide"
+      ]
+    },
+    {
+      "timestamp": "2026-10-03T23:59:05.007Z",
+      "scrollY": 6075,
+      "root": "motion-ready is-glitching",
+      "headerRect": {
+        "x": 0,
+        "y": -6075,
+        "width": 390,
+        "height": 90,
+        "top": -6075,
+        "right": 390,
+        "bottom": -5985,
+        "left": 0
+      },
+      "storyTrack": "none",
+      "count": "01 / 03",
+      "video": [
+        {
+          "currentTime": 7.991667,
+          "readyState": 4,
+          "duration": 8.041667,
+          "src": "https://www.hauntedbouldercity.com/assets/ufo-night.mp4"
+        }
+      ],
+      "topics": [
+        "esp"
+      ]
+    },
+    {
+      "timestamp": "2026-10-03T23:59:05.163Z",
+      "scrollY": 6750,
+      "root": "motion-ready is-glitching",
+      "headerRect": {
+        "x": 0,
+        "y": -6750,
+        "width": 390,
+        "height": 90,
+        "top": -6750,
+        "right": 390,
+        "bottom": -6660,
+        "left": 0
+      },
+      "storyTrack": "none",
+      "count": "01 / 03",
+      "video": [
+        {
+          "currentTime": 7.991667,
+          "readyState": 4,
+          "duration": 8.041667,
+          "src": "https://www.hauntedbouldercity.com/assets/ufo-night.mp4"
+        }
+      ],
+      "topics": [
+        "esp"
+      ]
+    },
+    {
+      "timestamp": "2026-10-03T23:59:05.317Z",
+      "scrollY": 7425,
+      "root": "motion-ready is-glitching",
+      "headerRect": {
+        "x": 0,
+        "y": -7425,
+        "width": 390,
+        "height": 90,
+        "top": -7425,
+        "right": 390,
+        "bottom": -7335,
+        "left": 0
+      },
+      "storyTrack": "none",
+      "count": "01 / 03",
+      "video": [
+        {
+          "currentTime": 7.991667,
+          "readyState": 4,
+          "duration": 8.041667,
+          "src": "https://www.hauntedbouldercity.com/assets/ufo-night.mp4"
+        }
+      ],
+      "topics": [
+        "esp"
+      ]
+    },
+    {
+      "timestamp": "2026-10-03T23:59:05.484Z",
+      "scrollY": 8100,
+      "root": "motion-ready is-glitching",
+      "headerRect": {
+        "x": 0,
+        "y": -8100,
+        "width": 390,
+        "height": 90,
+        "top": -8100,
+        "right": 390,
+        "bottom": -8010,
+        "left": 0
+      },
+      "storyTrack": "none",
+      "count": "01 / 03",
+      "video": [
+        {
+          "currentTime": 7.991667,
+          "readyState": 4,
+          "duration": 8.041667,
+          "src": "https://www.hauntedbouldercity.com/assets/ufo-night.mp4"
+        }
+      ],
+      "topics": [
+        "esp"
+      ]
+    },
+    {
+      "timestamp": "2026-10-03T23:59:05.639Z",
+      "scrollY": 8775,
+      "root": "motion-ready",
+      "headerRect": {
+        "x": 0,
+        "y": -8775,
+        "width": 390,
+        "height": 90,
+        "top": -8775,
+        "right": 390,
+        "bottom": -8685,
+        "left": 0
+      },
+      "storyTrack": "none",
+      "count": "01 / 03",
+      "video": [
+        {
+          "currentTime": 7.991667,
+          "readyState": 4,
+          "duration": 8.041667,
+          "src": "https://www.hauntedbouldercity.com/assets/ufo-night.mp4"
+        }
+      ],
+      "topics": [
+        "esp"
+      ]
+    },
+    {
+      "timestamp": "2026-10-03T23:59:05.792Z",
+      "scrollY": 9450,
+      "root": "motion-ready",
+      "headerRect": {
+        "x": 0,
+        "y": -9450,
+        "width": 390,
+        "height": 90,
+        "top": -9450,
+        "right": 390,
+        "bottom": -9360,
+        "left": 0
+      },
+      "storyTrack": "none",
+      "count": "01 / 03",
+      "video": [
+        {
+          "currentTime": 7.991667,
+          "readyState": 4,
+          "duration": 8.041667,
+          "src": "https://www.hauntedbouldercity.com/assets/ufo-night.mp4"
+        }
+      ],
+      "topics": [
+        "esp"
+      ]
+    },
+    {
+      "timestamp": "2026-10-03T23:59:05.947Z",
+      "scrollY": 9759,
+      "root": "motion-ready",
+      "headerRect": {
+        "x": 0,
+        "y": -9759,
+        "width": 390,
+        "height": 90,
+        "top": -9759,
+        "right": 390,
+        "bottom": -9669,
+        "left": 0
+      },
+      "storyTrack": "none",
+      "count": "01 / 03",
+      "video": [
+        {
+          "currentTime": 7.991667,
+          "readyState": 4,
+          "duration": 8.041667,
+          "src": "https://www.hauntedbouldercity.com/assets/ufo-night.mp4"
+        }
+      ],
+      "topics": [
+        "esp"
+      ]
+    }
+  ],
+  "reverseEnded": {
+    "scrollY": 475,
+    "root": "motion-ready"
+  },
+  "images": [
+    {
+      "src": "https://www.hauntedbouldercity.com/assets/bz-logo.svg",
+      "complete": true,
+      "naturalWidth": 300,
+      "naturalHeight": 148
+    },
+    {
+      "src": "https://www.hauntedbouldercity.com/assets/haunted-downtown-boulder-city-960.webp",
+      "complete": true,
+      "naturalWidth": 389,
+      "naturalHeight": 219
+    },
+    {
+      "src": "https://www.hauntedbouldercity.com/assets/boulder-dam-hotel-960.webp",
+      "complete": true,
+      "naturalWidth": 351,
+      "naturalHeight": 221
+    },
+    {
+      "src": "https://www.hauntedbouldercity.com/assets/boulder-city-haunted-walk-tour.webp",
+      "complete": true,
+      "naturalWidth": 390,
+      "naturalHeight": 259
+    },
+    {
+      "src": "https://www.hauntedbouldercity.com/assets/boulder-city-shop.webp",
+      "complete": true,
+      "naturalWidth": 390,
+      "naturalHeight": 219
+    },
+    {
+      "src": "https://www.hauntedbouldercity.com/assets/ufo-night.webp",
+      "complete": true,
+      "naturalWidth": 0,
+      "naturalHeight": 0
+    },
+    {
+      "src": "https://www.hauntedbouldercity.com/assets/hoover-dam.webp",
+      "complete": true,
+      "naturalWidth": 390,
+      "naturalHeight": 219
+    },
+    {
+      "src": "https://www.hauntedbouldercity.com/assets/ghost-dog-960.webp",
+      "complete": true,
+      "naturalWidth": 389,
+      "naturalHeight": 292
+    },
+    {
+      "src": "https://www.hauntedbouldercity.com/assets/dam-workers.webp",
+      "complete": true,
+      "naturalWidth": 390,
+      "naturalHeight": 219
+    },
+    {
+      "src": "https://www.hauntedbouldercity.com/assets/first-murderer.webp",
+      "complete": true,
+      "naturalWidth": 390,
+      "naturalHeight": 292
+    },
+    {
+      "src": "https://www.hauntedbouldercity.com/assets/strange-celebs-960.webp",
+      "complete": true,
+      "naturalWidth": 389,
+      "naturalHeight": 230
+    },
+    {
+      "src": "https://www.hauntedbouldercity.com/assets/flying-saucer-960.webp",
+      "complete": true,
+      "naturalWidth": 389,
+      "naturalHeight": 389
+    },
+    {
+      "src": "https://www.hauntedbouldercity.com/assets/buried-bodies-960.webp",
+      "complete": true,
+      "naturalWidth": 389,
+      "naturalHeight": 519
+    },
+    {
+      "src": "https://www.hauntedbouldercity.com/assets/esp-gambling-960.webp",
+      "complete": true,
+      "naturalWidth": 389,
+      "naturalHeight": 292
+    },
+    {
+      "src": "https://www.hauntedbouldercity.com/assets/beer-zombies-boulder-city-960.webp",
+      "complete": true,
+      "naturalWidth": 0,
+      "naturalHeight": 0
+    },
+    {
+      "src": "https://www.hauntedbouldercity.com/assets/bz-logo.svg",
+      "complete": true,
+      "naturalWidth": 300,
+      "naturalHeight": 148
+    },
+    {
+      "src": "https://www.hauntedbouldercity.com/assets/boulder-city-inn-960.webp",
+      "complete": true,
+      "naturalWidth": 389,
+      "naturalHeight": 219
+    },
+    {
+      "src": "https://www.hauntedbouldercity.com/assets/joshua-p-warren-960.webp",
+      "complete": true,
+      "naturalWidth": 0,
+      "naturalHeight": 0
+    },
+    {
+      "src": "https://www.hauntedbouldercity.com/assets/ghost-adventures.png",
+      "complete": true,
+      "naturalWidth": 0,
+      "naturalHeight": 0
+    },
+    {
+      "src": "https://www.hauntedbouldercity.com/assets/travel-channel.png",
+      "complete": true,
+      "naturalWidth": 0,
+      "naturalHeight": 0
+    },
+    {
+      "src": "https://www.hauntedbouldercity.com/assets/history-current.svg",
+      "complete": true,
+      "naturalWidth": 0,
+      "naturalHeight": 0
+    },
+    {
+      "src": "https://www.hauntedbouldercity.com/assets/discovery-channel.svg",
+      "complete": true,
+      "naturalWidth": 0,
+      "naturalHeight": 0
+    },
+    {
+      "src": "https://www.hauntedbouldercity.com/assets/national-geographic-channel.svg",
+      "complete": true,
+      "naturalWidth": 0,
+      "naturalHeight": 0
+    },
+    {
+      "src": "https://www.hauntedbouldercity.com/assets/artisan-icon.jpg",
+      "complete": true,
+      "naturalWidth": 0,
+      "naturalHeight": 0
+    }
+  ]
+}

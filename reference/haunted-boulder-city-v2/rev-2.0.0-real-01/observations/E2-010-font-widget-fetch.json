@@ -1,0 +1,50 @@
+[
+  {
+    "name": "eb_widgets.js",
+    "url": "https://www.eventbrite.com/static/widgets/eb_widgets.js",
+    "status": 200,
+    "bytes": 14805,
+    "sha256": "5de0299fce3160ea086e82ff6c8dcc38912cd93d599b782c7aa62f71c0984931",
+    "contentType": "application/javascript",
+    "sourceMap": null,
+    "xSourceMap": null,
+    "timestampUTC": "2026-10-04T03:31:24.856Z",
+    "intendedUse": "Inspection evidence only; no reuse permission inferred"
+  },
+  {
+    "name": "display.ttf",
+    "url": "https://www.hauntedbouldercity.com/assets/display.ttf",
+    "status": 200,
+    "bytes": 170812,
+    "sha256": "a4ba3a92350ebb031da0cb47630ac49eb265082ca1bc0450442f4a83ab947cab",
+    "contentType": "font/ttf",
+    "sourceMap": null,
+    "xSourceMap": null,
+    "timestampUTC": "2026-10-04T03:31:25.115Z",
+    "intendedUse": "Inspection evidence only; no reuse permission inferred"
+  },
+  {
+    "name": "manticore.woff2",
+    "url": "https://www.hauntedbouldercity.com/assets/manticore.woff2",
+    "status": 200,
+    "bytes": 138348,
+    "sha256": "58dee0b74d93d9468b43cb4b62d74e2d4c994fa8d8ae1668c1ed536ce211fb58",
+    "contentType": "font/woff2",
+    "sourceMap": null,
+    "xSourceMap": null,
+    "timestampUTC": "2026-10-04T03:31:25.258Z",
+    "intendedUse": "Inspection evidence only; no reuse permission inferred"
+  },
+  {
+    "name": "space-mono-400.woff2",
+    "url": "https://www.hauntedbouldercity.com/assets/space-mono-400.woff2",
+    "status": 200,
+    "bytes": 9464,
+    "sha256": "e0c8e616bda27642f4c3cebaecff6525d901e73afc8a227cbbb0f2af4810f300",
+    "contentType": "font/woff2",
+    "sourceMap": null,
+    "xSourceMap": null,
+    "timestampUTC": "2026-10-04T03:31:25.528Z",
+    "intendedUse": "Inspection evidence only; no reuse permission inferred"
+  }
+]

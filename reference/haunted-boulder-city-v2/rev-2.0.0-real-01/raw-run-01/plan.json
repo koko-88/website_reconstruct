@@ -1,0 +1,439 @@
+{
+  "schemaVersion": 2,
+  "packageId": "HBC-V2-REAL-01",
+  "contractId": "FC-HBC-V2-01",
+  "sourceId": "S2-LIVE",
+  "authorization": "User requested complete v2 inspection only. FC-HBC-V2-01 permits public navigation, menu/FAQ toggles and opening/closing current checkout without selection/submission/purchase.",
+  "allowedOrigins": [
+    "https://www.hauntedbouldercity.com"
+  ],
+  "publicQueryKeys": [
+    "tickets"
+  ],
+  "totalTimeoutMs": 180000,
+  "browserChannel": "chrome",
+  "environments": [
+    {
+      "id": "ENV2-D",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "deviceScaleFactor": 1,
+      "hasTouch": false,
+      "isMobile": false,
+      "locale": "en-US",
+      "timezoneId": "Africa/Cairo",
+      "colorScheme": "light",
+      "reducedMotion": "no-preference",
+      "fixture": "Public live 2026-10-04; source hashes reconciled separately",
+      "session": "Fresh anonymous context no imported storage; HTTP cache disabled by runner routing",
+      "consent": "No consent interaction; record default"
+    },
+    {
+      "id": "ENV2-M",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "deviceScaleFactor": 1,
+      "hasTouch": true,
+      "isMobile": true,
+      "locale": "en-US",
+      "timezoneId": "Africa/Cairo",
+      "colorScheme": "light",
+      "reducedMotion": "no-preference",
+      "fixture": "Same live public reference; fresh touch emulation",
+      "session": "Fresh anonymous context no imported storage; HTTP cache disabled",
+      "consent": "No consent interaction"
+    },
+    {
+      "id": "ENV2-R",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "deviceScaleFactor": 1,
+      "hasTouch": true,
+      "isMobile": true,
+      "locale": "en-US",
+      "timezoneId": "Africa/Cairo",
+      "colorScheme": "light",
+      "reducedMotion": "reduce",
+      "fixture": "Fresh reduced-motion public reference",
+      "session": "Fresh anonymous context no imported storage; HTTP cache disabled",
+      "consent": "No consent interaction"
+    }
+  ],
+  "cases": [
+    {
+      "id": "D",
+      "environmentId": "ENV2-D",
+      "url": "https://www.hauntedbouldercity.com/",
+      "state": "Fresh home then menu, full bounded sweep, FAQ and box-office states",
+      "reset": "fresh-context",
+      "actions": [],
+      "checkpoints": [
+        {
+          "id": "HOME",
+          "phase": "settled",
+          "required": [
+            ".hero h1"
+          ],
+          "absent": [
+            ".loader"
+          ],
+          "stableSelectors": [
+            ".hero h1",
+            ".site-header"
+          ],
+          "timeoutMs": 10000,
+          "fullPage": false,
+          "actions": [],
+          "afterMs": 0
+        },
+        {
+          "id": "MENU",
+          "phase": "settled",
+          "required": [
+            ".site-nav.is-open"
+          ],
+          "absent": [
+            ".loader"
+          ],
+          "stableSelectors": [
+            ".site-nav"
+          ],
+          "timeoutMs": 10000,
+          "fullPage": false,
+          "actions": [
+            {
+              "kind": "click",
+              "selector": ".menu-toggle",
+              "authority": "FC-EX-01/FC-X-01: reviewed reversible public menu/FAQ/dialog action; no form submit or external navigation."
+            }
+          ],
+          "afterMs": 0
+        },
+        {
+          "id": "MENU-CLOSED",
+          "phase": "settled",
+          "required": [
+            ".hero h1"
+          ],
+          "absent": [
+            ".loader",
+            ".site-nav.is-open"
+          ],
+          "stableSelectors": [
+            ".hero h1"
+          ],
+          "timeoutMs": 10000,
+          "fullPage": false,
+          "actions": [
+            {
+              "kind": "press",
+              "key": "Escape",
+              "authority": "FC-EX-01/FC-X-01: reviewed reversible public menu/FAQ/dialog action; no form submit or external navigation."
+            }
+          ],
+          "afterMs": 0
+        },
+        {
+          "id": "FAQ",
+          "phase": "settled",
+          "required": [
+            "#plan details[open]"
+          ],
+          "absent": [
+            ".loader"
+          ],
+          "stableSelectors": [
+            "#plan"
+          ],
+          "timeoutMs": 10000,
+          "fullPage": false,
+          "actions": [
+            {
+              "kind": "sweep",
+              "maxSteps": 30,
+              "step": 700,
+              "budgetMs": 6000
+            },
+            {
+              "kind": "scrollTo",
+              "selector": "#plan"
+            },
+            {
+              "kind": "click",
+              "selector": "#plan details:first-of-type summary",
+              "authority": "FC-EX-01/FC-X-01: reviewed reversible public menu/FAQ/dialog action; no form submit or external navigation."
+            }
+          ],
+          "afterMs": 0
+        },
+        {
+          "id": "TICKETS",
+          "phase": "settled",
+          "required": [
+            ".ticket-modal.is-open",
+            "iframe"
+          ],
+          "absent": [
+            ".loader",
+            ".ticket-modal-status"
+          ],
+          "stableSelectors": [
+            ".ticket-modal-panel"
+          ],
+          "timeoutMs": 10000,
+          "fullPage": false,
+          "actions": [
+            {
+              "kind": "click",
+              "selector": "#tickets a[aria-haspopup=dialog]",
+              "authority": "FC-EX-01/FC-X-01: reviewed reversible public menu/FAQ/dialog action; no form submit or external navigation."
+            }
+          ],
+          "afterMs": 0
+        },
+        {
+          "id": "CLOSED",
+          "phase": "settled",
+          "required": [
+            "#tickets"
+          ],
+          "absent": [
+            ".loader",
+            ".ticket-modal.is-open"
+          ],
+          "stableSelectors": [
+            "#tickets"
+          ],
+          "timeoutMs": 10000,
+          "fullPage": false,
+          "actions": [
+            {
+              "kind": "press",
+              "key": "Escape",
+              "authority": "FC-EX-01/FC-X-01: reviewed reversible public menu/FAQ/dialog action; no form submit or external navigation."
+            }
+          ],
+          "afterMs": 0
+        }
+      ]
+    },
+    {
+      "id": "M",
+      "environmentId": "ENV2-M",
+      "url": "https://www.hauntedbouldercity.com/",
+      "state": "Fresh home then menu, full bounded sweep, FAQ and box-office states",
+      "reset": "fresh-context",
+      "actions": [],
+      "checkpoints": [
+        {
+          "id": "HOME",
+          "phase": "settled",
+          "required": [
+            ".hero h1"
+          ],
+          "absent": [
+            ".loader"
+          ],
+          "stableSelectors": [
+            ".hero h1",
+            ".site-header"
+          ],
+          "timeoutMs": 10000,
+          "fullPage": false,
+          "actions": [],
+          "afterMs": 0
+        },
+        {
+          "id": "MENU",
+          "phase": "settled",
+          "required": [
+            ".site-nav.is-open"
+          ],
+          "absent": [
+            ".loader"
+          ],
+          "stableSelectors": [
+            ".site-nav"
+          ],
+          "timeoutMs": 10000,
+          "fullPage": false,
+          "actions": [
+            {
+              "kind": "click",
+              "selector": ".menu-toggle",
+              "authority": "FC-EX-01/FC-X-01: reviewed reversible public menu/FAQ/dialog action; no form submit or external navigation."
+            }
+          ],
+          "afterMs": 0
+        },
+        {
+          "id": "MENU-CLOSED",
+          "phase": "settled",
+          "required": [
+            ".hero h1"
+          ],
+          "absent": [
+            ".loader",
+            ".site-nav.is-open"
+          ],
+          "stableSelectors": [
+            ".hero h1"
+          ],
+          "timeoutMs": 10000,
+          "fullPage": false,
+          "actions": [
+            {
+              "kind": "press",
+              "key": "Escape",
+              "authority": "FC-EX-01/FC-X-01: reviewed reversible public menu/FAQ/dialog action; no form submit or external navigation."
+            }
+          ],
+          "afterMs": 0
+        },
+        {
+          "id": "FAQ",
+          "phase": "settled",
+          "required": [
+            "#plan details[open]"
+          ],
+          "absent": [
+            ".loader"
+          ],
+          "stableSelectors": [
+            "#plan"
+          ],
+          "timeoutMs": 10000,
+          "fullPage": false,
+          "actions": [
+            {
+              "kind": "sweep",
+              "maxSteps": 30,
+              "step": 700,
+              "budgetMs": 6000
+            },
+            {
+              "kind": "scrollTo",
+              "selector": "#plan"
+            },
+            {
+              "kind": "click",
+              "selector": "#plan details:first-of-type summary",
+              "authority": "FC-EX-01/FC-X-01: reviewed reversible public menu/FAQ/dialog action; no form submit or external navigation."
+            }
+          ],
+          "afterMs": 0
+        },
+        {
+          "id": "TICKETS",
+          "phase": "settled",
+          "required": [
+            ".ticket-modal.is-open",
+            "iframe"
+          ],
+          "absent": [
+            ".loader",
+            ".ticket-modal-status"
+          ],
+          "stableSelectors": [
+            ".ticket-modal-panel"
+          ],
+          "timeoutMs": 10000,
+          "fullPage": false,
+          "actions": [
+            {
+              "kind": "click",
+              "selector": "#tickets a[aria-haspopup=dialog]",
+              "authority": "FC-EX-01/FC-X-01: reviewed reversible public menu/FAQ/dialog action; no form submit or external navigation."
+            }
+          ],
+          "afterMs": 0
+        },
+        {
+          "id": "CLOSED",
+          "phase": "settled",
+          "required": [
+            "#tickets"
+          ],
+          "absent": [
+            ".loader",
+            ".ticket-modal.is-open"
+          ],
+          "stableSelectors": [
+            "#tickets"
+          ],
+          "timeoutMs": 10000,
+          "fullPage": false,
+          "actions": [
+            {
+              "kind": "press",
+              "key": "Escape",
+              "authority": "FC-EX-01/FC-X-01: reviewed reversible public menu/FAQ/dialog action; no form submit or external navigation."
+            }
+          ],
+          "afterMs": 0
+        }
+      ]
+    },
+    {
+      "id": "R",
+      "environmentId": "ENV2-R",
+      "url": "https://www.hauntedbouldercity.com/",
+      "state": "Fresh reduced motion home then all story-video source region",
+      "reset": "fresh-context",
+      "actions": [],
+      "checkpoints": [
+        {
+          "id": "HOME",
+          "phase": "settled",
+          "required": [
+            ".hero h1"
+          ],
+          "absent": [
+            ".loader"
+          ],
+          "stableSelectors": [
+            ".hero h1"
+          ],
+          "timeoutMs": 10000,
+          "fullPage": false,
+          "actions": [],
+          "afterMs": 0
+        },
+        {
+          "id": "UFO",
+          "phase": "settled",
+          "required": [
+            ".story-ufo"
+          ],
+          "absent": [
+            ".loader"
+          ],
+          "stableSelectors": [
+            ".story-ufo"
+          ],
+          "timeoutMs": 10000,
+          "fullPage": false,
+          "actions": [
+            {
+              "kind": "sweep",
+              "maxSteps": 30,
+              "step": 700,
+              "budgetMs": 6000
+            },
+            {
+              "kind": "scrollTo",
+              "selector": ".story-ufo"
+            }
+          ],
+          "afterMs": 0
+        }
+      ]
+    }
+  ]
+}

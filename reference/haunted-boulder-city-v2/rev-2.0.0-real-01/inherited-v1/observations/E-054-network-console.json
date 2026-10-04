@@ -1,0 +1,307 @@
+{
+  "sanitization": "no headers, cookies, bodies, query values, or user session exports",
+  "traffic": [
+    {
+      "t": 190830.445206,
+      "requestId": "42376.132",
+      "kind": "request",
+      "method": "GET",
+      "host": "www.hauntedbouldercity.com",
+      "path": "/assets/haunted-downtown-boulder-city.webp",
+      "queryKeys": [],
+      "type": "Image"
+    },
+    {
+      "t": 190830.445381,
+      "requestId": "42376.133",
+      "kind": "request",
+      "method": "GET",
+      "host": "www.hauntedbouldercity.com",
+      "path": "/assets/boulder-city-haunted-walk-tour.webp",
+      "queryKeys": [],
+      "type": "Image"
+    },
+    {
+      "t": 190830.445475,
+      "requestId": "42376.134",
+      "kind": "request",
+      "method": "GET",
+      "host": "www.hauntedbouldercity.com",
+      "path": "/assets/boulder-city-shop.webp",
+      "queryKeys": [],
+      "type": "Image"
+    },
+    {
+      "t": 190830.445577,
+      "requestId": "42376.135",
+      "kind": "request",
+      "method": "GET",
+      "host": "www.hauntedbouldercity.com",
+      "path": "/assets/hoover-dam.webp",
+      "queryKeys": [],
+      "type": "Image"
+    },
+    {
+      "t": 190830.446307,
+      "requestId": "42376.136",
+      "kind": "request",
+      "method": "GET",
+      "host": "www.hauntedbouldercity.com",
+      "path": "/assets/ghost-dog.webp",
+      "queryKeys": [],
+      "type": "Image"
+    },
+    {
+      "t": 190830.446391,
+      "requestId": "42376.137",
+      "kind": "request",
+      "method": "GET",
+      "host": "www.hauntedbouldercity.com",
+      "path": "/assets/dam-workers.webp",
+      "queryKeys": [],
+      "type": "Image"
+    },
+    {
+      "t": 190830.446481,
+      "requestId": "42376.138",
+      "kind": "request",
+      "method": "GET",
+      "host": "www.hauntedbouldercity.com",
+      "path": "/assets/first-murderer.webp",
+      "queryKeys": [],
+      "type": "Image"
+    },
+    {
+      "t": 190830.446587,
+      "requestId": "42376.139",
+      "kind": "request",
+      "method": "GET",
+      "host": "www.hauntedbouldercity.com",
+      "path": "/assets/strange-celebs.webp",
+      "queryKeys": [],
+      "type": "Image"
+    },
+    {
+      "t": 190830.446667,
+      "requestId": "42376.140",
+      "kind": "request",
+      "method": "GET",
+      "host": "www.hauntedbouldercity.com",
+      "path": "/assets/flying-saucer.webp",
+      "queryKeys": [],
+      "type": "Image"
+    },
+    {
+      "t": 190830.446737,
+      "requestId": "42376.141",
+      "kind": "request",
+      "method": "GET",
+      "host": "www.hauntedbouldercity.com",
+      "path": "/assets/buried-bodies.webp",
+      "queryKeys": [],
+      "type": "Image"
+    },
+    {
+      "t": 190830.446821,
+      "requestId": "42376.142",
+      "kind": "request",
+      "method": "GET",
+      "host": "www.hauntedbouldercity.com",
+      "path": "/assets/esp-gambling.webp",
+      "queryKeys": [],
+      "type": "Image"
+    },
+    {
+      "t": 190830.446881,
+      "requestId": "42376.143",
+      "kind": "request",
+      "method": "GET",
+      "host": "www.hauntedbouldercity.com",
+      "path": "/assets/boulder-city-inn.webp",
+      "queryKeys": [],
+      "type": "Image"
+    },
+    {
+      "t": 190830.521034,
+      "requestId": "42376.132",
+      "kind": "response",
+      "status": 200,
+      "type": "Image",
+      "mime": "image/webp"
+    },
+    {
+      "t": 190830.521461,
+      "requestId": "42376.137",
+      "kind": "response",
+      "status": 200,
+      "type": "Image",
+      "mime": "image/webp"
+    },
+    {
+      "t": 190830.521584,
+      "requestId": "42376.136",
+      "kind": "response",
+      "status": 200,
+      "type": "Image",
+      "mime": "image/webp"
+    },
+    {
+      "t": 190830.521695,
+      "requestId": "42376.135",
+      "kind": "response",
+      "status": 200,
+      "type": "Image",
+      "mime": "image/webp"
+    },
+    {
+      "t": 190830.522467,
+      "requestId": "42376.133",
+      "kind": "response",
+      "status": 200,
+      "type": "Image",
+      "mime": "image/webp"
+    },
+    {
+      "t": 190830.522778,
+      "requestId": "42376.138",
+      "kind": "response",
+      "status": 200,
+      "type": "Image",
+      "mime": "image/webp"
+    },
+    {
+      "t": 190830.523127,
+      "requestId": "42376.139",
+      "kind": "response",
+      "status": 200,
+      "type": "Image",
+      "mime": "image/webp"
+    },
+    {
+      "t": 190830.523488,
+      "requestId": "42376.134",
+      "kind": "response",
+      "status": 200,
+      "type": "Image",
+      "mime": "image/webp"
+    },
+    {
+      "t": 190830.545914,
+      "requestId": "42376.140",
+      "kind": "response",
+      "status": 200,
+      "type": "Image",
+      "mime": "image/webp"
+    },
+    {
+      "t": 190830.643854,
+      "requestId": "42376.142",
+      "kind": "response",
+      "status": 200,
+      "type": "Image",
+      "mime": "image/webp"
+    },
+    {
+      "t": 190830.644397,
+      "requestId": "42376.143",
+      "kind": "response",
+      "status": 200,
+      "type": "Image",
+      "mime": "image/webp"
+    },
+    {
+      "t": 190830.645631,
+      "requestId": "42376.141",
+      "kind": "response",
+      "status": 200,
+      "type": "Image",
+      "mime": "image/webp"
+    },
+    {
+      "t": 190853.524128,
+      "requestId": "42376.144",
+      "kind": "request",
+      "method": "GET",
+      "host": "www.eventbrite.com",
+      "path": "/static/widgets/eb_widgets.js",
+      "queryKeys": [],
+      "type": "Script"
+    },
+    {
+      "t": 190853.880111,
+      "requestId": "42376.144",
+      "kind": "response",
+      "status": 200,
+      "type": "Script",
+      "mime": "application/javascript"
+    },
+    {
+      "t": 190853.888497,
+      "requestId": "D75805C7271B3389C4F5DD2FE9E4DE05",
+      "kind": "request",
+      "method": "GET",
+      "host": "www.eventbrite.com",
+      "path": "/checkout-external",
+      "queryKeys": [
+        "eid",
+        "parent",
+        "theme"
+      ],
+      "type": "Document"
+    },
+    {
+      "t": 190856.044524,
+      "requestId": "D75805C7271B3389C4F5DD2FE9E4DE05",
+      "kind": "response",
+      "status": 200,
+      "type": "Document",
+      "mime": "text/html"
+    },
+    {
+      "t": 190858.704293,
+      "requestId": "42376.145",
+      "kind": "response",
+      "status": 204,
+      "type": "Fetch",
+      "mime": "text/plain"
+    },
+    {
+      "t": 190858.704601,
+      "requestId": "42376.145",
+      "kind": "failure",
+      "type": "Fetch",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "t": 190870.487276,
+      "requestId": "42376.146",
+      "kind": "response",
+      "status": 204,
+      "type": "Fetch",
+      "mime": "text/plain"
+    },
+    {
+      "t": 190870.487594,
+      "requestId": "42376.146",
+      "kind": "failure",
+      "type": "Fetch",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "t": 190884.952033,
+      "requestId": "42376.147",
+      "kind": "response",
+      "status": 204,
+      "type": "Fetch",
+      "mime": "text/plain"
+    },
+    {
+      "t": 190884.952374,
+      "requestId": "42376.147",
+      "kind": "failure",
+      "type": "Fetch",
+      "error": "net::ERR_ABORTED"
+    }
+  ],
+  "consoleErrors": []
+}

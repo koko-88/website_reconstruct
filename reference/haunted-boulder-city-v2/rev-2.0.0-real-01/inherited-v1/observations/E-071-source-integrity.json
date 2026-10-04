@@ -1,0 +1,16 @@
+[
+  {
+    "path": "/styles.css",
+    "status": 200,
+    "sha256": "84f8d4afd287dec6d138861661793fee8f4c1fc72ea7afa9f3d8f6a11c6848dc",
+    "characters": 78371,
+    "recordedAt": "2026-10-04T00:07:15.112Z"
+  },
+  {
+    "path": "/app.js",
+    "status": 200,
+    "sha256": "a9284d1e441eedefebb5d4f1768780a5fcec8dfeae7bce26948124065eb51f3a",
+    "characters": 48040,
+    "recordedAt": "2026-10-04T00:07:15.114Z"
+  }
+]

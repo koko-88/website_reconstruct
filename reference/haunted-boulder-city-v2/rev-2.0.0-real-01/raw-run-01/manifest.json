@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 2,
+  "sealedAtUTC": "2026-10-04T03:24:50.228Z",
+  "metadata": {
+    "packageId": "HBC-V2-REAL-01",
+    "kind": "raw-capture-run",
+    "result": "CAPTURED"
+  },
+  "files": [
+    {
+      "path": "D--CLOSED.json",
+      "bytes": 41005,
+      "sha256": "9f378aa09cc650ecd80fb4c43e36ec02d85830932361c1f59c7b4df3c6914ab1"
+    },
+    {
+      "path": "D--CLOSED.png",
+      "bytes": 1266192,
+      "sha256": "ba0b663803b6c188a9af2b29457efda3b17cb1fc2cf8d4bc86a5a050b5879871"
+    },
+    {
+      "path": "D--FAQ.json",
+      "bytes": 45834,
+      "sha256": "cc444462cf276fae18df487a1723f596e954e2b582b1d5a28b4dbd53b4aba7da"
+    },
+    {
+      "path": "D--FAQ.png",
+      "bytes": 881198,
+      "sha256": "86af74e531db5c4248950162cf8a494264dff990efa3bb751229399891a6648a"
+    },
+    {
+      "path": "D--HOME.json",
+      "bytes": 42889,
+      "sha256": "a56190f5a10b294158a09ca6c4f9b77c8ec65186fecacb6948adbe478539cc0c"
+    },
+    {
+      "path": "D--HOME.png",
+      "bytes": 1589415,
+      "sha256": "992585177c716af41f4874b3bc33bd41eb9420d7d57a82da0a1e1d38d1e68303"
+    },
+    {
+      "path": "D--MENU-CLOSED.json",
+      "bytes": 39129,
+      "sha256": "ece8ce0ab9b8cfb747f4408147786d4aa2f6f6f75fc18b101d35d4ee91c27dbf"
+    },
+    {
+      "path": "D--MENU-CLOSED.png",
+      "bytes": 1391289,
+      "sha256": "133efd90150b57045936d027c5b70c6a7604fdfbe0b596bec89b33d1ea811ea8"
+    },
+    {
+      "path": "D--MENU.json",
+      "bytes": 38277,
+      "sha256": "478cc09617aeda8036d598602b405bca7ca11a80019baab73bbc88c1b5ced026"
+    },
+    {
+      "path": "D--MENU.png",
+      "bytes": 874743,
+      "sha256": "f32f714892da514c2a2320d9e7944ebff140bbc7ce7812f1a444a007b019a415"
+    },
+    {
+      "path": "D--TICKETS.json",
+      "bytes": 49205,
+      "sha256": "3bb50a442c76a70d378b63ad5fa449bfc7f1745a20dbbd258673d3ee7a3a581f"
+    },
+    {
+      "path": "D--TICKETS.png",
+      "bytes": 255578,
+      "sha256": "10cf279aad304c99cd86453559b5e67d73b4a3bf0265ee47cd3b3014bea9e64a"
+    },
+    {
+      "path": "M--CLOSED.json",
+      "bytes": 40516,
+      "sha256": "6b6d34e29b4e54254e788934af234bfab312a5972b96b2a0944ddcb6bd265cd8"
+    },
+    {
+      "path": "M--CLOSED.png",
+      "bytes": 366503,
+      "sha256": "b81efd8abbf080152c533c83aa2ae444e4f7dd7c4c72f45790b8fe8298c5d6bf"
+    },
+    {
+      "path": "M--FAQ.json",
+      "bytes": 35630,
+      "sha256": "da672a5b9edd0cc0e7201f6f89357a2a8b21f12595ea2654d1d22034015545ef"
+    },
+    {
+      "path": "M--FAQ.png",
+      "bytes": 311450,
+      "sha256": "cccc883a37e149fa9f3d320b063216ee40be3659741f4b0e38bb3c3198660d50"
+    },
+    {
+      "path": "M--HOME.json",
+      "bytes": 42449,
+      "sha256": "cd8231e6c815119b76cb997145344bbe6a80787b126cc952a6ab3d85c8a743d4"
+    },
+    {
+      "path": "M--HOME.png",
+      "bytes": 414943,
+      "sha256": "b1d3eea11f7b72855214b3c07104a1b39cd89e687dafde4dd6368b59a5bb43f9"
+    },
+    {
+      "path": "M--MENU-CLOSED.json",
+      "bytes": 38667,
+      "sha256": "6bf8e904f55c5068b3b329d2e559a69cd52e50df1daebf64adf3ab65960b7cfe"
+    },
+    {
+      "path": "M--MENU-CLOSED.png",
+      "bytes": 350367,
+      "sha256": "85956a85cf15b272cc16597627545c33031c5e36bf8dd086e8f72c146ffe40fd"
+    },
+    {
+      "path": "M--MENU.json",
+      "bytes": 37857,
+      "sha256": "648c7d87cf39c98a609f34a044e5dc4976ef869512d181d4cd5a3ec1e81290f9"
+    },
+    {
+      "path": "M--MENU.png",
+      "bytes": 267038,
+      "sha256": "d41bfda19454c832d5c994ad8a591740d5cfc9556974afc02952c90998738f29"
+    },
+    {
+      "path": "M--TICKETS.json",
+      "bytes": 48710,
+      "sha256": "ec5ac794f57000dba92db55761b6b25d457ed1673d1a52de8804cd64bcef0d98"
+    },
+    {
+      "path": "M--TICKETS.png",
+      "bytes": 18096,
+      "sha256": "e1d25a9aefe3bfda50bb331847ed24ab071b317eff3ec4e00fea47cb2685644b"
+    },
+    {
+      "path": "plan.json",
+      "bytes": 11765,
+      "sha256": "40e1830324879f5ae234c7dda48365e19cea1942d3ce904f9a10258eb6b98aa7"
+    },
+    {
+      "path": "R--HOME.json",
+      "bytes": 37800,
+      "sha256": "23421be6f8cb2a57c9646520b77cbdbe25f2ef27c6f1cec05332ac23715e3c09"
+    },
+    {
+      "path": "R--HOME.png",
+      "bytes": 412319,
+      "sha256": "d0eb6864925328755172d6f251e2d469ba482a7997b2d809c06c226a33748d2c"
+    },
+    {
+      "path": "R--UFO.json",
+      "bytes": 47534,
+      "sha256": "f18b43bb8abf1067d1cab610a36e5ea544b74daadd8f4b2ab676a5f6e67a1d6f"
+    },
+    {
+      "path": "R--UFO.png",
+      "bytes": 382713,
+      "sha256": "1e6bb64c9d505900ac41516e93ffd031dd5d55520fa26207ddd6522cee666a16"
+    },
+    {
+      "path": "run.json",
+      "bytes": 59895,
+      "sha256": "51d33894bad5ba6d74f447ff5dcf5182bbe3b2d7a04d9de5bb9e144f37cb6753"
+    }
+  ]
+}

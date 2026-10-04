@@ -1,0 +1,42 @@
+{
+  "timestamp": "2026-10-03T23:58:38.440Z",
+  "target": {
+    "id": "B0069DCD5DB444C678AD57DEB2181CE4",
+    "url": "https://www.hauntedbouldercity.com/"
+  },
+  "initial": {
+    "timestamp": "2026-10-03T23:58:38.447Z",
+    "url": "https://www.hauntedbouldercity.com/",
+    "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      764,
+      485
+    ],
+    "dpr": 1,
+    "visualViewport": {
+      "width": 749,
+      "height": 485,
+      "scale": 1
+    },
+    "scroll": [
+      0,
+      0,
+      749,
+      9488
+    ],
+    "language": "en-US",
+    "timezone": "Africa/Cairo",
+    "direction": "ltr",
+    "touch": 0,
+    "dark": false,
+    "reduced": false,
+    "fonts": "loaded",
+    "ready": "complete"
+  },
+  "method": "Isolated Chrome CDP capture helper; viewport emulation owned by CDP during these probes",
+  "originalMethodLabel": "Polypane CDP helper, viewport emulation owner is CDP during probes; no pane UI sizing changes",
+  "methodLabelCorrection": {
+    "recordedAt": "2026-10-04T00:24:55.096Z",
+    "reason": "Template label mentioned Polypane; actual preserved initial UA and target establish HeadlessChrome 154"
+  }
+}

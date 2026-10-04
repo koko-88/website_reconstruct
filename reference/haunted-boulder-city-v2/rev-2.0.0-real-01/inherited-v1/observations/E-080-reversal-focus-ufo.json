@@ -1,0 +1,6321 @@
+{
+  "environment": {
+    "timestamp": "2026-10-04T00:09:24.120Z",
+    "url": "https://www.hauntedbouldercity.com/",
+    "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1440,
+      900
+    ],
+    "dpr": 1,
+    "visualViewport": {
+      "width": 1425,
+      "height": 900,
+      "scale": 1
+    },
+    "scroll": [
+      0,
+      2758,
+      1425,
+      12476
+    ],
+    "language": "en-US",
+    "timezone": "Africa/Cairo",
+    "direction": "ltr",
+    "touch": 0,
+    "dark": false,
+    "reduced": false,
+    "fonts": "loaded",
+    "ready": "complete"
+  },
+  "log": [
+    {
+      "action": "menu Tab 0",
+      "state": {
+        "timestamp": "2026-10-04T00:09:03.633Z",
+        "perf": 4163.799999982119,
+        "scrollY": 0,
+        "focus": {
+          "tag": "A",
+          "cls": "",
+          "text": "02\nTHE STRANGE STUFF\nGHOSTS, DARK HISTORY & UFOS"
+        },
+        "root": "smooth-scroll motion-ready menu-open",
+        "menuHidden": false,
+        "menuOpen": true,
+        "modalHidden": true,
+        "modalOpen": false,
+        "fallbackHidden": true,
+        "statusHidden": false,
+        "track": "matrix(1, 0, 0, 1, 0, 0)",
+        "count": "01 / 03",
+        "video": [
+          {
+            "src": "",
+            "currentTime": 0,
+            "duration": null,
+            "readyState": 0,
+            "seeking": false
+          }
+        ],
+        "details": [
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          }
+        ],
+        "animations": [
+          {
+            "duration": 250,
+            "currentTime": 0
+          },
+          {
+            "duration": 0,
+            "currentTime": 0
+          },
+          {
+            "duration": 300,
+            "currentTime": 0
+          },
+          {
+            "duration": 300,
+            "currentTime": 0
+          },
+          {
+            "duration": 450,
+            "currentTime": 0
+          },
+          {
+            "duration": 800,
+            "currentTime": 0
+          },
+          {
+            "duration": 1000,
+            "currentTime": 0
+          },
+          {
+            "duration": 800,
+            "currentTime": 0
+          },
+          {
+            "duration": 1000,
+            "currentTime": 0
+          },
+          {
+            "duration": 800,
+            "currentTime": 0
+          },
+          {
+            "duration": 1000,
+            "currentTime": 0
+          },
+          {
+            "duration": 600,
+            "currentTime": 0
+          },
+          {
+            "duration": 600,
+            "currentTime": 0
+          },
+          {
+            "duration": 700,
+            "currentTime": 0
+          },
+          {
+            "duration": 600,
+            "currentTime": 0
+          },
+          {
+            "duration": 600,
+            "currentTime": 0
+          },
+          {
+            "duration": 700,
+            "currentTime": 0
+          },
+          {
+            "duration": 350,
+            "currentTime": 0
+          },
+          {
+            "duration": 600,
+            "currentTime": 0
+          },
+          {
+            "duration": 600,
+            "currentTime": 0
+          },
+          {
+            "duration": 700,
+            "currentTime": 0
+          },
+          {
+            "duration": 600,
+            "currentTime": 0
+          },
+          {
+            "duration": 600,
+            "currentTime": 0
+          },
+          {
+            "duration": 700,
+            "currentTime": 0
+          },
+          {
+            "duration": 600,
+            "currentTime": 0
+          },
+          {
+            "duration": 600,
+            "currentTime": 0
+          },
+          {
+            "duration": 700,
+            "currentTime": 0
+          },
+          {
+            "name": "loader-drift-a",
+            "duration": 30000,
+            "currentTime": 0
+          },
+          {
+            "name": "loader-drift-b",
+            "duration": 38000,
+            "currentTime": 0
+          },
+          {
+            "name": "loader-drift-a",
+            "duration": 44000,
+            "currentTime": 0
+          },
+          {
+            "name": "slow-spin",
+            "duration": 24000,
+            "currentTime": 3746.4429999781155
+          },
+          {
+            "name": "fog-drift",
+            "duration": 40000,
+            "currentTime": 3662.8659999950637
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 56000,
+            "currentTime": 3662.8659999950637
+          },
+          {
+            "name": "fog-drift",
+            "duration": 70000,
+            "currentTime": 3662.8659999950637
+          },
+          {
+            "name": "marquee",
+            "duration": 35000,
+            "currentTime": 3746.4429999781155
+          },
+          {
+            "name": "fog-drift",
+            "duration": 40000,
+            "currentTime": 3662.8659999950637
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 56000,
+            "currentTime": 3662.8659999950637
+          },
+          {
+            "name": "fog-drift",
+            "duration": 70000,
+            "currentTime": 3662.8659999950637
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3200,
+            "currentTime": 3796.6659999999997
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3700,
+            "currentTime": 3796.6659999999997
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 4300,
+            "currentTime": 3796.6659999999997
+          }
+        ]
+      }
+    },
+    {
+      "action": "menu Tab 1",
+      "state": {
+        "timestamp": "2026-10-04T00:09:03.645Z",
+        "perf": 4175.699999988079,
+        "scrollY": 0,
+        "focus": {
+          "tag": "A",
+          "cls": "",
+          "text": "03\nBEER ZOMBIES\nWHERE THE NIGHT STARTS"
+        },
+        "root": "smooth-scroll motion-ready menu-open",
+        "menuHidden": false,
+        "menuOpen": true,
+        "modalHidden": true,
+        "modalOpen": false,
+        "fallbackHidden": true,
+        "statusHidden": false,
+        "track": "matrix(1, 0, 0, 1, 0, 0)",
+        "count": "01 / 03",
+        "video": [
+          {
+            "src": "",
+            "currentTime": 0,
+            "duration": null,
+            "readyState": 0,
+            "seeking": false
+          }
+        ],
+        "details": [
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          }
+        ],
+        "animations": [
+          {
+            "duration": 250,
+            "currentTime": 16.7229999998586
+          },
+          {
+            "duration": 0,
+            "currentTime": 16.73400000000047
+          },
+          {
+            "duration": 300,
+            "currentTime": 16.7229999998586
+          },
+          {
+            "duration": 300,
+            "currentTime": 16.7229999998586
+          },
+          {
+            "duration": 450,
+            "currentTime": 16.7229999998586
+          },
+          {
+            "duration": 800,
+            "currentTime": 16.7229999998586
+          },
+          {
+            "duration": 1000,
+            "currentTime": 16.7229999998586
+          },
+          {
+            "duration": 800,
+            "currentTime": 16.7229999998586
+          },
+          {
+            "duration": 1000,
+            "currentTime": 16.7229999998586
+          },
+          {
+            "duration": 800,
+            "currentTime": 16.7229999998586
+          },
+          {
+            "duration": 1000,
+            "currentTime": 16.7229999998586
+          },
+          {
+            "duration": 600,
+            "currentTime": 16.73400000000047
+          },
+          {
+            "duration": 600,
+            "currentTime": 16.7229999998586
+          },
+          {
+            "duration": 700,
+            "currentTime": 16.7229999998586
+          },
+          {
+            "duration": 600,
+            "currentTime": 16.73400000000047
+          },
+          {
+            "duration": 600,
+            "currentTime": 16.7229999998586
+          },
+          {
+            "duration": 700,
+            "currentTime": 16.7229999998586
+          },
+          {
+            "duration": 600,
+            "currentTime": 16.73400000000047
+          },
+          {
+            "duration": 600,
+            "currentTime": 16.7229999998586
+          },
+          {
+            "duration": 700,
+            "currentTime": 16.7229999998586
+          },
+          {
+            "duration": 350,
+            "currentTime": 0
+          },
+          {
+            "duration": 600,
+            "currentTime": 16.73400000000047
+          },
+          {
+            "duration": 600,
+            "currentTime": 16.7229999998586
+          },
+          {
+            "duration": 700,
+            "currentTime": 16.7229999998586
+          },
+          {
+            "duration": 600,
+            "currentTime": 16.73400000000047
+          },
+          {
+            "duration": 600,
+            "currentTime": 16.7229999998586
+          },
+          {
+            "duration": 700,
+            "currentTime": 16.7229999998586
+          },
+          {
+            "name": "loader-drift-a",
+            "duration": 30000,
+            "currentTime": 16.7229999998586
+          },
+          {
+            "name": "loader-drift-b",
+            "duration": 38000,
+            "currentTime": 16.7229999998586
+          },
+          {
+            "name": "loader-drift-a",
+            "duration": 44000,
+            "currentTime": 16.7229999998586
+          },
+          {
+            "name": "slow-spin",
+            "duration": 24000,
+            "currentTime": 3763.176999978116
+          },
+          {
+            "name": "fog-drift",
+            "duration": 40000,
+            "currentTime": 3679.599999995064
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 56000,
+            "currentTime": 3679.599999995064
+          },
+          {
+            "name": "fog-drift",
+            "duration": 70000,
+            "currentTime": 3679.599999995064
+          },
+          {
+            "name": "marquee",
+            "duration": 35000,
+            "currentTime": 3763.176999978116
+          },
+          {
+            "name": "fog-drift",
+            "duration": 40000,
+            "currentTime": 3679.599999995064
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 56000,
+            "currentTime": 3679.599999995064
+          },
+          {
+            "name": "fog-drift",
+            "duration": 70000,
+            "currentTime": 3679.599999995064
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3200,
+            "currentTime": 3813.4
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3700,
+            "currentTime": 3813.4
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 4300,
+            "currentTime": 3813.4
+          }
+        ]
+      }
+    },
+    {
+      "action": "menu Tab 2",
+      "state": {
+        "timestamp": "2026-10-04T00:09:03.653Z",
+        "perf": 4183.199999988079,
+        "scrollY": 0,
+        "focus": {
+          "tag": "A",
+          "cls": "",
+          "text": "04\nPLAN YOUR VISIT\nARRIVAL, PARKING & FAQ"
+        },
+        "root": "smooth-scroll motion-ready menu-open",
+        "menuHidden": false,
+        "menuOpen": true,
+        "modalHidden": true,
+        "modalOpen": false,
+        "fallbackHidden": true,
+        "statusHidden": false,
+        "track": "matrix(1, 0, 0, 1, 0, 0)",
+        "count": "01 / 03",
+        "video": [
+          {
+            "src": "",
+            "currentTime": 0,
+            "duration": null,
+            "readyState": 0,
+            "seeking": false
+          }
+        ],
+        "details": [
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          }
+        ],
+        "animations": [
+          {
+            "duration": 250,
+            "currentTime": 16.7229999998586
+          },
+          {
+            "duration": 0,
+            "currentTime": 16.73400000000047
+          },
+          {
+            "duration": 300,
+            "currentTime": 16.7229999998586
+          },
+          {
+            "duration": 300,
+            "currentTime": 16.7229999998586
+          },
+          {
+            "duration": 450,
+            "currentTime": 16.7229999998586
+          },
+          {
+            "duration": 800,
+            "currentTime": 16.7229999998586
+          },
+          {
+            "duration": 1000,
+            "currentTime": 16.7229999998586
+          },
+          {
+            "duration": 800,
+            "currentTime": 16.7229999998586
+          },
+          {
+            "duration": 1000,
+            "currentTime": 16.7229999998586
+          },
+          {
+            "duration": 800,
+            "currentTime": 16.7229999998586
+          },
+          {
+            "duration": 1000,
+            "currentTime": 16.7229999998586
+          },
+          {
+            "duration": 600,
+            "currentTime": 16.73400000000047
+          },
+          {
+            "duration": 600,
+            "currentTime": 16.7229999998586
+          },
+          {
+            "duration": 700,
+            "currentTime": 16.7229999998586
+          },
+          {
+            "duration": 600,
+            "currentTime": 16.73400000000047
+          },
+          {
+            "duration": 600,
+            "currentTime": 16.7229999998586
+          },
+          {
+            "duration": 700,
+            "currentTime": 16.7229999998586
+          },
+          {
+            "duration": 600,
+            "currentTime": 16.73400000000047
+          },
+          {
+            "duration": 600,
+            "currentTime": 16.7229999998586
+          },
+          {
+            "duration": 700,
+            "currentTime": 16.7229999998586
+          },
+          {
+            "duration": 600,
+            "currentTime": 16.73400000000047
+          },
+          {
+            "duration": 600,
+            "currentTime": 16.7229999998586
+          },
+          {
+            "duration": 700,
+            "currentTime": 16.7229999998586
+          },
+          {
+            "duration": 350,
+            "currentTime": 0
+          },
+          {
+            "duration": 600,
+            "currentTime": 16.73400000000047
+          },
+          {
+            "duration": 600,
+            "currentTime": 16.7229999998586
+          },
+          {
+            "duration": 700,
+            "currentTime": 16.7229999998586
+          },
+          {
+            "name": "loader-drift-a",
+            "duration": 30000,
+            "currentTime": 16.7229999998586
+          },
+          {
+            "name": "loader-drift-b",
+            "duration": 38000,
+            "currentTime": 16.7229999998586
+          },
+          {
+            "name": "loader-drift-a",
+            "duration": 44000,
+            "currentTime": 16.7229999998586
+          },
+          {
+            "name": "slow-spin",
+            "duration": 24000,
+            "currentTime": 3763.176999978116
+          },
+          {
+            "name": "fog-drift",
+            "duration": 40000,
+            "currentTime": 3679.599999995064
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 56000,
+            "currentTime": 3679.599999995064
+          },
+          {
+            "name": "fog-drift",
+            "duration": 70000,
+            "currentTime": 3679.599999995064
+          },
+          {
+            "name": "marquee",
+            "duration": 35000,
+            "currentTime": 3763.176999978116
+          },
+          {
+            "name": "fog-drift",
+            "duration": 40000,
+            "currentTime": 3679.599999995064
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 56000,
+            "currentTime": 3679.599999995064
+          },
+          {
+            "name": "fog-drift",
+            "duration": 70000,
+            "currentTime": 3679.599999995064
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3200,
+            "currentTime": 3813.4
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3700,
+            "currentTime": 3813.4
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 4300,
+            "currentTime": 3813.4
+          }
+        ]
+      }
+    },
+    {
+      "action": "menu Tab 3",
+      "state": {
+        "timestamp": "2026-10-04T00:09:03.661Z",
+        "perf": 4191.4000000059605,
+        "scrollY": 0,
+        "focus": {
+          "tag": "A",
+          "cls": "button site-nav-cta",
+          "text": "Get tickets"
+        },
+        "root": "smooth-scroll motion-ready menu-open",
+        "menuHidden": false,
+        "menuOpen": true,
+        "modalHidden": true,
+        "modalOpen": false,
+        "fallbackHidden": true,
+        "statusHidden": false,
+        "track": "matrix(1, 0, 0, 1, 0, 0)",
+        "count": "01 / 03",
+        "video": [
+          {
+            "src": "",
+            "currentTime": 0,
+            "duration": null,
+            "readyState": 0,
+            "seeking": false
+          }
+        ],
+        "details": [
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          }
+        ],
+        "animations": [
+          {
+            "duration": 250,
+            "currentTime": 33.38899999985845
+          },
+          {
+            "duration": 0,
+            "currentTime": 33.40000000000032
+          },
+          {
+            "duration": 300,
+            "currentTime": 33.38899999985845
+          },
+          {
+            "duration": 300,
+            "currentTime": 33.38899999985845
+          },
+          {
+            "duration": 450,
+            "currentTime": 33.38899999985845
+          },
+          {
+            "duration": 800,
+            "currentTime": 33.38899999985845
+          },
+          {
+            "duration": 1000,
+            "currentTime": 33.38899999985845
+          },
+          {
+            "duration": 800,
+            "currentTime": 33.38899999985845
+          },
+          {
+            "duration": 1000,
+            "currentTime": 33.38899999985845
+          },
+          {
+            "duration": 800,
+            "currentTime": 33.38899999985845
+          },
+          {
+            "duration": 1000,
+            "currentTime": 33.38899999985845
+          },
+          {
+            "duration": 600,
+            "currentTime": 33.40000000000032
+          },
+          {
+            "duration": 600,
+            "currentTime": 33.38899999985845
+          },
+          {
+            "duration": 700,
+            "currentTime": 33.38899999985845
+          },
+          {
+            "duration": 600,
+            "currentTime": 33.40000000000032
+          },
+          {
+            "duration": 600,
+            "currentTime": 33.38899999985845
+          },
+          {
+            "duration": 700,
+            "currentTime": 33.38899999985845
+          },
+          {
+            "duration": 600,
+            "currentTime": 33.40000000000032
+          },
+          {
+            "duration": 600,
+            "currentTime": 33.38899999985845
+          },
+          {
+            "duration": 700,
+            "currentTime": 33.38899999985845
+          },
+          {
+            "duration": 600,
+            "currentTime": 33.40000000000032
+          },
+          {
+            "duration": 600,
+            "currentTime": 33.38899999985845
+          },
+          {
+            "duration": 700,
+            "currentTime": 33.38899999985845
+          },
+          {
+            "duration": 600,
+            "currentTime": 33.40000000000032
+          },
+          {
+            "duration": 600,
+            "currentTime": 33.38899999985845
+          },
+          {
+            "duration": 700,
+            "currentTime": 33.38899999985845
+          },
+          {
+            "name": "loader-drift-a",
+            "duration": 30000,
+            "currentTime": 33.38899999985845
+          },
+          {
+            "name": "loader-drift-b",
+            "duration": 38000,
+            "currentTime": 33.38899999985845
+          },
+          {
+            "name": "loader-drift-a",
+            "duration": 44000,
+            "currentTime": 33.38899999985845
+          },
+          {
+            "name": "slow-spin",
+            "duration": 24000,
+            "currentTime": 3779.8429999781156
+          },
+          {
+            "name": "fog-drift",
+            "duration": 40000,
+            "currentTime": 3696.265999995064
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 56000,
+            "currentTime": 3696.265999995064
+          },
+          {
+            "name": "fog-drift",
+            "duration": 70000,
+            "currentTime": 3696.265999995064
+          },
+          {
+            "name": "marquee",
+            "duration": 35000,
+            "currentTime": 3779.8429999781156
+          },
+          {
+            "name": "fog-drift",
+            "duration": 40000,
+            "currentTime": 3696.265999995064
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 56000,
+            "currentTime": 3696.265999995064
+          },
+          {
+            "name": "fog-drift",
+            "duration": 70000,
+            "currentTime": 3696.265999995064
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3200,
+            "currentTime": 3830.066
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3700,
+            "currentTime": 3830.066
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 4300,
+            "currentTime": 3830.066
+          }
+        ]
+      }
+    },
+    {
+      "action": "menu Tab 4",
+      "state": {
+        "timestamp": "2026-10-04T00:09:03.670Z",
+        "perf": 4200.5999999940395,
+        "scrollY": 0,
+        "focus": {
+          "tag": "A",
+          "cls": "",
+          "text": "DIRECTIONS"
+        },
+        "root": "smooth-scroll motion-ready menu-open",
+        "menuHidden": false,
+        "menuOpen": true,
+        "modalHidden": true,
+        "modalOpen": false,
+        "fallbackHidden": true,
+        "statusHidden": false,
+        "track": "matrix(1, 0, 0, 1, 0, 0)",
+        "count": "01 / 03",
+        "video": [
+          {
+            "src": "",
+            "currentTime": 0,
+            "duration": null,
+            "readyState": 0,
+            "seeking": false
+          }
+        ],
+        "details": [
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          }
+        ],
+        "animations": [
+          {
+            "duration": 250,
+            "currentTime": 33.38899999985845
+          },
+          {
+            "duration": 0,
+            "currentTime": 33.40000000000032
+          },
+          {
+            "duration": 300,
+            "currentTime": 33.38899999985845
+          },
+          {
+            "duration": 300,
+            "currentTime": 33.38899999985845
+          },
+          {
+            "duration": 450,
+            "currentTime": 33.38899999985845
+          },
+          {
+            "duration": 800,
+            "currentTime": 33.38899999985845
+          },
+          {
+            "duration": 1000,
+            "currentTime": 33.38899999985845
+          },
+          {
+            "duration": 800,
+            "currentTime": 33.38899999985845
+          },
+          {
+            "duration": 1000,
+            "currentTime": 33.38899999985845
+          },
+          {
+            "duration": 800,
+            "currentTime": 33.38899999985845
+          },
+          {
+            "duration": 1000,
+            "currentTime": 33.38899999985845
+          },
+          {
+            "duration": 600,
+            "currentTime": 33.40000000000032
+          },
+          {
+            "duration": 600,
+            "currentTime": 33.38899999985845
+          },
+          {
+            "duration": 700,
+            "currentTime": 33.38899999985845
+          },
+          {
+            "duration": 600,
+            "currentTime": 33.40000000000032
+          },
+          {
+            "duration": 600,
+            "currentTime": 33.38899999985845
+          },
+          {
+            "duration": 700,
+            "currentTime": 33.38899999985845
+          },
+          {
+            "duration": 600,
+            "currentTime": 33.40000000000032
+          },
+          {
+            "duration": 600,
+            "currentTime": 33.38899999985845
+          },
+          {
+            "duration": 700,
+            "currentTime": 33.38899999985845
+          },
+          {
+            "duration": 600,
+            "currentTime": 33.40000000000032
+          },
+          {
+            "duration": 600,
+            "currentTime": 33.38899999985845
+          },
+          {
+            "duration": 700,
+            "currentTime": 33.38899999985845
+          },
+          {
+            "duration": 600,
+            "currentTime": 33.40000000000032
+          },
+          {
+            "duration": 600,
+            "currentTime": 33.38899999985845
+          },
+          {
+            "duration": 700,
+            "currentTime": 33.38899999985845
+          },
+          {
+            "name": "loader-drift-a",
+            "duration": 30000,
+            "currentTime": 33.38899999985845
+          },
+          {
+            "name": "loader-drift-b",
+            "duration": 38000,
+            "currentTime": 33.38899999985845
+          },
+          {
+            "name": "loader-drift-a",
+            "duration": 44000,
+            "currentTime": 33.38899999985845
+          },
+          {
+            "name": "slow-spin",
+            "duration": 24000,
+            "currentTime": 3779.8429999781156
+          },
+          {
+            "name": "fog-drift",
+            "duration": 40000,
+            "currentTime": 3696.265999995064
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 56000,
+            "currentTime": 3696.265999995064
+          },
+          {
+            "name": "fog-drift",
+            "duration": 70000,
+            "currentTime": 3696.265999995064
+          },
+          {
+            "name": "marquee",
+            "duration": 35000,
+            "currentTime": 3779.8429999781156
+          },
+          {
+            "name": "fog-drift",
+            "duration": 40000,
+            "currentTime": 3696.265999995064
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 56000,
+            "currentTime": 3696.265999995064
+          },
+          {
+            "name": "fog-drift",
+            "duration": 70000,
+            "currentTime": 3696.265999995064
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3200,
+            "currentTime": 3830.066
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3700,
+            "currentTime": 3830.066
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 4300,
+            "currentTime": 3830.066
+          }
+        ]
+      }
+    },
+    {
+      "action": "menu Tab 5",
+      "state": {
+        "timestamp": "2026-10-04T00:09:03.677Z",
+        "perf": 4208,
+        "scrollY": 0,
+        "focus": {
+          "tag": "A",
+          "cls": "brand",
+          "text": ""
+        },
+        "root": "smooth-scroll motion-ready menu-open",
+        "menuHidden": false,
+        "menuOpen": true,
+        "modalHidden": true,
+        "modalOpen": false,
+        "fallbackHidden": true,
+        "statusHidden": false,
+        "track": "matrix(1, 0, 0, 1, 0, 0)",
+        "count": "01 / 03",
+        "video": [
+          {
+            "src": "",
+            "currentTime": 0,
+            "duration": null,
+            "readyState": 0,
+            "seeking": false
+          }
+        ],
+        "details": [
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          }
+        ],
+        "animations": [
+          {
+            "duration": 250,
+            "currentTime": 50.222999999858686
+          },
+          {
+            "duration": 0,
+            "currentTime": 50.234000000000556
+          },
+          {
+            "duration": 300,
+            "currentTime": 50.222999999858686
+          },
+          {
+            "duration": 300,
+            "currentTime": 50.222999999858686
+          },
+          {
+            "duration": 450,
+            "currentTime": 50.222999999858686
+          },
+          {
+            "duration": 800,
+            "currentTime": 50.222999999858686
+          },
+          {
+            "duration": 1000,
+            "currentTime": 50.222999999858686
+          },
+          {
+            "duration": 800,
+            "currentTime": 50.222999999858686
+          },
+          {
+            "duration": 1000,
+            "currentTime": 50.222999999858686
+          },
+          {
+            "duration": 800,
+            "currentTime": 50.222999999858686
+          },
+          {
+            "duration": 1000,
+            "currentTime": 50.222999999858686
+          },
+          {
+            "duration": 600,
+            "currentTime": 50.234000000000556
+          },
+          {
+            "duration": 600,
+            "currentTime": 50.222999999858686
+          },
+          {
+            "duration": 700,
+            "currentTime": 50.222999999858686
+          },
+          {
+            "duration": 600,
+            "currentTime": 50.234000000000556
+          },
+          {
+            "duration": 600,
+            "currentTime": 50.222999999858686
+          },
+          {
+            "duration": 700,
+            "currentTime": 50.222999999858686
+          },
+          {
+            "duration": 600,
+            "currentTime": 50.234000000000556
+          },
+          {
+            "duration": 600,
+            "currentTime": 50.222999999858686
+          },
+          {
+            "duration": 700,
+            "currentTime": 50.222999999858686
+          },
+          {
+            "duration": 600,
+            "currentTime": 50.234000000000556
+          },
+          {
+            "duration": 600,
+            "currentTime": 50.222999999858686
+          },
+          {
+            "duration": 700,
+            "currentTime": 50.222999999858686
+          },
+          {
+            "duration": 600,
+            "currentTime": 50.234000000000556
+          },
+          {
+            "duration": 600,
+            "currentTime": 50.222999999858686
+          },
+          {
+            "duration": 700,
+            "currentTime": 50.222999999858686
+          },
+          {
+            "name": "loader-drift-a",
+            "duration": 30000,
+            "currentTime": 50.222999999858686
+          },
+          {
+            "name": "loader-drift-b",
+            "duration": 38000,
+            "currentTime": 50.222999999858686
+          },
+          {
+            "name": "loader-drift-a",
+            "duration": 44000,
+            "currentTime": 50.222999999858686
+          },
+          {
+            "name": "slow-spin",
+            "duration": 24000,
+            "currentTime": 3796.676999978116
+          },
+          {
+            "name": "fog-drift",
+            "duration": 40000,
+            "currentTime": 3713.099999995064
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 56000,
+            "currentTime": 3713.099999995064
+          },
+          {
+            "name": "fog-drift",
+            "duration": 70000,
+            "currentTime": 3713.099999995064
+          },
+          {
+            "name": "marquee",
+            "duration": 35000,
+            "currentTime": 3796.676999978116
+          },
+          {
+            "name": "fog-drift",
+            "duration": 40000,
+            "currentTime": 3713.099999995064
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 56000,
+            "currentTime": 3713.099999995064
+          },
+          {
+            "name": "fog-drift",
+            "duration": 70000,
+            "currentTime": 3713.099999995064
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3200,
+            "currentTime": 3846.9
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3700,
+            "currentTime": 3846.9
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 4300,
+            "currentTime": 3846.9
+          }
+        ]
+      }
+    },
+    {
+      "action": "menu Tab 6",
+      "state": {
+        "timestamp": "2026-10-04T00:09:03.684Z",
+        "perf": 4214.0999999940395,
+        "scrollY": 0,
+        "focus": {
+          "tag": "A",
+          "cls": "button button-small",
+          "text": "Get tickets"
+        },
+        "root": "smooth-scroll motion-ready menu-open",
+        "menuHidden": false,
+        "menuOpen": true,
+        "modalHidden": true,
+        "modalOpen": false,
+        "fallbackHidden": true,
+        "statusHidden": false,
+        "track": "matrix(1, 0, 0, 1, 0, 0)",
+        "count": "01 / 03",
+        "video": [
+          {
+            "src": "",
+            "currentTime": 0,
+            "duration": null,
+            "readyState": 0,
+            "seeking": false
+          }
+        ],
+        "details": [
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          }
+        ],
+        "animations": [
+          {
+            "duration": 250,
+            "currentTime": 50.222999999858686
+          },
+          {
+            "duration": 0,
+            "currentTime": 50.234000000000556
+          },
+          {
+            "duration": 300,
+            "currentTime": 50.222999999858686
+          },
+          {
+            "duration": 300,
+            "currentTime": 50.222999999858686
+          },
+          {
+            "duration": 450,
+            "currentTime": 50.222999999858686
+          },
+          {
+            "duration": 800,
+            "currentTime": 50.222999999858686
+          },
+          {
+            "duration": 1000,
+            "currentTime": 50.222999999858686
+          },
+          {
+            "duration": 800,
+            "currentTime": 50.222999999858686
+          },
+          {
+            "duration": 1000,
+            "currentTime": 50.222999999858686
+          },
+          {
+            "duration": 800,
+            "currentTime": 50.222999999858686
+          },
+          {
+            "duration": 1000,
+            "currentTime": 50.222999999858686
+          },
+          {
+            "duration": 600,
+            "currentTime": 50.234000000000556
+          },
+          {
+            "duration": 600,
+            "currentTime": 50.222999999858686
+          },
+          {
+            "duration": 700,
+            "currentTime": 50.222999999858686
+          },
+          {
+            "duration": 600,
+            "currentTime": 50.234000000000556
+          },
+          {
+            "duration": 600,
+            "currentTime": 50.222999999858686
+          },
+          {
+            "duration": 700,
+            "currentTime": 50.222999999858686
+          },
+          {
+            "duration": 600,
+            "currentTime": 50.234000000000556
+          },
+          {
+            "duration": 600,
+            "currentTime": 50.222999999858686
+          },
+          {
+            "duration": 700,
+            "currentTime": 50.222999999858686
+          },
+          {
+            "duration": 600,
+            "currentTime": 50.234000000000556
+          },
+          {
+            "duration": 600,
+            "currentTime": 50.222999999858686
+          },
+          {
+            "duration": 700,
+            "currentTime": 50.222999999858686
+          },
+          {
+            "duration": 600,
+            "currentTime": 50.234000000000556
+          },
+          {
+            "duration": 600,
+            "currentTime": 50.222999999858686
+          },
+          {
+            "duration": 700,
+            "currentTime": 50.222999999858686
+          },
+          {
+            "name": "loader-drift-a",
+            "duration": 30000,
+            "currentTime": 50.222999999858686
+          },
+          {
+            "name": "loader-drift-b",
+            "duration": 38000,
+            "currentTime": 50.222999999858686
+          },
+          {
+            "name": "loader-drift-a",
+            "duration": 44000,
+            "currentTime": 50.222999999858686
+          },
+          {
+            "name": "slow-spin",
+            "duration": 24000,
+            "currentTime": 3796.676999978116
+          },
+          {
+            "name": "fog-drift",
+            "duration": 40000,
+            "currentTime": 3713.099999995064
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 56000,
+            "currentTime": 3713.099999995064
+          },
+          {
+            "name": "fog-drift",
+            "duration": 70000,
+            "currentTime": 3713.099999995064
+          },
+          {
+            "name": "marquee",
+            "duration": 35000,
+            "currentTime": 3796.676999978116
+          },
+          {
+            "name": "fog-drift",
+            "duration": 40000,
+            "currentTime": 3713.099999995064
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 56000,
+            "currentTime": 3713.099999995064
+          },
+          {
+            "name": "fog-drift",
+            "duration": 70000,
+            "currentTime": 3713.099999995064
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3200,
+            "currentTime": 3846.9
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3700,
+            "currentTime": 3846.9
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 4300,
+            "currentTime": 3846.9
+          }
+        ]
+      }
+    },
+    {
+      "action": "menu Tab 7",
+      "state": {
+        "timestamp": "2026-10-04T00:09:03.689Z",
+        "perf": 4219.5999999940395,
+        "scrollY": 0,
+        "focus": {
+          "tag": "BUTTON",
+          "cls": "menu-toggle",
+          "text": "CLOSE"
+        },
+        "root": "smooth-scroll motion-ready menu-open",
+        "menuHidden": false,
+        "menuOpen": true,
+        "modalHidden": true,
+        "modalOpen": false,
+        "fallbackHidden": true,
+        "statusHidden": false,
+        "track": "matrix(1, 0, 0, 1, 0, 0)",
+        "count": "01 / 03",
+        "video": [
+          {
+            "src": "",
+            "currentTime": 0,
+            "duration": null,
+            "readyState": 0,
+            "seeking": false
+          }
+        ],
+        "details": [
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          }
+        ],
+        "animations": [
+          {
+            "duration": 250,
+            "currentTime": 50.222999999858686
+          },
+          {
+            "duration": 0,
+            "currentTime": 50.234000000000556
+          },
+          {
+            "duration": 300,
+            "currentTime": 50.222999999858686
+          },
+          {
+            "duration": 300,
+            "currentTime": 50.222999999858686
+          },
+          {
+            "duration": 450,
+            "currentTime": 50.222999999858686
+          },
+          {
+            "duration": 800,
+            "currentTime": 50.222999999858686
+          },
+          {
+            "duration": 1000,
+            "currentTime": 50.222999999858686
+          },
+          {
+            "duration": 800,
+            "currentTime": 50.222999999858686
+          },
+          {
+            "duration": 1000,
+            "currentTime": 50.222999999858686
+          },
+          {
+            "duration": 800,
+            "currentTime": 50.222999999858686
+          },
+          {
+            "duration": 1000,
+            "currentTime": 50.222999999858686
+          },
+          {
+            "duration": 600,
+            "currentTime": 50.234000000000556
+          },
+          {
+            "duration": 600,
+            "currentTime": 50.222999999858686
+          },
+          {
+            "duration": 700,
+            "currentTime": 50.222999999858686
+          },
+          {
+            "duration": 600,
+            "currentTime": 50.234000000000556
+          },
+          {
+            "duration": 600,
+            "currentTime": 50.222999999858686
+          },
+          {
+            "duration": 700,
+            "currentTime": 50.222999999858686
+          },
+          {
+            "duration": 600,
+            "currentTime": 50.234000000000556
+          },
+          {
+            "duration": 600,
+            "currentTime": 50.222999999858686
+          },
+          {
+            "duration": 700,
+            "currentTime": 50.222999999858686
+          },
+          {
+            "duration": 600,
+            "currentTime": 50.234000000000556
+          },
+          {
+            "duration": 600,
+            "currentTime": 50.222999999858686
+          },
+          {
+            "duration": 700,
+            "currentTime": 50.222999999858686
+          },
+          {
+            "duration": 600,
+            "currentTime": 50.234000000000556
+          },
+          {
+            "duration": 600,
+            "currentTime": 50.222999999858686
+          },
+          {
+            "duration": 700,
+            "currentTime": 50.222999999858686
+          },
+          {
+            "name": "loader-drift-a",
+            "duration": 30000,
+            "currentTime": 50.222999999858686
+          },
+          {
+            "name": "loader-drift-b",
+            "duration": 38000,
+            "currentTime": 50.222999999858686
+          },
+          {
+            "name": "loader-drift-a",
+            "duration": 44000,
+            "currentTime": 50.222999999858686
+          },
+          {
+            "name": "slow-spin",
+            "duration": 24000,
+            "currentTime": 3796.676999978116
+          },
+          {
+            "name": "fog-drift",
+            "duration": 40000,
+            "currentTime": 3713.099999995064
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 56000,
+            "currentTime": 3713.099999995064
+          },
+          {
+            "name": "fog-drift",
+            "duration": 70000,
+            "currentTime": 3713.099999995064
+          },
+          {
+            "name": "marquee",
+            "duration": 35000,
+            "currentTime": 3796.676999978116
+          },
+          {
+            "name": "fog-drift",
+            "duration": 40000,
+            "currentTime": 3713.099999995064
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 56000,
+            "currentTime": 3713.099999995064
+          },
+          {
+            "name": "fog-drift",
+            "duration": 70000,
+            "currentTime": 3713.099999995064
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3200,
+            "currentTime": 3846.9
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3700,
+            "currentTime": 3846.9
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 4300,
+            "currentTime": 3846.9
+          }
+        ]
+      }
+    },
+    {
+      "action": "menu Tab 8",
+      "state": {
+        "timestamp": "2026-10-04T00:09:03.698Z",
+        "perf": 4228.799999982119,
+        "scrollY": 0,
+        "focus": {
+          "tag": "A",
+          "cls": "",
+          "text": "01\nTHE TOUR\nONE HOUR ON FOOT, FULL OF STORIES"
+        },
+        "root": "smooth-scroll motion-ready menu-open",
+        "menuHidden": false,
+        "menuOpen": true,
+        "modalHidden": true,
+        "modalOpen": false,
+        "fallbackHidden": true,
+        "statusHidden": false,
+        "track": "matrix(1, 0, 0, 1, 0, 0)",
+        "count": "01 / 03",
+        "video": [
+          {
+            "src": "",
+            "currentTime": 0,
+            "duration": null,
+            "readyState": 0,
+            "seeking": false
+          }
+        ],
+        "details": [
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          }
+        ],
+        "animations": [
+          {
+            "duration": 250,
+            "currentTime": 66.92299999985885
+          },
+          {
+            "duration": 0,
+            "currentTime": 66.93400000000071
+          },
+          {
+            "duration": 300,
+            "currentTime": 66.92299999985885
+          },
+          {
+            "duration": 300,
+            "currentTime": 66.92299999985885
+          },
+          {
+            "duration": 450,
+            "currentTime": 66.92299999985885
+          },
+          {
+            "duration": 800,
+            "currentTime": 66.92299999985885
+          },
+          {
+            "duration": 1000,
+            "currentTime": 66.92299999985885
+          },
+          {
+            "duration": 800,
+            "currentTime": 66.92299999985885
+          },
+          {
+            "duration": 1000,
+            "currentTime": 66.92299999985885
+          },
+          {
+            "duration": 800,
+            "currentTime": 66.92299999985885
+          },
+          {
+            "duration": 1000,
+            "currentTime": 66.92299999985885
+          },
+          {
+            "duration": 600,
+            "currentTime": 66.93400000000071
+          },
+          {
+            "duration": 600,
+            "currentTime": 66.92299999985885
+          },
+          {
+            "duration": 700,
+            "currentTime": 66.92299999985885
+          },
+          {
+            "duration": 350,
+            "currentTime": 0
+          },
+          {
+            "duration": 600,
+            "currentTime": 66.93400000000071
+          },
+          {
+            "duration": 600,
+            "currentTime": 66.92299999985885
+          },
+          {
+            "duration": 700,
+            "currentTime": 66.92299999985885
+          },
+          {
+            "duration": 600,
+            "currentTime": 66.93400000000071
+          },
+          {
+            "duration": 600,
+            "currentTime": 66.92299999985885
+          },
+          {
+            "duration": 700,
+            "currentTime": 66.92299999985885
+          },
+          {
+            "duration": 600,
+            "currentTime": 66.93400000000071
+          },
+          {
+            "duration": 600,
+            "currentTime": 66.92299999985885
+          },
+          {
+            "duration": 700,
+            "currentTime": 66.92299999985885
+          },
+          {
+            "duration": 600,
+            "currentTime": 66.93400000000071
+          },
+          {
+            "duration": 600,
+            "currentTime": 66.92299999985885
+          },
+          {
+            "duration": 700,
+            "currentTime": 66.92299999985885
+          },
+          {
+            "name": "loader-drift-a",
+            "duration": 30000,
+            "currentTime": 66.92299999985885
+          },
+          {
+            "name": "loader-drift-b",
+            "duration": 38000,
+            "currentTime": 66.92299999985885
+          },
+          {
+            "name": "loader-drift-a",
+            "duration": 44000,
+            "currentTime": 66.92299999985885
+          },
+          {
+            "name": "slow-spin",
+            "duration": 24000,
+            "currentTime": 3813.376999978116
+          },
+          {
+            "name": "fog-drift",
+            "duration": 40000,
+            "currentTime": 3729.7999999950644
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 56000,
+            "currentTime": 3729.7999999950644
+          },
+          {
+            "name": "fog-drift",
+            "duration": 70000,
+            "currentTime": 3729.7999999950644
+          },
+          {
+            "name": "marquee",
+            "duration": 35000,
+            "currentTime": 3813.376999978116
+          },
+          {
+            "name": "fog-drift",
+            "duration": 40000,
+            "currentTime": 3729.7999999950644
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 56000,
+            "currentTime": 3729.7999999950644
+          },
+          {
+            "name": "fog-drift",
+            "duration": 70000,
+            "currentTime": 3729.7999999950644
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3200,
+            "currentTime": 3863.6000000000004
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3700,
+            "currentTime": 3863.6000000000004
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 4300,
+            "currentTime": 3863.6000000000004
+          }
+        ]
+      }
+    },
+    {
+      "action": "menu Tab 9",
+      "state": {
+        "timestamp": "2026-10-04T00:09:03.704Z",
+        "perf": 4234.799999982119,
+        "scrollY": 0,
+        "focus": {
+          "tag": "A",
+          "cls": "",
+          "text": "02\nTHE STRANGE STUFF\nGHOSTS, DARK HISTORY & UFOS"
+        },
+        "root": "smooth-scroll motion-ready menu-open",
+        "menuHidden": false,
+        "menuOpen": true,
+        "modalHidden": true,
+        "modalOpen": false,
+        "fallbackHidden": true,
+        "statusHidden": false,
+        "track": "matrix(1, 0, 0, 1, 0, 0)",
+        "count": "01 / 03",
+        "video": [
+          {
+            "src": "",
+            "currentTime": 0,
+            "duration": null,
+            "readyState": 0,
+            "seeking": false
+          }
+        ],
+        "details": [
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          }
+        ],
+        "animations": [
+          {
+            "duration": 250,
+            "currentTime": 66.92299999985885
+          },
+          {
+            "duration": 0,
+            "currentTime": 66.93400000000071
+          },
+          {
+            "duration": 300,
+            "currentTime": 66.92299999985885
+          },
+          {
+            "duration": 300,
+            "currentTime": 66.92299999985885
+          },
+          {
+            "duration": 450,
+            "currentTime": 66.92299999985885
+          },
+          {
+            "duration": 800,
+            "currentTime": 66.92299999985885
+          },
+          {
+            "duration": 1000,
+            "currentTime": 66.92299999985885
+          },
+          {
+            "duration": 800,
+            "currentTime": 66.92299999985885
+          },
+          {
+            "duration": 1000,
+            "currentTime": 66.92299999985885
+          },
+          {
+            "duration": 800,
+            "currentTime": 66.92299999985885
+          },
+          {
+            "duration": 1000,
+            "currentTime": 66.92299999985885
+          },
+          {
+            "duration": 600,
+            "currentTime": 66.93400000000071
+          },
+          {
+            "duration": 600,
+            "currentTime": 66.92299999985885
+          },
+          {
+            "duration": 700,
+            "currentTime": 66.92299999985885
+          },
+          {
+            "duration": 600,
+            "currentTime": 66.93400000000071
+          },
+          {
+            "duration": 600,
+            "currentTime": 66.92299999985885
+          },
+          {
+            "duration": 700,
+            "currentTime": 66.92299999985885
+          },
+          {
+            "duration": 350,
+            "currentTime": 0
+          },
+          {
+            "duration": 600,
+            "currentTime": 66.93400000000071
+          },
+          {
+            "duration": 600,
+            "currentTime": 66.92299999985885
+          },
+          {
+            "duration": 700,
+            "currentTime": 66.92299999985885
+          },
+          {
+            "duration": 600,
+            "currentTime": 66.93400000000071
+          },
+          {
+            "duration": 600,
+            "currentTime": 66.92299999985885
+          },
+          {
+            "duration": 700,
+            "currentTime": 66.92299999985885
+          },
+          {
+            "duration": 600,
+            "currentTime": 66.93400000000071
+          },
+          {
+            "duration": 600,
+            "currentTime": 66.92299999985885
+          },
+          {
+            "duration": 700,
+            "currentTime": 66.92299999985885
+          },
+          {
+            "name": "loader-drift-a",
+            "duration": 30000,
+            "currentTime": 66.92299999985885
+          },
+          {
+            "name": "loader-drift-b",
+            "duration": 38000,
+            "currentTime": 66.92299999985885
+          },
+          {
+            "name": "loader-drift-a",
+            "duration": 44000,
+            "currentTime": 66.92299999985885
+          },
+          {
+            "name": "slow-spin",
+            "duration": 24000,
+            "currentTime": 3813.376999978116
+          },
+          {
+            "name": "fog-drift",
+            "duration": 40000,
+            "currentTime": 3729.7999999950644
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 56000,
+            "currentTime": 3729.7999999950644
+          },
+          {
+            "name": "fog-drift",
+            "duration": 70000,
+            "currentTime": 3729.7999999950644
+          },
+          {
+            "name": "marquee",
+            "duration": 35000,
+            "currentTime": 3813.376999978116
+          },
+          {
+            "name": "fog-drift",
+            "duration": 40000,
+            "currentTime": 3729.7999999950644
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 56000,
+            "currentTime": 3729.7999999950644
+          },
+          {
+            "name": "fog-drift",
+            "duration": 70000,
+            "currentTime": 3729.7999999950644
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3200,
+            "currentTime": 3863.6000000000004
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3700,
+            "currentTime": 3863.6000000000004
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 4300,
+            "currentTime": 3863.6000000000004
+          }
+        ]
+      }
+    },
+    {
+      "action": "menu Tab 10",
+      "state": {
+        "timestamp": "2026-10-04T00:09:03.713Z",
+        "perf": 4243.4000000059605,
+        "scrollY": 0,
+        "focus": {
+          "tag": "A",
+          "cls": "",
+          "text": "03\nBEER ZOMBIES\nWHERE THE NIGHT STARTS"
+        },
+        "root": "smooth-scroll motion-ready menu-open",
+        "menuHidden": false,
+        "menuOpen": true,
+        "modalHidden": true,
+        "modalOpen": false,
+        "fallbackHidden": true,
+        "statusHidden": false,
+        "track": "matrix(1, 0, 0, 1, 0, 0)",
+        "count": "01 / 03",
+        "video": [
+          {
+            "src": "",
+            "currentTime": 0,
+            "duration": null,
+            "readyState": 0,
+            "seeking": false
+          }
+        ],
+        "details": [
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          }
+        ],
+        "animations": [
+          {
+            "duration": 250,
+            "currentTime": 83.62299999985811
+          },
+          {
+            "duration": 0,
+            "currentTime": 83.63399999999999
+          },
+          {
+            "duration": 300,
+            "currentTime": 83.62299999985811
+          },
+          {
+            "duration": 300,
+            "currentTime": 83.62299999985811
+          },
+          {
+            "duration": 450,
+            "currentTime": 83.62299999985811
+          },
+          {
+            "duration": 800,
+            "currentTime": 83.62299999985811
+          },
+          {
+            "duration": 1000,
+            "currentTime": 83.62299999985811
+          },
+          {
+            "duration": 800,
+            "currentTime": 83.62299999985811
+          },
+          {
+            "duration": 1000,
+            "currentTime": 83.62299999985811
+          },
+          {
+            "duration": 800,
+            "currentTime": 83.62299999985811
+          },
+          {
+            "duration": 1000,
+            "currentTime": 83.62299999985811
+          },
+          {
+            "duration": 600,
+            "currentTime": 83.63399999999999
+          },
+          {
+            "duration": 600,
+            "currentTime": 83.62299999985811
+          },
+          {
+            "duration": 700,
+            "currentTime": 83.62299999985811
+          },
+          {
+            "duration": 600,
+            "currentTime": 83.63399999999999
+          },
+          {
+            "duration": 600,
+            "currentTime": 83.62299999985811
+          },
+          {
+            "duration": 700,
+            "currentTime": 83.62299999985811
+          },
+          {
+            "duration": 600,
+            "currentTime": 83.63399999999999
+          },
+          {
+            "duration": 600,
+            "currentTime": 83.62299999985811
+          },
+          {
+            "duration": 700,
+            "currentTime": 83.62299999985811
+          },
+          {
+            "duration": 350,
+            "currentTime": 0
+          },
+          {
+            "duration": 600,
+            "currentTime": 83.63399999999999
+          },
+          {
+            "duration": 600,
+            "currentTime": 83.62299999985811
+          },
+          {
+            "duration": 700,
+            "currentTime": 83.62299999985811
+          },
+          {
+            "duration": 600,
+            "currentTime": 83.63399999999999
+          },
+          {
+            "duration": 600,
+            "currentTime": 83.62299999985811
+          },
+          {
+            "duration": 700,
+            "currentTime": 83.62299999985811
+          },
+          {
+            "name": "loader-drift-a",
+            "duration": 30000,
+            "currentTime": 83.62299999985811
+          },
+          {
+            "name": "loader-drift-b",
+            "duration": 38000,
+            "currentTime": 83.62299999985811
+          },
+          {
+            "name": "loader-drift-a",
+            "duration": 44000,
+            "currentTime": 83.62299999985811
+          },
+          {
+            "name": "slow-spin",
+            "duration": 24000,
+            "currentTime": 3830.0769999781155
+          },
+          {
+            "name": "fog-drift",
+            "duration": 40000,
+            "currentTime": 3746.4999999950637
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 56000,
+            "currentTime": 3746.4999999950637
+          },
+          {
+            "name": "fog-drift",
+            "duration": 70000,
+            "currentTime": 3746.4999999950637
+          },
+          {
+            "name": "marquee",
+            "duration": 35000,
+            "currentTime": 3830.0769999781155
+          },
+          {
+            "name": "fog-drift",
+            "duration": 40000,
+            "currentTime": 3746.4999999950637
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 56000,
+            "currentTime": 3746.4999999950637
+          },
+          {
+            "name": "fog-drift",
+            "duration": 70000,
+            "currentTime": 3746.4999999950637
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3200,
+            "currentTime": 3880.2999999999997
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3700,
+            "currentTime": 3880.2999999999997
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 4300,
+            "currentTime": 3880.2999999999997
+          }
+        ]
+      }
+    },
+    {
+      "action": "menu Tab 11",
+      "state": {
+        "timestamp": "2026-10-04T00:09:03.720Z",
+        "perf": 4250.299999982119,
+        "scrollY": 0,
+        "focus": {
+          "tag": "A",
+          "cls": "",
+          "text": "04\nPLAN YOUR VISIT\nARRIVAL, PARKING & FAQ"
+        },
+        "root": "smooth-scroll motion-ready menu-open",
+        "menuHidden": false,
+        "menuOpen": true,
+        "modalHidden": true,
+        "modalOpen": false,
+        "fallbackHidden": true,
+        "statusHidden": false,
+        "track": "matrix(1, 0, 0, 1, 0, 0)",
+        "count": "01 / 03",
+        "video": [
+          {
+            "src": "",
+            "currentTime": 0,
+            "duration": null,
+            "readyState": 0,
+            "seeking": false
+          }
+        ],
+        "details": [
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          }
+        ],
+        "animations": [
+          {
+            "duration": 250,
+            "currentTime": 83.62299999985811
+          },
+          {
+            "duration": 0,
+            "currentTime": 83.63399999999999
+          },
+          {
+            "duration": 300,
+            "currentTime": 83.62299999985811
+          },
+          {
+            "duration": 300,
+            "currentTime": 83.62299999985811
+          },
+          {
+            "duration": 450,
+            "currentTime": 83.62299999985811
+          },
+          {
+            "duration": 800,
+            "currentTime": 83.62299999985811
+          },
+          {
+            "duration": 1000,
+            "currentTime": 83.62299999985811
+          },
+          {
+            "duration": 800,
+            "currentTime": 83.62299999985811
+          },
+          {
+            "duration": 1000,
+            "currentTime": 83.62299999985811
+          },
+          {
+            "duration": 800,
+            "currentTime": 83.62299999985811
+          },
+          {
+            "duration": 1000,
+            "currentTime": 83.62299999985811
+          },
+          {
+            "duration": 600,
+            "currentTime": 83.63399999999999
+          },
+          {
+            "duration": 600,
+            "currentTime": 83.62299999985811
+          },
+          {
+            "duration": 700,
+            "currentTime": 83.62299999985811
+          },
+          {
+            "duration": 600,
+            "currentTime": 83.63399999999999
+          },
+          {
+            "duration": 600,
+            "currentTime": 83.62299999985811
+          },
+          {
+            "duration": 700,
+            "currentTime": 83.62299999985811
+          },
+          {
+            "duration": 600,
+            "currentTime": 83.63399999999999
+          },
+          {
+            "duration": 600,
+            "currentTime": 83.62299999985811
+          },
+          {
+            "duration": 700,
+            "currentTime": 83.62299999985811
+          },
+          {
+            "duration": 600,
+            "currentTime": 83.63399999999999
+          },
+          {
+            "duration": 600,
+            "currentTime": 83.62299999985811
+          },
+          {
+            "duration": 700,
+            "currentTime": 83.62299999985811
+          },
+          {
+            "duration": 350,
+            "currentTime": 0
+          },
+          {
+            "duration": 600,
+            "currentTime": 83.63399999999999
+          },
+          {
+            "duration": 600,
+            "currentTime": 83.62299999985811
+          },
+          {
+            "duration": 700,
+            "currentTime": 83.62299999985811
+          },
+          {
+            "name": "loader-drift-a",
+            "duration": 30000,
+            "currentTime": 83.62299999985811
+          },
+          {
+            "name": "loader-drift-b",
+            "duration": 38000,
+            "currentTime": 83.62299999985811
+          },
+          {
+            "name": "loader-drift-a",
+            "duration": 44000,
+            "currentTime": 83.62299999985811
+          },
+          {
+            "name": "slow-spin",
+            "duration": 24000,
+            "currentTime": 3830.0769999781155
+          },
+          {
+            "name": "fog-drift",
+            "duration": 40000,
+            "currentTime": 3746.4999999950637
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 56000,
+            "currentTime": 3746.4999999950637
+          },
+          {
+            "name": "fog-drift",
+            "duration": 70000,
+            "currentTime": 3746.4999999950637
+          },
+          {
+            "name": "marquee",
+            "duration": 35000,
+            "currentTime": 3830.0769999781155
+          },
+          {
+            "name": "fog-drift",
+            "duration": 40000,
+            "currentTime": 3746.4999999950637
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 56000,
+            "currentTime": 3746.4999999950637
+          },
+          {
+            "name": "fog-drift",
+            "duration": 70000,
+            "currentTime": 3746.4999999950637
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3200,
+            "currentTime": 3880.2999999999997
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3700,
+            "currentTime": 3880.2999999999997
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 4300,
+            "currentTime": 3880.2999999999997
+          }
+        ]
+      }
+    },
+    {
+      "action": "rapid menu reversal",
+      "state": {
+        "timestamp": "2026-10-04T00:09:04.769Z",
+        "perf": 5299.5,
+        "scrollY": 0,
+        "focus": {
+          "tag": "A",
+          "cls": "",
+          "text": "01\nTHE TOUR\nONE HOUR ON FOOT, FULL OF STORIES"
+        },
+        "root": "smooth-scroll motion-ready menu-open",
+        "menuHidden": false,
+        "menuOpen": true,
+        "modalHidden": true,
+        "modalOpen": false,
+        "fallbackHidden": true,
+        "statusHidden": false,
+        "track": "matrix(1, 0, 0, 1, 0, 0)",
+        "count": "01 / 03",
+        "video": [
+          {
+            "src": "",
+            "currentTime": 0,
+            "duration": null,
+            "readyState": 0,
+            "seeking": false
+          }
+        ],
+        "details": [
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          }
+        ],
+        "animations": [
+          {
+            "duration": 800,
+            "currentTime": 719.175999981351
+          },
+          {
+            "duration": 800,
+            "currentTime": 719.175999981351
+          },
+          {
+            "duration": 957.7703683395595,
+            "currentTime": 752.6999999999999
+          },
+          {
+            "duration": 800,
+            "currentTime": 719.175999981351
+          },
+          {
+            "duration": 1000,
+            "currentTime": 719.175999981351
+          },
+          {
+            "duration": 600,
+            "currentTime": 719.175999981351
+          },
+          {
+            "duration": 600,
+            "currentTime": 719.175999981351
+          },
+          {
+            "duration": 700,
+            "currentTime": 719.175999981351
+          },
+          {
+            "duration": 600,
+            "currentTime": 719.175999981351
+          },
+          {
+            "duration": 600,
+            "currentTime": 719.175999981351
+          },
+          {
+            "duration": 700,
+            "currentTime": 719.175999981351
+          },
+          {
+            "duration": 600,
+            "currentTime": 719.175999981351
+          },
+          {
+            "duration": 600,
+            "currentTime": 719.175999981351
+          },
+          {
+            "duration": 700,
+            "currentTime": 719.175999981351
+          },
+          {
+            "duration": 600,
+            "currentTime": 719.175999981351
+          },
+          {
+            "duration": 600,
+            "currentTime": 719.175999981351
+          },
+          {
+            "duration": 700,
+            "currentTime": 719.175999981351
+          },
+          {
+            "duration": 600,
+            "currentTime": 719.175999981351
+          },
+          {
+            "duration": 600,
+            "currentTime": 719.175999981351
+          },
+          {
+            "duration": 700,
+            "currentTime": 719.175999981351
+          },
+          {
+            "name": "loader-drift-a",
+            "duration": 30000,
+            "currentTime": 1137.3229999998582
+          },
+          {
+            "name": "loader-drift-b",
+            "duration": 38000,
+            "currentTime": 1137.3229999998582
+          },
+          {
+            "name": "loader-drift-a",
+            "duration": 44000,
+            "currentTime": 1137.3229999998582
+          },
+          {
+            "name": "slow-spin",
+            "duration": 24000,
+            "currentTime": 4883.776999978116
+          },
+          {
+            "name": "fog-drift",
+            "duration": 40000,
+            "currentTime": 4800.199999995064
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 56000,
+            "currentTime": 4800.199999995064
+          },
+          {
+            "name": "fog-drift",
+            "duration": 70000,
+            "currentTime": 4800.199999995064
+          },
+          {
+            "name": "marquee",
+            "duration": 35000,
+            "currentTime": 4883.776999978116
+          },
+          {
+            "name": "fog-drift",
+            "duration": 40000,
+            "currentTime": 4800.199999995064
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 56000,
+            "currentTime": 4800.199999995064
+          },
+          {
+            "name": "fog-drift",
+            "duration": 70000,
+            "currentTime": 4800.199999995064
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3200,
+            "currentTime": 4934
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3700,
+            "currentTime": 4934
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 4300,
+            "currentTime": 4934
+          }
+        ]
+      }
+    },
+    {
+      "action": "FAQ interruption closes",
+      "state": {
+        "timestamp": "2026-10-04T00:09:06.095Z",
+        "perf": 6625.199999988079,
+        "scrollY": 8932,
+        "focus": {
+          "tag": "SUMMARY",
+          "cls": "",
+          "text": "What’s the walk like?"
+        },
+        "root": "smooth-scroll motion-ready",
+        "menuHidden": true,
+        "menuOpen": false,
+        "modalHidden": true,
+        "modalOpen": false,
+        "fallbackHidden": true,
+        "statusHidden": false,
+        "track": "matrix(1, 0, 0, 1, -2850, 0)",
+        "count": "03 / 03",
+        "video": [
+          {
+            "src": "",
+            "currentTime": 0,
+            "duration": null,
+            "readyState": 0,
+            "seeking": false
+          }
+        ],
+        "details": [
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          }
+        ],
+        "animations": [
+          {
+            "duration": 1100,
+            "currentTime": 535.1779999776741
+          },
+          {
+            "duration": 900,
+            "currentTime": 535.1779999776741
+          },
+          {
+            "duration": 1100,
+            "currentTime": 535.1779999776741
+          },
+          {
+            "duration": 1100,
+            "currentTime": 535.1779999776741
+          },
+          {
+            "duration": 900,
+            "currentTime": 535.1779999776741
+          },
+          {
+            "duration": 1100,
+            "currentTime": 535.1779999776741
+          },
+          {
+            "name": "slow-spin",
+            "duration": 24000,
+            "currentTime": 6205.076999978115
+          },
+          {
+            "name": "marquee",
+            "duration": 35000,
+            "currentTime": 6205.076999978115
+          },
+          {
+            "name": "fog-drift",
+            "duration": 40000,
+            "currentTime": 535.1779999776741
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 56000,
+            "currentTime": 535.1779999776741
+          },
+          {
+            "name": "fog-drift",
+            "duration": 70000,
+            "currentTime": 535.1779999776741
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3200,
+            "currentTime": 6255.3
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3700,
+            "currentTime": 6255.3
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 4300,
+            "currentTime": 6255.3
+          }
+        ]
+      }
+    },
+    {
+      "action": "fresh normal UFO phase 0",
+      "state": {
+        "timestamp": "2026-10-04T00:09:08.124Z",
+        "perf": 8654.199999988079,
+        "scrollY": 2399,
+        "focus": {
+          "tag": "SUMMARY",
+          "cls": "",
+          "text": "What’s the walk like?"
+        },
+        "root": "smooth-scroll motion-ready",
+        "menuHidden": true,
+        "menuOpen": false,
+        "modalHidden": true,
+        "modalOpen": false,
+        "fallbackHidden": true,
+        "statusHidden": false,
+        "track": "matrix(1, 0, 0, 1, 0, 0)",
+        "count": "01 / 03",
+        "video": [
+          {
+            "src": "https://www.hauntedbouldercity.com/assets/ufo-night.mp4",
+            "currentTime": 0.000252,
+            "duration": 8.041667,
+            "readyState": 4,
+            "seeking": false
+          }
+        ],
+        "details": [
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          }
+        ],
+        "animations": [
+          {
+            "name": "slow-spin",
+            "duration": 24000,
+            "currentTime": 8245.642999978116
+          },
+          {
+            "name": "marquee",
+            "duration": 35000,
+            "currentTime": 8245.642999978116
+          },
+          {
+            "name": "fog-drift",
+            "duration": 40000,
+            "currentTime": 1973.6539999773584
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 56000,
+            "currentTime": 1973.6539999773584
+          },
+          {
+            "name": "fog-drift",
+            "duration": 70000,
+            "currentTime": 1973.6539999773584
+          },
+          {
+            "name": "fog-drift",
+            "duration": 40000,
+            "currentTime": 1973.6539999773584
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 56000,
+            "currentTime": 1973.6539999773584
+          },
+          {
+            "name": "fog-drift",
+            "duration": 70000,
+            "currentTime": 1973.6539999773584
+          },
+          {
+            "name": "fog-drift",
+            "duration": 40000,
+            "currentTime": 1973.6539999773584
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 56000,
+            "currentTime": 1973.6539999773584
+          },
+          {
+            "name": "fog-drift",
+            "duration": 70000,
+            "currentTime": 1973.6539999773584
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3200,
+            "currentTime": 8295.866
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3700,
+            "currentTime": 8295.866
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 4300,
+            "currentTime": 8295.866
+          }
+        ]
+      }
+    },
+    {
+      "action": "fresh normal UFO phase 0.25",
+      "state": {
+        "timestamp": "2026-10-04T00:09:08.644Z",
+        "perf": 9174.09999999404,
+        "scrollY": 2939,
+        "focus": {
+          "tag": "SUMMARY",
+          "cls": "",
+          "text": "What’s the walk like?"
+        },
+        "root": "smooth-scroll motion-ready",
+        "menuHidden": true,
+        "menuOpen": false,
+        "modalHidden": true,
+        "modalOpen": false,
+        "fallbackHidden": true,
+        "statusHidden": false,
+        "track": "matrix(1, 0, 0, 1, -711.59, 0)",
+        "count": "01 / 03",
+        "video": [
+          {
+            "src": "https://www.hauntedbouldercity.com/assets/ufo-night.mp4",
+            "currentTime": 0.000252,
+            "duration": 8.041667,
+            "readyState": 4,
+            "seeking": false
+          }
+        ],
+        "details": [
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          }
+        ],
+        "animations": [
+          {
+            "name": "slow-spin",
+            "duration": 24000,
+            "currentTime": 8764.076999978115
+          },
+          {
+            "name": "marquee",
+            "duration": 35000,
+            "currentTime": 8764.076999978115
+          },
+          {
+            "name": "fog-drift",
+            "duration": 40000,
+            "currentTime": 2492.0879999773574
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 56000,
+            "currentTime": 2492.0879999773574
+          },
+          {
+            "name": "fog-drift",
+            "duration": 70000,
+            "currentTime": 2492.0879999773574
+          },
+          {
+            "name": "fog-drift",
+            "duration": 40000,
+            "currentTime": 2492.0879999773574
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 56000,
+            "currentTime": 2492.0879999773574
+          },
+          {
+            "name": "fog-drift",
+            "duration": 70000,
+            "currentTime": 2492.0879999773574
+          },
+          {
+            "name": "fog-drift",
+            "duration": 40000,
+            "currentTime": 2492.0879999773574
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 56000,
+            "currentTime": 2492.0879999773574
+          },
+          {
+            "name": "fog-drift",
+            "duration": 70000,
+            "currentTime": 2492.0879999773574
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3200,
+            "currentTime": 8814.3
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3700,
+            "currentTime": 8814.3
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 4300,
+            "currentTime": 8814.3
+          }
+        ]
+      }
+    },
+    {
+      "action": "fresh normal UFO phase 0.5",
+      "state": {
+        "timestamp": "2026-10-04T00:09:09.154Z",
+        "perf": 9684.699999988079,
+        "scrollY": 3479,
+        "focus": {
+          "tag": "SUMMARY",
+          "cls": "",
+          "text": "What’s the walk like?"
+        },
+        "root": "smooth-scroll motion-ready",
+        "menuHidden": true,
+        "menuOpen": false,
+        "modalHidden": true,
+        "modalOpen": false,
+        "fallbackHidden": true,
+        "statusHidden": false,
+        "track": "matrix(1, 0, 0, 1, -1425, 0)",
+        "count": "02 / 03",
+        "video": [
+          {
+            "src": "https://www.hauntedbouldercity.com/assets/ufo-night.mp4",
+            "currentTime": 0.000252,
+            "duration": 8.041667,
+            "readyState": 4,
+            "seeking": false
+          }
+        ],
+        "details": [
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          }
+        ],
+        "animations": [
+          {
+            "name": "slow-spin",
+            "duration": 24000,
+            "currentTime": 9265.876999978114
+          },
+          {
+            "name": "marquee",
+            "duration": 35000,
+            "currentTime": 9265.876999978114
+          },
+          {
+            "name": "fog-drift",
+            "duration": 40000,
+            "currentTime": 2993.8879999773567
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 56000,
+            "currentTime": 2993.8879999773567
+          },
+          {
+            "name": "fog-drift",
+            "duration": 70000,
+            "currentTime": 2993.8879999773567
+          },
+          {
+            "name": "fog-drift",
+            "duration": 40000,
+            "currentTime": 2993.8879999773567
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 56000,
+            "currentTime": 2993.8879999773567
+          },
+          {
+            "name": "fog-drift",
+            "duration": 70000,
+            "currentTime": 2993.8879999773567
+          },
+          {
+            "name": "fog-drift",
+            "duration": 40000,
+            "currentTime": 468.32699998971
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 56000,
+            "currentTime": 468.32699998971
+          },
+          {
+            "name": "fog-drift",
+            "duration": 70000,
+            "currentTime": 468.32699998971
+          },
+          {
+            "name": "fog-drift",
+            "duration": 40000,
+            "currentTime": 2993.8879999773567
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 56000,
+            "currentTime": 2993.8879999773567
+          },
+          {
+            "name": "fog-drift",
+            "duration": 70000,
+            "currentTime": 2993.8879999773567
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3200,
+            "currentTime": 9316.099999999999
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3700,
+            "currentTime": 9316.099999999999
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 4300,
+            "currentTime": 9316.099999999999
+          }
+        ]
+      }
+    },
+    {
+      "action": "fresh normal UFO phase 0.65",
+      "state": {
+        "timestamp": "2026-10-04T00:09:09.671Z",
+        "perf": 10201.59999999404,
+        "scrollY": 3803,
+        "focus": {
+          "tag": "SUMMARY",
+          "cls": "",
+          "text": "What’s the walk like?"
+        },
+        "root": "smooth-scroll motion-ready",
+        "menuHidden": true,
+        "menuOpen": false,
+        "modalHidden": true,
+        "modalOpen": false,
+        "fallbackHidden": true,
+        "statusHidden": false,
+        "track": "matrix(1, 0, 0, 1, -1580.74, 0)",
+        "count": "02 / 03",
+        "video": [
+          {
+            "src": "https://www.hauntedbouldercity.com/assets/ufo-night.mp4",
+            "currentTime": 0.888478,
+            "duration": 8.041667,
+            "readyState": 4,
+            "seeking": false
+          }
+        ],
+        "details": [
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          }
+        ],
+        "animations": [
+          {
+            "name": "slow-spin",
+            "duration": 24000,
+            "currentTime": 9784.442999978117
+          },
+          {
+            "name": "marquee",
+            "duration": 35000,
+            "currentTime": 9784.442999978117
+          },
+          {
+            "name": "fog-drift",
+            "duration": 40000,
+            "currentTime": 3512.4539999773583
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 56000,
+            "currentTime": 3512.4539999773583
+          },
+          {
+            "name": "fog-drift",
+            "duration": 70000,
+            "currentTime": 3512.4539999773583
+          },
+          {
+            "name": "fog-drift",
+            "duration": 40000,
+            "currentTime": 986.8929999897116
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 56000,
+            "currentTime": 986.8929999897116
+          },
+          {
+            "name": "fog-drift",
+            "duration": 70000,
+            "currentTime": 986.8929999897116
+          },
+          {
+            "name": "fog-drift",
+            "duration": 40000,
+            "currentTime": 3512.4539999773583
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 56000,
+            "currentTime": 3512.4539999773583
+          },
+          {
+            "name": "fog-drift",
+            "duration": 70000,
+            "currentTime": 3512.4539999773583
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3200,
+            "currentTime": 9834.666000000001
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3700,
+            "currentTime": 9834.666000000001
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 4300,
+            "currentTime": 9834.666000000001
+          }
+        ]
+      }
+    },
+    {
+      "action": "fresh normal UFO phase 0.8",
+      "state": {
+        "timestamp": "2026-10-04T00:09:10.329Z",
+        "perf": 10859.699999988079,
+        "scrollY": 4127,
+        "focus": {
+          "tag": "SUMMARY",
+          "cls": "",
+          "text": "What’s the walk like?"
+        },
+        "root": "smooth-scroll motion-ready",
+        "menuHidden": true,
+        "menuOpen": false,
+        "modalHidden": true,
+        "modalOpen": false,
+        "fallbackHidden": true,
+        "statusHidden": false,
+        "track": "matrix(1, 0, 0, 1, -2441.94, 0)",
+        "count": "03 / 03",
+        "video": [
+          {
+            "src": "https://www.hauntedbouldercity.com/assets/ufo-night.mp4",
+            "currentTime": 2.796303,
+            "duration": 8.041667,
+            "readyState": 4,
+            "seeking": false
+          }
+        ],
+        "details": [
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          }
+        ],
+        "animations": [
+          {
+            "name": "slow-spin",
+            "duration": 24000,
+            "currentTime": 10436.576999978115
+          },
+          {
+            "name": "marquee",
+            "duration": 35000,
+            "currentTime": 10436.576999978115
+          },
+          {
+            "name": "fog-drift",
+            "duration": 40000,
+            "currentTime": 4164.587999977357
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 56000,
+            "currentTime": 4164.587999977357
+          },
+          {
+            "name": "fog-drift",
+            "duration": 70000,
+            "currentTime": 4164.587999977357
+          },
+          {
+            "name": "fog-drift",
+            "duration": 40000,
+            "currentTime": 1639.02699998971
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 56000,
+            "currentTime": 1639.02699998971
+          },
+          {
+            "name": "fog-drift",
+            "duration": 70000,
+            "currentTime": 1639.02699998971
+          },
+          {
+            "name": "fog-drift",
+            "duration": 40000,
+            "currentTime": 4164.587999977357
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 56000,
+            "currentTime": 4164.587999977357
+          },
+          {
+            "name": "fog-drift",
+            "duration": 70000,
+            "currentTime": 4164.587999977357
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3200,
+            "currentTime": 10486.8
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3700,
+            "currentTime": 10486.8
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 4300,
+            "currentTime": 10486.8
+          }
+        ]
+      }
+    },
+    {
+      "action": "fresh normal UFO phase 1",
+      "state": {
+        "timestamp": "2026-10-04T00:09:11.000Z",
+        "perf": 11530.799999982119,
+        "scrollY": 4559,
+        "focus": {
+          "tag": "SUMMARY",
+          "cls": "",
+          "text": "What’s the walk like?"
+        },
+        "root": "smooth-scroll motion-ready",
+        "menuHidden": true,
+        "menuOpen": false,
+        "modalHidden": true,
+        "modalOpen": false,
+        "fallbackHidden": true,
+        "statusHidden": false,
+        "track": "matrix(1, 0, 0, 1, -2850, 0)",
+        "count": "03 / 03",
+        "video": [
+          {
+            "src": "https://www.hauntedbouldercity.com/assets/ufo-night.mp4",
+            "currentTime": 5.340069,
+            "duration": 8.041667,
+            "readyState": 4,
+            "seeking": false
+          }
+        ],
+        "details": [
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          }
+        ],
+        "animations": [
+          {
+            "name": "slow-spin",
+            "duration": 24000,
+            "currentTime": 11122.376999978116
+          },
+          {
+            "name": "marquee",
+            "duration": 35000,
+            "currentTime": 11122.376999978116
+          },
+          {
+            "name": "fog-drift",
+            "duration": 40000,
+            "currentTime": 4850.387999977357
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 56000,
+            "currentTime": 4850.387999977357
+          },
+          {
+            "name": "fog-drift",
+            "duration": 70000,
+            "currentTime": 4850.387999977357
+          },
+          {
+            "name": "fog-drift",
+            "duration": 40000,
+            "currentTime": 2324.82699998971
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 56000,
+            "currentTime": 2324.82699998971
+          },
+          {
+            "name": "fog-drift",
+            "duration": 70000,
+            "currentTime": 2324.82699998971
+          },
+          {
+            "name": "fog-drift",
+            "duration": 40000,
+            "currentTime": 4850.387999977357
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 56000,
+            "currentTime": 4850.387999977357
+          },
+          {
+            "name": "fog-drift",
+            "duration": 70000,
+            "currentTime": 4850.387999977357
+          },
+          {
+            "name": "fog-drift",
+            "duration": 40000,
+            "currentTime": 484.92699999795263
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 56000,
+            "currentTime": 484.92699999795263
+          },
+          {
+            "name": "fog-drift",
+            "duration": 70000,
+            "currentTime": 484.92699999795263
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3200,
+            "currentTime": 11172.599999999999
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3700,
+            "currentTime": 11172.599999999999
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 4300,
+            "currentTime": 11172.599999999999
+          }
+        ]
+      }
+    },
+    {
+      "action": "fresh normal UFO phase 0.8",
+      "state": {
+        "timestamp": "2026-10-04T00:09:11.655Z",
+        "perf": 12185.59999999404,
+        "scrollY": 4127,
+        "focus": {
+          "tag": "SUMMARY",
+          "cls": "",
+          "text": "What’s the walk like?"
+        },
+        "root": "smooth-scroll motion-ready",
+        "menuHidden": true,
+        "menuOpen": false,
+        "modalHidden": true,
+        "modalOpen": false,
+        "fallbackHidden": true,
+        "statusHidden": false,
+        "track": "matrix(1, 0, 0, 1, -2441.94, 0)",
+        "count": "03 / 03",
+        "video": [
+          {
+            "src": "https://www.hauntedbouldercity.com/assets/ufo-night.mp4",
+            "currentTime": 2.796303,
+            "duration": 8.041667,
+            "readyState": 4,
+            "seeking": false
+          }
+        ],
+        "details": [
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          }
+        ],
+        "animations": [
+          {
+            "name": "slow-spin",
+            "duration": 24000,
+            "currentTime": 11774.742999978116
+          },
+          {
+            "name": "marquee",
+            "duration": 35000,
+            "currentTime": 11774.742999978116
+          },
+          {
+            "name": "fog-drift",
+            "duration": 40000,
+            "currentTime": 5502.753999977358
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 56000,
+            "currentTime": 5502.753999977358
+          },
+          {
+            "name": "fog-drift",
+            "duration": 70000,
+            "currentTime": 5502.753999977358
+          },
+          {
+            "name": "fog-drift",
+            "duration": 40000,
+            "currentTime": 2977.192999989711
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 56000,
+            "currentTime": 2977.192999989711
+          },
+          {
+            "name": "fog-drift",
+            "duration": 70000,
+            "currentTime": 2977.192999989711
+          },
+          {
+            "name": "fog-drift",
+            "duration": 40000,
+            "currentTime": 5502.753999977358
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 56000,
+            "currentTime": 5502.753999977358
+          },
+          {
+            "name": "fog-drift",
+            "duration": 70000,
+            "currentTime": 5502.753999977358
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3200,
+            "currentTime": 11824.966
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3700,
+            "currentTime": 11824.966
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 4300,
+            "currentTime": 11824.966
+          }
+        ]
+      }
+    },
+    {
+      "action": "fresh normal UFO phase 0.5",
+      "state": {
+        "timestamp": "2026-10-04T00:09:12.307Z",
+        "perf": 12837.90000000596,
+        "scrollY": 3479,
+        "focus": {
+          "tag": "SUMMARY",
+          "cls": "",
+          "text": "What’s the walk like?"
+        },
+        "root": "smooth-scroll motion-ready",
+        "menuHidden": true,
+        "menuOpen": false,
+        "modalHidden": true,
+        "modalOpen": false,
+        "fallbackHidden": true,
+        "statusHidden": false,
+        "track": "matrix(1, 0, 0, 1, -1425, 0)",
+        "count": "02 / 03",
+        "video": [
+          {
+            "src": "https://www.hauntedbouldercity.com/assets/ufo-night.mp4",
+            "currentTime": 0,
+            "duration": 8.041667,
+            "readyState": 4,
+            "seeking": false
+          }
+        ],
+        "details": [
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          }
+        ],
+        "animations": [
+          {
+            "name": "slow-spin",
+            "duration": 24000,
+            "currentTime": 12427.076999978115
+          },
+          {
+            "name": "marquee",
+            "duration": 35000,
+            "currentTime": 12427.076999978115
+          },
+          {
+            "name": "fog-drift",
+            "duration": 40000,
+            "currentTime": 3512.4229999796485
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 56000,
+            "currentTime": 3512.4229999796485
+          },
+          {
+            "name": "fog-drift",
+            "duration": 70000,
+            "currentTime": 3512.4229999796485
+          },
+          {
+            "name": "fog-drift",
+            "duration": 40000,
+            "currentTime": 6155.087999977358
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 56000,
+            "currentTime": 6155.087999977358
+          },
+          {
+            "name": "fog-drift",
+            "duration": 70000,
+            "currentTime": 6155.087999977358
+          },
+          {
+            "name": "fog-drift",
+            "duration": 40000,
+            "currentTime": 3629.526999989711
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 56000,
+            "currentTime": 3629.526999989711
+          },
+          {
+            "name": "fog-drift",
+            "duration": 70000,
+            "currentTime": 3629.526999989711
+          },
+          {
+            "name": "fog-drift",
+            "duration": 40000,
+            "currentTime": 6155.087999977358
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 56000,
+            "currentTime": 6155.087999977358
+          },
+          {
+            "name": "fog-drift",
+            "duration": 70000,
+            "currentTime": 6155.087999977358
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3200,
+            "currentTime": 12477.3
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3700,
+            "currentTime": 12477.3
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 4300,
+            "currentTime": 12477.3
+          }
+        ]
+      }
+    },
+    {
+      "action": "modal Tab 0",
+      "state": {
+        "timestamp": "2026-10-04T00:09:23.399Z",
+        "perf": 23929.40000000596,
+        "scrollY": 11222,
+        "focus": {
+          "tag": "BODY",
+          "cls": "",
+          "text": "Skip to content\nGet tickets\nMENU\nHAUNTED\nBOULDER CITY\nEXPERIENCE BY JOSHUA P. WARREN\n\nA on"
+        },
+        "root": "smooth-scroll motion-ready modal-open",
+        "menuHidden": true,
+        "menuOpen": false,
+        "modalHidden": false,
+        "modalOpen": true,
+        "fallbackHidden": true,
+        "statusHidden": true,
+        "track": "matrix(1, 0, 0, 1, -2850, 0)",
+        "count": "03 / 03",
+        "video": [
+          {
+            "src": "https://www.hauntedbouldercity.com/assets/ufo-night.mp4",
+            "currentTime": 7.991667,
+            "duration": 8.041667,
+            "readyState": 4,
+            "seeking": false
+          }
+        ],
+        "details": [
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          }
+        ],
+        "animations": [
+          {
+            "duration": 300,
+            "currentTime": 0
+          },
+          {
+            "name": "slow-spin",
+            "duration": 24000,
+            "currentTime": 23515.942999978117
+          },
+          {
+            "name": "marquee",
+            "duration": 35000,
+            "currentTime": 23515.942999978117
+          },
+          {
+            "name": "fog-drift",
+            "duration": 40000,
+            "currentTime": 10971.85800000586
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 56000,
+            "currentTime": 10971.85800000586
+          },
+          {
+            "name": "fog-drift",
+            "duration": 70000,
+            "currentTime": 10971.85800000586
+          },
+          {
+            "name": "fog-drift",
+            "duration": 40000,
+            "currentTime": 10971.85800000586
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 56000,
+            "currentTime": 10971.85800000586
+          },
+          {
+            "name": "fog-drift",
+            "duration": 70000,
+            "currentTime": 10971.85800000586
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3200,
+            "currentTime": 23566.165999999997
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3700,
+            "currentTime": 23566.165999999997
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 4300,
+            "currentTime": 23566.165999999997
+          },
+          {
+            "name": "loader-drift-a",
+            "duration": 34000,
+            "currentTime": 10988.642999991107
+          },
+          {
+            "name": "loader-drift-b",
+            "duration": 42000,
+            "currentTime": 10988.642999991107
+          }
+        ]
+      }
+    },
+    {
+      "action": "modal Tab 1",
+      "state": {
+        "timestamp": "2026-10-04T00:09:23.418Z",
+        "perf": 23949,
+        "scrollY": 11222,
+        "focus": {
+          "tag": "A",
+          "cls": "skip-link",
+          "text": "Skip to content"
+        },
+        "root": "smooth-scroll motion-ready modal-open",
+        "menuHidden": true,
+        "menuOpen": false,
+        "modalHidden": false,
+        "modalOpen": true,
+        "fallbackHidden": true,
+        "statusHidden": true,
+        "track": "matrix(1, 0, 0, 1, -2850, 0)",
+        "count": "03 / 03",
+        "video": [
+          {
+            "src": "https://www.hauntedbouldercity.com/assets/ufo-night.mp4",
+            "currentTime": 7.991667,
+            "duration": 8.041667,
+            "readyState": 4,
+            "seeking": false
+          }
+        ],
+        "details": [
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          }
+        ],
+        "animations": [
+          {
+            "duration": 300,
+            "currentTime": 0
+          },
+          {
+            "name": "slow-spin",
+            "duration": 24000,
+            "currentTime": 23532.608999978114
+          },
+          {
+            "name": "marquee",
+            "duration": 35000,
+            "currentTime": 23532.608999978114
+          },
+          {
+            "name": "fog-drift",
+            "duration": 40000,
+            "currentTime": 10988.52400000586
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 56000,
+            "currentTime": 10988.52400000586
+          },
+          {
+            "name": "fog-drift",
+            "duration": 70000,
+            "currentTime": 10988.52400000586
+          },
+          {
+            "name": "fog-drift",
+            "duration": 40000,
+            "currentTime": 10988.52400000586
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 56000,
+            "currentTime": 10988.52400000586
+          },
+          {
+            "name": "fog-drift",
+            "duration": 70000,
+            "currentTime": 10988.52400000586
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3200,
+            "currentTime": 23582.832
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3700,
+            "currentTime": 23582.832
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 4300,
+            "currentTime": 23582.832
+          },
+          {
+            "name": "loader-drift-a",
+            "duration": 34000,
+            "currentTime": 11005.308999991108
+          },
+          {
+            "name": "loader-drift-b",
+            "duration": 42000,
+            "currentTime": 11005.308999991108
+          }
+        ]
+      }
+    },
+    {
+      "action": "modal Tab 2",
+      "state": {
+        "timestamp": "2026-10-04T00:09:23.423Z",
+        "perf": 23953.59999999404,
+        "scrollY": 0,
+        "focus": {
+          "tag": "A",
+          "cls": "brand",
+          "text": ""
+        },
+        "root": "smooth-scroll motion-ready modal-open",
+        "menuHidden": true,
+        "menuOpen": false,
+        "modalHidden": false,
+        "modalOpen": true,
+        "fallbackHidden": true,
+        "statusHidden": true,
+        "track": "matrix(1, 0, 0, 1, -2850, 0)",
+        "count": "03 / 03",
+        "video": [
+          {
+            "src": "https://www.hauntedbouldercity.com/assets/ufo-night.mp4",
+            "currentTime": 7.991667,
+            "duration": 8.041667,
+            "readyState": 4,
+            "seeking": false
+          }
+        ],
+        "details": [
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          }
+        ],
+        "animations": [
+          {
+            "duration": 300,
+            "currentTime": 0
+          },
+          {
+            "name": "slow-spin",
+            "duration": 24000,
+            "currentTime": 23532.608999978114
+          },
+          {
+            "name": "marquee",
+            "duration": 35000,
+            "currentTime": 23532.608999978114
+          },
+          {
+            "name": "fog-drift",
+            "duration": 40000,
+            "currentTime": 10988.52400000586
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 56000,
+            "currentTime": 10988.52400000586
+          },
+          {
+            "name": "fog-drift",
+            "duration": 70000,
+            "currentTime": 10988.52400000586
+          },
+          {
+            "name": "fog-drift",
+            "duration": 40000,
+            "currentTime": 10988.52400000586
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 56000,
+            "currentTime": 10988.52400000586
+          },
+          {
+            "name": "fog-drift",
+            "duration": 70000,
+            "currentTime": 10988.52400000586
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3200,
+            "currentTime": 23582.832
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3700,
+            "currentTime": 23582.832
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 4300,
+            "currentTime": 23582.832
+          },
+          {
+            "name": "loader-drift-a",
+            "duration": 34000,
+            "currentTime": 11005.308999991108
+          },
+          {
+            "name": "loader-drift-b",
+            "duration": 42000,
+            "currentTime": 11005.308999991108
+          }
+        ]
+      }
+    },
+    {
+      "action": "modal Tab 3",
+      "state": {
+        "timestamp": "2026-10-04T00:09:23.440Z",
+        "perf": 23970.09999999404,
+        "scrollY": 0,
+        "focus": {
+          "tag": "A",
+          "cls": "button button-small",
+          "text": "Get tickets"
+        },
+        "root": "smooth-scroll motion-ready modal-open",
+        "menuHidden": true,
+        "menuOpen": false,
+        "modalHidden": false,
+        "modalOpen": true,
+        "fallbackHidden": true,
+        "statusHidden": true,
+        "track": "matrix(1, 0, 0, 1, 0, 0)",
+        "count": "01 / 03",
+        "video": [
+          {
+            "src": "https://www.hauntedbouldercity.com/assets/ufo-night.mp4",
+            "currentTime": 0,
+            "duration": 8.041667,
+            "readyState": 1,
+            "seeking": true
+          }
+        ],
+        "details": [
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          }
+        ],
+        "animations": [
+          {
+            "duration": 300,
+            "currentTime": 16.843000004346464
+          },
+          {
+            "duration": 250,
+            "currentTime": 0
+          },
+          {
+            "duration": 250,
+            "currentTime": 0
+          },
+          {
+            "duration": 250,
+            "currentTime": 0
+          },
+          {
+            "duration": 250,
+            "currentTime": 0
+          },
+          {
+            "duration": 250,
+            "currentTime": 0
+          },
+          {
+            "duration": 250,
+            "currentTime": 0
+          },
+          {
+            "duration": 250,
+            "currentTime": 0
+          },
+          {
+            "duration": 250,
+            "currentTime": 0
+          },
+          {
+            "duration": 250,
+            "currentTime": 0
+          },
+          {
+            "duration": 250,
+            "currentTime": 0
+          },
+          {
+            "duration": 250,
+            "currentTime": 0
+          },
+          {
+            "duration": 250,
+            "currentTime": 0
+          },
+          {
+            "duration": 300,
+            "currentTime": 0
+          },
+          {
+            "duration": 300,
+            "currentTime": 0
+          },
+          {
+            "duration": 300,
+            "currentTime": 0
+          },
+          {
+            "duration": 300,
+            "currentTime": 0
+          },
+          {
+            "duration": 300,
+            "currentTime": 0
+          },
+          {
+            "duration": 300,
+            "currentTime": 0
+          },
+          {
+            "duration": 300,
+            "currentTime": 0
+          },
+          {
+            "duration": 300,
+            "currentTime": 0
+          },
+          {
+            "duration": 300,
+            "currentTime": 0
+          },
+          {
+            "duration": 300,
+            "currentTime": 0
+          },
+          {
+            "name": "slow-spin",
+            "duration": 24000,
+            "currentTime": 23549.476999978117
+          },
+          {
+            "name": "marquee",
+            "duration": 35000,
+            "currentTime": 23549.476999978117
+          },
+          {
+            "name": "fog-drift",
+            "duration": 40000,
+            "currentTime": 11005.392000005859
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 56000,
+            "currentTime": 11005.392000005859
+          },
+          {
+            "name": "fog-drift",
+            "duration": 70000,
+            "currentTime": 11005.392000005859
+          },
+          {
+            "name": "fog-drift",
+            "duration": 40000,
+            "currentTime": 11005.392000005859
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 56000,
+            "currentTime": 11005.392000005859
+          },
+          {
+            "name": "fog-drift",
+            "duration": 70000,
+            "currentTime": 11005.392000005859
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3200,
+            "currentTime": 23599.699999999997
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3700,
+            "currentTime": 23599.699999999997
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 4300,
+            "currentTime": 23599.699999999997
+          },
+          {
+            "name": "loader-drift-a",
+            "duration": 34000,
+            "currentTime": 11022.176999991107
+          },
+          {
+            "name": "loader-drift-b",
+            "duration": 42000,
+            "currentTime": 11022.176999991107
+          }
+        ]
+      }
+    },
+    {
+      "action": "modal Tab 4",
+      "state": {
+        "timestamp": "2026-10-04T00:09:23.464Z",
+        "perf": 23994.79999998212,
+        "scrollY": 0,
+        "focus": {
+          "tag": "BUTTON",
+          "cls": "menu-toggle",
+          "text": "MENU"
+        },
+        "root": "smooth-scroll motion-ready modal-open",
+        "menuHidden": true,
+        "menuOpen": false,
+        "modalHidden": false,
+        "modalOpen": true,
+        "fallbackHidden": true,
+        "statusHidden": true,
+        "track": "matrix(1, 0, 0, 1, 0, 0)",
+        "count": "01 / 03",
+        "video": [
+          {
+            "src": "https://www.hauntedbouldercity.com/assets/ufo-night.mp4",
+            "currentTime": 0,
+            "duration": 8.041667,
+            "readyState": 4,
+            "seeking": false
+          }
+        ],
+        "details": [
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          }
+        ],
+        "animations": [
+          {
+            "duration": 300,
+            "currentTime": 50.24300000434678
+          },
+          {
+            "duration": 250,
+            "currentTime": 0
+          },
+          {
+            "duration": 250,
+            "currentTime": 0
+          },
+          {
+            "duration": 250,
+            "currentTime": 0
+          },
+          {
+            "duration": 250,
+            "currentTime": 0
+          },
+          {
+            "duration": 250,
+            "currentTime": 0
+          },
+          {
+            "duration": 250,
+            "currentTime": 0
+          },
+          {
+            "duration": 250,
+            "currentTime": 0
+          },
+          {
+            "duration": 250,
+            "currentTime": 0
+          },
+          {
+            "duration": 250,
+            "currentTime": 0
+          },
+          {
+            "duration": 250,
+            "currentTime": 0
+          },
+          {
+            "duration": 250,
+            "currentTime": 0
+          },
+          {
+            "duration": 250,
+            "currentTime": 0
+          },
+          {
+            "duration": 300,
+            "currentTime": 0
+          },
+          {
+            "duration": 300,
+            "currentTime": 0
+          },
+          {
+            "duration": 300,
+            "currentTime": 0
+          },
+          {
+            "duration": 300,
+            "currentTime": 0
+          },
+          {
+            "duration": 300,
+            "currentTime": 0
+          },
+          {
+            "duration": 300,
+            "currentTime": 0
+          },
+          {
+            "duration": 300,
+            "currentTime": 0
+          },
+          {
+            "duration": 300,
+            "currentTime": 0
+          },
+          {
+            "duration": 300,
+            "currentTime": 0
+          },
+          {
+            "duration": 300,
+            "currentTime": 0
+          },
+          {
+            "duration": 1100,
+            "currentTime": 0
+          },
+          {
+            "duration": 900,
+            "currentTime": 0
+          },
+          {
+            "duration": 1100,
+            "currentTime": 0
+          },
+          {
+            "name": "slow-spin",
+            "duration": 24000,
+            "currentTime": 23582.876999978114
+          },
+          {
+            "name": "fog-drift",
+            "duration": 40000,
+            "currentTime": 5552.763999995064
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 56000,
+            "currentTime": 5552.763999995064
+          },
+          {
+            "name": "fog-drift",
+            "duration": 70000,
+            "currentTime": 5552.763999995064
+          },
+          {
+            "name": "marquee",
+            "duration": 35000,
+            "currentTime": 23582.876999978114
+          },
+          {
+            "name": "fog-drift",
+            "duration": 40000,
+            "currentTime": 5552.763999995064
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 56000,
+            "currentTime": 5552.763999995064
+          },
+          {
+            "name": "fog-drift",
+            "duration": 70000,
+            "currentTime": 5552.763999995064
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3200,
+            "currentTime": 23633.1
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3700,
+            "currentTime": 23633.1
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 4300,
+            "currentTime": 23633.1
+          },
+          {
+            "name": "loader-drift-a",
+            "duration": 34000,
+            "currentTime": 11055.576999991106
+          },
+          {
+            "name": "loader-drift-b",
+            "duration": 42000,
+            "currentTime": 11055.576999991106
+          }
+        ]
+      }
+    },
+    {
+      "action": "modal Tab 5",
+      "state": {
+        "timestamp": "2026-10-04T00:09:23.476Z",
+        "perf": 24006.5,
+        "scrollY": 0,
+        "focus": {
+          "tag": "A",
+          "cls": "hero-creator",
+          "text": "EXPERIENCE BY JOSHUA P. WARREN"
+        },
+        "root": "smooth-scroll motion-ready modal-open",
+        "menuHidden": true,
+        "menuOpen": false,
+        "modalHidden": false,
+        "modalOpen": true,
+        "fallbackHidden": true,
+        "statusHidden": true,
+        "track": "matrix(1, 0, 0, 1, 0, 0)",
+        "count": "01 / 03",
+        "video": [
+          {
+            "src": "https://www.hauntedbouldercity.com/assets/ufo-night.mp4",
+            "currentTime": 0,
+            "duration": 8.041667,
+            "readyState": 4,
+            "seeking": false
+          }
+        ],
+        "details": [
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          }
+        ],
+        "animations": [
+          {
+            "duration": 300,
+            "currentTime": 66.90900000434752
+          },
+          {
+            "duration": 250,
+            "currentTime": 0
+          },
+          {
+            "duration": 250,
+            "currentTime": 0
+          },
+          {
+            "duration": 250,
+            "currentTime": 0
+          },
+          {
+            "duration": 250,
+            "currentTime": 0
+          },
+          {
+            "duration": 250,
+            "currentTime": 0
+          },
+          {
+            "duration": 250,
+            "currentTime": 0
+          },
+          {
+            "duration": 250,
+            "currentTime": 0
+          },
+          {
+            "duration": 250,
+            "currentTime": 0
+          },
+          {
+            "duration": 250,
+            "currentTime": 0
+          },
+          {
+            "duration": 250,
+            "currentTime": 0
+          },
+          {
+            "duration": 250,
+            "currentTime": 0
+          },
+          {
+            "duration": 250,
+            "currentTime": 0
+          },
+          {
+            "duration": 300,
+            "currentTime": 0
+          },
+          {
+            "duration": 300,
+            "currentTime": 0
+          },
+          {
+            "duration": 300,
+            "currentTime": 0
+          },
+          {
+            "duration": 300,
+            "currentTime": 0
+          },
+          {
+            "duration": 300,
+            "currentTime": 0
+          },
+          {
+            "duration": 300,
+            "currentTime": 0
+          },
+          {
+            "duration": 300,
+            "currentTime": 0
+          },
+          {
+            "duration": 300,
+            "currentTime": 0
+          },
+          {
+            "duration": 300,
+            "currentTime": 0
+          },
+          {
+            "duration": 300,
+            "currentTime": 0
+          },
+          {
+            "duration": 1100,
+            "currentTime": 0
+          },
+          {
+            "duration": 900,
+            "currentTime": 0
+          },
+          {
+            "duration": 1100,
+            "currentTime": 0
+          },
+          {
+            "name": "slow-spin",
+            "duration": 24000,
+            "currentTime": 23599.542999978115
+          },
+          {
+            "name": "fog-drift",
+            "duration": 40000,
+            "currentTime": 5552.763999995064
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 56000,
+            "currentTime": 5552.763999995064
+          },
+          {
+            "name": "fog-drift",
+            "duration": 70000,
+            "currentTime": 5552.763999995064
+          },
+          {
+            "name": "marquee",
+            "duration": 35000,
+            "currentTime": 23599.542999978115
+          },
+          {
+            "name": "fog-drift",
+            "duration": 40000,
+            "currentTime": 5552.763999995064
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 56000,
+            "currentTime": 5552.763999995064
+          },
+          {
+            "name": "fog-drift",
+            "duration": 70000,
+            "currentTime": 5552.763999995064
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3200,
+            "currentTime": 23649.766
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3700,
+            "currentTime": 23649.766
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 4300,
+            "currentTime": 23649.766
+          },
+          {
+            "name": "loader-drift-a",
+            "duration": 34000,
+            "currentTime": 11072.242999991107
+          },
+          {
+            "name": "loader-drift-b",
+            "duration": 42000,
+            "currentTime": 11072.242999991107
+          }
+        ]
+      }
+    },
+    {
+      "action": "modal Tab 6",
+      "state": {
+        "timestamp": "2026-10-04T00:09:23.484Z",
+        "perf": 24014.29999998212,
+        "scrollY": 0,
+        "focus": {
+          "tag": "A",
+          "cls": "explore-link",
+          "text": ""
+        },
+        "root": "smooth-scroll motion-ready modal-open",
+        "menuHidden": true,
+        "menuOpen": false,
+        "modalHidden": false,
+        "modalOpen": true,
+        "fallbackHidden": true,
+        "statusHidden": true,
+        "track": "matrix(1, 0, 0, 1, 0, 0)",
+        "count": "01 / 03",
+        "video": [
+          {
+            "src": "https://www.hauntedbouldercity.com/assets/ufo-night.mp4",
+            "currentTime": 0,
+            "duration": 8.041667,
+            "readyState": 4,
+            "seeking": false
+          }
+        ],
+        "details": [
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          }
+        ],
+        "animations": [
+          {
+            "duration": 300,
+            "currentTime": 66.94300000434694
+          },
+          {
+            "duration": 250,
+            "currentTime": 16.740999991259997
+          },
+          {
+            "duration": 250,
+            "currentTime": 16.740999991259997
+          },
+          {
+            "duration": 250,
+            "currentTime": 16.740999991259997
+          },
+          {
+            "duration": 250,
+            "currentTime": 16.740999991259997
+          },
+          {
+            "duration": 250,
+            "currentTime": 16.740999991259997
+          },
+          {
+            "duration": 250,
+            "currentTime": 16.740999991259997
+          },
+          {
+            "duration": 250,
+            "currentTime": 16.740999991259997
+          },
+          {
+            "duration": 250,
+            "currentTime": 16.740999991259997
+          },
+          {
+            "duration": 250,
+            "currentTime": 16.740999991259997
+          },
+          {
+            "duration": 250,
+            "currentTime": 16.740999991259997
+          },
+          {
+            "duration": 250,
+            "currentTime": 16.740999991259997
+          },
+          {
+            "duration": 250,
+            "currentTime": 16.740999991259997
+          },
+          {
+            "duration": 300,
+            "currentTime": 16.740999991259997
+          },
+          {
+            "duration": 300,
+            "currentTime": 16.740999991259997
+          },
+          {
+            "duration": 300,
+            "currentTime": 16.740999991259997
+          },
+          {
+            "duration": 300,
+            "currentTime": 16.740999991259997
+          },
+          {
+            "duration": 300,
+            "currentTime": 16.740999991259997
+          },
+          {
+            "duration": 300,
+            "currentTime": 16.740999991259997
+          },
+          {
+            "duration": 300,
+            "currentTime": 16.740999991259997
+          },
+          {
+            "duration": 300,
+            "currentTime": 16.740999991259997
+          },
+          {
+            "duration": 300,
+            "currentTime": 16.740999991259997
+          },
+          {
+            "duration": 300,
+            "currentTime": 16.740999991259997
+          },
+          {
+            "duration": 1100,
+            "currentTime": 0
+          },
+          {
+            "duration": 900,
+            "currentTime": 0
+          },
+          {
+            "duration": 1100,
+            "currentTime": 0
+          },
+          {
+            "name": "slow-spin",
+            "duration": 24000,
+            "currentTime": 23599.576999978115
+          },
+          {
+            "name": "fog-drift",
+            "duration": 40000,
+            "currentTime": 5552.763999995064
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 56000,
+            "currentTime": 5552.763999995064
+          },
+          {
+            "name": "fog-drift",
+            "duration": 70000,
+            "currentTime": 5552.763999995064
+          },
+          {
+            "name": "marquee",
+            "duration": 35000,
+            "currentTime": 23599.576999978115
+          },
+          {
+            "name": "fog-drift",
+            "duration": 40000,
+            "currentTime": 5552.763999995064
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 56000,
+            "currentTime": 5552.763999995064
+          },
+          {
+            "name": "fog-drift",
+            "duration": 70000,
+            "currentTime": 5552.763999995064
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3200,
+            "currentTime": 23649.8
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3700,
+            "currentTime": 23649.8
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 4300,
+            "currentTime": 23649.8
+          },
+          {
+            "name": "loader-drift-a",
+            "duration": 34000,
+            "currentTime": 11072.276999991107
+          },
+          {
+            "name": "loader-drift-b",
+            "duration": 42000,
+            "currentTime": 11072.276999991107
+          }
+        ]
+      }
+    },
+    {
+      "action": "modal Tab 7",
+      "state": {
+        "timestamp": "2026-10-04T00:09:23.489Z",
+        "perf": 24019.5,
+        "scrollY": 2758,
+        "focus": {
+          "tag": "BUTTON",
+          "cls": "is-active",
+          "text": "01 Ghosts"
+        },
+        "root": "smooth-scroll motion-ready modal-open",
+        "menuHidden": true,
+        "menuOpen": false,
+        "modalHidden": false,
+        "modalOpen": true,
+        "fallbackHidden": true,
+        "statusHidden": true,
+        "track": "matrix(1, 0, 0, 1, 0, 0)",
+        "count": "01 / 03",
+        "video": [
+          {
+            "src": "https://www.hauntedbouldercity.com/assets/ufo-night.mp4",
+            "currentTime": 0,
+            "duration": 8.041667,
+            "readyState": 4,
+            "seeking": false
+          }
+        ],
+        "details": [
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          }
+        ],
+        "animations": [
+          {
+            "duration": 300,
+            "currentTime": 66.94300000434694
+          },
+          {
+            "duration": 250,
+            "currentTime": 16.740999991259997
+          },
+          {
+            "duration": 250,
+            "currentTime": 16.740999991259997
+          },
+          {
+            "duration": 250,
+            "currentTime": 16.740999991259997
+          },
+          {
+            "duration": 250,
+            "currentTime": 16.740999991259997
+          },
+          {
+            "duration": 250,
+            "currentTime": 16.740999991259997
+          },
+          {
+            "duration": 250,
+            "currentTime": 16.740999991259997
+          },
+          {
+            "duration": 250,
+            "currentTime": 16.740999991259997
+          },
+          {
+            "duration": 250,
+            "currentTime": 16.740999991259997
+          },
+          {
+            "duration": 250,
+            "currentTime": 16.740999991259997
+          },
+          {
+            "duration": 250,
+            "currentTime": 16.740999991259997
+          },
+          {
+            "duration": 250,
+            "currentTime": 16.740999991259997
+          },
+          {
+            "duration": 250,
+            "currentTime": 16.740999991259997
+          },
+          {
+            "duration": 300,
+            "currentTime": 16.740999991259997
+          },
+          {
+            "duration": 300,
+            "currentTime": 16.740999991259997
+          },
+          {
+            "duration": 300,
+            "currentTime": 16.740999991259997
+          },
+          {
+            "duration": 300,
+            "currentTime": 16.740999991259997
+          },
+          {
+            "duration": 300,
+            "currentTime": 16.740999991259997
+          },
+          {
+            "duration": 300,
+            "currentTime": 16.740999991259997
+          },
+          {
+            "duration": 300,
+            "currentTime": 16.740999991259997
+          },
+          {
+            "duration": 300,
+            "currentTime": 16.740999991259997
+          },
+          {
+            "duration": 300,
+            "currentTime": 16.740999991259997
+          },
+          {
+            "duration": 300,
+            "currentTime": 16.740999991259997
+          },
+          {
+            "duration": 1100,
+            "currentTime": 0
+          },
+          {
+            "duration": 900,
+            "currentTime": 0
+          },
+          {
+            "duration": 1100,
+            "currentTime": 0
+          },
+          {
+            "name": "slow-spin",
+            "duration": 24000,
+            "currentTime": 23599.576999978115
+          },
+          {
+            "name": "fog-drift",
+            "duration": 40000,
+            "currentTime": 5552.763999995064
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 56000,
+            "currentTime": 5552.763999995064
+          },
+          {
+            "name": "fog-drift",
+            "duration": 70000,
+            "currentTime": 5552.763999995064
+          },
+          {
+            "name": "marquee",
+            "duration": 35000,
+            "currentTime": 23599.576999978115
+          },
+          {
+            "name": "fog-drift",
+            "duration": 40000,
+            "currentTime": 5552.763999995064
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 56000,
+            "currentTime": 5552.763999995064
+          },
+          {
+            "name": "fog-drift",
+            "duration": 70000,
+            "currentTime": 5552.763999995064
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3200,
+            "currentTime": 23649.8
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3700,
+            "currentTime": 23649.8
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 4300,
+            "currentTime": 23649.8
+          },
+          {
+            "name": "loader-drift-a",
+            "duration": 34000,
+            "currentTime": 11072.276999991107
+          },
+          {
+            "name": "loader-drift-b",
+            "duration": 42000,
+            "currentTime": 11072.276999991107
+          }
+        ]
+      }
+    },
+    {
+      "action": "outside veil close",
+      "state": {
+        "timestamp": "2026-10-04T00:09:24.117Z",
+        "perf": 24647.5,
+        "scrollY": 2758,
+        "focus": {
+          "tag": "A",
+          "cls": "button button-large",
+          "text": "Get tickets"
+        },
+        "root": "smooth-scroll motion-ready",
+        "menuHidden": true,
+        "menuOpen": false,
+        "modalHidden": true,
+        "modalOpen": false,
+        "fallbackHidden": true,
+        "statusHidden": true,
+        "track": "matrix(1, 0, 0, 1, -227.67, 0)",
+        "count": "01 / 03",
+        "video": [
+          {
+            "src": "https://www.hauntedbouldercity.com/assets/ufo-night.mp4",
+            "currentTime": 0,
+            "duration": 8.041667,
+            "readyState": 4,
+            "seeking": false
+          }
+        ],
+        "details": [
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          },
+          {
+            "open": false,
+            "height": 77
+          }
+        ],
+        "animations": [
+          {
+            "duration": 1100,
+            "currentTime": 585.3999999999999
+          },
+          {
+            "duration": 900,
+            "currentTime": 585.3999999999999
+          },
+          {
+            "duration": 1100,
+            "currentTime": 585.3999999999999
+          },
+          {
+            "name": "slow-spin",
+            "duration": 24000,
+            "currentTime": 24235.176999978117
+          },
+          {
+            "name": "marquee",
+            "duration": 35000,
+            "currentTime": 24235.176999978117
+          },
+          {
+            "name": "fog-drift",
+            "duration": 40000,
+            "currentTime": 4164.549999985006
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 56000,
+            "currentTime": 4164.549999985006
+          },
+          {
+            "name": "fog-drift",
+            "duration": 70000,
+            "currentTime": 4164.549999985006
+          },
+          {
+            "name": "fog-drift",
+            "duration": 40000,
+            "currentTime": 6807.214999982712
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 56000,
+            "currentTime": 6807.214999982712
+          },
+          {
+            "name": "fog-drift",
+            "duration": 70000,
+            "currentTime": 6807.214999982712
+          },
+          {
+            "name": "fog-drift",
+            "duration": 40000,
+            "currentTime": 6807.214999982712
+          },
+          {
+            "name": "fog-counterdrift",
+            "duration": 56000,
+            "currentTime": 6807.214999982712
+          },
+          {
+            "name": "fog-drift",
+            "duration": 70000,
+            "currentTime": 6807.214999982712
+          },
+          {
+            "name": "spirit-sheen",
+            "duration": 2462,
+            "currentTime": 568.6999999999998
+          },
+          {
+            "name": "spirit-flare",
+            "duration": 2462,
+            "currentTime": 568.6999999999998
+          },
+          {
+            "name": "spirit-dip",
+            "duration": 2462,
+            "currentTime": 568.6999999999998
+          },
+          {
+            "name": "spirit-dip",
+            "duration": 2462,
+            "currentTime": 568.6999999999998
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3200,
+            "currentTime": 24285.399999999998
+          },
+          {
+            "name": "spirit-dip",
+            "duration": 2462,
+            "currentTime": 568.6999999999998
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 3700,
+            "currentTime": 24285.399999999998
+          },
+          {
+            "name": "spirit-dip",
+            "duration": 2462,
+            "currentTime": 568.6999999999998
+          },
+          {
+            "name": "spirit-pulse",
+            "duration": 4300,
+            "currentTime": 24285.399999999998
+          }
+        ]
+      }
+    }
+  ]
+}

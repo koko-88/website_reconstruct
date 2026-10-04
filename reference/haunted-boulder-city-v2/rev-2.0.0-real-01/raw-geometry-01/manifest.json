@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "sealedAtUTC": "2026-10-04T03:35:48.946Z",
+  "metadata": {
+    "packageId": "HBC-V2-GEOMETRY-01",
+    "kind": "raw-capture-run",
+    "result": "CAPTURED"
+  },
+  "files": [
+    {
+      "path": "D-GEOMETRY--ALL.json",
+      "bytes": 78818,
+      "sha256": "5b061cc0e65d944f554b13eb302ed8ac374d6e771af4383edb5b9359014e77dc"
+    },
+    {
+      "path": "D-GEOMETRY--ALL.png",
+      "bytes": 4447246,
+      "sha256": "7f58e0fecc64bbf9a46b37846b31ce11fd342c6d5a0f9c1c644389e8a97e1ce4"
+    },
+    {
+      "path": "D-GEOMETRY--TOP.json",
+      "bytes": 38478,
+      "sha256": "15f70ab997639970ddb111e59f6d9134e2bc7e5282079e76cf82498236f6b877"
+    },
+    {
+      "path": "D-GEOMETRY--TOP.png",
+      "bytes": 1589763,
+      "sha256": "509562646401f2c2237b6866f62f037048f44da2922a25b61d6fffd14a8d8f10"
+    },
+    {
+      "path": "M-GEOMETRY--ALL.json",
+      "bytes": 78306,
+      "sha256": "0072576272192d909eb5b4e19b62d94c877b68666934f82476212dc002d5c781"
+    },
+    {
+      "path": "M-GEOMETRY--ALL.png",
+      "bytes": 2005498,
+      "sha256": "78e3ae39f0c014f9ae7bef121940da2d23cbbbbc82e94fb8dd4fe285cfd98151"
+    },
+    {
+      "path": "M-GEOMETRY--TOP.json",
+      "bytes": 38001,
+      "sha256": "fb3dc367dbe516d09b0708072533277a85cdad774538ba6d234465d06a808c71"
+    },
+    {
+      "path": "M-GEOMETRY--TOP.png",
+      "bytes": 414569,
+      "sha256": "96f7bc3d92326821ee07efa30723efd9e7c2b63dad46c0c6b6d77eb3526f1f93"
+    },
+    {
+      "path": "plan.json",
+      "bytes": 4487,
+      "sha256": "767a672c9496873d9eae561b6c6126fef52ff392c9d824941abc4a1dbd8d11c6"
+    },
+    {
+      "path": "run.json",
+      "bytes": 22186,
+      "sha256": "52d78a7ef2b57104647f6321e73a97a651d38f65728f5db2ffdf95d29aa99f67"
+    }
+  ]
+}

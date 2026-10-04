@@ -1,0 +1,698 @@
+[
+  {
+    "variant": {
+      "w": 844,
+      "h": 390,
+      "mobile": true,
+      "reduced": false
+    },
+    "environment": {
+      "timestamp": "2026-10-03T23:59:57.743Z",
+      "url": "https://www.hauntedbouldercity.com/",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+      "viewport": [
+        844,
+        390
+      ],
+      "dpr": 1,
+      "visualViewport": {
+        "width": 844,
+        "height": 390,
+        "scale": 1
+      },
+      "scroll": [
+        0,
+        1926,
+        844,
+        9290
+      ],
+      "language": "en-US",
+      "timezone": "Africa/Cairo",
+      "direction": "ltr",
+      "touch": 1,
+      "dark": false,
+      "reduced": false,
+      "fonts": "loaded",
+      "ready": "complete"
+    },
+    "observations": {
+      "root": "motion-ready",
+      "trackDisplay": "flex",
+      "pinPosition": "sticky",
+      "controls": "flex",
+      "animations": [
+        {
+          "name": "hero-media-shift",
+          "playState": "finished",
+          "duration": {}
+        },
+        {
+          "name": "hero-in",
+          "playState": "finished",
+          "duration": 1500
+        },
+        {
+          "name": "slow-spin",
+          "playState": "running",
+          "duration": 24000
+        },
+        {
+          "name": "hero-in",
+          "playState": "finished",
+          "duration": 1400
+        },
+        {
+          "name": "hero-in",
+          "playState": "finished",
+          "duration": 1400
+        },
+        {
+          "name": "fog-drift",
+          "playState": "paused",
+          "duration": 40000
+        },
+        {
+          "name": "fog-counterdrift",
+          "playState": "paused",
+          "duration": 56000
+        },
+        {
+          "name": "fog-drift",
+          "playState": "paused",
+          "duration": 70000
+        },
+        {
+          "name": "marquee",
+          "playState": "running",
+          "duration": 35000
+        },
+        {
+          "name": "fog-drift",
+          "playState": "paused",
+          "duration": 40000
+        },
+        {
+          "name": "fog-counterdrift",
+          "playState": "paused",
+          "duration": 56000
+        },
+        {
+          "name": "fog-drift",
+          "playState": "paused",
+          "duration": 70000
+        },
+        {
+          "name": "fog-drift",
+          "playState": "running",
+          "duration": 40000
+        },
+        {
+          "name": "fog-counterdrift",
+          "playState": "running",
+          "duration": 56000
+        },
+        {
+          "name": "fog-drift",
+          "playState": "running",
+          "duration": 70000
+        },
+        {
+          "name": "fog-drift",
+          "playState": "running",
+          "duration": 40000
+        },
+        {
+          "name": "fog-counterdrift",
+          "playState": "running",
+          "duration": 56000
+        },
+        {
+          "name": "fog-drift",
+          "playState": "running",
+          "duration": 70000
+        },
+        {
+          "name": "fog-drift",
+          "playState": "paused",
+          "duration": 40000
+        },
+        {
+          "name": "fog-counterdrift",
+          "playState": "paused",
+          "duration": 56000
+        },
+        {
+          "name": "fog-drift",
+          "playState": "paused",
+          "duration": 70000
+        },
+        {
+          "name": "fog-drift",
+          "playState": "running",
+          "duration": 40000
+        },
+        {
+          "name": "fog-counterdrift",
+          "playState": "running",
+          "duration": 56000
+        },
+        {
+          "name": "fog-drift",
+          "playState": "running",
+          "duration": 70000
+        },
+        {
+          "name": "fog-drift",
+          "playState": "paused",
+          "duration": 40000
+        },
+        {
+          "name": "fog-counterdrift",
+          "playState": "paused",
+          "duration": 56000
+        },
+        {
+          "name": "fog-drift",
+          "playState": "paused",
+          "duration": 70000
+        },
+        {
+          "name": "fog-drift",
+          "playState": "paused",
+          "duration": 40000
+        },
+        {
+          "name": "fog-counterdrift",
+          "playState": "paused",
+          "duration": 56000
+        },
+        {
+          "name": "fog-drift",
+          "playState": "paused",
+          "duration": 70000
+        },
+        {
+          "name": "fog-drift",
+          "playState": "paused",
+          "duration": 40000
+        },
+        {
+          "name": "fog-counterdrift",
+          "playState": "paused",
+          "duration": 56000
+        },
+        {
+          "name": "fog-drift",
+          "playState": "paused",
+          "duration": 70000
+        },
+        {
+          "name": "fog-drift",
+          "playState": "paused",
+          "duration": 40000
+        },
+        {
+          "name": "fog-counterdrift",
+          "playState": "paused",
+          "duration": 56000
+        },
+        {
+          "name": "fog-drift",
+          "playState": "paused",
+          "duration": 70000
+        },
+        {
+          "name": "fog-drift",
+          "playState": "paused",
+          "duration": 40000
+        },
+        {
+          "name": "fog-counterdrift",
+          "playState": "paused",
+          "duration": 56000
+        },
+        {
+          "name": "fog-drift",
+          "playState": "paused",
+          "duration": 70000
+        },
+        {
+          "name": "fog-drift",
+          "playState": "paused",
+          "duration": 40000
+        },
+        {
+          "name": "fog-counterdrift",
+          "playState": "paused",
+          "duration": 56000
+        },
+        {
+          "name": "fog-drift",
+          "playState": "paused",
+          "duration": 70000
+        },
+        {
+          "name": "spirit-pulse",
+          "playState": "running",
+          "duration": 3200
+        },
+        {
+          "name": "spirit-pulse",
+          "playState": "running",
+          "duration": 3700
+        },
+        {
+          "name": "spirit-pulse",
+          "playState": "running",
+          "duration": 4300
+        }
+      ],
+      "videos": [
+        {
+          "src": "https://www.hauntedbouldercity.com/assets/ufo-night.mp4",
+          "currentTime": 0,
+          "readyState": 4
+        }
+      ]
+    }
+  },
+  {
+    "variant": {
+      "w": 1440,
+      "h": 400,
+      "mobile": false,
+      "reduced": false
+    },
+    "environment": {
+      "timestamp": "2026-10-03T23:59:58.566Z",
+      "url": "https://www.hauntedbouldercity.com/",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+      "viewport": [
+        1440,
+        400
+      ],
+      "dpr": 1,
+      "visualViewport": {
+        "width": 1425,
+        "height": 400,
+        "scale": 1
+      },
+      "scroll": [
+        0,
+        2261,
+        1425,
+        10578
+      ],
+      "language": "en-US",
+      "timezone": "Africa/Cairo",
+      "direction": "ltr",
+      "touch": 0,
+      "dark": false,
+      "reduced": false,
+      "fonts": "loaded",
+      "ready": "complete"
+    },
+    "observations": {
+      "root": "motion-ready smooth-scroll",
+      "trackDisplay": "flex",
+      "pinPosition": "sticky",
+      "controls": "flex",
+      "animations": [
+        {
+          "playState": "running",
+          "duration": 1200
+        },
+        {
+          "playState": "running",
+          "duration": 1200
+        },
+        {
+          "playState": "running",
+          "duration": 700
+        },
+        {
+          "playState": "running",
+          "duration": 700
+        },
+        {
+          "playState": "running",
+          "duration": 700
+        },
+        {
+          "name": "hero-in",
+          "playState": "finished",
+          "duration": 1500
+        },
+        {
+          "name": "slow-spin",
+          "playState": "running",
+          "duration": 24000
+        },
+        {
+          "name": "hero-in",
+          "playState": "finished",
+          "duration": 1400
+        },
+        {
+          "name": "hero-in",
+          "playState": "finished",
+          "duration": 1400
+        },
+        {
+          "name": "fog-drift",
+          "playState": "paused",
+          "duration": 40000
+        },
+        {
+          "name": "fog-counterdrift",
+          "playState": "paused",
+          "duration": 56000
+        },
+        {
+          "name": "fog-drift",
+          "playState": "paused",
+          "duration": 70000
+        },
+        {
+          "name": "marquee",
+          "playState": "running",
+          "duration": 35000
+        },
+        {
+          "name": "decode-lock",
+          "playState": "running",
+          "duration": 600
+        },
+        {
+          "name": "decode-lock",
+          "playState": "running",
+          "duration": 600
+        },
+        {
+          "name": "decode-lock",
+          "playState": "running",
+          "duration": 600
+        },
+        {
+          "name": "decode-lock",
+          "playState": "running",
+          "duration": 600
+        },
+        {
+          "name": "decode-lock",
+          "playState": "running",
+          "duration": 600
+        },
+        {
+          "name": "fog-drift",
+          "playState": "paused",
+          "duration": 40000
+        },
+        {
+          "name": "fog-counterdrift",
+          "playState": "paused",
+          "duration": 56000
+        },
+        {
+          "name": "fog-drift",
+          "playState": "paused",
+          "duration": 70000
+        },
+        {
+          "name": "fog-drift",
+          "playState": "running",
+          "duration": 40000
+        },
+        {
+          "name": "fog-counterdrift",
+          "playState": "running",
+          "duration": 56000
+        },
+        {
+          "name": "fog-drift",
+          "playState": "running",
+          "duration": 70000
+        },
+        {
+          "name": "fog-drift",
+          "playState": "running",
+          "duration": 40000
+        },
+        {
+          "name": "fog-counterdrift",
+          "playState": "running",
+          "duration": 56000
+        },
+        {
+          "name": "fog-drift",
+          "playState": "running",
+          "duration": 70000
+        },
+        {
+          "name": "fog-drift",
+          "playState": "paused",
+          "duration": 40000
+        },
+        {
+          "name": "fog-counterdrift",
+          "playState": "paused",
+          "duration": 56000
+        },
+        {
+          "name": "fog-drift",
+          "playState": "paused",
+          "duration": 70000
+        },
+        {
+          "name": "fog-drift",
+          "playState": "running",
+          "duration": 40000
+        },
+        {
+          "name": "fog-counterdrift",
+          "playState": "running",
+          "duration": 56000
+        },
+        {
+          "name": "fog-drift",
+          "playState": "running",
+          "duration": 70000
+        },
+        {
+          "name": "fog-drift",
+          "playState": "paused",
+          "duration": 40000
+        },
+        {
+          "name": "fog-counterdrift",
+          "playState": "paused",
+          "duration": 56000
+        },
+        {
+          "name": "fog-drift",
+          "playState": "paused",
+          "duration": 70000
+        },
+        {
+          "name": "fog-drift",
+          "playState": "paused",
+          "duration": 40000
+        },
+        {
+          "name": "fog-counterdrift",
+          "playState": "paused",
+          "duration": 56000
+        },
+        {
+          "name": "fog-drift",
+          "playState": "paused",
+          "duration": 70000
+        },
+        {
+          "name": "fog-drift",
+          "playState": "paused",
+          "duration": 40000
+        },
+        {
+          "name": "fog-counterdrift",
+          "playState": "paused",
+          "duration": 56000
+        },
+        {
+          "name": "fog-drift",
+          "playState": "paused",
+          "duration": 70000
+        },
+        {
+          "name": "fog-drift",
+          "playState": "paused",
+          "duration": 40000
+        },
+        {
+          "name": "fog-counterdrift",
+          "playState": "paused",
+          "duration": 56000
+        },
+        {
+          "name": "fog-drift",
+          "playState": "paused",
+          "duration": 70000
+        },
+        {
+          "name": "fog-drift",
+          "playState": "paused",
+          "duration": 40000
+        },
+        {
+          "name": "fog-counterdrift",
+          "playState": "paused",
+          "duration": 56000
+        },
+        {
+          "name": "fog-drift",
+          "playState": "paused",
+          "duration": 70000
+        },
+        {
+          "name": "fog-drift",
+          "playState": "paused",
+          "duration": 40000
+        },
+        {
+          "name": "fog-counterdrift",
+          "playState": "paused",
+          "duration": 56000
+        },
+        {
+          "name": "fog-drift",
+          "playState": "paused",
+          "duration": 70000
+        },
+        {
+          "name": "spirit-pulse",
+          "playState": "running",
+          "duration": 3200
+        },
+        {
+          "name": "spirit-pulse",
+          "playState": "running",
+          "duration": 3700
+        },
+        {
+          "name": "spirit-pulse",
+          "playState": "running",
+          "duration": 4300
+        }
+      ],
+      "videos": [
+        {
+          "src": "https://www.hauntedbouldercity.com/assets/ufo-night.mp4",
+          "currentTime": 0,
+          "readyState": 4
+        }
+      ]
+    }
+  },
+  {
+    "variant": {
+      "w": 1440,
+      "h": 900,
+      "mobile": false,
+      "reduced": true
+    },
+    "environment": {
+      "timestamp": "2026-10-03T23:59:59.405Z",
+      "url": "https://www.hauntedbouldercity.com/",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+      "viewport": [
+        1440,
+        900
+      ],
+      "dpr": 1,
+      "visualViewport": {
+        "width": 1425,
+        "height": 900,
+        "scale": 1
+      },
+      "scroll": [
+        0,
+        2311,
+        1425,
+        11759
+      ],
+      "language": "en-US",
+      "timezone": "Africa/Cairo",
+      "direction": "ltr",
+      "touch": 0,
+      "dark": false,
+      "reduced": true,
+      "fonts": "loaded",
+      "ready": "complete"
+    },
+    "observations": {
+      "root": "motion-ready",
+      "trackDisplay": "block",
+      "pinPosition": "relative",
+      "controls": "none",
+      "animations": [],
+      "videos": [
+        {
+          "src": "https://www.hauntedbouldercity.com/assets/ufo-night.mp4",
+          "currentTime": 0,
+          "readyState": 4
+        }
+      ]
+    }
+  },
+  {
+    "variant": {
+      "w": 390,
+      "h": 844,
+      "mobile": true,
+      "reduced": true
+    },
+    "environment": {
+      "timestamp": "2026-10-04T00:00:00.132Z",
+      "url": "https://www.hauntedbouldercity.com/",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+      "viewport": [
+        390,
+        844
+      ],
+      "dpr": 1,
+      "visualViewport": {
+        "width": 390,
+        "height": 844,
+        "scale": 1
+      },
+      "scroll": [
+        0,
+        1901,
+        390,
+        10664
+      ],
+      "language": "en-US",
+      "timezone": "Africa/Cairo",
+      "direction": "ltr",
+      "touch": 1,
+      "dark": false,
+      "reduced": true,
+      "fonts": "loaded",
+      "ready": "complete"
+    },
+    "observations": {
+      "root": "motion-ready",
+      "trackDisplay": "block",
+      "pinPosition": "relative",
+      "controls": "none",
+      "animations": [],
+      "videos": [
+        {
+          "src": "https://www.hauntedbouldercity.com/assets/ufo-night.mp4",
+          "currentTime": 0,
+          "readyState": 4
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,566 @@
+[
+  {
+    "environment": {
+      "timestamp": "2026-10-04T00:06:57.016Z",
+      "url": "https://www.hauntedbouldercity.com/",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+      "viewport": [
+        1440,
+        900
+      ],
+      "dpr": 1,
+      "visualViewport": {
+        "width": 1425,
+        "height": 900,
+        "scale": 1
+      },
+      "scroll": [
+        0,
+        11576,
+        1425,
+        12476
+      ],
+      "language": "en-US",
+      "timezone": "Africa/Cairo",
+      "direction": "ltr",
+      "touch": 0,
+      "dark": false,
+      "reduced": false,
+      "fonts": "loaded",
+      "ready": "complete"
+    },
+    "assets": [
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/bz-logo.svg",
+        "srcset": "",
+        "alt": "Beer Zombies",
+        "natural": [
+          300,
+          148
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/haunted-downtown-boulder-city.webp",
+        "srcset": "/assets/haunted-downtown-boulder-city-960.webp 960w, /assets/haunted-downtown-boulder-city.webp 1672w",
+        "alt": "Historic Downtown Boulder City arch and monument under a full moon on a foggy Nevada night",
+        "natural": [
+          1440,
+          810
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/boulder-dam-hotel-960.webp",
+        "srcset": "/assets/boulder-dam-hotel-960.webp 960w, /assets/boulder-dam-hotel.webp 1024w",
+        "alt": "The Boulder Dam Hotel at night under a full moon, porch lights glowing through low fog",
+        "natural": [
+          604,
+          382
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/boulder-city-haunted-walk-tour.webp",
+        "srcset": "/assets/boulder-city-haunted-walk-tour-960.webp 960w, /assets/boulder-city-haunted-walk-tour.webp 1024w",
+        "alt": "Ghost tour group standing in fog under trees strung with lights on a night walk",
+        "natural": [
+          1440,
+          959
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/boulder-city-shop.webp",
+        "srcset": "/assets/boulder-city-shop-960.webp 960w, /assets/boulder-city-shop.webp 1672w",
+        "alt": "Boulder City shops and streets after dark",
+        "natural": [
+          1440,
+          810
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/ufo-night.webp",
+        "srcset": "",
+        "alt": "Atmospheric artwork of a mysterious light above the Nevada desert",
+        "natural": [
+          1672,
+          941
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/hoover-dam.webp",
+        "srcset": "/assets/hoover-dam-960.webp 960w, /assets/hoover-dam.webp 1672w",
+        "alt": "Six Hoover Dam construction workers in hard hats posing with jackhammer drills on the rocky canyon floor",
+        "natural": [
+          1440,
+          810
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/ghost-dog.webp",
+        "srcset": "/assets/ghost-dog-960.webp 960w, /assets/ghost-dog.webp 1448w",
+        "alt": "Black dog standing beside a stone wall in drifting fog with desert mountains behind",
+        "natural": [
+          1440,
+          1080
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/dam-workers.webp",
+        "srcset": "/assets/dam-workers-960.webp 960w, /assets/dam-workers.webp 1024w",
+        "alt": "Two bronze dam worker statues, one seated by his boots, one standing with a shovel, on a foggy moonlit night",
+        "natural": [
+          1440,
+          810
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/first-murderer.webp",
+        "srcset": "/assets/first-murderer-960.webp 960w, /assets/first-murderer.webp 1024w",
+        "alt": "A tour group standing in fog outside a white columned building under a full moon",
+        "natural": [
+          1440,
+          1080
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/strange-celebs.webp",
+        "srcset": "/assets/strange-celebs-960.webp 960w, /assets/strange-celebs.webp 1024w",
+        "alt": "A tour group standing on a foggy, moonlit street under trees strung with lights, one person holding up a phone",
+        "natural": [
+          1440,
+          852
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/flying-saucer.webp",
+        "srcset": "/assets/flying-saucer-960.webp 960w, /assets/flying-saucer.webp 1024w",
+        "alt": "The Flying Saucer shopfront at night, a glowing alien figure in the doorway through fog",
+        "natural": [
+          1440,
+          1440
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/buried-bodies.webp",
+        "srcset": "/assets/buried-bodies-960.webp 960w, /assets/buried-bodies.webp 1086w",
+        "alt": "Two people walking out of a dark tunnel toward desert mountains under a stormy sky",
+        "natural": [
+          1440,
+          1920
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/esp-gambling.webp",
+        "srcset": "/assets/esp-gambling-960.webp 960w, /assets/esp-gambling.webp 1447w",
+        "alt": "Stacks of casino chips on a roulette table as a dealer reaches across the green felt",
+        "natural": [
+          1440,
+          1081
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/beer-zombies-boulder-city-960.webp",
+        "srcset": "/assets/beer-zombies-boulder-city-960.webp 960w, /assets/beer-zombies-boulder-city.webp 1672w",
+        "alt": "Beer Zombies Boulder City Draft Room and patio under warm string lights",
+        "natural": [
+          835,
+          469
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/bz-logo.svg",
+        "srcset": "",
+        "alt": "Beer Zombies",
+        "natural": [
+          300,
+          148
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/boulder-city-inn.webp",
+        "srcset": "/assets/boulder-city-inn-960.webp 960w, /assets/boulder-city-inn.webp 1672w",
+        "alt": "Historic Boulder Dam Hotel at night, windows glowing beside a street lamp under a full moon, fog over the wet street",
+        "natural": [
+          1440,
+          810
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/joshua-p-warren-960.webp",
+        "srcset": "",
+        "alt": "Joshua P. Warren, creator of Haunted Boulder City",
+        "natural": [
+          960,
+          640
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/ghost-adventures.png",
+        "srcset": "",
+        "alt": "Ghost Adventures",
+        "natural": [
+          1800,
+          638
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/travel-channel.png",
+        "srcset": "",
+        "alt": "Travel Channel",
+        "natural": [
+          444,
+          195
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/history-current.svg",
+        "srcset": "",
+        "alt": "History Channel",
+        "natural": [
+          433,
+          500
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/discovery-channel.svg",
+        "srcset": "",
+        "alt": "Discovery Channel",
+        "natural": [
+          300,
+          75
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/national-geographic-channel.svg",
+        "srcset": "",
+        "alt": "National Geographic Channel",
+        "natural": [
+          300,
+          106
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/artisan-icon.jpg",
+        "srcset": "",
+        "alt": "Artisan Website Co logo",
+        "natural": [
+          48,
+          48
+        ],
+        "decode": "ok"
+      }
+    ],
+    "video": [
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/ufo-night.mp4",
+        "data": {},
+        "duration": 8.041667,
+        "currentTime": 7.991667,
+        "readyState": 4
+      }
+    ]
+  },
+  {
+    "environment": {
+      "timestamp": "2026-10-04T00:07:14.948Z",
+      "url": "https://www.hauntedbouldercity.com/",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+      "viewport": [
+        390,
+        844
+      ],
+      "dpr": 1,
+      "visualViewport": {
+        "width": 390,
+        "height": 844,
+        "scale": 1
+      },
+      "scroll": [
+        0,
+        9725,
+        390,
+        10569
+      ],
+      "language": "en-US",
+      "timezone": "Africa/Cairo",
+      "direction": "ltr",
+      "touch": 1,
+      "dark": false,
+      "reduced": false,
+      "fonts": "loaded",
+      "ready": "complete"
+    },
+    "assets": [
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/bz-logo.svg",
+        "srcset": "",
+        "alt": "Beer Zombies",
+        "natural": [
+          300,
+          148
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/haunted-downtown-boulder-city-960.webp",
+        "srcset": "/assets/haunted-downtown-boulder-city-960.webp 960w, /assets/haunted-downtown-boulder-city.webp 1672w",
+        "alt": "Historic Downtown Boulder City arch and monument under a full moon on a foggy Nevada night",
+        "natural": [
+          389,
+          219
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/boulder-dam-hotel-960.webp",
+        "srcset": "/assets/boulder-dam-hotel-960.webp 960w, /assets/boulder-dam-hotel.webp 1024w",
+        "alt": "The Boulder Dam Hotel at night under a full moon, porch lights glowing through low fog",
+        "natural": [
+          351,
+          221
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/boulder-city-haunted-walk-tour-960.webp",
+        "srcset": "/assets/boulder-city-haunted-walk-tour-960.webp 960w, /assets/boulder-city-haunted-walk-tour.webp 1024w",
+        "alt": "Ghost tour group standing in fog under trees strung with lights on a night walk",
+        "natural": [
+          389,
+          259
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/boulder-city-shop-960.webp",
+        "srcset": "/assets/boulder-city-shop-960.webp 960w, /assets/boulder-city-shop.webp 1672w",
+        "alt": "Boulder City shops and streets after dark",
+        "natural": [
+          389,
+          219
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/ufo-night.webp",
+        "srcset": "",
+        "alt": "Atmospheric artwork of a mysterious light above the Nevada desert",
+        "natural": [
+          1672,
+          941
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/hoover-dam-960.webp",
+        "srcset": "/assets/hoover-dam-960.webp 960w, /assets/hoover-dam.webp 1672w",
+        "alt": "Six Hoover Dam construction workers in hard hats posing with jackhammer drills on the rocky canyon floor",
+        "natural": [
+          389,
+          219
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/ghost-dog-960.webp",
+        "srcset": "/assets/ghost-dog-960.webp 960w, /assets/ghost-dog.webp 1448w",
+        "alt": "Black dog standing beside a stone wall in drifting fog with desert mountains behind",
+        "natural": [
+          389,
+          292
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/dam-workers-960.webp",
+        "srcset": "/assets/dam-workers-960.webp 960w, /assets/dam-workers.webp 1024w",
+        "alt": "Two bronze dam worker statues, one seated by his boots, one standing with a shovel, on a foggy moonlit night",
+        "natural": [
+          389,
+          219
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/first-murderer-960.webp",
+        "srcset": "/assets/first-murderer-960.webp 960w, /assets/first-murderer.webp 1024w",
+        "alt": "A tour group standing in fog outside a white columned building under a full moon",
+        "natural": [
+          389,
+          292
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/strange-celebs-960.webp",
+        "srcset": "/assets/strange-celebs-960.webp 960w, /assets/strange-celebs.webp 1024w",
+        "alt": "A tour group standing on a foggy, moonlit street under trees strung with lights, one person holding up a phone",
+        "natural": [
+          389,
+          230
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/flying-saucer-960.webp",
+        "srcset": "/assets/flying-saucer-960.webp 960w, /assets/flying-saucer.webp 1024w",
+        "alt": "The Flying Saucer shopfront at night, a glowing alien figure in the doorway through fog",
+        "natural": [
+          389,
+          389
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/buried-bodies-960.webp",
+        "srcset": "/assets/buried-bodies-960.webp 960w, /assets/buried-bodies.webp 1086w",
+        "alt": "Two people walking out of a dark tunnel toward desert mountains under a stormy sky",
+        "natural": [
+          389,
+          519
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/esp-gambling-960.webp",
+        "srcset": "/assets/esp-gambling-960.webp 960w, /assets/esp-gambling.webp 1447w",
+        "alt": "Stacks of casino chips on a roulette table as a dealer reaches across the green felt",
+        "natural": [
+          389,
+          292
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/beer-zombies-boulder-city-960.webp",
+        "srcset": "/assets/beer-zombies-boulder-city-960.webp 960w, /assets/beer-zombies-boulder-city.webp 1672w",
+        "alt": "Beer Zombies Boulder City Draft Room and patio under warm string lights",
+        "natural": [
+          389,
+          219
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/bz-logo.svg",
+        "srcset": "",
+        "alt": "Beer Zombies",
+        "natural": [
+          300,
+          148
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/boulder-city-inn-960.webp",
+        "srcset": "/assets/boulder-city-inn-960.webp 960w, /assets/boulder-city-inn.webp 1672w",
+        "alt": "Historic Boulder Dam Hotel at night, windows glowing beside a street lamp under a full moon, fog over the wet street",
+        "natural": [
+          389,
+          219
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/joshua-p-warren-960.webp",
+        "srcset": "",
+        "alt": "Joshua P. Warren, creator of Haunted Boulder City",
+        "natural": [
+          960,
+          640
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/ghost-adventures.png",
+        "srcset": "",
+        "alt": "Ghost Adventures",
+        "natural": [
+          1800,
+          638
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/travel-channel.png",
+        "srcset": "",
+        "alt": "Travel Channel",
+        "natural": [
+          444,
+          195
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/history-current.svg",
+        "srcset": "",
+        "alt": "History Channel",
+        "natural": [
+          433,
+          500
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/discovery-channel.svg",
+        "srcset": "",
+        "alt": "Discovery Channel",
+        "natural": [
+          300,
+          75
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/national-geographic-channel.svg",
+        "srcset": "",
+        "alt": "National Geographic Channel",
+        "natural": [
+          300,
+          106
+        ],
+        "decode": "ok"
+      },
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/artisan-icon.jpg",
+        "srcset": "",
+        "alt": "Artisan Website Co logo",
+        "natural": [
+          48,
+          48
+        ],
+        "decode": "ok"
+      }
+    ],
+    "video": [
+      {
+        "src": "https://www.hauntedbouldercity.com/assets/ufo-night-960.mp4",
+        "data": {},
+        "duration": 8.041667,
+        "currentTime": 7.991667,
+        "readyState": 4
+      }
+    ]
+  }
+]

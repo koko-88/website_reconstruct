@@ -1,0 +1,1028 @@
+[
+  {
+    "additionalMs": 0,
+    "environment": {
+      "timestamp": "2026-10-04T00:12:02.291Z",
+      "url": "https://www.hauntedbouldercity.com/",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+      "viewport": [
+        1440,
+        900
+      ],
+      "dpr": 1,
+      "visualViewport": {
+        "width": 1425,
+        "height": 900,
+        "scale": 1
+      },
+      "scroll": [
+        0,
+        1739,
+        1425,
+        12476
+      ],
+      "language": "en-US",
+      "timezone": "Africa/Cairo",
+      "direction": "ltr",
+      "touch": 0,
+      "dark": false,
+      "reduced": false,
+      "fonts": "loaded",
+      "ready": "complete"
+    },
+    "state": {
+      "perf": 4160.0999999940395,
+      "factsClass": "tour-facts is-armed is-decoding",
+      "factsText": "60\n60\nMINUTES OF MYSTERY\nMINUTES OF MYSTERY\n½\n½\nMI\nMI\nLESS THAN HALF A MILE\nLESS THAN HALF A MILE\nALL\nALL\nAGES WELCOME\nAGES WELCOME",
+      "decodeCharacters": [
+        {
+          "text": "6",
+          "opacity": "0"
+        },
+        {
+          "text": "0",
+          "opacity": "0"
+        },
+        {
+          "text": "M",
+          "opacity": "0"
+        },
+        {
+          "text": "i",
+          "opacity": "0"
+        },
+        {
+          "text": "n",
+          "opacity": "0"
+        },
+        {
+          "text": "u",
+          "opacity": "0"
+        },
+        {
+          "text": "t",
+          "opacity": "0"
+        },
+        {
+          "text": "e",
+          "opacity": "0"
+        },
+        {
+          "text": "s",
+          "opacity": "0"
+        },
+        {
+          "text": "o",
+          "opacity": "0"
+        },
+        {
+          "text": "f",
+          "opacity": "0"
+        },
+        {
+          "text": "m",
+          "opacity": "0"
+        },
+        {
+          "text": "y",
+          "opacity": "0"
+        },
+        {
+          "text": "s",
+          "opacity": "0"
+        },
+        {
+          "text": "t",
+          "opacity": "0"
+        },
+        {
+          "text": "e",
+          "opacity": "0"
+        },
+        {
+          "text": "r",
+          "opacity": "0"
+        },
+        {
+          "text": "y",
+          "opacity": "0"
+        },
+        {
+          "text": "½",
+          "opacity": "0"
+        },
+        {
+          "text": "m",
+          "opacity": "0"
+        },
+        {
+          "text": "i",
+          "opacity": "0"
+        },
+        {
+          "text": "L",
+          "opacity": "0"
+        },
+        {
+          "text": "e",
+          "opacity": "0"
+        },
+        {
+          "text": "s",
+          "opacity": "0"
+        },
+        {
+          "text": "s",
+          "opacity": "0"
+        },
+        {
+          "text": "t",
+          "opacity": "0"
+        },
+        {
+          "text": "h",
+          "opacity": "0"
+        },
+        {
+          "text": "a",
+          "opacity": "0"
+        },
+        {
+          "text": "n",
+          "opacity": "0"
+        },
+        {
+          "text": "h",
+          "opacity": "0"
+        },
+        {
+          "text": "a",
+          "opacity": "0"
+        },
+        {
+          "text": "l",
+          "opacity": "0"
+        },
+        {
+          "text": "f",
+          "opacity": "0"
+        },
+        {
+          "text": "a",
+          "opacity": "0"
+        },
+        {
+          "text": "m",
+          "opacity": "0"
+        },
+        {
+          "text": "i",
+          "opacity": "0"
+        },
+        {
+          "text": "l",
+          "opacity": "0"
+        },
+        {
+          "text": "e",
+          "opacity": "0"
+        },
+        {
+          "text": "A",
+          "opacity": "0"
+        },
+        {
+          "text": "L",
+          "opacity": "0"
+        },
+        {
+          "text": "L",
+          "opacity": "0"
+        },
+        {
+          "text": "A",
+          "opacity": "0"
+        },
+        {
+          "text": "g",
+          "opacity": "0"
+        },
+        {
+          "text": "e",
+          "opacity": "0"
+        },
+        {
+          "text": "s",
+          "opacity": "0"
+        },
+        {
+          "text": "w",
+          "opacity": "0"
+        },
+        {
+          "text": "e",
+          "opacity": "0"
+        },
+        {
+          "text": "l",
+          "opacity": "0"
+        },
+        {
+          "text": "c",
+          "opacity": "0"
+        },
+        {
+          "text": "o",
+          "opacity": "0"
+        },
+        {
+          "text": "m",
+          "opacity": "0"
+        },
+        {
+          "text": "e",
+          "opacity": "0"
+        }
+      ]
+    }
+  },
+  {
+    "additionalMs": 150,
+    "environment": {
+      "timestamp": "2026-10-04T00:12:02.619Z",
+      "url": "https://www.hauntedbouldercity.com/",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+      "viewport": [
+        1440,
+        900
+      ],
+      "dpr": 1,
+      "visualViewport": {
+        "width": 1425,
+        "height": 900,
+        "scale": 1
+      },
+      "scroll": [
+        0,
+        1739,
+        1425,
+        12476
+      ],
+      "language": "en-US",
+      "timezone": "Africa/Cairo",
+      "direction": "ltr",
+      "touch": 0,
+      "dark": false,
+      "reduced": false,
+      "fonts": "loaded",
+      "ready": "complete"
+    },
+    "state": {
+      "perf": 4487,
+      "factsClass": "tour-facts is-armed is-decoding",
+      "factsText": "60\n77\nMINUTES OF MYSTERY\nYLNLMES OF MYSTERY\n½\n9\nMI\nDE\nLESS THAN HALF A MILE\nLESS THAN HALF A MILE\nALL\nALL\nAGES WELCOME\nAGES WELCOME",
+      "decodeCharacters": [
+        {
+          "text": "7",
+          "opacity": "0.5"
+        },
+        {
+          "text": "7",
+          "opacity": "0.5"
+        },
+        {
+          "text": "Y",
+          "opacity": "0.5"
+        },
+        {
+          "text": "L",
+          "opacity": "0.5"
+        },
+        {
+          "text": "N",
+          "opacity": "0.5"
+        },
+        {
+          "text": "L",
+          "opacity": "0.5"
+        },
+        {
+          "text": "M",
+          "opacity": "0.5"
+        },
+        {
+          "text": "e",
+          "opacity": "0"
+        },
+        {
+          "text": "s",
+          "opacity": "0"
+        },
+        {
+          "text": "o",
+          "opacity": "0"
+        },
+        {
+          "text": "f",
+          "opacity": "0"
+        },
+        {
+          "text": "m",
+          "opacity": "0"
+        },
+        {
+          "text": "y",
+          "opacity": "0"
+        },
+        {
+          "text": "s",
+          "opacity": "0"
+        },
+        {
+          "text": "t",
+          "opacity": "0"
+        },
+        {
+          "text": "e",
+          "opacity": "0"
+        },
+        {
+          "text": "r",
+          "opacity": "0"
+        },
+        {
+          "text": "y",
+          "opacity": "0"
+        },
+        {
+          "text": "9",
+          "opacity": "0.5"
+        },
+        {
+          "text": "D",
+          "opacity": "0.5"
+        },
+        {
+          "text": "E",
+          "opacity": "0.5"
+        },
+        {
+          "text": "L",
+          "opacity": "0"
+        },
+        {
+          "text": "e",
+          "opacity": "0"
+        },
+        {
+          "text": "s",
+          "opacity": "0"
+        },
+        {
+          "text": "s",
+          "opacity": "0"
+        },
+        {
+          "text": "t",
+          "opacity": "0"
+        },
+        {
+          "text": "h",
+          "opacity": "0"
+        },
+        {
+          "text": "a",
+          "opacity": "0"
+        },
+        {
+          "text": "n",
+          "opacity": "0"
+        },
+        {
+          "text": "h",
+          "opacity": "0"
+        },
+        {
+          "text": "a",
+          "opacity": "0"
+        },
+        {
+          "text": "l",
+          "opacity": "0"
+        },
+        {
+          "text": "f",
+          "opacity": "0"
+        },
+        {
+          "text": "a",
+          "opacity": "0"
+        },
+        {
+          "text": "m",
+          "opacity": "0"
+        },
+        {
+          "text": "i",
+          "opacity": "0"
+        },
+        {
+          "text": "l",
+          "opacity": "0"
+        },
+        {
+          "text": "e",
+          "opacity": "0"
+        },
+        {
+          "text": "A",
+          "opacity": "0.5"
+        },
+        {
+          "text": "L",
+          "opacity": "0"
+        },
+        {
+          "text": "L",
+          "opacity": "0"
+        },
+        {
+          "text": "A",
+          "opacity": "0"
+        },
+        {
+          "text": "g",
+          "opacity": "0"
+        },
+        {
+          "text": "e",
+          "opacity": "0"
+        },
+        {
+          "text": "s",
+          "opacity": "0"
+        },
+        {
+          "text": "w",
+          "opacity": "0"
+        },
+        {
+          "text": "e",
+          "opacity": "0"
+        },
+        {
+          "text": "l",
+          "opacity": "0"
+        },
+        {
+          "text": "c",
+          "opacity": "0"
+        },
+        {
+          "text": "o",
+          "opacity": "0"
+        },
+        {
+          "text": "m",
+          "opacity": "0"
+        },
+        {
+          "text": "e",
+          "opacity": "0"
+        }
+      ]
+    }
+  },
+  {
+    "additionalMs": 400,
+    "environment": {
+      "timestamp": "2026-10-04T00:12:03.199Z",
+      "url": "https://www.hauntedbouldercity.com/",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+      "viewport": [
+        1440,
+        900
+      ],
+      "dpr": 1,
+      "visualViewport": {
+        "width": 1425,
+        "height": 900,
+        "scale": 1
+      },
+      "scroll": [
+        0,
+        1739,
+        1425,
+        12476
+      ],
+      "language": "en-US",
+      "timezone": "Africa/Cairo",
+      "direction": "ltr",
+      "touch": 0,
+      "dark": false,
+      "reduced": false,
+      "fonts": "loaded",
+      "ready": "complete"
+    },
+    "state": {
+      "perf": 5066.9000000059605,
+      "factsClass": "tour-facts is-armed is-decoding",
+      "factsText": "60\n60\nMINUTES OF MYSTERY\nMINUTES WK WMSPMGO\n½\n½\nMI\nMH\nLESS THAN HALF A MILE\nLESS IDRT QMPO F YULT\nALL\nAVM\nAGES WELCOME\nAMFC MNAOOLU",
+      "decodeCharacters": [
+        {
+          "text": "6",
+          "opacity": "1"
+        },
+        {
+          "text": "0",
+          "opacity": "1"
+        },
+        {
+          "text": "M",
+          "opacity": "1"
+        },
+        {
+          "text": "i",
+          "opacity": "1"
+        },
+        {
+          "text": "n",
+          "opacity": "1"
+        },
+        {
+          "text": "u",
+          "opacity": "1"
+        },
+        {
+          "text": "t",
+          "opacity": "1"
+        },
+        {
+          "text": "e",
+          "opacity": "1"
+        },
+        {
+          "text": "s",
+          "opacity": "1"
+        },
+        {
+          "text": "W",
+          "opacity": "0.5"
+        },
+        {
+          "text": "K",
+          "opacity": "0.5"
+        },
+        {
+          "text": "W",
+          "opacity": "0.5"
+        },
+        {
+          "text": "M",
+          "opacity": "0.5"
+        },
+        {
+          "text": "S",
+          "opacity": "0.5"
+        },
+        {
+          "text": "P",
+          "opacity": "0.5"
+        },
+        {
+          "text": "M",
+          "opacity": "0.5"
+        },
+        {
+          "text": "G",
+          "opacity": "0.5"
+        },
+        {
+          "text": "O",
+          "opacity": "0.5"
+        },
+        {
+          "text": "½",
+          "opacity": "1"
+        },
+        {
+          "text": "m",
+          "opacity": "1"
+        },
+        {
+          "text": "H",
+          "opacity": "0.5"
+        },
+        {
+          "text": "L",
+          "opacity": "1"
+        },
+        {
+          "text": "e",
+          "opacity": "1"
+        },
+        {
+          "text": "s",
+          "opacity": "1"
+        },
+        {
+          "text": "s",
+          "opacity": "1"
+        },
+        {
+          "text": "I",
+          "opacity": "0.5"
+        },
+        {
+          "text": "D",
+          "opacity": "0.5"
+        },
+        {
+          "text": "R",
+          "opacity": "0.5"
+        },
+        {
+          "text": "T",
+          "opacity": "0.5"
+        },
+        {
+          "text": "Q",
+          "opacity": "0.5"
+        },
+        {
+          "text": "M",
+          "opacity": "0.5"
+        },
+        {
+          "text": "P",
+          "opacity": "0.5"
+        },
+        {
+          "text": "O",
+          "opacity": "0.5"
+        },
+        {
+          "text": "F",
+          "opacity": "0.5"
+        },
+        {
+          "text": "Y",
+          "opacity": "0.5"
+        },
+        {
+          "text": "U",
+          "opacity": "0.5"
+        },
+        {
+          "text": "L",
+          "opacity": "0.5"
+        },
+        {
+          "text": "T",
+          "opacity": "0.5"
+        },
+        {
+          "text": "A",
+          "opacity": "1"
+        },
+        {
+          "text": "V",
+          "opacity": "0.5"
+        },
+        {
+          "text": "M",
+          "opacity": "0.5"
+        },
+        {
+          "text": "A",
+          "opacity": "1"
+        },
+        {
+          "text": "M",
+          "opacity": "0.5"
+        },
+        {
+          "text": "F",
+          "opacity": "0.5"
+        },
+        {
+          "text": "C",
+          "opacity": "0.5"
+        },
+        {
+          "text": "M",
+          "opacity": "0.5"
+        },
+        {
+          "text": "N",
+          "opacity": "0.5"
+        },
+        {
+          "text": "A",
+          "opacity": "0.5"
+        },
+        {
+          "text": "O",
+          "opacity": "0.5"
+        },
+        {
+          "text": "O",
+          "opacity": "0.5"
+        },
+        {
+          "text": "L",
+          "opacity": "0.5"
+        },
+        {
+          "text": "U",
+          "opacity": "0.5"
+        }
+      ]
+    }
+  },
+  {
+    "additionalMs": 900,
+    "environment": {
+      "timestamp": "2026-10-04T00:12:04.383Z",
+      "url": "https://www.hauntedbouldercity.com/",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+      "viewport": [
+        1440,
+        900
+      ],
+      "dpr": 1,
+      "visualViewport": {
+        "width": 1425,
+        "height": 900,
+        "scale": 1
+      },
+      "scroll": [
+        0,
+        1739,
+        1425,
+        12476
+      ],
+      "language": "en-US",
+      "timezone": "Africa/Cairo",
+      "direction": "ltr",
+      "touch": 0,
+      "dark": false,
+      "reduced": false,
+      "fonts": "loaded",
+      "ready": "complete"
+    },
+    "state": {
+      "perf": 6250.799999982119,
+      "factsClass": "tour-facts is-armed is-decoding",
+      "factsText": "60\n60\nMINUTES OF MYSTERY\nMINUTES OF MYSTERY\n½\n½\nMI\nMI\nLESS THAN HALF A MILE\nLESS THAN HALF A MILE\nALL\nALL\nAGES WELCOME\nAGES WELCOME",
+      "decodeCharacters": [
+        {
+          "text": "6",
+          "opacity": "1"
+        },
+        {
+          "text": "0",
+          "opacity": "1"
+        },
+        {
+          "text": "M",
+          "opacity": "1"
+        },
+        {
+          "text": "i",
+          "opacity": "1"
+        },
+        {
+          "text": "n",
+          "opacity": "1"
+        },
+        {
+          "text": "u",
+          "opacity": "1"
+        },
+        {
+          "text": "t",
+          "opacity": "1"
+        },
+        {
+          "text": "e",
+          "opacity": "1"
+        },
+        {
+          "text": "s",
+          "opacity": "1"
+        },
+        {
+          "text": "o",
+          "opacity": "1"
+        },
+        {
+          "text": "f",
+          "opacity": "1"
+        },
+        {
+          "text": "m",
+          "opacity": "1"
+        },
+        {
+          "text": "y",
+          "opacity": "1"
+        },
+        {
+          "text": "s",
+          "opacity": "1"
+        },
+        {
+          "text": "t",
+          "opacity": "1"
+        },
+        {
+          "text": "e",
+          "opacity": "1"
+        },
+        {
+          "text": "r",
+          "opacity": "1"
+        },
+        {
+          "text": "y",
+          "opacity": "1"
+        },
+        {
+          "text": "½",
+          "opacity": "1"
+        },
+        {
+          "text": "m",
+          "opacity": "1"
+        },
+        {
+          "text": "i",
+          "opacity": "1"
+        },
+        {
+          "text": "L",
+          "opacity": "1"
+        },
+        {
+          "text": "e",
+          "opacity": "1"
+        },
+        {
+          "text": "s",
+          "opacity": "1"
+        },
+        {
+          "text": "s",
+          "opacity": "1"
+        },
+        {
+          "text": "t",
+          "opacity": "1"
+        },
+        {
+          "text": "h",
+          "opacity": "1"
+        },
+        {
+          "text": "a",
+          "opacity": "1"
+        },
+        {
+          "text": "n",
+          "opacity": "1"
+        },
+        {
+          "text": "h",
+          "opacity": "1"
+        },
+        {
+          "text": "a",
+          "opacity": "1"
+        },
+        {
+          "text": "l",
+          "opacity": "1"
+        },
+        {
+          "text": "f",
+          "opacity": "1"
+        },
+        {
+          "text": "a",
+          "opacity": "1"
+        },
+        {
+          "text": "m",
+          "opacity": "1"
+        },
+        {
+          "text": "i",
+          "opacity": "1"
+        },
+        {
+          "text": "l",
+          "opacity": "1"
+        },
+        {
+          "text": "e",
+          "opacity": "1"
+        },
+        {
+          "text": "A",
+          "opacity": "1"
+        },
+        {
+          "text": "L",
+          "opacity": "1"
+        },
+        {
+          "text": "L",
+          "opacity": "1"
+        },
+        {
+          "text": "A",
+          "opacity": "1"
+        },
+        {
+          "text": "g",
+          "opacity": "1"
+        },
+        {
+          "text": "e",
+          "opacity": "1"
+        },
+        {
+          "text": "s",
+          "opacity": "1"
+        },
+        {
+          "text": "w",
+          "opacity": "1"
+        },
+        {
+          "text": "e",
+          "opacity": "1"
+        },
+        {
+          "text": "l",
+          "opacity": "1"
+        },
+        {
+          "text": "c",
+          "opacity": "1"
+        },
+        {
+          "text": "o",
+          "opacity": "1"
+        },
+        {
+          "text": "m",
+          "opacity": "1"
+        },
+        {
+          "text": "e",
+          "opacity": "1"
+        }
+      ]
+    }
+  },
+  {
+    "additionalMs": 1300,
+    "environment": {
+      "timestamp": "2026-10-04T00:12:05.835Z",
+      "url": "https://www.hauntedbouldercity.com/",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+      "viewport": [
+        1440,
+        900
+      ],
+      "dpr": 1,
+      "visualViewport": {
+        "width": 1425,
+        "height": 900,
+        "scale": 1
+      },
+      "scroll": [
+        0,
+        1739,
+        1425,
+        12476
+      ],
+      "language": "en-US",
+      "timezone": "Africa/Cairo",
+      "direction": "ltr",
+      "touch": 0,
+      "dark": false,
+      "reduced": false,
+      "fonts": "loaded",
+      "ready": "complete"
+    },
+    "state": {
+      "perf": 7703.0999999940395,
+      "factsClass": "tour-facts is-armed is-decoded",
+      "factsText": "60\nMINUTES OF MYSTERY\n½MI\nLESS THAN HALF A MILE\nALL\nAGES WELCOME",
+      "decodeCharacters": []
+    }
+  }
+]

@@ -1,0 +1,31 @@
+{
+  "readOnly": true,
+  "files": [
+    {
+      "sha256": "ce84ec42d8350ab50933b5a4e04bdbe4c071e8fd7efbc66eff35a74f53d701f5",
+      "path": "SKILL.md"
+    },
+    {
+      "sha256": "a8617c1f7a97ab47dc0ec94ea9f8b6c70c2f62ad8e2969757589d9d49fa9a847",
+      "path": "assets\\reference-evidence-package.md"
+    },
+    {
+      "sha256": "7b69881a697f9ffe99b319e18d04c24a14d9e97af5f3010d89ee6a2b7a99cef8",
+      "path": "references\\inspection.md"
+    },
+    {
+      "sha256": "ef225557b19343b03fb30a17b78eb2f2baebe16724b865181b6797e8793a4196",
+      "path": "references\\tool-selection.md"
+    },
+    {
+      "sha256": "2be144ecc225ba931694065a37f3e880d72e1494995da6a7fd0fdf899f78f96e",
+      "path": "references\\completeness-gate.md"
+    },
+    {
+      "sha256": "70e7f43fa5ccc0d63d777b48965ea57209ee7ef5a8b469dff1ad2c3dd4279bfe",
+      "path": "references\\implementation-handoff.md"
+    }
+  ],
+  "skill": "reference-reconstruction",
+  "recordedAt": "2026-10-04T03:24:57.6822612+03:00"
+}
