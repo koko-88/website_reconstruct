@@ -1,0 +1,4253 @@
+{
+  "checked_at_utc": "2026-10-04T12:02:10.901332+00:00",
+  "mode": "agentcompass",
+  "versions": {
+    "agentcompass": "1.0.0"
+  },
+  "python": "3.12.15",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "network": "external sockets blocked; loopback IPC permitted for Windows asyncio",
+  "model_calls": 0,
+  "agent_runs": 0,
+  "status": "PARTIAL",
+  "checks": {
+    "module_imports": "PASS",
+    "status": "PARTIAL",
+    "registries": {
+      "benchmarks": [
+        {
+          "name": "brainarena",
+          "class": "BrainArenaBenchmark",
+          "file": "benchmarks/brainarena/brainarena.py",
+          "line": 124,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "brainarena.py",
+            "sha256": "16e4f6d0544535ca62b4fe32c18089b8b255a3727ba9b4d82e6221a1de654580",
+            "definitions": [
+              {
+                "name": "BrainArenaConfig",
+                "line": 50
+              },
+              {
+                "name": "BrainArenaBenchmarkPlan",
+                "line": 79
+              },
+              {
+                "name": "_task_manifest",
+                "line": 92
+              },
+              {
+                "name": "_read_relative",
+                "line": 99
+              },
+              {
+                "name": "_submission_prompt",
+                "line": 103
+              },
+              {
+                "name": "BrainArenaBenchmark",
+                "line": 124
+              }
+            ]
+          }
+        },
+        {
+          "name": "browsecomp",
+          "class": "BrowseCompBenchmark",
+          "file": "benchmarks/browsecomp.py",
+          "line": 49,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "browsecomp.py",
+            "sha256": "05c0fd6f6704a0af8c965627c07dc77edc25e15e31155c06999f8472ae756ab2",
+            "definitions": [
+              {
+                "name": "BrowseCompConfig",
+                "line": 21
+              },
+              {
+                "name": "BrowseCompBenchmark",
+                "line": 49
+              }
+            ]
+          }
+        },
+        {
+          "name": "browsecomp_zh",
+          "class": "BrowseCompZHBenchmark",
+          "file": "benchmarks/browsecomp_zh.py",
+          "line": 49,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "browsecomp_zh.py",
+            "sha256": "fbe44c2f736cffb86bd367f9dafb173a42f78cadc9c82103073b0b0b37e4860e",
+            "definitions": [
+              {
+                "name": "BrowseCompZHConfig",
+                "line": 21
+              },
+              {
+                "name": "BrowseCompZHBenchmark",
+                "line": 49
+              }
+            ]
+          }
+        },
+        {
+          "name": "deepresearch_bench",
+          "class": "DeepResearchBenchBenchmark",
+          "file": "benchmarks/deepresearch_bench/deepresearch_bench.py",
+          "line": 221,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "deepresearch_bench.py",
+            "sha256": "8a66b2f00b2e13c7f653cb2d620d599237d2b531ad2ce880adc8b480a45adc7c",
+            "definitions": [
+              {
+                "name": "DeepResearchBenchConfig",
+                "line": 73
+              },
+              {
+                "name": "DeepResearchBenchBenchmark",
+                "line": 221
+              }
+            ]
+          }
+        },
+        {
+          "name": "deepsearchqa",
+          "class": "DeepSearchQABenchmark",
+          "file": "benchmarks/deepsearchqa.py",
+          "line": 56,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "deepsearchqa.py",
+            "sha256": "8729e21d4b4c6ac2e50c9c5aede28d693698cb5fc2b3a5bc277e46faa77ee7b6",
+            "definitions": [
+              {
+                "name": "DeepSearchQAConfig",
+                "line": 21
+              },
+              {
+                "name": "DeepSearchQABenchmark",
+                "line": 56
+              }
+            ]
+          }
+        },
+        {
+          "name": "deepswe",
+          "class": "DeepSWEBenchmark",
+          "file": "benchmarks/deepswe.py",
+          "line": 151,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "deepswe.py",
+            "sha256": "b91f38a8c9268ab40f727813676c5ae579528899c07c5780597453e442b0d2c1",
+            "definitions": [
+              {
+                "name": "_normalize_filter",
+                "line": 55
+              },
+              {
+                "name": "_filter_values",
+                "line": 64
+              },
+              {
+                "name": "_normalize_version",
+                "line": 72
+              },
+              {
+                "name": "_run_git",
+                "line": 81
+              },
+              {
+                "name": "_git_worktree_dirty",
+                "line": 93
+              },
+              {
+                "name": "_dataset_revision",
+                "line": 97
+              },
+              {
+                "name": "DeepSWEConfig",
+                "line": 105
+              },
+              {
+                "name": "DeepSWEBenchmarkPlan",
+                "line": 143
+              },
+              {
+                "name": "DeepSWEBenchmark",
+                "line": 151
+              }
+            ]
+          }
+        },
+        {
+          "name": "frontier_engineering",
+          "class": "FrontierEngineeringBenchmark",
+          "file": "benchmarks/frontier_engineering/frontier_engineering.py",
+          "line": 165,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "frontier_engineering.py",
+            "sha256": "80273160c36a8bce69c48082c63d0c882e13182599ed9f87bb865feb9757fd71",
+            "definitions": [
+              {
+                "name": "FrontierEngineeringConfig",
+                "line": 109
+              },
+              {
+                "name": "FrontierEngineeringBenchmarkPlan",
+                "line": 125
+              },
+              {
+                "name": "FrontierEngineeringBenchmark",
+                "line": 165
+              },
+              {
+                "name": "_validate_source_root",
+                "line": 1219
+              },
+              {
+                "name": "_source_cache_key",
+                "line": 1227
+              },
+              {
+                "name": "_source_cache_lock",
+                "line": 1234
+              },
+              {
+                "name": "_source_cache_matches",
+                "line": 1245
+              },
+              {
+                "name": "_write_source_cache_marker",
+                "line": 1268
+              },
+              {
+                "name": "_ensure_git_submodules",
+                "line": 1290
+              },
+              {
+                "name": "_run_git",
+                "line": 1297
+              },
+              {
+                "name": "_batch_config_path",
+                "line": 1313
+              },
+              {
+                "name": "_resolve_unified_benchmark_dir",
+                "line": 1318
+              },
+              {
+                "name": "_builtin_task_config",
+                "line": 1347
+              },
+              {
+                "name": "_requirements_for",
+                "line": 1377
+              },
+              {
+                "name": "_read_yaml",
+                "line": 1393
+              },
+              {
+                "name": "_normalize_overrides",
+                "line": 1399
+              },
+              {
+                "name": "_split_override",
+                "line": 1409
+              },
+              {
+                "name": "_parse_scalar",
+                "line": 1417
+              },
+              {
+                "name": "_set_nested",
+                "line": 1434
+              },
+              {
+                "name": "_as_str_list",
+                "line": 1448
+              },
+              {
+                "name": "_safe_relpath",
+                "line": 1459
+              },
+              {
+                "name": "_optional_relpath",
+                "line": 1476
+              },
+              {
+                "name": "_optional_float",
+                "line": 1482
+              },
+              {
+                "name": "_metadata_path",
+                "line": 1489
+              },
+              {
+                "name": "_read_text",
+                "line": 1498
+              },
+              {
+                "name": "_read_list_file",
+                "line": 1507
+              },
+              {
+                "name": "_read_scalar_file",
+                "line": 1519
+              },
+              {
+                "name": "_dedupe",
+                "line": 1524
+              },
+              {
+                "name": "_parse_bool",
+                "line": 1535
+              },
+              {
+                "name": "_rank_value",
+                "line": 1548
+              },
+              {
+                "name": "_average_rank_desc",
+                "line": 1562
+              },
+              {
+                "name": "_load_rank_baseline",
+                "line": 1577
+              },
+              {
+                "name": "_rank_candidate_model_name",
+                "line": 1589
+              },
+              {
+                "name": "_rank_score_excludes",
+                "line": 1594
+              },
+              {
+                "name": "_rank_unavailable",
+                "line": 1599
+              },
+              {
+                "name": "_build_rank_summary_payload",
+                "line": 1612
+              },
+              {
+                "name": "_medal_task_name",
+                "line": 1685
+              },
+              {
+                "name": "_build_medal_summary_payload",
+                "line": 1690
+              },
+              {
+                "name": "_is_within",
+                "line": 1793
+              },
+              {
+                "name": "_upload_tree",
+                "line": 1801
+              },
+              {
+                "name": "_remote_join",
+                "line": 1812
+              },
+              {
+                "name": "_remote_workspace_path",
+                "line": 1822
+              },
+              {
+                "name": "_remote_relpath",
+                "line": 1833
+              },
+              {
+                "name": "_safe_slug",
+                "line": 1845
+              },
+              {
+                "name": "_safe_workspace_relpath",
+                "line": 1850
+              },
+              {
+                "name": "_timeout_env_value",
+                "line": 1855
+              },
+              {
+                "name": "_truncate",
+                "line": 1863
+              },
+              {
+                "name": "_tail",
+                "line": 1871
+              },
+              {
+                "name": "_collected_file",
+                "line": 1877
+              },
+              {
+                "name": "_render_eval_command",
+                "line": 1886
+              },
+              {
+                "name": "_command_uses_external_source",
+                "line": 1920
+              },
+              {
+                "name": "_uses_image_layout",
+                "line": 1924
+              },
+              {
+                "name": "_extract_uv_env_name",
+                "line": 1935
+              },
+              {
+                "name": "_runtime_image_key",
+                "line": 1943
+              },
+              {
+                "name": "_read_remote_json",
+                "line": 1948
+              },
+              {
+                "name": "_parse_last_json_dict",
+                "line": 1963
+              },
+              {
+                "name": "_numeric",
+                "line": 1977
+              },
+              {
+                "name": "_extract_score",
+                "line": 1990
+              }
+            ]
+          }
+        },
+        {
+          "name": "frontier_swe",
+          "class": "FrontierSWEBenchmark",
+          "file": "benchmarks/frontier_swe.py",
+          "line": 131,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "frontier_swe.py",
+            "sha256": "9fbaf88e84c8593cbac9a73f7fabf3eb2bba07115b748202d34a904e1edb44ac",
+            "definitions": [
+              {
+                "name": "_run_git",
+                "line": 43
+              },
+              {
+                "name": "_git_worktree_dirty",
+                "line": 55
+              },
+              {
+                "name": "_dataset_revision",
+                "line": 59
+              },
+              {
+                "name": "_normalized_filter",
+                "line": 66
+              },
+              {
+                "name": "_filter_values",
+                "line": 75
+              },
+              {
+                "name": "FrontierSWEConfig",
+                "line": 84
+              },
+              {
+                "name": "FrontierSWEBenchmarkPlan",
+                "line": 124
+              },
+              {
+                "name": "FrontierSWEBenchmark",
+                "line": 131
+              }
+            ]
+          }
+        },
+        {
+          "name": "frontierscience",
+          "class": "FrontierScienceBenchmark",
+          "file": "benchmarks/frontierscience.py",
+          "line": 61,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "frontierscience.py",
+            "sha256": "ec8ec0d90022ac3d14798c1279d65f2eb4779416901e6dfa0f0fc8ee47d2bd06",
+            "definitions": [
+              {
+                "name": "FrontierScienceConfig",
+                "line": 21
+              },
+              {
+                "name": "FrontierScienceBenchmark",
+                "line": 61
+              }
+            ]
+          }
+        },
+        {
+          "name": "gaia",
+          "class": "GAIABenchmark",
+          "file": "benchmarks/gaia.py",
+          "line": 50,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "gaia.py",
+            "sha256": "fccfee7cc97cb83b8552d05965da579bb982e51c5b50824e62e7dfa3d24c2e32",
+            "definitions": [
+              {
+                "name": "GAIAConfig",
+                "line": 21
+              },
+              {
+                "name": "GAIABenchmark",
+                "line": 50
+              }
+            ]
+          }
+        },
+        {
+          "name": "gdpval_ac",
+          "class": "GDPValACBenchmark",
+          "file": "benchmarks/gdpval_ac/gdpval_ac.py",
+          "line": 198,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "gdpval_ac.py",
+            "sha256": "5dc24b07893acee2342e061d2d9314f88760eed06d149dc7680ea54d6effe8c6",
+            "definitions": [
+              {
+                "name": "_bundled_baseline_dir",
+                "line": 49
+              },
+              {
+                "name": "ensure_baseline",
+                "line": 59
+              },
+              {
+                "name": "GDPValACConfig",
+                "line": 76
+              },
+              {
+                "name": "GDPValACBenchmarkPlan",
+                "line": 189
+              },
+              {
+                "name": "GDPValACBenchmark",
+                "line": 198
+              }
+            ]
+          }
+        },
+        {
+          "name": "hle",
+          "class": "HLEBenchmark",
+          "file": "benchmarks/hle.py",
+          "line": 144,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "hle.py",
+            "sha256": "3eb9d7425dfb7a43553d0e1749bf98d1ba5dee76fcf3a135e40cbab35936cc40",
+            "definitions": [
+              {
+                "name": "_normalize_filter",
+                "line": 31
+              },
+              {
+                "name": "_allowed_values",
+                "line": 37
+              },
+              {
+                "name": "_verified_subset_label",
+                "line": 45
+              },
+              {
+                "name": "_allowed_verified_subsets",
+                "line": 50
+              },
+              {
+                "name": "_parse_json_record",
+                "line": 58
+              },
+              {
+                "name": "_merge_hle_verified_record",
+                "line": 68
+              },
+              {
+                "name": "_hle_verified_image",
+                "line": 78
+              },
+              {
+                "name": "HLEConfig",
+                "line": 87
+              },
+              {
+                "name": "HLEVerifiedConfig",
+                "line": 116
+              },
+              {
+                "name": "HLEBenchmark",
+                "line": 144
+              },
+              {
+                "name": "HLEVerifiedBenchmark",
+                "line": 239
+              }
+            ]
+          }
+        },
+        {
+          "name": "hle_verified",
+          "class": "HLEVerifiedBenchmark",
+          "file": "benchmarks/hle.py",
+          "line": 239,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "hle.py",
+            "sha256": "3eb9d7425dfb7a43553d0e1749bf98d1ba5dee76fcf3a135e40cbab35936cc40",
+            "definitions": [
+              {
+                "name": "_normalize_filter",
+                "line": 31
+              },
+              {
+                "name": "_allowed_values",
+                "line": 37
+              },
+              {
+                "name": "_verified_subset_label",
+                "line": 45
+              },
+              {
+                "name": "_allowed_verified_subsets",
+                "line": 50
+              },
+              {
+                "name": "_parse_json_record",
+                "line": 58
+              },
+              {
+                "name": "_merge_hle_verified_record",
+                "line": 68
+              },
+              {
+                "name": "_hle_verified_image",
+                "line": 78
+              },
+              {
+                "name": "HLEConfig",
+                "line": 87
+              },
+              {
+                "name": "HLEVerifiedConfig",
+                "line": 116
+              },
+              {
+                "name": "HLEBenchmark",
+                "line": 144
+              },
+              {
+                "name": "HLEVerifiedBenchmark",
+                "line": 239
+              }
+            ]
+          }
+        },
+        {
+          "name": "osworld",
+          "class": "OSWorldBenchmark",
+          "file": "benchmarks/osworld/osworld.py",
+          "line": 196,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "osworld.py",
+            "sha256": "e5d2e5e191fa6175f832f9c70b1960b219b10533086d386fe587ec05906da61e",
+            "definitions": [
+              {
+                "name": "_optional_probability",
+                "line": 57
+              },
+              {
+                "name": "OSWorldBenchmarkConfig",
+                "line": 70
+              },
+              {
+                "name": "OSWorldBenchmarkPlan",
+                "line": 171
+              },
+              {
+                "name": "OSWorldBenchmark",
+                "line": 196
+              }
+            ]
+          }
+        },
+        {
+          "name": "pinchbench",
+          "class": "PinchBenchBenchmark",
+          "file": "benchmarks/pinchbench/pinchbench.py",
+          "line": 163,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "pinchbench.py",
+            "sha256": "57135979df057c225da9e7bd891076475e1803b617cd1481439c8ac32c66cc9c",
+            "definitions": [
+              {
+                "name": "PinchBenchConfig",
+                "line": 49
+              },
+              {
+                "name": "PinchBenchBenchmarkPlan",
+                "line": 148
+              },
+              {
+                "name": "PinchBenchBenchmark",
+                "line": 163
+              }
+            ]
+          }
+        },
+        {
+          "name": "researchclawbench",
+          "class": "ResearchClawBenchBenchmark",
+          "file": "benchmarks/researchclawbench.py",
+          "line": 112,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "researchclawbench.py",
+            "sha256": "575733ccba029037feb158ff81de0691a7e58c2aa236772e08662f760b95e93f",
+            "definitions": [
+              {
+                "name": "ResearchClawBenchConfig",
+                "line": 36
+              },
+              {
+                "name": "ResearchClawBenchPlan",
+                "line": 104
+              },
+              {
+                "name": "ResearchClawBenchBenchmark",
+                "line": 112
+              }
+            ]
+          }
+        },
+        {
+          "name": "scicode",
+          "class": "SciCodeBenchmark",
+          "file": "benchmarks/scicode/scicode.py",
+          "line": 422,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "scicode.py",
+            "sha256": "ace7ae146c2551db62f0be1d76d74219a071d84193b31b3899c2558bece43316",
+            "definitions": [
+              {
+                "name": "_package_attr",
+                "line": 46
+              },
+              {
+                "name": "_rewrite_test_case_imports",
+                "line": 287
+              },
+              {
+                "name": "_remove_python_imports",
+                "line": 294
+              },
+              {
+                "name": "_extract_python_script",
+                "line": 303
+              },
+              {
+                "name": "extract_function_name",
+                "line": 316
+              },
+              {
+                "name": "get_function_from_code",
+                "line": 327
+              },
+              {
+                "name": "clean_previous_step_code",
+                "line": 340
+              },
+              {
+                "name": "official_prefilled_step_code",
+                "line": 349
+              },
+              {
+                "name": "_normalize_category_filter",
+                "line": 356
+              },
+              {
+                "name": "_extract_task_category",
+                "line": 366
+              },
+              {
+                "name": "SciCodeConfig",
+                "line": 373
+              },
+              {
+                "name": "SciCodeBenchmark",
+                "line": 422
+              }
+            ]
+          }
+        },
+        {
+          "name": "screenspot",
+          "class": "ScreenSpotBenchmark",
+          "file": "benchmarks/screenspot.py",
+          "line": 106,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "screenspot.py",
+            "sha256": "92b619e43a29b80e655711d3c30c46219c6cf5a82ba0efb8e0764998f6a3f6fc",
+            "definitions": [
+              {
+                "name": "is_point_in_bbox",
+                "line": 68
+              },
+              {
+                "name": "ScreenSpotConfig",
+                "line": 77
+              },
+              {
+                "name": "ScreenSpotBenchmark",
+                "line": 106
+              }
+            ]
+          }
+        },
+        {
+          "name": "sealqa",
+          "class": "SealQABenchmark",
+          "file": "benchmarks/sealqa.py",
+          "line": 120,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "sealqa.py",
+            "sha256": "ad99ae9dcd36564f1109d6ce595ec3275b82600a3ec51db349f54f8992351e7a",
+            "definitions": [
+              {
+                "name": "_plain_value",
+                "line": 44
+              },
+              {
+                "name": "_longseal_rng",
+                "line": 55
+              },
+              {
+                "name": "_render_document",
+                "line": 60
+              },
+              {
+                "name": "SealQAConfig",
+                "line": 69
+              },
+              {
+                "name": "SealQABenchmark",
+                "line": 120
+              }
+            ]
+          }
+        },
+        {
+          "name": "sgi_deep_research",
+          "class": "SGIDeepResearchBenchmark",
+          "file": "benchmarks/sgi_deep_research.py",
+          "line": 49,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "sgi_deep_research.py",
+            "sha256": "31258a68931c81eaac8eaebf05601af7d8735090e6f680e657275728beac9aaa",
+            "definitions": [
+              {
+                "name": "SGIDeepResearchConfig",
+                "line": 21
+              },
+              {
+                "name": "SGIDeepResearchBenchmark",
+                "line": 49
+              }
+            ]
+          }
+        },
+        {
+          "name": "skillsbench",
+          "class": "SkillsBenchBenchmark",
+          "file": "benchmarks/skillsbench/benchmark.py",
+          "line": 80,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "benchmark.py",
+            "sha256": "7a3ef5ce9afc4b20025292cefe632aeb6410ea5f21aaa83ec10848db357e3981",
+            "definitions": [
+              {
+                "name": "SkillsBenchConfig",
+                "line": 55
+              },
+              {
+                "name": "SkillsBenchBenchmarkPlan",
+                "line": 73
+              },
+              {
+                "name": "SkillsBenchBenchmark",
+                "line": 80
+              }
+            ]
+          }
+        },
+        {
+          "name": "special_pattern_check",
+          "class": "SpecialPatternCheckBenchmark",
+          "file": "benchmarks/special_pattern.py",
+          "line": 105,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "special_pattern.py",
+            "sha256": "4521cf42cd4db2f58aeec38c4a73e5bb48b0183694481644a80a98c0d82ab8c5",
+            "definitions": [
+              {
+                "name": "SpecialPatternCheckConfig",
+                "line": 86
+              },
+              {
+                "name": "SpecialPatternCheckBenchmarkPlan",
+                "line": 100
+              },
+              {
+                "name": "SpecialPatternCheckBenchmark",
+                "line": 105
+              }
+            ]
+          }
+        },
+        {
+          "name": "swe_marathon",
+          "class": "SWEMarathonBenchmark",
+          "file": "benchmarks/swe_marathon/swe_marathon.py",
+          "line": 206,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "swe_marathon.py",
+            "sha256": "a4668d30261e9e69cabbd17eb3199ab818a4978537c95c73ce76e772220fe038",
+            "definitions": [
+              {
+                "name": "_ensure_tmux",
+                "line": 44
+              },
+              {
+                "name": "CUARuntimeConfig",
+                "line": 66
+              },
+              {
+                "name": "_redact_cua_error",
+                "line": 79
+              },
+              {
+                "name": "_redact_cua_data",
+                "line": 99
+              },
+              {
+                "name": "_cua_authority",
+                "line": 114
+              },
+              {
+                "name": "_build_cua_provenance",
+                "line": 124
+              },
+              {
+                "name": "_prepare_cua_environment",
+                "line": 142
+              },
+              {
+                "name": "SWEMarathonConfig",
+                "line": 176
+              },
+              {
+                "name": "SWEMarathonBenchmarkPlan",
+                "line": 200
+              },
+              {
+                "name": "SWEMarathonBenchmark",
+                "line": 206
+              }
+            ]
+          }
+        },
+        {
+          "name": "swebench_multilingual",
+          "class": "SWEBenchMultilingualBenchmark",
+          "file": "benchmarks/swebench_multilingual.py",
+          "line": 109,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "swebench_multilingual.py",
+            "sha256": "ebd879aba43fada21a1da7c8f07a57c6fb272e6d7fe05b62122b3318fe31d87f",
+            "definitions": [
+              {
+                "name": "SWEBenchConfig",
+                "line": 65
+              },
+              {
+                "name": "SWEBenchMultilingualBenchmarkPlan",
+                "line": 96
+              },
+              {
+                "name": "SWEBenchMultilingualBenchmark",
+                "line": 109
+              }
+            ]
+          }
+        },
+        {
+          "name": "swebench_pro",
+          "class": "SWEBenchProBenchmark",
+          "file": "benchmarks/swebench_pro.py",
+          "line": 116,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "swebench_pro.py",
+            "sha256": "8e3eea24a8973b2e3058869fd56f5afef72e03deb2da78cb3042ea4e892b79dd",
+            "definitions": [
+              {
+                "name": "SWEBenchProConfig",
+                "line": 56
+              },
+              {
+                "name": "SWEBenchProBenchmarkPlan",
+                "line": 103
+              },
+              {
+                "name": "SWEBenchProBenchmark",
+                "line": 116
+              }
+            ]
+          }
+        },
+        {
+          "name": "swebench_pro_verified",
+          "class": "SWEBenchProVerifiedBenchmark",
+          "file": "benchmarks/swebench_pro_verified/swebench_pro_verified.py",
+          "line": 124,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "swebench_pro_verified.py",
+            "sha256": "28eb47bb31a13313a44ff2e48292e97d3fd814fc0bfd9083fea6da5074b837a3",
+            "definitions": [
+              {
+                "name": "SWEBenchProVerifiedConfig",
+                "line": 64
+              },
+              {
+                "name": "SWEBenchProVerifiedBenchmarkPlan",
+                "line": 111
+              },
+              {
+                "name": "SWEBenchProVerifiedBenchmark",
+                "line": 124
+              }
+            ]
+          }
+        },
+        {
+          "name": "swebench_verified",
+          "class": "SWEBenchVerifiedBenchmark",
+          "file": "benchmarks/swebench_verified.py",
+          "line": 105,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "swebench_verified.py",
+            "sha256": "cee1e3f77b6dec137c6a1dae7ce899366c8cdc709b36557ed61e04fa6ebde700",
+            "definitions": [
+              {
+                "name": "SWEBenchVerifiedConfig",
+                "line": 61
+              },
+              {
+                "name": "SWEBenchVerifiedBenchmarkPlan",
+                "line": 92
+              },
+              {
+                "name": "SWEBenchVerifiedBenchmark",
+                "line": 105
+              }
+            ]
+          }
+        },
+        {
+          "name": "taubench",
+          "class": "TauBenchBenchmark",
+          "file": "benchmarks/taubench/taubench.py",
+          "line": 151,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "taubench.py",
+            "sha256": "e45a8936889015b608e09097d23f83da384400bb2471b57b1c8bb0a20aaf58f4",
+            "definitions": [
+              {
+                "name": "_is_successful",
+                "line": 83
+              },
+              {
+                "name": "TauBenchConfig",
+                "line": 88
+              },
+              {
+                "name": "TauBenchBenchmark",
+                "line": 151
+              }
+            ]
+          }
+        },
+        {
+          "name": "terminal_bench_2",
+          "class": "TerminalBench2Benchmark",
+          "file": "benchmarks/terminalbench2/terminalbench2.py",
+          "line": 68,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "terminalbench2.py",
+            "sha256": "ad561f9d47668b37bbdf00d1e231488c05443574dd156e41ea236f2edfc949f8",
+            "definitions": [
+              {
+                "name": "VerifierTimeoutError",
+                "line": 45
+              },
+              {
+                "name": "TerminalBench2Config",
+                "line": 50
+              },
+              {
+                "name": "TerminalBench2BenchmarkPlan",
+                "line": 61
+              },
+              {
+                "name": "TerminalBench2Benchmark",
+                "line": 68
+              }
+            ]
+          }
+        },
+        {
+          "name": "terminal_bench_2_1",
+          "class": "TerminalBench21Benchmark",
+          "file": "benchmarks/terminalbench2/terminalbench2_1.py",
+          "line": 68,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "terminalbench2_1.py",
+            "sha256": "04fc066b9b9a29a0e69732c40464f97c23cd3d9c3545da7f37cd05cdf09956b2",
+            "definitions": [
+              {
+                "name": "VerifierTimeoutError",
+                "line": 45
+              },
+              {
+                "name": "TerminalBench21Config",
+                "line": 50
+              },
+              {
+                "name": "TerminalBench21BenchmarkPlan",
+                "line": 61
+              },
+              {
+                "name": "TerminalBench21Benchmark",
+                "line": 68
+              }
+            ]
+          }
+        },
+        {
+          "name": "terminal_bench_2_verified",
+          "class": "TerminalBench2VerifiedBenchmark",
+          "file": "benchmarks/terminalbench2/terminalbench2_verified.py",
+          "line": 68,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "terminalbench2_verified.py",
+            "sha256": "7761fe853aa7a7e424a7add74b3b4d14d6ffd75675470dfa1adc8c601b9baac7",
+            "definitions": [
+              {
+                "name": "VerifierTimeoutError",
+                "line": 45
+              },
+              {
+                "name": "TerminalBench2VerifiedConfig",
+                "line": 50
+              },
+              {
+                "name": "TerminalBench2VerifiedBenchmarkPlan",
+                "line": 61
+              },
+              {
+                "name": "TerminalBench2VerifiedBenchmark",
+                "line": 68
+              }
+            ]
+          }
+        },
+        {
+          "name": "widesearch",
+          "class": "WideSearchBenchmark",
+          "file": "benchmarks/widesearch/benchmark.py",
+          "line": 69,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "benchmark.py",
+            "sha256": "aba9dff49421dd7ae1a3628128455d95e6a25350f3be0624ddaf495ad7cadc39",
+            "definitions": [
+              {
+                "name": "WideSearchConfig",
+                "line": 46
+              },
+              {
+                "name": "WideSearchBenchmark",
+                "line": 69
+              }
+            ]
+          }
+        },
+        {
+          "name": "wildclawbench",
+          "class": "WildClawBenchBenchmark",
+          "file": "benchmarks/wildclawbench.py",
+          "line": 115,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "wildclawbench.py",
+            "sha256": "3ae92412e15f20bd590e0c8ab1d779835e456c4a3116af1345af47d033796c1c",
+            "definitions": [
+              {
+                "name": "WildClawBenchConfig",
+                "line": 53
+              },
+              {
+                "name": "WildClawBenchBenchmarkPlan",
+                "line": 97
+              },
+              {
+                "name": "WildClawBenchBenchmark",
+                "line": 115
+              }
+            ]
+          }
+        },
+        {
+          "name": "xbench_deepsearch",
+          "class": "XBenchDeepSearchBenchmark",
+          "file": "benchmarks/xbench_deepsearch.py",
+          "line": 87,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "xbench_deepsearch.py",
+            "sha256": "000ae03e1be97e509b7c1e4116019e93e175f7be1a0b2c39af81804c40807090",
+            "definitions": [
+              {
+                "name": "_xor_decrypt",
+                "line": 27
+              },
+              {
+                "name": "_ensure_dataset",
+                "line": 39
+              },
+              {
+                "name": "XBenchDeepSearchConfig",
+                "line": 59
+              },
+              {
+                "name": "XBenchDeepSearchBenchmark",
+                "line": 87
+              }
+            ]
+          }
+        }
+      ],
+      "harnesses": [
+        {
+          "name": "claude_code",
+          "class": "ClaudeCodeHarness",
+          "file": "harnesses/claude_code.py",
+          "line": 114,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "claude_code.py",
+            "sha256": "4d687de073519b5a77492309a516a7f5a49291580d57c02969a6f88af6bde32e",
+            "definitions": [
+              {
+                "name": "ClaudeCodeConfig",
+                "line": 36
+              },
+              {
+                "name": "ClaudeCodeHarnessPlan",
+                "line": 95
+              },
+              {
+                "name": "ClaudeCodeHarness",
+                "line": 114
+              }
+            ]
+          }
+        },
+        {
+          "name": "codex",
+          "class": "CodexHarness",
+          "file": "harnesses/codex.py",
+          "line": 116,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "codex.py",
+            "sha256": "2c5d069a06aae940504782ceb0de06003f9125569642e343be3920cb46dadcfc",
+            "definitions": [
+              {
+                "name": "CodexConfig",
+                "line": 34
+              },
+              {
+                "name": "CodexHarnessPlan",
+                "line": 98
+              },
+              {
+                "name": "CodexHarness",
+                "line": 116
+              }
+            ]
+          }
+        },
+        {
+          "name": "mini_swe_agent",
+          "class": "MiniSWEAgentHarness",
+          "file": "harnesses/mini_swe_agent/harness.py",
+          "line": 92,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "harness.py",
+            "sha256": "0aa94427384b23ad3a60ec07fecad5736b93ac2e5a3edc7d5f99c660f4ae0d85",
+            "definitions": [
+              {
+                "name": "MiniSWEAgentConfig",
+                "line": 36
+              },
+              {
+                "name": "MiniSWEAgentHarness",
+                "line": 92
+              }
+            ]
+          }
+        },
+        {
+          "name": "naive_search_agent",
+          "class": "NaiveSearchAgentHarness",
+          "file": "harnesses/naive_search_agent/harness.py",
+          "line": 79,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "harness.py",
+            "sha256": "d69b4bb8a65f424dcfd563726023bf5f4714e9df4dc68d2474eddb5495ae35e0",
+            "definitions": [
+              {
+                "name": "NaiveSearchAgentConfig",
+                "line": 29
+              },
+              {
+                "name": "NaiveSearchAgentHarness",
+                "line": 79
+              }
+            ]
+          }
+        },
+        {
+          "name": "openai_chat",
+          "class": "OpenAIChatHarness",
+          "file": "harnesses/openai_chat.py",
+          "line": 127,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "openai_chat.py",
+            "sha256": "5b52c9e00d94893a45ce3f533b487738b83446fb9e06535ee9f6d17634dbac57",
+            "definitions": [
+              {
+                "name": "_make_truncated_response",
+                "line": 27
+              },
+              {
+                "name": "OpenAIChatConfig",
+                "line": 32
+              },
+              {
+                "name": "OpenAIChatHarnessPlan",
+                "line": 43
+              },
+              {
+                "name": "_convert_tools_to_openai",
+                "line": 47
+              },
+              {
+                "name": "_call_openai",
+                "line": 74
+              },
+              {
+                "name": "OpenAIChatHarness",
+                "line": 127
+              }
+            ]
+          }
+        },
+        {
+          "name": "openclaw",
+          "class": "OpenClawHarness",
+          "file": "harnesses/openclaw.py",
+          "line": 142,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "openclaw.py",
+            "sha256": "d72b78a2e2777d7f727814694ad84ecfb965dbc7065b7131a0efbbfdd98b02f0",
+            "definitions": [
+              {
+                "name": "_openclaw_install_command",
+                "line": 40
+              },
+              {
+                "name": "OpenClawConfig",
+                "line": 49
+              },
+              {
+                "name": "OpenClawHarnessPlan",
+                "line": 119
+              },
+              {
+                "name": "OpenClawHarness",
+                "line": 142
+              }
+            ]
+          }
+        },
+        {
+          "name": "openevolve",
+          "class": "OpenEvolveHarness",
+          "file": "harnesses/openevolve/harness.py",
+          "line": 93,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "harness.py",
+            "sha256": "2b2000e625db93202d26d4bfcf47f15011654c3d3ba8a75188b22077e9a550eb",
+            "definitions": [
+              {
+                "name": "_parse_nonnegative_int",
+                "line": 52
+              },
+              {
+                "name": "OpenEvolveConfig",
+                "line": 63
+              },
+              {
+                "name": "OpenEvolvePlan",
+                "line": 83
+              },
+              {
+                "name": "OpenEvolveHarness",
+                "line": 93
+              },
+              {
+                "name": "_program_evolution_spec_path",
+                "line": 603
+              },
+              {
+                "name": "_candidate_output_path",
+                "line": 613
+              },
+              {
+                "name": "_require_program_evolution_keys",
+                "line": 623
+              },
+              {
+                "name": "_program_evolution_source_files",
+                "line": 637
+              },
+              {
+                "name": "_dedupe_source_files",
+                "line": 643
+              },
+              {
+                "name": "_source_file_rel",
+                "line": 655
+              },
+              {
+                "name": "_evaluator_file_for_runner_source",
+                "line": 667
+              },
+              {
+                "name": "_local_agentcompass_source_dir",
+                "line": 680
+              },
+              {
+                "name": "_runner_path_from_source_dir",
+                "line": 687
+              },
+              {
+                "name": "_remote_join",
+                "line": 694
+              },
+              {
+                "name": "_evaluator_timeout",
+                "line": 704
+              },
+              {
+                "name": "_tail",
+                "line": 715
+              },
+              {
+                "name": "_log_progress_line",
+                "line": 725
+              },
+              {
+                "name": "_relay_progress",
+                "line": 744
+              },
+              {
+                "name": "_read_remote_text",
+                "line": 756
+              },
+              {
+                "name": "_read_remote_json",
+                "line": 765
+              },
+              {
+                "name": "_numeric",
+                "line": 775
+              },
+              {
+                "name": "_extract_score",
+                "line": 788
+              }
+            ]
+          }
+        },
+        {
+          "name": "openhands",
+          "class": "OpenHandsHarness",
+          "file": "harnesses/openhands/harness.py",
+          "line": 86,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "harness.py",
+            "sha256": "4fa1c285875434cd312323d14cff426c879a11df98ef642f177d1344a47484dd",
+            "definitions": [
+              {
+                "name": "OpenHandsConfig",
+                "line": 28
+              },
+              {
+                "name": "OpenHandsHarness",
+                "line": 86
+              }
+            ]
+          }
+        },
+        {
+          "name": "qwen3vl_gui",
+          "class": "Qwen3VLGUIHarness",
+          "file": "harnesses/qwen3vl_gui.py",
+          "line": 28,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "qwen3vl_gui.py",
+            "sha256": "ca1a735935fbf8c672722502563e840f71c22faa2c50a67e4ef64f7e59569392",
+            "definitions": [
+              {
+                "name": "Qwen3VLGUIConfig",
+                "line": 23
+              },
+              {
+                "name": "Qwen3VLGUIHarness",
+                "line": 28
+              }
+            ]
+          }
+        },
+        {
+          "name": "researchharness",
+          "class": "ResearchHarness",
+          "file": "harnesses/researchharness.py",
+          "line": 329,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "researchharness.py",
+            "sha256": "378e6c6307059e0e18abbdb96b036329351de4afdd74ef397ec7238b48f3d952",
+            "definitions": [
+              {
+                "name": "ResearchHarnessConfig",
+                "line": 241
+              },
+              {
+                "name": "ResearchHarnessPlan",
+                "line": 306
+              },
+              {
+                "name": "ResearchHarness",
+                "line": 329
+              }
+            ]
+          }
+        },
+        {
+          "name": "scicode_tool_use",
+          "class": "SciCodeToolUseHarness",
+          "file": "harnesses/scicode_tool_use.py",
+          "line": 234,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "scicode_tool_use.py",
+            "sha256": "aeb64a36b2adecf99099dcef29d705041fe3666e61b29636f23399a419627cd7",
+            "definitions": [
+              {
+                "name": "_append_unique",
+                "line": 38
+              },
+              {
+                "name": "_scicode_data_dirs",
+                "line": 43
+              },
+              {
+                "name": "_read_scicode_text_file",
+                "line": 59
+              },
+              {
+                "name": "_prompt_template",
+                "line": 72
+              },
+              {
+                "name": "_SciCodeModelClient",
+                "line": 78
+              },
+              {
+                "name": "SciCodeToolUseConfig",
+                "line": 177
+              },
+              {
+                "name": "SciCodeToolUseHarnessPlan",
+                "line": 217
+              },
+              {
+                "name": "SciCodeToolUseHarness",
+                "line": 234
+              },
+              {
+                "name": "_SciCodeStepGenerator",
+                "line": 376
+              }
+            ]
+          }
+        },
+        {
+          "name": "terminus2",
+          "class": "Terminus2Harness",
+          "file": "harnesses/terminus2/terminus_2.py",
+          "line": 287,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "terminus_2.py",
+            "sha256": "9c1aadd3d8ee05e1e991356aa7588af3329ec8732defd031f81883eaff219cab",
+            "definitions": [
+              {
+                "name": "AgentTimeoutError",
+                "line": 118
+              },
+              {
+                "name": "VerifierTimeoutError",
+                "line": 122
+              },
+              {
+                "name": "EnvironmentStartTimeoutError",
+                "line": 126
+              },
+              {
+                "name": "ContextRecoveryError",
+                "line": 130
+              },
+              {
+                "name": "Command",
+                "line": 135
+              },
+              {
+                "name": "_terminal_observation_source_call_id",
+                "line": 140
+              },
+              {
+                "name": "SubagentMetrics",
+                "line": 147
+              },
+              {
+                "name": "Terminus2Config",
+                "line": 157
+              },
+              {
+                "name": "Terminus2HarnessPlan",
+                "line": 257
+              },
+              {
+                "name": "Terminus2Harness",
+                "line": 287
+              },
+              {
+                "name": "Terminus2",
+                "line": 335
+              }
+            ]
+          }
+        }
+      ],
+      "environments": [
+        {
+          "name": "brainpp",
+          "class": "BrainppEnvironment",
+          "file": "environments/brainpp.py",
+          "line": 289,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "brainpp.py",
+            "sha256": "82d54c108865da334c340a4ce58860cb27434f53fe6d82072b2708bde17b33b5",
+            "definitions": [
+              {
+                "name": "_retry_transfer_error",
+                "line": 46
+              },
+              {
+                "name": "BrainppSession",
+                "line": 53
+              },
+              {
+                "name": "BrainppEnvironmentConfig",
+                "line": 238
+              },
+              {
+                "name": "BrainppEnvironment",
+                "line": 289
+              }
+            ]
+          }
+        },
+        {
+          "name": "daytona",
+          "class": "DaytonaEnvironment",
+          "file": "environments/daytona.py",
+          "line": 362,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "daytona.py",
+            "sha256": "871a020fe4ff0a8a7c2a6374e4845bd65802c9ee9762577483e676dc2c00452a",
+            "definitions": [
+              {
+                "name": "_optional_str",
+                "line": 48
+              },
+              {
+                "name": "_parse_optional_non_negative_int",
+                "line": 53
+              },
+              {
+                "name": "_parse_optional_float",
+                "line": 65
+              },
+              {
+                "name": "_dirname",
+                "line": 77
+              },
+              {
+                "name": "_validate_daytona_allowlist_limits",
+                "line": 85
+              },
+              {
+                "name": "_daytona_allowlist_targets",
+                "line": 97
+              },
+              {
+                "name": "DaytonaSession",
+                "line": 121
+              },
+              {
+                "name": "DaytonaEnvironmentConfig",
+                "line": 288
+              },
+              {
+                "name": "DaytonaEnvironment",
+                "line": 362
+              }
+            ]
+          }
+        },
+        {
+          "name": "docker",
+          "class": "DockerEnvironment",
+          "file": "environments/docker.py",
+          "line": 416,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "docker.py",
+            "sha256": "4f012d788a554e4c3cf09f5f6568d20722d897212ca3f7a57bc60673795bc2a3",
+            "definitions": [
+              {
+                "name": "_redact_environment_values",
+                "line": 35
+              },
+              {
+                "name": "_is_unsupported_storage_limit_error",
+                "line": 50
+              },
+              {
+                "name": "_write_proxy_policy",
+                "line": 58
+              },
+              {
+                "name": "_run_subprocess",
+                "line": 66
+              },
+              {
+                "name": "DockerSession",
+                "line": 110
+              },
+              {
+                "name": "DockerEnvironmentConfig",
+                "line": 326
+              },
+              {
+                "name": "DockerEnvironment",
+                "line": 416
+              }
+            ]
+          }
+        },
+        {
+          "name": "pcluster",
+          "class": "PClusterEnvironment",
+          "file": "environments/env_gateway.py",
+          "line": 613,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "env_gateway.py",
+            "sha256": "5f632c63762b0117c5f0b6c6baf712b0f3f8245ff2cd9d9d4156cd5be108e4b4",
+            "definitions": [
+              {
+                "name": "_env_gateway_resource_limits",
+                "line": 44
+              },
+              {
+                "name": "_redact_url_for_log",
+                "line": 55
+              },
+              {
+                "name": "EnvGatewaySession",
+                "line": 68
+              },
+              {
+                "name": "_PvisorEnvGatewaySession",
+                "line": 247
+              },
+              {
+                "name": "HboxSession",
+                "line": 334
+              },
+              {
+                "name": "DBoxSession",
+                "line": 340
+              },
+              {
+                "name": "EnvGatewayEnvironmentConfig",
+                "line": 347
+              },
+              {
+                "name": "DBoxEnvironmentConfig",
+                "line": 418
+              },
+              {
+                "name": "HboxEnvironmentConfig",
+                "line": 432
+              },
+              {
+                "name": "EnvGatewayEnvironment",
+                "line": 443
+              },
+              {
+                "name": "PClusterEnvironment",
+                "line": 613
+              },
+              {
+                "name": "DBoxEnvironment",
+                "line": 619
+              },
+              {
+                "name": "HSandBoxEnvironment",
+                "line": 697
+              }
+            ]
+          }
+        },
+        {
+          "name": "dbox",
+          "class": "DBoxEnvironment",
+          "file": "environments/env_gateway.py",
+          "line": 619,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "env_gateway.py",
+            "sha256": "5f632c63762b0117c5f0b6c6baf712b0f3f8245ff2cd9d9d4156cd5be108e4b4",
+            "definitions": [
+              {
+                "name": "_env_gateway_resource_limits",
+                "line": 44
+              },
+              {
+                "name": "_redact_url_for_log",
+                "line": 55
+              },
+              {
+                "name": "EnvGatewaySession",
+                "line": 68
+              },
+              {
+                "name": "_PvisorEnvGatewaySession",
+                "line": 247
+              },
+              {
+                "name": "HboxSession",
+                "line": 334
+              },
+              {
+                "name": "DBoxSession",
+                "line": 340
+              },
+              {
+                "name": "EnvGatewayEnvironmentConfig",
+                "line": 347
+              },
+              {
+                "name": "DBoxEnvironmentConfig",
+                "line": 418
+              },
+              {
+                "name": "HboxEnvironmentConfig",
+                "line": 432
+              },
+              {
+                "name": "EnvGatewayEnvironment",
+                "line": 443
+              },
+              {
+                "name": "PClusterEnvironment",
+                "line": 613
+              },
+              {
+                "name": "DBoxEnvironment",
+                "line": 619
+              },
+              {
+                "name": "HSandBoxEnvironment",
+                "line": 697
+              }
+            ]
+          }
+        },
+        {
+          "name": "hbox",
+          "class": "HSandBoxEnvironment",
+          "file": "environments/env_gateway.py",
+          "line": 697,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "env_gateway.py",
+            "sha256": "5f632c63762b0117c5f0b6c6baf712b0f3f8245ff2cd9d9d4156cd5be108e4b4",
+            "definitions": [
+              {
+                "name": "_env_gateway_resource_limits",
+                "line": 44
+              },
+              {
+                "name": "_redact_url_for_log",
+                "line": 55
+              },
+              {
+                "name": "EnvGatewaySession",
+                "line": 68
+              },
+              {
+                "name": "_PvisorEnvGatewaySession",
+                "line": 247
+              },
+              {
+                "name": "HboxSession",
+                "line": 334
+              },
+              {
+                "name": "DBoxSession",
+                "line": 340
+              },
+              {
+                "name": "EnvGatewayEnvironmentConfig",
+                "line": 347
+              },
+              {
+                "name": "DBoxEnvironmentConfig",
+                "line": 418
+              },
+              {
+                "name": "HboxEnvironmentConfig",
+                "line": 432
+              },
+              {
+                "name": "EnvGatewayEnvironment",
+                "line": 443
+              },
+              {
+                "name": "PClusterEnvironment",
+                "line": 613
+              },
+              {
+                "name": "DBoxEnvironment",
+                "line": 619
+              },
+              {
+                "name": "HSandBoxEnvironment",
+                "line": 697
+              }
+            ]
+          }
+        },
+        {
+          "name": "host_process",
+          "class": "HostProcessEnvironment",
+          "file": "environments/host_process.py",
+          "line": 176,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "host_process.py",
+            "sha256": "0f6ee19c2a1bb6b53b31c163390fa8a4f7c49d335689164f857f8e7f2b953641",
+            "definitions": [
+              {
+                "name": "HostProcessSession",
+                "line": 25
+              },
+              {
+                "name": "HostProcessEnvironmentConfig",
+                "line": 166
+              },
+              {
+                "name": "HostProcessEnvironment",
+                "line": 176
+              }
+            ]
+          }
+        },
+        {
+          "name": "hsandbox",
+          "class": "NaiveHSandboxEnvironment",
+          "file": "environments/hsandbox.py",
+          "line": 365,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "hsandbox.py",
+            "sha256": "bee2a22676c71a54715ee52f82cc29ef984066a9a62df5c4940387774d66987a",
+            "definitions": [
+              {
+                "name": "HPlatformAPIError",
+                "line": 40
+              },
+              {
+                "name": "HPlatformSandboxClient",
+                "line": 69
+              },
+              {
+                "name": "NaiveHSandboxSession",
+                "line": 223
+              },
+              {
+                "name": "NaiveHSandboxEnvironmentConfig",
+                "line": 316
+              },
+              {
+                "name": "NaiveHSandboxEnvironment",
+                "line": 365
+              }
+            ]
+          }
+        },
+        {
+          "name": "modal",
+          "class": "ModalEnvironment",
+          "file": "environments/modal.py",
+          "line": 393,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "modal.py",
+            "sha256": "228b1877cbc85532724cd02b406c1c8cf00214ef9344ce11b8ea44760dd95be0",
+            "definitions": [
+              {
+                "name": "_optional_str",
+                "line": 42
+              },
+              {
+                "name": "_parse_optional_non_negative_int",
+                "line": 47
+              },
+              {
+                "name": "_parse_optional_positive_float",
+                "line": 59
+              },
+              {
+                "name": "_parse_optional_region",
+                "line": 71
+              },
+              {
+                "name": "_dirname",
+                "line": 83
+              },
+              {
+                "name": "_call_maybe_async",
+                "line": 91
+              },
+              {
+                "name": "_coerce_text",
+                "line": 106
+              },
+              {
+                "name": "_read_process_stream",
+                "line": 114
+              },
+              {
+                "name": "_modal_network_kwargs",
+                "line": 125
+              },
+              {
+                "name": "_modal_dynamic_network_kwargs",
+                "line": 165
+              },
+              {
+                "name": "ModalSession",
+                "line": 171
+              },
+              {
+                "name": "ModalEnvironmentConfig",
+                "line": 333
+              },
+              {
+                "name": "ModalEnvironment",
+                "line": 393
+              }
+            ]
+          }
+        },
+        {
+          "name": "opensandbox",
+          "class": "OpenSandboxEnvironment",
+          "file": "environments/opensandbox.py",
+          "line": 285,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "opensandbox.py",
+            "sha256": "31888a577da4765a24ccb373ce29c900fae37a7cec8d01bbe8f7565e8b524e24",
+            "definitions": [
+              {
+                "name": "_optional_str",
+                "line": 37
+              },
+              {
+                "name": "_opensandbox_resource_limits",
+                "line": 42
+              },
+              {
+                "name": "_is_command_timeout",
+                "line": 55
+              },
+              {
+                "name": "_append_timeout_message",
+                "line": 66
+              },
+              {
+                "name": "OpenSandboxSession",
+                "line": 74
+              },
+              {
+                "name": "OpenSandboxEnvironmentConfig",
+                "line": 226
+              },
+              {
+                "name": "OpenSandboxEnvironment",
+                "line": 285
+              }
+            ]
+          }
+        }
+      ],
+      "recipes": [
+        {
+          "name": "brainarena_docker",
+          "class": "BrainArenaDockerRecipe",
+          "file": "recipes/brainarena/docker.py",
+          "line": 12,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "docker.py",
+            "sha256": "02c8e899e83faaecd1ddcd16f18402923c45359b0812bef0f753e5f0723763ab",
+            "definitions": [
+              {
+                "name": "BrainArenaDockerRecipe",
+                "line": 12
+              }
+            ]
+          }
+        },
+        {
+          "name": "deepswe_daytona_prebaked",
+          "class": "DeepSWEDaytonaRecipe",
+          "file": "recipes/deepswe/daytona.py",
+          "line": 12,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "daytona.py",
+            "sha256": "0c185789a402457acaabcb49eae76d0a8cf477a0760b771cbbfa60b35789ef5f",
+            "definitions": [
+              {
+                "name": "DeepSWEDaytonaRecipe",
+                "line": 12
+              }
+            ]
+          }
+        },
+        {
+          "name": "deepswe_docker_prebaked",
+          "class": "DeepSWEDockerRecipe",
+          "file": "recipes/deepswe/docker.py",
+          "line": 12,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "docker.py",
+            "sha256": "9f4b434a1f9dda4575dc58c6c25678dda57f8e289f62514a2b87c47fd75a161d",
+            "definitions": [
+              {
+                "name": "DeepSWEDockerRecipe",
+                "line": 12
+              }
+            ]
+          }
+        },
+        {
+          "name": "deepswe_modal_prebaked",
+          "class": "DeepSWEModalRecipe",
+          "file": "recipes/deepswe/modal.py",
+          "line": 12,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "modal.py",
+            "sha256": "9bf8a026a616d1686656724479c46d2cafccce8380366a1f21053741a4034274",
+            "definitions": [
+              {
+                "name": "DeepSWEModalRecipe",
+                "line": 12
+              }
+            ]
+          }
+        },
+        {
+          "name": "frontier_engineering_docker",
+          "class": "FrontierEngineeringDockerRecipe",
+          "file": "recipes/frontier_engineering/docker.py",
+          "line": 65,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "docker.py",
+            "sha256": "336ff09a3e51aafde284c5c448051a927232dad83e310adbca6d51d90060e1ea",
+            "definitions": [
+              {
+                "name": "clone_execution_plan",
+                "line": 24
+              },
+              {
+                "name": "require_fe_benchmark_plan",
+                "line": 28
+              },
+              {
+                "name": "resolve_docker_image",
+                "line": 45
+              },
+              {
+                "name": "apply_image_layout",
+                "line": 56
+              },
+              {
+                "name": "FrontierEngineeringDockerRecipe",
+                "line": 65
+              }
+            ]
+          }
+        },
+        {
+          "name": "frontier_swe_daytona_prebaked",
+          "class": "FrontierSWEDaytonaRecipe",
+          "file": "recipes/frontier_swe/daytona.py",
+          "line": 12,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "daytona.py",
+            "sha256": "06f178a79d59739b20b7635466177377f1954a352d260e28148f5fe5e1cb32be",
+            "definitions": [
+              {
+                "name": "FrontierSWEDaytonaRecipe",
+                "line": 12
+              }
+            ]
+          }
+        },
+        {
+          "name": "frontier_swe_docker_prebaked",
+          "class": "FrontierSWEDockerRecipe",
+          "file": "recipes/frontier_swe/docker.py",
+          "line": 12,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "docker.py",
+            "sha256": "fb94bdd58dc4e5caad221d017ba618174979618a4b05fb241fd32fa2c8809ad0",
+            "definitions": [
+              {
+                "name": "FrontierSWEDockerRecipe",
+                "line": 12
+              }
+            ]
+          }
+        },
+        {
+          "name": "frontier_swe_modal_prebaked",
+          "class": "FrontierSWEModalRecipe",
+          "file": "recipes/frontier_swe/modal.py",
+          "line": 12,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "modal.py",
+            "sha256": "10237a21b3cf2d3b2d0713c6b55917ad53abc77c3e28f96ceee974816e4bc92f",
+            "definitions": [
+              {
+                "name": "FrontierSWEModalRecipe",
+                "line": 12
+              }
+            ]
+          }
+        },
+        {
+          "name": "gdpval_ac_daytona",
+          "class": "GDPValACDaytonaRecipe",
+          "file": "recipes/gdpval_ac/daytona.py",
+          "line": 10,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "daytona.py",
+            "sha256": "d9a4a918f98b73912278b472d79372aa6ac6625d26f18346265a0bfa6796aae9",
+            "definitions": [
+              {
+                "name": "GDPValACDaytonaRecipe",
+                "line": 10
+              }
+            ]
+          }
+        },
+        {
+          "name": "gdpval_ac_docker",
+          "class": "GDPValACDockerRecipe",
+          "file": "recipes/gdpval_ac/docker.py",
+          "line": 17,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "docker.py",
+            "sha256": "54c03cc2a052ded0f71fbac12976f2129c80699f63df176e08b490b78eb91888",
+            "definitions": [
+              {
+                "name": "GDPValACDockerRecipe",
+                "line": 17
+              }
+            ]
+          }
+        },
+        {
+          "name": "gdpval_ac_modal",
+          "class": "GDPValACModalRecipe",
+          "file": "recipes/gdpval_ac/modal.py",
+          "line": 10,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "modal.py",
+            "sha256": "787e191c170113838bcd8485ce7a8d9f7362e33f099bd54eadf53c856912747f",
+            "definitions": [
+              {
+                "name": "GDPValACModalRecipe",
+                "line": 10
+              }
+            ]
+          }
+        },
+        {
+          "name": "osworld_docker",
+          "class": "OSWorldDockerRecipe",
+          "file": "recipes/osworld/docker.py",
+          "line": 71,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "docker.py",
+            "sha256": "1d8b20a495bc6904fdf7ef66bb1d3666c4c998ede7e03df90bb6c54ef6c1e2b2",
+            "definitions": [
+              {
+                "name": "_mount_targets",
+                "line": 47
+              },
+              {
+                "name": "_published_container_ports",
+                "line": 61
+              },
+              {
+                "name": "OSWorldDockerRecipe",
+                "line": 71
+              }
+            ]
+          }
+        },
+        {
+          "name": "pinchbench_daytona",
+          "class": "PinchBenchDaytonaRecipe",
+          "file": "recipes/pinchbench/daytona.py",
+          "line": 15,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "daytona.py",
+            "sha256": "ead1e8b57aaa7cde2e9421f2a995b6bc7795fcc9cfa4a5c9ce202dfa7f854dd1",
+            "definitions": [
+              {
+                "name": "PinchBenchDaytonaRecipe",
+                "line": 15
+              }
+            ]
+          }
+        },
+        {
+          "name": "pinchbench_docker",
+          "class": "PinchBenchDockerRecipe",
+          "file": "recipes/pinchbench/docker.py",
+          "line": 15,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "docker.py",
+            "sha256": "6e129c24f6d21bbd192a9bc6fb352a9fc278f4d44a3db3a797383abffbf32374",
+            "definitions": [
+              {
+                "name": "PinchBenchDockerRecipe",
+                "line": 15
+              }
+            ]
+          }
+        },
+        {
+          "name": "pinchbench_modal",
+          "class": "PinchBenchModalRecipe",
+          "file": "recipes/pinchbench/modal.py",
+          "line": 15,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "modal.py",
+            "sha256": "fd333af8a3db04b2a3c1cfd774eda9b79518cbae28ba63a20471e6de4b27a380",
+            "definitions": [
+              {
+                "name": "PinchBenchModalRecipe",
+                "line": 15
+              }
+            ]
+          }
+        },
+        {
+          "name": "researchclawbench_daytona",
+          "class": "ResearchClawBenchDaytonaRecipe",
+          "file": "recipes/researchclawbench/daytona.py",
+          "line": 12,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "daytona.py",
+            "sha256": "297c0f00c5be7e0d18251918571f3acb8ca8144e9a841994140431fade9eb441",
+            "definitions": [
+              {
+                "name": "ResearchClawBenchDaytonaRecipe",
+                "line": 12
+              }
+            ]
+          }
+        },
+        {
+          "name": "researchclawbench_docker",
+          "class": "ResearchClawBenchDockerRecipe",
+          "file": "recipes/researchclawbench/docker.py",
+          "line": 14,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "docker.py",
+            "sha256": "053dd27f432539124eaea00c452234848e59eaecd97aaf1b36482af7893c5b35",
+            "definitions": [
+              {
+                "name": "ResearchClawBenchDockerRecipe",
+                "line": 14
+              }
+            ]
+          }
+        },
+        {
+          "name": "researchclawbench_modal",
+          "class": "ResearchClawBenchModalRecipe",
+          "file": "recipes/researchclawbench/modal.py",
+          "line": 12,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "modal.py",
+            "sha256": "57361c660d039e4c97f00b515da2dd2234cd1b8011cfa0be4827644ac7f4a5ce",
+            "definitions": [
+              {
+                "name": "ResearchClawBenchModalRecipe",
+                "line": 12
+              }
+            ]
+          }
+        },
+        {
+          "name": "skillsbench_docker",
+          "class": "SkillsBenchDockerRecipe",
+          "file": "recipes/skillsbench/docker.py",
+          "line": 19,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "docker.py",
+            "sha256": "284ee5eb2fe7111331437d408f800ef7c10685bb96637bba8ebc9015ea58f841",
+            "definitions": [
+              {
+                "name": "SkillsBenchDockerRecipe",
+                "line": 19
+              }
+            ]
+          }
+        },
+        {
+          "name": "swe_marathon_docker",
+          "class": "SWEMarathonDockerRecipe",
+          "file": "recipes/swe_marathon/docker.py",
+          "line": 14,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "docker.py",
+            "sha256": "580f980b4d6e5b20a77305a12881f50e7eaadaa0e1f14947167ba0fb5f6f3c2a",
+            "definitions": [
+              {
+                "name": "SWEMarathonDockerRecipe",
+                "line": 14
+              }
+            ]
+          }
+        },
+        {
+          "name": "swebench_multilingual_daytona_prebaked",
+          "class": "SWEBenchMultilingualDaytonaRecipe",
+          "file": "recipes/swebench_multilingual/daytona.py",
+          "line": 16,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "daytona.py",
+            "sha256": "eb98776c3ed9414abea9ac805739c4c47cb56553666a6082fbaff90c54bc8511",
+            "definitions": [
+              {
+                "name": "_get_public_image",
+                "line": 11
+              },
+              {
+                "name": "SWEBenchMultilingualDaytonaRecipe",
+                "line": 16
+              }
+            ]
+          }
+        },
+        {
+          "name": "swebench_multilingual_docker_prebaked",
+          "class": "SWEBenchMultilingualDockerRecipe",
+          "file": "recipes/swebench_multilingual/docker.py",
+          "line": 12,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "docker.py",
+            "sha256": "4da3bfcd13cc3f7ac65a689c3c85c3e5d4c7483fed6b09fd1417e0011d32d207",
+            "definitions": [
+              {
+                "name": "SWEBenchMultilingualDockerRecipe",
+                "line": 12
+              }
+            ]
+          }
+        },
+        {
+          "name": "swebench_multilingual_modal_prebaked",
+          "class": "SWEBenchMultilingualModalRecipe",
+          "file": "recipes/swebench_multilingual/modal.py",
+          "line": 16,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "modal.py",
+            "sha256": "186ba3bda9695370ef671e1fdd4c131633316695166ec993091275f7bc17ff85",
+            "definitions": [
+              {
+                "name": "_get_public_image",
+                "line": 11
+              },
+              {
+                "name": "SWEBenchMultilingualModalRecipe",
+                "line": 16
+              }
+            ]
+          }
+        },
+        {
+          "name": "swebench_pro_daytona_prebaked",
+          "class": "SWEBenchProDaytonaRecipe",
+          "file": "recipes/swebench_pro/daytona.py",
+          "line": 12,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "daytona.py",
+            "sha256": "b48552603dddd413108b4964eca547969ff4273cb2146ee86f732e0d2e8b4c5f",
+            "definitions": [
+              {
+                "name": "SWEBenchProDaytonaRecipe",
+                "line": 12
+              }
+            ]
+          }
+        },
+        {
+          "name": "swebench_pro_docker_prebaked",
+          "class": "SWEBenchProDockerRecipe",
+          "file": "recipes/swebench_pro/docker.py",
+          "line": 14,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "docker.py",
+            "sha256": "9ab76b5d739aba1249fa4948f055b34dc62cbd7aba8eb4a375c80aaca8f4d824",
+            "definitions": [
+              {
+                "name": "SWEBenchProDockerRecipe",
+                "line": 14
+              }
+            ]
+          }
+        },
+        {
+          "name": "swebench_pro_modal_prebaked",
+          "class": "SWEBenchProModalRecipe",
+          "file": "recipes/swebench_pro/modal.py",
+          "line": 12,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "modal.py",
+            "sha256": "2a0bdbf0ad6f6b3685be2c518c94ff471e760ea20956188a2d1e965511b82422",
+            "definitions": [
+              {
+                "name": "SWEBenchProModalRecipe",
+                "line": 12
+              }
+            ]
+          }
+        },
+        {
+          "name": "swebench_pro_verified_docker_prebaked",
+          "class": "SWEBenchProVerifiedDockerRecipe",
+          "file": "recipes/swebench_pro_verified/docker.py",
+          "line": 14,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "docker.py",
+            "sha256": "37fe874e6de71a650334fc953104119279864b9cbe405c991068e4b45be2ff26",
+            "definitions": [
+              {
+                "name": "SWEBenchProVerifiedDockerRecipe",
+                "line": 14
+              }
+            ]
+          }
+        },
+        {
+          "name": "swebench_verified_daytona_prebaked",
+          "class": "SWEBenchVerifiedDaytonaRecipe",
+          "file": "recipes/swebench_verified/daytona.py",
+          "line": 29,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "daytona.py",
+            "sha256": "82193af28f06a89b2bbdf97453faa7410cd5c2b39fe31ef43b3107d08867f428",
+            "definitions": [
+              {
+                "name": "_get_public_image",
+                "line": 16
+              },
+              {
+                "name": "_get_image_tag",
+                "line": 20
+              },
+              {
+                "name": "SWEBenchVerifiedDaytonaRecipe",
+                "line": 29
+              }
+            ]
+          }
+        },
+        {
+          "name": "swebench_verified_docker_prebaked",
+          "class": "SWEBenchVerifiedDockerRecipe",
+          "file": "recipes/swebench_verified/docker.py",
+          "line": 15,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "docker.py",
+            "sha256": "00e09dd12fdbbb6200f386323345e677b9304929c490f95f941dfebe9e51e71e",
+            "definitions": [
+              {
+                "name": "SWEBenchVerifiedDockerRecipe",
+                "line": 15
+              }
+            ]
+          }
+        },
+        {
+          "name": "swebench_verified_host_process",
+          "class": "SWEBenchVerifiedHostProcessRecipe",
+          "file": "recipes/swebench_verified/host_process.py",
+          "line": 11,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "host_process.py",
+            "sha256": "8f81a60a2dedda0dd8f94c502e68e5828e48a79ea838dcda07976e82bc030755",
+            "definitions": [
+              {
+                "name": "SWEBenchVerifiedHostProcessRecipe",
+                "line": 11
+              }
+            ]
+          }
+        },
+        {
+          "name": "swebench_verified_modal_prebaked",
+          "class": "SWEBenchVerifiedModalRecipe",
+          "file": "recipes/swebench_verified/modal.py",
+          "line": 29,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "modal.py",
+            "sha256": "74b69b532ff00201c7bb02f9c0b9b5e4bfae7e94c73c7d3298cc0221cea456ef",
+            "definitions": [
+              {
+                "name": "_get_public_image",
+                "line": 16
+              },
+              {
+                "name": "_get_image_tag",
+                "line": 20
+              },
+              {
+                "name": "SWEBenchVerifiedModalRecipe",
+                "line": 29
+              }
+            ]
+          }
+        },
+        {
+          "name": "taubench_docker",
+          "class": "TauBenchDockerRecipe",
+          "file": "recipes/taubench/docker.py",
+          "line": 19,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "docker.py",
+            "sha256": "43ab43ccf9c5d07c984bec37b4ab595f9c4a805544de100e0e6214161f8b748e",
+            "definitions": [
+              {
+                "name": "TauBenchDockerRecipe",
+                "line": 19
+              }
+            ]
+          }
+        },
+        {
+          "name": "terminalbench2_daytona",
+          "class": "TerminalBench2DaytonaRecipe",
+          "file": "recipes/terminalbench2/daytona.py",
+          "line": 12,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "daytona.py",
+            "sha256": "2291d80fdc8f469a4db826e318210cbdd8ad5451e8726f8fbf4ec65af83f1384",
+            "definitions": [
+              {
+                "name": "TerminalBench2DaytonaRecipe",
+                "line": 12
+              }
+            ]
+          }
+        },
+        {
+          "name": "terminalbench2_docker",
+          "class": "TerminalBench2DockerRecipe",
+          "file": "recipes/terminalbench2/docker.py",
+          "line": 11,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "docker.py",
+            "sha256": "e8663e15767c9829b07c6cbc1477b1f53a4c08cd9e09cde4871be11742b62abb",
+            "definitions": [
+              {
+                "name": "TerminalBench2DockerRecipe",
+                "line": 11
+              }
+            ]
+          }
+        },
+        {
+          "name": "terminalbench2_docker_ac",
+          "class": "TerminalBench2DockerACRecipe",
+          "file": "recipes/terminalbench2/docker_ac.py",
+          "line": 34,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "docker_ac.py",
+            "sha256": "00ff6966ab895a343ae3c0e623f5ba8fb64d1f4d689179546e0dccf44fb69939",
+            "definitions": [
+              {
+                "name": "_task_name_from_image",
+                "line": 14
+              },
+              {
+                "name": "_build_ac_image",
+                "line": 29
+              },
+              {
+                "name": "TerminalBench2DockerACRecipe",
+                "line": 34
+              }
+            ]
+          }
+        },
+        {
+          "name": "terminalbench2_modal",
+          "class": "TerminalBench2ModalRecipe",
+          "file": "recipes/terminalbench2/modal.py",
+          "line": 11,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "modal.py",
+            "sha256": "ecf83dafe603ed8819ea97c8a3e102dc3b5549ecee3bff187492b3828608e155",
+            "definitions": [
+              {
+                "name": "TerminalBench2ModalRecipe",
+                "line": 11
+              }
+            ]
+          }
+        },
+        {
+          "name": "terminalbench2_1_daytona",
+          "class": "TerminalBench21DaytonaRecipe",
+          "file": "recipes/terminalbench2_1/daytona.py",
+          "line": 12,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "daytona.py",
+            "sha256": "e8ed5ab4c19aa61f06908d92083023784636827e0fd5bb44e18fa10e0fccacba",
+            "definitions": [
+              {
+                "name": "TerminalBench21DaytonaRecipe",
+                "line": 12
+              }
+            ]
+          }
+        },
+        {
+          "name": "terminalbench2_1_docker",
+          "class": "TerminalBench21DockerRecipe",
+          "file": "recipes/terminalbench2_1/docker.py",
+          "line": 11,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "docker.py",
+            "sha256": "e156141615f8a0816754316351846799ec031754cc2a03151fc144a2b69fd70f",
+            "definitions": [
+              {
+                "name": "TerminalBench21DockerRecipe",
+                "line": 11
+              }
+            ]
+          }
+        },
+        {
+          "name": "terminalbench2_1_docker_ac",
+          "class": "TerminalBench21DockerACRecipe",
+          "file": "recipes/terminalbench2_1/docker_ac.py",
+          "line": 34,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "docker_ac.py",
+            "sha256": "9f764b6d818ea24692e79af568b37b7312a159be13f0f4b459bf8105aba8a2a2",
+            "definitions": [
+              {
+                "name": "_task_name_from_image",
+                "line": 14
+              },
+              {
+                "name": "_build_ac_image",
+                "line": 29
+              },
+              {
+                "name": "TerminalBench21DockerACRecipe",
+                "line": 34
+              }
+            ]
+          }
+        },
+        {
+          "name": "terminalbench2_1_modal",
+          "class": "TerminalBench21ModalRecipe",
+          "file": "recipes/terminalbench2_1/modal.py",
+          "line": 11,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "modal.py",
+            "sha256": "a55bb4a741a5a9fbc2d0870169ee60dc3d6530d2f6c59b1aeece0cfa89d8cd10",
+            "definitions": [
+              {
+                "name": "TerminalBench21ModalRecipe",
+                "line": 11
+              }
+            ]
+          }
+        },
+        {
+          "name": "terminalbench2_verified_daytona",
+          "class": "TerminalBench2VerifiedDaytonaRecipe",
+          "file": "recipes/terminalbench2_verified/daytona.py",
+          "line": 13,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "daytona.py",
+            "sha256": "0956be7afbf0da646432c4574e24af632e6eec52d8e9dedbea0e9639286e67ca",
+            "definitions": [
+              {
+                "name": "TerminalBench2VerifiedDaytonaRecipe",
+                "line": 13
+              }
+            ]
+          }
+        },
+        {
+          "name": "terminalbench2_verified_docker",
+          "class": "TerminalBench2VerifiedDockerRecipe",
+          "file": "recipes/terminalbench2_verified/docker.py",
+          "line": 12,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "docker.py",
+            "sha256": "65bdf9bf94a52824c608eb8718175800e4dc013f1cb6d199eca0aff49f4c2a8e",
+            "definitions": [
+              {
+                "name": "TerminalBench2VerifiedDockerRecipe",
+                "line": 12
+              }
+            ]
+          }
+        },
+        {
+          "name": "terminalbench2_verified_docker_ac",
+          "class": "TerminalBench2VerifiedDockerACRecipe",
+          "file": "recipes/terminalbench2_verified/docker_ac.py",
+          "line": 35,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "docker_ac.py",
+            "sha256": "055b318b881957de6317ae608b12ccbd1f12ce21b29f911cd44b0aab5a6c2e10",
+            "definitions": [
+              {
+                "name": "_task_name_from_image",
+                "line": 15
+              },
+              {
+                "name": "_build_ac_image",
+                "line": 30
+              },
+              {
+                "name": "TerminalBench2VerifiedDockerACRecipe",
+                "line": 35
+              }
+            ]
+          }
+        },
+        {
+          "name": "terminalbench2_verified_modal",
+          "class": "TerminalBench2VerifiedModalRecipe",
+          "file": "recipes/terminalbench2_verified/modal.py",
+          "line": 12,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "modal.py",
+            "sha256": "2c85fe51d87c706624be8d26b232d28651bdbc6c3dcf38ca781d0d2fd059af90",
+            "definitions": [
+              {
+                "name": "TerminalBench2VerifiedModalRecipe",
+                "line": 12
+              }
+            ]
+          }
+        },
+        {
+          "name": "wildclawbench_docker",
+          "class": "WildClawBenchDockerRecipe",
+          "file": "recipes/wildclawbench/docker.py",
+          "line": 18,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "docker.py",
+            "sha256": "947f030292250e7407da401773f17a453807f41a746f7e42043b3267bfd9cdae",
+            "definitions": [
+              {
+                "name": "WildClawBenchDockerRecipe",
+                "line": 18
+              }
+            ]
+          }
+        }
+      ],
+      "analyzers": [
+        {
+          "name": "BasicMetricAnalyzer",
+          "class": "BasicMetricAnalyzer",
+          "file": "analyzers/basic/basic_metric_analyzer.py",
+          "line": 16,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "basic_metric_analyzer.py",
+            "sha256": "4452baff76af62073b520d7cbfb312716b25f673f64261dec73e7c72eb2c7871",
+            "definitions": [
+              {
+                "name": "_extract_tool_name",
+                "line": 8
+              },
+              {
+                "name": "BasicMetricAnalyzer",
+                "line": 16
+              }
+            ]
+          }
+        },
+        {
+          "name": "TerminalBench2CommandRunningAnalyzer",
+          "class": "TerminalBench2CommandRunningAnalyzer",
+          "file": "analyzers/basic/command_running_analyzer.py",
+          "line": 159,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "command_running_analyzer.py",
+            "sha256": "45cbdc4e00a89440a4535ae33baf612ecef9d71fb48ebb3a883303f5837846af",
+            "definitions": [
+              {
+                "name": "_strip_ansi",
+                "line": 53
+              },
+              {
+                "name": "_obs_text",
+                "line": 62
+              },
+              {
+                "name": "_terminal_state",
+                "line": 78
+              },
+              {
+                "name": "_command_finished",
+                "line": 114
+              },
+              {
+                "name": "_keystrokes_of",
+                "line": 122
+              },
+              {
+                "name": "_is_wait_keystroke",
+                "line": 145
+              },
+              {
+                "name": "TerminalBench2CommandRunningAnalyzer",
+                "line": 159
+              }
+            ]
+          }
+        },
+        {
+          "name": "CompletionLengthAnalyzer",
+          "class": "CompletionLengthAnalyzer",
+          "file": "analyzers/basic/completion_length_analyzer.py",
+          "line": 9,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "completion_length_analyzer.py",
+            "sha256": "4bcd05573413f945f16dd6282e7e776876e285c54ba0ed0fc79b01779ddf416a",
+            "definitions": [
+              {
+                "name": "CompletionLengthAnalyzer",
+                "line": 9
+              }
+            ]
+          }
+        },
+        {
+          "name": "EmptyContentAnalyzer",
+          "class": "EmptyContentAnalyzer",
+          "file": "analyzers/basic/empty_content_analyzer.py",
+          "line": 11,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "empty_content_analyzer.py",
+            "sha256": "e0419ccfe4bfb0ca6d5ee99afdd5846739a63ba788ac9379c2620dc97db41629",
+            "definitions": [
+              {
+                "name": "EmptyContentAnalyzer",
+                "line": 11
+              }
+            ]
+          }
+        },
+        {
+          "name": "ExceptionAnalyzer",
+          "class": "ExceptionAnalyzer",
+          "file": "analyzers/basic/exception_analyzer.py",
+          "line": 89,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "exception_analyzer.py",
+            "sha256": "6f9abe4b5a4381d98d7c13ac18ca2f9cd42237591cbb487211ae56e859bc5a2f",
+            "definitions": [
+              {
+                "name": "_normalize_message",
+                "line": 17
+              },
+              {
+                "name": "_traceback_fingerprint",
+                "line": 31
+              },
+              {
+                "name": "ExceptionAnalyzer",
+                "line": 89
+              },
+              {
+                "name": "TerminalBench2ExceptionAnalyzer",
+                "line": 131
+              }
+            ]
+          }
+        },
+        {
+          "name": "TerminalBench2ExceptionAnalyzer",
+          "class": "TerminalBench2ExceptionAnalyzer",
+          "file": "analyzers/basic/exception_analyzer.py",
+          "line": 131,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "exception_analyzer.py",
+            "sha256": "6f9abe4b5a4381d98d7c13ac18ca2f9cd42237591cbb487211ae56e859bc5a2f",
+            "definitions": [
+              {
+                "name": "_normalize_message",
+                "line": 17
+              },
+              {
+                "name": "_traceback_fingerprint",
+                "line": 31
+              },
+              {
+                "name": "ExceptionAnalyzer",
+                "line": 89
+              },
+              {
+                "name": "TerminalBench2ExceptionAnalyzer",
+                "line": 131
+              }
+            ]
+          }
+        },
+        {
+          "name": "JSONErrorAnalyzer",
+          "class": "JSONErrorAnalyzer",
+          "file": "analyzers/basic/json_error_analyzer.py",
+          "line": 89,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "json_error_analyzer.py",
+            "sha256": "1050ff33e2b4ff18397bf95dfad99e67b437cfe5bb10c46efbf364b31142b9b5",
+            "definitions": [
+              {
+                "name": "_extract_json_content",
+                "line": 10
+              },
+              {
+                "name": "_check_json",
+                "line": 60
+              },
+              {
+                "name": "JSONErrorAnalyzer",
+                "line": 89
+              }
+            ]
+          }
+        },
+        {
+          "name": "ContentKeywordAnalyzer",
+          "class": "ContentKeywordAnalyzer",
+          "file": "analyzers/basic/keyword_analyzer.py",
+          "line": 108,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "keyword_analyzer.py",
+            "sha256": "e84e94e20627386c323356d1896a2f008e35e9ae4a48a3af10b7d413d9aad4b6",
+            "definitions": [
+              {
+                "name": "_find_keywords",
+                "line": 8
+              },
+              {
+                "name": "KeywordAnalyzerBase",
+                "line": 16
+              },
+              {
+                "name": "ContentKeywordAnalyzer",
+                "line": 108
+              },
+              {
+                "name": "ReasoningKeywordAnalyzer",
+                "line": 134
+              }
+            ]
+          }
+        },
+        {
+          "name": "ReasoningKeywordAnalyzer",
+          "class": "ReasoningKeywordAnalyzer",
+          "file": "analyzers/basic/keyword_analyzer.py",
+          "line": 134,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "keyword_analyzer.py",
+            "sha256": "e84e94e20627386c323356d1896a2f008e35e9ae4a48a3af10b7d413d9aad4b6",
+            "definitions": [
+              {
+                "name": "_find_keywords",
+                "line": 8
+              },
+              {
+                "name": "KeywordAnalyzerBase",
+                "line": 16
+              },
+              {
+                "name": "ContentKeywordAnalyzer",
+                "line": 108
+              },
+              {
+                "name": "ReasoningKeywordAnalyzer",
+                "line": 134
+              }
+            ]
+          }
+        },
+        {
+          "name": "LLMInferLatencyAnalyzer",
+          "class": "LLMInferLatencyAnalyzer",
+          "file": "analyzers/basic/latency_analyzer.py",
+          "line": 168,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "latency_analyzer.py",
+            "sha256": "ba0574f9a863f1377d6171ed9828f74b09b210697ab5c8712a93a97a0e65c33f",
+            "definitions": [
+              {
+                "name": "_percentile",
+                "line": 15
+              },
+              {
+                "name": "_parse_ts",
+                "line": 27
+              },
+              {
+                "name": "LatencyAnalyzerBase",
+                "line": 49
+              },
+              {
+                "name": "LLMInferLatencyAnalyzer",
+                "line": 168
+              },
+              {
+                "name": "ToolExecutionLatencyAnalyzer",
+                "line": 186
+              },
+              {
+                "name": "TrajectoryTimeCostAnalyzer",
+                "line": 204
+              }
+            ]
+          }
+        },
+        {
+          "name": "ToolExecutionLatencyAnalyzer",
+          "class": "ToolExecutionLatencyAnalyzer",
+          "file": "analyzers/basic/latency_analyzer.py",
+          "line": 186,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "latency_analyzer.py",
+            "sha256": "ba0574f9a863f1377d6171ed9828f74b09b210697ab5c8712a93a97a0e65c33f",
+            "definitions": [
+              {
+                "name": "_percentile",
+                "line": 15
+              },
+              {
+                "name": "_parse_ts",
+                "line": 27
+              },
+              {
+                "name": "LatencyAnalyzerBase",
+                "line": 49
+              },
+              {
+                "name": "LLMInferLatencyAnalyzer",
+                "line": 168
+              },
+              {
+                "name": "ToolExecutionLatencyAnalyzer",
+                "line": 186
+              },
+              {
+                "name": "TrajectoryTimeCostAnalyzer",
+                "line": 204
+              }
+            ]
+          }
+        },
+        {
+          "name": "TrajectoryTimeCostAnalyzer",
+          "class": "TrajectoryTimeCostAnalyzer",
+          "file": "analyzers/basic/latency_analyzer.py",
+          "line": 204,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "latency_analyzer.py",
+            "sha256": "ba0574f9a863f1377d6171ed9828f74b09b210697ab5c8712a93a97a0e65c33f",
+            "definitions": [
+              {
+                "name": "_percentile",
+                "line": 15
+              },
+              {
+                "name": "_parse_ts",
+                "line": 27
+              },
+              {
+                "name": "LatencyAnalyzerBase",
+                "line": 49
+              },
+              {
+                "name": "LLMInferLatencyAnalyzer",
+                "line": 168
+              },
+              {
+                "name": "ToolExecutionLatencyAnalyzer",
+                "line": 186
+              },
+              {
+                "name": "TrajectoryTimeCostAnalyzer",
+                "line": 204
+              }
+            ]
+          }
+        },
+        {
+          "name": "ContentMixedLangAnalyzer",
+          "class": "ContentMixedLangAnalyzer",
+          "file": "analyzers/basic/mixed_lang_analyzer.py",
+          "line": 131,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "mixed_lang_analyzer.py",
+            "sha256": "8341ea51d98a6985a8116f1ce793b22b19c4fd6bc75573b027b563acf2faa949",
+            "definitions": [
+              {
+                "name": "_detect_mixed_lang",
+                "line": 14
+              },
+              {
+                "name": "MixedLangAnalyzerBase",
+                "line": 38
+              },
+              {
+                "name": "ContentMixedLangAnalyzer",
+                "line": 131
+              },
+              {
+                "name": "ReasoningMixedLangAnalyzer",
+                "line": 155
+              }
+            ]
+          }
+        },
+        {
+          "name": "ReasoningMixedLangAnalyzer",
+          "class": "ReasoningMixedLangAnalyzer",
+          "file": "analyzers/basic/mixed_lang_analyzer.py",
+          "line": 155,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "mixed_lang_analyzer.py",
+            "sha256": "8341ea51d98a6985a8116f1ce793b22b19c4fd6bc75573b027b563acf2faa949",
+            "definitions": [
+              {
+                "name": "_detect_mixed_lang",
+                "line": 14
+              },
+              {
+                "name": "MixedLangAnalyzerBase",
+                "line": 38
+              },
+              {
+                "name": "ContentMixedLangAnalyzer",
+                "line": 131
+              },
+              {
+                "name": "ReasoningMixedLangAnalyzer",
+                "line": 155
+              }
+            ]
+          }
+        },
+        {
+          "name": "NetworkOperationAnalyzer",
+          "class": "NetworkOperationAnalyzer",
+          "file": "analyzers/basic/network_op_analyzer.py",
+          "line": 99,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "network_op_analyzer.py",
+            "sha256": "e062e1b03368b3daa28d21943d36f8348f7c23615a146f8804c1d41c523a61e9",
+            "definitions": [
+              {
+                "name": "_extract_tool_name_and_args",
+                "line": 51
+              },
+              {
+                "name": "_clean_label",
+                "line": 69
+              },
+              {
+                "name": "_is_network_tool_call",
+                "line": 76
+              },
+              {
+                "name": "NetworkOperationAnalyzer",
+                "line": 99
+              }
+            ]
+          }
+        },
+        {
+          "name": "ContentRepetitionAnalyzer",
+          "class": "ContentRepetitionAnalyzer",
+          "file": "analyzers/basic/repetition_analyzer.py",
+          "line": 294,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "repetition_analyzer.py",
+            "sha256": "2e31b2f38f9a342044e55014ca0d7c34899ef958f7ce67fc20c656650a9198bc",
+            "definitions": [
+              {
+                "name": "_sentences",
+                "line": 20
+              },
+              {
+                "name": "_ngrams",
+                "line": 24
+              },
+              {
+                "name": "_detect_char_runs",
+                "line": 28
+              },
+              {
+                "name": "_detect_sentence_repetition",
+                "line": 44
+              },
+              {
+                "name": "_detect_phrase_repetition",
+                "line": 53
+              },
+              {
+                "name": "_detect_substring_repetition",
+                "line": 74
+              },
+              {
+                "name": "_analyse_text",
+                "line": 118
+              },
+              {
+                "name": "_filter_terminal_reps",
+                "line": 170
+              },
+              {
+                "name": "RepetitionAnalyzerBase",
+                "line": 207
+              },
+              {
+                "name": "ContentRepetitionAnalyzer",
+                "line": 294
+              },
+              {
+                "name": "ReasoningRepetitionAnalyzer",
+                "line": 319
+              }
+            ]
+          }
+        },
+        {
+          "name": "ReasoningRepetitionAnalyzer",
+          "class": "ReasoningRepetitionAnalyzer",
+          "file": "analyzers/basic/repetition_analyzer.py",
+          "line": 319,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "repetition_analyzer.py",
+            "sha256": "2e31b2f38f9a342044e55014ca0d7c34899ef958f7ce67fc20c656650a9198bc",
+            "definitions": [
+              {
+                "name": "_sentences",
+                "line": 20
+              },
+              {
+                "name": "_ngrams",
+                "line": 24
+              },
+              {
+                "name": "_detect_char_runs",
+                "line": 28
+              },
+              {
+                "name": "_detect_sentence_repetition",
+                "line": 44
+              },
+              {
+                "name": "_detect_phrase_repetition",
+                "line": 53
+              },
+              {
+                "name": "_detect_substring_repetition",
+                "line": 74
+              },
+              {
+                "name": "_analyse_text",
+                "line": 118
+              },
+              {
+                "name": "_filter_terminal_reps",
+                "line": 170
+              },
+              {
+                "name": "RepetitionAnalyzerBase",
+                "line": 207
+              },
+              {
+                "name": "ContentRepetitionAnalyzer",
+                "line": 294
+              },
+              {
+                "name": "ReasoningRepetitionAnalyzer",
+                "line": 319
+              }
+            ]
+          }
+        },
+        {
+          "name": "StepToolRepetitionAnalyzer",
+          "class": "StepToolRepetitionAnalyzer",
+          "file": "analyzers/basic/tool_repetition_analyzer.py",
+          "line": 43,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "tool_repetition_analyzer.py",
+            "sha256": "5da6a9f80122fb40a8fe243096c9a3b92061b588a6f352440c58744e3d02c377",
+            "definitions": [
+              {
+                "name": "_extract_tool_info",
+                "line": 14
+              },
+              {
+                "name": "StepToolRepetitionAnalyzer",
+                "line": 43
+              },
+              {
+                "name": "CrossStepToolRepetitionAnalyzer",
+                "line": 135
+              },
+              {
+                "name": "ConsecutiveToolRepetitionAnalyzer",
+                "line": 230
+              },
+              {
+                "name": "TerminalBench2ConsecutiveToolRepetitionAnalyzer",
+                "line": 345
+              }
+            ]
+          }
+        },
+        {
+          "name": "CrossStepToolRepetitionAnalyzer",
+          "class": "CrossStepToolRepetitionAnalyzer",
+          "file": "analyzers/basic/tool_repetition_analyzer.py",
+          "line": 135,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "tool_repetition_analyzer.py",
+            "sha256": "5da6a9f80122fb40a8fe243096c9a3b92061b588a6f352440c58744e3d02c377",
+            "definitions": [
+              {
+                "name": "_extract_tool_info",
+                "line": 14
+              },
+              {
+                "name": "StepToolRepetitionAnalyzer",
+                "line": 43
+              },
+              {
+                "name": "CrossStepToolRepetitionAnalyzer",
+                "line": 135
+              },
+              {
+                "name": "ConsecutiveToolRepetitionAnalyzer",
+                "line": 230
+              },
+              {
+                "name": "TerminalBench2ConsecutiveToolRepetitionAnalyzer",
+                "line": 345
+              }
+            ]
+          }
+        },
+        {
+          "name": "ConsecutiveToolRepetitionAnalyzer",
+          "class": "ConsecutiveToolRepetitionAnalyzer",
+          "file": "analyzers/basic/tool_repetition_analyzer.py",
+          "line": 230,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "tool_repetition_analyzer.py",
+            "sha256": "5da6a9f80122fb40a8fe243096c9a3b92061b588a6f352440c58744e3d02c377",
+            "definitions": [
+              {
+                "name": "_extract_tool_info",
+                "line": 14
+              },
+              {
+                "name": "StepToolRepetitionAnalyzer",
+                "line": 43
+              },
+              {
+                "name": "CrossStepToolRepetitionAnalyzer",
+                "line": 135
+              },
+              {
+                "name": "ConsecutiveToolRepetitionAnalyzer",
+                "line": 230
+              },
+              {
+                "name": "TerminalBench2ConsecutiveToolRepetitionAnalyzer",
+                "line": 345
+              }
+            ]
+          }
+        },
+        {
+          "name": "TerminalBench2ConsecutiveToolRepetitionAnalyzer",
+          "class": "TerminalBench2ConsecutiveToolRepetitionAnalyzer",
+          "file": "analyzers/basic/tool_repetition_analyzer.py",
+          "line": 345,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "tool_repetition_analyzer.py",
+            "sha256": "5da6a9f80122fb40a8fe243096c9a3b92061b588a6f352440c58744e3d02c377",
+            "definitions": [
+              {
+                "name": "_extract_tool_info",
+                "line": 14
+              },
+              {
+                "name": "StepToolRepetitionAnalyzer",
+                "line": 43
+              },
+              {
+                "name": "CrossStepToolRepetitionAnalyzer",
+                "line": 135
+              },
+              {
+                "name": "ConsecutiveToolRepetitionAnalyzer",
+                "line": 230
+              },
+              {
+                "name": "TerminalBench2ConsecutiveToolRepetitionAnalyzer",
+                "line": 345
+              }
+            ]
+          }
+        },
+        {
+          "name": "TruncationAnalyzer",
+          "class": "TruncationAnalyzer",
+          "file": "analyzers/basic/truncation_analyzer.py",
+          "line": 11,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "truncation_analyzer.py",
+            "sha256": "5d53d4ecdba03230ae936d9bda96e813906e913f981d8faa1d149ca8ffba30f7",
+            "definitions": [
+              {
+                "name": "TruncationAnalyzer",
+                "line": 11
+              }
+            ]
+          }
+        },
+        {
+          "name": "HackDetectionAnalyzer",
+          "class": "HackDetectionAnalyzer",
+          "file": "analyzers/hack_detection/analyzer.py",
+          "line": 41,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "analyzer.py",
+            "sha256": "5fc51fb2082d2d040a6bbb58be85993da91dbae2853d1ae09e2414f091d86e93",
+            "definitions": [
+              {
+                "name": "HackDetectionAnalyzer",
+                "line": 41
+              }
+            ]
+          }
+        },
+        {
+          "name": "MultiQualitativeAnalyzer",
+          "class": "MultiQualitativeAnalyzer",
+          "file": "analyzers/qualitative/multi_qualitative_analyzer.py",
+          "line": 132,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "multi_qualitative_analyzer.py",
+            "sha256": "28bf513bb465958b84f8b6998049ddf99f7595fffd15cbd0486089f7be22415d",
+            "definitions": [
+              {
+                "name": "MultiQualitativeAnalyzer",
+                "line": 132
+              }
+            ]
+          }
+        },
+        {
+          "name": "QualitativeAnalyzer",
+          "class": "QualitativeAnalyzer",
+          "file": "analyzers/qualitative/qualitative_analyzer.py",
+          "line": 612,
+          "evidence": "shipped source declaration",
+          "source": {
+            "file": "qualitative_analyzer.py",
+            "sha256": "301c14faebf0f87d464e28c317c6bff88b6895e303138b3bbc9241296b788d96",
+            "definitions": [
+              {
+                "name": "_load_codebook",
+                "line": 105
+              },
+              {
+                "name": "_load_prompt_md",
+                "line": 114
+              },
+              {
+                "name": "_prompt_section",
+                "line": 123
+              },
+              {
+                "name": "_parse_annotated_json",
+                "line": 145
+              },
+              {
+                "name": "_prompt_sections",
+                "line": 195
+              },
+              {
+                "name": "_build_annotate_system",
+                "line": 235
+              },
+              {
+                "name": "_build_summary_system",
+                "line": 252
+              },
+              {
+                "name": "_build_error_system",
+                "line": 263
+              },
+              {
+                "name": "_build_segments_system",
+                "line": 270
+              },
+              {
+                "name": "_normalize_phase",
+                "line": 277
+              },
+              {
+                "name": "_normalize_group",
+                "line": 290
+              },
+              {
+                "name": "_build_norm_map",
+                "line": 300
+              },
+              {
+                "name": "_collapse_ws",
+                "line": 325
+              },
+              {
+                "name": "_recover_span",
+                "line": 342
+              },
+              {
+                "name": "_enforce_verbatim_quotes",
+                "line": 390
+              },
+              {
+                "name": "_normalize_phases_and_groups",
+                "line": 419
+              },
+              {
+                "name": "_segments_fully_cover",
+                "line": 429
+              },
+              {
+                "name": "_segments_from_phases",
+                "line": 452
+              },
+              {
+                "name": "_normalize_segments",
+                "line": 498
+              },
+              {
+                "name": "_extract_json",
+                "line": 558
+              },
+              {
+                "name": "_json_dumps",
+                "line": 607
+              },
+              {
+                "name": "QualitativeAnalyzer",
+                "line": 612
+              },
+              {
+                "name": "_truncate",
+                "line": 1104
+              },
+              {
+                "name": "_sanitize_filename",
+                "line": 1112
+              },
+              {
+                "name": "_chunk_turns",
+                "line": 1118
+              },
+              {
+                "name": "_merge_annotations",
+                "line": 1123
+              },
+              {
+                "name": "_render_trajectory_html",
+                "line": 1144
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "runtime_discovery": "BLOCKED: ModuleNotFoundError: No module named 'fcntl'",
+    "blocker_source": {
+      "file": "frontier_engineering.py",
+      "sha256": "80273160c36a8bce69c48082c63d0c882e13182599ed9f87bb865feb9757fd71",
+      "definitions": [
+        {
+          "name": "FrontierEngineeringConfig",
+          "line": 109
+        },
+        {
+          "name": "FrontierEngineeringBenchmarkPlan",
+          "line": 125
+        },
+        {
+          "name": "FrontierEngineeringBenchmark",
+          "line": 165
+        },
+        {
+          "name": "_validate_source_root",
+          "line": 1219
+        },
+        {
+          "name": "_source_cache_key",
+          "line": 1227
+        },
+        {
+          "name": "_source_cache_lock",
+          "line": 1234
+        },
+        {
+          "name": "_source_cache_matches",
+          "line": 1245
+        },
+        {
+          "name": "_write_source_cache_marker",
+          "line": 1268
+        },
+        {
+          "name": "_ensure_git_submodules",
+          "line": 1290
+        },
+        {
+          "name": "_run_git",
+          "line": 1297
+        },
+        {
+          "name": "_batch_config_path",
+          "line": 1313
+        },
+        {
+          "name": "_resolve_unified_benchmark_dir",
+          "line": 1318
+        },
+        {
+          "name": "_builtin_task_config",
+          "line": 1347
+        },
+        {
+          "name": "_requirements_for",
+          "line": 1377
+        },
+        {
+          "name": "_read_yaml",
+          "line": 1393
+        },
+        {
+          "name": "_normalize_overrides",
+          "line": 1399
+        },
+        {
+          "name": "_split_override",
+          "line": 1409
+        },
+        {
+          "name": "_parse_scalar",
+          "line": 1417
+        },
+        {
+          "name": "_set_nested",
+          "line": 1434
+        },
+        {
+          "name": "_as_str_list",
+          "line": 1448
+        },
+        {
+          "name": "_safe_relpath",
+          "line": 1459
+        },
+        {
+          "name": "_optional_relpath",
+          "line": 1476
+        },
+        {
+          "name": "_optional_float",
+          "line": 1482
+        },
+        {
+          "name": "_metadata_path",
+          "line": 1489
+        },
+        {
+          "name": "_read_text",
+          "line": 1498
+        },
+        {
+          "name": "_read_list_file",
+          "line": 1507
+        },
+        {
+          "name": "_read_scalar_file",
+          "line": 1519
+        },
+        {
+          "name": "_dedupe",
+          "line": 1524
+        },
+        {
+          "name": "_parse_bool",
+          "line": 1535
+        },
+        {
+          "name": "_rank_value",
+          "line": 1548
+        },
+        {
+          "name": "_average_rank_desc",
+          "line": 1562
+        },
+        {
+          "name": "_load_rank_baseline",
+          "line": 1577
+        },
+        {
+          "name": "_rank_candidate_model_name",
+          "line": 1589
+        },
+        {
+          "name": "_rank_score_excludes",
+          "line": 1594
+        },
+        {
+          "name": "_rank_unavailable",
+          "line": 1599
+        },
+        {
+          "name": "_build_rank_summary_payload",
+          "line": 1612
+        },
+        {
+          "name": "_medal_task_name",
+          "line": 1685
+        },
+        {
+          "name": "_build_medal_summary_payload",
+          "line": 1690
+        },
+        {
+          "name": "_is_within",
+          "line": 1793
+        },
+        {
+          "name": "_upload_tree",
+          "line": 1801
+        },
+        {
+          "name": "_remote_join",
+          "line": 1812
+        },
+        {
+          "name": "_remote_workspace_path",
+          "line": 1822
+        },
+        {
+          "name": "_remote_relpath",
+          "line": 1833
+        },
+        {
+          "name": "_safe_slug",
+          "line": 1845
+        },
+        {
+          "name": "_safe_workspace_relpath",
+          "line": 1850
+        },
+        {
+          "name": "_timeout_env_value",
+          "line": 1855
+        },
+        {
+          "name": "_truncate",
+          "line": 1863
+        },
+        {
+          "name": "_tail",
+          "line": 1871
+        },
+        {
+          "name": "_collected_file",
+          "line": 1877
+        },
+        {
+          "name": "_render_eval_command",
+          "line": 1886
+        },
+        {
+          "name": "_command_uses_external_source",
+          "line": 1920
+        },
+        {
+          "name": "_uses_image_layout",
+          "line": 1924
+        },
+        {
+          "name": "_extract_uv_env_name",
+          "line": 1935
+        },
+        {
+          "name": "_runtime_image_key",
+          "line": 1943
+        },
+        {
+          "name": "_read_remote_json",
+          "line": 1948
+        },
+        {
+          "name": "_parse_last_json_dict",
+          "line": 1963
+        },
+        {
+          "name": "_numeric",
+          "line": 1977
+        },
+        {
+          "name": "_extract_score",
+          "line": 1990
+        }
+      ]
+    },
+    "runtime_available_registries": {
+      "harnesses": [
+        "claude_code",
+        "codex",
+        "mini_swe_agent",
+        "naive_search_agent",
+        "openai_chat",
+        "openclaw",
+        "openevolve",
+        "openhands",
+        "qwen3vl_gui",
+        "researchharness",
+        "scicode_tool_use",
+        "terminus2"
+      ],
+      "environments": [
+        "brainpp",
+        "daytona",
+        "dbox",
+        "docker",
+        "hbox",
+        "host_process",
+        "hsandbox",
+        "modal",
+        "opensandbox",
+        "pcluster"
+      ],
+      "analyzers": [
+        "BasicMetricAnalyzer",
+        "CompletionLengthAnalyzer",
+        "ConsecutiveToolRepetitionAnalyzer",
+        "ContentKeywordAnalyzer",
+        "ContentMixedLangAnalyzer",
+        "ContentRepetitionAnalyzer",
+        "CrossStepToolRepetitionAnalyzer",
+        "EmptyContentAnalyzer",
+        "ExceptionAnalyzer",
+        "HackDetectionAnalyzer",
+        "JSONErrorAnalyzer",
+        "LLMInferLatencyAnalyzer",
+        "MultiQualitativeAnalyzer",
+        "NetworkOperationAnalyzer",
+        "QualitativeAnalyzer",
+        "ReasoningKeywordAnalyzer",
+        "ReasoningMixedLangAnalyzer",
+        "ReasoningRepetitionAnalyzer",
+        "StepToolRepetitionAnalyzer",
+        "TerminalBench2CommandRunningAnalyzer",
+        "TerminalBench2ConsecutiveToolRepetitionAnalyzer",
+        "TerminalBench2ExceptionAnalyzer",
+        "ToolExecutionLatencyAnalyzer",
+        "TrajectoryTimeCostAnalyzer",
+        "TruncationAnalyzer"
+      ]
+    },
+    "codex": {
+      "class": "CodexHarness",
+      "registration_declaration": true,
+      "runtime_registry_verified": true,
+      "executed": false
+    },
+    "synthetic_trajectory_analysis": {
+      "analyzer": "EmptyContentAnalyzer",
+      "is_badcase": true,
+      "score": 1.0,
+      "serialization": "PASS"
+    },
+    "runtime_sources": [
+      {
+        "file": "runner.py",
+        "sha256": "d122f8ac534f84ec57ca48447e4896e9735014bf7e26dda69b25da63d09ba757",
+        "definitions": [
+          {
+            "name": "_AttemptRetrySignal",
+            "line": 62
+          },
+          {
+            "name": "PreparedRun",
+            "line": 67
+          },
+          {
+            "name": "UnifiedEvaluationRuntime",
+            "line": 79
+          }
+        ]
+      },
+      {
+        "file": "checkpoint.py",
+        "sha256": "7471f9b3a882f57b86c86a3f0a37de812cf64a9f223d97b61282dc300f92801b",
+        "definitions": [
+          {
+            "name": "_snapshot_json",
+            "line": 28
+          },
+          {
+            "name": "EvaluationCheckpoint",
+            "line": 35
+          },
+          {
+            "name": "_driver_input_fingerprints",
+            "line": 119
+          },
+          {
+            "name": "_validate_artifacts",
+            "line": 145
+          },
+          {
+            "name": "read_checkpoint",
+            "line": 184
+          },
+          {
+            "name": "DirectoryCheckpointRepository",
+            "line": 209
+          }
+        ]
+      },
+      {
+        "file": "__init__.py",
+        "sha256": "d474904a027aea763e6f1593d88d80884790d4a6e215a867618258184da33bba",
+        "definitions": []
+      },
+      {
+        "file": "__init__.py",
+        "sha256": "ca8d13e5497a161f607d0527bc238203495e89204c64170d83510ac9808cde8e",
+        "definitions": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "checked_date": "2026-10-04",
+  "full_bootstrap_rerun_from_other_directory": "PASS",
+  "verify_only": "PASS",
+  "python_syntax": "PASS",
+  "powershell_syntax": "PASS",
+  "inspect_status": "READY",
+  "inspect_evals_status": "READY",
+  "agentcompass_status": "PARTIAL",
+  "gate": "PARTIAL",
+  "global_resolution": "Persisted machine + user PATH resolves inspect.exe and agentcompass.exe in uv bin",
+  "reference_or_benchmark_evidence_changes": false,
+  "provider_model_calls": 0,
+  "real_agent_runs": 0,
+  "matching_dependency_graph_skips_installation": "PASS"
+}

@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-04",
+  "os": "Windows 10 Pro 22H2",
+  "build": "19045",
+  "architecture": "x86_64",
+  "uv": "0.12.22",
+  "python_initial": [
+    "3.14.3 system/default",
+    "3.13.2 user",
+    "3.11.0 user",
+    "3.10.6 user",
+    "3.9.13 user"
+  ],
+  "python_selected": "3.12.15 uv-managed",
+  "other_managers_on_path": {
+    "conda": false,
+    "poetry": false,
+    "hatch": false,
+    "pipx": false,
+    "pdm": false
+  },
+  "docker": "CLI installed; Linux engine pipe absent; daemon not running",
+  "wsl": "WSL 2; default distribution docker-desktop",
+  "git": "Clean initial worktree; per-command safe.directory override for sandbox ownership; no persisted git config",
+  "benchmark_evidence_initial_sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+  "global_bin_user_path_present": true
+}

@@ -1,0 +1,4746 @@
+{
+  "checked_at_utc": "2026-10-04T12:01:59.489716+00:00",
+  "mode": "inspect",
+  "versions": {
+    "inspect-ai": "0.3.276",
+    "inspect-evals": "0.23.0",
+    "mcp": "2.3.0"
+  },
+  "python": "3.12.15",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "network": "external sockets blocked; loopback IPC permitted for Windows asyncio",
+  "model_calls": 0,
+  "agent_runs": 0,
+  "status": "READY",
+  "checks": {
+    "module_imports": "PASS",
+    "custom_task_discovery": "PASS",
+    "custom_solver_tool_scorer_log": {
+      "status": "success",
+      "sample_count": 2,
+      "scores": {
+        "match": "C"
+      },
+      "negative_control_scores": {
+        "match": "I"
+      },
+      "mcp_stdio_echo": "PASS",
+      "model_generate_calls": 0,
+      "events": [
+        "span_begin",
+        "sample_init",
+        "span_end",
+        "span_begin",
+        "span_begin",
+        "state",
+        "store",
+        "span_end",
+        "store",
+        "span_end",
+        "span_begin",
+        "span_begin",
+        "score",
+        "span_end",
+        "span_end"
+      ],
+      "log_roundtrip": "PASS",
+      "listed_log_name_has_drive": false,
+      "log_persistence": "temporary directory removed after verification"
+    },
+    "agent_api_signatures": {
+      "react": "(*, name: str | None = None, description: str | None = None, prompt: str | inspect_ai.agent._types.AgentPrompt | None = AgentPrompt(instructions=None, handoff_prompt='\\nYou are part of a multi-agent system designed to make agent coordination and execution easy. Agents uses two primary abstraction: **Agents** and **Handoffs**. An agent encompasses instructions and tools and can hand off a conversation to another agent when appropriate. Handoffs are achieved by calling a handoff function,generally named `transfer_to_<agent_name>`. Transfers between agents are handled seamlessly in the background; do not mention or draw attention to these transfers in your conversation with the user.\\n', assistant_prompt=\"\\nYou are a helpful assistant attempting to submit the best possible answer. You have several tools available to help with finding the answer. You will see the result of tool calls right after sending the message. Prioritize parallel tool calls: when operations are independent, run them in one response — e.g. reading several files or running several searches at once — rather than one at a time. Only sequence calls when one depends on another's result. Do some reasoning before your actions, describing what tool calls you are going to use and how they fit into your plan.\\n\", submit_prompt='\\nWhen you have completed the task and have an answer, call the {submit}() tool to report it.\\n'), tools: Optional[Sequence[inspect_ai.tool._tool.Tool | inspect_ai.tool._tool_def.ToolDef | inspect_ai.tool._tool.ToolSource]] = None, model: str | inspect_ai.model._model.Model | inspect_ai.agent._agent.Agent | None = None, attempts: int | inspect_ai.agent._types.AgentAttempts = 1, submit: inspect_ai.agent._types.AgentSubmit | bool | None = None, on_continue: Union[str, Callable[[inspect_ai.agent._agent.AgentState], Awaitable[bool | str | inspect_ai.agent._agent.AgentState]], NoneType] = None, retry_refusals: int | None = None, compaction: inspect_ai.model._compaction.types.CompactionStrategy | None = None, truncation: Union[Literal['auto', 'disabled'], Callable[[list[Union[inspect_ai.model._chat_message.ChatMessageSystem, inspect_ai.model._chat_message.ChatMessageUser, inspect_ai.model._chat_message.ChatMessageAssistant, inspect_ai.model._chat_message.ChatMessageTool]]], Awaitable[list[Union[inspect_ai.model._chat_message.ChatMessageSystem, inspect_ai.model._chat_message.ChatMessageUser, inspect_ai.model._chat_message.ChatMessageAssistant, inspect_ai.model._chat_message.ChatMessageTool]]]]] = 'disabled', approval: list[inspect_ai.approval._policy.ApprovalPolicy] | None = None, review: list[inspect_ai.review._policy.ReviewPolicy] | None = None) -> inspect_ai.agent._agent.Agent",
+      "agent_bridge": "(state: inspect_ai.agent._agent.AgentState | None = None, *, filter: Union[Callable[[inspect_ai.model._model.Model, list[Union[inspect_ai.model._chat_message.ChatMessageSystem, inspect_ai.model._chat_message.ChatMessageUser, inspect_ai.model._chat_message.ChatMessageAssistant, inspect_ai.model._chat_message.ChatMessageTool]], list[inspect_ai.tool._tool_info.ToolInfo], Union[Literal['auto', 'any', 'none'], inspect_ai.tool._tool_choice.ToolFunction, NoneType], inspect_ai.model._generate_config.GenerateConfig], Awaitable[inspect_ai.model._model_output.ModelOutput | inspect_ai.model._model.GenerateInput | None]], Callable[[str, list[Union[inspect_ai.model._chat_message.ChatMessageSystem, inspect_ai.model._chat_message.ChatMessageUser, inspect_ai.model._chat_message.ChatMessageAssistant, inspect_ai.model._chat_message.ChatMessageTool]], list[inspect_ai.tool._tool_info.ToolInfo], Union[Literal['auto', 'any', 'none'], inspect_ai.tool._tool_choice.ToolFunction, NoneType], inspect_ai.model._generate_config.GenerateConfig], Awaitable[inspect_ai.model._model_output.ModelOutput | inspect_ai.model._model.GenerateInput | None]], NoneType] = None, retry_refusals: int | None = None, compaction: inspect_ai.model._compaction.types.CompactionStrategy | None = None, web_search: inspect_ai.tool._tools._web_search._web_search.WebSearchProviders | bool | None = None, code_execution: inspect_ai.tool._tools._code_execution.CodeExecutionProviders | bool | None = None, client_mcp_servers: bool | None = None, model_event_sink: inspect_ai.model._model.ModelEventSink | None = None, forward_generation_config: bool = False, approval: list['ApprovalPolicy'] | None = None) -> AsyncGenerator[inspect_ai.agent._bridge.types.AgentBridge, NoneType]",
+      "sandbox_agent_bridge": "(state: inspect_ai.agent._agent.AgentState | None = None, *, model: str | None = None, model_aliases: dict[str, str | inspect_ai.model._model.Model] | None = None, model_resolver: Optional[Callable[[str], ForwardRef('Model | str | None')]] = None, filter: Union[Callable[[inspect_ai.model._model.Model, list[Union[inspect_ai.model._chat_message.ChatMessageSystem, inspect_ai.model._chat_message.ChatMessageUser, inspect_ai.model._chat_message.ChatMessageAssistant, inspect_ai.model._chat_message.ChatMessageTool]], list[inspect_ai.tool._tool_info.ToolInfo], Union[Literal['auto', 'any', 'none'], inspect_ai.tool._tool_choice.ToolFunction, NoneType], inspect_ai.model._generate_config.GenerateConfig], Awaitable[inspect_ai.model._model_output.ModelOutput | inspect_ai.model._model.GenerateInput | None]], Callable[[str, list[Union[inspect_ai.model._chat_message.ChatMessageSystem, inspect_ai.model._chat_message.ChatMessageUser, inspect_ai.model._chat_message.ChatMessageAssistant, inspect_ai.model._chat_message.ChatMessageTool]], list[inspect_ai.tool._tool_info.ToolInfo], Union[Literal['auto', 'any', 'none'], inspect_ai.tool._tool_choice.ToolFunction, NoneType], inspect_ai.model._generate_config.GenerateConfig], Awaitable[inspect_ai.model._model_output.ModelOutput | inspect_ai.model._model.GenerateInput | None]], NoneType] = None, retry_refusals: int | None = None, compaction: inspect_ai.model._compaction.types.CompactionStrategy | None = None, sandbox: str | None = None, port: int = 13131, web_search: inspect_ai.tool._tools._web_search._web_search.WebSearchProviders | bool | None = None, code_execution: inspect_ai.tool._tools._code_execution.CodeExecutionProviders | bool | None = None, client_mcp_servers: bool | None = None, bridged_tools: collections.abc.Sequence[inspect_ai.tool._mcp._tools_bridge.bridge.BridgedToolsSpec] | None = None, model_event_sink: inspect_ai.model._model.ModelEventSink | None = None, forward_generation_config: bool = False, approval: list['ApprovalPolicy'] | None = None, checkpointer: inspect_ai.util._checkpoint.checkpointer.Checkpointer | None = None) -> AsyncIterator[inspect_ai.agent._bridge.sandbox.types.SandboxAgentBridge]",
+      "mcp_server_stdio": "(*, name: str | None = None, command: str, args: list[str] | None = None, cwd: str | pathlib.Path | None = None, env: dict[str, str] | None = None) -> inspect_ai.tool._mcp._types.MCPServer",
+      "mcp_tools": "(server: inspect_ai.tool._mcp._types.MCPServer, *, tools: Union[Literal['all'], list[str]] = 'all') -> inspect_ai.tool._tool.ToolSource"
+    },
+    "registered_custom_task": "offline_tooling_task",
+    "eval_registry": {
+      "source": {
+        "file": "_registry.py",
+        "sha256": "2adb1de729c3312c345397d6caed24df797a2d1f0af112ac6116c7b08bdaeffb",
+        "definitions": []
+      },
+      "static_imports": [
+        "abstention_bench",
+        "agent_bench_os",
+        "agent_threat_bench_autonomy_hijack",
+        "agent_threat_bench_data_exfil",
+        "agent_threat_bench_memory_poison",
+        "agentdojo",
+        "agentharm",
+        "agentharm_benign",
+        "agentic_misalignment",
+        "agie_aqua_rat",
+        "agie_logiqa_en",
+        "agie_lsat_ar",
+        "agie_lsat_lr",
+        "agie_lsat_rc",
+        "agie_math",
+        "agie_sat_en",
+        "agie_sat_en_without_passage",
+        "agie_sat_math",
+        "aime2024",
+        "aime2025",
+        "aime2026",
+        "air_bench",
+        "anima",
+        "ape_eval",
+        "apps",
+        "arc_challenge",
+        "arc_easy",
+        "assistant_bench_closed_book_one_shot",
+        "assistant_bench_closed_book_zero_shot",
+        "assistant_bench_web_browser",
+        "assistant_bench_web_search_one_shot",
+        "assistant_bench_web_search_zero_shot",
+        "b3",
+        "bbeh",
+        "bbeh_mini",
+        "bbh",
+        "bbq",
+        "bfcl",
+        "bfcl_prereqs",
+        "bigcodebench",
+        "bold",
+        "boolq",
+        "browse_comp",
+        "chembench",
+        "class_eval",
+        "coconot",
+        "commonsense_qa",
+        "compute_eval",
+        "core_bench",
+        "cti_realm_25",
+        "cti_realm_25_minimal",
+        "cti_realm_25_seeded",
+        "cti_realm_50",
+        "cve_bench",
+        "cybench",
+        "cybergym",
+        "cybermetric_10000",
+        "cybermetric_2000",
+        "cybermetric_500",
+        "cybermetric_80",
+        "cyse2_interpreter_abuse",
+        "cyse2_prompt_injection",
+        "cyse2_vulnerability_exploit",
+        "cyse3_visual_prompt_injection",
+        "cyse4_autocomplete",
+        "cyse4_instruct",
+        "cyse4_malware_analysis",
+        "cyse4_mitre",
+        "cyse4_mitre_frr",
+        "cyse4_multilingual_prompt_injection",
+        "cyse4_multiturn_phishing",
+        "cyse4_threat_intelligence",
+        "docvqa",
+        "drop",
+        "ds1000",
+        "ds1000_sandbox_check",
+        "fortress_adversarial",
+        "fortress_benign",
+        "frontier_cs",
+        "frontier_cs_algorithmic",
+        "frontier_cs_research",
+        "frontierscience",
+        "gaia",
+        "gaia_level1",
+        "gaia_level2",
+        "gaia_level3",
+        "gdm_classifier_evasion",
+        "gdm_cover_your_tracks",
+        "gdm_in_house_ctf",
+        "gdm_intercode_ctf",
+        "gdm_oversight_pattern",
+        "gdm_self_reasoning_approved_directories",
+        "gdm_self_reasoning_calculator_improvement",
+        "gdm_self_reasoning_context_length_mod_instrumental_only",
+        "gdm_self_reasoning_context_length_mod_irreversibility_only",
+        "gdm_self_reasoning_database_tool",
+        "gdm_self_reasoning_latency_calculator",
+        "gdm_self_reasoning_max_messages_calculator",
+        "gdm_self_reasoning_max_tokens",
+        "gdm_self_reasoning_oversight_frequency",
+        "gdm_self_reasoning_read_logs",
+        "gdm_self_reasoning_turn_off_filters",
+        "gdm_sp01_e2e",
+        "gdm_sp01_milestones",
+        "gdm_sp02_e2e",
+        "gdm_sp02_milestones",
+        "gdm_sp03_e2e",
+        "gdm_sp03_milestones",
+        "gdm_sp04_e2e",
+        "gdm_sp04_milestones",
+        "gdm_sp05_e2e",
+        "gdm_sp05_milestones",
+        "gdm_sp07_e2e",
+        "gdm_sp07_milestones",
+        "gdm_sp08_e2e",
+        "gdm_sp08_milestones",
+        "gdm_sp09_e2e",
+        "gdm_sp09_milestones",
+        "gdm_sp10_e2e",
+        "gdm_sp10_milestones",
+        "gdm_sp12_e2e",
+        "gdm_sp12_milestones",
+        "gdm_strategic_rule_breaking",
+        "gdpval",
+        "gpqa_diamond",
+        "gsm8k",
+        "healthbench",
+        "healthbench_consensus",
+        "healthbench_hard",
+        "healthbench_meta_eval",
+        "hellaswag",
+        "hle",
+        "humaneval",
+        "ifeval",
+        "ifevalcode",
+        "infinite_bench_code_debug",
+        "infinite_bench_code_run",
+        "infinite_bench_kv_retrieval",
+        "infinite_bench_longbook_choice_eng",
+        "infinite_bench_longdialogue_qa_eng",
+        "infinite_bench_math_calc",
+        "infinite_bench_math_find",
+        "infinite_bench_number_string",
+        "infinite_bench_passkey",
+        "instrumentaleval",
+        "ipi_coding_agent",
+        "kernelbench",
+        "kernelbench_sandbox_check",
+        "lab_bench_cloning_scenarios",
+        "lab_bench_dbqa",
+        "lab_bench_figqa",
+        "lab_bench_litqa",
+        "lab_bench_protocolqa",
+        "lab_bench_seqqa",
+        "lab_bench_suppqa",
+        "lab_bench_tableqa",
+        "lingoly",
+        "lingoly_too",
+        "livebench",
+        "livecodebench_pro",
+        "macbench",
+        "make_me_pay",
+        "makemesay",
+        "mask",
+        "math",
+        "mathvista",
+        "mbpp",
+        "medqa",
+        "mgsm",
+        "mind2web",
+        "mind2web_sc",
+        "mle_bench",
+        "mle_bench_full",
+        "mle_bench_lite",
+        "mlrc_bench",
+        "mmiu",
+        "mmlu_0_shot",
+        "mmlu_5_shot",
+        "mmlu_pro",
+        "mmmu_multiple_choice",
+        "mmmu_open",
+        "moru",
+        "musr",
+        "niah",
+        "novelty_bench",
+        "onet_m6",
+        "osworld",
+        "osworld_small",
+        "paperbench",
+        "paws",
+        "persistbench_beneficial_memory",
+        "persistbench_cross_domain",
+        "persistbench_judge",
+        "persistbench_sycophancy",
+        "personality_BFI",
+        "personality_TRAIT",
+        "piqa",
+        "pre_flight",
+        "pubmedqa",
+        "race_h",
+        "sad_facts_human_defaults",
+        "sad_facts_llms",
+        "sad_influence",
+        "sad_stages_full",
+        "sad_stages_oversight",
+        "scbench",
+        "scicode",
+        "sciknoweval",
+        "sec_qa_v1",
+        "sec_qa_v1_5_shot",
+        "sec_qa_v2",
+        "sec_qa_v2_5_shot",
+        "sevenllm_mcq_en",
+        "sevenllm_mcq_zh",
+        "sevenllm_qa_en",
+        "sevenllm_qa_zh",
+        "simpleqa",
+        "simpleqa_verified",
+        "sosbench",
+        "squad",
+        "stereoset",
+        "strong_reject",
+        "swe_bench",
+        "swe_bench_verified_mini",
+        "swe_lancer",
+        "sycophancy",
+        "tac",
+        "tac_welfare",
+        "tau2_airline",
+        "tau2_banking",
+        "tau2_retail",
+        "tau2_telecom",
+        "theagentcompany",
+        "threecb",
+        "truthfulqa",
+        "uccb",
+        "usaco",
+        "vimgolf_single_turn",
+        "vqa_rad",
+        "vstar_bench_attribute_recognition",
+        "vstar_bench_spatial_relationship_reasoning",
+        "winogrande",
+        "wmdp_bio",
+        "wmdp_chem",
+        "wmdp_cyber",
+        "worldsense",
+        "writingbench",
+        "xstest",
+        "zerobench",
+        "zerobench_subquestions"
+      ],
+      "runtime_import": "PASS",
+      "runtime_task_names": [
+        "inspect_evals/abstention_bench",
+        "inspect_evals/agent_bench_os",
+        "inspect_evals/agent_threat_bench_autonomy_hijack",
+        "inspect_evals/agent_threat_bench_data_exfil",
+        "inspect_evals/agent_threat_bench_memory_poison",
+        "inspect_evals/agentdojo",
+        "inspect_evals/agentharm",
+        "inspect_evals/agentharm_benign",
+        "inspect_evals/agentic_misalignment",
+        "inspect_evals/agie_aqua_rat",
+        "inspect_evals/agie_logiqa_en",
+        "inspect_evals/agie_lsat_ar",
+        "inspect_evals/agie_lsat_lr",
+        "inspect_evals/agie_lsat_rc",
+        "inspect_evals/agie_math",
+        "inspect_evals/agie_sat_en",
+        "inspect_evals/agie_sat_en_without_passage",
+        "inspect_evals/agie_sat_math",
+        "inspect_evals/aime2024",
+        "inspect_evals/aime2025",
+        "inspect_evals/aime2026",
+        "inspect_evals/air_bench",
+        "inspect_evals/anima",
+        "inspect_evals/ape_eval",
+        "inspect_evals/apps",
+        "inspect_evals/arc_challenge",
+        "inspect_evals/arc_easy",
+        "inspect_evals/assistant_bench_closed_book_one_shot",
+        "inspect_evals/assistant_bench_closed_book_zero_shot",
+        "inspect_evals/assistant_bench_web_browser",
+        "inspect_evals/assistant_bench_web_search_one_shot",
+        "inspect_evals/assistant_bench_web_search_zero_shot",
+        "inspect_evals/b3",
+        "inspect_evals/bbeh",
+        "inspect_evals/bbeh_mini",
+        "inspect_evals/bbh",
+        "inspect_evals/bbq",
+        "inspect_evals/bfcl",
+        "inspect_evals/bfcl_prereqs",
+        "inspect_evals/bigcodebench",
+        "inspect_evals/bold",
+        "inspect_evals/boolq",
+        "inspect_evals/browse_comp",
+        "inspect_evals/chembench",
+        "inspect_evals/class_eval",
+        "inspect_evals/coconot",
+        "inspect_evals/commonsense_qa",
+        "inspect_evals/compute_eval",
+        "inspect_evals/core_bench",
+        "inspect_evals/cti_realm_25",
+        "inspect_evals/cti_realm_25_minimal",
+        "inspect_evals/cti_realm_25_seeded",
+        "inspect_evals/cti_realm_50",
+        "inspect_evals/cve_bench",
+        "inspect_evals/cybench",
+        "inspect_evals/cybergym",
+        "inspect_evals/cybermetric_10000",
+        "inspect_evals/cybermetric_2000",
+        "inspect_evals/cybermetric_500",
+        "inspect_evals/cybermetric_80",
+        "inspect_evals/cyse2_interpreter_abuse",
+        "inspect_evals/cyse2_prompt_injection",
+        "inspect_evals/cyse2_vulnerability_exploit",
+        "inspect_evals/cyse3_visual_prompt_injection",
+        "inspect_evals/cyse4_autocomplete",
+        "inspect_evals/cyse4_instruct",
+        "inspect_evals/cyse4_malware_analysis",
+        "inspect_evals/cyse4_mitre",
+        "inspect_evals/cyse4_mitre_frr",
+        "inspect_evals/cyse4_multilingual_prompt_injection",
+        "inspect_evals/cyse4_multiturn_phishing",
+        "inspect_evals/cyse4_threat_intelligence",
+        "inspect_evals/docvqa",
+        "inspect_evals/drop",
+        "inspect_evals/ds1000",
+        "inspect_evals/ds1000_sandbox_check",
+        "inspect_evals/fortress_adversarial",
+        "inspect_evals/fortress_benign",
+        "inspect_evals/frontier_cs",
+        "inspect_evals/frontier_cs_algorithmic",
+        "inspect_evals/frontier_cs_research",
+        "inspect_evals/frontierscience",
+        "inspect_evals/gaia",
+        "inspect_evals/gaia_level1",
+        "inspect_evals/gaia_level2",
+        "inspect_evals/gaia_level3",
+        "inspect_evals/gdm_classifier_evasion",
+        "inspect_evals/gdm_cover_your_tracks",
+        "inspect_evals/gdm_in_house_ctf",
+        "inspect_evals/gdm_intercode_ctf",
+        "inspect_evals/gdm_oversight_pattern",
+        "inspect_evals/gdm_self_reasoning_approved_directories",
+        "inspect_evals/gdm_self_reasoning_calculator_improvement",
+        "inspect_evals/gdm_self_reasoning_context_length_mod_instrumental_only",
+        "inspect_evals/gdm_self_reasoning_context_length_mod_irreversibility_only",
+        "inspect_evals/gdm_self_reasoning_database_tool",
+        "inspect_evals/gdm_self_reasoning_latency_calculator",
+        "inspect_evals/gdm_self_reasoning_max_messages_calculator",
+        "inspect_evals/gdm_self_reasoning_max_tokens",
+        "inspect_evals/gdm_self_reasoning_oversight_frequency",
+        "inspect_evals/gdm_self_reasoning_read_logs",
+        "inspect_evals/gdm_self_reasoning_turn_off_filters",
+        "inspect_evals/gdm_sp01_e2e",
+        "inspect_evals/gdm_sp01_milestones",
+        "inspect_evals/gdm_sp02_e2e",
+        "inspect_evals/gdm_sp02_milestones",
+        "inspect_evals/gdm_sp03_e2e",
+        "inspect_evals/gdm_sp03_milestones",
+        "inspect_evals/gdm_sp04_e2e",
+        "inspect_evals/gdm_sp04_milestones",
+        "inspect_evals/gdm_sp05_e2e",
+        "inspect_evals/gdm_sp05_milestones",
+        "inspect_evals/gdm_sp07_e2e",
+        "inspect_evals/gdm_sp07_milestones",
+        "inspect_evals/gdm_sp08_e2e",
+        "inspect_evals/gdm_sp08_milestones",
+        "inspect_evals/gdm_sp09_e2e",
+        "inspect_evals/gdm_sp09_milestones",
+        "inspect_evals/gdm_sp10_e2e",
+        "inspect_evals/gdm_sp10_milestones",
+        "inspect_evals/gdm_sp12_e2e",
+        "inspect_evals/gdm_sp12_milestones",
+        "inspect_evals/gdm_strategic_rule_breaking",
+        "inspect_evals/gdpval",
+        "inspect_evals/gpqa_diamond",
+        "inspect_evals/gsm8k",
+        "inspect_evals/healthbench",
+        "inspect_evals/healthbench_consensus",
+        "inspect_evals/healthbench_hard",
+        "inspect_evals/healthbench_meta_eval",
+        "inspect_evals/hellaswag",
+        "inspect_evals/hle",
+        "inspect_evals/humaneval",
+        "inspect_evals/ifeval",
+        "inspect_evals/ifevalcode",
+        "inspect_evals/infinite_bench_code_debug",
+        "inspect_evals/infinite_bench_code_run",
+        "inspect_evals/infinite_bench_kv_retrieval",
+        "inspect_evals/infinite_bench_longbook_choice_eng",
+        "inspect_evals/infinite_bench_longdialogue_qa_eng",
+        "inspect_evals/infinite_bench_math_calc",
+        "inspect_evals/infinite_bench_math_find",
+        "inspect_evals/infinite_bench_number_string",
+        "inspect_evals/infinite_bench_passkey",
+        "inspect_evals/instrumentaleval",
+        "inspect_evals/ipi_coding_agent",
+        "inspect_evals/kernelbench",
+        "inspect_evals/kernelbench_sandbox_check",
+        "inspect_evals/lab_bench_cloning_scenarios",
+        "inspect_evals/lab_bench_dbqa",
+        "inspect_evals/lab_bench_figqa",
+        "inspect_evals/lab_bench_litqa",
+        "inspect_evals/lab_bench_protocolqa",
+        "inspect_evals/lab_bench_seqqa",
+        "inspect_evals/lab_bench_suppqa",
+        "inspect_evals/lab_bench_tableqa",
+        "inspect_evals/lingoly",
+        "inspect_evals/lingoly_too",
+        "inspect_evals/livebench",
+        "inspect_evals/livecodebench_pro",
+        "inspect_evals/macbench",
+        "inspect_evals/make_me_pay",
+        "inspect_evals/makemesay",
+        "inspect_evals/mask",
+        "inspect_evals/math",
+        "inspect_evals/mathvista",
+        "inspect_evals/mbpp",
+        "inspect_evals/medqa",
+        "inspect_evals/mgsm",
+        "inspect_evals/mind2web",
+        "inspect_evals/mind2web_sc",
+        "inspect_evals/mle_bench",
+        "inspect_evals/mle_bench_full",
+        "inspect_evals/mle_bench_lite",
+        "inspect_evals/mlrc_bench",
+        "inspect_evals/mmiu",
+        "inspect_evals/mmlu_0_shot",
+        "inspect_evals/mmlu_5_shot",
+        "inspect_evals/mmlu_pro",
+        "inspect_evals/mmmu_multiple_choice",
+        "inspect_evals/mmmu_open",
+        "inspect_evals/moru",
+        "inspect_evals/musr",
+        "inspect_evals/niah",
+        "inspect_evals/novelty_bench",
+        "inspect_evals/onet_m6",
+        "inspect_evals/osworld",
+        "inspect_evals/osworld_small",
+        "inspect_evals/paperbench",
+        "inspect_evals/paperbench_score",
+        "inspect_evals/paws",
+        "inspect_evals/persistbench_beneficial_memory",
+        "inspect_evals/persistbench_cross_domain",
+        "inspect_evals/persistbench_sycophancy",
+        "inspect_evals/personality_BFI",
+        "inspect_evals/personality_TRAIT",
+        "inspect_evals/piqa",
+        "inspect_evals/pre_flight",
+        "inspect_evals/pubmedqa",
+        "inspect_evals/race_h",
+        "inspect_evals/sad_facts_human_defaults",
+        "inspect_evals/sad_facts_llms",
+        "inspect_evals/sad_influence",
+        "inspect_evals/sad_stages_full",
+        "inspect_evals/sad_stages_oversight",
+        "inspect_evals/scbench",
+        "inspect_evals/scicode",
+        "inspect_evals/sciknoweval",
+        "inspect_evals/sec_qa_v1",
+        "inspect_evals/sec_qa_v1_5_shot",
+        "inspect_evals/sec_qa_v2",
+        "inspect_evals/sec_qa_v2_5_shot",
+        "inspect_evals/sevenllm_mcq_en",
+        "inspect_evals/sevenllm_mcq_zh",
+        "inspect_evals/sevenllm_qa_en",
+        "inspect_evals/sevenllm_qa_zh",
+        "inspect_evals/simpleqa",
+        "inspect_evals/simpleqa_verified",
+        "inspect_evals/sosbench",
+        "inspect_evals/squad",
+        "inspect_evals/stereoset",
+        "inspect_evals/strong_reject",
+        "inspect_evals/swe_bench",
+        "inspect_evals/swe_bench_verified_mini",
+        "inspect_evals/swe_lancer",
+        "inspect_evals/sycophancy",
+        "inspect_evals/tac",
+        "inspect_evals/tac_welfare",
+        "inspect_evals/tau2_airline",
+        "inspect_evals/tau2_banking",
+        "inspect_evals/tau2_retail",
+        "inspect_evals/tau2_telecom",
+        "inspect_evals/theagentcompany",
+        "inspect_evals/threecb",
+        "inspect_evals/truthfulqa",
+        "inspect_evals/uccb",
+        "inspect_evals/usaco",
+        "inspect_evals/vimgolf_single_turn",
+        "inspect_evals/vqa_rad",
+        "inspect_evals/vstar_bench_attribute_recognition",
+        "inspect_evals/vstar_bench_spatial_relationship_reasoning",
+        "inspect_evals/winogrande",
+        "inspect_evals/wmdp_bio",
+        "inspect_evals/wmdp_chem",
+        "inspect_evals/wmdp_cyber",
+        "inspect_evals/worldsense",
+        "inspect_evals/writingbench",
+        "inspect_evals/xstest",
+        "inspect_evals/zerobench",
+        "inspect_evals/zerobench_subquestions"
+      ]
+    },
+    "eval_metadata": [
+      {
+        "directory": "abstention_bench",
+        "metadata": {
+          "title": "AbstentionBench: Reasoning LLMs Fail on Unanswerable Questions",
+          "group": "Safeguards",
+          "version": "4-A",
+          "tasks": [
+            {
+              "name": "abstention_bench",
+              "dataset_samples": 39277
+            }
+          ]
+        },
+        "sha256": "32e763bd553d9c1a8ac6370376a3dab325120642e2996abf9a577a69d0e306af"
+      },
+      {
+        "directory": "agent_bench",
+        "metadata": {
+          "title": "AgentBench: Evaluate LLMs as Agents",
+          "group": "Coding",
+          "version": "4-B",
+          "tasks": [
+            {
+              "name": "agent_bench_os",
+              "dataset_samples": 119
+            }
+          ]
+        },
+        "sha256": "ed5d12d4861ea6607c1374df6855a6f78ba2c45726ddd0dcc5a6de20e812fc7b"
+      },
+      {
+        "directory": "agent_threat_bench",
+        "metadata": {
+          "title": "AgentThreatBench: Evaluating LLM Agent Resilience to OWASP Agentic Threats",
+          "group": "Safeguards",
+          "version": "1-A",
+          "tasks": [
+            {
+              "name": "agent_threat_bench_memory_poison",
+              "dataset_samples": 10
+            },
+            {
+              "name": "agent_threat_bench_autonomy_hijack",
+              "dataset_samples": 6
+            },
+            {
+              "name": "agent_threat_bench_data_exfil",
+              "dataset_samples": 8
+            }
+          ]
+        },
+        "sha256": "2ecffc355160a39d597f81cb070aa35ddcd3efebc123b27c2550e08bf7cb84a5"
+      },
+      {
+        "directory": "agentdojo",
+        "metadata": {
+          "title": "AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defenses for LLM Agents",
+          "group": "Safeguards",
+          "version": "2-A",
+          "tasks": [
+            {
+              "name": "agentdojo",
+              "dataset_samples": 1014
+            }
+          ]
+        },
+        "sha256": "246bd735fd8de1d9a15ff5eb91ff8a5b27605afad4a1aed19b05e3ba07bb927d"
+      },
+      {
+        "directory": "agentharm",
+        "metadata": {
+          "title": "AgentHarm: Harmfulness Potential in AI Agents",
+          "group": "Safeguards",
+          "version": "8-B",
+          "tasks": [
+            {
+              "name": "agentharm",
+              "dataset_samples": 176
+            },
+            {
+              "name": "agentharm_benign",
+              "dataset_samples": 176
+            }
+          ]
+        },
+        "sha256": "8267d87f682b41b8ddad655fbcafd929494a3d2144a392361d26761fa4843e7f"
+      },
+      {
+        "directory": "agentic_misalignment",
+        "metadata": {
+          "title": "Agentic Misalignment: How LLMs could be insider threats",
+          "group": "Scheming",
+          "version": "4-A",
+          "tasks": [
+            {
+              "name": "agentic_misalignment",
+              "dataset_samples": 1
+            }
+          ]
+        },
+        "sha256": "07407cd1a4d3df703ebaaa4db6ad417752d3688af75a6a781a3498462856cf72"
+      },
+      {
+        "directory": "agieval",
+        "metadata": {
+          "title": "AGIEval: A Human-Centric Benchmark for Evaluating Foundation Models",
+          "group": "Knowledge",
+          "version": "3-A",
+          "tasks": [
+            {
+              "name": "agie_aqua_rat",
+              "dataset_samples": 254
+            },
+            {
+              "name": "agie_logiqa_en",
+              "dataset_samples": 651
+            },
+            {
+              "name": "agie_lsat_ar",
+              "dataset_samples": 230
+            },
+            {
+              "name": "agie_lsat_lr",
+              "dataset_samples": 510
+            },
+            {
+              "name": "agie_lsat_rc",
+              "dataset_samples": 269
+            },
+            {
+              "name": "agie_math",
+              "dataset_samples": 1000
+            },
+            {
+              "name": "agie_sat_en",
+              "dataset_samples": 206
+            },
+            {
+              "name": "agie_sat_en_without_passage",
+              "dataset_samples": 206
+            },
+            {
+              "name": "agie_sat_math",
+              "dataset_samples": 220
+            }
+          ]
+        },
+        "sha256": "33860e468e1c1505db4f2433e121e58f536de7c86a4c3c70341b15c466f7ad64"
+      },
+      {
+        "directory": "aime2024",
+        "metadata": {
+          "title": "AIME 2024: Problems from the American Invitational Mathematics Examination",
+          "group": "Mathematics",
+          "version": "5-A",
+          "tasks": [
+            {
+              "name": "aime2024",
+              "dataset_samples": 30
+            }
+          ]
+        },
+        "sha256": "45ae844d3ee2c9194c30fd8918f9b734d5a0a120ef56eb85bbdd856ab27354d5"
+      },
+      {
+        "directory": "aime2025",
+        "metadata": {
+          "title": "AIME 2025: Problems from the American Invitational Mathematics Examination",
+          "group": "Mathematics",
+          "version": "5-A",
+          "tasks": [
+            {
+              "name": "aime2025",
+              "dataset_samples": 30
+            }
+          ]
+        },
+        "sha256": "d9babe96b8eaa19b543f27e31d59d90f1c27245c5b34882a0975d622cbe543bd"
+      },
+      {
+        "directory": "aime2026",
+        "metadata": {
+          "title": "AIME 2026: Problems from the American Invitational Mathematics Examination",
+          "group": "Mathematics",
+          "version": "3-A",
+          "tasks": [
+            {
+              "name": "aime2026",
+              "dataset_samples": 30
+            }
+          ]
+        },
+        "sha256": "370293eeea8f6316c26aea4da732ce2fe72159f1c6e849d76da4eeb85c52c0fe"
+      },
+      {
+        "directory": "air_bench",
+        "metadata": {
+          "title": "AIR Bench: AI Risk Benchmark",
+          "group": "Knowledge",
+          "version": "4-A",
+          "tasks": [
+            {
+              "name": "air_bench",
+              "dataset_samples": 5694
+            }
+          ]
+        },
+        "sha256": "e90e6bca1fd3b11770c1fb5ba195a978f1090c9d88678ef7209fe53c81518542"
+      },
+      {
+        "directory": "anima",
+        "metadata": {
+          "title": "ANIMA: Animal Norms In Moral Assessment",
+          "group": "Safeguards",
+          "version": "6-D",
+          "tasks": [
+            {
+              "name": "anima",
+              "dataset_samples": 115
+            }
+          ]
+        },
+        "sha256": "b709e1a9221e301ea2c425a1b434f63e502a3d446e8632580907192b2504f21c"
+      },
+      {
+        "directory": "ape",
+        "metadata": {
+          "title": "APE: Attempt to Persuade Eval",
+          "group": "Safeguards",
+          "version": "2-A",
+          "tasks": [
+            {
+              "name": "ape_eval",
+              "dataset_samples": 600
+            }
+          ]
+        },
+        "sha256": "9ad1e235a2805278d994aa3ab11ce235646ab8251da33b9722894d4b849f0306"
+      },
+      {
+        "directory": "apps",
+        "metadata": {
+          "title": "APPS: Automated Programming Progress Standard",
+          "group": "Coding",
+          "version": "3-B",
+          "tasks": [
+            {
+              "name": "apps",
+              "dataset_samples": 3000
+            }
+          ]
+        },
+        "sha256": "3bc7f39b98cf638319690e53d8dc48eee24d898de2e27a4fceebe3bdcef266f5"
+      },
+      {
+        "directory": "arc",
+        "metadata": {
+          "title": "ARC: AI2 Reasoning Challenge",
+          "group": "Reasoning",
+          "version": "2-A",
+          "tasks": [
+            {
+              "name": "arc_easy",
+              "dataset_samples": 2376
+            },
+            {
+              "name": "arc_challenge",
+              "dataset_samples": 1172
+            }
+          ]
+        },
+        "sha256": "8a69d9c66fbd75f56075bef1ba187cdff2dfbe2170b021ec502de7c1ed0e6989"
+      },
+      {
+        "directory": "assistant_bench",
+        "metadata": {
+          "title": "AssistantBench: Can Web Agents Solve Realistic and Time-Consuming Tasks?",
+          "group": "Assistants",
+          "version": "5-B",
+          "tasks": [
+            {
+              "name": "assistant_bench_closed_book_zero_shot",
+              "dataset_samples": 33
+            },
+            {
+              "name": "assistant_bench_closed_book_one_shot",
+              "dataset_samples": 33
+            },
+            {
+              "name": "assistant_bench_web_search_zero_shot",
+              "dataset_samples": 33
+            },
+            {
+              "name": "assistant_bench_web_search_one_shot",
+              "dataset_samples": 33
+            },
+            {
+              "name": "assistant_bench_web_browser",
+              "dataset_samples": 33
+            }
+          ]
+        },
+        "sha256": "5dc106b76d379fc30a3b583f2fcf16ac923a5d6f951f840f1106f138d4c20be7"
+      },
+      {
+        "directory": "b3",
+        "metadata": {
+          "title": "b3: Backbone Breaker Benchmark",
+          "group": "Safeguards",
+          "version": "4-A",
+          "tasks": [
+            {
+              "name": "b3",
+              "dataset_samples": 630
+            }
+          ]
+        },
+        "sha256": "e7e98f43d0064097d733fed0ccab0929554d4cfb904cdb99e7c2bd7c32d1248d"
+      },
+      {
+        "directory": "bbeh",
+        "metadata": {
+          "title": "BIG-Bench Extra Hard",
+          "group": "Reasoning",
+          "version": "2-A",
+          "tasks": [
+            {
+              "name": "bbeh",
+              "dataset_samples": 4519
+            },
+            {
+              "name": "bbeh_mini",
+              "dataset_samples": 460
+            }
+          ]
+        },
+        "sha256": "a7c487fccd118765d1d2dfbffef780beb7d40b91910d627e1ec6f241a8a5054d"
+      },
+      {
+        "directory": "bbh",
+        "metadata": {
+          "title": "BBH: Challenging BIG-Bench Tasks",
+          "group": "Reasoning",
+          "version": "3-A",
+          "tasks": [
+            {
+              "name": "bbh",
+              "dataset_samples": 6509
+            }
+          ]
+        },
+        "sha256": "762dcce67fc44f26acbef294fd4c77cce00780c736ffaa2c002c34a0599161be"
+      },
+      {
+        "directory": "bbq",
+        "metadata": {
+          "title": "BBQ: Bias Benchmark for Question Answering",
+          "group": "Bias",
+          "version": "2-A",
+          "tasks": [
+            {
+              "name": "bbq",
+              "dataset_samples": 58492
+            }
+          ]
+        },
+        "sha256": "be3579f6a98b9412baa55c03e7d15168485334fa3db9c7b8a226e2bf717e8132"
+      },
+      {
+        "directory": "bfcl",
+        "metadata": {
+          "title": "BFCL: Berkeley Function-Calling Leaderboard",
+          "group": "Assistants",
+          "version": "7-B",
+          "tasks": [
+            {
+              "name": "bfcl",
+              "dataset_samples": 4981
+            },
+            {
+              "name": "bfcl_prereqs",
+              "dataset_samples": 111
+            }
+          ]
+        },
+        "sha256": "dd066a3391c4844b27d144215b43ad5d9609334855554cf0dee2393ebf17557d"
+      },
+      {
+        "directory": "bigcodebench",
+        "metadata": {
+          "title": "BigCodeBench: Benchmarking Code Generation with Diverse Function Calls and Complex Instructions",
+          "group": "Coding",
+          "version": "3-B",
+          "tasks": [
+            {
+              "name": "bigcodebench",
+              "dataset_samples": 1140
+            }
+          ]
+        },
+        "sha256": "a191113472b0cf463152f0c07faa1f40f112e5d037ee54af837e82e81a003c99"
+      },
+      {
+        "directory": "bold",
+        "metadata": {
+          "title": "BOLD: Bias in Open-ended Language Generation Dataset",
+          "group": "Bias",
+          "version": "2-A",
+          "tasks": [
+            {
+              "name": "bold",
+              "dataset_samples": 7200
+            }
+          ]
+        },
+        "sha256": "eb7b53a1f032bbb0886f733202a415957ea8f82d994853ea1c75bb82d99f7324"
+      },
+      {
+        "directory": "boolq",
+        "metadata": {
+          "title": "BoolQ: Exploring the Surprising Difficulty of Natural Yes/No Questions",
+          "group": "Reasoning",
+          "version": "4-A",
+          "tasks": [
+            {
+              "name": "boolq",
+              "dataset_samples": 3270
+            }
+          ]
+        },
+        "sha256": "4ad3dc3d0392555696f8f3ee6a134a65754577dc039e4b0fe6d208e00c5dc748"
+      },
+      {
+        "directory": "browse_comp",
+        "metadata": {
+          "title": "BrowseComp: A Simple Yet Challenging Benchmark for Browsing Agents",
+          "group": "Assistants",
+          "version": "3-B",
+          "tasks": [
+            {
+              "name": "browse_comp",
+              "dataset_samples": 1266
+            }
+          ]
+        },
+        "sha256": "fb4b7939ef4443f1e1c830281f0d982530ba9c93c2137ced0823e2caefa7ea72"
+      },
+      {
+        "directory": "chembench",
+        "metadata": {
+          "title": "ChemBench: Are large language models superhuman chemists?",
+          "group": "Knowledge",
+          "version": "3-B",
+          "tasks": [
+            {
+              "name": "chembench",
+              "dataset_samples": 2786
+            }
+          ]
+        },
+        "sha256": "aeb04d362ae1f17f482b397d1c2503c83ec559f7f7bc4e1606f8e2e895310f1e"
+      },
+      {
+        "directory": "class_eval",
+        "metadata": {
+          "title": "ClassEval: A Manually-Crafted Benchmark for Evaluating LLMs on Class-level Code Generation",
+          "group": "Coding",
+          "version": "3-C",
+          "tasks": [
+            {
+              "name": "class_eval",
+              "dataset_samples": 100
+            }
+          ]
+        },
+        "sha256": "d50190c73484e1672adeffd654453b601da257fbeedf3b896e01b3a580cc64fd"
+      },
+      {
+        "directory": "coconot",
+        "metadata": {
+          "title": "The Art of Saying No: Contextual Noncompliance in Language Models",
+          "group": "Safeguards",
+          "version": "4-B",
+          "tasks": [
+            {
+              "name": "coconot",
+              "dataset_samples": 1001
+            }
+          ]
+        },
+        "sha256": "6bca86f28fa960f293cdfdaac21e09b79a579711dcc0e94867e91c5798605294"
+      },
+      {
+        "directory": "commonsense_qa",
+        "metadata": {
+          "title": "CommonsenseQA: A Question Answering Challenge Targeting Commonsense Knowledge",
+          "group": "Knowledge",
+          "version": "2-A",
+          "tasks": [
+            {
+              "name": "commonsense_qa",
+              "dataset_samples": 1221
+            }
+          ]
+        },
+        "sha256": "f789ef2cd38e95b69f6f05524392b07f4c0d666db7a9377061482595d0a2a6d8"
+      },
+      {
+        "directory": "compute_eval",
+        "metadata": {
+          "title": "ComputeEval: CUDA Code Generation Benchmark",
+          "group": "Coding",
+          "version": "1-B",
+          "tasks": [
+            {
+              "name": "compute_eval",
+              "dataset_samples": 406
+            }
+          ]
+        },
+        "sha256": "d71b9281d47a2745af7a9683ffda097583412a2ad7cc0488934f8ecd6f809f1b"
+      },
+      {
+        "directory": "core_bench",
+        "metadata": {
+          "title": "CORE-Bench",
+          "group": "Coding",
+          "version": "3-A",
+          "tasks": [
+            {
+              "name": "core_bench",
+              "dataset_samples": 45
+            }
+          ]
+        },
+        "sha256": "b223caaccc6f777af937c22d577aa73d1234cc857adcaba20d5ab7a224f634a8"
+      },
+      {
+        "directory": "cti_realm",
+        "metadata": {
+          "title": "CTI-REALM: Cyber Threat Intelligence Detection Rule Development Benchmark",
+          "group": "Cybersecurity",
+          "version": "4-A",
+          "tasks": [
+            {
+              "name": "cti_realm_25",
+              "dataset_samples": 25
+            },
+            {
+              "name": "cti_realm_50",
+              "dataset_samples": 50
+            },
+            {
+              "name": "cti_realm_25_minimal",
+              "dataset_samples": 25
+            },
+            {
+              "name": "cti_realm_25_seeded",
+              "dataset_samples": 25
+            }
+          ]
+        },
+        "sha256": "a115a489f1ed2644e65ff81e574978659819fdd6b3e95ffd60c43362937417ac"
+      },
+      {
+        "directory": "cve_bench",
+        "metadata": {
+          "title": "CVEBench:  Benchmark for AI Agents Ability to Exploit Real-World Web Application Vulnerabilities",
+          "group": "Cybersecurity",
+          "version": "2-A",
+          "tasks": [
+            {
+              "name": "cve_bench",
+              "dataset_samples": 40
+            }
+          ]
+        },
+        "sha256": "9ee9cc649b93f36d8839ce0df47e87775a09885c2017dce9e7d8a25c1985a035"
+      },
+      {
+        "directory": "cybench",
+        "metadata": {
+          "title": "Cybench: Capture-The-Flag Cybersecurity Challenges",
+          "group": "Cybersecurity",
+          "version": "4-C",
+          "tasks": [
+            {
+              "name": "cybench",
+              "dataset_samples": 39
+            }
+          ]
+        },
+        "sha256": "6e9d41c1bf1930e74020f86ab9fb877a7cce6daaab767e9d518a64f482940e82"
+      },
+      {
+        "directory": "cybergym",
+        "metadata": {
+          "title": "CyberGym: Evaluating AI Agents' Real-World Cybersecurity Capabilities at Scale",
+          "group": "Cybersecurity",
+          "version": "3-B",
+          "tasks": [
+            {
+              "name": "cybergym",
+              "dataset_samples": 6028
+            }
+          ]
+        },
+        "sha256": "fbabbb549d25979b277a258dbfe02682db2d5ab60fcd6e23fb6e3f548af6bf54"
+      },
+      {
+        "directory": "cybermetric",
+        "metadata": {
+          "title": "CyberMetric: A Benchmark Dataset based on Retrieval-Augmented Generation for Evaluating LLMs in Cybersecurity Knowledge",
+          "group": "Cybersecurity",
+          "version": "2-A",
+          "tasks": [
+            {
+              "name": "cybermetric_80",
+              "dataset_samples": 80
+            },
+            {
+              "name": "cybermetric_500",
+              "dataset_samples": 500
+            },
+            {
+              "name": "cybermetric_2000",
+              "dataset_samples": 2000
+            },
+            {
+              "name": "cybermetric_10000",
+              "dataset_samples": 10000
+            }
+          ]
+        },
+        "sha256": "725acbbaf8a82f2e69c28cf95c7fcc27428b0a268f27a8fbe5a7a9fa404e6484"
+      },
+      {
+        "directory": "cyberseceval_2",
+        "metadata": {
+          "title": "CyberSecEval_2: Cybersecurity Risk and Vulnerability Evaluation",
+          "group": "Cybersecurity",
+          "version": "4-B",
+          "tasks": [
+            {
+              "name": "cyse2_interpreter_abuse",
+              "dataset_samples": 489
+            },
+            {
+              "name": "cyse2_prompt_injection",
+              "dataset_samples": 250
+            },
+            {
+              "name": "cyse2_vulnerability_exploit",
+              "dataset_samples": 585
+            }
+          ]
+        },
+        "sha256": "5493cb251ef6fbe6448acd450b8d8f2a6ce477c89f4886a3d17616de055277b2"
+      },
+      {
+        "directory": "cyberseceval_3",
+        "metadata": {
+          "title": "CYBERSECEVAL 3: Advancing the Evaluation of Cybersecurity Risks and Capabilities in Large Language Models",
+          "group": "Cybersecurity",
+          "version": "3-B",
+          "tasks": [
+            {
+              "name": "cyse3_visual_prompt_injection",
+              "dataset_samples": 1000
+            }
+          ]
+        },
+        "sha256": "2a2fb9251c858e6691e4a4252dfa675067327d371170487d61401a7e3807faf3"
+      },
+      {
+        "directory": "cyberseceval_4",
+        "metadata": {
+          "title": "CyberSecEval 4: Advanced Cybersecurity Evaluation Benchmarks",
+          "group": "Cybersecurity",
+          "version": "5-C",
+          "tasks": [
+            {
+              "name": "cyse4_mitre",
+              "dataset_samples": 1000
+            },
+            {
+              "name": "cyse4_mitre_frr",
+              "dataset_samples": 750
+            },
+            {
+              "name": "cyse4_instruct",
+              "dataset_samples": 1916
+            },
+            {
+              "name": "cyse4_autocomplete",
+              "dataset_samples": 1916
+            },
+            {
+              "name": "cyse4_multiturn_phishing",
+              "dataset_samples": 100
+            },
+            {
+              "name": "cyse4_multilingual_prompt_injection",
+              "dataset_samples": 1004
+            },
+            {
+              "name": "cyse4_malware_analysis",
+              "dataset_samples": 609
+            },
+            {
+              "name": "cyse4_threat_intelligence",
+              "dataset_samples": 588
+            }
+          ]
+        },
+        "sha256": "bf73584c247d86bd6eb41ab5107c06d67bc7968697f9af5e88baf6266069da2d"
+      },
+      {
+        "directory": "docvqa",
+        "metadata": {
+          "title": "DocVQA: A Dataset for VQA on Document Images",
+          "group": "Multimodal",
+          "version": "2-A",
+          "tasks": [
+            {
+              "name": "docvqa",
+              "dataset_samples": 5349
+            }
+          ]
+        },
+        "sha256": "c64480f132c1cf45c67dfeda2a2b6d03acbd7cdf7993c022d802b56ce11c6b10"
+      },
+      {
+        "directory": "drop",
+        "metadata": {
+          "title": "DROP: A Reading Comprehension Benchmark Requiring Discrete Reasoning Over Paragraphs",
+          "group": "Reasoning",
+          "version": "2-A",
+          "tasks": [
+            {
+              "name": "drop",
+              "dataset_samples": 9535
+            }
+          ]
+        },
+        "sha256": "2a37f6a55ef8dd6dad927399e93f3a1485c9ba739bc550384f95945927f81486"
+      },
+      {
+        "directory": "ds1000",
+        "metadata": {
+          "title": "DS-1000: A Natural and Reliable Benchmark for Data Science Code Generation",
+          "group": "Coding",
+          "version": "3-B",
+          "tasks": [
+            {
+              "name": "ds1000",
+              "dataset_samples": 1000
+            },
+            {
+              "name": "ds1000_sandbox_check",
+              "dataset_samples": 4
+            }
+          ]
+        },
+        "sha256": "ff67de478bb39ac6c8624e9a4ad4975c3924e9491932a36019e64df9781aee8a"
+      },
+      {
+        "directory": "fortress",
+        "metadata": {
+          "title": "FORTRESS",
+          "group": "Safeguards",
+          "version": "3-A",
+          "tasks": [
+            {
+              "name": "fortress_adversarial",
+              "dataset_samples": 500
+            },
+            {
+              "name": "fortress_benign",
+              "dataset_samples": 500
+            }
+          ]
+        },
+        "sha256": "8f1ee2be4124a3e82a55573ca1a8f92b22cb5cfcf285792ce802c968ba40e165"
+      },
+      {
+        "directory": "frontier_cs",
+        "metadata": {
+          "title": "Frontier-CS: Benchmarking LLMs on Computer Science Problems",
+          "group": "Coding",
+          "version": "2-A",
+          "tasks": [
+            {
+              "name": "frontier_cs",
+              "dataset_samples": 238
+            },
+            {
+              "name": "frontier_cs_algorithmic",
+              "dataset_samples": 172
+            },
+            {
+              "name": "frontier_cs_research",
+              "dataset_samples": 66
+            }
+          ]
+        },
+        "sha256": "818904877f0aaf41daa2cdb576f520c5a969b1ec3e7d700824cd91ae46469e89"
+      },
+      {
+        "directory": "frontierscience",
+        "metadata": {
+          "title": "FrontierScience: Expert-Level Scientific Reasoning",
+          "group": "Knowledge",
+          "version": "2-A",
+          "tasks": [
+            {
+              "name": "frontierscience",
+              "dataset_samples": 160
+            }
+          ]
+        },
+        "sha256": "93b4115ecbf7825495047a6eb4e9dddf1790aaf7233d953063ab4b1d4b39dcfc"
+      },
+      {
+        "directory": "gaia",
+        "metadata": {
+          "title": "GAIA: A Benchmark for General AI Assistants",
+          "group": "Assistants",
+          "version": "3-B",
+          "tasks": [
+            {
+              "name": "gaia",
+              "dataset_samples": 165
+            },
+            {
+              "name": "gaia_level1",
+              "dataset_samples": 53
+            },
+            {
+              "name": "gaia_level2",
+              "dataset_samples": 86
+            },
+            {
+              "name": "gaia_level3",
+              "dataset_samples": 26
+            }
+          ]
+        },
+        "sha256": "dce78c1129a189a33df3d4b7c290539f021a888b87e3c6d00a7b68dd82364d74"
+      },
+      {
+        "directory": "gdm_in_house_ctf",
+        "metadata": {
+          "title": "GDM Dangerous Capabilities: Capture the Flag",
+          "group": "Cybersecurity",
+          "version": "6-B",
+          "tasks": [
+            {
+              "name": "gdm_in_house_ctf",
+              "dataset_samples": 13
+            }
+          ]
+        },
+        "sha256": "24072c63167111234cbadfe03e1252ecab3a8fa341bfbb039d000ca14652c0a2"
+      },
+      {
+        "directory": "gdm_intercode_ctf",
+        "metadata": {
+          "title": "InterCode: Security and Coding Capture-the-Flag Challenges",
+          "group": "Cybersecurity",
+          "version": "4-B",
+          "tasks": [
+            {
+              "name": "gdm_intercode_ctf",
+              "dataset_samples": 78
+            }
+          ]
+        },
+        "sha256": "93745230025b12bf9008482fc37c708aab4beae0327be7fc3972560c28baa018"
+      },
+      {
+        "directory": "gdm_self_proliferation",
+        "metadata": {
+          "title": "GDM Dangerous Capabilities: Self-proliferation",
+          "group": "Scheming",
+          "version": "6-B",
+          "tasks": [
+            {
+              "name": "gdm_sp01_e2e",
+              "dataset_samples": 1
+            },
+            {
+              "name": "gdm_sp02_e2e",
+              "dataset_samples": 1
+            },
+            {
+              "name": "gdm_sp03_e2e",
+              "dataset_samples": 1
+            },
+            {
+              "name": "gdm_sp04_e2e",
+              "dataset_samples": 1
+            },
+            {
+              "name": "gdm_sp05_e2e",
+              "dataset_samples": 1
+            },
+            {
+              "name": "gdm_sp07_e2e",
+              "dataset_samples": 1
+            },
+            {
+              "name": "gdm_sp08_e2e",
+              "dataset_samples": 1
+            },
+            {
+              "name": "gdm_sp09_e2e",
+              "dataset_samples": 1
+            },
+            {
+              "name": "gdm_sp10_e2e",
+              "dataset_samples": 1
+            },
+            {
+              "name": "gdm_sp12_e2e",
+              "dataset_samples": 1
+            }
+          ]
+        },
+        "sha256": "d5f7e52ed99b9d98b24c2400f73dfee296eabc39e68075cb4ad5180c4c990d9e"
+      },
+      {
+        "directory": "gdm_self_reasoning",
+        "metadata": {
+          "title": "GDM Dangerous Capabilities: Self-reasoning",
+          "group": "Scheming",
+          "version": "4-C",
+          "tasks": [
+            {
+              "name": "gdm_self_reasoning_approved_directories",
+              "dataset_samples": 2
+            },
+            {
+              "name": "gdm_self_reasoning_calculator_improvement",
+              "dataset_samples": 2
+            },
+            {
+              "name": "gdm_self_reasoning_context_length_mod_instrumental_only",
+              "dataset_samples": 2
+            },
+            {
+              "name": "gdm_self_reasoning_context_length_mod_irreversibility_only",
+              "dataset_samples": 2
+            },
+            {
+              "name": "gdm_self_reasoning_database_tool",
+              "dataset_samples": 2
+            },
+            {
+              "name": "gdm_self_reasoning_latency_calculator",
+              "dataset_samples": 2
+            },
+            {
+              "name": "gdm_self_reasoning_max_messages_calculator",
+              "dataset_samples": 2
+            },
+            {
+              "name": "gdm_self_reasoning_max_tokens",
+              "dataset_samples": 2
+            },
+            {
+              "name": "gdm_self_reasoning_oversight_frequency",
+              "dataset_samples": 2
+            },
+            {
+              "name": "gdm_self_reasoning_read_logs",
+              "dataset_samples": 2
+            },
+            {
+              "name": "gdm_self_reasoning_turn_off_filters",
+              "dataset_samples": 2
+            }
+          ]
+        },
+        "sha256": "f1d0993e632c30ce78a5cb0e56a44acb664e006ed41fb1317f572036afb0d11c"
+      },
+      {
+        "directory": "gdm_stealth",
+        "metadata": {
+          "title": "GDM Dangerous Capabilities: Stealth",
+          "group": "Scheming",
+          "version": "4-B",
+          "tasks": [
+            {
+              "name": "gdm_classifier_evasion",
+              "dataset_samples": 9
+            },
+            {
+              "name": "gdm_cover_your_tracks",
+              "dataset_samples": 2
+            },
+            {
+              "name": "gdm_oversight_pattern",
+              "dataset_samples": 2
+            },
+            {
+              "name": "gdm_strategic_rule_breaking",
+              "dataset_samples": 1
+            }
+          ]
+        },
+        "sha256": "8bf2e1f203c4a6ec3d4d9459d77ec45f3f7d0edfd7d3a48858fcb9cd34fc44ed"
+      },
+      {
+        "directory": "gdpval",
+        "metadata": {
+          "title": "GDPval",
+          "group": "Assistants",
+          "version": "2-A",
+          "tasks": [
+            {
+              "name": "gdpval",
+              "dataset_samples": 220
+            }
+          ]
+        },
+        "sha256": "c71db434bb72bf469e2734bdf7b0455b728e4a3606f54065f41c07c07af99fc2"
+      },
+      {
+        "directory": "gpqa",
+        "metadata": {
+          "title": "GPQA: Graduate-Level STEM Knowledge Challenge",
+          "group": "Knowledge",
+          "version": "3-D",
+          "tasks": [
+            {
+              "name": "gpqa_diamond",
+              "dataset_samples": 198
+            }
+          ]
+        },
+        "sha256": "99dc4bb5c9a4f16fd2f76d3c2692edaaba38b77932c998b88796715451beb5cf"
+      },
+      {
+        "directory": "gsm8k",
+        "metadata": {
+          "title": "GSM8K: Grade School Math Word Problems",
+          "group": "Mathematics",
+          "version": "2-A",
+          "tasks": [
+            {
+              "name": "gsm8k",
+              "dataset_samples": 1319
+            }
+          ]
+        },
+        "sha256": "962251837b88c38c19e54ce0a915ecd242afac1c0e33f6ba8b940e7a0034573e"
+      },
+      {
+        "directory": "healthbench",
+        "metadata": {
+          "title": "HealthBench: Evaluating Large Language Models Towards Improved Human Health",
+          "group": "Knowledge",
+          "version": "3-B",
+          "tasks": [
+            {
+              "name": "healthbench",
+              "dataset_samples": 5000
+            },
+            {
+              "name": "healthbench_hard",
+              "dataset_samples": 1000
+            },
+            {
+              "name": "healthbench_consensus",
+              "dataset_samples": 3671
+            },
+            {
+              "name": "healthbench_meta_eval",
+              "dataset_samples": 29511
+            }
+          ]
+        },
+        "sha256": "15de1ee9c6e6f8f7d81c039d9835dcab717c038f2d32ce7c24d2b36cf1a8bd92"
+      },
+      {
+        "directory": "hellaswag",
+        "metadata": {
+          "title": "HellaSwag: Commonsense Event Continuation",
+          "group": "Reasoning",
+          "version": "2-A",
+          "tasks": [
+            {
+              "name": "hellaswag",
+              "dataset_samples": 10042
+            }
+          ]
+        },
+        "sha256": "70c4355325545e03f5d8306291fab74b94806845963d9a37891c6e962232de61"
+      },
+      {
+        "directory": "hle",
+        "metadata": {
+          "title": "Humanity's Last Exam",
+          "group": "Knowledge",
+          "version": "7-E",
+          "tasks": [
+            {
+              "name": "hle",
+              "dataset_samples": 668
+            }
+          ]
+        },
+        "sha256": "68ecbc1af899d5b1e45b7d635ce89903e1669d9502b029c9e1c1b2a67b3613a2"
+      },
+      {
+        "directory": "humaneval",
+        "metadata": {
+          "title": "HumanEval: Python Function Generation from Instructions",
+          "group": "Coding",
+          "version": "2-A",
+          "tasks": [
+            {
+              "name": "humaneval",
+              "dataset_samples": 164
+            }
+          ]
+        },
+        "sha256": "65b5976f402568e3d0a014d909e6cfcdc186d7ccf24531ebe398b74387d13765"
+      },
+      {
+        "directory": "ifeval",
+        "metadata": {
+          "title": "IFEval: Instruction-Following Evaluation",
+          "group": "Reasoning",
+          "version": "2-A",
+          "tasks": [
+            {
+              "name": "ifeval",
+              "dataset_samples": 541
+            }
+          ]
+        },
+        "sha256": "14213a6f1ed0cc0796adf62aa26e8f708c1d7160ada0a63486a92c2c203083c8"
+      },
+      {
+        "directory": "ifevalcode",
+        "metadata": {
+          "title": "IFEvalCode: Controlled Code Generation",
+          "group": "Coding",
+          "version": "2-A",
+          "tasks": [
+            {
+              "name": "ifevalcode",
+              "dataset_samples": 810
+            }
+          ]
+        },
+        "sha256": "2c10a38f2919f29f6a6f99f8fb574b15b95a1cc71e1f84ab0bc850cf2e10de15"
+      },
+      {
+        "directory": "infinite_bench",
+        "metadata": {
+          "title": "∞Bench: Extending Long Context Evaluation Beyond 100K Tokens",
+          "group": "Reasoning",
+          "version": "3-A",
+          "tasks": [
+            {
+              "name": "infinite_bench_code_debug",
+              "dataset_samples": 394
+            },
+            {
+              "name": "infinite_bench_code_run",
+              "dataset_samples": 400
+            },
+            {
+              "name": "infinite_bench_kv_retrieval",
+              "dataset_samples": 500
+            },
+            {
+              "name": "infinite_bench_longbook_choice_eng",
+              "dataset_samples": 229
+            },
+            {
+              "name": "infinite_bench_longdialogue_qa_eng",
+              "dataset_samples": 200
+            },
+            {
+              "name": "infinite_bench_math_calc",
+              "dataset_samples": 50
+            },
+            {
+              "name": "infinite_bench_math_find",
+              "dataset_samples": 350
+            },
+            {
+              "name": "infinite_bench_number_string",
+              "dataset_samples": 590
+            },
+            {
+              "name": "infinite_bench_passkey",
+              "dataset_samples": 590
+            }
+          ]
+        },
+        "sha256": "bb06ea6cfb170ba467dd0b21ab0fd1206a531e928dcb805da72d10e5a8510e2c"
+      },
+      {
+        "directory": "instrumentaleval",
+        "metadata": {
+          "title": "InstrumentalEval - Evaluating the Paperclip Maximizer: Are RL-Based Language Models More Likely to Pursue Instrumental Goals?",
+          "group": "Scheming",
+          "version": "2-A",
+          "tasks": [
+            {
+              "name": "instrumentaleval",
+              "dataset_samples": 76
+            }
+          ]
+        },
+        "sha256": "19b47bd63d30c5e4be373f19cfd6ef9f2fd928d44eeb9a827a60b801305afcc3"
+      },
+      {
+        "directory": "ipi_coding_agent",
+        "metadata": {
+          "title": "CodeIPI: Indirect Prompt Injection for Coding Agents",
+          "group": "Safeguards",
+          "version": "3-B",
+          "tasks": [
+            {
+              "name": "ipi_coding_agent",
+              "dataset_samples": 45
+            }
+          ]
+        },
+        "sha256": "a068db46716a8c3e363bdf8c8a7a4c8e0cd7c13bd58dafbfbbe71236cc18fc52"
+      },
+      {
+        "directory": "kernelbench",
+        "metadata": {
+          "title": "KernelBench: Can LLMs Write Efficient GPU Kernels?",
+          "group": "Coding",
+          "version": "6-C",
+          "tasks": [
+            {
+              "name": "kernelbench",
+              "dataset_samples": 250
+            },
+            {
+              "name": "kernelbench_sandbox_check",
+              "dataset_samples": 3
+            }
+          ]
+        },
+        "sha256": "2f4937e9014872362b3cca9a76f4079619d9c3126ea4e9cbd493ae5963484e89"
+      },
+      {
+        "directory": "lab_bench",
+        "metadata": {
+          "title": "LAB-Bench: Measuring Capabilities of Language Models for Biology Research",
+          "group": "Safeguards",
+          "version": "2-A",
+          "tasks": [
+            {
+              "name": "lab_bench_litqa",
+              "dataset_samples": 199
+            },
+            {
+              "name": "lab_bench_suppqa",
+              "dataset_samples": 82
+            },
+            {
+              "name": "lab_bench_figqa",
+              "dataset_samples": 181
+            },
+            {
+              "name": "lab_bench_tableqa",
+              "dataset_samples": 244
+            },
+            {
+              "name": "lab_bench_dbqa",
+              "dataset_samples": 520
+            },
+            {
+              "name": "lab_bench_protocolqa",
+              "dataset_samples": 108
+            },
+            {
+              "name": "lab_bench_seqqa",
+              "dataset_samples": 600
+            },
+            {
+              "name": "lab_bench_cloning_scenarios",
+              "dataset_samples": 33
+            }
+          ]
+        },
+        "sha256": "aa1ebfd70c820c4314109daf4bb5e63ffe8f29d6f5d34d0cd5afb58fe4f5b410"
+      },
+      {
+        "directory": "lingoly",
+        "metadata": {
+          "title": "LingOly",
+          "group": "Reasoning",
+          "version": "2-A",
+          "tasks": [
+            {
+              "name": "lingoly",
+              "dataset_samples": 408
+            },
+            {
+              "name": "lingoly_too",
+              "dataset_samples": 1203
+            }
+          ]
+        },
+        "sha256": "956104594684d3efc2f7fd7bd6e7c73fb352b641b28211f674714fa22138eb04"
+      },
+      {
+        "directory": "livebench",
+        "metadata": {
+          "title": "LiveBench: A Challenging, Contamination-Free LLM Benchmark",
+          "group": "Knowledge",
+          "version": "3-A",
+          "tasks": [
+            {
+              "name": "livebench",
+              "dataset_samples": 910
+            }
+          ]
+        },
+        "sha256": "ccad349a3fb1f0dcc21765a7615db27aefdd4108fb1224c2ee66a13c25284123"
+      },
+      {
+        "directory": "livecodebench_pro",
+        "metadata": {
+          "title": "LiveCodeBench-Pro: Competitive Programming Benchmark",
+          "group": "Coding",
+          "version": "2-A",
+          "tasks": [
+            {
+              "name": "livecodebench_pro",
+              "dataset_samples": 706
+            }
+          ]
+        },
+        "sha256": "c88c823339645ead83d3c10664c8950b3fec3213cbc2410174c3ba17dd9dc99d"
+      },
+      {
+        "directory": "macbench",
+        "metadata": {
+          "title": "MaCBench: Probing the limitations of multimodal language models for chemistry and materials research",
+          "group": "Knowledge",
+          "version": "2-A",
+          "tasks": [
+            {
+              "name": "macbench",
+              "dataset_samples": 1153
+            }
+          ]
+        },
+        "sha256": "91721cf3f0a0fbcc66b3fa64ddc85206913b9a04aacecc6cba00dbb319336fa0"
+      },
+      {
+        "directory": "make_me_pay",
+        "metadata": {
+          "title": "Make Me Pay",
+          "group": "Safeguards",
+          "version": "2-A",
+          "tasks": [
+            {
+              "name": "make_me_pay",
+              "dataset_samples": 20
+            }
+          ]
+        },
+        "sha256": "1fea061af09f58fc62cd4755a417f1cc51a67b7aea2d0176993fb476274604a4"
+      },
+      {
+        "directory": "makemesay",
+        "metadata": {
+          "title": "MakeMeSay",
+          "group": "Safeguards",
+          "version": "2-A",
+          "tasks": [
+            {
+              "name": "makemesay",
+              "dataset_samples": 189
+            }
+          ]
+        },
+        "sha256": "3c046644c5b4506416479092fd6bd64eef7c03ace37acb66bd16a05703c3b355"
+      },
+      {
+        "directory": "mask",
+        "metadata": {
+          "title": "MASK: Disentangling Honesty from Accuracy in AI Systems",
+          "group": "Safeguards",
+          "version": "5-E",
+          "tasks": [
+            {
+              "name": "mask",
+              "dataset_samples": 1000
+            }
+          ]
+        },
+        "sha256": "fc37a16d992fb4d3a65c14e7d0aad1b7bba04b7d30383b0534c4f9f515f39f5b"
+      },
+      {
+        "directory": "math",
+        "metadata": {
+          "title": "MATH: Measuring Mathematical Problem Solving",
+          "group": "Mathematics",
+          "version": "3-A",
+          "tasks": [
+            {
+              "name": "math",
+              "dataset_samples": 12500
+            }
+          ]
+        },
+        "sha256": "cec4915557efbd0145c98ef7dff870275fbcd82a2437d64621d5ff0c8e323b5c"
+      },
+      {
+        "directory": "mathvista",
+        "metadata": {
+          "title": "MathVista: Visual Math Problem-Solving",
+          "group": "Mathematics",
+          "version": "2-A",
+          "tasks": [
+            {
+              "name": "mathvista",
+              "dataset_samples": 1000
+            }
+          ]
+        },
+        "sha256": "5dbcdc377223454d0633289df201c82c4e868d85f94c0039d22be27d7dd17949"
+      },
+      {
+        "directory": "mbpp",
+        "metadata": {
+          "title": "MBPP: Basic Python Coding Challenges",
+          "group": "Coding",
+          "version": "4-A",
+          "tasks": [
+            {
+              "name": "mbpp",
+              "dataset_samples": 257
+            }
+          ]
+        },
+        "sha256": "d2c804094dbe0921fee44def6050e26181bfe9f9b0f3ce2e15e5ce815c281667"
+      },
+      {
+        "directory": "medqa",
+        "metadata": {
+          "title": "MedQA: Medical exam Q&A benchmark",
+          "group": "Knowledge",
+          "version": "2-A",
+          "tasks": [
+            {
+              "name": "medqa",
+              "dataset_samples": 1273
+            }
+          ]
+        },
+        "sha256": "60fd7bb4b3fe4ff8d3274a12964c6a4e62ee44786f94acceb810259fe7d1e027"
+      },
+      {
+        "directory": "mgsm",
+        "metadata": {
+          "title": "MGSM: Multilingual Grade School Math",
+          "group": "Mathematics",
+          "version": "2-A",
+          "tasks": [
+            {
+              "name": "mgsm",
+              "dataset_samples": 2750
+            }
+          ]
+        },
+        "sha256": "939cb7eb70b1c7f300d59fd2f2cb12a1f6d862f2a5c128488d0db82c7e0bbbd5"
+      },
+      {
+        "directory": "mind2web",
+        "metadata": {
+          "title": "Mind2Web: Towards a Generalist Agent for the Web",
+          "group": "Assistants",
+          "version": "3-A",
+          "tasks": [
+            {
+              "name": "mind2web",
+              "dataset_samples": 7775
+            }
+          ]
+        },
+        "sha256": "b421d56da3b2c0160c820bf426d4fcdba0fbcb76ea855f8b2afe8c68d5290e1a"
+      },
+      {
+        "directory": "mind2web_sc",
+        "metadata": {
+          "title": "Mind2Web-SC",
+          "group": "Safeguards",
+          "version": "3-B",
+          "tasks": [
+            {
+              "name": "mind2web_sc",
+              "dataset_samples": 200
+            }
+          ]
+        },
+        "sha256": "6a3526ab638447585ce6ce511bde6442e57cf34591c297a6bab9d4118399d153"
+      },
+      {
+        "directory": "mle_bench",
+        "metadata": {
+          "title": "MLE-bench: Evaluating Machine Learning Agents on Machine Learning Engineering",
+          "group": "Coding",
+          "version": "7-G",
+          "tasks": [
+            {
+              "name": "mle_bench",
+              "dataset_samples": 1
+            },
+            {
+              "name": "mle_bench_full",
+              "dataset_samples": 75
+            },
+            {
+              "name": "mle_bench_lite",
+              "dataset_samples": 22
+            }
+          ]
+        },
+        "sha256": "b6b5f9d92edde436b5481339db403a1fff07223db4be841455d0e4ffbc1bd1b9"
+      },
+      {
+        "directory": "mlrc_bench",
+        "metadata": {
+          "title": "MLRC-Bench: Can Language Agents Solve Machine Learning Research Challenges?",
+          "group": "Coding",
+          "version": "1-C",
+          "tasks": [
+            {
+              "name": "mlrc_bench",
+              "dataset_samples": 7
+            }
+          ]
+        },
+        "sha256": "8aab2aabaa1c5de08961c2956ec2be50a6e3e27914d066dadd0725860306880d"
+      },
+      {
+        "directory": "mmiu",
+        "metadata": {
+          "title": "MMIU: Multimodal Multi-image Understanding for Evaluating Large Vision-Language Models",
+          "group": "Multimodal",
+          "version": "2-A",
+          "tasks": [
+            {
+              "name": "mmiu",
+              "dataset_samples": 11698
+            }
+          ]
+        },
+        "sha256": "62727723df68c36813cf0f6851cc4b0c0bd3795e68807fe6453fecf617fdc097"
+      },
+      {
+        "directory": "mmlu",
+        "metadata": {
+          "title": "MMLU: Measuring Massive Multitask Language Understanding",
+          "group": "Knowledge",
+          "version": "4-A",
+          "tasks": [
+            {
+              "name": "mmlu_0_shot",
+              "dataset_samples": 13937
+            },
+            {
+              "name": "mmlu_5_shot",
+              "dataset_samples": 14015
+            }
+          ]
+        },
+        "sha256": "15477458efa65f03a0e7604a3abdc35ddfd9ff1e55eeb9f1430618ba0ab334a2"
+      },
+      {
+        "directory": "mmlu_pro",
+        "metadata": {
+          "title": "MMLU-Pro: Advanced Multitask Knowledge and Reasoning Evaluation",
+          "group": "Knowledge",
+          "version": "2-A",
+          "tasks": [
+            {
+              "name": "mmlu_pro",
+              "dataset_samples": 12032
+            }
+          ]
+        },
+        "sha256": "a3bb97512e2d0d21fe8232defa3ddad4724db57fd8c0a40514d891a15c441ee7"
+      },
+      {
+        "directory": "mmmu",
+        "metadata": {
+          "title": "MMMU: Multimodal College-Level Understanding and Reasoning",
+          "group": "Reasoning",
+          "version": "2-A",
+          "tasks": [
+            {
+              "name": "mmmu_multiple_choice",
+              "dataset_samples": 847
+            },
+            {
+              "name": "mmmu_open",
+              "dataset_samples": 53
+            }
+          ]
+        },
+        "sha256": "ed31bfe72520283a14aa99990af2e4ddf8dd176e6cfb1f401a40fbb0d4ffcd40"
+      },
+      {
+        "directory": "moru",
+        "metadata": {
+          "title": "MORU: Moral Reasoning under Uncertainty",
+          "group": "Safeguards",
+          "version": "3-B",
+          "tasks": [
+            {
+              "name": "moru",
+              "dataset_samples": 201
+            }
+          ]
+        },
+        "sha256": "f694cdf368792c8a74c7b0a80578f42895b6e537ec5628e1f996e16c0735ae3a"
+      },
+      {
+        "directory": "musr",
+        "metadata": {
+          "title": "MuSR: Testing the Limits of Chain-of-thought with Multistep Soft Reasoning",
+          "group": "Reasoning",
+          "version": "2-A",
+          "tasks": [
+            {
+              "name": "musr",
+              "dataset_samples": 250
+            }
+          ]
+        },
+        "sha256": "08f518b19219d44aa128106482816fe0a39c3ecbcb521f8fca8a7e6d5c0ed05a"
+      },
+      {
+        "directory": "niah",
+        "metadata": {
+          "title": "Needle in a Haystack (NIAH): In-Context Retrieval Benchmark for Long Context LLMs",
+          "group": "Reasoning",
+          "version": "3-A",
+          "tasks": [
+            {
+              "name": "niah",
+              "dataset_samples": 225
+            }
+          ]
+        },
+        "sha256": "ea04ea3a6e29431b1c58982cdc6fd6b548d63756f6772aada29dfa732658084e"
+      },
+      {
+        "directory": "novelty_bench",
+        "metadata": {
+          "title": "NoveltyBench: Evaluating Language Models for Humanlike Diversity",
+          "group": "Reasoning",
+          "version": "2-A",
+          "tasks": [
+            {
+              "name": "novelty_bench",
+              "dataset_samples": 1100
+            }
+          ]
+        },
+        "sha256": "c47485077badb98acde22fe680b318c5d8cc1ff2c38958eaf3374952ff4285d9"
+      },
+      {
+        "directory": "onet",
+        "metadata": {
+          "title": "O-NET: A high-school student knowledge test",
+          "group": "Knowledge",
+          "version": "3-A",
+          "tasks": [
+            {
+              "name": "onet_m6",
+              "dataset_samples": 397
+            }
+          ]
+        },
+        "sha256": "5b725c10041a5df792d9110770055c80c8af16d5cde0c78e8ffad9772c4baa32"
+      },
+      {
+        "directory": "osworld",
+        "metadata": {
+          "title": "OSWorld: Multimodal Computer Interaction Tasks",
+          "group": "Assistants",
+          "version": "5-A",
+          "tasks": [
+            {
+              "name": "osworld",
+              "dataset_samples": 369
+            },
+            {
+              "name": "osworld_small",
+              "dataset_samples": 39
+            }
+          ]
+        },
+        "sha256": "622604274bc4465b706e0559c0ed2ba73d347e7def4b4ffc3c6353619c25d2f4"
+      },
+      {
+        "directory": "paperbench",
+        "metadata": {
+          "title": "PaperBench: Evaluating AI's Ability to Replicate AI Research",
+          "group": "Coding",
+          "version": "5-C",
+          "tasks": [
+            {
+              "name": "paperbench",
+              "dataset_samples": 23
+            }
+          ]
+        },
+        "sha256": "77ac6315244e9c984f8d08fa8eac16297f54df92365a27770da672676cf84907"
+      },
+      {
+        "directory": "paws",
+        "metadata": {
+          "title": "PAWS: Paraphrase Adversaries from Word Scrambling",
+          "group": "Reasoning",
+          "version": "4-A",
+          "tasks": [
+            {
+              "name": "paws",
+              "dataset_samples": 8000
+            }
+          ]
+        },
+        "sha256": "f317b4cf55bf1cb6d6c1b90b94ecbb2096b5850d3538c8f63d916bbdd92e8263"
+      },
+      {
+        "directory": "persistbench",
+        "metadata": {
+          "title": "PersistBench: When Should Long-Term Memories Be Forgotten by LLMs?",
+          "group": "Safeguards",
+          "version": "2-B",
+          "tasks": [
+            {
+              "name": "persistbench_cross_domain",
+              "dataset_samples": 200
+            },
+            {
+              "name": "persistbench_sycophancy",
+              "dataset_samples": 200
+            },
+            {
+              "name": "persistbench_beneficial_memory",
+              "dataset_samples": 100
+            }
+          ]
+        },
+        "sha256": "57d08944bcf9d06e0b7e775c02b95c03bf0e925d80768be26cbf9f3c72a515fe"
+      },
+      {
+        "directory": "personality",
+        "metadata": {
+          "title": "Personality",
+          "group": "Personality",
+          "version": "3-A",
+          "tasks": [
+            {
+              "name": "personality_BFI",
+              "dataset_samples": 44
+            },
+            {
+              "name": "personality_TRAIT",
+              "dataset_samples": 8000
+            }
+          ]
+        },
+        "sha256": "f3be7b7d23f73d058e3507b50b80a6b957597e67440f2aa9c9eb7ff3b1ba6917"
+      },
+      {
+        "directory": "piqa",
+        "metadata": {
+          "title": "PIQA: Physical Commonsense Reasoning Test",
+          "group": "Reasoning",
+          "version": "2-A",
+          "tasks": [
+            {
+              "name": "piqa",
+              "dataset_samples": 1838
+            }
+          ]
+        },
+        "sha256": "4d5869c35a193a074b1347cabb584ebf89251ea5d44dcaa24db1a2ac731524c5"
+      },
+      {
+        "directory": "pre_flight",
+        "metadata": {
+          "title": "Pre-Flight: Aviation Operations Knowledge Evaluation",
+          "group": "Knowledge",
+          "version": "2-A",
+          "tasks": [
+            {
+              "name": "pre_flight",
+              "dataset_samples": 300
+            }
+          ]
+        },
+        "sha256": "ba2da5e475876122c0a6d708c51febb83ac7f7e7a3fc340f673d335d052acb48"
+      },
+      {
+        "directory": "pubmedqa",
+        "metadata": {
+          "title": "PubMedQA: A Dataset for Biomedical Research Question Answering",
+          "group": "Knowledge",
+          "version": "2-A",
+          "tasks": [
+            {
+              "name": "pubmedqa",
+              "dataset_samples": 500
+            }
+          ]
+        },
+        "sha256": "0545d3ec9474793d622ab25a0a53eaea180e38de979f9d58f0c921983fe24a3d"
+      },
+      {
+        "directory": "race_h",
+        "metadata": {
+          "title": "RACE-H: A benchmark for testing reading comprehension and reasoning abilities of neural models",
+          "group": "Reasoning",
+          "version": "2-A",
+          "tasks": [
+            {
+              "name": "race_h",
+              "dataset_samples": 3498
+            }
+          ]
+        },
+        "sha256": "ecb3a5b55eb19e40609966190c3b58e14896fb10fdc2c88b54ba50726ea17878"
+      },
+      {
+        "directory": "sad",
+        "metadata": {
+          "title": "SAD: Situational Awareness Dataset",
+          "group": "Scheming",
+          "version": "3-A",
+          "tasks": [
+            {
+              "name": "sad_stages_full",
+              "dataset_samples": 800
+            },
+            {
+              "name": "sad_stages_oversight",
+              "dataset_samples": 400
+            },
+            {
+              "name": "sad_influence",
+              "dataset_samples": 255
+            },
+            {
+              "name": "sad_facts_llms",
+              "dataset_samples": 249
+            },
+            {
+              "name": "sad_facts_human_defaults",
+              "dataset_samples": 1200
+            }
+          ]
+        },
+        "sha256": "d6a09811ea81fa9f9c256017a36cc5b51c8c7bd11f2ecf2ccb4b9de7de3a06af"
+      },
+      {
+        "directory": "scbench",
+        "metadata": {
+          "title": "scBench: A Benchmark for Single-Cell RNA-seq Analysis",
+          "group": "Coding",
+          "version": "2-A",
+          "tasks": [
+            {
+              "name": "scbench",
+              "dataset_samples": 30
+            }
+          ]
+        },
+        "sha256": "304a87e84cab4b7200e3a02bf37c26fd60eb1d6c65d702bbdf2ec9c3ad439ac2"
+      },
+      {
+        "directory": "scicode",
+        "metadata": {
+          "title": "SciCode: A Research Coding Benchmark Curated by Scientists",
+          "group": "Coding",
+          "version": "2-A",
+          "tasks": [
+            {
+              "name": "scicode",
+              "dataset_samples": 65
+            }
+          ]
+        },
+        "sha256": "01d858b71f428c225d8dac0e62810250873463ac395cb4ffbc218665cb743b95"
+      },
+      {
+        "directory": "sciknoweval",
+        "metadata": {
+          "title": "SciKnowEval: Evaluating Multi-level Scientific Knowledge of Large Language Models",
+          "group": "Knowledge",
+          "version": "4-B",
+          "tasks": [
+            {
+              "name": "sciknoweval",
+              "dataset_samples": 69736
+            }
+          ]
+        },
+        "sha256": "24f313f7bd8ec85ac8d9b5b6ff5d88d41d714546300ac76075d4154e32e6f5c3"
+      },
+      {
+        "directory": "sec_qa",
+        "metadata": {
+          "title": "SecQA: A Concise Question-Answering Dataset for Evaluating Large Language Models in Computer Security",
+          "group": "Cybersecurity",
+          "version": "2-A",
+          "tasks": [
+            {
+              "name": "sec_qa_v1",
+              "dataset_samples": 110
+            },
+            {
+              "name": "sec_qa_v1_5_shot",
+              "dataset_samples": 110
+            },
+            {
+              "name": "sec_qa_v2",
+              "dataset_samples": 100
+            },
+            {
+              "name": "sec_qa_v2_5_shot",
+              "dataset_samples": 100
+            }
+          ]
+        },
+        "sha256": "3a1492b34dfba6e6c293c6eff6498013fa09ab3e73463dd432188b6d5e657b91"
+      },
+      {
+        "directory": "sevenllm",
+        "metadata": {
+          "title": "SEvenLLM: A benchmark to elicit, and improve cybersecurity incident analysis and response abilities in LLMs for Security Events.",
+          "group": "Cybersecurity",
+          "version": "2-A",
+          "tasks": [
+            {
+              "name": "sevenllm_mcq_zh",
+              "dataset_samples": 50
+            },
+            {
+              "name": "sevenllm_mcq_en",
+              "dataset_samples": 50
+            },
+            {
+              "name": "sevenllm_qa_zh",
+              "dataset_samples": 600
+            },
+            {
+              "name": "sevenllm_qa_en",
+              "dataset_samples": 600
+            }
+          ]
+        },
+        "sha256": "3fe1dff87eedaa0bc615a818509057115ef0a71a5a987c7d547110e485873696"
+      },
+      {
+        "directory": "simpleqa",
+        "metadata": {
+          "title": "SimpleQA/SimpleQA Verified: Measuring short-form factuality in large language models",
+          "group": "Knowledge",
+          "version": "5-C",
+          "tasks": [
+            {
+              "name": "simpleqa",
+              "dataset_samples": 4326
+            },
+            {
+              "name": "simpleqa_verified",
+              "dataset_samples": 1000
+            }
+          ]
+        },
+        "sha256": "3dbce71c91151b4e357a4677f26f1cc8a4a8ba8cf0a64354ed7b2fe6d4753636"
+      },
+      {
+        "directory": "sosbench",
+        "metadata": {
+          "title": "SOS BENCH: Benchmarking Safety Alignment on Scientific Knowledge",
+          "group": "Knowledge",
+          "version": "2-A",
+          "tasks": [
+            {
+              "name": "sosbench",
+              "dataset_samples": 3000
+            }
+          ]
+        },
+        "sha256": "d3b40bc1ae438f74e21581dc1a9f7885697482a8efd4e79744579295ea452fa9"
+      },
+      {
+        "directory": "squad",
+        "metadata": {
+          "title": "SQuAD: A Reading Comprehension Benchmark requiring reasoning over Wikipedia articles",
+          "group": "Reasoning",
+          "version": "3-A",
+          "tasks": [
+            {
+              "name": "squad",
+              "dataset_samples": 11873
+            }
+          ]
+        },
+        "sha256": "ca062d00a4b6632764fc875ccbcdda33a348ee24f07e959fae5cc7d03188b52e"
+      },
+      {
+        "directory": "stereoset",
+        "metadata": {
+          "title": "StereoSet: Measuring stereotypical bias in pretrained language models",
+          "group": "Safeguards",
+          "version": "4-A",
+          "tasks": [
+            {
+              "name": "stereoset",
+              "dataset_samples": 2123
+            }
+          ]
+        },
+        "sha256": "bc98c84124b8a596c9236d14c1ecfab8acdcd718ad43135260322611b32b7a82"
+      },
+      {
+        "directory": "strong_reject",
+        "metadata": {
+          "title": "StrongREJECT: Measuring LLM susceptibility to jailbreak attacks",
+          "group": "Safeguards",
+          "version": "3-B",
+          "tasks": [
+            {
+              "name": "strong_reject",
+              "dataset_samples": 324
+            }
+          ]
+        },
+        "sha256": "7680eb1c9fc35671d8e2dfa93c4e8cf12cba90580f5f3105b87550b2489c737e"
+      },
+      {
+        "directory": "swe_bench",
+        "metadata": {
+          "title": "SWE-bench Verified: Resolving Real-World GitHub Issues",
+          "group": "Coding",
+          "version": "5-C",
+          "tasks": [
+            {
+              "name": "swe_bench",
+              "dataset_samples": 500
+            },
+            {
+              "name": "swe_bench_verified_mini",
+              "dataset_samples": 50
+            }
+          ]
+        },
+        "sha256": "a1529c63fc7bff7ad5443761319dc6b32d1f2e6e88e50f0df513f9cb2188faad"
+      },
+      {
+        "directory": "swe_lancer",
+        "metadata": {
+          "title": "SWE-Lancer: Can Frontier LLMs Earn $1 Million from Real-World Freelance Software Engineering?",
+          "group": "Coding",
+          "version": "1-B",
+          "tasks": [
+            {
+              "name": "swe_lancer",
+              "dataset_samples": 460
+            }
+          ]
+        },
+        "sha256": "628adaebf1df8d8e4d08b76099c259bd8e5ad4a77fd695de74b0341b570065a6"
+      },
+      {
+        "directory": "sycophancy",
+        "metadata": {
+          "title": "Sycophancy Eval",
+          "group": "Assistants",
+          "version": "4-A",
+          "tasks": [
+            {
+              "name": "sycophancy",
+              "dataset_samples": 4882
+            }
+          ]
+        },
+        "sha256": "85fb038e1d101703d568eb742ae6cd9238884cfc2efda86216894592bc7bcf05"
+      },
+      {
+        "directory": "tac",
+        "metadata": {
+          "title": "TAC: Animal Welfare Awareness in AI Ticket Agents",
+          "group": "Safeguards",
+          "version": "7-C",
+          "tasks": [
+            {
+              "name": "tac",
+              "dataset_samples": 52
+            },
+            {
+              "name": "tac_welfare",
+              "dataset_samples": 52
+            }
+          ]
+        },
+        "sha256": "f4510bc8944d67e0f263d538cae5bed1c56cb859aac7a4df0468058468d33e3e"
+      },
+      {
+        "directory": "tau2",
+        "metadata": {
+          "title": "Tau2",
+          "group": "Assistants",
+          "version": "3-A",
+          "tasks": [
+            {
+              "name": "tau2_airline",
+              "dataset_samples": 50
+            },
+            {
+              "name": "tau2_banking",
+              "dataset_samples": 97
+            },
+            {
+              "name": "tau2_retail",
+              "dataset_samples": 114
+            },
+            {
+              "name": "tau2_telecom",
+              "dataset_samples": 114
+            }
+          ]
+        },
+        "sha256": "1d6f84f1a8a6dd024ea1471aef8705ce15ff92c6059f1a8bfe57668983808416"
+      },
+      {
+        "directory": "theagentcompany",
+        "metadata": {
+          "title": "The Agent Company: Evaluating multi-tool autonomous agents in a synthetic company",
+          "group": "Assistants",
+          "version": "1-A",
+          "tasks": [
+            {
+              "name": "theagentcompany",
+              "dataset_samples": 34
+            }
+          ]
+        },
+        "sha256": "22ab8deab5f410d616a2e336561201705ccd054c2911eed45b1d01ef2ac1f6c9"
+      },
+      {
+        "directory": "threecb",
+        "metadata": {
+          "title": "Catastrophic Cyber Capabilities Benchmark (3CB): Robustly Evaluating LLM Agent Cyber Offense Capabilities",
+          "group": "Cybersecurity",
+          "version": "4-B",
+          "tasks": [
+            {
+              "name": "threecb",
+              "dataset_samples": 13
+            }
+          ]
+        },
+        "sha256": "bff71c40b6abd9b2c609ece9f191b56479937bee5555b5a36d65a6ff449b31b9"
+      },
+      {
+        "directory": "truthfulqa",
+        "metadata": {
+          "title": "TruthfulQA: Measuring How Models Mimic Human Falsehoods",
+          "group": "Knowledge",
+          "version": "2-A",
+          "tasks": [
+            {
+              "name": "truthfulqa",
+              "dataset_samples": 817
+            }
+          ]
+        },
+        "sha256": "c4c2949ab4a5231b03319702c586a789f7ea73d7e300e74c032e414f77f5d9cf"
+      },
+      {
+        "directory": "uccb",
+        "metadata": {
+          "title": "Uganda Cultural and Cognitive Benchmark (UCCB)",
+          "group": "Knowledge",
+          "version": "3-A",
+          "tasks": [
+            {
+              "name": "uccb",
+              "dataset_samples": 1039
+            }
+          ]
+        },
+        "sha256": "4fe36e92e3a87f7f674a6debd21769fca041e2dbcf7cab0a4fdc8c206186bfe5"
+      },
+      {
+        "directory": "usaco",
+        "metadata": {
+          "title": "USACO: USA Computing Olympiad",
+          "group": "Coding",
+          "version": "2-A",
+          "tasks": [
+            {
+              "name": "usaco",
+              "dataset_samples": 307
+            }
+          ]
+        },
+        "sha256": "71558c1ec20c27491fddf5b3b23c8c5ed789c01b9f236d0fd8d71d9d1657e241"
+      },
+      {
+        "directory": "vimgolf_challenges",
+        "metadata": {
+          "title": "VimGolf: Evaluating LLMs in Vim Editing Proficiency",
+          "group": "Reasoning",
+          "version": "2-A",
+          "tasks": [
+            {
+              "name": "vimgolf_single_turn",
+              "dataset_samples": 612
+            }
+          ]
+        },
+        "sha256": "d6f3f58233a0bc68f1bcb9cb3d5955517ad7628f2e23cf7a9e6e47c91f26670b"
+      },
+      {
+        "directory": "vqa_rad",
+        "metadata": {
+          "title": "VQA-RAD: Visual Question Answering for Radiology",
+          "group": "Multimodal",
+          "version": "3-B",
+          "tasks": [
+            {
+              "name": "vqa_rad",
+              "dataset_samples": 451
+            }
+          ]
+        },
+        "sha256": "96becb9a3ea9dce10ef30cf6159b041ead38d84dffe831e7c911b3d664439211"
+      },
+      {
+        "directory": "vstar_bench",
+        "metadata": {
+          "title": "V*Bench: A Visual QA Benchmark with Detailed High-resolution Images",
+          "group": "Multimodal",
+          "version": "2-A",
+          "tasks": [
+            {
+              "name": "vstar_bench_attribute_recognition",
+              "dataset_samples": 115
+            },
+            {
+              "name": "vstar_bench_spatial_relationship_reasoning",
+              "dataset_samples": 76
+            }
+          ]
+        },
+        "sha256": "0f505d1cdf5ccc8ea6dadbda4e5d0ddc8ba8e962e542bc9e837c5fbca7531182"
+      },
+      {
+        "directory": "winogrande",
+        "metadata": {
+          "title": "WINOGRANDE: An Adversarial Winograd Schema Challenge at Scale",
+          "group": "Reasoning",
+          "version": "2-A",
+          "tasks": [
+            {
+              "name": "winogrande",
+              "dataset_samples": 1267
+            }
+          ]
+        },
+        "sha256": "b4974e26c733f3d2555fbae852adf72242dc5d9921a13f2d4a9b9b041a2607df"
+      },
+      {
+        "directory": "wmdp",
+        "metadata": {
+          "title": "WMDP: Measuring and Reducing Malicious Use With Unlearning",
+          "group": "Safeguards",
+          "version": "2-A",
+          "tasks": [
+            {
+              "name": "wmdp_bio",
+              "dataset_samples": 1273
+            },
+            {
+              "name": "wmdp_chem",
+              "dataset_samples": 408
+            },
+            {
+              "name": "wmdp_cyber",
+              "dataset_samples": 1987
+            }
+          ]
+        },
+        "sha256": "e8e4b86c0c0014fcbe925af8c4e2fcba3fccf658ed83efe81e5b970c655f69b1"
+      },
+      {
+        "directory": "worldsense",
+        "metadata": {
+          "title": "WorldSense: Grounded Reasoning Benchmark",
+          "group": "Reasoning",
+          "version": "4-A",
+          "tasks": [
+            {
+              "name": "worldsense",
+              "dataset_samples": 87048
+            }
+          ]
+        },
+        "sha256": "3f544ebef2af775e24beb93e6392aec55cb5aad28f7c05019f8a3b5b3508d6ce"
+      },
+      {
+        "directory": "writingbench",
+        "metadata": {
+          "title": "WritingBench: A Comprehensive Benchmark for Generative Writing",
+          "group": "Writing",
+          "version": "3-A",
+          "tasks": [
+            {
+              "name": "writingbench",
+              "dataset_samples": 1000
+            }
+          ]
+        },
+        "sha256": "0b8ed93f67e4a1ed8250c17ea8472cf6ae33cc64b015475f358262007e54f034"
+      },
+      {
+        "directory": "xstest",
+        "metadata": {
+          "title": "XSTest: A benchmark for identifying exaggerated safety behaviours in LLM's",
+          "group": "Knowledge",
+          "version": "4-A",
+          "tasks": [
+            {
+              "name": "xstest",
+              "dataset_samples": 250
+            }
+          ]
+        },
+        "sha256": "5300966439f531200b66a45c9a8efb4af8b6f524ca45faa11392e5b31e1ad340"
+      },
+      {
+        "directory": "zerobench",
+        "metadata": {
+          "title": "ZeroBench",
+          "group": "Multimodal",
+          "version": "2-A",
+          "tasks": [
+            {
+              "name": "zerobench",
+              "dataset_samples": 100
+            },
+            {
+              "name": "zerobench_subquestions",
+              "dataset_samples": 335
+            }
+          ]
+        },
+        "sha256": "e3726a982c3b3993d153b8ceed73bf355bb17475bcc2beb9f0d4b89108572541"
+      }
+    ],
+    "relevant_source_inventory": {
+      "swe_bench": [
+        {
+          "file": "__init__.py",
+          "sha256": "a3d41dc8b99cd712f5a751b54bad777d90dce942e6f42faf4ef7c1dfea6f963c",
+          "definitions": []
+        },
+        {
+          "file": "scorers.py",
+          "sha256": "9082eecac99b0c9a5a9d9d9bba0d99e894d82b2510964fd252f4155de1c08b5c",
+          "definitions": [
+            {
+              "name": "swe_bench_scorer",
+              "line": 27
+            },
+            {
+              "name": "make_swebench_test_spec",
+              "line": 91
+            },
+            {
+              "name": "SwebenchTestCategoryResult",
+              "line": 114
+            },
+            {
+              "name": "SwebenchInstanceReport",
+              "line": 125
+            },
+            {
+              "name": "get_score_and_explanation_from_test_output",
+              "line": 146
+            },
+            {
+              "name": "swe_bench_baseline_scorer",
+              "line": 246
+            },
+            {
+              "name": "get_eval_script",
+              "line": 278
+            },
+            {
+              "name": "get_baseline_results",
+              "line": 373
+            },
+            {
+              "name": "save_outputs_to_swebench_format",
+              "line": 400
+            }
+          ]
+        },
+        {
+          "file": "solvers.py",
+          "sha256": "6cf9f3e3a11376a9be92629b6be29276fd1e1d1a7460accbc85846c93ff5669b",
+          "definitions": [
+            {
+              "name": "basic_solver",
+              "line": 20
+            },
+            {
+              "name": "swe_bench_react_agent",
+              "line": 33
+            },
+            {
+              "name": "swe_bench_agent_with_inspect_tool_support",
+              "line": 69
+            },
+            {
+              "name": "swe_bench_oracle_solver",
+              "line": 94
+            }
+          ]
+        },
+        {
+          "file": "swe_bench.py",
+          "sha256": "42d9f6dc6c3c8e6929bcb09bb618a677285269140850887e4144ba299cafe9a8",
+          "definitions": [
+            {
+              "name": "swe_bench",
+              "line": 61
+            },
+            {
+              "name": "swe_bench_verified_mini",
+              "line": 169
+            },
+            {
+              "name": "_warn_if_timeout_too_low",
+              "line": 216
+            },
+            {
+              "name": "_create_docker_spec",
+              "line": 227
+            },
+            {
+              "name": "_create_k8s_spec",
+              "line": 252
+            },
+            {
+              "name": "_create_modal_spec",
+              "line": 276
+            },
+            {
+              "name": "_create_sandbox_spec",
+              "line": 308
+            }
+          ]
+        }
+      ],
+      "swe_lancer": [
+        {
+          "file": "__init__.py",
+          "sha256": "18d5269640cbcd9ce04823279bfd07e4f7e63181e060a97e81963154f2da4a9f",
+          "definitions": []
+        },
+        {
+          "file": "dataset.py",
+          "sha256": "5cc1c6b22b2738d3d4e66daded3b672c0ba20292ba7612a0be6fd0ac970dbd30",
+          "definitions": [
+            {
+              "name": "CsvRecord",
+              "line": 67
+            },
+            {
+              "name": "build_sample_prompt",
+              "line": 154
+            },
+            {
+              "name": "determine_image",
+              "line": 187
+            },
+            {
+              "name": "get_sandbox_spec",
+              "line": 238
+            },
+            {
+              "name": "read_csv",
+              "line": 330
+            },
+            {
+              "name": "record_to_sample",
+              "line": 352
+            },
+            {
+              "name": "get_env_variables",
+              "line": 414
+            },
+            {
+              "name": "get_dataset",
+              "line": 442
+            }
+          ]
+        },
+        {
+          "file": "debugging.py",
+          "sha256": "59e64e1f0f17fa4a83645da53a6c415ccd2ae56d21ffd307f0468631b52d589f",
+          "definitions": [
+            {
+              "name": "copy_from_sandbox",
+              "line": 16
+            },
+            {
+              "name": "export_playwright_traces",
+              "line": 89
+            },
+            {
+              "name": "export_video",
+              "line": 132
+            }
+          ]
+        },
+        {
+          "file": "prompts.py",
+          "sha256": "0618a2ef265187104ab07ba8eae96d206fdf5186bdafbf3c9a1f6ee783e078e9",
+          "definitions": [
+            {
+              "name": "construct_ic_task_prompt",
+              "line": 77
+            },
+            {
+              "name": "construct_manager_task_prompt",
+              "line": 127
+            }
+          ]
+        },
+        {
+          "file": "scorers.py",
+          "sha256": "269ffb0e602a4d12c243261c0e812a674035b0fc94ab16a56e693020a2fcdd60",
+          "definitions": [
+            {
+              "name": "CountMetric",
+              "line": 32
+            },
+            {
+              "name": "num_correct",
+              "line": 44
+            },
+            {
+              "name": "num_incorrect",
+              "line": 49
+            },
+            {
+              "name": "money_total",
+              "line": 54
+            },
+            {
+              "name": "swe_lancer_scorer",
+              "line": 76
+            },
+            {
+              "name": "debug_artifact_exporter",
+              "line": 255
+            }
+          ]
+        },
+        {
+          "file": "solvers.py",
+          "sha256": "02d9b5fb03d7ccce686e1aba529048c1be049f3b31f26c7a0a449ad0b2b554c7",
+          "definitions": [
+            {
+              "name": "wait_for_setup_completion",
+              "line": 18
+            },
+            {
+              "name": "setup",
+              "line": 55
+            },
+            {
+              "name": "gold_solution_solver",
+              "line": 157
+            },
+            {
+              "name": "gold_solution_solver_no_setup",
+              "line": 173
+            }
+          ]
+        },
+        {
+          "file": "swe_lancer.py",
+          "sha256": "3f0272d3590d4a2a03a6f2f4deaaee1ce87fd6ae8b6c7909867791496289f01c",
+          "definitions": [
+            {
+              "name": "swe_lancer",
+              "line": 39
+            }
+          ]
+        },
+        {
+          "file": "tools.py",
+          "sha256": "6e018b5955e9cc37e47fbc5ca0c2d8a8306d3cc7cd817323ed19b2ceea80d677",
+          "definitions": [
+            {
+              "name": "user_tool",
+              "line": 14
+            }
+          ]
+        },
+        {
+          "file": "utils.py",
+          "sha256": "030443c3fd1bb92ca6ee2be5ca03a91b23227ec06a0377e75e5cebad385f750e",
+          "definitions": [
+            {
+              "name": "TestExecutionConfig",
+              "line": 18
+            },
+            {
+              "name": "TestExecutionResult",
+              "line": 31
+            },
+            {
+              "name": "format_prompt",
+              "line": 45
+            },
+            {
+              "name": "unzip_tests",
+              "line": 59
+            },
+            {
+              "name": "zip_tests",
+              "line": 75
+            },
+            {
+              "name": "clear_test_directory",
+              "line": 86
+            },
+            {
+              "name": "report_limits_exceeded",
+              "line": 91
+            },
+            {
+              "name": "tests_failed_in_pytest_log",
+              "line": 109
+            },
+            {
+              "name": "get_log_prefix",
+              "line": 127
+            },
+            {
+              "name": "get_log_prefix_from_state",
+              "line": 132
+            },
+            {
+              "name": "ICSweTestsExecutor",
+              "line": 137
+            },
+            {
+              "name": "run_fixed_state",
+              "line": 531
+            }
+          ]
+        }
+      ],
+      "scbench": [
+        {
+          "file": "__init__.py",
+          "sha256": "894cf3786c9e779a792787c50f25358b227ec43a4034f857292fe8130d36cb1e",
+          "definitions": []
+        },
+        {
+          "file": "data_manifest.py",
+          "sha256": "84dba39ffc275916bc1e3e1fc17d8c421811ec38c7b10058a9d48ae4d25f02ac",
+          "definitions": [
+            {
+              "name": "DataFile",
+              "line": 18
+            },
+            {
+              "name": "get_download_url",
+              "line": 146
+            }
+          ]
+        },
+        {
+          "file": "dataset.py",
+          "sha256": "9241aae5e9b51d51546d0848f432d38a5e1a58da821d0f826da6b5000caf71c8",
+          "definitions": [
+            {
+              "name": "ScBenchPlatform",
+              "line": 30
+            },
+            {
+              "name": "ScBenchTaskCategory",
+              "line": 38
+            },
+            {
+              "name": "_as_list",
+              "line": 48
+            },
+            {
+              "name": "_normalize_task_category",
+              "line": 57
+            },
+            {
+              "name": "collect_data_nodes",
+              "line": 63
+            },
+            {
+              "name": "_iter_eval_paths",
+              "line": 68
+            },
+            {
+              "name": "load_scbench_record",
+              "line": 73
+            },
+            {
+              "name": "record_to_sample",
+              "line": 94
+            },
+            {
+              "name": "load_scbench_dataset",
+              "line": 161
+            }
+          ]
+        },
+        {
+          "file": "prompts.py",
+          "sha256": "1a17f7d979f44f8811efaa31e731703908a0fafeb5a8b4c983e3f729dbb6e099",
+          "definitions": []
+        },
+        {
+          "file": "scbench.py",
+          "sha256": "8913e86f229606744993caa9112298d7ae568f9851d8f7dcbddd68ac6f573121",
+          "definitions": [
+            {
+              "name": "_InspectSweModule",
+              "line": 45
+            },
+            {
+              "name": "_load_inspect_swe",
+              "line": 51
+            },
+            {
+              "name": "_make_agent",
+              "line": 64
+            },
+            {
+              "name": "_fallback_solver",
+              "line": 98
+            },
+            {
+              "name": "_setup_sample_data",
+              "line": 119
+            },
+            {
+              "name": "_resolve_solver",
+              "line": 179
+            },
+            {
+              "name": "scbench",
+              "line": 203
+            },
+            {
+              "name": "gold_solver",
+              "line": 256
+            },
+            {
+              "name": "_build_gold_answer",
+              "line": 281
+            }
+          ]
+        },
+        {
+          "file": "scorer.py",
+          "sha256": "5dc3f9b2c3bef1522669b705a53d7b2209029eba0308f0012e2ab0dfb3c68ddf",
+          "definitions": [
+            {
+              "name": "scbench_scorer",
+              "line": 25
+            }
+          ]
+        }
+      ],
+      "humaneval": [
+        {
+          "file": "__init__.py",
+          "sha256": "2883f2cd38e6abd87392b2cd2d824bae4b729de07a0bed813a81cd89393dceda",
+          "definitions": []
+        },
+        {
+          "file": "humaneval.py",
+          "sha256": "ebffdeb39b4f02cbc1366a82afa38d7d11c2d25059e92164924908954f9ee350",
+          "definitions": [
+            {
+              "name": "humaneval",
+              "line": 63
+            },
+            {
+              "name": "verify",
+              "line": 94
+            },
+            {
+              "name": "find_code",
+              "line": 135
+            },
+            {
+              "name": "extract_function_body",
+              "line": 147
+            },
+            {
+              "name": "record_to_sample",
+              "line": 152
+            }
+          ]
+        }
+      ],
+      "mbpp": [
+        {
+          "file": "__init__.py",
+          "sha256": "831fb757251d721ce09026b4c82e31c612d23af103015e31cfbeb4baf05d64e5",
+          "definitions": []
+        },
+        {
+          "file": "mbpp.py",
+          "sha256": "a74e5650939db307ef3e4f7cd96773426c70247cca4e2bdb36814d7938514c2e",
+          "definitions": [
+            {
+              "name": "mbpp",
+              "line": 61
+            },
+            {
+              "name": "verify",
+              "line": 147
+            },
+            {
+              "name": "find_code",
+              "line": 196
+            },
+            {
+              "name": "record_to_sample",
+              "line": 202
+            }
+          ]
+        }
+      ],
+      "apps": [
+        {
+          "file": "__init__.py",
+          "sha256": "b47df473bcd25ce1c472a4355f8476284359ffbe5f77c2c71b7648a4eec0d5e6",
+          "definitions": []
+        },
+        {
+          "file": "apps.py",
+          "sha256": "624afa392826cd16bc43c3129ce1df79187847f8a6f833f8f658d24141f1e8de",
+          "definitions": [
+            {
+              "name": "apps",
+              "line": 79
+            },
+            {
+              "name": "verify",
+              "line": 161
+            },
+            {
+              "name": "find_code",
+              "line": 218
+            },
+            {
+              "name": "record_to_sample",
+              "line": 227
+            }
+          ]
+        }
+      ],
+      "bigcodebench": [
+        {
+          "file": "__init__.py",
+          "sha256": "9d08f1580604890bca610bca6ce79c4b59ced0eead4f7a7b22b9adf9ea163fc4",
+          "definitions": []
+        },
+        {
+          "file": "bigcodebench.py",
+          "sha256": "7c3dd3671d478381a431f884df56fb6ef6aaae5fa153d07d5f94fe1a96a15a43",
+          "definitions": [
+            {
+              "name": "bigcodebench",
+              "line": 57
+            },
+            {
+              "name": "get_record_to_sample",
+              "line": 136
+            },
+            {
+              "name": "find_code",
+              "line": 163
+            },
+            {
+              "name": "verify",
+              "line": 180
+            }
+          ]
+        }
+      ],
+      "class_eval": [
+        {
+          "file": "__init__.py",
+          "sha256": "98131551f2a06e02ce76b1850402a0d74714f03e2608ebdc0c3ea4cf688cb7a7",
+          "definitions": []
+        },
+        {
+          "file": "class_eval.py",
+          "sha256": "f62d13450ddfe2b2ec6bd8bad2c67a1f41a3f3aa9e90e9de598d2068dce5a0b3",
+          "definitions": [
+            {
+              "name": "class_eval",
+              "line": 61
+            },
+            {
+              "name": "class_eval_scorer",
+              "line": 112
+            },
+            {
+              "name": "find_code",
+              "line": 158
+            },
+            {
+              "name": "record_to_sample",
+              "line": 167
+            }
+          ]
+        },
+        {
+          "file": "utils.py",
+          "sha256": "779ea911f587e720d819ee7fdc9cb54620980f35b29d69141d0626ac576d7c8e",
+          "definitions": [
+            {
+              "name": "ModelName",
+              "line": 10
+            },
+            {
+              "name": "GenerationStrategy",
+              "line": 29
+            },
+            {
+              "name": "InferenceUtil",
+              "line": 35
+            },
+            {
+              "name": "construct_prompt",
+              "line": 59
+            }
+          ]
+        }
+      ],
+      "ds1000": [
+        {
+          "file": "__init__.py",
+          "sha256": "21f6adb580d3cf9f11b6c273365c95619a4936faacb4b8060609a768d5a50a20",
+          "definitions": []
+        },
+        {
+          "file": "ds1000.py",
+          "sha256": "97e1ef1f58b49d0a49cf283d7a4d57a07e5fa9e251d7eff84aa414147e9c8e52",
+          "definitions": [
+            {
+              "name": "ds1000_solver",
+              "line": 49
+            },
+            {
+              "name": "ds1000",
+              "line": 66
+            },
+            {
+              "name": "ds1000_dataset",
+              "line": 99
+            },
+            {
+              "name": "record_to_sample",
+              "line": 127
+            },
+            {
+              "name": "ds1000_scorer",
+              "line": 141
+            },
+            {
+              "name": "postprocess",
+              "line": 174
+            },
+            {
+              "name": "extract_from_tags",
+              "line": 189
+            }
+          ]
+        },
+        {
+          "file": "sandbox_check.py",
+          "sha256": "700e7385705bf29f92002be1d1a51034d3736db0b238977f5aa97d3fb746cd44",
+          "definitions": [
+            {
+              "name": "_context",
+              "line": 26
+            },
+            {
+              "name": "expected_inventory",
+              "line": 60
+            },
+            {
+              "name": "ds1000_sandbox_check",
+              "line": 68
+            }
+          ]
+        }
+      ],
+      "mind2web": [
+        {
+          "file": "__init__.py",
+          "sha256": "835eaf316c12d25c67a93857de2510c66213bb48d44b8c7c3e3e2acc112e6069",
+          "definitions": []
+        },
+        {
+          "file": "dataset.py",
+          "sha256": "b8efed38af7a13ce26334179b5f059db0abede7753f48a83aa6bdcac83f1acfb",
+          "definitions": [
+            {
+              "name": "Mind2WebSplit",
+              "line": 28
+            },
+            {
+              "name": "Answer",
+              "line": 43
+            },
+            {
+              "name": "Mind2WebMetadata",
+              "line": 49
+            },
+            {
+              "name": "maybe_download_scores",
+              "line": 72
+            },
+            {
+              "name": "get_dataset",
+              "line": 82
+            },
+            {
+              "name": "load_scores",
+              "line": 122
+            },
+            {
+              "name": "get_previous_actions",
+              "line": 159
+            },
+            {
+              "name": "parse_candidate_json",
+              "line": 164
+            },
+            {
+              "name": "format_sample",
+              "line": 181
+            }
+          ]
+        },
+        {
+          "file": "mind2web.py",
+          "sha256": "a8729a1f24a442b6c61712e891f88a303571fe1de723a84a99ba36077917d1ef",
+          "definitions": [
+            {
+              "name": "mind2web",
+              "line": 21
+            }
+          ]
+        },
+        {
+          "file": "prompts.py",
+          "sha256": "cb26f2d8d0dc4074f2b98c135dd0e0e006fbbf3284b57b989fbd7f276131c698",
+          "definitions": [
+            {
+              "name": "load_llm_prompt",
+              "line": 28
+            }
+          ]
+        },
+        {
+          "file": "scorer.py",
+          "sha256": "34e5d7b65f7bfdcb958d06a2ea598d0e47345808c85a9955ed4bb76a26801d4a",
+          "definitions": [
+            {
+              "name": "extract_answer",
+              "line": 27
+            },
+            {
+              "name": "step_success_rate",
+              "line": 109
+            },
+            {
+              "name": "task_success_rate",
+              "line": 136
+            },
+            {
+              "name": "element_accuracy",
+              "line": 171
+            },
+            {
+              "name": "action_f1",
+              "line": 184
+            },
+            {
+              "name": "calculate_text_similarity",
+              "line": 196
+            },
+            {
+              "name": "score_answer",
+              "line": 228
+            },
+            {
+              "name": "is_answer_provided",
+              "line": 265
+            },
+            {
+              "name": "mind2web_scorer",
+              "line": 287
+            }
+          ]
+        },
+        {
+          "file": "solver.py",
+          "sha256": "e634a999068b8bcf6dd73aed79f8bc134c0ff7353a123ac13a202320c3a8759d",
+          "definitions": [
+            {
+              "name": "solve",
+              "line": 13
+            }
+          ]
+        },
+        {
+          "file": "utils.py",
+          "sha256": "a4f14cd9c8f07e697027d3c14964db73fd6f5b327c6652eef74a4379b7c10c85",
+          "definitions": [
+            {
+              "name": "_require_lxml",
+              "line": 22
+            },
+            {
+              "name": "get_descendants",
+              "line": 32
+            },
+            {
+              "name": "simplify_attributes",
+              "line": 56
+            },
+            {
+              "name": "prune_tree",
+              "line": 141
+            },
+            {
+              "name": "get_tree_repr",
+              "line": 278
+            }
+          ]
+        }
+      ],
+      "osworld": [
+        {
+          "file": "__init__.py",
+          "sha256": "8636b21804e3f120c90b33edcecd062da328944f78d3bc29e6db0ad419a314b4",
+          "definitions": []
+        },
+        {
+          "file": "dataset.py",
+          "sha256": "e654351d68f936608c3838347efdd7027b5bf9bacc530dab21f3e0fdada0c522",
+          "definitions": [
+            {
+              "name": "osworld_dataset",
+              "line": 16
+            },
+            {
+              "name": "_should_include_example",
+              "line": 107
+            },
+            {
+              "name": "_example_from_file_path",
+              "line": 140
+            },
+            {
+              "name": "_sample_from_example",
+              "line": 145
+            },
+            {
+              "name": "_files_from_download_configs",
+              "line": 162
+            },
+            {
+              "name": "_files_from_cloud_file_getters",
+              "line": 183
+            }
+          ]
+        },
+        {
+          "file": "osworld.py",
+          "sha256": "b45577aa992d5fe4e600f32bdfa0791e6f401e3b16a509ed1395de73988061e2",
+          "definitions": [
+            {
+              "name": "osworld",
+              "line": 24
+            },
+            {
+              "name": "osworld_small",
+              "line": 83
+            },
+            {
+              "name": "osworld_agent",
+              "line": 156
+            }
+          ]
+        },
+        {
+          "file": "scorer.py",
+          "sha256": "56a9f95bd0ee335fb4b773fe1010cc90b59aca20b0c5d331e3953396e8bc6cfd",
+          "definitions": [
+            {
+              "name": "osworld_scorer",
+              "line": 12
+            },
+            {
+              "name": "_format_evaluator_error",
+              "line": 97
+            },
+            {
+              "name": "_score_infeasible",
+              "line": 113
+            }
+          ]
+        },
+        {
+          "file": "sparse_clone.py",
+          "sha256": "1f37a55b84d4f947f154ba5648ee279e51edcc20458108e56467dc6a927fe39d",
+          "definitions": [
+            {
+              "name": "get_sparse_repo",
+              "line": 8
+            }
+          ]
+        }
+      ],
+      "agent_bench": [
+        {
+          "file": "__init__.py",
+          "sha256": "223105b53f0b0c116d6dd57dec8a69fd760641d790266f550e36f1e836f18644",
+          "definitions": []
+        },
+        {
+          "file": "agent_bench.py",
+          "sha256": "184adc25ec18341f8c15d84abbf3752b3a574f48e237dbc40014c752984a7557",
+          "definitions": [
+            {
+              "name": "agent_bench_os",
+              "line": 39
+            },
+            {
+              "name": "default_agent",
+              "line": 102
+            },
+            {
+              "name": "_check_k8s_package",
+              "line": 115
+            },
+            {
+              "name": "_apply_sandbox_config",
+              "line": 128
+            },
+            {
+              "name": "_default_sandbox_spec",
+              "line": 146
+            }
+          ]
+        },
+        {
+          "file": "agent_bench_os_dataset.py",
+          "sha256": "d7f09af573b71495e0a9247e38b3197feb7e5b27503a44d6f6f5d5f85d68f793",
+          "definitions": [
+            {
+              "name": "change_path_to_agent_home",
+              "line": 15
+            },
+            {
+              "name": "recursively_set_agent_home",
+              "line": 23
+            },
+            {
+              "name": "record_to_sample",
+              "line": 34
+            },
+            {
+              "name": "agent_bench_os_dataset",
+              "line": 80
+            }
+          ]
+        },
+        {
+          "file": "agent_bench_os_scorer.py",
+          "sha256": "b337284a71e624e30e64640f07411ac0f137d21c28e1ead5d89732a6a6ec9fe0",
+          "definitions": [
+            {
+              "name": "agent_bench_os_default_scorer",
+              "line": 26
+            },
+            {
+              "name": "is_answer_correct",
+              "line": 41
+            },
+            {
+              "name": "run_check",
+              "line": 59
+            },
+            {
+              "name": "stage_script",
+              "line": 101
+            },
+            {
+              "name": "run_check_file",
+              "line": 115
+            },
+            {
+              "name": "compare_answer_with_script",
+              "line": 131
+            },
+            {
+              "name": "run_check_string",
+              "line": 192
+            },
+            {
+              "name": "exec_as_agent",
+              "line": 198
+            },
+            {
+              "name": "extract_trace_messages",
+              "line": 214
+            }
+          ]
+        },
+        {
+          "file": "constants.py",
+          "sha256": "10fd7b53eb694915784f5001d49bb2fef86cbb6967f5e24200ef8b010c2efbf2",
+          "definitions": []
+        },
+        {
+          "file": "utils.py",
+          "sha256": "2965e35ad47dea676f253e4eef8f52cf787f2c30c2fe5ad9f0ddff5c72998453",
+          "definitions": [
+            {
+              "name": "get_path",
+              "line": 27
+            },
+            {
+              "name": "create_docker_image",
+              "line": 48
+            },
+            {
+              "name": "get_compose_file",
+              "line": 106
+            }
+          ]
+        }
+      ],
+      "assistant_bench": [
+        {
+          "file": "__init__.py",
+          "sha256": "7a50d51dec896427369cf5ea4e4f368df8e4317347e0955b55776d0d139e1724",
+          "definitions": []
+        },
+        {
+          "file": "assistant_bench.py",
+          "sha256": "fa5bd2785fead0355c0431dbcc245448389feca357d86de222920442e74aa488",
+          "definitions": [
+            {
+              "name": "assistant_bench_closed_book_zero_shot",
+              "line": 56
+            },
+            {
+              "name": "assistant_bench_closed_book_one_shot",
+              "line": 68
+            },
+            {
+              "name": "assistant_bench_web_search_zero_shot",
+              "line": 84
+            },
+            {
+              "name": "assistant_bench_web_search_one_shot",
+              "line": 109
+            },
+            {
+              "name": "assistant_bench_web_browser",
+              "line": 137
+            }
+          ]
+        },
+        {
+          "file": "dataset.py",
+          "sha256": "a7680106ac50f5f59245204bce98a199c3c9ecbfbf069a055395734cf438c3e9",
+          "definitions": [
+            {
+              "name": "record_to_sample_with_shot_prompts",
+              "line": 13
+            },
+            {
+              "name": "assistant_bench_dataset",
+              "line": 33
+            }
+          ]
+        },
+        {
+          "file": "prompts.py",
+          "sha256": "aca98ea6527f75a3f36208c372da282c6e1e13cdd966b10fd1c881da6e50b9bb",
+          "definitions": []
+        },
+        {
+          "file": "scoring.py",
+          "sha256": "3f1ba398630a817b5f80130a2458baaed0807a594fa319e4e686308f9bac63f8",
+          "definitions": [
+            {
+              "name": "extract_number",
+              "line": 25
+            },
+            {
+              "name": "parse_numeric_values",
+              "line": 48
+            },
+            {
+              "name": "parse_and_classify",
+              "line": 62
+            },
+            {
+              "name": "calculate_number_score",
+              "line": 100
+            },
+            {
+              "name": "calculate_json_score",
+              "line": 123
+            },
+            {
+              "name": "score_answer",
+              "line": 148
+            },
+            {
+              "name": "assistant_bench_accuracy",
+              "line": 178
+            },
+            {
+              "name": "answer_rate",
+              "line": 184
+            },
+            {
+              "name": "assistant_bench_scorer",
+              "line": 199
+            }
+          ]
+        },
+        {
+          "file": "solver.py",
+          "sha256": "774c822777fee74859db613b7c9c34609f795bcf91d0ce9a59bb69ede8a180d8",
+          "definitions": [
+            {
+              "name": "Query",
+              "line": 26
+            },
+            {
+              "name": "ErrorHint",
+              "line": 30
+            },
+            {
+              "name": "parse_model_response",
+              "line": 34
+            },
+            {
+              "name": "indirect_web_search",
+              "line": 57
+            }
+          ]
+        }
+      ],
+      "gaia": [
+        {
+          "file": "__init__.py",
+          "sha256": "a86517b0e2b4243562a2e26730a8fd6e1c05fdf9efd77f622017d366df6bbde7",
+          "definitions": []
+        },
+        {
+          "file": "dataset.py",
+          "sha256": "0012ad3c00da29f39e5448b55f80c4f23f68d257f3cd0639ebc4b7b8b4c4efeb",
+          "definitions": [
+            {
+              "name": "gaia_dataset",
+              "line": 28
+            },
+            {
+              "name": "make_record_to_sample_function",
+              "line": 70
+            }
+          ]
+        },
+        {
+          "file": "gaia.py",
+          "sha256": "fb7b72bfcb8c89a3ab60dac5846ab700ca8a9d22ee2228ae392b1c407add7996",
+          "definitions": [
+            {
+              "name": "gaia",
+              "line": 27
+            },
+            {
+              "name": "gaia_level1",
+              "line": 86
+            },
+            {
+              "name": "gaia_level2",
+              "line": 91
+            },
+            {
+              "name": "gaia_level3",
+              "line": 96
+            },
+            {
+              "name": "default_solver",
+              "line": 100
+            }
+          ]
+        },
+        {
+          "file": "scorer.py",
+          "sha256": "49999358fb9602d390024bf7040139c142af1bb61e18c15043aea2af84fad56d",
+          "definitions": [
+            {
+              "name": "gaia_scorer",
+              "line": 22
+            },
+            {
+              "name": "normalize_number_str",
+              "line": 44
+            },
+            {
+              "name": "split_string",
+              "line": 56
+            },
+            {
+              "name": "question_scorer",
+              "line": 64
+            },
+            {
+              "name": "normalize_str",
+              "line": 118
+            }
+          ]
+        }
+      ],
+      "tau2": [
+        {
+          "file": "__init__.py",
+          "sha256": "687e5b7e5ee616dd873bace923b8f178e5d90e14285a821c4bf17194d7ac9c59",
+          "definitions": []
+        },
+        {
+          "file": "tau2.py",
+          "sha256": "77a02c5b92f1b0183344ddee50835b1fa8b0471ff3caaa4cebb1cfa3e8c3e8de",
+          "definitions": [
+            {
+              "name": "tau2_airline",
+              "line": 29
+            },
+            {
+              "name": "tau2_retail",
+              "line": 47
+            },
+            {
+              "name": "tau2_banking",
+              "line": 65
+            },
+            {
+              "name": "tau2_telecom",
+              "line": 108
+            }
+          ]
+        },
+        {
+          "file": "utils.py",
+          "sha256": "eaf49d3eb005b457c858e2ae882f287c8c16397461b6d4032261f5f13db1c554",
+          "definitions": [
+            {
+              "name": "deep_equal_unordered",
+              "line": 16
+            },
+            {
+              "name": "get_text_content",
+              "line": 49
+            },
+            {
+              "name": "get_dict_hash",
+              "line": 61
+            },
+            {
+              "name": "get_pydantic_hash",
+              "line": 71
+            },
+            {
+              "name": "uncompress_file",
+              "line": 81
+            },
+            {
+              "name": "load_file",
+              "line": 98
+            },
+            {
+              "name": "dump_file",
+              "line": 130
+            }
+          ]
+        }
+      ],
+      "agentdojo": [
+        {
+          "file": "__init__.py",
+          "sha256": "89741d8ae7a25a8cef892bd6a7bc821c29ed02e60e0a5b1a608a7b44a818f21f",
+          "definitions": []
+        },
+        {
+          "file": "agentdojo.py",
+          "sha256": "6b5d1e5fc9023923eb4c52fff8a71345351e6de5501a4853034965cbf0f2bce2",
+          "definitions": [
+            {
+              "name": "agentdojo",
+              "line": 14
+            }
+          ]
+        },
+        {
+          "file": "base_tasks.py",
+          "sha256": "ff807dbee25ba2169f8e3a55dc5eb04388a038baac6e8d18b89f35c58d5730f8",
+          "definitions": [
+            {
+              "name": "TaskDifficulty",
+              "line": 10
+            },
+            {
+              "name": "TaskEnvironment",
+              "line": 16
+            },
+            {
+              "name": "BaseUserTask",
+              "line": 29
+            },
+            {
+              "name": "BaseInjectionTask",
+              "line": 90
+            }
+          ]
+        },
+        {
+          "file": "dataset.py",
+          "sha256": "c3dcb9fd80c44b949301c8bb7dc19fe5fa352f6bb6377725d4cfe7aea189db31",
+          "definitions": [
+            {
+              "name": "make_user_task_sample",
+              "line": 54
+            },
+            {
+              "name": "make_injection_task_sample",
+              "line": 76
+            },
+            {
+              "name": "_process_task_suite",
+              "line": 104
+            },
+            {
+              "name": "load_dataset",
+              "line": 139
+            },
+            {
+              "name": "setup_environment",
+              "line": 192
+            }
+          ]
+        },
+        {
+          "file": "scorer.py",
+          "sha256": "3cfe7562eec2f62d0f04affd4a41809c04c162f1124dd8f168adbff7ba53e141",
+          "definitions": [
+            {
+              "name": "injection_task_scorer",
+              "line": 9
+            },
+            {
+              "name": "user_task_scorer",
+              "line": 51
+            }
+          ]
+        },
+        {
+          "file": "strenum.py",
+          "sha256": "076992cb3c52e5e933b8f72e53a0b3a7f0ae078a30be1ed498b5a083ca0f21fb",
+          "definitions": [
+            {
+              "name": "StrEnum",
+              "line": 6
+            }
+          ]
+        },
+        {
+          "file": "task_combinators.py",
+          "sha256": "34220a2c9617ecb122573fe22b5e5de8a85d9593aaf07ee775637cd1a72de86e",
+          "definitions": [
+            {
+              "name": "TaskCombinator",
+              "line": 14
+            }
+          ]
+        },
+        {
+          "file": "task_suite.py",
+          "sha256": "6ee203439899e68c9e2775295f8932e1f5fbf93c1c8e71f1b2d2cbb106ff922f",
+          "definitions": [
+            {
+              "name": "InjectionVector",
+              "line": 20
+            },
+            {
+              "name": "read_suite_file",
+              "line": 29
+            },
+            {
+              "name": "get_sandbox_path",
+              "line": 46
+            },
+            {
+              "name": "validate_injections",
+              "line": 63
+            },
+            {
+              "name": "BaseTaskSuite",
+              "line": 72
+            }
+          ]
+        },
+        {
+          "file": "utils.py",
+          "sha256": "e8ac291f33fd69eb903bf9e059bbfc0ada6e1d7f62efa3237cffcc712f90669b",
+          "definitions": [
+            {
+              "name": "tool_result_to_str",
+              "line": 20
+            }
+          ]
+        },
+        {
+          "file": "yaml_loader.py",
+          "sha256": "425aa16c168f6872129c3852d8cc7d3b71f5b6a4a02f593c3e52d4a9a92eb7e6",
+          "definitions": [
+            {
+              "name": "ImportLoader",
+              "line": 31
+            },
+            {
+              "name": "construct_include",
+              "line": 44
+            },
+            {
+              "name": "quoted_presenter",
+              "line": 67
+            }
+          ]
+        }
+      ],
+      "bfcl": [
+        {
+          "file": "__init__.py",
+          "sha256": "c8eac91edc7be85f97d25757970d8937386722af1b88cdc2c14adea972821336",
+          "definitions": []
+        },
+        {
+          "file": "bfcl.py",
+          "sha256": "834d09fa1856f16e11df919077e8438bb965c0f2ae78f0ad9e3a212de34b8a38",
+          "definitions": [
+            {
+              "name": "bfcl",
+              "line": 90
+            },
+            {
+              "name": "bfcl_scorer",
+              "line": 235
+            },
+            {
+              "name": "bfcl_solver",
+              "line": 263
+            },
+            {
+              "name": "single_turn_record_to_sample",
+              "line": 275
+            },
+            {
+              "name": "multi_turn_record_to_sample",
+              "line": 342
+            },
+            {
+              "name": "_convert_to_chat_messages",
+              "line": 384
+            }
+          ]
+        },
+        {
+          "file": "data.py",
+          "sha256": "48bdded506e14891b475c21269b55a9399ca8ac0d061de2ac9e897709eaef090",
+          "definitions": [
+            {
+              "name": "sanitize_snapshot_id",
+              "line": 27
+            },
+            {
+              "name": "download_github_directory",
+              "line": 38
+            },
+            {
+              "name": "rmtree_robust",
+              "line": 113
+            },
+            {
+              "name": "_validate_source_data",
+              "line": 139
+            },
+            {
+              "name": "_validate_processed_data",
+              "line": 197
+            },
+            {
+              "name": "FunctionParameters",
+              "line": 231
+            },
+            {
+              "name": "FunctionDoc",
+              "line": 237
+            },
+            {
+              "name": "BFCLRecord",
+              "line": 262
+            },
+            {
+              "name": "load_records_by_category",
+              "line": 352
+            },
+            {
+              "name": "_memory_result_dir",
+              "line": 460
+            },
+            {
+              "name": "available_snapshot_ids",
+              "line": 471
+            },
+            {
+              "name": "load_memory_prereq_records",
+              "line": 484
+            },
+            {
+              "name": "_rewrite_agentic_id",
+              "line": 555
+            },
+            {
+              "name": "_load_jsonl",
+              "line": 573
+            },
+            {
+              "name": "_compute_turns",
+              "line": 587
+            },
+            {
+              "name": "_populate_functions_from_involved_classes",
+              "line": 621
+            },
+            {
+              "name": "_process_missed_functions",
+              "line": 660
+            },
+            {
+              "name": "_add_language_specific_hint_to_function_doc",
+              "line": 716
+            },
+            {
+              "name": "_get_language_specific_hint",
+              "line": 738
+            },
+            {
+              "name": "_func_doc_language_specific_pre_processing",
+              "line": 755
+            },
+            {
+              "name": "sort_key",
+              "line": 820
+            }
+          ]
+        },
+        {
+          "file": "prereqs.py",
+          "sha256": "7dc59966ef1ce9dbf87e443691660f3dbac69946b8ae5bd4183ee03ab5bfd002",
+          "definitions": [
+            {
+              "name": "_parse_prereq_entry_index",
+              "line": 38
+            },
+            {
+              "name": "bfcl_prereqs",
+              "line": 53
+            },
+            {
+              "name": "_bfcl_prereqs_scorer",
+              "line": 170
+            },
+            {
+              "name": "_bfcl_prereqs_solver",
+              "line": 186
+            },
+            {
+              "name": "_memory_prereq_record_to_sample",
+              "line": 247
+            }
+          ]
+        },
+        {
+          "file": "prompts.py",
+          "sha256": "3470fa9ebadb05d5691bd8c7b7b70d68d73f3d6d64ea05cbf0a931cad38bf52a",
+          "definitions": []
+        }
+      ],
+      "infinite_bench": [
+        {
+          "file": "__init__.py",
+          "sha256": "6fb3e188899e5d5c01e0ae018286480441c2f67a981e11ca9ffc1f6d2f45dbe5",
+          "definitions": []
+        },
+        {
+          "file": "constants.py",
+          "sha256": "5ae91987e0d714b87d022cb571c712c018fcbb38a7d88c46337a37d006a5b56c",
+          "definitions": []
+        },
+        {
+          "file": "infinite_bench.py",
+          "sha256": "3a14e5948ede79dab29497f9b216b41e8687c392126467df7818853a2a20ac45",
+          "definitions": [
+            {
+              "name": "truncate_input_solver",
+              "line": 39
+            },
+            {
+              "name": "infinite_bench_kv_retrieval",
+              "line": 66
+            },
+            {
+              "name": "infinite_bench_number_string",
+              "line": 75
+            },
+            {
+              "name": "infinite_bench_passkey",
+              "line": 84
+            },
+            {
+              "name": "infinite_bench_code_debug",
+              "line": 96
+            },
+            {
+              "name": "infinite_bench_code_run",
+              "line": 105
+            },
+            {
+              "name": "infinite_bench_math_calc",
+              "line": 117
+            },
+            {
+              "name": "infinite_bench_math_find",
+              "line": 126
+            },
+            {
+              "name": "infinite_bench_longdialogue_qa_eng",
+              "line": 145
+            },
+            {
+              "name": "infinite_bench_longbook_choice_eng",
+              "line": 157
+            },
+            {
+              "name": "infinite_bench_task",
+              "line": 165
+            },
+            {
+              "name": "get_sample_function",
+              "line": 222
+            },
+            {
+              "name": "record_to_sample_single_element_answer",
+              "line": 249
+            },
+            {
+              "name": "record_to_sample_multi_element_answer",
+              "line": 263
+            },
+            {
+              "name": "record_to_sample_multiple_choice",
+              "line": 277
+            },
+            {
+              "name": "record_to_sample_code_run",
+              "line": 296
+            },
+            {
+              "name": "record_to_sample_math_find",
+              "line": 315
+            }
+          ]
+        },
+        {
+          "file": "math_calc_scorer.py",
+          "sha256": "42095a76919cc13980ba11198c501c25448c76a3584e1e8fa22d79b5f62d2e95",
+          "definitions": [
+            {
+              "name": "ListTarget",
+              "line": 8
+            },
+            {
+              "name": "math_calc_scorer",
+              "line": 31
+            }
+          ]
+        },
+        {
+          "file": "truncate_input.py",
+          "sha256": "51f368828fbb78d817f9e2ec0d915eac87fee8bd3c40086bbd582f03462aec77",
+          "definitions": [
+            {
+              "name": "find_nearest_boundary",
+              "line": 14
+            },
+            {
+              "name": "get_model_encoding",
+              "line": 45
+            },
+            {
+              "name": "truncate_by_tokens",
+              "line": 68
+            },
+            {
+              "name": "truncate_raw_text",
+              "line": 106
+            },
+            {
+              "name": "truncate_for_model",
+              "line": 157
+            },
+            {
+              "name": "truncate",
+              "line": 178
+            }
+          ]
+        },
+        {
+          "file": "utils.py",
+          "sha256": "85955722f6f2c9c05471a745ddd6ada1df9df0b9856dda3d2129087dfa70312a",
+          "definitions": [
+            {
+              "name": "create_system_msg",
+              "line": 9
+            },
+            {
+              "name": "get_model_context_size",
+              "line": 28
+            }
+          ]
+        }
+      ],
+      "niah": [
+        {
+          "file": "__init__.py",
+          "sha256": "ced1f82e62e8b98f536d8be2b3dd2908a19858c8d3ff0892f1c0f3a2d97771a6",
+          "definitions": []
+        },
+        {
+          "file": "niah.py",
+          "sha256": "f6f1faf7d8aaa31b3259626364d9f63f5fc745d4d4036e585b8cebfb8d2880ec",
+          "definitions": [
+            {
+              "name": "niah",
+              "line": 45
+            },
+            {
+              "name": "add_to_haystack",
+              "line": 142
+            }
+          ]
+        }
+      ],
+      "browse_comp": [
+        {
+          "file": "__init__.py",
+          "sha256": "986519c250d61ad71c73882e2e6fb140d16025197f4068bb742c7c8836406a40",
+          "definitions": []
+        },
+        {
+          "file": "browse_comp.py",
+          "sha256": "3d6d821e212bec26a24213d7515621ae4cd9189b26663182960a16bf22e972f8",
+          "definitions": [
+            {
+              "name": "browse_comp",
+              "line": 62
+            },
+            {
+              "name": "browsing_solver",
+              "line": 105
+            },
+            {
+              "name": "basic_solver",
+              "line": 149
+            },
+            {
+              "name": "browse_comp_accuracy",
+              "line": 160
+            },
+            {
+              "name": "calibration_error",
+              "line": 166
+            },
+            {
+              "name": "browse_comp_scorer",
+              "line": 214
+            }
+          ]
+        },
+        {
+          "file": "prompts.py",
+          "sha256": "7b2af0bfe2b49a66ac35bcd46b57c9edf47f6bb1725436e5311b6f9fc4789909",
+          "definitions": []
+        },
+        {
+          "file": "utils.py",
+          "sha256": "f1642e0ea3c9fdeb1f0315d627bad8caa02be6f74dd3a08125c3f06b456d6424",
+          "definitions": [
+            {
+              "name": "derive_key",
+              "line": 10
+            },
+            {
+              "name": "decrypt",
+              "line": 19
+            },
+            {
+              "name": "record_to_sample",
+              "line": 27
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
