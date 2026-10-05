@@ -1,0 +1,108 @@
+# Creative execution capabilities — CEC-HBC-01
+
+Status: **ACTIVE — capability shelf for implementation**
+Date: **2026-10-05**
+Applies to: Haunted local reference-fidelity execution and later reconstruction slices.
+
+## Purpose
+
+The project must not enter implementation with evidence/specification only. This capability shelf records the authoring, motion, GPU, media, debugging and asset-pipeline tools that agents may use when the task requires them.
+
+Availability does **not** mean every library is imported into every slice. The task/spec/evidence selects the smallest capable path; unused runtimes must not be shipped merely because they are installed.
+
+## Capability matrix
+
+| Capability | Tool | Integration surface | Install timing | Use gate |
+| --- | --- | --- | --- | --- |
+| DOM/timeline motion | GSAP + plugins | project npm | app bootstrap | default advanced DOM motion/timeline option |
+| Agent motion knowledge | official GSAP AI Skills | Codex/Cursor/OpenCode skills | workstation setup | always available to coding agents |
+| Motion debugging | GSDevTools / CustomEase / MotionPathHelper | GSAP package | app bootstrap | motion tuning/debugging |
+| Visual keyframe authoring | Theatre.js Core + Studio | project npm; Studio dev-only | app bootstrap | use when hand-tuned timeline/keyframe authoring is useful |
+| Creative WebGL/WebGPU | Three.js | project npm | app bootstrap | use when evidence/task justifies GPU 3D/custom rendering |
+| Full 3D engine alternate | Babylon.js | project npm | app bootstrap | escalation when engine-level facilities are materially useful |
+| GPU 2D/particles | PixiJS | project npm | app bootstrap | use when DOM/CSS is not the right renderer for 2D GPU effects |
+| Scroll synchronization | Lenis | project npm | app bootstrap | only when smooth/synchronized scroll is an explicit task need |
+| WebGL diagnostics | Spector.js MCP | local MCP server | workstation setup | agent-visible WebGL frame/shader/texture/state inspection |
+| WebGPU diagnostics | WebGPU Inspector | browser extension/local capture | workstation setup | WebGPU-only diagnostics |
+| 3D inspection/optimization | glTF Transform CLI | global CLI | workstation setup | glTF/GLB inspect/transform/optimize |
+| Mesh optimization | gltfpack / meshoptimizer | global/native CLI | workstation setup | mesh simplification/compression/optimization |
+| GPU texture pipeline | KTX-Software / Basis Universal | desktop/CLI | workstation setup | KTX2/UASTC/ETC1S texture work |
+| 3D asset authoring | Blender LTS | desktop app | workstation setup | modeling/materials/lighting/render/bake |
+| image/texture authoring | GIMP | desktop app | workstation setup | masks/textures/compositing/replacements |
+| media pipeline | FFmpeg | CLI | workstation setup | transcode/frame extraction/media normalization |
+
+## Approved project runtime package set
+
+Install into the actual application package when its package.json is created:
+
+```powershell
+npm install gsap three pixi.js lenis @theatre/core @theatre/studio @babylonjs/core @babylonjs/loaders @babylonjs/inspector
+```
+
+This is a capability set, not permission to import all packages into the shipped bundle. Feature code imports only what the accepted task requires.
+
+## Workstation setup
+
+### Agent skills
+
+```powershell
+npx skills add https://github.com/greensock/gsap-skills --all -g
+```
+
+### 3D command-line tooling
+
+```powershell
+npm install --global @gltf-transform/cli gltfpack
+```
+
+### Spector.js MCP
+
+Keep the clone outside the application repository:
+
+```powershell
+git clone https://github.com/BabylonJS/Spector.js.git
+cd Spector.js
+npm run mcp:install
+npm run mcp:build
+```
+
+For Codex, configure a local stdio MCP server that runs:
+
+```text
+node <absolute-path-to-Spector.js>\mcp\dist\index.js
+```
+
+Do not commit a machine-specific absolute MCP path to the project.
+
+### Desktop/browser tools
+
+Install current stable/LTS releases of:
+- Blender LTS
+- GIMP
+- FFmpeg
+- KTX-Software
+- WebGPU Inspector browser extension
+
+Pin the resolved installed versions in the local capability receipt before the first task that depends on them.
+
+## Selection rules
+
+1. Evidence/specification determines the required capability; installed tools do not expand scope.
+2. Prefer authored/inspectable motion over repeated blind CSS tweaking when a task is timing/sequence-heavy.
+3. Prefer DOM/CSS/GSAP for DOM effects; escalate to Pixi/Three/Babylon only when the observable requirement benefits from GPU rendering.
+4. Do not use multiple render engines for the same surface without an explicit engineering reason.
+5. Theatre Studio is development authoring UI only; production uses saved state/core as required.
+6. GPU work requires independent browser acceptance; Spector/WebGPU Inspector are diagnostics, not fidelity acceptance.
+7. Asset-production tools create implementation fixtures; they never mutate sealed reference evidence.
+8. All runtime and tool choices remain subordinate to the active Constitution, fidelity contract, Spec Kit task and acceptance evidence.
+
+## First-use verification
+
+Before a task relies on a capability, record:
+- installed/resolved version;
+- command/package/plugin identity;
+- execution surface (CLI/MCP/browser/desktop/npm);
+- smoke result that does not consume a paid model when a deterministic check is available;
+- any project-specific limitation.
+
+No capability is considered production-ready merely because installation succeeded.
