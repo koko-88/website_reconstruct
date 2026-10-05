@@ -2,7 +2,7 @@
 
 IP-HBC-01, 2026-10-04 Africa/Cairo. **PASS** for pre-build evidence preparation under FC-TARGET-DESIGN-01 revision2. Assessment used only that contract, this packet and their explicitly linked retained evidence. No fresh website inspection, live probe, capture, installation or website implementation occurred. Local reading of existing source/logs/images and package hashing is evidence interpretation, not new runtime evidence.
 
-**Authority reconciliation (AR-HBC-01, 2026-10-05):** the evidence findings in this evaluation remain valid under FC-TARGET-DESIGN-01 revision3. The original asset/reuse readiness wording below is prospectively reconciled to phase-specific status: local reference-validation may use available evidence-package assets as local fixtures; public/distributed release and real adaptation still require applicable TR-01 decisions. No new reference inspection or target test was performed for this reconciliation.
+**Phase-gating reconciliation (2026-10-05, incorporated into FC-TARGET-DESIGN-01 revision3):** the evidence findings in this evaluation remain valid. The original asset/reuse readiness wording below is prospectively reconciled to phase-specific status: local reference-validation may use available evidence-package assets as local fixtures; public/distributed release and real adaptation still require applicable TR-01 decisions. No new reference inspection or target test was performed for this reconciliation.
 
 PRE-BUILD EVIDENCE PACKET: READY
 

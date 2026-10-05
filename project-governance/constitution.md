@@ -4,11 +4,11 @@ Status: **CANONICAL**
 Revision: **1**  
 Date: **2026-10-05**
 
-During Spec Kit adoption, move this text into the Spec Kit constitution location and leave a pointer here. Keep one canonical copy.
+During Spec Kit adoption, move this text into the Spec Kit constitution location, update AGENTS.md to point there, and remove this file. Keep one canonical copy.
 
 ## 1. Authority and retrieval
 
-Start from [PROJECT_AUTHORITY.md](../PROJECT_AUTHORITY.md) and the [Authority Map](authority-map.md). Use progressive disclosure and load only the smallest authoritative context required for the current task.
+Start from the root [AGENTS.md](../AGENTS.md). Use progressive disclosure and load only the smallest authoritative context required for the current task.
 
 ## 2. Evidence integrity
 
@@ -20,7 +20,7 @@ Preserve the visual hierarchy, typography relationships, responsive behavior, in
 
 ## 4. Phase boundaries
 
-The first implementation phase is Local Reference Fidelity Validation. Current local-fixture allowances, public-release constraints, target-adaptation status and excluded commerce behavior are governed by FC-TARGET-DESIGN-01 and AR-HBC-01.
+The first implementation phase is Local Reference Fidelity Validation. Current local-fixture allowances, public-release constraints, target-adaptation status and excluded commerce behavior are governed by FC-TARGET-DESIGN-01.
 
 ## 5. Verification
 
@@ -40,6 +40,6 @@ Spec Kit artifacts describe intent, behavior, constraints, acceptance and implem
 
 ## 9. Canonical-source discipline
 
-Each concept has one canonical owner. When a governing decision changes, update that owner, reconcile conflicting active wording, update the Authority Map when needed, and review consistency before execution continues.
+Each concept has one canonical owner. When a governing decision changes, update that owner, reconcile conflicting active wording, update AGENTS.md if the ownership/read path changes, and review consistency before execution continues.
 
-Constitution changes retain source traceability in [constitution-source-audit.md](constitution-source-audit.md).
+Do not create a new governance document when an existing canonical source can own the rule. Constitution changes are reviewed through normal Git/PR history; use an ADR only for a significant architectural decision whose rationale must outlive the feature that introduced it.
