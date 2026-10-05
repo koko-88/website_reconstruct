@@ -2,6 +2,8 @@
 
 IP-HBC-01, 2026-10-04 Africa/Cairo. **PASS** for pre-build evidence preparation under FC-TARGET-DESIGN-01 revision2. Assessment used only that contract, this packet and their explicitly linked retained evidence. No fresh website inspection, live probe, capture, installation or website implementation occurred. Local reading of existing source/logs/images and package hashing is evidence interpretation, not new runtime evidence.
 
+**Authority reconciliation (AR-HBC-01, 2026-10-05):** the evidence findings in this evaluation remain valid under FC-TARGET-DESIGN-01 revision3. The original asset/reuse readiness wording below is prospectively reconciled to phase-specific status: local reference-validation may use available evidence-package assets as local fixtures; public/distributed release and real adaptation still require applicable TR-01 decisions. No new reference inspection or target test was performed for this reconciliation.
+
 PRE-BUILD EVIDENCE PACKET: READY
 
 FIRST IMPLEMENTATION VALIDATION: CLEARED FROM EVIDENCE PERSPECTIVE
@@ -28,7 +30,7 @@ FIRST IMPLEMENTATION VALIDATION: CLEARED FROM EVIDENCE PERSPECTIVE
 | --- | --- | --- |
 | MEDIUM / IP-M01 | Raster/geometry tolerances not calibrated across historical JPEG/current PNG scrollbar and font rendering environments | Calibrate matching target environment before comparison; investigate material layout/type/crop drift rather than auto-accepting a generated raster. No new reference capture justified now |
 | MEDIUM / IP-M02 | Mid-decode preference change has no retained complete runtime timeline; source fact observer lacks a dedicated cleanup while fresh reduced skips initialization | Preserve declared history distinction; compare if target exposes a discrepancy. Focused retained-source review first; smallest new inspection only if exact required observable behavior cannot then be established |
-| MEDIUM / IP-M03 | Replacement font/media/texture/mark choices may expose metric/crop/video-mapping discrepancies | Select actual authorized sources/replacements and document consequences under TR-01 before dependent use; compare stress fixtures during implementation. This is a separate asset gate, not missing reference mechanics |
+| MEDIUM / IP-M03 | Replacement font/media/texture/mark choices may expose metric/crop/video-mapping discrepancies | For current local reference-validation, use only available evidence-package assets as local fixtures and record any missing fixture/substitution. Before public/distributed release or real adaptation, select actual authorized sources/replacements and document TR-01 consequences. Compare stress fixtures during implementation. |
 | LOW / IP-L01 | No dedicated settled mobile Dark history raster, or settled raster for every topic/FAQ answer, is claimed | Common anatomy, measured E-030 descendant rules/content, final HTML/CSS, D history forward/reverse endpoint and M Ghost/UFO baselines specify these states; implementation acceptance checks source-linked roles/counts/heights and selected-scene mapping. Do not invent pixel evidence |
 | LOW / IP-L02 | Random fog/grain/video/spirits and host/provider asynchronous phase cannot be compared as identical frames | Check nominal mechanisms/ranges and named readable states; preserve ambient variability, mask only documented uncontrollable areas |
 | LOW / IP-L03 | Historical/current image/font byte equality, zoom/AT/other-engine/physical-device/DPR2+/RTL/dark and inaccessible internals remain unknown | Existing TU-01 bounds apply; reopen only affected obligation if actual scope expands or an unexplained material mismatch appears |
@@ -39,9 +41,9 @@ FIRST IMPLEMENTATION VALIDATION: CLEARED FROM EVIDENCE PERSPECTIVE
 | --- | --- |
 | Integrity | PASS: before/after all481 reference files and both package manifests; linked packet files/IDs checked |
 | Bounded design fidelity evidence | PASS: no remaining HIGH evidence-navigation/interpretation gap; first implementation validation cleared from evidence perspective |
-| Asset/reuse authorization | **BLOCKED for affected original-media/font/code use and unspecified replacements.** Original third-party media/fonts remain constrained; publicly accessible inspection copies are not authorized reusable assets |
+| Asset/reuse authorization | **Local reference-validation: NOT REQUIRED as a precondition for available evidence-package fixture use. Public/distributed release or real adaptation: BLOCKED for affected assets until applicable TR-01 decisions are complete.** Inspection availability still does not create reusable/public rights, and reference source-code copying remains unauthorized. |
 | Real target adaptation | PENDING: actual target data/content/identity/actions and stress mappings need their own contract; exact Eventbrite behavior is excluded |
 
-Evidence preparation is complete. These declarations do not authorize copying original third-party files, claim overall asset-dependent build clearance, or prove a completed/tested website. The requested phase did not implement the website.
+Evidence preparation is complete. These declarations do not authorize public redistribution, reference source-code copying, or real target adaptation, and they do not prove a completed/tested website. FC-TARGET-DESIGN-01 revision3 separately clears the bounded local reference-validation implementation from the evidence and phase-specific asset-gating perspective.
 
 Recheck locally from repository root with `python implementation-scope/pre-build-packet/verify.py`. It reads existing evidence and writes only the packet verification receipt; no browser tooling is invoked.

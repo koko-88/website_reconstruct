@@ -1,6 +1,6 @@
 # Prospective interpretation corrections
 
-IP-HBC-01/COR-01..03, 2026-10-04 Africa/Cairo. These are writable implementation-facing corrections; frozen v1 and sealed v2 are unchanged. [Current contract revision2](../fidelity-scope-contract.md) uses these corrections. [Evidence index](evidence-index.md) resolves every evidence key. The full SR row audit and TF anchor membership are in [anchor audit](anchor-audit.json).
+IP-HBC-01/COR-01..03, 2026-10-04 Africa/Cairo. These are writable implementation-facing corrections; frozen v1 and sealed v2 are unchanged. [Current contract revision3](../fidelity-scope-contract.md) uses these corrections; revision3 does not change the SR anchor membership or COR-01..03 evidence findings. [Evidence index](evidence-index.md) resolves every evidence key. The full SR row audit and TF anchor membership are in [anchor audit](anchor-audit.json).
 
 ## COR-01 FAQ zero/one settled answer
 
@@ -24,7 +24,7 @@ All46 retained SR rows were read for purpose, disposition and acceptance mapping
 | TX-01 | Scope decision overrides old selectable commerce obligation | 33 business/provider excluded prospectively;44 transaction/external design boundary retained. AC2-13 excluded from first target validation |
 | TU-01 | 38/40/45 and U-03..06 valid retained unknown domains | Retained; specific branch/capture limits in packet, reopen only affected obligation |
 | U-01 / SR-33 | Historical incomplete selectable commerce | Historical remains incomplete; prospective TX-01 removes design dependency, not missing evidence |
-| U-02 / SR-42 | Historical incomplete rights/replacement choices | Still blocks affected asset-dependent implementation; replacement policy alone does not resolve it |
+| U-02 / SR-42 | Historical incomplete rights/replacement choices | **Current local reference-validation:** available evidence-package assets may be used as local fixtures, so this does not block that phase. **Public/distributed release or real adaptation:** affected asset use remains BLOCKED until applicable TR-01 source/license/replacement decisions are complete. Historical rights facts remain unchanged. |
 
 `anchor-audit.json` records exact SR numbers for every obligation, the verbatim row purpose, intended contract membership, and each retained acceptance cell. Numeric range notation in revision2 is expanded and checked against those intended sets. Historical handoff R-* requirement IDs are a separate namespace from SR-*; never translate by matching numbers (R-11 responsive maps SR-35, not SR-11 menu).
 
@@ -34,4 +34,4 @@ Sealed SR-07's eight-label inventory uses shorthand `dam,dog,murder,area51,bodie
 
 ## Other navigation safeguards
 
-The [authority crosswalk](authority-crosswalk.md) classifies every major state and disallowed baseline. Historical E-053 provider pixels do not overrule repaired current host/provider context. Raw `settled` doesn't overrule E2-013; whole-page geometry has no appearance promotion. Archived handoff's commerce-blocked clearance remains truthful for FC-HBC-V2-01, while FC-TARGET-DESIGN-01 has different obligations. Old asset-replacement wording is likewise historical; pending concrete replacement decisions persist. No archived gate or source statement was edited.
+The [authority crosswalk](authority-crosswalk.md) classifies every major state and disallowed baseline. Historical E-053 provider pixels do not overrule repaired current host/provider context. Raw `settled` doesn't overrule E2-013; whole-page geometry has no appearance promotion. Archived handoff's commerce-blocked clearance remains truthful for FC-HBC-V2-01, while FC-TARGET-DESIGN-01 has different obligations. Old asset-replacement wording is likewise historical. Pending concrete replacement decisions persist for public/distributed release and real adaptation, but do not block the current bounded local reference-validation use of available evidence-package fixtures under revision3. No archived gate or source statement was edited.

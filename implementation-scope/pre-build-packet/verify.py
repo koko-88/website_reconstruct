@@ -160,7 +160,7 @@ git=subprocess.run(['git','-c','safe.directory='+root.as_posix(),'status','--por
 changes=[line[3:].strip('"').replace('\\','/') for line in git.stdout.splitlines()]
 outside=[p for p in changes if not p.startswith('implementation-scope/')]
 check('evidence_only_changes',not outside,{'changedFiles':len(changes),'outsideImplementationScope':outside,'liveCapture':False,'websiteImplementation':False,'basis':'Local-only tools; git scope plus reference byte identity; no browser/network/app command executed'})
-check('independent_gates_preserved','**BLOCKED for affected asset-dependent implementation**' in contract and 'PENDING / not yet ready' in contract and 'TX-01' in contract,'Bounded design evidence readiness does not authorize originals or target adaptation')
+check('independent_gates_preserved',('Current local reference-validation: NOT REQUIRED as a precondition' in contract and 'Public/distributed target release or real adaptation: BLOCKED' in contract and 'PENDING / not yet ready' in contract and 'TX-01' in contract),{'localValidationAssetGate':'NOT REQUIRED as precondition','publicReleaseAssetGate':'BLOCKED until TR-01 decisions complete','targetAdaptation':'PENDING','principle':'Local fixture validation does not grant public reuse or target-adaptation authority'})
 
 result={'packetId':'IP-HBC-01','verifiedAtUTC':datetime.now(timezone.utc).isoformat(),'result':'FAIL' if failures else 'PASS','failures':failures,'immutableReference':{'files':len(now_rows),'beforeTreeSHA256':before_digest,'afterTreeSHA256':digest(now_rows)},'checks':checks}
 receipt.write_text(json.dumps(result,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
