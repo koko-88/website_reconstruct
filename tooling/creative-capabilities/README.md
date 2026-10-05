@@ -31,6 +31,21 @@ Availability does **not** mean every library is imported into every slice. The t
 | image/texture authoring | GIMP | desktop app | workstation setup | masks/textures/compositing/replacements |
 | media pipeline | FFmpeg | CLI | workstation setup | transcode/frame extraction/media normalization |
 
+## Integration model
+
+These capabilities do not all integrate the same way:
+
+| Surface | Tools | Agent relationship |
+| --- | --- | --- |
+| Agent-native skills | GSAP AI Skills | Read automatically from the agent skill directory; no MCP required |
+| MCP tool | Spector.js MCP | Connect once to Codex/Claw as a local stdio MCP server; exposes WebGL diagnostics as structured tools |
+| Shell/CLI | glTF Transform, gltfpack, FFmpeg, KTX | Agent invokes them through its normal shell/tool execution when the task needs them |
+| Browser diagnostic | WebGPU Inspector | Used inside the browser/DevTools; not an MCP dependency by default |
+| Desktop authoring | Blender, GIMP | Local authoring applications; automation/CLI is optional, not a prerequisite for normal use |
+| Project runtime | GSAP, Theatre.js, Three.js, Babylon.js, PixiJS, Lenis | Install in the application package only after the task selects them; they are shipped code, not workstation-global tools |
+
+Run `tooling/creative-capabilities/verify-workstation.ps1` before installing anything again. A FOUND capability is reused; only MISSING capabilities are installed or repaired. Browser-extension checks remain manual unless a deterministic browser-management source is added later.
+
 ## Approved project runtime package set
 
 Install into the actual application package when its package.json is created:
