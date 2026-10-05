@@ -2,7 +2,7 @@
 name: reference-reconstruction
 description: Inspect reference websites or supplied captures, produce evidence-linked fidelity specifications, and assess readiness for faithful reconstruction and content adaptation. Use for reference replication and fidelity audits, not general UI design or inspiration-only redesign.
 metadata:
-  workflow-version: "2.1.1"
+  workflow-version: "2.1.2"
 ---
 
 # Reference Reconstruction
@@ -42,7 +42,7 @@ Read [references/capture.md](references/capture.md) when capturing or repairing 
 
 Read [references/completeness-gate.md](references/completeness-gate.md). Record **integrity**, **fidelity readiness**, **adaptation readiness**, and **asset/reuse decisions** independently, with exact scope and evidence. File integrity never implies implementation clearance. Unknowns block only an obligation they materially affect; contract-bounded irrelevant unknowns remain unknown.
 
-No dependent reconstruction before integrity + fidelity + required asset/reuse decisions pass. Adaptation additionally needs its own readiness gate. Evidence-only delivery may complete with blocked downstream gates. Routine gate assessment needs no new approval; consequential substitutions or unavailable essential inputs may require a specific decision. Continue independent work while a necessary decision is pending.
+No dependent reconstruction before integrity + fidelity pass and every asset/reuse decision **required by the active contract for the requested phase** is satisfied. An active contract may explicitly classify evidence-package asset use as **NOT REQUIRED as a reconstruction precondition** for a bounded local/non-distributed fidelity validation while preserving release/adaptation rights gates; never infer that exception merely from file availability. Adaptation additionally needs its own readiness gate. Evidence-only delivery may complete with blocked downstream gates. Routine gate assessment needs no new approval; consequential substitutions or unavailable essential inputs may require a specific decision. Continue independent work while a necessary decision is pending.
 
 ## 4. Handoff and requested continuation
 

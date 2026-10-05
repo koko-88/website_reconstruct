@@ -1,6 +1,6 @@
 # Implementation, adaptation and acceptance handoff
 
-Use after scoped integrity/fidelity/asset-reuse passage or when preparing an evidence-only handoff. These requirements do not mandate a new stack or duplicate application.
+Use after scoped integrity/fidelity passage and satisfaction of every asset/reuse decision required by the active contract for the requested reconstruction phase, or when preparing an evidence-only handoff. A contract may explicitly mark bounded local evidence-fixture use NOT REQUIRED as a precondition while retaining release/adaptation gates. These requirements do not mandate a new stack or duplicate application.
 
 ## Packet
 
@@ -11,7 +11,7 @@ Read target repository constraints before translating requirements into componen
 ## 1. Reference-equivalent reconstruction
 
 - Implement approved scope with measured tokens, layout, state and motion rules, preserving line lengths, density, crop, rhythm and layer order.
-- Use approved reference content or reusable reference-equivalent fixtures; record any substitution that changes visual comparison.
+- Use contract-approved local evidence fixtures or reusable reference-equivalent fixtures as appropriate to the phase; record any substitution that changes visual comparison. Local fixture permission is not publication/reuse permission.
 - Establish equivalence across the evidence matrix before replacing content/data. Fixtures may live in the same codebase; a duplicate site is unnecessary.
 - Compare matching environments and states with both screenshot review and behavioral assertions. A snapshot generated from the implementation alone cannot prove reference fidelity.
 

@@ -32,12 +32,13 @@ The policy defines **which kinds of work may go to which candidate pools and whi
 Routing never overrides project truth. Use this precedence:
 
 1. [FC-TARGET-DESIGN-01](../implementation-scope/fidelity-scope-contract.md)
-2. [pre-build evidence packet](../implementation-scope/pre-build-packet/README.md) and its corrections/authority crosswalk
-3. [WP-HBC-01 workload profile](workload-profile.md)
-4. concrete Spec Kit specification/plan/task revision once generated
-5. [benchmark evidence](benchmark-evidence.md)
-6. [candidate pool](candidate-models.md)
-7. this routing policy's preference ordering
+2. [AR-HBC-01 authority reconciliation](../implementation-scope/authority-reconciliation.md)
+3. [pre-build evidence packet](../implementation-scope/pre-build-packet/README.md) and its corrections/authority crosswalk
+4. [WP-HBC-01 workload profile](workload-profile.md)
+5. concrete Spec Kit specification/plan/task revision once generated
+6. [benchmark evidence](benchmark-evidence.md)
+7. [candidate pool](candidate-models.md)
+8. this routing policy's preference ordering
 
 If a route conflicts with evidence authority, scope, asset/reuse gates, or acceptance obligations, the route loses.
 
