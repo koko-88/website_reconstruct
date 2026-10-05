@@ -67,5 +67,42 @@
     "shipOnlyTaskRequiredRuntime": true,
     "sealedEvidenceImmutable": true,
     "deterministicVerificationRequired": true
+  },
+  "integrationModel": {
+    "agentNativeSkills": [
+      "GSAP AI Skills"
+    ],
+    "mcp": [
+      "Spector.js MCP"
+    ],
+    "shellCli": [
+      "glTF Transform",
+      "gltfpack",
+      "FFmpeg",
+      "KTX-Software"
+    ],
+    "browserDiagnostics": [
+      "WebGPU Inspector"
+    ],
+    "desktopAuthoring": [
+      "Blender",
+      "GIMP"
+    ],
+    "projectRuntime": [
+      "gsap",
+      "three",
+      "pixi.js",
+      "lenis",
+      "@theatre/core",
+      "@theatre/studio",
+      "@babylonjs/core",
+      "@babylonjs/loaders",
+      "@babylonjs/inspector"
+    ]
+  },
+  "verification": {
+    "command": "powershell -ExecutionPolicy Bypass -File tooling/creative-capabilities/verify-workstation.ps1",
+    "policy": "verify-first-install-only-missing",
+    "browserExtensionCheck": "manual"
   }
 }
