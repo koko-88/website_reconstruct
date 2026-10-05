@@ -1,0 +1,178 @@
+{
+  "scope": "planning-only Phase 0 and Phase 1; not implementation or browser acceptance",
+  "verifiedAtUTC": "2026-10-05T14:21:13.916896+03:00",
+  "feature": "001-home-entry-fidelity",
+  "logicalSetupBranch": "001-home-entry-fidelity",
+  "actualGitBranch": "main",
+  "baseSHA": "cc473f2c4e32e7c8b5493a4fa3423e4a3a7ad02a",
+  "result": "PASS",
+  "checks": [
+    {
+      "id": "phase_1_artifacts",
+      "result": "PASS",
+      "details": [
+        "plan.md",
+        "research.md",
+        "data-model.md",
+        "quickstart.md",
+        "contracts/home-ui.md",
+        "contracts/fixtures.md",
+        "contracts/verification.md"
+      ]
+    },
+    {
+      "id": "local_document_links",
+      "result": "PASS",
+      "details": {
+        "checked": 36,
+        "errors": []
+      }
+    },
+    {
+      "id": "requirement_acceptance_mapping",
+      "result": "PASS",
+      "details": {
+        "FR": [
+          "FR-001",
+          "FR-002",
+          "FR-003",
+          "FR-004",
+          "FR-005",
+          "FR-006",
+          "FR-007",
+          "FR-008",
+          "FR-009",
+          "FR-010",
+          "FR-011",
+          "FR-012",
+          "FR-013",
+          "FR-014",
+          "FR-015",
+          "FR-016",
+          "FR-017",
+          "FR-018"
+        ],
+        "SC": [
+          "SC-001",
+          "SC-002",
+          "SC-003",
+          "SC-004",
+          "SC-005",
+          "SC-006",
+          "SC-007",
+          "SC-008"
+        ]
+      }
+    },
+    {
+      "id": "spec_revision_preserved",
+      "result": "PASS",
+      "details": "daaad35a1ca6a6969e8c08fa048874e0773c96c4d8aad8fc89070b384aee76e3"
+    },
+    {
+      "id": "concrete_font_hashes",
+      "result": "PASS",
+      "details": [
+        "display.ttf",
+        "manticore.woff2",
+        "space-mono-400.woff2"
+      ]
+    },
+    {
+      "id": "canonical_inputs_and_evidence_unchanged",
+      "result": "PASS",
+      "details": {
+        "method": "Git diff against planning base HEAD for tracked canonical/evidence paths",
+        "exitCode": 0
+      }
+    },
+    {
+      "id": "writes_limited_to_feature_design",
+      "result": "PASS",
+      "details": [
+        "specs/001-home-entry-fidelity/contracts/fixtures.md",
+        "specs/001-home-entry-fidelity/contracts/home-ui.md",
+        "specs/001-home-entry-fidelity/contracts/verification.md",
+        "specs/001-home-entry-fidelity/data-model.md",
+        "specs/001-home-entry-fidelity/design-validation.json",
+        "specs/001-home-entry-fidelity/plan.md",
+        "specs/001-home-entry-fidelity/quickstart.md",
+        "specs/001-home-entry-fidelity/research.md"
+      ]
+    },
+    {
+      "id": "no_tasks_or_application_generated",
+      "result": "PASS",
+      "details": {
+        "tasks": false,
+        "application": false
+      }
+    },
+    {
+      "id": "hooks_pre_and_post",
+      "result": "PASS",
+      "details": {
+        "configurationPresent": false,
+        "before_plan": "absent; no dispatch",
+        "after_plan": "absent; no dispatch"
+      }
+    },
+    {
+      "id": "generated_artifact_whitespace",
+      "result": "PASS",
+      "details": []
+    }
+  ],
+  "inputSHA256": {
+    "specs/001-home-entry-fidelity/spec.md": "daaad35a1ca6a6969e8c08fa048874e0773c96c4d8aad8fc89070b384aee76e3",
+    ".specify/memory/constitution.md": "4de5b7d059d9b2b19d6db9b44c8d7bd01fa0d171e552b7be90348e003a475ead",
+    "implementation-scope/fidelity-scope-contract.md": "69dac9ec8af5052ff9d8cb0cb47bca9f4d6b5dec202bd45cc8837308c0068eaf",
+    "implementation-scope/pre-build-packet/verification.json": "fe3cd2bb36264a1cf0334f45a0171a20e6146d426679cf4ade8a84984de6faf1",
+    "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/raw-run-01/D--HOME.png": "992585177c716af41f4874b3bc33bd41eb9420d7d57a82da0a1e1d38d1e68303",
+    "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/raw-run-01/D--HOME.json": "a56190f5a10b294158a09ca6c4f9b77c8ec65186fecacb6948adbe478539cc0c",
+    "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/raw-run-01/M--HOME.png": "b1d3eea11f7b72855214b3c07104a1b39cd89e687dafde4dd6368b59a5bb43f9",
+    "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/raw-run-01/M--HOME.json": "cd8231e6c815119b76cb997145344bbe6a80787b126cc952a6ab3d85c8a743d4",
+    "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/raw-run-01/R--HOME.png": "d0eb6864925328755172d6f251e2d469ba482a7997b2d809c06c226a33748d2c",
+    "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/raw-run-01/R--HOME.json": "23421be6f8cb2a57c9646520b77cbdbe25f2ef27c6f1cec05332ac23715e3c09",
+    "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/public/display.ttf": "a4ba3a92350ebb031da0cb47630ac49eb265082ca1bc0450442f4a83ab947cab",
+    "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/public/manticore.woff2": "58dee0b74d93d9468b43cb4b62d74e2d4c994fa8d8ae1668c1ed536ce211fb58",
+    "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/public/space-mono-400.woff2": "e0c8e616bda27642f4c3cebaecff6525d901e73afc8a227cbbb0f2af4810f300"
+  },
+  "artifactSHA256": {
+    "plan.md": "0bde3bde7faa5e474c1597c6be0d0e2fc41cdff5a20cc832b633f58c24ecc34d",
+    "research.md": "0366db8371ee597a5f9ea0174ef65aa5f3ff6e311f78e7cdb386b89e9942b3be",
+    "data-model.md": "43171ed91962452de12ea7490a2447279497ea3b8ad30af3cbbbf6399e388c8e",
+    "quickstart.md": "c5d896d3da60befea38123128fe1fbbf7f90e0fbab3885bc640a12cb971f8fba",
+    "contracts/home-ui.md": "2e4449c00eef72ba7fb4cbb51e12a6a2b5993f732ca93114dd0f2ab4599d68f3",
+    "contracts/fixtures.md": "812c3b3fcaf9e192160dfad6ebbc1287b410834fc8cc391a453aacea7a0da8ed",
+    "contracts/verification.md": "4be36b05aca454cdbd02a8cc8894d4dd013b24bb86539bbe4ebb1c9f49ea7d82"
+  },
+  "reviews": [
+    {
+      "role": "read-only stack/design challenge",
+      "scope": "plan, research, data-model against spec/constitution/FC",
+      "result": "No material issue",
+      "limitation": "Planning review only; not qualified Critical implementation acceptance"
+    },
+    {
+      "role": "read-only verification design challenge",
+      "scope": "plan, home/verification contracts, quickstart, data-model",
+      "result": "Two issues corrected and re-reviewed; no remaining material issue",
+      "corrections": [
+        "Explicit test-only native scroll continuation; unchanged canonical capture and returned-top proof",
+        "Shared acceptance-run manifest; unique per-invocation outputs and append-only attempt linkage"
+      ],
+      "limitation": "Planning review only; not independent-family Critical implementation acceptance"
+    }
+  ],
+  "notExecuted": [
+    "website implementation",
+    "target unit/browser tests",
+    "reference application",
+    "fidelity acceptance",
+    "numeric tolerance calibration",
+    "missing media acquisition",
+    "Critical runtime qualification",
+    "deployment"
+  ]
+}
