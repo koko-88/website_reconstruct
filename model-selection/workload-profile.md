@@ -1,6 +1,6 @@
 # Canonical workload profile — Model Selection & Evaluation Gate
 
-Profile WP-HBC-01, revision 1, 2026-10-04 (Africa/Cairo). Repository evidence only; no external research, model selection, routing decision or benchmark results. This profile owns the workload/capability taxonomy only. It is not product scope, project constitution, phase-clearance authority or runtime admission. Start from [PROJECT_AUTHORITY.md](../PROJECT_AUTHORITY.md) and the [Authority Map](../project-governance/authority-map.md); current implementation/readiness authority is FC-TARGET-DESIGN-01 revision3 plus AR-HBC-01.
+Profile WP-HBC-01, revision 1, 2026-10-04 (Africa/Cairo). Repository evidence only; no external research, model selection, routing decision or benchmark results. This profile owns the workload/capability taxonomy only. It is not product scope, project constitution, phase-clearance authority or runtime admission. Start from the root [AGENTS.md](../AGENTS.md); current HBC scope and local-validation readiness are governed by FC-TARGET-DESIGN-01 revision3.
 
 ## Actual project workload
 
@@ -12,7 +12,7 @@ The repository is an evidence/specification/tooling repository, not an existing 
 
 | Key | Repository artifact | Workload authority / limits |
 | --- | --- | --- |
-| SCOPE | [Current fidelity-scope contract](../implementation-scope/fidelity-scope-contract.md) + [AR-HBC-01](../implementation-scope/authority-reconciliation.md) | Prospective TF-01..06, TA-01, TR-01, TX-01 and TU-01 obligations; local reference-validation cleared from evidence/phase-specific asset gating, public/distributed affected-asset release still gated, real adaptation pending |
+| SCOPE | [Current fidelity-scope contract](../implementation-scope/fidelity-scope-contract.md) | Prospective TF-01..06, TA-01, TR-01, TX-01 and TU-01 obligations; local reference-validation cleared from evidence/phase-specific asset gating, public/distributed affected-asset release still gated, real adaptation pending |
 | ENTRY | [Pre-build packet README](../implementation-scope/pre-build-packet/README.md) | Implementation entry point, precedence, canonical comparison conditions and corrected acceptance boundary |
 | BASELINES | [Authority crosswalk](../implementation-scope/pre-build-packet/authority-crosswalk.md) and [evidence index](../implementation-scope/pre-build-packet/evidence-index.md) | Named appearance states, current geometry, historical temporal evidence and exact underlying file/source locators |
 | MOTION | [Motion fingerprint](../implementation-scope/pre-build-packet/motion.md) | M-01..12 triggers, ordering, timing, formulas, reversals and branch limits; O = observed, S = source-declared, L = limit |
@@ -185,7 +185,7 @@ Use the corrected AC2 seeds through ENTRY, BASELINES and MOTION as internal case
 
 No repository support establishes host search, forms, pagination or validation flows (V2 SR-43 records their inspected absence), an exact commerce/backend implementation, external destination page reconstruction, mandatory GPU rendering, a model context minimum, a specific framework, fixed latency/cost budget, benchmark suite or production-scale performance target. Do not add them merely to broaden model evaluation. Target CTA/data integration complexity remains unknown until its action contract exists.
 
-**Complete enough to begin benchmark mapping: YES**, for the bounded design/experience reconstruction and capabilities above. The current packet supplies scope, state/route coverage, visual/source authority, responsive edges, motion mechanics and replayable acceptance seeds. **No identified repository information gap prevents beginning benchmark selection for that bounded workload.** This conclusion remains a workload-definition statement; current local implementation clearance is separately governed by FC-TARGET-DESIGN-01 revision3 / AR-HBC-01, and no target acceptance is implied.
+**Complete enough to begin benchmark mapping: YES**, for the bounded design/experience reconstruction and capabilities above. The current packet supplies scope, state/route coverage, visual/source authority, responsive edges, motion mechanics and replayable acceptance seeds. **No identified repository information gap prevents beginning benchmark selection for that bounded workload.** This conclusion remains a workload-definition statement; current local implementation clearance is separately governed by FC-TARGET-DESIGN-01 revision3, and no target acceptance is implied.
 
 Remaining dependencies and uncertainties affect later eval execution or expanded coverage:
 
