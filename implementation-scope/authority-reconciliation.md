@@ -25,16 +25,11 @@ It is **not**:
 - an Eventbrite/backend reconstruction;
 - permission to copy reference application source code.
 
-## Current authority order
+## Authority role
 
-1. [FC-TARGET-DESIGN-01 revision3](fidelity-scope-contract.md)
-2. **AR-HBC-01** (this file) for phase-status reconciliation
-3. [IP-HBC-01 entry point](pre-build-packet/README.md), including corrections and authority crosswalk
-4. Frozen/sealed reference evidence for observations and historical gate facts
-5. [WP-HBC-01](../model-selection/workload-profile.md) for workload/capability mapping
-6. [RP-HBC-01](../model-selection/routing-policy.md) and [RR-HBC-01](../model-selection/runtime-route-registry.md) for execution routing and route qualification
+Start from [PROJECT_AUTHORITY.md](../PROJECT_AUTHORITY.md) and the [Authority Map](../project-governance/authority-map.md). AR-HBC-01 owns current phase status and clearance only. It does not replace the Project Constitution, fidelity contract, evidence sources, workload taxonomy or runtime-routing policy.
 
-A historical gate remains true for the historical contract/revision that produced it. It does not override a later prospective scope decision.
+Within its domain, AR-HBC-01 interprets FC-TARGET-DESIGN-01 for the current implementation phase. A historical gate remains true for the historical contract/revision that produced it; it does not override a later prospective phase/scope decision.
 
 ## Reconciled phase matrix
 
