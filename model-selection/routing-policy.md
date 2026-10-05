@@ -29,9 +29,9 @@ The policy defines **which kinds of work may go to which candidate pools and whi
 
 ## Authority and precedence
 
-Start from [PROJECT_AUTHORITY.md](../PROJECT_AUTHORITY.md) and the [Authority Map](../project-governance/authority-map.md). RP-HBC-01 owns task-lane, review, escalation and routing policy only; it does not define product scope or rewrite evidence.
+Start from the root [AGENTS.md](../AGENTS.md). RP-HBC-01 owns task-lane, review, escalation and routing policy only; it does not define product scope or rewrite evidence.
 
-Routing never overrides the [Project Constitution](../project-governance/constitution.md), FC-TARGET-DESIGN-01, AR-HBC-01, task/spec acceptance, or authoritative evidence. Benchmark and candidate documents inform preference but do not create product requirements.
+Routing never overrides the [Project Constitution](../project-governance/constitution.md), FC-TARGET-DESIGN-01, task/spec acceptance, or authoritative evidence. Benchmark and candidate documents inform preference but do not create product requirements.
 
 If a route conflicts with evidence authority, scope, asset/reuse gates, or acceptance obligations, the route loses.
 
@@ -272,6 +272,8 @@ That separation lets the project change orchestrators or model providers without
 **Claw Orchestrator is the selected execution runtime for this project.** The current operator surface is Codex with the Claw MCP integration; OpenClaw may remain installed as an optional future host/gateway, but it is not the active production control plane for this project unless a later explicit decision changes that.
 
 The authoritative runtime capability and route-readiness record is [RR-HBC-01](runtime-route-registry.md). Paperclip and other orchestrators are no longer active candidates for the first implementation path; re-evaluate only if Claw fails a required capability or materially changes.
+
+A separate dynamic-router product is not required for the current path. Add one only if a concrete runtime/engine gap demonstrates the need and the added layer preserves resolved-model identity, route qualification and reproducibility.
 
 ## Orchestration-runtime requirements derived from this policy
 
