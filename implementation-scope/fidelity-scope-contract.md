@@ -35,6 +35,14 @@ Before target adaptation, maintain a mapping per affected component: reference r
 
 Replacement decisions must record the replacement itself and its effect, not only an intention to replace. The following groups remain pending: display/body/mono fonts; section/hero/story/topic/venue/portrait images; scene video or equivalent target medium; branded marks; fog/grain/icons/textures. Reference app/CSS must not be copied without authority; independent implementations can use the observed behavior specification. Eventbrite script/media/brand/backend need not be acquired when replaced. Newly licensed/owned target marks and service integration are evaluated under their own requirements.
 
+## Local reference-validation mode
+
+The first HBC implementation is a **local reconstruction/fidelity validation** of the evidence → implementation → verification workflow. For this bounded local validation mode, assets already present in the reference/evidence package may be used as local implementation fixtures to measure exact visual and motion fidelity. **TR-01 asset/reuse decisions are not a technical precondition for starting or completing this local validation run.**
+
+This local validation allowance does not mutate either sealed reference package and does not convert the evidence package into a distributable asset license. Keep the sealed evidence immutable and consume assets as inputs/copies only. If the work later becomes a public/distributed target implementation or adaptation, TR-01 source/license/replacement decisions re-enter as release requirements for the affected assets.
+
+This distinction exists so the local fidelity experiment can test reconstruction quality without an unrelated release gate blocking technical validation, while preserving the separate release/adaptation obligations.
+
 ## U-01 / SR-33 reassessment
 
 The sealed gate blocked fidelity because **FC-EX-02 expressly required a selectable Eventbrite date/ticket journey**. U-01 truthfully recorded that its public postponed event could not reveal selection/back/cancel/empty/error/retry/pre-submit states. That fact, disposition and gate remain unchanged in the sealed revision and frozen v1.
@@ -47,7 +55,7 @@ Under **TX-01**, those business/provider states have no exact target-reference o
 | --- | --- | --- |
 | Evidence integrity | PASS, subject to preserved hash/manifest verification receipt in the hardening evidence | Existing sealed/current and frozen baseline checks; no new reference observations |
 | Reference design/experience fidelity | **PASS (fidelity-ready) within TF-01..06 and TU-01 bounds** | Existing canonical repaired appearance, historical section/temporal evidence and current geometry support the obligations. No unresolved material evidence blocker remains for this bounded design scope. This is readiness to use a specification, not a built-product fidelity PASS. |
-| Asset/reuse implementation decisions | **BLOCKED for affected asset-dependent implementation** | TR-01 still needs per-group authorized source/license/attribution or actual documented replacement with type/layout/crop/motion consequences; U-02/SR-42 is not cleared by general replacement permission. |
+| Asset/reuse implementation decisions | **NON-BLOCKING for the current local reference-validation implementation; REQUIRED before public/distributed target release for affected assets** | Local validation may use assets already present in the evidence package as fidelity fixtures. TR-01 source/license/attribution or documented replacement decisions return as release/adaptation requirements. |
 | Target adaptation readiness | **PENDING / not yet ready** | Actual target mappings/content/data/CTA action and stress fixtures are not supplied/selected. These are later adaptation inputs, not missing Eventbrite reference evidence. |
 
-Actual reconstruction scope is **fidelity-ready as a bounded design/experience specification**. Overall implementation clearance remains conditional on required asset/reuse decisions; real-content adaptation additionally needs its actual target mappings. The only remaining blockers to those dependent phases are concrete asset/replacement decisions and target adaptation inputs. No website implementation is authorized by this hardening task. No reference recapture is required by its synthetic validation.
+Actual reconstruction scope is **fidelity-ready as a bounded design/experience specification**. The current **local reference-validation implementation is cleared to proceed** from the evidence and asset-gating perspective, while real-content adaptation remains pending its actual target mappings. Public/distributed target release still requires the applicable TR-01 asset decisions. No reference recapture is required by this synthetic validation.
