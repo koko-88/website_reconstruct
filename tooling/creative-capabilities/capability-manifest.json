@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "capabilitySet": "CEC-HBC-01",
+  "date": "2026-10-05",
+  "runtimePackages": [
+    "gsap",
+    "three",
+    "pixi.js",
+    "lenis",
+    "@theatre/core",
+    "@theatre/studio",
+    "@babylonjs/core",
+    "@babylonjs/loaders",
+    "@babylonjs/inspector"
+  ],
+  "globalCliPackages": [
+    "@gltf-transform/cli",
+    "gltfpack"
+  ],
+  "agentSkills": [
+    {
+      "source": "https://github.com/greensock/gsap-skills",
+      "scope": "global",
+      "agents": "all"
+    }
+  ],
+  "mcpServers": [
+    {
+      "name": "spector",
+      "source": "https://github.com/BabylonJS/Spector.js",
+      "transport": "stdio",
+      "command": "node",
+      "args": [
+        "<absolute-path-to-Spector.js>/mcp/dist/index.js"
+      ],
+      "status": "install-required"
+    }
+  ],
+  "browserTools": [
+    {
+      "name": "WebGPU Inspector",
+      "source": "https://github.com/brendan-duncan/webgpu_inspector",
+      "status": "install-required"
+    }
+  ],
+  "desktopTools": [
+    {
+      "name": "Blender",
+      "channel": "LTS",
+      "status": "install-required"
+    },
+    {
+      "name": "GIMP",
+      "status": "install-required"
+    },
+    {
+      "name": "FFmpeg",
+      "status": "install-required"
+    },
+    {
+      "name": "KTX-Software",
+      "status": "install-required"
+    }
+  ],
+  "policy": {
+    "preloadCapabilities": true,
+    "shipOnlyTaskRequiredRuntime": true,
+    "sealedEvidenceImmutable": true,
+    "deterministicVerificationRequired": true
+  }
+}
