@@ -1,6 +1,6 @@
 # Canonical workload profile — Model Selection & Evaluation Gate
 
-Profile WP-HBC-01, revision 1, 2026-10-04 (Africa/Cairo). Repository evidence only; no external research, model selection, routing decision or benchmark results. This profile describes the coding-model/harness capabilities required by the workload; it is not itself a phase-clearance authority. Current implementation/readiness authority is FC-TARGET-DESIGN-01 revision3 plus [AR-HBC-01](../implementation-scope/authority-reconciliation.md).
+Profile WP-HBC-01, revision 1, 2026-10-04 (Africa/Cairo). Repository evidence only; no external research, model selection, routing decision or benchmark results. This profile owns the workload/capability taxonomy only. It is not product scope, project constitution, phase-clearance authority or runtime admission. Start from [PROJECT_AUTHORITY.md](../PROJECT_AUTHORITY.md) and the [Authority Map](../project-governance/authority-map.md); current implementation/readiness authority is FC-TARGET-DESIGN-01 revision3 plus AR-HBC-01.
 
 ## Actual project workload
 
