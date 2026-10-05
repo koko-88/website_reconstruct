@@ -31,7 +31,7 @@ The policy defines **which kinds of work may go to which candidate pools and whi
 
 Start from the root [AGENTS.md](../AGENTS.md). RP-HBC-01 owns task-lane, review, escalation and routing policy only; it does not define product scope or rewrite evidence.
 
-Routing never overrides the [Project Constitution](../project-governance/constitution.md), FC-TARGET-DESIGN-01, task/spec acceptance, or authoritative evidence. Benchmark and candidate documents inform preference but do not create product requirements.
+Routing never overrides the [Spec Kit Constitution](../.specify/memory/constitution.md), FC-TARGET-DESIGN-01, task/spec acceptance, or authoritative evidence. Benchmark and candidate documents inform preference but do not create product requirements.
 
 If a route conflicts with evidence authority, scope, asset/reuse gates, or acceptance obligations, the route loses.
 
