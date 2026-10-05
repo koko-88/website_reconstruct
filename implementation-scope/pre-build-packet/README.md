@@ -1,6 +1,6 @@
 # First implementation validation: evidence entry point
 
-Packet IP-HBC-01, revision 1, 2026-10-04 Africa/Cairo. Existing evidence only. Read the [current contract](../fidelity-scope-contract.md), then [AR-HBC-01 authority reconciliation](../authority-reconciliation.md), [authority/baseline crosswalk](authority-crosswalk.md), [motion fingerprint](motion.md), [typography/assets](typography-assets.md), and [corrections](corrections.md). [Evaluation](evaluation.md) records the evidence-preparation assessment. [verification.json](verification.json) is the 2026-10-04 preparation receipt and predates AR-HBC-01; it is retained as historical verification evidence rather than current phase authority. Future reruns use the reconciled [verify.py](verify.py).
+Packet IP-HBC-01, revision 1, 2026-10-04 Africa/Cairo. Existing evidence only. Start from the root [AGENTS.md](../../AGENTS.md), then read the [current contract](../fidelity-scope-contract.md), [authority/baseline crosswalk](authority-crosswalk.md), [motion fingerprint](motion.md), [typography/assets](typography-assets.md), and [corrections](corrections.md). [Evaluation](evaluation.md) records the evidence-preparation assessment. [verification.json](verification.json) is the historical 2026-10-04 preparation receipt; current phase authority is in FC-TARGET-DESIGN-01 revision 3. Future reruns use the reconciled [verify.py](verify.py).
 
 ## Precedence and scope
 
