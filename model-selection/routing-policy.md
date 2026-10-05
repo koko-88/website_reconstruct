@@ -29,16 +29,9 @@ The policy defines **which kinds of work may go to which candidate pools and whi
 
 ## Authority and precedence
 
-Routing never overrides project truth. Use this precedence:
+Start from [PROJECT_AUTHORITY.md](../PROJECT_AUTHORITY.md) and the [Authority Map](../project-governance/authority-map.md). RP-HBC-01 owns task-lane, review, escalation and routing policy only; it does not define product scope or rewrite evidence.
 
-1. [FC-TARGET-DESIGN-01](../implementation-scope/fidelity-scope-contract.md)
-2. [AR-HBC-01 authority reconciliation](../implementation-scope/authority-reconciliation.md)
-3. [pre-build evidence packet](../implementation-scope/pre-build-packet/README.md) and its corrections/authority crosswalk
-4. [WP-HBC-01 workload profile](workload-profile.md)
-5. concrete Spec Kit specification/plan/task revision once generated
-6. [benchmark evidence](benchmark-evidence.md)
-7. [candidate pool](candidate-models.md)
-8. this routing policy's preference ordering
+Routing never overrides the [Project Constitution](../project-governance/constitution.md), FC-TARGET-DESIGN-01, AR-HBC-01, task/spec acceptance, or authoritative evidence. Benchmark and candidate documents inform preference but do not create product requirements.
 
 If a route conflicts with evidence authority, scope, asset/reuse gates, or acceptance obligations, the route loses.
 
