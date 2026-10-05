@@ -17,7 +17,10 @@ Use progressive disclosure. Do **not** recursively read the repository before ac
    [WP-HBC-01](model-selection/workload-profile.md),
    [RP-HBC-01](model-selection/routing-policy.md), and
    [RR-HBC-01](model-selection/runtime-route-registry.md) as appropriate.
-6. Use the [reference-reconstruction skill](skills/reference-reconstruction/SKILL.md) only for
+6. If the task concerns motion, visual effects, GPU rendering, media, 3D, texture/asset production,
+   or related debugging, read the [creative capability shelf](tooling/creative-capabilities/README.md)
+   and use only the capability class required by the accepted task.
+7. Use the [reference-reconstruction skill](skills/reference-reconstruction/SKILL.md) only for
    reconstruction/evidence methodology work.
 
 ## Canonical ownership
@@ -34,6 +37,7 @@ Use progressive disclosure. Do **not** recursively read the repository before ac
 | Task lane, review, escalation, and model-family policy | RP-HBC-01 |
 | Exact model/engine/configuration admission | RR-HBC-01 |
 | Reconstruction inspection methodology | reference-reconstruction skill |
+| Creative execution capability availability/integration | `tooling/creative-capabilities/` |
 
 Resolve conflicts by domain ownership, not by newest-file-wins or search rank.
 
@@ -49,6 +53,10 @@ Resolve conflicts by domain ownership, not by newest-file-wins or search rank.
 - Historical receipts stay historical and do not become current phase authority.
 - Spec Kit templates and generated integration instructions are tooling scaffolds; they do not create
   project requirements by themselves.
+- `tooling/creative-capabilities/` is a capability catalog and integration map, not product scope.
+  Agents MUST NOT reinstall a workstation capability blindly; verify availability first and only install
+  or repair a missing capability. Project runtime libraries remain project-local dependencies and are
+  added only when an implementation task actually selects them.
 
 ## Documentation discipline
 
