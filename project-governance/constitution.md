@@ -1,0 +1,3 @@
+# Project Constitution
+
+Status: CANONICAL
