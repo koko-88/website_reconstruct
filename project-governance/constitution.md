@@ -4,7 +4,7 @@ Status: **CANONICAL**
 Revision: **1**  
 Date: **2026-10-05**
 
-During Spec Kit adoption, move this text into the Spec Kit constitution location and leave a pointer here. Keep one canonical copy.
+During Spec Kit adoption, move this text into the Spec Kit constitution location, update AGENTS.md to point there, and remove this file. Keep one canonical copy.
 
 ## 1. Authority and retrieval
 
