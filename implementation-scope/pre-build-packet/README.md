@@ -30,4 +30,4 @@ PRE-BUILD EVIDENCE PACKET: READY
 
 FIRST IMPLEMENTATION VALIDATION: CLEARED FROM EVIDENCE PERSPECTIVE
 
-This is evidence clearance only. Integrity PASS and bounded design fidelity PASS do not clear original third-party media/font/code reuse. Asset/reuse remains BLOCKED for affected use until specific authorized originals or actual replacements and their visual consequences are recorded. Real-content adaptation remains PENDING. No website implementation is part of this task.
+For the **current local HBC reconstruction/fidelity validation**, assets already present in the evidence package may be used as local fidelity fixtures; TR-01 is therefore **not a technical blocker for this local validation run**. Sealed reference evidence remains immutable. Public/distributed target release and later adaptation still require the applicable source/license/replacement decisions. Real-content adaptation remains PENDING. No website implementation is part of this packet itself.

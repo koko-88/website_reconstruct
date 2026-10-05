@@ -52,6 +52,20 @@ If a route conflicts with evidence authority, scope, asset/reuse gates, or accep
 7. **Bounded retries and explicit escalation.** Repeated failure changes the route; it does not create an unbounded same-agent loop.
 8. **No silent provider expansion.** The runtime may use only approved existing access paths unless the user explicitly approves a new paid provider/API.
 9. **Specs stay portable.** Spec Kit artifacts should describe the work and acceptance, not hard-code a vendor/model unless a genuine capability constraint requires it.
+10. **Critical execution requires qualification.** Inclusion in a candidate pool or public benchmark rank does not authorize a model/harness route for Critical work. A Critical task may execute only on a route marked **QUALIFIED** for its dominant lane in [RR-HBC-01](runtime-route-registry.md).
+
+## Route qualification lifecycle
+
+Every model + engine + effort/tool configuration moves through an explicit lifecycle:
+
+1. **CANDIDATE** — research evidence is sufficient to keep the route under consideration; no Critical execution authority.
+2. **EVALUATION-PERMITTED** — the exact runtime path is runnable enough for bounded project-specific qualification work; outputs may not be integrated as Critical production work solely on this status.
+3. **QUALIFIED** — a pinned model/engine/configuration has passed representative project-specific checks for one or more named lanes. Qualification is lane-scoped, not global.
+4. **SUSPENDED** — a previously qualified route is temporarily ineligible because of availability, configuration drift, repeated failures or contradictory evidence.
+
+A qualification receipt must record at minimum: route identifier; engine/harness; exact model and effort/configuration; tool/permission envelope; repo/spec revision; representative task(s); lane(s) covered; acceptance checks and per-check outcomes; date; and any limitations. **Critical acceptance failures are not averaged away.**
+
+Before concrete Spec Kit tasks exist, routes may remain CANDIDATE. Once representative tasks exist, qualification runs are prerequisites to autonomous Critical execution, not prerequisites to specification/planning.
 
 ## Task routing envelope
 
@@ -194,10 +208,20 @@ Examples:
 
 ### Verification failure
 
-1. First implementation failure caused by a clear local defect: allow **one repair attempt** by the current author.
-2. Repeated failure of the same acceptance class, or a second failed repair: switch to a **different eligible model family** in the same dominant lane.
-3. If the failure indicates unclear requirements/evidence: stop coding and route to **L1**.
+Each routable task carries cumulative execution counters that survive model switches, lane switches, process restarts and resume:
+
+- **max_attempts_total:** default **4** author execution attempts across all model families;
+- **max_family_switches:** default **2** switches between model families;
+- **repair_per_author_attempt:** at most **1** repair pass for a clear local defect before escalation;
+- **execution_deadline:** must be declared by the task/orchestrator before autonomous Critical execution. A missing deadline blocks Critical execution rather than implying an unlimited run.
+
+Flow:
+
+1. First implementation failure caused by a clear local defect: allow one repair pass by the current author, consuming the same task budget.
+2. Repeated failure of the same acceptance class, or a failed repair: switch to a different **QUALIFIED** model family in the same dominant lane if the cumulative counters permit it.
+3. If the failure indicates unclear requirements/evidence: stop coding and route to **L1**; the original task counters remain attached to the task.
 4. If a critical reviewer and author still disagree after one response cycle: trigger a **human gate**.
+5. If **max_attempts_total**, **max_family_switches**, or the execution deadline is exhausted, terminate autonomous execution as **BLOCKED_EXECUTION** and require a human decision. Changing model, lane, process or worktree never resets these counters.
 
 ### Availability fallback
 
@@ -249,9 +273,15 @@ The orchestrator then evaluates each concrete task against RP-HBC-01 and binds i
 
 That separation lets the project change orchestrators or model providers without rewriting the specification.
 
+## Orchestration runtime decision
+
+**Claw Orchestrator is the selected execution runtime for this project.** The current operator surface is Codex with the Claw MCP integration; OpenClaw may remain installed as an optional future host/gateway, but it is not the active production control plane for this project unless a later explicit decision changes that.
+
+The authoritative runtime capability and route-readiness record is [RR-HBC-01](runtime-route-registry.md). Paperclip and other orchestrators are no longer active candidates for the first implementation path; re-evaluate only if Claw fails a required capability or materially changes.
+
 ## Orchestration-runtime requirements derived from this policy
 
-Any runtime considered for this project must support, natively or through a thin configuration layer:
+The selected runtime must support, natively or through a thin configuration layer:
 
 - per-role/per-task model and engine selection;
 - explicit resolved model identity for critical routes;
@@ -263,7 +293,7 @@ Any runtime considered for this project must support, natively or through a thin
 - human gates;
 - restart/resume without silently rerunning already accepted work.
 
-These requirements will be used to compare Claw, Paperclip or any other orchestration option. The routing policy is independent of that tool choice.
+These requirements are now **acceptance requirements for the Claw configuration**, not a generic orchestrator bakeoff. Failure of a required capability reopens the runtime decision; otherwise do not re-run tool selection.
 
 ## Re-evaluation triggers
 

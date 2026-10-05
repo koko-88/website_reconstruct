@@ -15,6 +15,8 @@ Leaderboard labels such as **Max** and **xHigh** describe published configuratio
 
 ## Critical candidate pool
 
+This pool contains families that are **eligible to seek Critical qualification**. Membership is not itself qualification; autonomous Critical assignment still requires a lane-scoped **QUALIFIED** route in [RR-HBC-01](runtime-route-registry.md).
+
 | Candidate family | Why it remains | Current external signal | Intended routing value |
 | --- | --- | --- | --- |
 | **Claude Opus 5.5** | Strongest current general WebDev signal and strong fit for ambiguous long-horizon planning/review | Arena WebDev Overall 2026-10-01: **#1 / 1815** | Planning, architecture/evidence synthesis, difficult cross-cutting implementation, independent review |
@@ -22,7 +24,9 @@ Leaderboard labels such as **Max** and **xHigh** describe published configuratio
 | **Claude Sonnet 5.5** | Near-frontier WebDev quality with a better efficiency profile than the heaviest frontier options | Arena WebDev Overall xHigh **#3 / 1786** | Constrained implementation, iterative frontend work, review, medium-cost critical work |
 | **GPT-6.1 Sol** | Strong frontier engineering candidate with current WebDev evidence | Arena WebDev Overall Max **#4 / 1758** | Repo-scale engineering, architecture, debugging/tool-heavy implementation |
 | **GPT-5.6 Sol** | Direct project-relevant Codex/repository evidence remains unusually useful even though newer models lead current WebDev | SWE-rebench direct Codex methodology **62.3% Result@1**; local VISTA audit retains direct Codex evidence with caveats | Debugging, verification-oriented engineering, independent review, comparison anchor |
-| **GLM 5.3** | Distinct lower-cost/open-model family available to the user and relevant enough to remain a challenger | Arena family evidence places GLM-5.3 in current WebDev; GLM-5.3-Flash is **#10 / 1588** on Image-to-WebDev | Lower-cost support, bounded implementation, secondary review; critical promotion requires internal evidence |
+## Challenger / support pool
+
+**GLM 5.3** remains a challenger for lower-cost support, bounded implementation and secondary review. It is **not in the Critical candidate pool** until project-specific qualification evidence explicitly promotes a pinned GLM route for one or more lanes.
 
 ## Support-only local worker
 
@@ -52,7 +56,7 @@ The **critical routing pool** carried forward is:
 3. Claude Sonnet 5.5
 4. GPT-6.1 Sol
 5. GPT-5.6 Sol
-6. GLM 5.3
+The **challenger/support candidate** is GLM 5.3.
 
 The **support-only local worker** is Qwen3.8-27B local.
 
