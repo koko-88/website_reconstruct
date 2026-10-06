@@ -2,6 +2,10 @@
 node_modules/
 dist/
 
+# Provisional reusable-workstation bootstrap kept local, never project source
+/package.json
+/package-lock.json
+
 # Test / acceptance outputs
 artifacts/
 test-results/
