@@ -1,0 +1,7 @@
+{
+  "name": "mise-npm-install",
+  "private": true,
+  "dependencies": {
+    "@babylonjs/mcp-servers": "9.28.0"
+  }
+}

@@ -1,0 +1,24 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      '@babylonjs/mcp-servers':
+        specifier: 9.28.0
+        version: 9.28.0
+
+packages:
+
+  '@babylonjs/mcp-servers@9.28.0':
+    resolution: {integrity: sha512-2G88pD5ywooCMwf8Hpi+KUDc8Lo/RHmzmLu62HNR/UidAVU5tgaJokCia21lNCPkB4yg4yW7ShlNX2VxziNxzA==}
+    engines: {node: ^20.19.0 || >=22.13.0 <23.0.0 || >=24.0.0 <25.0.0}
+    hasBin: true
+
+snapshots:
+
+  '@babylonjs/mcp-servers@9.28.0': {}
