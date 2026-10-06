@@ -109,7 +109,7 @@ A keyboard visitor can identify the page, traverse the controls belonging to hom
 
 ### Authority, scope and evidence
 
-Project authority is [AGENTS.md](../../AGENTS.md), the [constitution](../../.specify/memory/constitution.md), [FC-TARGET-DESIGN-01 revision 3](../../implementation-scope/fidelity-scope-contract.md) and the [IP-HBC-01 entry point](../../implementation-scope/pre-build-packet/README.md). This slice applies TF-01/02/03/05 and the home/entry portions of motion fidelity, within TU-01. Local reference-equivalent fixtures are permitted under the contract's local validation allowance. Real adaptation and public/distributed release are later phases.
+Project authority is [AGENTS.md](../../AGENTS.md), the [constitution](../../.specify/memory/constitution.md), [PRODUCT.md / FC-TARGET-DESIGN-01 revision 3](../../PRODUCT.md) and the [IP-HBC-01 entry point](../../implementation-scope/pre-build-packet/README.md). This slice applies TF-01/02/03/05 and the home/entry portions of motion fidelity, within TU-01. Local reference-equivalent fixtures are permitted under the contract's local validation allowance. Real adaptation and public/distributed release are later phases.
 
 **Included:** root entry, loader/hero transition, closed/default header, home visual hierarchy/type/image/crop/layers/geometry, home ambient effects, bounded hero scroll/input effects, relevant responsive behavior, fresh reduced-motion entry, home semantics/keyboard/focus, and repeatable state/temporal validation. A lower-edge seam visible in a HOME capture is comparison context only.
 

@@ -4,7 +4,7 @@ Profile WP-HBC-01, revision 1, 2026-10-04 (Africa/Cairo). Repository evidence on
 
 ## Actual project workload
 
-Independently implement Haunted Boulder City's observable design, experience, interaction and motion system under **FC-TARGET-DESIGN-01 revision 3**, validate with reference-equivalent fixtures, then adapt it to approved real content/data/assets/actions. The work is a long, layered, stateful single-page frontend: eight named fragment IDs, ten measured section selectors including the unnamed highlights and footer, three story chapters, eight topic rows, nine FAQ answers, menu lifecycle and a visible CTA/dialog shell. Fragment destinations are scroll states within one route shell; the preview query is another entry state, not a separate application page.
+Execute the product defined by [PRODUCT.md](../PRODUCT.md) / **FC-TARGET-DESIGN-01 revision 3**. This profile classifies the capabilities required to execute that product; it does not redefine product inventory, scope, or roadmap boundaries.
 
 The repository is an evidence/specification/tooling repository, not an existing large production application. Its scale lies in navigating related contracts, historical and current observations, images, JSON, source declarations, capture plans and acceptance seeds. The pre-build verification receipt records 481 reference files; that does not mean 481 independent implementation requirements. Sustained implementation and regression reasoning are required by the coupled systems below, but no fixed session length, token budget or minimum model context window is established.
 
@@ -12,7 +12,7 @@ The repository is an evidence/specification/tooling repository, not an existing 
 
 | Key | Repository artifact | Workload authority / limits |
 | --- | --- | --- |
-| SCOPE | [Current fidelity-scope contract](../implementation-scope/fidelity-scope-contract.md) | Prospective TF-01..06, TA-01, TR-01, TX-01 and TU-01 obligations; local reference-validation cleared from evidence/phase-specific asset gating, public/distributed affected-asset release still gated, real adaptation pending |
+| SCOPE | [Current product authority](../PRODUCT.md) | Prospective TF-01..06, TA-01, TR-01, TX-01 and TU-01 obligations; local reference-validation cleared from evidence/phase-specific asset gating, public/distributed affected-asset release still gated, real adaptation pending |
 | ENTRY | [Pre-build packet README](../implementation-scope/pre-build-packet/README.md) | Implementation entry point, precedence, canonical comparison conditions and corrected acceptance boundary |
 | BASELINES | [Authority crosswalk](../implementation-scope/pre-build-packet/authority-crosswalk.md) and [evidence index](../implementation-scope/pre-build-packet/evidence-index.md) | Named appearance states, current geometry, historical temporal evidence and exact underlying file/source locators |
 | MOTION | [Motion fingerprint](../implementation-scope/pre-build-packet/motion.md) | M-01..12 triggers, ordering, timing, formulas, reversals and branch limits; O = observed, S = source-declared, L = limit |

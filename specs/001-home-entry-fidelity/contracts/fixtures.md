@@ -1,6 +1,6 @@
 # Local Fixture Interface and Dependency Gate
 
-Owner: this feature's [plan](../plan.md), under [FC-TARGET-DESIGN-01](../../../implementation-scope/fidelity-scope-contract.md). This contract does not grant new acquisition/publication rights or alter sealed evidence. Local validation can use already-present package assets; public distribution and real adaptation retain TR-01/TA-01 gates. Reference application HTML/CSS/JS/widget code is not a fixture dependency.
+Owner: this feature's [plan](../plan.md), under [PRODUCT.md / FC-TARGET-DESIGN-01](../../../PRODUCT.md). This contract does not grant new acquisition/publication rights or alter sealed evidence. Local validation can use already-present package assets; public distribution and real adaptation retain TR-01/TA-01 gates. Reference application HTML/CSS/JS/widget code is not a fixture dependency.
 
 ## Concrete audited inventory
 

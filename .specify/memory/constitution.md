@@ -55,6 +55,7 @@ revision, runtime route/configuration, and verification result.
 ## Development Workflow & Quality Gates
 
 - Large work MUST be decomposed into bounded, independently testable slices before implementation.
+- Implementation slices MUST be durable parts of the intended final project. A knowingly temporary or baseline-for-now implementation that requires later rebuilding MUST NOT be used unless an explicit engineering transition is genuinely required and documented.
 - A slice MUST have an explicit specification and acceptance obligations before technical planning.
 - Ambiguities that materially affect scope or behavior MUST be resolved before implementation rather
   than filled with invented assumptions.
@@ -87,4 +88,4 @@ Versioning follows semantic versioning:
 - MINOR for a new principle or materially expanded governance requirement;
 - PATCH for non-semantic clarification or wording corrections.
 
-**Version**: 1.0.0 | **Ratified**: 2026-10-05 | **Last Amended**: 2026-10-05
+**Version**: 1.1.0 | **Ratified**: 2026-10-05 | **Last Amended**: 2026-10-06

@@ -1,8 +1,28 @@
-# Implementation fidelity-scope contract
+# PRODUCT — Haunted Boulder City Reconstruction
 
 Contract **FC-TARGET-DESIGN-01**, revision 3, 2026-10-05 (Africa/Cairo). Writable target-project decision record and current prospective authority for the bounded local reference-validation implementation. It is not a new observation or sealed reference revision; implementation clearance remains phase-scoped by the readiness table below.
 
-Agent entry point: [AGENTS.md](../AGENTS.md). This file owns HBC product/scope/fidelity obligations and the current local-validation boundaries. Project-wide rules live in the [Spec Kit Constitution](../.specify/memory/constitution.md). Implementation evidence entry point: [pre-build packet](pre-build-packet/README.md). The packet's [prospective corrections and complete anchor audit](pre-build-packet/corrections.md) govern FAQ interpretation and topic identifiers; its authority crosswalk governs visual baseline selection. Historical source statements and blocked reference gates remain immutable. Revision 3 contains the current phase-specific asset/reuse reconciliation; it changes no reference observation, coverage anchor, or sealed evidence.
+Agent entry point: [AGENTS.md](AGENTS.md). This file owns HBC product/scope/fidelity obligations and the current local-validation boundaries. Project-wide rules live in the [Spec Kit Constitution](.specify/memory/constitution.md). Implementation evidence entry point: [pre-build packet](implementation-scope/pre-build-packet/README.md). The packet's [prospective corrections and complete anchor audit](implementation-scope/pre-build-packet/corrections.md) govern FAQ interpretation and topic identifiers; its authority crosswalk governs visual baseline selection. Historical source statements and blocked reference gates remain immutable. Revision 3 contains the current phase-specific asset/reuse reconciliation; it changes no reference observation, coverage anchor, or sealed evidence.
+
+## Product / Experience Inventory
+
+This inventory is derived from the existing State & Route Coverage Matrix and implementation-facing evidence crosswalk. It records the observable product surfaces already supported by repository evidence. It is not a feature decomposition and does not determine the number or boundaries of Spec Kit features.
+
+| Experience surface / concern | Existing coverage |
+| --- | --- |
+| Home, loader, hero, fresh entry | SR-01/10/37/38 |
+| About, marquee, intro and facts | SR-02/38/39 |
+| Stories and chapter progression/reversal | SR-03..06/38 |
+| Tour highlights and topic selection | SR-07/39 |
+| Venue and directions | SR-08 |
+| FAQ/disclosure states and interruption | SR-09/14..23 |
+| Menu, fragment navigation and history | SR-10..13 |
+| Ticket invitation and visible dialog/CTA host shell | SR-25..32/39; exact commerce remains excluded by TX-01 |
+| Creator, proof and footer/back-home | SR-13/34 |
+| Responsive width/height relationships | SR-35/36 |
+| Renderer/public-artifact coverage | SR-40 |
+| Type/media/reuse and replacement boundary | SR-42 / TR-01 |
+| Expanded device/engine/AT/zoom/DPR/RTL/dark parity | SR-45 / TU-01 |
 
 ## Authority and source precedence
 

@@ -90,7 +90,7 @@ def sr_expand(cell):
         a=int(match[1]); b=int(match[2]) if match[2] else a
         nums.extend(range(a,b+1))
     return sorted(set(nums))
-contract=(root/'implementation-scope/fidelity-scope-contract.md').read_text(encoding='utf-8')
+contract=(root/'PRODUCT.md').read_text(encoding='utf-8')
 contract_errors=[]; audited=[]
 for line in contract.splitlines():
     if re.match(r'\| (TF-\d+|TR-01|TU-01) /',line):
@@ -131,7 +131,7 @@ canonical_errors += [k for k in superseded if phases[k]=='settled']
 check('canonical_and_superseded_phase_precedence',not canonical_errors,{'canonical':len(canonical),'superseded':len(superseded),'errors':canonical_errors})
 
 # Follow local links from writable entry points through linked evidence Markdown.
-pending=list(packet.glob('*.md'))+[root/'implementation-scope/fidelity-scope-contract.md']
+pending=list(packet.glob('*.md'))+[root/'PRODUCT.md']
 seen=set(); path_errors=[]; fragment_errors=[]; link_count=0
 def slug(h):
     h=re.sub(r'[`*_]','',h.strip()).lower()

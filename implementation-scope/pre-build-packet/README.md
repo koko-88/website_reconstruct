@@ -1,10 +1,10 @@
 # First implementation validation: evidence entry point
 
-Packet IP-HBC-01, revision 1, 2026-10-04 Africa/Cairo. Existing evidence only. Start from the root [AGENTS.md](../../AGENTS.md), then read the [current contract](../fidelity-scope-contract.md), [authority/baseline crosswalk](authority-crosswalk.md), [motion fingerprint](motion.md), [typography/assets](typography-assets.md), and [corrections](corrections.md). [Evaluation](evaluation.md) records the evidence-preparation assessment. [verification.json](verification.json) is the historical 2026-10-04 preparation receipt; current phase authority is in FC-TARGET-DESIGN-01 revision 3. Future reruns use the reconciled [verify.py](verify.py).
+Packet IP-HBC-01, revision 1, 2026-10-04 Africa/Cairo. Existing evidence only. Start from the root [AGENTS.md](../../AGENTS.md), then read the [current product authority](../../PRODUCT.md), [authority/baseline crosswalk](authority-crosswalk.md), [motion fingerprint](motion.md), [typography/assets](typography-assets.md), and [corrections](corrections.md). [Evaluation](evaluation.md) records the evidence-preparation assessment. [verification.json](verification.json) is the historical 2026-10-04 preparation receipt; current phase authority is in FC-TARGET-DESIGN-01 revision 3. Future reruns use the reconciled [verify.py](verify.py).
 
 ## Precedence and scope
 
-1. FC-TARGET-DESIGN-01 revision 3 governs prospective scope: observable design/experience, reference-equivalent fixtures first; original commerce fidelity is excluded. For the current local validation phase, available evidence-package assets are permitted as local fixtures and asset/reuse clearance is NOT REQUIRED as an implementation precondition. Public/distributed release and real adaptation retain separate TR-01/TA-01 dependencies.
+1. [PRODUCT.md](../../PRODUCT.md) / FC-TARGET-DESIGN-01 revision 3 governs prospective product scope and the asset/reuse/adaptation boundaries. This packet interprets implementation evidence and does not redefine product policy.
 2. This packet's prospective FAQ and topic corrections override erroneous historical prose for implementation interpretation. Original logs/source remain authoritative evidence and unchanged.
 3. E2-013 governs canonical capture phases, regardless of a raw sidecar's own `settled` label. Repaired menus and final reopened desktop provider supersede early frames. E2-014 governs current section geometry; historical E-070 supplies revealed section pixels in its original environment.
 4. Equal CSS/app bytes in E2-006 support reuse of dated behavior/source rules. They do not prove unchanged media bytes, provider content, font bytes or identical historical/current rasters. Use the final CSS cascade, rather than the first matching declaration.
@@ -30,4 +30,4 @@ PRE-BUILD EVIDENCE PACKET: READY
 
 FIRST IMPLEMENTATION VALIDATION: CLEARED FROM EVIDENCE PERSPECTIVE
 
-For the **current local HBC reconstruction/fidelity validation**, assets already present in the evidence package may be used as local fidelity fixtures; the asset/reuse gate is **NOT REQUIRED as an implementation precondition for this phase**. Sealed reference evidence remains immutable. Public/distributed target release is **BLOCKED for affected assets** until applicable source/license/replacement decisions are complete, and real-content adaptation remains **PENDING**. No website implementation is part of this packet itself.
+Current project scope, asset/reuse, adaptation, and release gates are owned by [PRODUCT.md](../../PRODUCT.md). This packet establishes evidence readiness only. Sealed reference evidence remains immutable, and no website implementation is part of this packet itself.

@@ -1,6 +1,6 @@
 # Prospective interpretation corrections
 
-IP-HBC-01/COR-01..03, 2026-10-04 Africa/Cairo. These are writable implementation-facing corrections; frozen v1 and sealed v2 are unchanged. [Current contract revision3](../fidelity-scope-contract.md) uses these corrections; revision3 does not change the SR anchor membership or COR-01..03 evidence findings. [Evidence index](evidence-index.md) resolves every evidence key. The full SR row audit and TF anchor membership are in [anchor audit](anchor-audit.json).
+IP-HBC-01/COR-01..03, 2026-10-04 Africa/Cairo. These are writable implementation-facing corrections; frozen v1 and sealed v2 are unchanged. [Current product authority revision3](../../PRODUCT.md) uses these corrections; revision3 does not change the SR anchor membership or COR-01..03 evidence findings. [Evidence index](evidence-index.md) resolves every evidence key. The full SR row audit and TF anchor membership are in [anchor audit](anchor-audit.json).
 
 ## COR-01 FAQ zero/one settled answer
 

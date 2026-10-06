@@ -8,26 +8,31 @@ Use progressive disclosure. Do **not** recursively read the repository before ac
 
 1. Read the [Project Constitution](.specify/memory/constitution.md).
 2. If the task concerns HBC product behavior, fidelity, current implementation scope, or phase
-   boundaries, read [FC-TARGET-DESIGN-01](implementation-scope/fidelity-scope-contract.md).
-3. Load only the task-specific evidence linked from the
+   boundaries, read [PRODUCT.md](PRODUCT.md).
+3. If the task concerns project decomposition, feature boundaries, feature ordering, or project-wide
+   coverage, read [ROADMAP.md](ROADMAP.md).
+4. Load only the task-specific evidence linked from the
    [pre-build evidence entry point](implementation-scope/pre-build-packet/README.md).
-4. When a Spec Kit feature exists, load only that feature's `spec.md`, `plan.md`, `tasks.md`,
+5. When a Spec Kit feature exists, load only that feature's `spec.md`, `plan.md`, `tasks.md`,
    and linked design artifacts that are relevant to the current task.
-5. If the task concerns model/agent assignment or execution, use
+6. If the task concerns model/agent assignment or execution, use
    [WP-HBC-01](model-selection/workload-profile.md),
    [RP-HBC-01](model-selection/routing-policy.md), and
    [RR-HBC-01](model-selection/runtime-route-registry.md) as appropriate.
-6. If the task concerns motion, visual effects, GPU rendering, media, 3D, texture/asset production,
+7. If the task concerns motion, visual effects, GPU rendering, media, 3D, texture/asset production,
    or related debugging, read the [creative capability shelf](tooling/creative-capabilities/README.md)
    and use only the capability class required by the accepted task.
-7. If the task concerns workstation/project reproducibility, tool versions, setup commands or reproducibility CI, read root `mise.toml`/`mise.lock` and [the reusable workstation profile](tooling/reconstruction-workstation/README.md).\n8. Use the [reference-reconstruction skill](skills/reference-reconstruction/SKILL.md) only for\n   reconstruction/evidence methodology work.
+8. If the task concerns workstation/project reproducibility, tool versions, setup commands or reproducibility CI, read root `mise.toml`/`mise.lock` and [the reusable workstation profile](tooling/reconstruction-workstation/README.md).
+9. Use the [reference-reconstruction skill](skills/reference-reconstruction/SKILL.md) only for
+   reconstruction/evidence methodology work.
 
 ## Canonical ownership
 
 | Decision | Canonical source |
 | --- | --- |
 | Project-wide non-negotiable rules | `.specify/memory/constitution.md` |
-| HBC product/scope/fidelity/current local-validation boundaries | FC-TARGET-DESIGN-01 |
+| HBC product/scope/fidelity/current local-validation boundaries | `PRODUCT.md` (FC-TARGET-DESIGN-01) |
+| Project feature decomposition, ordering and cross-feature coverage | `ROADMAP.md` |
 | Evidence navigation and current comparison/reference interpretation | IP-HBC-01 pre-build packet and its crosswalk/corrections |
 | Bounded feature intent and acceptance | Active Spec Kit `spec.md` |
 | Technical implementation decisions | Active Spec Kit `plan.md` and its linked design artifacts |
@@ -36,7 +41,9 @@ Use progressive disclosure. Do **not** recursively read the repository before ac
 | Task lane, review, escalation, and model-family policy | RP-HBC-01 |
 | Exact model/engine/configuration admission | RR-HBC-01 |
 | Reconstruction inspection methodology | reference-reconstruction skill |
-| Creative execution capability availability/integration | `tooling/creative-capabilities/` |\n| Project reproducibility interface and locked toolchain | `mise.toml` + `mise.lock` |\n| Reusable host/workstation provisioning | `tooling/reconstruction-workstation/mise.toml` |
+| Creative execution capability availability/integration | `tooling/creative-capabilities/` |
+| Project reproducibility interface and locked toolchain | `mise.toml` + `mise.lock` |
+| Reusable host/workstation provisioning | `tooling/reconstruction-workstation/mise.toml` |
 
 Resolve conflicts by domain ownership, not by newest-file-wins or search rank.
 
