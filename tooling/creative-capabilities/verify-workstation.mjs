@@ -165,7 +165,7 @@ function projectContract() {
     "mise-npm-tool", commandCandidates("gltf-transform")[0] ?? null, gltf.output || gltf.error || "unavailable");
 
   const gltfpack = run("gltfpack", ["-h"]);
-  push("gltfpack toolchain", gltfpack.ok ? "AVAILABLE" : "VERSION_MISMATCH",
+  push("gltfpack toolchain", (gltfpack.ok || /gltfpack\s+1\.3(?:\s|$)/.test(gltfpack.output)) ? "AVAILABLE" : "VERSION_MISMATCH",
     "mise-npm-tool", commandCandidates("gltfpack")[0] ?? null, gltfpack.output.split(/\r?\n/)[0] || gltfpack.error || "unavailable");
 
   const babylonBins = [
