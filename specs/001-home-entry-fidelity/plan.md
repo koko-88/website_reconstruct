@@ -6,6 +6,8 @@
 
 **Planning base**: `cc473f2c4e32e7c8b5493a4fa3423e4a3a7ad02a`; specification SHA-256 `daaad35a1ca6a6969e8c08fa048874e0773c96c4d8aad8fc89070b384aee76e3`.
 
+**Technical replanning**: 2026-10-06 (Africa/Cairo), checked-out `main` HEAD `48eafc8eb78964a6d23bacb5192fa3e333688cfc`. Verdict **TARGETED_REPLAN_REQUIRED**: preserve rendering/motion/acceptance architecture; isolate the application package from provisional root npm state, strengthen staged/build fixture integrity, and explicitly evaluate CEC-WR-01. The original planning base/receipt remain historical. No application, tasks, dependency install, commit or capability qualification is performed in this pass.
+
 ## Summary
 
 Independently reconstruct the root loader and ready home/header as a production-quality, locally served fidelity experiment. Preserve the loader/hero overlap, type metrics, responsive crops, ambient layers, pointer/touch/reduced branches and keyboard relationships. The slice stops at the closed header and home boundary: it does not deliver the complete production website, downstream controls, commerce, adaptation or publication.
@@ -18,7 +20,7 @@ Select semantic static HTML, strict TypeScript and Vite after comparing vanilla,
 | --- | --- |
 | Language/runtime | Semantic HTML, authored CSS, strict TypeScript; Node **24.19.0** and npm **11.17.0**, observed locally. Exact supported dependency releases are resolved and locked at implementation bootstrap; no floating version is permitted in a validation receipt. |
 | Build | Vite vanilla TypeScript multi-file application, static output. `tsc --noEmit` is required separately because Vite transpilation does not type-check. Use `strict`, `isolatedModules`, DOM libraries and bundler resolution. |
-| Dependencies | Production: no client framework or animation/state dependency. Development: Vite, TypeScript, ESLint/typescript-eslint, Vitest, `@playwright/test`, `pixelmatch`, `pngjs`, `@axe-core/playwright`. Pin compatible exact versions and commit `package-lock.json`; record browser binary hash/version separately. |
+| Dependencies | Application runtime: `dependencies: {}`. Exact direct dev set: `vite`, `typescript`, `@types/node`, `eslint`, `@eslint/js`, `typescript-eslint`, `vitest`, `@playwright/test`, `pixelmatch`, `pngjs`, `@axe-core/playwright`. Comparator scripts remain JavaScript `.mjs`, so no image-library type packages are needed. Pin compatible exact versions at implementation bootstrap and commit only `app/package-lock.json`; record browser identity separately. |
 | Storage/integrations | Tracked manifests/provenance plus gitignored local fixture bytes and gitignored runtime staging. No third-party/local-only fixture bytes are committed. No database, service worker, analytics, persistence, provider script, external API or runtime font/CDN request. |
 | Tests | Vitest for clock/state/formula logic; Playwright for built-output contracts, temporal evidence, named ready captures, keyboard and targeted accessibility; existing canonical evidence supplies references, not target-generated golden images. |
 | Target | Reference Windows 10/headless Chrome 154.0.8037.58/DPR1 profile, en-US/LTR/light/Africa-Cairo. D=1440x900 fine pointer; M/R=390x844 emulated touch with desktop UA; R reduced before navigation. Current installed browser/OS parity is not assumed. |
@@ -68,43 +70,47 @@ specs/001-home-entry-fidelity/
 ### Planned implementation layout (not present yet)
 
 ```text
-package.json / package-lock.json / .node-version / .npmrc
-index.html                        independently authored complete static home
-vite.config.ts / tsconfig.json / eslint.config.mjs / playwright.config.ts
-local-fixtures/home/              gitignored local-only source bytes; never committed
-public/fixtures/home/             gitignored generated runtime staging only
-src/
-  main.ts                         explicit initialize/dispose composition
-  home/
-    entry.ts                      lifecycle owner and deadlines
-    capabilities.ts               motion/input/visibility listeners
-    typography.ts                 measured title fit
-    hero.ts                       fine-pointer hero scroll variables
-    flashlight.ts                 tracked viewport light and cancellation
-    ambient.ts                    fog activation/visibility pausing
-    types.ts                      local state/snapshot interfaces
-  styles/
-    foundation.css                reset, fonts, tokens, focus, stable gutter
-    header.css / hero.css / entry.css / effects.css
-fixtures/home/manifest.json       tracked provenance/hashes/status only; no third-party bytes
-scripts/
-  verify-fixtures.mjs             allowlisted bytes and reference integrity
-  validate-home-inputs.mjs        environment and calibration preflight
-  compare-home.mjs                region comparator using maintained libraries
-  prepare-home-run.mjs            immutable run manifest and invocation journal
-  run-home-browser.mjs            thin Playwright invocation/output wrapper
-  validate-home-results.mjs       completeness/zero-missing-results gate
-tests/
-  unit/entry.test.ts / typography.test.ts / hero.test.ts
-  browser/entry.spec.ts / home-ready.spec.ts / home-responsive.spec.ts
-  browser/home-motion.spec.ts / home-keyboard.spec.ts / fallback.spec.ts
-  support/cases.ts / readiness.ts / recorder.ts / scroll-context.ts
-  calibration/home.json           frozen numerical limits and sensitivity proof
-  reference/home-manifest.json    pointers/hashes/region coordinates, not app source
-artifacts/home/<run-id>/           ignored captures/traces/results; durable receipt exported
+local-fixtures/home/                ignored source bytes at repository root
+app/                                one independent npm package; no workspace
+  package.json / package-lock.json / .node-version / .npmrc
+  index.html                        independently authored complete static home
+  vite.config.ts / tsconfig.json / eslint.config.mjs / playwright.config.ts
+  fixtures/home/manifest.json        tracked provenance/hashes/status only
+  public/fixtures/home/              ignored generated runtime staging
+  dist/                             ignored static build; local validation only
+  src/
+    main.ts                         explicit initialize/dispose composition
+    home/
+      entry.ts                      lifecycle owner and deadlines
+      capabilities.ts               motion/input/visibility listeners
+      typography.ts                 measured title fit
+      hero.ts                       fine-pointer hero scroll variables
+      flashlight.ts                 tracked viewport light and cancellation
+      ambient.ts                    fog activation/visibility pausing
+      types.ts                      local state/snapshot interfaces
+    styles/
+      foundation.css                reset, fonts, tokens, focus, stable gutter
+      header.css / hero.css / entry.css / effects.css
+  scripts/
+    verify-fixtures.mjs             source/stage/build allowlist and integrity
+    validate-home-inputs.mjs         package/environment/calibration preflight
+    compare-home.mjs                region comparator using maintained libraries
+    prepare-home-run.mjs            immutable run manifest and invocation journal
+    run-home-browser.mjs            thin Playwright invocation/output wrapper
+    validate-home-results.mjs       completeness/zero-missing-results gate
+  tests/
+    unit/entry.test.ts / typography.test.ts / hero.test.ts
+    browser/entry.spec.ts / home-ready.spec.ts / home-responsive.spec.ts
+    browser/home-motion.spec.ts / home-keyboard.spec.ts / fallback.spec.ts
+    support/cases.ts / readiness.ts / recorder.ts / scroll-context.ts
+    calibration/home.json           frozen numerical limits and sensitivity proof
+    reference/home-manifest.json     pointers/hashes/regions, not app source
+  artifacts/home/<run-id>/           ignored captures/traces/results
 ```
 
-**Structure decision**: one application at repository root alongside the existing evidence/specification directories. Keep local fixture source bytes in `local-fixtures/home/` and generated serving bytes in `public/fixtures/home/`; both are gitignored in this public repository. Keep the tracked `fixtures/home/manifest.json` limited to provenance, hashes, status and deviations. Keep browser helpers out of the production bundle. Use feature-local controllers with explicit lifecycle methods; no shared services layer, event bus, component framework clone or monorepo. Later sections may add their own controllers/styles without changing entry ownership; template-based markup can be reconsidered when actual duplication warrants Astro or another established static approach.
+**Structure decision (replanned)**: one independent application package under `app/`, with its own package/lock/configuration, `index.html`, `src/`, `scripts/`, `tests/`, tracked `fixtures/home/manifest.json`, ignored `public/fixtures/home/`, `dist/` and acceptance artifacts. All application paths below this layout are relative to `app/`; `local-fixtures/home/` is the sole repository-root fixture source. Tests read canonical evidence by explicit repository-relative paths; it is never a Vite entry or public tree. Implementation bootstrap adds the narrower ignore for `app/public/fixtures/home/` before staging; existing root fixture paths remain untouched. No npm workspace or second application is introduced. Later sections extend this package; template-based markup can be reconsidered when actual duplication warrants it.
+
+The root `package.json`, `package-lock.json` and `node_modules` are provisional local capability/bootstrap state. Preserve them: no delete, install, prune, commit, conversion, root package-management command or dependency inference. Future installs/build/tests run from `app/`; only that package/lock is tracked. Do not use `npm ci` at repository root. Application scripts/configs resolve their tools from the application installation and fail when declared tools are absent rather than falling back to parent binaries. Production code has no third-party bare imports; preflight rejects undeclared imports, parent-package resolution, external source aliases and root-bundle imports. Verify a clean checkout with only `app/` dependencies can execute the plan. This prevents a parent installation from concealing missing dependencies without creating a package-management platform.
 
 ## Implementation design
 
@@ -134,11 +140,17 @@ Use the three available font inspection fixtures as local copies; body Arial rem
 
 ### Motion/input
 
+CEC-WR-01 now makes GSAP/authoring/GPU diagnostics visible, but selection is requirement-led. The current [research audit](research.md#r-10-capability-replanning-audit) keeps CSS/TypeScript: no scoped interactive seek/replay/reversal or unexplained GPU surface warrants another engine. GSAP labels, context cleanup and CustomEase are viable alternatives, not unavailable tools; reconsider only after a concrete bounded fidelity/lifecycle defect demonstrates a material benefit. Such a change updates property ownership, lock and acceptance coverage before implementation; it never makes GSAP ticker time the navigation/setup clock. Browser DOM/styles/animation inventory, paint/layer and performance traces are the primary diagnostics. GPU tooling is unselected; diagnostics never certify fidelity.
+
 Retain declared entry easings/durations and independent fog/mark clocks from M-01..04/12; contracts enumerate timing and state assertions. Use CSS transforms/opacity on bounded layers. Ambient visibility activation uses IntersectionObserver where available; document hidden explicitly pauses CSS fog and cancels frame work. Unsupported observer capability retains the visible baseline rather than hiding content.
 
 Fine-pointer normal light events coalesce to one requestAnimationFrame, clamp coordinates and cancel tracking on leave/blur/hidden/touch/capability changes. Fine-pointer hero scroll applies the declared photograph/title formulas with current measured hero height and restores top values at scroll zero. Touch/coarse/no-hover uses feature-detected native view timeline toward22svh across hero exit; unsupported capability selects the documented still photograph. No JavaScript scroll-timeline polyfill or inertia engine is introduced. Reduced/switching cleanup resets variables/transforms and stops prohibited loops; fresh reduced and switched tests are different cases.
 
 ### Fixture/assets and production boundary
+
+**Replanned path/integrity boundary:** repository-root `local-fixtures/home/` -> `app/public/fixtures/home/` -> `app/dist/fixtures/home/`; metadata is `app/fixtures/home/manifest.json`. Set Vite root/publicDir/outDir explicitly to the application paths. Stage only selected manifest files; verify the entire application public tree contains exactly the allowed fixture set, rejecting stale/unlisted files and links escaping the permitted roots. Recheck copied bytes and built passthrough fixture hashes; no optimizer/transcoder silently changes original fixtures. Build runs staging/preflight, not an optional manual step, and fails closed on drift. Built output must exclude provenance, source/evidence trees, tests, continuation helpers, inspectors and provisional packages. Cleanup, if implementation needs it, is confined to verified generated application directories; it never touches root npm state or fixture sources. Details belong to [fixtures](contracts/fixtures.md).
+
+All serving paths in the original asset discussion below are now relative to `app/`; the source `local-fixtures/home/` remains repository-relative.
 
 Available: Manticore, display/Anton and Space Mono inspection bytes. Missing: hero original and960 variant, `fog.webp`, standalone `bz-logo.svg`. SVG arrows/star and noise are source-embedded code descriptions; independently author geometric icons/static grain, without transplanting paths or encoded source. Record their concrete files and visual consequences when implemented.
 
@@ -189,5 +201,9 @@ These are dependency stages, not executable tasks or completed results. Any mate
 No constitutional exception or speculative infrastructure is requested. The few local controllers are justified by distinct lifecycle/property owners and meaningful clock/cancellation tests. React hydration/prerender infrastructure, a timeline engine, global event bus, server, router, polyfill and custom capture platform are rejected for this bounded requirement. Established tools handle build, unit/browser execution and pixel comparison.
 
 ## Planning completion record
+
+**Replanning gate disposition:** no open product/technical decision blocks task generation or later cross-artifact analysis. Missing town/fog/logo bytes block dependent visual implementation and SC-007/region acceptance, while isolated logic/markup can proceed. Exact package versions/lock and clean-checkout package-boundary checks are implementation bootstrap gates. Browser/OS/Arial qualification and numerical calibration block fidelity acceptance; exact-route admission blocks Critical execution. GIMP resolution or inactive optional MCP bridges do not block this DOM slice. Adaptation/publication retain FC's later gates. These dependencies must become ordered preparation work in tasks; they are not newly invented behavior or grounds to relax acceptance.
+
+**2026-10-06 result:** ready for `speckit-tasks`, then cross-artifact analysis; no tasks generated here. Changed decisions are application package location/isolation, explicit direct dev identities, and fail-closed staged/build fixture validation. DOM/CSS/TypeScript, native timing/input/reduced branches, fixture provenance, independent review and all FR/SC obligations are deliberately preserved. Only existing feature planning artifacts are edited. Reusable installation/configuration/reachability data eventually belongs to a host/global inventory; this feature remains executable from its selected package, contracts and explicit inputs without optional creative tools.
 
 Phase 0 research and Phase 1 design are complete; execution/acceptance remain pending. Extension configuration `.specify/extensions.yml` was absent before and after planning, so there were no before/after hooks to dispatch. Setup returned the logical feature identifier without changing actual branch `main`. Artifacts: this plan, research, data-model, three interface contracts, quickstart and the planning-only validation receipt. The spec, constitution, policy owners, frozen evidence and historical preparation receipt remain unchanged.

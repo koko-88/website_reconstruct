@@ -12,6 +12,8 @@ Relationships: one fixture binds all required `AssetRecord`s and is shared by D/
 
 Fields: `id`, `role`, `kind` (font/image/texture/mark/icon/noise/system-font), `status` (present/missing/selected/verified), `evidenceRefs`, `origin`, `localPath`, `sha256`, `bytes`, `intrinsicSize`, `fontFamily/weight/style`, `variants`, `crop/focal`, `alt`, `authoringBasis`, `phaseAllowance`, `deviationRefs`. System font records include installed family/file/version where available rather than a fabricated repository digest.
 
+Replanned serving identity: `localPath` is repository-relative beneath `local-fixtures/home/`; `stagedPath` and `builtPath` are repository-relative beneath `app/public/fixtures/home/` and `app/dist/fixtures/home/`; `runtimeUrl` is the local `/fixtures/home/...` request. A verified serving record requires selected-file set equality and hash/size identity across source, stage and build. Authoring tool/recipe identity is recorded only for an actually selected derived/replacement file; workstation availability alone is not an asset binding.
+
 Relationships: fixture -> role -> record(s); font/image variant bytes have individual hashes. A missing record has no invented path/hash. A selected replacement has concrete source/file and effect measurements. `verified` requires bytes/hash/type/decode/metric checks as relevant; presence alone never confers a public license. Records cannot bind app.js/styles.css/index.html/widget code as application dependencies. Manifest is kept outside served public assets.
 
 ## EntrySession
@@ -32,6 +34,8 @@ Transitions:
 | any | dispose/new document | dispose timers/listeners and invalidate generation |
 
 Invariant: at most one dismissal/removal/release effect per session; no new session from in-page scroll/home return; switching back to normal never replays loader. If reduced interrupts a normal exit, record cancellation and the switch as its own case, never label it fresh reduced.
+
+Reduced interruption preserves the original `dismissAt/dismissReason`; record the switch separately, invalidate pending normal release/removal callbacks, release immediately if still held and schedule only the remaining removal once. If already removed, no new removal is scheduled. Cleanup does not depend on `animationend` firing after an animation is canceled.
 
 ## CapabilityState
 
@@ -54,5 +58,7 @@ Fields: version/status (NOT_CALIBRATED/CALIBRATED), cases/reference IDs/hashes, 
 ## AcceptanceRun and Deviation
 
 Run fields: run ID, append-only session manifest, unique invocation IDs and immutable output paths/attempt linkage, spec/plan/task/base revision, actual branch/worktree, toolchain/lock/browser/OS/fixture/calibration identity, author/reviewer route receipt references where applicable, commands, all attempted case/trial results, FR/SC coverage, captures/samples/diffs/traces, timestamps, test-continuation context, deviations/limitations and final result. Detailed shape in verification contract. No discarded retries, overwritten invocation artifacts or automatic baselines.
+
+Replanned package identity: record `applicationRoot=app`, application manifest/lock hashes, exact direct dependency inventory, actual tool resolution, staged/build fixture checks and clean-checkout execution result. Paths such as `artifacts/home/` and `tests/calibration/` in the verification interface are application-relative. The root provisional package/lock are never the acceptance dependency identity.
 
 Deviation fields: ID, requirement/evidence, category (environment/asset/accessibility), reason, concrete before/after consequence, measurement/assertion, affected cases, reviewer disposition. Unexplained differences fail; approved correction does not rewrite reference. Public release/target adaptation decisions remain under FC rather than this entity.

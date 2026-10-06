@@ -1,12 +1,12 @@
 # Quickstart: Planned Home Fidelity Validation
 
-This is a validation/run guide for the future implementation of [plan.md](plan.md), not a claim that an application, dependency lock or test commands exist now. Phase 1 creates design artifacts only. Generate tasks and run cross-artifact analysis before Critical implementation; its execution admission remains under RP/RR. No production deployment or provider service is required.
+This is a validation/run guide for the future implementation of [plan.md](plan.md), not a claim that an application package/lock or test commands exist now. The root npm bundle is provisional capability/bootstrap state, not an application. Phase 1/replanning creates design artifacts only. Generate tasks and run cross-artifact analysis before Critical implementation; its execution admission remains under RP/RR. No production deployment or provider service is required. All application-relative paths/commands below use `app/`.
 
 ## Prerequisites
 
-- Use the repository root with the feature's future implementation checkout/worktree. Node24.19.0/npm11.17.0 are the recorded planning host versions; record any compatible qualified change.
-- Implementation bootstrap must pin exact compatible releases and commit `package-lock.json`, TypeScript/ESLint/Vite/Playwright configuration and the scripts named below. No floating latest installer in acceptance.
-- Resolve mandatory town/fog/logo fixture bytes under [fixture contract](contracts/fixtures.md), place permitted local-only source bytes under gitignored `local-fixtures/home/`, and verify system Arial. Implementation staging copies selected bytes into gitignored `public/fixtures/home/`; neither location is committed. A missing asset may permit isolated logic checks but blocks affected fidelity acceptance.
+- Use the feature's future implementation checkout/worktree and independent `app/` package. Node24.19.0/npm11.17.0 were rechecked on the planning host; record any compatible qualified change.
+- Preserve root `package.json`, `package-lock.json` and `node_modules`: no root install/ci/prune/delete/commit/conversion. Implementation bootstrap creates only `app/package.json` and `app/package-lock.json`, pins exact compatible releases from the [plan's direct dependency set](plan.md#technical-context), and tracks application configuration/scripts. Runtime dependencies are empty. No workspace linkage, parent tool resolution or floating latest installer in acceptance. Prove clean-checkout execution without root packages.
+- Resolve mandatory town/fog/logo fixture bytes under [fixture contract](contracts/fixtures.md), place permitted local-only source bytes under repository-root gitignored `local-fixtures/home/`, and verify system Arial. Implementation adds the ignore for `app/public/fixtures/home/` before staging. Selected source -> stage -> built passthrough identities must match; neither source nor stage is committed. Missing assets may permit isolated logic checks but block affected fidelity acceptance.
 - Supply the exact Windows/reference Chrome profile or a separately documented qualified comparison environment; inspect actual executable/version/hash. Do not replace the user's installed Chrome using a blind browser-install command. Portable bundled Chromium is a distinct functional-test profile.
 - Prepare and lock the numeric calibration input before target comparisons, following [verification contract](contracts/verification.md). Default NOT_CALIBRATED must block acceptance.
 
@@ -15,7 +15,7 @@ This is a validation/run guide for the future implementation of [plan.md](plan.m
 Once implementation has created the manifest/lock/config/scripts:
 
 ```powershell
-Set-Location 'K:\website_reconstruct'
+Set-Location 'K:\website_reconstruct\app'
 npm ci
 npm run stage:fixtures
 npm run verify:fixtures
@@ -25,7 +25,7 @@ npm run test:unit
 npm run build
 ```
 
-Expected: lock-respecting install; verified local fixture/reference hashes; zero tracked local-only/staged fixture bytes; all type/lint/state-clock checks pass; independently authored local static output in ignored `dist/`. Build contains complete readable home HTML, locally staged assets and no reference app/provider code or runtime third-party visual requests. This local build is not a publication artifact.
+Expected: application-lock-respecting install with application-local tool resolution; verified local fixture/reference hashes; zero tracked local-only/staged fixture bytes; all type/lint/state-clock checks pass; independently authored local static output in ignored `app/dist/`. `build` repeats staging/preflight automatically and verifies the exact staged/built fixture set and byte hashes, rejecting stale files. Build contains complete readable home HTML, selected local assets and no reference app/provider code, fixture metadata, tests, continuation helper, inspector or provisional root-bundle imports. This local build is not a publication artifact.
 
 Unit scenarios: delayed setup preserves navigation-relative1600ms floor and setup-relative3600ms ceiling; competing readiness/ceiling dismisses once;260/1500 offsets;0/50 reduced path; stale timer/cancellation/disposal; late init after7000ms fallback; formula return-to-zero and shrink-only fit behavior. These do not prove actual CSS choreography.
 

@@ -174,5 +174,204 @@
     "missing media acquisition",
     "Critical runtime qualification",
     "deployment"
-  ]
+  ],
+  "originalReceiptInterpretation": "Existing top-level Phase 0/1 checks, artifact hashes and reviews describe the original 2026-10-05 planning run; they are retained as history, not current replanning validation. Current checks are in replanning.",
+  "replanning": {
+    "scope": "technical replanning only; no implementation, tasks, target acceptance or Critical route qualification",
+    "verifiedAtUTC": "2026-10-06T03:57:08.068Z",
+    "localDate": "2026-10-06",
+    "timezone": "Africa/Cairo",
+    "verdict": "TARGETED_REPLAN_REQUIRED",
+    "actualGitBranch": "main",
+    "baseSHA": "48eafc8eb78964a6d23bacb5192fa3e333688cfc",
+    "result": "PASS",
+    "applicationRoot": "app",
+    "runtimeDependencies": [],
+    "directDevDependencies": [
+      "vite",
+      "typescript",
+      "@types/node",
+      "eslint",
+      "@eslint/js",
+      "typescript-eslint",
+      "vitest",
+      "@playwright/test",
+      "pixelmatch",
+      "pngjs",
+      "@axe-core/playwright"
+    ],
+    "releasePins": "implementation bootstrap; exact compatible application lock still pending",
+    "checks": [
+      {
+        "id": "local_links_and_anchors",
+        "result": "PASS",
+        "checked": 44,
+        "errors": []
+      },
+      {
+        "id": "all_FR_SC_mapping_preserved",
+        "result": "PASS",
+        "FR": [
+          "FR-001",
+          "FR-002",
+          "FR-003",
+          "FR-004",
+          "FR-005",
+          "FR-006",
+          "FR-007",
+          "FR-008",
+          "FR-009",
+          "FR-010",
+          "FR-011",
+          "FR-012",
+          "FR-013",
+          "FR-014",
+          "FR-015",
+          "FR-016",
+          "FR-017",
+          "FR-018"
+        ],
+        "SC": [
+          "SC-001",
+          "SC-002",
+          "SC-003",
+          "SC-004",
+          "SC-005",
+          "SC-006",
+          "SC-007",
+          "SC-008"
+        ]
+      },
+      {
+        "id": "authority_spec_canonical_hashes_preserved",
+        "result": "PASS",
+        "inputSHA256": {
+          "specs/001-home-entry-fidelity/spec.md": "daaad35a1ca6a6969e8c08fa048874e0773c96c4d8aad8fc89070b384aee76e3",
+          ".specify/memory/constitution.md": "4de5b7d059d9b2b19d6db9b44c8d7bd01fa0d171e552b7be90348e003a475ead",
+          "implementation-scope/fidelity-scope-contract.md": "69dac9ec8af5052ff9d8cb0cb47bca9f4d6b5dec202bd45cc8837308c0068eaf",
+          "implementation-scope/pre-build-packet/verification.json": "fe3cd2bb36264a1cf0334f45a0171a20e6146d426679cf4ade8a84984de6faf1",
+          "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/raw-run-01/D--HOME.png": "992585177c716af41f4874b3bc33bd41eb9420d7d57a82da0a1e1d38d1e68303",
+          "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/raw-run-01/D--HOME.json": "a56190f5a10b294158a09ca6c4f9b77c8ec65186fecacb6948adbe478539cc0c",
+          "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/raw-run-01/M--HOME.png": "b1d3eea11f7b72855214b3c07104a1b39cd89e687dafde4dd6368b59a5bb43f9",
+          "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/raw-run-01/M--HOME.json": "cd8231e6c815119b76cb997145344bbe6a80787b126cc952a6ab3d85c8a743d4",
+          "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/raw-run-01/R--HOME.png": "d0eb6864925328755172d6f251e2d469ba482a7997b2d809c06c226a33748d2c",
+          "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/raw-run-01/R--HOME.json": "23421be6f8cb2a57c9646520b77cbdbe25f2ef27c6f1cec05332ac23715e3c09",
+          "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/public/display.ttf": "a4ba3a92350ebb031da0cb47630ac49eb265082ca1bc0450442f4a83ab947cab",
+          "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/public/manticore.woff2": "58dee0b74d93d9468b43cb4b62d74e2d4c994fa8d8ae1668c1ed536ce211fb58",
+          "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/public/space-mono-400.woff2": "e0c8e616bda27642f4c3cebaecff6525d901e73afc8a227cbbb0f2af4810f300"
+        }
+      },
+      {
+        "id": "provisional_root_manifests_preserved_untracked",
+        "result": "PASS",
+        "sha256": {
+          "package.json": "abef62d74fd3241aa1275b328ab05eb0eb27f6879861a1df2964170558f2ea2e",
+          "package-lock.json": "e7a4d7df93bf83683a5a1a991f96fbac3757c013eae3e938d3f7481bc1c3b605"
+        }
+      },
+      {
+        "id": "root_node_modules_not_mutated",
+        "result": "PASS",
+        "method": "No install/prune/delete/write operation performed; directory remains present. Not a full-tree byte audit."
+      },
+      {
+        "id": "no_tasks_application_or_package_bootstrap",
+        "result": "PASS"
+      },
+      {
+        "id": "hooks_before_after",
+        "result": "PASS",
+        "configurationPresent": false,
+        "before_plan": "absent; no dispatch",
+        "after_plan": "absent; no dispatch"
+      },
+      {
+        "id": "writes_limited_to_existing_feature_design",
+        "result": "PASS",
+        "files": [
+          "specs/001-home-entry-fidelity/plan.md",
+          "specs/001-home-entry-fidelity/research.md",
+          "specs/001-home-entry-fidelity/data-model.md",
+          "specs/001-home-entry-fidelity/quickstart.md",
+          "specs/001-home-entry-fidelity/contracts/fixtures.md",
+          "specs/001-home-entry-fidelity/contracts/verification.md",
+          "specs/001-home-entry-fidelity/design-validation.json"
+        ]
+      },
+      {
+        "id": "diff_whitespace",
+        "result": "PASS"
+      },
+      {
+        "id": "read_only_planning_consistency_review",
+        "result": "PASS",
+        "details": "No material contradiction; app isolation, direct dependencies, fixture checks and reduced interruption agree. Not implementation acceptance or route qualification."
+      }
+    ],
+    "capabilityProbe": {
+      "surface": "existing read-only verify-workstation.ps1",
+      "limits": "Resolution/version/file/configuration checks only; no end-to-end creative workflow qualification",
+      "statuses": {
+        "gsapSkills": "AVAILABLE",
+        "pixiSkills": "AVAILABLE",
+        "gltfTransform": "AVAILABLE 4.5.1",
+        "gltfpack": "AVAILABLE 1.3",
+        "ffmpeg": "AVAILABLE 7.1.1",
+        "ktx": "AVAILABLE 4.4.2",
+        "blender": "AVAILABLE 5.2.2 LTS",
+        "gimp": "MISSING in probed paths; unresolved, not global absence",
+        "renderdocCLI": "AVAILABLE 1.46",
+        "renderdocGUI": "file present 1.46",
+        "spectorMCP": "CONFIGURED, no live workflow",
+        "blenderMCP": "CONFIGURED, bridge unreachable",
+        "babylonMCPs": "all seven CONFIGURED, no live workflow",
+        "webgpuInspector": "OPTIONAL_MANUAL_CHECK",
+        "rootBundle": "TEMP_BUNDLE_UNTRACKED"
+      }
+    },
+    "artifactSHA256": {
+      "plan.md": "1db3b9efbee2ea87201be07fd709f5b37ead78fd553a13d4c2ffdf9b0da47602",
+      "research.md": "953cd09e8c8d5fdfacc50ae137388d83ae2865a4674affe83ad0d96c7ddb144d",
+      "data-model.md": "d02394accb1b245a9acf01dbc5bf2e15dd4ff32f25bedd89873c25a48bea7772",
+      "quickstart.md": "6594909c88c73eee207bb91d22340390c08f9c13fa312c96b328ea75d105d5d5",
+      "contracts/home-ui.md": "2e4449c00eef72ba7fb4cbb51e12a6a2b5993f732ca93114dd0f2ab4599d68f3",
+      "contracts/fixtures.md": "e8fa6c1e43fd8781bb6162559117b3cbae834cfcd123caa632363dfb489872cb",
+      "contracts/verification.md": "161580c6110509b8cbea9da890eb2947b20311330c469b9f34aa51d598d5e45d"
+    },
+    "decisionsChanged": [
+      "independent app package preserving root bundle",
+      "exact direct development package identities",
+      "automatic staged/build file-set and hash validation",
+      "explicit current capability-selection and gate rationale"
+    ],
+    "decisionsPreserved": [
+      "DOM/CSS/TypeScript/Vite",
+      "native clocks/property/input/reduced behavior",
+      "responsive and measured typography",
+      "fixture authority and local-only boundary",
+      "all FR/SC acceptance and calibration",
+      "independent review and route admission"
+    ],
+    "readyForTasks": true,
+    "crossArtifactAnalysis": "ready after tasks generation; not executed in this pass",
+    "laterGates": [
+      "missing town/fog/logo assets",
+      "exact application release pins/lock",
+      "browser/OS/Arial qualification",
+      "numeric calibration",
+      "Critical route/reviewer admission",
+      "FC adaptation/release gates"
+    ],
+    "notExecuted": [
+      "application bootstrap/implementation",
+      "target unit/browser tests",
+      "fidelity acceptance",
+      "numeric calibration",
+      "missing media acquisition",
+      "optional creative workflows",
+      "Critical qualification",
+      "tasks generation",
+      "deployment"
+    ]
+  }
 }

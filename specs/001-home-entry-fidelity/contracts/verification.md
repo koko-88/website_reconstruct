@@ -2,6 +2,10 @@
 
 Applies to [spec](../spec.md) and [plan](../plan.md). This is the planned target acceptance interface, not an executed result. The reference capture helpers/plans are evidence/replay seeds; do not run sealed reference application code or overwrite original receipts to validate this slice. Implement only small target environment/readiness/recording/comparison helpers, using maintained Playwright/image libraries.
 
+**2026-10-06 package boundary:** application commands, `tests/`, `artifacts/`, `fixtures/`, `public/` and `dist/` paths in this interface are relative to `app/`. Canonical reference locators remain repository-relative/read-only. RC-01 preflight records application manifest/lock identities, rejects undeclared/parent-root package resolution and verifies a clean checkout runs with only application dependencies. The provisional root npm bundle is outside the accepted architecture and remains untouched. Before browser runs, build must automatically stage/verify selected fixtures and check exact staged/built file sets and passthrough hashes under the [fixture contract](fixtures.md). Local ignore status alone is insufficient. These are reproducibility checks within FR-018/SC-007/008; no existing requirement/check is removed.
+
+Browser DOM/style/animation and performance/paint inspection are the selected diagnostic path. Optional host tools record actual identity/reachability before a task relies on them; installation or MCP configuration is not a live workflow result. Spector/RenderDoc/engine inspectors and authoring timeline seeks are not fidelity evidence. No optional creative capability is required to execute this package's acceptance suite.
+
 ## Case catalogue and runner contract
 
 Canonical projects use Windows/headless Chrome154.0.8037.58/DPR1, en-US, Africa/Cairo, LTR/light, zero root scroll and no imported storage:

@@ -4,7 +4,7 @@ Owner: this feature's [plan](../plan.md), under [FC-TARGET-DESIGN-01](../../../i
 
 ## Concrete audited inventory
 
-All present font paths below are relative to `reference/haunted-boulder-city-v2/rev-2.0.0-real-01/public/`; copy permitted local-validation inputs to gitignored `local-fixtures/home/` without changing originals. Build/test preparation may stage selected bytes into gitignored `public/fixtures/home/`. Neither directory may contain tracked third-party/local-only fixture bytes.
+All present font paths below are relative to `reference/haunted-boulder-city-v2/rev-2.0.0-real-01/public/`; copy permitted local-validation inputs to repository-root gitignored `local-fixtures/home/` without changing originals. Build/test preparation stages selected bytes into gitignored `app/public/fixtures/home/`. Neither directory may contain tracked third-party/local-only fixture bytes. The 2026-10-06 replan changes application serving/build paths, not the observed inventory or reuse basis.
 
 | Role | File/status | Bytes / SHA-256 |
 | --- | --- | --- |
@@ -21,14 +21,16 @@ This inventory reflects targeted present-file examination, not new reference obs
 
 ## Manifest interface
 
-Planned `fixtures/home/manifest.json` contains `schemaVersion`, `fixtureId`, `revision`, `phase`, `assets[]`, `referenceInputs[]` and `deviations[]`. Asset fields are defined in [data-model](../data-model.md). Requirements:
+Planned `app/fixtures/home/manifest.json` contains `schemaVersion`, `fixtureId`, `revision`, `phase`, `assets[]`, `referenceInputs[]` and `deviations[]`. Asset fields are defined in [data-model](../data-model.md). Requirements:
 
-1. Every required role has exactly one selected binding or a deterministic declared source-variant set. Each source file is allowlisted beneath gitignored `local-fixtures/home/` with exact size/hash/media type; generated serving copies live only beneath gitignored `public/fixtures/home/`. No traversal, executable application code, remote URL at runtime or unlisted asset.
+1. Every required role has exactly one selected binding or a deterministic declared source-variant set. Each source file is allowlisted beneath gitignored repository-root `local-fixtures/home/` with exact size/hash/media type; generated serving copies live only beneath gitignored `app/public/fixtures/home/`. Record `stagedPath`, `builtPath` and local `runtimeUrl` for each binding; built passthrough bytes are beneath `app/dist/fixtures/home/`. Paths have explicit root semantics; reject traversal and symbolic/junction escapes. No executable application code, remote URL at runtime or unlisted asset.
 2. Each original points to an existing package path and digest; each independently authored asset records the authoring source and resulting shape/texture/metric consequences. Missing assets explicitly stay missing; no fabricated digest/path or pending intention can be `verified`.
 3. Newly supplied/acquired original media needs a concrete source and applicable authorization/phase basis. FC's already-present allowance is not silently extended to missing live media. Newly downloaded current bytes, if separately authorized later, are implementation fixtures rather than sealed observations.
 4. Replacement records contain an actual file/source, permitted use basis, intrinsic aspect ratio/focal point/crop, alternative text as relevant and measured appearance consequences. If required composition cannot meet the contract, acceptance fails or remains blocked; a documented substitution is not automatically approved fidelity.
 5. Original-font copy hashes are exact. Expected loaded face/glyph metrics/wrapping must also pass. Arial resolution is an environment prerequisite. All visible media/texture/font dependencies must actually load; broken image `complete` is insufficient.
 6. Reference inputs list canonical HOME PNG/JSON/E2-013/E2-014 and the exact relevant original files with SHA-256. Verifier checks before/after identity and does not write to sealed/frozen input trees or the historical packet receipt.
+7. Staging verifies exact selected-file set equality and size/hash identity, not merely the presence of required files. The complete `app/public/` tree may contain only the selected fixture serving paths; stale/unlisted files fail preflight. Do not copy a source directory wholesale or transcode/optimize originals implicitly. A concrete independently authored replacement records tool/recipe/output identity and consequences; optional GIMP/Blender/FFmpeg availability is not a selected replacement or a new acquisition allowance.
+8. `build` performs staging and fixture preflight automatically. Verify exact fixture file-set/hash equality again in `app/dist/fixtures/home/`; inspect all built output for unexpected source, metadata, test, evidence or inspector files. Fixture metadata is not served. Vite's public directory is copied as-is, so ignore rules alone cannot enforce the build boundary. Use application-local Vite configuration, never repository root as publicDir or a source alias. Any generated cleanup is confined to resolved, checked application staging/output paths, never source fixtures, sealed evidence or provisional root npm state.
 
 ## Resolution and validation order
 
