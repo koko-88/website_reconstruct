@@ -1,0 +1,39 @@
+min_version = "2026.10.3"
+
+[settings]
+lockfile = true
+lockfile_platforms = ["windows-x64", "linux-x64"]
+minimum_release_age = "24h"
+
+[tools]
+node = "24.19.0"
+
+[tasks."repro:verify"]
+description = "Verify the committed reproducibility contract without requiring host-only creative tools."
+run = [
+  "node --check tooling/creative-capabilities/verify-workstation.mjs",
+  "node tooling/creative-capabilities/verify-workstation.mjs --ci"
+]
+
+[tasks."workstation:status"]
+description = "Inspect reusable workstation bootstrap state without changing the machine."
+dir = "tooling/reconstruction-workstation"
+run = "mise bootstrap status"
+
+[tasks."workstation:plan"]
+description = "Preview reusable workstation changes without applying them."
+dir = "tooling/reconstruction-workstation"
+run = "mise bootstrap --dry-run"
+
+[tasks."workstation:apply"]
+description = "Apply the reusable workstation profile."
+dir = "tooling/reconstruction-workstation"
+run = "mise bootstrap --yes"
+
+[tasks."workstation:verify"]
+description = "Verify the current host's reusable creative capabilities and integration surfaces."
+run = "node tooling/creative-capabilities/verify-workstation.mjs"
+
+[tasks."workstation:verify-strict"]
+description = "Fail when an expected reusable workstation capability is unavailable."
+run = "node tooling/creative-capabilities/verify-workstation.mjs --strict"

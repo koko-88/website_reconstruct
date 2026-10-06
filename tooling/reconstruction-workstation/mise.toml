@@ -1,0 +1,20 @@
+min_version = "2026.10.3"
+
+# Machine-wide applications and native utilities. "latest" means presence is
+# managed here; task-specific fidelity still records and verifies the actual
+# installed version before relying on it.
+[bootstrap.packages]
+"winget:Git.Git" = "latest"
+"winget:BlenderFoundation.Blender" = "latest"
+"winget:GIMP.GIMP.3" = "latest"
+"winget:BaldurKarlsson.RenderDoc" = "latest"
+"winget:Gyan.FFmpeg" = "latest"
+"scoop:ktx-software" = "latest"
+
+# Source-controlled workstation capabilities are pinned to immutable commits.
+# Dirty or conflicting existing checkouts fail closed; mise never resets them.
+[bootstrap.repos]
+"~/.agents/skills/gsap-skills" = { url = "https://github.com/greensock/gsap-skills.git", ref = "aed9cfd3277740755f6bfc1155c7aa645403b760" }
+"~/.agents/skills/pixijs-skills" = { url = "https://github.com/pixijs/pixijs-skills.git", ref = "83760c6f53462ca9cecd68055041f5a8c94758ce" }
+"~/creative_tools/Spector.js" = { url = "https://github.com/BabylonJS/Spector.js.git", ref = "d437799f9c50ac5017197bf548f36e285caaaad1" }
+"~/creative_tools/mcp-for-blender" = { url = "https://github.com/ahujasid/mcp-for-blender.git", ref = "34b7bd277fff75a693cde78930b4359478958a01" }

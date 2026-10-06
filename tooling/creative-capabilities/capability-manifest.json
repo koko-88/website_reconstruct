@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "capabilitySet": "CEC-WR-01",
   "date": "2026-10-06",
   "scope": "reusable-website-reconstruction",
@@ -204,8 +204,42 @@
     ]
   },
   "verification": {
-    "command": "powershell -ExecutionPolicy Bypass -File tooling/creative-capabilities/verify-workstation.ps1",
-    "policy": "distinguish-installation-resolution-configuration-reachability",
-    "browserExtensionCheck": "manual"
+    "command": "mise run workstation:verify",
+    "policy": "distinguish-bootstrap-presence-resolution-configuration-reachability",
+    "browserExtensionCheck": "manual",
+    "strictCommand": "mise run workstation:verify-strict",
+    "statusCommand": "mise run workstation:status",
+    "ciCommand": "mise run repro:verify"
+  },
+  "reproducibility": {
+    "controlPlane": "mise",
+    "projectConfig": "mise.toml",
+    "projectLock": "mise.lock",
+    "workstationConfig": "tooling/reconstruction-workstation/mise.toml",
+    "workstationDocs": "tooling/reconstruction-workstation/README.md",
+    "verifier": "tooling/creative-capabilities/verify-workstation.mjs",
+    "ciWorkflow": ".github/workflows/reproducibility.yml",
+    "projectPlatformsLocked": [
+      "windows-x64",
+      "linux-x64"
+    ],
+    "applicationDependencyOwner": "app/package.json + app/package-lock.json",
+    "fidelityHostState": "verify-and-record-not-blind-bootstrap"
+  },
+  "workstationBootstrap": {
+    "hostPackages": [
+      "winget:Git.Git",
+      "winget:BlenderFoundation.Blender",
+      "winget:GIMP.GIMP.3",
+      "winget:BaldurKarlsson.RenderDoc",
+      "winget:Gyan.FFmpeg",
+      "scoop:ktx-software"
+    ],
+    "pinnedRepositories": {
+      "GSAP AI Skills": "aed9cfd3277740755f6bfc1155c7aa645403b760",
+      "PixiJS Skills": "83760c6f53462ca9cecd68055041f5a8c94758ce",
+      "Spector.js": "d437799f9c50ac5017197bf548f36e285caaaad1",
+      "Blender MCP": "34b7bd277fff75a693cde78930b4359478958a01"
+    }
   }
 }

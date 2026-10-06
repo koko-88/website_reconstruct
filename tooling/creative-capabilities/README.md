@@ -51,7 +51,19 @@ After technical replanning, reusable workstation metadata may be extracted outsi
 | Browser diagnostic | WebGPU Inspector | Optional browser/profile capability; not baseline |
 | Project runtime | GSAP, Theatre.js, Three.js, Babylon.js, PixiJS, Lenis | Installed in the application only after the accepted plan/task selects them |
 
-Run `tooling/creative-capabilities/verify-workstation.ps1` before repairing or reinstalling anything. Interpret its states precisely: an installed desktop app can be outside `PATH`; an MCP build/config can exist without a live workflow; remote/cloud hosts require separate provisioning.
+Run `mise run workstation:status` before installing or repairing anything, then `mise run workstation:verify` for integration/reachability checks. Interpret states precisely: package presence, executable resolution, MCP configuration and live reachability are distinct; remote/cloud hosts require separate qualification.
+
+## Reproducibility control plane
+
+`mise` is the canonical interface for reusable workstation and project reproducibility.
+
+- Root `mise.toml` + `mise.lock`: project toolchain, reproducible task entry points and CI contract.
+- `tooling/reconstruction-workstation/mise.toml`: reusable machine bootstrap for host applications and pinned capability source repositories.
+- `tooling/creative-capabilities/capability-manifest.json`: capability inventory and integration policy.
+- `tooling/creative-capabilities/verify-workstation.mjs`: cross-platform verifier. No project PowerShell bootstrap/verifier is required.
+- `app/package.json` + `app/package-lock.json`: application dependencies only after an accepted implementation task creates them.
+
+Use `mise run workstation:plan` to preview machine changes, `mise run workstation:apply` to apply missing declared resources, and `mise run repro:verify` for the cross-platform CI-safe contract. Exact Chrome/OS/font/DPR/GPU conditions remain verification receipts rather than blind bootstrap targets.
 
 ## Approved runtime candidates
 

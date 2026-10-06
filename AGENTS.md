@@ -20,8 +20,7 @@ Use progressive disclosure. Do **not** recursively read the repository before ac
 6. If the task concerns motion, visual effects, GPU rendering, media, 3D, texture/asset production,
    or related debugging, read the [creative capability shelf](tooling/creative-capabilities/README.md)
    and use only the capability class required by the accepted task.
-7. Use the [reference-reconstruction skill](skills/reference-reconstruction/SKILL.md) only for
-   reconstruction/evidence methodology work.
+7. If the task concerns workstation/project reproducibility, tool versions, setup commands or reproducibility CI, read root `mise.toml`/`mise.lock` and [the reusable workstation profile](tooling/reconstruction-workstation/README.md).\n8. Use the [reference-reconstruction skill](skills/reference-reconstruction/SKILL.md) only for\n   reconstruction/evidence methodology work.
 
 ## Canonical ownership
 
@@ -37,7 +36,7 @@ Use progressive disclosure. Do **not** recursively read the repository before ac
 | Task lane, review, escalation, and model-family policy | RP-HBC-01 |
 | Exact model/engine/configuration admission | RR-HBC-01 |
 | Reconstruction inspection methodology | reference-reconstruction skill |
-| Creative execution capability availability/integration | `tooling/creative-capabilities/` |
+| Creative execution capability availability/integration | `tooling/creative-capabilities/` |\n| Project reproducibility interface and locked toolchain | `mise.toml` + `mise.lock` |\n| Reusable host/workstation provisioning | `tooling/reconstruction-workstation/mise.toml` |
 
 Resolve conflicts by domain ownership, not by newest-file-wins or search rank.
 
