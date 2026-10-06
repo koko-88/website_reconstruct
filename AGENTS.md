@@ -60,6 +60,8 @@ Resolve conflicts by domain ownership, not by newest-file-wins or search rank.
 
 ## Documentation discipline
 
+The root `AGENTS.md` applies recursively across the repository unless a nested `AGENTS.md` adds genuinely narrower directory-specific guidance. Do not create nested copies merely to repeat root rules; add one only when that subtree needs materially different instructions.
+
 Do not create a new governance Markdown file when an existing canonical source can own the rule.
 Update the owning source instead.
 

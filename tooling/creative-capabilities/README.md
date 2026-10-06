@@ -1,8 +1,8 @@
-# Creative execution capabilities — CEC-HBC-01
+# Creative execution capabilities — CEC-WR-01
 
 Status: **ACTIVE — capability shelf for implementation**
 Date: **2026-10-05**
-Applies to: Haunted local reference-fidelity execution and later reconstruction slices.
+Applies to: reusable website-reconstruction implementation. Haunted Boulder City is the first consuming fixture, not the scope boundary of this shelf.
 
 ## Purpose
 
@@ -14,7 +14,7 @@ Availability does **not** mean every library is imported into every slice. The t
 
 | Capability | Tool | Integration surface | Install timing | Use gate |
 | --- | --- | --- | --- | --- |
-| DOM/timeline motion | GSAP + plugins | project npm | app bootstrap | default advanced DOM motion/timeline option |
+| DOM/timeline motion | GSAP + plugins | project npm | task-selected bootstrap | select when timeline/state complexity materially benefits from it |
 | Agent motion knowledge | official GSAP AI Skills | Codex/Cursor/OpenCode skills | workstation setup | always available to coding agents |
 | Motion debugging | GSDevTools / CustomEase / MotionPathHelper | GSAP package | app bootstrap | motion tuning/debugging |
 | Visual keyframe authoring | Theatre.js Core + Studio | project npm; Studio dev-only | app bootstrap | use when hand-tuned timeline/keyframe authoring is useful |
@@ -46,15 +46,20 @@ These capabilities do not all integrate the same way:
 
 Run `tooling/creative-capabilities/verify-workstation.ps1` before installing anything again. A FOUND capability is reused; only MISSING capabilities are installed or repaired. Browser-extension checks remain manual unless a deterministic browser-management source is added later.
 
-## Approved project runtime package set
+## Approved runtime candidates
 
-Install into the actual application package when its package.json is created:
+The packages below are approved candidates, not a bootstrap bundle. Do **not** install them all when `package.json` is created. The accepted task/plan selects the smallest required subset, then that subset is pinned in the project lockfile.
 
-```powershell
-npm install gsap three pixi.js lenis @theatre/core @theatre/studio @babylonjs/core @babylonjs/loaders @babylonjs/inspector
-```
+| Capability | Candidate package(s) |
+| --- | --- |
+| DOM/timeline motion | `gsap` |
+| Visual keyframe authoring | `@theatre/core`, with `@theatre/studio` dev-only when selected |
+| GPU 3D/custom rendering | `three` |
+| Full 3D engine escalation | `@babylonjs/core`, `@babylonjs/loaders`, inspector dev-only when selected |
+| GPU 2D/particles | `pixi.js` |
+| Smooth/synchronized scroll | `lenis` |
 
-This is a capability set, not permission to import all packages into the shipped bundle. Feature code imports only what the accepted task requires.
+A task that needs none of these installs none of them. Availability on the workstation or in this catalog never overrides the active Spec Kit plan/task.
 
 ## Workstation setup
 
@@ -91,14 +96,14 @@ Do not commit a machine-specific absolute MCP path to the project.
 
 ### Desktop/browser tools
 
-Install current stable/LTS releases of:
+Only when an accepted task needs one and the verifier reports it missing, install a current stable/LTS release of:
 - Blender LTS
 - GIMP
 - FFmpeg
 - KTX-Software
 - WebGPU Inspector browser extension
 
-Pin the resolved installed versions in the local capability receipt before the first task that depends on them.
+Pin the resolved installed versions in the local capability receipt before the first task that depends on them. Do not install or upgrade workstation tools merely to make this catalog look complete.
 
 ## Selection rules
 

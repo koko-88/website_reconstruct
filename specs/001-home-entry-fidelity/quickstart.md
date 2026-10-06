@@ -6,7 +6,7 @@ This is a validation/run guide for the future implementation of [plan.md](plan.m
 
 - Use the repository root with the feature's future implementation checkout/worktree. Node24.19.0/npm11.17.0 are the recorded planning host versions; record any compatible qualified change.
 - Implementation bootstrap must pin exact compatible releases and commit `package-lock.json`, TypeScript/ESLint/Vite/Playwright configuration and the scripts named below. No floating latest installer in acceptance.
-- Resolve mandatory town/fog/logo fixture bytes under [fixture contract](contracts/fixtures.md), copy allowed present fonts locally and verify system Arial. A missing asset may permit isolated logic checks but blocks affected fidelity acceptance.
+- Resolve mandatory town/fog/logo fixture bytes under [fixture contract](contracts/fixtures.md), place permitted local-only source bytes under gitignored `local-fixtures/home/`, and verify system Arial. Implementation staging copies selected bytes into gitignored `public/fixtures/home/`; neither location is committed. A missing asset may permit isolated logic checks but blocks affected fidelity acceptance.
 - Supply the exact Windows/reference Chrome profile or a separately documented qualified comparison environment; inspect actual executable/version/hash. Do not replace the user's installed Chrome using a blind browser-install command. Portable bundled Chromium is a distinct functional-test profile.
 - Prepare and lock the numeric calibration input before target comparisons, following [verification contract](contracts/verification.md). Default NOT_CALIBRATED must block acceptance.
 
@@ -17,6 +17,7 @@ Once implementation has created the manifest/lock/config/scripts:
 ```powershell
 Set-Location 'K:\website_reconstruct'
 npm ci
+npm run stage:fixtures
 npm run verify:fixtures
 npm run typecheck
 npm run lint
@@ -24,7 +25,7 @@ npm run test:unit
 npm run build
 ```
 
-Expected: lock-respecting install; verified local fixture/reference hashes; all type/lint/state-clock checks pass; independently authored static output in `dist/`. Build contains complete readable home HTML, local assets and no reference app/provider code or runtime third-party visual requests.
+Expected: lock-respecting install; verified local fixture/reference hashes; zero tracked local-only/staged fixture bytes; all type/lint/state-clock checks pass; independently authored local static output in ignored `dist/`. Build contains complete readable home HTML, locally staged assets and no reference app/provider code or runtime third-party visual requests. This local build is not a publication artifact.
 
 Unit scenarios: delayed setup preserves navigation-relative1600ms floor and setup-relative3600ms ceiling; competing readiness/ceiling dismisses once;260/1500 offsets;0/50 reduced path; stale timer/cancellation/disposal; late init after7000ms fallback; formula return-to-zero and shrink-only fit behavior. These do not prove actual CSS choreography.
 

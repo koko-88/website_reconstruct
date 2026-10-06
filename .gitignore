@@ -1,0 +1,18 @@
+# Dependencies and generated build output
+node_modules/
+dist/
+
+# Test / acceptance outputs
+artifacts/
+test-results/
+playwright-report/
+blob-report/
+
+# Local-only implementation fixtures and generated serving stage
+local-fixtures/
+public/fixtures/home/
+
+# Local environment files
+.env
+.env.*
+!.env.example

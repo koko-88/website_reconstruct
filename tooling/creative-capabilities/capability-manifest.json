@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "capabilitySet": "CEC-HBC-01",
+  "capabilitySet": "CEC-WR-01",
   "date": "2026-10-05",
   "runtimePackages": [
     "gsap",
@@ -33,40 +33,42 @@
       "args": [
         "<absolute-path-to-Spector.js>/mcp/dist/index.js"
       ],
-      "status": "install-required"
+      "status": "verify-local-before-use"
     }
   ],
   "browserTools": [
     {
       "name": "WebGPU Inspector",
       "source": "https://github.com/brendan-duncan/webgpu_inspector",
-      "status": "install-required"
+      "status": "verify-local-before-use"
     }
   ],
   "desktopTools": [
     {
       "name": "Blender",
       "channel": "LTS",
-      "status": "install-required"
+      "status": "verify-local-before-use"
     },
     {
       "name": "GIMP",
-      "status": "install-required"
+      "status": "verify-local-before-use"
     },
     {
       "name": "FFmpeg",
-      "status": "install-required"
+      "status": "verify-local-before-use"
     },
     {
       "name": "KTX-Software",
-      "status": "install-required"
+      "status": "verify-local-before-use"
     }
   ],
   "policy": {
-    "preloadCapabilities": true,
+    "preloadCapabilities": false,
     "shipOnlyTaskRequiredRuntime": true,
     "sealedEvidenceImmutable": true,
-    "deterministicVerificationRequired": true
+    "deterministicVerificationRequired": true,
+    "selectionMode": "task-scoped-on-demand",
+    "installOnlyWhenSelectedAndMissing": true
   },
   "integrationModel": {
     "agentNativeSkills": [
@@ -104,5 +106,8 @@
     "command": "powershell -ExecutionPolicy Bypass -File tooling/creative-capabilities/verify-workstation.ps1",
     "policy": "verify-first-install-only-missing",
     "browserExtensionCheck": "manual"
-  }
+  },
+  "scope": "reusable-website-reconstruction",
+  "currentConsumer": "HBC",
+  "runtimePackagesAreCandidates": true
 }

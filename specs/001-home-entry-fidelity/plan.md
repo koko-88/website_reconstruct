@@ -19,7 +19,7 @@ Select semantic static HTML, strict TypeScript and Vite after comparing vanilla,
 | Language/runtime | Semantic HTML, authored CSS, strict TypeScript; Node **24.19.0** and npm **11.17.0**, observed locally. Exact supported dependency releases are resolved and locked at implementation bootstrap; no floating version is permitted in a validation receipt. |
 | Build | Vite vanilla TypeScript multi-file application, static output. `tsc --noEmit` is required separately because Vite transpilation does not type-check. Use `strict`, `isolatedModules`, DOM libraries and bundler resolution. |
 | Dependencies | Production: no client framework or animation/state dependency. Development: Vite, TypeScript, ESLint/typescript-eslint, Vitest, `@playwright/test`, `pixelmatch`, `pngjs`, `@axe-core/playwright`. Pin compatible exact versions and commit `package-lock.json`; record browser binary hash/version separately. |
-| Storage/integrations | Local immutable fixture copies, JSON manifests and validation artifacts. No database, service worker, analytics, persistence, provider script, external API or runtime font/CDN request. |
+| Storage/integrations | Tracked manifests/provenance plus gitignored local fixture bytes and gitignored runtime staging. No third-party/local-only fixture bytes are committed. No database, service worker, analytics, persistence, provider script, external API or runtime font/CDN request. |
 | Tests | Vitest for clock/state/formula logic; Playwright for built-output contracts, temporal evidence, named ready captures, keyboard and targeted accessibility; existing canonical evidence supplies references, not target-generated golden images. |
 | Target | Reference Windows 10/headless Chrome 154.0.8037.58/DPR1 profile, en-US/LTR/light/Africa-Cairo. D=1440x900 fine pointer; M/R=390x844 emulated touch with desktop UA; R reduced before navigation. Current installed browser/OS parity is not assumed. |
 | Scope/scale | One root, loader + closed header + hero, three canonical cases, three fresh repetitions each, nine boundary widths and four height/tablet variants. Future sections remain separate slices. |
@@ -71,7 +71,8 @@ specs/001-home-entry-fidelity/
 package.json / package-lock.json / .node-version / .npmrc
 index.html                        independently authored complete static home
 vite.config.ts / tsconfig.json / eslint.config.mjs / playwright.config.ts
-public/fixtures/home/             local-only selected visual fixtures
+local-fixtures/home/              gitignored local-only source bytes; never committed
+public/fixtures/home/             gitignored generated runtime staging only
 src/
   main.ts                         explicit initialize/dispose composition
   home/
@@ -85,7 +86,7 @@ src/
   styles/
     foundation.css                reset, fonts, tokens, focus, stable gutter
     header.css / hero.css / entry.css / effects.css
-fixtures/home/manifest.json       provenance and hashes, not shipped evidence
+fixtures/home/manifest.json       tracked provenance/hashes/status only; no third-party bytes
 scripts/
   verify-fixtures.mjs             allowlisted bytes and reference integrity
   validate-home-inputs.mjs        environment and calibration preflight
@@ -103,7 +104,7 @@ tests/
 artifacts/home/<run-id>/           ignored captures/traces/results; durable receipt exported
 ```
 
-**Structure decision**: one application at repository root alongside the existing evidence/specification directories. Keep served fixture files separate from provenance/reference inventories and keep browser helpers out of the production bundle. Use feature-local controllers with explicit lifecycle methods; no shared services layer, event bus, component framework clone or monorepo. Later sections may add their own controllers/styles without changing entry ownership; template-based markup can be reconsidered when actual duplication warrants Astro or another established static approach.
+**Structure decision**: one application at repository root alongside the existing evidence/specification directories. Keep local fixture source bytes in `local-fixtures/home/` and generated serving bytes in `public/fixtures/home/`; both are gitignored in this public repository. Keep the tracked `fixtures/home/manifest.json` limited to provenance, hashes, status and deviations. Keep browser helpers out of the production bundle. Use feature-local controllers with explicit lifecycle methods; no shared services layer, event bus, component framework clone or monorepo. Later sections may add their own controllers/styles without changing entry ownership; template-based markup can be reconsidered when actual duplication warrants Astro or another established static approach.
 
 ## Implementation design
 
@@ -141,7 +142,7 @@ Fine-pointer normal light events coalesce to one requestAnimationFrame, clamp co
 
 Available: Manticore, display/Anton and Space Mono inspection bytes. Missing: hero original and960 variant, `fog.webp`, standalone `bz-logo.svg`. SVG arrows/star and noise are source-embedded code descriptions; independently author geometric icons/static grain, without transplanting paths or encoded source. Record their concrete files and visual consequences when implemented.
 
-The preferred missing-media path is exact local originals supplied or collected under an explicit applicable allowance, stored outside sealed evidence with hashes and origin records. This plan does not fetch them or expand the contract to authorize publication. If originals cannot be supplied, record a concrete permitted replacement and measured consequence before acceptance; unresolved or materially incompatible replacement blocks the affected fidelity result. Do not crop a baseline screenshot into a hero texture or use a gradient as proof. Font/markup/state work can proceed independently, but every mandatory dependency must resolve before SC-007 or HOME appearance can pass. [Fixture contract](contracts/fixtures.md) owns the checkable selection and status fields.
+The preferred missing-media path is exact local originals supplied or collected under an explicit applicable allowance, stored outside sealed evidence in the gitignored `local-fixtures/home/` source area with hashes and origin records. Runtime/build preparation may stage selected bytes into gitignored `public/fixtures/home/`; neither location is a publication surface or tracked source. This plan does not fetch them or expand the contract to authorize publication. If originals cannot be supplied, record a concrete permitted replacement and measured consequence before acceptance; unresolved or materially incompatible replacement blocks the affected fidelity result. Do not crop a baseline screenshot into a hero texture or use a gradient as proof. Font/markup/state work can proceed independently, but every mandatory dependency must resolve before SC-007 or HOME appearance can pass. [Fixture contract](contracts/fixtures.md) owns the checkable selection and status fields.
 
 ### Bounded scroll verification context
 
