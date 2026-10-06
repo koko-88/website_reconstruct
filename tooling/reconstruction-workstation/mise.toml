@@ -9,6 +9,7 @@ min_version = "2026.10.3"
 "winget:GIMP.GIMP.3" = "latest"
 "winget:BaldurKarlsson.RenderDoc" = "latest"
 "winget:Gyan.FFmpeg" = "latest"
+"winget:astral-sh.uv" = "latest"
 "scoop:ktx-software" = "latest"
 
 # Source-controlled workstation capabilities are pinned to immutable commits.
@@ -18,3 +19,7 @@ min_version = "2026.10.3"
 "~/.agents/skills/pixijs-skills" = { url = "https://github.com/pixijs/pixijs-skills.git", ref = "83760c6f53462ca9cecd68055041f5a8c94758ce" }
 "~/creative_tools/Spector.js" = { url = "https://github.com/BabylonJS/Spector.js.git", ref = "d437799f9c50ac5017197bf548f36e285caaaad1" }
 "~/creative_tools/mcp-for-blender" = { url = "https://github.com/ahujasid/mcp-for-blender.git", ref = "34b7bd277fff75a693cde78930b4359478958a01" }
+
+[tasks.bootstrap]
+description = "Build pinned host-local capability artifacts after packages and repos converge."
+run = "node bootstrap.mjs"

@@ -209,7 +209,8 @@
     "browserExtensionCheck": "manual",
     "strictCommand": "mise run workstation:verify-strict",
     "statusCommand": "mise run workstation:status",
-    "ciCommand": "mise run repro:verify"
+    "ciCommand": "mise run repro:verify",
+    "blenderMcpSetup": "uvx mcp-for-blender@2.1.1 setup"
   },
   "reproducibility": {
     "controlPlane": "mise",
@@ -224,7 +225,12 @@
       "linux-x64"
     ],
     "applicationDependencyOwner": "app/package.json + app/package-lock.json",
-    "fidelityHostState": "verify-and-record-not-blind-bootstrap"
+    "fidelityHostState": "verify-and-record-not-blind-bootstrap",
+    "reconstructionCliTools": {
+      "glTF Transform": "4.5.1",
+      "gltfpack": "1.3.0",
+      "Babylon MCP servers": "9.28.0"
+    }
   },
   "workstationBootstrap": {
     "hostPackages": [
@@ -233,13 +239,19 @@
       "winget:GIMP.GIMP.3",
       "winget:BaldurKarlsson.RenderDoc",
       "winget:Gyan.FFmpeg",
-      "scoop:ktx-software"
+      "scoop:ktx-software",
+      "winget:astral-sh.uv"
     ],
     "pinnedRepositories": {
       "GSAP AI Skills": "aed9cfd3277740755f6bfc1155c7aa645403b760",
       "PixiJS Skills": "83760c6f53462ca9cecd68055041f5a8c94758ce",
       "Spector.js": "d437799f9c50ac5017197bf548f36e285caaaad1",
       "Blender MCP": "34b7bd277fff75a693cde78930b4359478958a01"
-    }
+    },
+    "postBootstrap": [
+      "pinned Spector.js MCP npm ci",
+      "Playwright Chromium for Spector MCP",
+      "pinned Spector.js MCP build"
+    ]
   }
 }

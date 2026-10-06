@@ -7,6 +7,9 @@ minimum_release_age = "24h"
 
 [tools]
 node = "24.19.0"
+"npm:@gltf-transform/cli" = "4.5.1"
+"npm:gltfpack" = "1.3.0"
+"npm:@babylonjs/mcp-servers" = "9.28.0"
 
 [tasks."repro:verify"]
 description = "Verify the committed reproducibility contract without requiring host-only creative tools."

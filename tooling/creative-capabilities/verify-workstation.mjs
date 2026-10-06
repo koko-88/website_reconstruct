@@ -159,6 +159,23 @@ function projectContract() {
   push("npm bundled toolchain", npmProbe.ok && npmVersion === "11.17.0" ? "AVAILABLE" : "VERSION_MISMATCH",
     "node-bundled", commandCandidates(process.platform === "win32" ? "npm.cmd" : "npm")[0] ?? null,
     npmVersion || npmProbe.error || "npm unavailable");
+
+  const gltf = run("gltf-transform", ["--version"]);
+  push("glTF Transform toolchain", gltf.ok && gltf.output.includes("4.5.1") ? "AVAILABLE" : "VERSION_MISMATCH",
+    "mise-npm-tool", commandCandidates("gltf-transform")[0] ?? null, gltf.output || gltf.error || "unavailable");
+
+  const gltfpack = run("gltfpack", ["-h"]);
+  push("gltfpack toolchain", gltfpack.ok ? "AVAILABLE" : "VERSION_MISMATCH",
+    "mise-npm-tool", commandCandidates("gltfpack")[0] ?? null, gltfpack.output.split(/\r?\n/)[0] || gltfpack.error || "unavailable");
+
+  const babylonBins = [
+    "babylonjs-nme-mcp-server", "babylonjs-nge-mcp-server", "babylonjs-nrge-mcp-server",
+    "babylonjs-npe-mcp-server", "babylonjs-gui-mcp-server",
+    "babylonjs-flow-graph-mcp-server", "babylonjs-smart-filters-mcp-server"
+  ];
+  const missingBabylonBins = babylonBins.filter((name) => commandCandidates(name).length === 0);
+  push("Babylon MCP executable set", missingBabylonBins.length === 0 ? "AVAILABLE" : "VERSION_MISMATCH",
+    "mise-npm-tool", null, missingBabylonBins.length ? "Missing: " + missingBabylonBins.join(", ") : "All seven executable entry points resolved.");
 }
 
 projectContract();
