@@ -6,15 +6,7 @@ on:
     paths:
       - "mise.toml"
       - "mise.lock"
-      - "tooling/reconstruction-workstation/**"
-      - "tooling/creative-capabilities/**"
-      - ".github/workflows/reproducibility.yml"
-      - "AGENTS.md"
-      - ".gitignore"
-  pull_request:
-    paths:
-      - "mise.toml"
-      - "mise.lock"
+      - ".mise/locks/**"
       - "tooling/reconstruction-workstation/**"
       - "tooling/creative-capabilities/**"
       - ".github/workflows/reproducibility.yml"
@@ -23,23 +15,44 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   contract:
     name: Reproducibility contract
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
 
     steps:
       - name: Checkout
         uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
 
-      - name: Install locked project toolchain
+      - name: Install mise
         uses: jdx/mise-action@e6a8b3978addb5a52f2b4cd9d91eafa7f0ab959d
         with:
           version: "2026.10.3"
-          install_args: "--locked"
+          install: false
+
+      - name: Generate exact mise dependency locks
+        run: mise lock
+
+      - name: Commit generated lock graph
+        id: lock_commit
+        shell: bash
+        run: |
+          if git diff --quiet -- mise.lock .mise/locks 2>/dev/null && [ -z "$(git status --porcelain -- .mise/locks)" ]; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add mise.lock .mise/locks
+          git commit -m "lock mise reconstruction tool dependencies"
+          git push origin HEAD:main
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Install locked project toolchain
+        run: mise install --locked
 
       - name: Verify reproducibility contract
         run: mise run repro:verify
