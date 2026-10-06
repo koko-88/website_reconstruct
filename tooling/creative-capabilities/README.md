@@ -1,54 +1,61 @@
 # Creative execution capabilities — CEC-WR-01
 
-Status: **ACTIVE — capability shelf for implementation**
-Date: **2026-10-05**
-Applies to: reusable website-reconstruction implementation. Haunted Boulder City is the first consuming fixture, not the scope boundary of this shelf.
+Status: **ACTIVE — planning-visible workstation capability inventory**
+Date: **2026-10-06**
+Applies to: reusable website reconstruction. Haunted Boulder City is the current consumer, not the scope boundary of the workstation.
 
 ## Purpose
 
-The project must not enter implementation with evidence/specification only. This capability shelf records the authoring, motion, GPU, media, debugging and asset-pipeline tools that agents may use when the task requires them.
+This file tells planning/execution agents which authoring, motion, GPU, media, debugging and asset-pipeline capabilities may already exist on the workstation.
 
-Availability does **not** mean every library is imported into every slice. The task/spec/evidence selects the smallest capable path; unused runtimes must not be shipped merely because they are installed.
+Two boundaries are mandatory:
+
+1. **Workstation capability availability is reusable and may be pre-provisioned.**
+2. **Project runtime dependencies remain task-selected.** A tool being installed never means its npm runtime belongs in the website.
+
+After technical replanning, reusable workstation metadata may be extracted outside this repository. The project must then retain only the selected project dependencies/configuration plus the minimal reference needed to discover the global capability inventory.
 
 ## Capability matrix
 
-| Capability | Tool | Integration surface | Install timing | Use gate |
+| Capability | Tool | Integration surface | Workstation role | Project-use gate |
 | --- | --- | --- | --- | --- |
-| DOM/timeline motion | GSAP + plugins | project npm | task-selected bootstrap | select when timeline/state complexity materially benefits from it |
-| Agent motion knowledge | official GSAP AI Skills | Codex/Cursor/OpenCode skills | workstation setup | always available to coding agents |
-| Motion debugging | GSDevTools / CustomEase / MotionPathHelper | GSAP package | app bootstrap | motion tuning/debugging |
-| Visual keyframe authoring | Theatre.js Core + Studio | project npm; Studio dev-only | app bootstrap | use when hand-tuned timeline/keyframe authoring is useful |
-| Creative WebGL/WebGPU | Three.js | project npm | app bootstrap | use when evidence/task justifies GPU 3D/custom rendering |
-| Full 3D engine alternate | Babylon.js | project npm | app bootstrap | escalation when engine-level facilities are materially useful |
-| GPU 2D/particles | PixiJS | project npm | app bootstrap | use when DOM/CSS is not the right renderer for 2D GPU effects |
-| Scroll synchronization | Lenis | project npm | app bootstrap | only when smooth/synchronized scroll is an explicit task need |
-| WebGL diagnostics | Spector.js MCP | local MCP server | workstation setup | agent-visible WebGL frame/shader/texture/state inspection |
-| WebGPU diagnostics | WebGPU Inspector | browser extension/local capture | workstation setup | WebGPU-only diagnostics |
-| 3D inspection/optimization | glTF Transform CLI | global CLI | workstation setup | glTF/GLB inspect/transform/optimize |
-| Mesh optimization | gltfpack / meshoptimizer | global/native CLI | workstation setup | mesh simplification/compression/optimization |
-| GPU texture pipeline | KTX-Software / Basis Universal | desktop/CLI | workstation setup | KTX2/UASTC/ETC1S texture work |
-| 3D asset authoring | Blender LTS | desktop app | workstation setup | modeling/materials/lighting/render/bake |
-| image/texture authoring | GIMP | desktop app | workstation setup | masks/textures/compositing/replacements |
-| media pipeline | FFmpeg | CLI | workstation setup | transcode/frame extraction/media normalization |
+| DOM/timeline motion | GSAP + plugins | project npm | runtime candidate | select only when timing/state complexity benefits |
+| Agent motion knowledge | official GSAP AI Skills | global agent skills | pre-provisionable | planning/coding knowledge; no runtime implication |
+| Agent Pixi knowledge | PixiJS skills | global agent skills | pre-provisionable | use when PixiJS is selected or evaluated |
+| Motion debugging | GSDevTools / CustomEase / MotionPathHelper | GSAP package | runtime/dev candidate | select with GSAP when useful |
+| Visual keyframe authoring | Theatre.js Core + Studio | project npm; Studio dev-only | runtime/dev candidate | use when hand-tuned keyframe authoring is justified |
+| Creative WebGL/WebGPU | Three.js | project npm | runtime candidate | use when evidence/task justifies custom GPU rendering |
+| Full 3D engine alternate | Babylon.js | project npm | runtime candidate | alternate/escalation when engine-level facilities are useful |
+| Babylon graph authoring | seven Babylon MCP servers | local stdio MCPs | pre-provisionable authoring | use only when a Babylon graph workflow is selected |
+| GPU 2D/particles | PixiJS | project npm | runtime candidate | use when DOM/CSS is not the right 2D renderer |
+| Scroll synchronization | Lenis | project npm | runtime candidate | only for explicit smooth/synchronized scroll need |
+| WebGL diagnostics | Spector.js MCP | local stdio MCP | pre-provisionable diagnostic | use for browser WebGL frame/shader/texture/state inspection |
+| 3D scene automation | Blender MCP | local MCP → Blender bridge | pre-provisionable authoring | use when direct scene/material/render manipulation is useful |
+| Heavy GPU diagnostics | RenderDoc | desktop GUI + native CLI | pre-provisionable diagnostic | escalation for low-level GPU/frame debugging |
+| Optional WebGPU diagnostics | WebGPU Inspector | browser extension | optional | never assume installed; use only if specifically selected |
+| 3D inspection/optimization | glTF Transform CLI | global CLI | pre-provisionable | glTF/GLB inspect/transform/optimize |
+| Mesh optimization | gltfpack / meshoptimizer | global/native CLI | pre-provisionable | mesh simplification/compression/optimization |
+| GPU texture pipeline | KTX-Software | CLI | pre-provisionable | KTX2/UASTC/ETC1S texture work |
+| 3D asset authoring | Blender LTS | desktop + CLI | pre-provisionable | modeling/materials/lighting/render/bake |
+| Image/texture authoring | GIMP | desktop + console | pre-provisionable | masks/textures/compositing/replacements |
+| Media pipeline | FFmpeg | CLI | pre-provisionable | transcode/frame extraction/media normalization |
 
 ## Integration model
 
-These capabilities do not all integrate the same way:
-
 | Surface | Tools | Agent relationship |
 | --- | --- | --- |
-| Agent-native skills | GSAP AI Skills | Read automatically from the agent skill directory; no MCP required |
-| MCP tool | Spector.js MCP | Connect once to Codex/Claw as a local stdio MCP server; exposes WebGL diagnostics as structured tools |
-| Shell/CLI | glTF Transform, gltfpack, FFmpeg, KTX | Agent invokes them through its normal shell/tool execution when the task needs them |
-| Browser diagnostic | WebGPU Inspector | Used inside the browser/DevTools; not an MCP dependency by default |
-| Desktop authoring | Blender, GIMP | Local authoring applications; automation/CLI is optional, not a prerequisite for normal use |
-| Project runtime | GSAP, Theatre.js, Three.js, Babylon.js, PixiJS, Lenis | Install in the application package only after the task selects them; they are shipped code, not workstation-global tools |
+| Agent-native skills | GSAP AI Skills, PixiJS Skills | Discovered from global agent skill roots; no MCP required |
+| MCP tools | Spector.js, Blender MCP, Babylon authoring servers | Host-local structured tools; configuration/reachability must be verified separately from installation |
+| Shell/CLI | glTF Transform, gltfpack, FFmpeg, KTX-Software, Blender CLI, GIMP console, RenderDoc CLI | Agent invokes through shell when selected and available |
+| Desktop/GUI | Blender, GIMP, RenderDoc | Host-local GUI capabilities; remote/cloud execution must not assume them |
+| Browser diagnostic | WebGPU Inspector | Optional browser/profile capability; not baseline |
+| Project runtime | GSAP, Theatre.js, Three.js, Babylon.js, PixiJS, Lenis | Installed in the application only after the accepted plan/task selects them |
 
-Run `tooling/creative-capabilities/verify-workstation.ps1` before installing anything again. A FOUND capability is reused; only MISSING capabilities are installed or repaired. Browser-extension checks remain manual unless a deterministic browser-management source is added later.
+Run `tooling/creative-capabilities/verify-workstation.ps1` before repairing or reinstalling anything. Interpret its states precisely: an installed desktop app can be outside `PATH`; an MCP build/config can exist without a live workflow; remote/cloud hosts require separate provisioning.
 
 ## Approved runtime candidates
 
-The packages below are approved candidates, not a bootstrap bundle. Do **not** install them all when `package.json` is created. The accepted task/plan selects the smallest required subset, then that subset is pinned in the project lockfile.
+These are candidates, not a bootstrap bundle:
 
 | Capability | Candidate package(s) |
 | --- | --- |
@@ -59,70 +66,46 @@ The packages below are approved candidates, not a bootstrap bundle. Do **not** i
 | GPU 2D/particles | `pixi.js` |
 | Smooth/synchronized scroll | `lenis` |
 
-A task that needs none of these installs none of them. Availability on the workstation or in this catalog never overrides the active Spec Kit plan/task.
+Do not create or commit a root `package.json` containing the whole capability shelf before replanning. The application bootstrap owns only the runtime/dev dependencies selected by the accepted technical plan.
 
-## Workstation setup
+## Workstation baseline
 
-### Agent skills
+The workstation may be proactively provisioned with reusable tools and skills. Reuse what is already installed; only repair/reinstall when deterministic verification shows that the required surface is actually unavailable.
 
-```powershell
-npx skills add https://github.com/greensock/gsap-skills --all -g
-```
+Expected reusable surfaces currently include:
 
-### 3D command-line tooling
+- GSAP and PixiJS agent skills;
+- Spector.js MCP;
+- Blender + Blender MCP;
+- seven Babylon authoring MCP servers;
+- glTF Transform and gltfpack;
+- FFmpeg;
+- KTX-Software;
+- GIMP;
+- RenderDoc GUI/CLI.
 
-```powershell
-npm install --global @gltf-transform/cli gltfpack
-```
-
-### Spector.js MCP
-
-Keep the clone outside the application repository:
-
-```powershell
-git clone https://github.com/BabylonJS/Spector.js.git
-cd Spector.js
-npm run mcp:install
-npm run mcp:build
-```
-
-For Codex, configure a local stdio MCP server that runs:
-
-```text
-node <absolute-path-to-Spector.js>\mcp\dist\index.js
-```
-
-Do not commit a machine-specific absolute MCP path to the project.
-
-### Desktop/browser tools
-
-Only when an accepted task needs one and the verifier reports it missing, install a current stable/LTS release of:
-- Blender LTS
-- GIMP
-- FFmpeg
-- KTX-Software
-- WebGPU Inspector browser extension
-
-Pin the resolved installed versions in the local capability receipt before the first task that depends on them. Do not install or upgrade workstation tools merely to make this catalog look complete.
+Machine-specific paths, ports and user-profile configuration stay local and must not be committed as portable project configuration.
 
 ## Selection rules
 
-1. Evidence/specification determines the required capability; installed tools do not expand scope.
-2. Prefer authored/inspectable motion over repeated blind CSS tweaking when a task is timing/sequence-heavy.
-3. Prefer DOM/CSS/GSAP for DOM effects; escalate to Pixi/Three/Babylon only when the observable requirement benefits from GPU rendering.
+1. Evidence/specification determines the required capability; installed tools do not expand product scope.
+2. Workstation provisioning and website runtime dependency selection are separate decisions.
+3. Prefer DOM/CSS/GSAP for DOM effects; escalate to Pixi/Three/Babylon only when the observable requirement benefits from another renderer.
 4. Do not use multiple render engines for the same surface without an explicit engineering reason.
-5. Theatre Studio is development authoring UI only; production uses saved state/core as required.
-6. GPU work requires independent browser acceptance; Spector/WebGPU Inspector are diagnostics, not fidelity acceptance.
+5. Theatre Studio and engine inspectors are development authoring/debugging surfaces unless the accepted plan explicitly requires otherwise.
+6. GPU diagnostics do not substitute for independent browser fidelity acceptance.
 7. Asset-production tools create implementation fixtures; they never mutate sealed reference evidence.
-8. All runtime and tool choices remain subordinate to the active Constitution, fidelity contract, Spec Kit task and acceptance evidence.
+8. A missing optional host-local tool may degrade to an evidenced equivalent; a missing capability required by the accepted task blocks that dependent task.
+9. All choices remain subordinate to the Constitution, fidelity contract, active Spec Kit artifacts and acceptance evidence.
 
 ## First-use verification
 
 Before a task relies on a capability, record:
-- installed/resolved version;
-- command/package/plugin identity;
-- execution surface (CLI/MCP/browser/desktop/npm);
-- smoke result that does not consume a paid model when a deterministic check is available;
+
+- installed/resolved version or identity;
+- execution surface (skill/MCP/CLI/browser/desktop/npm);
+- whether the current host can actually reach it;
+- deterministic smoke result when possible;
 - any project-specific limitation.
 
-No capability is considered production-ready merely because installation succeeded.
+Installation, configuration and live reachability are distinct states.

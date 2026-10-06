@@ -1,7 +1,10 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "capabilitySet": "CEC-WR-01",
-  "date": "2026-10-05",
+  "date": "2026-10-06",
+  "scope": "reusable-website-reconstruction",
+  "currentConsumer": "HBC",
+  "runtimePackagesAreCandidates": true,
   "runtimePackages": [
     "gsap",
     "three",
@@ -13,44 +16,103 @@
     "@babylonjs/loaders",
     "@babylonjs/inspector"
   ],
-  "globalCliPackages": [
-    "@gltf-transform/cli",
-    "gltfpack"
-  ],
   "agentSkills": [
     {
+      "name": "GSAP AI Skills",
       "source": "https://github.com/greensock/gsap-skills",
       "scope": "global",
-      "agents": "all"
+      "status": "verify-local-before-use"
+    },
+    {
+      "name": "PixiJS Skills",
+      "source": "https://github.com/pixijs/pixijs-skills",
+      "scope": "global",
+      "status": "verify-local-before-use"
     }
   ],
   "mcpServers": [
     {
       "name": "spector",
+      "capability": "Spector.js MCP",
       "source": "https://github.com/BabylonJS/Spector.js",
       "transport": "stdio",
-      "command": "node",
-      "args": [
-        "<absolute-path-to-Spector.js>/mcp/dist/index.js"
-      ],
-      "status": "verify-local-before-use"
-    }
-  ],
-  "browserTools": [
-    {
-      "name": "WebGPU Inspector",
-      "source": "https://github.com/brendan-duncan/webgpu_inspector",
-      "status": "verify-local-before-use"
-    }
-  ],
-  "desktopTools": [
-    {
-      "name": "Blender",
-      "channel": "LTS",
+      "hostBoundary": "local",
       "status": "verify-local-before-use"
     },
     {
-      "name": "GIMP",
+      "name": "blender",
+      "capability": "Blender MCP",
+      "source": "https://github.com/ahujasid/mcp-for-blender",
+      "transport": "stdio-to-local-bridge",
+      "defaultBridge": "127.0.0.1:9876",
+      "hostBoundary": "local",
+      "status": "verify-local-before-use"
+    },
+    {
+      "name": "babylon-material",
+      "capability": "Babylon Node Material Editor MCP",
+      "source": "@babylonjs/mcp-servers",
+      "transport": "stdio",
+      "hostBoundary": "local",
+      "status": "verify-local-before-use"
+    },
+    {
+      "name": "babylon-geometry",
+      "capability": "Babylon Node Geometry Editor MCP",
+      "source": "@babylonjs/mcp-servers",
+      "transport": "stdio",
+      "hostBoundary": "local",
+      "status": "verify-local-before-use"
+    },
+    {
+      "name": "babylon-render-graph",
+      "capability": "Babylon Node Render Graph Editor MCP",
+      "source": "@babylonjs/mcp-servers",
+      "transport": "stdio",
+      "hostBoundary": "local",
+      "status": "verify-local-before-use"
+    },
+    {
+      "name": "babylon-particles",
+      "capability": "Babylon Node Particle Editor MCP",
+      "source": "@babylonjs/mcp-servers",
+      "transport": "stdio",
+      "hostBoundary": "local",
+      "status": "verify-local-before-use"
+    },
+    {
+      "name": "babylon-gui",
+      "capability": "Babylon GUI MCP",
+      "source": "@babylonjs/mcp-servers",
+      "transport": "stdio",
+      "hostBoundary": "local",
+      "status": "verify-local-before-use"
+    },
+    {
+      "name": "babylon-flow-graph",
+      "capability": "Babylon Flow Graph MCP",
+      "source": "@babylonjs/mcp-servers",
+      "transport": "stdio",
+      "hostBoundary": "local",
+      "status": "verify-local-before-use"
+    },
+    {
+      "name": "babylon-smart-filters",
+      "capability": "Babylon Smart Filters MCP",
+      "source": "@babylonjs/mcp-servers",
+      "transport": "stdio",
+      "hostBoundary": "local",
+      "status": "verify-local-before-use"
+    }
+  ],
+  "cliTools": [
+    {
+      "name": "glTF Transform",
+      "source": "@gltf-transform/cli",
+      "status": "verify-local-before-use"
+    },
+    {
+      "name": "gltfpack",
       "status": "verify-local-before-use"
     },
     {
@@ -60,35 +122,74 @@
     {
       "name": "KTX-Software",
       "status": "verify-local-before-use"
+    },
+    {
+      "name": "RenderDoc CLI",
+      "executable": "renderdoccmd",
+      "status": "verify-local-before-use"
+    }
+  ],
+  "desktopTools": [
+    {
+      "name": "Blender",
+      "channel": "LTS",
+      "hostBoundary": "local",
+      "status": "verify-local-before-use"
+    },
+    {
+      "name": "GIMP",
+      "hostBoundary": "local",
+      "status": "verify-local-before-use"
+    },
+    {
+      "name": "RenderDoc",
+      "hostBoundary": "local",
+      "status": "verify-local-before-use"
+    }
+  ],
+  "browserTools": [
+    {
+      "name": "WebGPU Inspector",
+      "source": "https://github.com/brendan-duncan/webgpu_inspector",
+      "status": "optional-manual-check"
     }
   ],
   "policy": {
-    "preloadCapabilities": false,
+    "workstationBaseline": "preprovisioned-reusable",
+    "verifyBeforeRepairOrInstall": true,
+    "projectRuntimeSelection": "task-scoped",
     "shipOnlyTaskRequiredRuntime": true,
     "sealedEvidenceImmutable": true,
     "deterministicVerificationRequired": true,
-    "selectionMode": "task-scoped-on-demand",
-    "installOnlyWhenSelectedAndMissing": true
+    "missingOptionalCapability": "degrade-to-evidenced-equivalent",
+    "missingRequiredCapability": "block-dependent-task"
   },
   "integrationModel": {
     "agentNativeSkills": [
-      "GSAP AI Skills"
+      "GSAP AI Skills",
+      "PixiJS Skills"
     ],
     "mcp": [
-      "Spector.js MCP"
+      "Spector.js MCP",
+      "Blender MCP",
+      "Babylon authoring MCPs"
     ],
     "shellCli": [
       "glTF Transform",
       "gltfpack",
       "FFmpeg",
-      "KTX-Software"
+      "KTX-Software",
+      "Blender CLI",
+      "GIMP console",
+      "RenderDoc CLI"
     ],
-    "browserDiagnostics": [
-      "WebGPU Inspector"
-    ],
-    "desktopAuthoring": [
+    "desktopAuthoringAndDiagnostics": [
       "Blender",
-      "GIMP"
+      "GIMP",
+      "RenderDoc"
+    ],
+    "browserDiagnosticsOptional": [
+      "WebGPU Inspector"
     ],
     "projectRuntime": [
       "gsap",
@@ -104,10 +205,7 @@
   },
   "verification": {
     "command": "powershell -ExecutionPolicy Bypass -File tooling/creative-capabilities/verify-workstation.ps1",
-    "policy": "verify-first-install-only-missing",
+    "policy": "distinguish-installation-resolution-configuration-reachability",
     "browserExtensionCheck": "manual"
-  },
-  "scope": "reusable-website-reconstruction",
-  "currentConsumer": "HBC",
-  "runtimePackagesAreCandidates": true
+  }
 }
