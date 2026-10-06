@@ -9,8 +9,9 @@ Use progressive disclosure. Do **not** recursively read the repository before ac
 1. Read the [Project Constitution](.specify/memory/constitution.md).
 2. If the task concerns HBC product behavior, fidelity, current implementation scope, or phase
    boundaries, read [PRODUCT.md](PRODUCT.md).
-3. If the task concerns project decomposition, feature boundaries, feature ordering, or project-wide
-   coverage, read [ROADMAP.md](ROADMAP.md).
+3. If the task concerns project decomposition or any HBC feature specification, planning, task generation,
+   orchestration, or implementation, read [ROADMAP.md](ROADMAP.md) before feature artifacts and obey its
+   project-wide status/gates.
 4. Load only the task-specific evidence linked from the
    [pre-build evidence entry point](implementation-scope/pre-build-packet/README.md).
 5. When a Spec Kit feature exists, load only that feature's `spec.md`, `plan.md`, `tasks.md`,

@@ -24,7 +24,7 @@ Evidence entry point: [implementation-scope/pre-build-packet/README.md](implemen
 | Feature boundaries | **NOT YET DEFINED** |
 | Cross-feature dependency graph | **NOT YET DEFINED** |
 | Product-obligation → feature coverage map | **NOT YET DEFINED** |
-| Existing `001-home-entry-fidelity` | **PRE-ROADMAP FEATURE — PENDING VALIDATION AGAINST THIS ROADMAP** |
+| Existing `001-home-entry-fidelity` | **PRE-ROADMAP FEATURE — PAUSED; PENDING VALIDATION AGAINST THIS ROADMAP** |
 
 ## Existing pre-roadmap feature
 
@@ -38,7 +38,7 @@ Required disposition after decomposition: **KEEP / RE-SCOPE / MERGE / SPLIT / RE
 
 ## Roadmap completion gate
 
-Before project orchestration or further implementation:
+Before any additional feature specification, planning, task generation, orchestration, or implementation:
 
 - [ ] Derive the smallest coherent set of independently testable features from PRODUCT.md and the canonical evidence.
 - [ ] Assign every material product/fidelity obligation to one feature where possible, or to an explicit cross-cutting owner where it genuinely spans features.

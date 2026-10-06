@@ -15,6 +15,7 @@ This inventory is derived from the existing State & Route Coverage Matrix and im
 | Stories and chapter progression/reversal | SR-03..06/38 |
 | Tour highlights and topic selection | SR-07/39 |
 | Venue and directions | SR-08 |
+| Local outbound destinations and link contracts | SR-24 |
 | FAQ/disclosure states and interruption | SR-09/14..23 |
 | Menu, fragment navigation and history | SR-10..13 |
 | Ticket invitation and visible dialog/CTA host shell | SR-25..32/39; exact commerce remains excluded by TX-01 |
