@@ -30,7 +30,7 @@ function commandCandidates(name) {
   const finder = process.platform === "win32" ? "where.exe" : "which";
   const found = run(finder, [name]);
   if (!found.ok || !found.output) return [];
-  return [...new Set(found.output.split(/\\r?\\n/).map((v) => v.trim()).filter(Boolean))];
+  return [...new Set(found.output.split(/\r?\n/).map((v) => v.trim()).filter(Boolean))];
 }
 
 function expandHome(path) {
@@ -42,7 +42,7 @@ function probeExecutable(capability, commands, versionArgs = ["--version"], surf
   for (const candidate of [...new Set(candidates)]) {
     const probed = run(candidate, versionArgs);
     if (probed.ok || probed.output) {
-      push(capability, "AVAILABLE", surface, candidate, probed.output.split(/\\r?\\n/).slice(0, 4).join(" "));
+      push(capability, "AVAILABLE", surface, candidate, probed.output.split(/\r?\n/).slice(0, 4).join(" "));
       return;
     }
   }
@@ -73,7 +73,7 @@ function codexMcpNames() {
   const config = join(homedir(), ".codex", "config.toml");
   if (!existsSync(config)) return [];
   const raw = readFileSync(config, "utf8");
-  return [...raw.matchAll(/^\\[mcp_servers\\.([^\\]]+)\\]/gm)].map((m) => m[1].replace(/^[\"']|[\"']$/g, ""));
+  return [...raw.matchAll(/^\[mcp_servers\.([^\]]+)\]/gm)].map((m) => m[1].replace(/^[\"']|[\"']$/g, ""));
 }
 
 function checkMcpConfig() {
@@ -135,13 +135,13 @@ function projectContract() {
 
   const tomlText = existsSync(miseToml) ? readFileSync(miseToml, "utf8") : "";
   const lockText = existsSync(miseLock) ? readFileSync(miseLock, "utf8") : "";
-  const configOk = /node\\s*=\\s*"24\\.19\\.0"/.test(tomlText) && /lockfile\\s*=\\s*true/.test(tomlText);
+  const configOk = /node\s*=\s*"24\.19\.0"/.test(tomlText) && /lockfile\s*=\s*true/.test(tomlText);
   push("Project mise config", configOk ? "VALID" : "INVALID", "project-control-plane", miseToml,
     configOk ? "Node 24.19.0 and committed lockfile policy declared." : "Required project toolchain declarations are missing.");
 
-  const lockOk = /version\\s*=\\s*"24\\.19\\.0"/.test(lockText)
-    && /platforms\\.linux-x64/.test(lockText)
-    && /platforms\\.windows-x64/.test(lockText);
+  const lockOk = /version\s*=\s*"24\.19\.0"/.test(lockText)
+    && /platforms\.linux-x64/.test(lockText)
+    && /platforms\.windows-x64/.test(lockText);
   push("Project mise lock", lockOk ? "VALID" : "INVALID", "project-control-plane", miseLock,
     lockOk ? "Windows x64 and Linux x64 Node artifacts are locked." : "Missing required Node lock entries.");
 
@@ -155,7 +155,7 @@ function projectContract() {
   push("Node project toolchain", nodeOk ? "AVAILABLE" : "VERSION_MISMATCH", "mise-tool", process.execPath, process.version);
 
   const npmProbe = run(process.platform === "win32" ? "npm.cmd" : "npm", ["--version"]);
-  const npmVersion = npmProbe.output.split(/\\r?\\n/)[0]?.trim();
+  const npmVersion = npmProbe.output.split(/\r?\n/)[0]?.trim();
   push("npm bundled toolchain", npmProbe.ok && npmVersion === "11.17.0" ? "AVAILABLE" : "VERSION_MISMATCH",
     "node-bundled", commandCandidates(process.platform === "win32" ? "npm.cmd" : "npm")[0] ?? null,
     npmVersion || npmProbe.error || "npm unavailable");
@@ -203,7 +203,7 @@ const width = Math.max(...results.map((r) => r.capability.length), 10);
 for (const row of results) {
   console.log(`${row.capability.padEnd(width)}  ${row.status.padEnd(20)}  ${row.surface}${row.resolved ? `  ${row.resolved}` : ""}`);
 }
-console.log("\\nJSON:");
+console.log("\nJSON:");
 console.log(JSON.stringify(results, null, 2));
 
 const hardFailures = new Set(["INVALID", "VERSION_MISMATCH", "PRESENT_FORBIDDEN"]);
