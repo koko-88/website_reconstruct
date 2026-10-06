@@ -3,11 +3,12 @@ import { homedir } from "node:os";
 import { join, resolve } from "node:path";
 import { spawnSync } from "node:child_process";
 import net from "node:net";
+import { fileURLToPath } from "node:url";
 
 const args = new Set(process.argv.slice(2));
 const ciMode = args.has("--ci");
 const strictMode = args.has("--strict");
-const root = resolve(new URL("../../", import.meta.url).pathname.replace(/^\\/([A-Za-z]:)/, "$1:"));
+const root = resolve(fileURLToPath(new URL("../../", import.meta.url)));
 
 const results = [];
 const push = (capability, status, surface, resolvedPath = null, detail = null) => {
