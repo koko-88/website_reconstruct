@@ -1,29 +1,126 @@
 # PRODUCT — Haunted Boulder City Reconstruction
 
-Contract **FC-TARGET-DESIGN-01**, revision 3, 2026-10-05 (Africa/Cairo). Writable target-project decision record and current prospective authority for the bounded local reference-validation implementation. It is not a new observation or sealed reference revision; implementation clearance remains phase-scoped by the readiness table below.
+Contract **FC-TARGET-DESIGN-01**, revision 4, 2026-10-07 (Africa/Cairo). This is the canonical product authority for the bounded local reference-fidelity reconstruction. Revision 4 completes product-level ownership needed for project decomposition; it does not create feature boundaries, technical architecture, or new reference observations.
 
-Agent entry point: [AGENTS.md](AGENTS.md). This file owns HBC product/scope/fidelity obligations and the current local-validation boundaries. Project-wide rules live in the [Spec Kit Constitution](.specify/memory/constitution.md). Implementation evidence entry point: [pre-build packet](implementation-scope/pre-build-packet/README.md). The packet's [prospective corrections and complete anchor audit](implementation-scope/pre-build-packet/corrections.md) govern FAQ interpretation and topic identifiers; its authority crosswalk governs visual baseline selection. Historical source statements and blocked reference gates remain immutable. Revision 3 contains the current phase-specific asset/reuse reconciliation; it changes no reference observation, coverage anchor, or sealed evidence.
+Agent entry point: [AGENTS.md](AGENTS.md). Project-wide rules live in the [Spec Kit Constitution](.specify/memory/constitution.md). Project decomposition and execution admission live in [ROADMAP.md](ROADMAP.md). Implementation evidence starts at the [pre-build packet](implementation-scope/pre-build-packet/README.md), whose corrections, evidence index, motion fingerprint, typography/assets crosswalk, and authority crosswalk remain the detailed evidence owners.
 
-## Product / Experience Inventory
+## Product completion status
 
-This inventory is derived from the existing State & Route Coverage Matrix and implementation-facing evidence crosswalk. It records the observable product surfaces already supported by repository evidence. It is not a feature decomposition and does not determine the number or boundaries of Spec Kit features.
+**COMPLETE FOR ROADMAP DECOMPOSITION**
 
-| Experience surface / concern | Existing coverage |
+This status means the material observable product surfaces, journeys, stateful behaviors, cross-cutting obligations, exclusions, unknowns, and current-phase input constraints have an explicit product-level owner. It does **not** mean implementation is admitted; ROADMAP.md remains **DECOMPOSITION REQUIRED** until independently testable feature boundaries, dependencies, coverage, and acceptance ownership are derived and approved.
+
+## Whole-product purpose and visitor outcomes
+
+The local reconstruction must reproduce the observable design/experience system strongly enough to validate the full evidence → specification → implementation → verification workflow against the reference. Within the reference-equivalent fixture, a visitor must be able to:
+
+- enter through the normal or reduced-motion entry path and reach a stable home state;
+- understand and traverse the narrative sections in the observed order and interaction model;
+- progress through story chapters and topic-driven visual states, including reversal/interruption behavior;
+- use menu and fragment navigation with the observed history/reset semantics;
+- inspect venue/local information and disclosures;
+- reach and operate the visible ticket invitation/dialog host shell without reproducing excluded commerce;
+- use the evidenced keyboard/focus/semantic relationships within the bounded Chromium scope.
+
+Real target content, branding, destinations, and CTA functionality remain later adaptation decisions under TA-01. These outcomes describe the reference-equivalent local validation product, not a general-purpose tourism platform.
+
+## Product / experience ownership
+
+These IDs are stable product-area identifiers. They are **not** Spec Kit feature IDs and do not imply implementation slicing.
+
+| Product ID | Product area | Product intent / observable outcome | Routes, states and journeys owned | Evidence anchors |
+| --- | --- | --- | --- | --- |
+| P-01 | Entry and Home | Establish fresh entry, loader/hero transition, ready home, root reset, and reduced-motion entry as distinct product states. | root and home fragment; loading → parting/hero overlap → ready; reduced fast-entry; source-declared initialization fallback. | SR-01/10/37/38; M-01/03/04/12; AC2-01/04 |
+| P-02 | About, intro and facts | Present the intro/photo/facts composition and its decode/rearm behavior without flattening responsive or input differences. | about fragment; revealed intro; fact decode/settle/rearm; normal/touch/reduced branches. | SR-02/38/39; M-05/06; AC2-02/03/04 |
+| P-03 | Stories | Preserve the three-chapter narrative progression, reversal, count/selection state, wide pinned behavior, narrow/reduced vertical behavior, and UFO still/video fallback relationships. | stories fragment; chapter 0/1/2; forward/reverse; reduced vertical; media-ready/fallback states. | SR-03..06/38; M-06/07/12; AC2-03/04 |
+| P-04 | Tour Highlights | Preserve eight reference topic rows, selected scenery, scroll-driven selection, hover/glitch feedback, corrected topic bindings, and reduced/touch distinctions. | unnamed highlights section; eight topic states; selected-scene transitions; hover/rearm feedback. | SR-07/39; M-08; COR-03; AC2-03/04 |
+| P-05 | Venue and Local Information | Preserve venue composition, directions contract, local destination rows, link roles and externally-bound navigation without reproducing external destination designs. | zombies and local fragments; venue/default; outbound link contracts. | SR-08/24; AC2-02/08 |
+| P-06 | FAQ / Plan | Preserve nine distinct disclosures, zero-or-one settled expansion, content-driven height, keyboard activation, interruption and reversal continuity. | plan fragment; nine closed; each open/close; rapid interruption; Enter/Space. | SR-09/14..23; COR-01; M-09; AC2-05 |
+| P-07 | Global Menu and Fragment Navigation | Preserve closed/open menu, stagger, focus/scroll lock, Escape/close behavior, fragment navigation, back/forward/reload, root reset and in-page home-return distinctions. | menu closed/open/closing; all observed fragments; browser history states. | SR-10..13; M-10; AC2-06/07 |
+| P-08 | Ticket Invitation and Host Dialog | Preserve the visible CTA section and host-dialog lifecycle while excluding Eventbrite business semantics. | tickets fragment; opening/loading/visible/close/reopen; tickets preview query; simulated host fallback; focus/scroll restoration. | SR-25..32/39; M-11; AC2-09/10/11/12 |
+| P-09 | Creator, Proof and Footer | Preserve creator/proof/footer presentation and back-home relationship as part of the reference-equivalent fixture. | creator fragment; creator/proof; footer; home return. | SR-13/34; AC2-02/07 |
+| P-10 | Shared Experience System | Own product-wide visual, typography, responsive, scrolling/input, motion, semantics/focus, renderer/public-artifact and environment obligations that span multiple product areas. | all scoped surfaces; width/height/input/preference branches; visibility/interruption; cross-cutting acceptance. | SR-35..45 as applicable; TF-01..05; TU-01 |
+
+## Reference topology and fixture cardinality
+
+These counts describe the **reference-equivalent local validation fixture**. They are not permanent business-data cardinalities for later adaptation.
+
+| Reference relationship | Current fixture obligation | Adaptation rule |
+| --- | --- | --- |
+| Route topology | One document/root route shell with fragment-driven sections plus the tickets preview query entry variant. | Target routing may change only through an explicit adaptation decision that preserves required observable relationships or records deviations. |
+| Stories | Three chapters: Ghosts, Dark history, UFO. | Target chapter data/count may change later under TA-01; the local validation fixture keeps all three. |
+| Tour highlights | Eight ordered topic rows with corrected source identifiers/bindings. | Real target topics may change; local fixture keeps all eight and their reference mapping. |
+| FAQ | Nine disclosures; FAQ7 has two paragraphs. | Target FAQ count/content may change later; local fixture validates all nine distinct answers. |
+| Local destinations | Three indexed local destination rows plus observed external agency/contact/Tripadvisor-style links. | Target destinations require explicit mapping; external destination page designs remain excluded. |
+| Facts | Three-column fact relationship is retained, including narrow-layout internal rearrangement. | Target fact data may change, but geometry/cardinality changes require explicit acceptance impact. |
+| Sections | Home → About → Stories → Highlights → Venue → Plan → Local → Tickets → Creator → Footer. | This sequence is part of the reference fixture; later information architecture changes are adaptation decisions, not silent implementation freedom. |
+
+## Routes, entry points and critical journeys
+
+| Journey ID | Product-owned journey | Required disposition |
+| --- | --- | --- |
+| PJ-01 | Fresh root entry | New root navigation is distinct from in-page home return; normal and reduced entry are separate acceptance paths. |
+| PJ-02 | Menu / fragment navigation | Open/close/Escape, first-link focus, scroll lock, fragment navigation, reload/back/forward, and home-return behavior remain observable obligations. |
+| PJ-03 | Story progression | Chapter 0 → 1 → 2 and reverse progression occur without inventing separate hashes for chapter state; interruption/reversal continuity matters. |
+| PJ-04 | FAQ interaction | Each disclosure opens/closes in sequence with zero/one settled answer; interruption and keyboard activation are required. |
+| PJ-05 | Ticket host lifecycle | Ticket section → dialog opening/loading/visible → close/reopen/return-focus, plus preview entry and controlled fallback distinction. Provider commerce is excluded. |
+| PJ-06 | Outbound information | Venue/local links preserve observed link roles/attributes; external page design, submission and transaction outcomes are excluded. |
+
+## Stateful behavior dispositions
+
+The following behaviors are product truth because they materially change observable acceptance. Detailed formulas/timings remain in the evidence packet rather than being duplicated here.
+
+- **Entry:** loader readiness, loader dismissal, hero release and final ready state are distinct. The source-declared 7-second initialization failsafe is retained as a fallback requirement for the local fixture, without claiming a naturally observed outage.
+- **Scrolling/input:** fine-pointer smoothing/hero effects, native keyboard/scrollbar/touch behavior, navigation interruption, fragment focus/history and root reset are cross-cutting product behavior. Implementation algorithms are a planning decision.
+- **Stories/media:** wide normal pinned progression, narrow/reduced vertical presentation, synchronized chapter/count state, reversal, video readiness and still fallback are explicit P-03 behavior.
+- **Facts/topics:** fact decode/settle/rearm and topic scroll-selection are distinct from hover feedback. Hover does not silently redefine selected scenery.
+- **Preference changes:** fresh reduced-motion entry and switching motion preference during a session are separate cases. Width, input capability and motion preference remain independent dimensions.
+- **Ticket host:** visible shell lifecycle, close methods, focus/scroll restoration and retained mounted state are P-08 obligations. Provider inventory/business flows remain excluded by TX-01.
+- **Visibility/interruption:** ambient/reveal behavior must honor the evidenced visibility and cancellation relationships rather than being accepted from one arbitrary static frame.
+
+## Shared product obligations
+
+| Shared ID | Owner | Obligation |
+| --- | --- | --- |
+| PX-01 | P-10 | Visual hierarchy, section geometry, layering, crop/focal roles, typography metrics and responsive relationships across the complete fixture. |
+| PX-02 | P-10 | Scrolling, input-mode selection, interruption, browser-history behavior and state restoration across navigation and section interactions. |
+| PX-03 | P-10 | Ambient motion/reveals: fog, grain, rotating marks, flashlight, scene effects and CTA spirit are evaluated by character/range/lifecycle, not fixed stochastic frame identity. |
+| PX-04 | P-10 | Responsive and preference behavior: width/height boundaries, touch/coarse input, reduced motion and preference switching are independently owned dimensions. |
+| PX-05 | P-10 | Accessibility behavior: skip navigation, loader status, meaningful roles/names/state, disclosure operation, hidden-state focus exclusion, visible focus, overlay focus/return and documented correction of reference defects. |
+| PX-06 | P-10 | Renderer/public-artifact boundary: DOM/CSS/SVG/video/iframe/worker findings and unknown internals remain classified; no hidden renderer equivalence is inferred. |
+
+## Accessibility and reference-defect disposition
+
+TF-05 remains the governing accessibility policy. For decomposition purposes, the following evidenced relationships are explicitly product-owned: skip-link visibility/activation, polite loader status, meaningful home heading/image semantics, keyboard-operable menu/disclosures, hidden navigation exclusion from focus order, and ticket-dialog focus/return behavior.
+
+The observed ticket-dialog Tab escape is a **reference defect**, not a target requirement. The target may correct it, but the correction and any visual/interaction consequence must be recorded as an explicit deviation. This does not claim uninspected assistive-technology, other-engine or zoom parity.
+
+## Asset and implementation-input availability
+
+Reuse permission and input availability are separate concerns.
+
+| Input group | Current local-validation availability | Product disposition |
+| --- | --- | --- |
+| Display / Manticore / Space Mono inspection fonts | Present in the evidence package as inspection bytes. | May be used as local fidelity fixtures under the current phase allowance; public reuse still requires TR-01 resolution. |
+| Hero/section/topic/venue/portrait imagery | Mostly represented by captured/reference evidence and source inventory; original reusable media library is not complete. | Missing original bytes are an implementation input gap, not permission to invent a generic substitute and call it exact. Use an actually available fixture or document a concrete replacement/deviation. |
+| UFO video | Behavior/metadata/timeline evidence exists; reusable MP4 is not acquired. | Preserve the media/still behavior contract; exact video fidelity cannot be claimed without an available authorized fixture or documented replacement mapping. |
+| Fog/spirit/grain/marks | Behavior/source evidence exists; standalone reusable assets are incomplete. | Independently authored equivalents are allowed only with measured visual consequences; source code/art must not be silently copied. |
+| Reference app/CSS | Available for inspection. | Source-declared mechanisms may inform independent implementation; code reuse remains blocked unless authority is established. |
+
+## Exclusions, inspected absences, unknowns and pending decisions
+
+| Class | Disposition |
 | --- | --- |
-| Home, loader, hero, fresh entry | SR-01/10/37/38 |
-| About, marquee, intro and facts | SR-02/38/39 |
-| Stories and chapter progression/reversal | SR-03..06/38 |
-| Tour highlights and topic selection | SR-07/39 |
-| Venue and directions | SR-08 |
-| Local outbound destinations and link contracts | SR-24 |
-| FAQ/disclosure states and interruption | SR-09/14..23 |
-| Menu, fragment navigation and history | SR-10..13 |
-| Ticket invitation and visible dialog/CTA host shell | SR-25..32/39; exact commerce remains excluded by TX-01 |
-| Creator, proof and footer/back-home | SR-13/34 |
-| Responsive width/height relationships | SR-35/36 |
-| Renderer/public-artifact coverage | SR-40 |
-| Type/media/reuse and replacement boundary | SR-42 / TR-01 |
-| Expanded device/engine/AT/zoom/DPR/RTL/dark parity | SR-45 / TU-01 |
+| Exact Eventbrite commerce | Excluded: inventory, selectable dates/tickets, booking, purchase, payment and provider business semantics are not reconstruction obligations. |
+| External transaction/submission/account/message flows | Excluded. No external write action is required for local fidelity validation. |
+| Host forms/search/pagination/validation/empty-state system | Inspected host contains no such first-party product system; do not invent one. |
+| External destination page design | Excluded; only the host-side link contract is owned. |
+| Telemetry/tracking behavior | Not a visual/experience fidelity obligation unless a later product decision explicitly adopts it. |
+| Document metadata / canonical/social/favicon details | Observed source details, but not automatically a product requirement. Adopt only when a later target/release decision needs them. |
+| Physical devices, Safari/other engines, browser zoom, AT parity, RTL/dark, DPR2+ | Remain outside the currently evidenced parity claim under TU-01. |
+| Random ambient phase and inaccessible provider/worker/shadow internals | Remain allowed unknowns; evaluate bounded observable character, not hidden equivalence. |
+| Real target content/brand/data/CTA action | Pending TA-01 adaptation mapping. |
+| Public/distributed asset rights | Pending TR-01 source/license/replacement decisions for affected assets. |
 
 ## Authority and source precedence
 
@@ -79,8 +176,24 @@ Under **TX-01**, those business/provider states have no exact target-reference o
 | Asset/reuse implementation decisions | **Current local reference-validation: NOT REQUIRED as a precondition. Public/distributed target release or real adaptation: BLOCKED for affected assets until applicable TR-01 decisions are complete.** | Local validation may use assets already present in the evidence package as fidelity fixtures. This does not convert inspection copies into reusable/public assets; TR-01 source/license/attribution or documented replacement decisions are required before affected release/adaptation. |
 | Target adaptation readiness | **PENDING / not yet ready** | Actual target mappings/content/data/CTA action and stress fixtures are not supplied/selected. These are later adaptation inputs, not missing Eventbrite reference evidence. |
 
-Actual reconstruction scope is **fidelity-ready as a bounded design/experience specification**. The current **local reference-validation implementation is cleared to proceed** from the evidence and phase-specific asset-gating perspective. Real-content adaptation remains pending its actual target mappings, and public/distributed target release remains blocked for affected assets until the applicable TR-01 decisions are complete. No reference recapture is required by this reconciliation.
+Actual reconstruction scope is **fidelity-ready from the evidence perspective**. This does **not** authorize implementation before project decomposition: ROADMAP.md remains the canonical execution gate and currently blocks specification/planning/implementation until feature decomposition is complete. Real-content adaptation remains pending its actual target mappings, and public/distributed target release remains blocked for affected assets until the applicable TR-01 decisions are complete. No reference recapture is required by this reconciliation.
 
 ## Spec Kit intake boundary
 
 For the first local-fidelity specifications, reference-equivalent local fixtures are in scope. Public-release and real-adaptation decisions stay deferred unless a slice explicitly depends on them; TX-01 remains excluded. Model/engine route qualification is execution governance owned by RP-HBC-01/RR-HBC-01, not a product requirement.
+
+
+## Product completion gate and ROADMAP handoff
+
+The product authority is complete enough for project-level decomposition when all of the following hold:
+
+- every material reference surface/journey has one product-area owner;
+- every TF/TA/TR/TX/TU obligation has a product-area or shared owner;
+- stateful behavior that can change acceptance is explicit rather than left to a feature to invent;
+- exclusions, inspected absences, allowed unknowns, reference defects and pending decisions are distinguishable;
+- missing implementation inputs are not confused with reuse permission or evidence readiness;
+- no product-area ID is treated as a predetermined implementation feature boundary.
+
+**Current decision: PASS FOR ROADMAP DECOMPOSITION.**
+
+ROADMAP.md now owns the next gate: derive the smallest coherent set of independently testable feature slices, establish product-obligation coverage and an acyclic dependency graph, then reconcile the pre-roadmap 001-home-entry-fidelity boundary. Until that roadmap gate passes, no feature implementation is authorized.
