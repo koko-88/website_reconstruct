@@ -129,7 +129,7 @@ Reason:
 - it already covers normal desktop, touch/mobile, fresh reduced motion, keyboard semantics, entry fallback and repeatable temporal/visual acceptance;
 - keeping it does not force any other pre-roadmap boundary to survive.
 
-Required alignment before implementation: update its canonical PRODUCT reference from revision 3 to revision 4 and record parent roadmap ID R-001. No scope expansion is required by this reconciliation.
+Alignment completed: the active spec now references PRODUCT revision 4 and records parent roadmap ID R-001. No scope expansion was required by this reconciliation.
 
 ## Roadmap completion gate
 
@@ -177,4 +177,4 @@ Required review result:
 - confirm P-07 split between R-001 closed state and R-007 open/navigation state is unambiguous;
 - confirm no evidence/product obligation is orphaned by the coverage tables.
 
-After that review passes, change status to **ROADMAP APPROVED — FEATURE DELIVERY ADMITTED**, align R-001 metadata, and begin specification of the next selected slice. Roadmap review does not authorize target adaptation or public asset release.
+After that review passes, change status to **ROADMAP APPROVED — FEATURE DELIVERY ADMITTED** and either resume R-001 delivery or begin specification of the next selected slice. Roadmap review does not authorize target adaptation or public asset release.
