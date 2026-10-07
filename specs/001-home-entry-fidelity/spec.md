@@ -6,9 +6,9 @@
 
 **Created**: 2026-10-05 (Africa/Cairo)
 
-**Status**: Draft — requirements quality reviewed; implementation acceptance pending.
+**Status**: Roadmap-aligned draft — requirements quality reviewed; implementation acceptance pending.
 
-**Input**: Slice 1 of Haunted Boulder City's local reference-fidelity validation: reconstruct initial root navigation, loader lifecycle and transition into the fully ready home/hero experience, including relevant desktop, mobile/touch, fresh reduced-motion and keyboard behavior. This specification authorizes no implementation, technical plan or task generation.
+**Parent Roadmap**: R-001 in [ROADMAP.md](../../ROADMAP.md)\n\n**Input**: R-001 of Haunted Boulder City's local reference-fidelity validation: reconstruct initial root navigation, loader lifecycle and transition into the fully ready home/hero experience, including relevant desktop, mobile/touch, fresh reduced-motion and keyboard behavior. This specification authorizes no implementation until the ROADMAP review/execution gate admits delivery; its existing technical plan and tasks remain pre-implementation artifacts.
 
 ## User Scenarios & Testing *(mandatory)*
 
@@ -109,7 +109,7 @@ A keyboard visitor can identify the page, traverse the controls belonging to hom
 
 ### Authority, scope and evidence
 
-Project authority is [AGENTS.md](../../AGENTS.md), the [constitution](../../.specify/memory/constitution.md), [PRODUCT.md / FC-TARGET-DESIGN-01 revision 3](../../PRODUCT.md) and the [IP-HBC-01 entry point](../../implementation-scope/pre-build-packet/README.md). This slice applies TF-01/02/03/05 and the home/entry portions of motion fidelity, within TU-01. Local reference-equivalent fixtures are permitted under the contract's local validation allowance. Real adaptation and public/distributed release are later phases.
+Project authority is [AGENTS.md](../../AGENTS.md), the [constitution](../../.specify/memory/constitution.md), [PRODUCT.md / FC-TARGET-DESIGN-01 revision 4](../../PRODUCT.md) and the [IP-HBC-01 entry point](../../implementation-scope/pre-build-packet/README.md). This slice applies TF-01/02/03/05 and the home/entry portions of motion fidelity, within TU-01. Local reference-equivalent fixtures are permitted under the contract's local validation allowance. Real adaptation and public/distributed release are later phases.
 
 **Included:** root entry, loader/hero transition, closed/default header, home visual hierarchy/type/image/crop/layers/geometry, home ambient effects, bounded hero scroll/input effects, relevant responsive behavior, fresh reduced-motion entry, home semantics/keyboard/focus, and repeatable state/temporal validation. A lower-edge seam visible in a HOME capture is comparison context only.
 

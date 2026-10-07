@@ -1,6 +1,6 @@
 # Prospective interpretation corrections
 
-IP-HBC-01/COR-01..03, 2026-10-04 Africa/Cairo. These are writable implementation-facing corrections; frozen v1 and sealed v2 are unchanged. [Current product authority revision3](../../PRODUCT.md) uses these corrections; revision3 does not change the SR anchor membership or COR-01..03 evidence findings. [Evidence index](evidence-index.md) resolves every evidence key. The full SR row audit and TF anchor membership are in [anchor audit](anchor-audit.json).
+IP-HBC-01/COR-01..03, 2026-10-04 Africa/Cairo. These are writable implementation-facing corrections; frozen v1 and sealed v2 are unchanged. [Current product authority revision4](../../PRODUCT.md) uses these corrections; revision4 adds product-level ownership/decomposition readiness and does not change the SR anchor membership or COR-01..03 evidence findings. [Evidence index](evidence-index.md) resolves every evidence key. The full SR row audit and TF anchor membership are in [anchor audit](anchor-audit.json).
 
 ## COR-01 FAQ zero/one settled answer
 
@@ -34,4 +34,4 @@ Sealed SR-07's eight-label inventory uses shorthand `dam,dog,murder,area51,bodie
 
 ## Other navigation safeguards
 
-The [authority crosswalk](authority-crosswalk.md) classifies every major state and disallowed baseline. Historical E-053 provider pixels do not overrule repaired current host/provider context. Raw `settled` doesn't overrule E2-013; whole-page geometry has no appearance promotion. Archived handoff's commerce-blocked clearance remains truthful for FC-HBC-V2-01, while FC-TARGET-DESIGN-01 has different obligations. Old asset-replacement wording is likewise historical. Pending concrete replacement decisions persist for public/distributed release and real adaptation, but do not block the current bounded local reference-validation use of available evidence-package fixtures under revision3. No archived gate or source statement was edited.
+The [authority crosswalk](authority-crosswalk.md) classifies every major state and disallowed baseline. Historical E-053 provider pixels do not overrule repaired current host/provider context. Raw `settled` doesn't overrule E2-013; whole-page geometry has no appearance promotion. Archived handoff's commerce-blocked clearance remains truthful for FC-HBC-V2-01, while FC-TARGET-DESIGN-01 has different obligations. Old asset-replacement wording is likewise historical. Pending concrete replacement decisions persist for public/distributed release and real adaptation, but do not block the current bounded local reference-validation use of available evidence-package fixtures under revision4. No archived gate or source statement was edited.

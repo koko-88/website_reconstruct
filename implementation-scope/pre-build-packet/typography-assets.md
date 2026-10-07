@@ -1,6 +1,6 @@
 # Typography, layout and asset crosswalk
 
-Evidence keys and paths: [index](evidence-index.md). **O** measured/rendered historical evidence; **S** final source declarations; **P** pending concrete asset/source/replacement decision for public release or real adaptation. Under FC-TARGET-DESIGN-01 revision3, **P does not by itself block the current local reference-validation phase when the needed asset is already present in the evidence package and is used only as a local fidelity fixture.** Public source filenames below identify reference dependencies, not reusable/public rights. Current inspection font copies are linked in the index; other media mostly exists as screenshots/inventory/source references, not an acquired media library.
+Evidence keys and paths: [index](evidence-index.md). **O** measured/rendered historical evidence; **S** final source declarations; **P** pending concrete asset/source/replacement decision for public release or real adaptation. Under FC-TARGET-DESIGN-01 revision4, **P does not by itself block the current local reference-validation phase when the needed asset is already present in the evidence package and is used only as a local fidelity fixture.** Public source filenames below identify reference dependencies, not reusable/public rights. Current inspection font copies are linked in the index; other media mostly exists as screenshots/inventory/source references, not an acquired media library.
 
 ## Typography roles
 

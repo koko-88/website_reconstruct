@@ -38,7 +38,7 @@ Gate assessed before Phase 0 and again after Phase 1:
 
 | Constitutional gate | Pre-research | Post-design and evidence |
 | --- | --- | --- |
-| I Canonical authority/progressive disclosure | PASS: constitution -> FC revision 3 -> home-specific packet/spec | PASS: all decisions reference owners; no new governance file or policy revision |
+| I Canonical authority/progressive disclosure | PASS: constitution -> FC revision 4 -> home-specific packet/spec | PASS: all decisions reference owners; no new governance file or policy revision |
 | II Integrity/uncertainty | PASS: existing evidence only; O/S/U/D separated | PASS: fixtures copied/read-only, reference hashes verified, missing bytes/deviations explicit; no recapture or historical receipt rewrite |
 | III Fidelity | PASS: FR-001..018 preserved | PASS: state graph, distinct timing origins, native capability branch, content-driven height and role-specific type retained; no maximum-height shortcut |
 | IV Verification | PASS: specification supplies named acceptance | PASS: contract matrix covers all FR/SC; separate temporal, geometry, raster and independent review gates; no target acceptance claimed |

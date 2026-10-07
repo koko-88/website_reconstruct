@@ -1,10 +1,10 @@
 # First implementation validation: evidence entry point
 
-Packet IP-HBC-01, revision 1, 2026-10-04 Africa/Cairo. Existing evidence only. Start from the root [AGENTS.md](../../AGENTS.md), then read the [current product authority](../../PRODUCT.md), [authority/baseline crosswalk](authority-crosswalk.md), [motion fingerprint](motion.md), [typography/assets](typography-assets.md), and [corrections](corrections.md). [Evaluation](evaluation.md) records the evidence-preparation assessment. [verification.json](verification.json) is the historical 2026-10-04 preparation receipt; current phase authority is in FC-TARGET-DESIGN-01 revision 3. Future reruns use the reconciled [verify.py](verify.py).
+Packet IP-HBC-01, revision 1, 2026-10-04 Africa/Cairo. Existing evidence only. Start from the root [AGENTS.md](../../AGENTS.md), then read the [current product authority](../../PRODUCT.md), [authority/baseline crosswalk](authority-crosswalk.md), [motion fingerprint](motion.md), [typography/assets](typography-assets.md), and [corrections](corrections.md). [Evaluation](evaluation.md) records the evidence-preparation assessment. [verification.json](verification.json) is the historical 2026-10-04 preparation receipt; current phase authority is in FC-TARGET-DESIGN-01 revision 4. Future reruns use the reconciled [verify.py](verify.py).
 
 ## Precedence and scope
 
-1. [PRODUCT.md](../../PRODUCT.md) / FC-TARGET-DESIGN-01 revision 3 governs prospective product scope and the asset/reuse/adaptation boundaries. This packet interprets implementation evidence and does not redefine product policy.
+1. [PRODUCT.md](../../PRODUCT.md) / FC-TARGET-DESIGN-01 revision 4 governs prospective product scope and the asset/reuse/adaptation boundaries. This packet interprets implementation evidence and does not redefine product policy.
 2. This packet's prospective FAQ and topic corrections override erroneous historical prose for implementation interpretation. Original logs/source remain authoritative evidence and unchanged.
 3. E2-013 governs canonical capture phases, regardless of a raw sidecar's own `settled` label. Repaired menus and final reopened desktop provider supersede early frames. E2-014 governs current section geometry; historical E-070 supplies revealed section pixels in its original environment.
 4. Equal CSS/app bytes in E2-006 support reuse of dated behavior/source rules. They do not prove unchanged media bytes, provider content, font bytes or identical historical/current rasters. Use the final CSS cascade, rather than the first matching declaration.

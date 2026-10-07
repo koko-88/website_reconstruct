@@ -4,7 +4,7 @@ Original research: 2026-10-05 (Africa/Cairo). Scope: [spec.md](spec.md), FR-001.
 
 ## Authority and inspected inputs
 
-[Constitution](../../.specify/memory/constitution.md) -> [PRODUCT.md / FC-TARGET-DESIGN-01 revision 3](../../PRODUCT.md) -> [IP-HBC-01](../../implementation-scope/pre-build-packet/README.md) -> [active spec](spec.md). The [index](../../implementation-scope/pre-build-packet/evidence-index.md) resolves E2-013/E2-014, E-030/040/041/055/060/062/080 and the home source-declaration spans. Inspected named D/M/R HOME PNGs and home-specific JSON/source records; no live reference browser execution, new capture or source reuse. Packet final-rule reconciliation applies: FR-007 overrides obsolete maximum-height shorthand. Model execution admission remains external to this technical selection.
+[Constitution](../../.specify/memory/constitution.md) -> [PRODUCT.md / FC-TARGET-DESIGN-01 revision 4](../../PRODUCT.md) -> [IP-HBC-01](../../implementation-scope/pre-build-packet/README.md) -> [active spec](spec.md). The [index](../../implementation-scope/pre-build-packet/evidence-index.md) resolves E2-013/E2-014, E-030/040/041/055/060/062/080 and the home source-declaration spans. Inspected named D/M/R HOME PNGs and home-specific JSON/source records; no live reference browser execution, new capture or source reuse. Packet final-rule reconciliation applies: FR-007 overrides obsolete maximum-height shorthand. Model execution admission remains external to this technical selection.
 
 ## R-01 Build and rendering stack
 

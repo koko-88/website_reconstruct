@@ -44,6 +44,6 @@ FIRST IMPLEMENTATION VALIDATION: CLEARED FROM EVIDENCE PERSPECTIVE
 | Asset/reuse authorization | **Local reference-validation: NOT REQUIRED as a precondition for available evidence-package fixture use. Public/distributed release or real adaptation: BLOCKED for affected assets until applicable TR-01 decisions are complete.** Inspection availability still does not create reusable/public rights, and reference source-code copying remains unauthorized. |
 | Real target adaptation | PENDING: actual target data/content/identity/actions and stress mappings need their own contract; exact Eventbrite behavior is excluded |
 
-Evidence preparation is complete. These declarations do not authorize public redistribution, reference source-code copying, or real target adaptation, and they do not prove a completed/tested website. FC-TARGET-DESIGN-01 revision3 separately clears the bounded local reference-validation implementation from the evidence and phase-specific asset-gating perspective.
+Evidence preparation is complete. These declarations do not authorize public redistribution, reference source-code copying, or real target adaptation, and they do not prove a completed/tested website. FC-TARGET-DESIGN-01 revision4 preserves that evidence/asset clearance but makes ROADMAP decomposition and review the current implementation-admission gate.
 
 Recheck locally from repository root with `python implementation-scope/pre-build-packet/verify.py`. It reads existing evidence and writes only the packet verification receipt; no browser tooling is invoked.
