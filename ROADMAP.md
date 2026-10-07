@@ -141,6 +141,31 @@ Required alignment before implementation: update its canonical PRODUCT reference
 - [x] Reconcile 001-home-entry-fidelity against the completed decomposition.
 - [x] Record final feature count, durable IDs/names, ordering, dependencies, and coverage result.
 
+## Evidence-row disposition closure
+
+The roadmap does not turn every evidence row into a feature. All SR-01..46 are accounted for through feature ownership or an explicit non-feature disposition:
+
+| Evidence rows | Roadmap / policy owner | Disposition |
+| --- | --- | --- |
+| SR-01/10/37/38 | R-001 plus shared obligations | Home entry, closed/default header and home motion/entry states. |
+| SR-02/08/13/24/34/38/39 | R-002 plus shared obligations | Informational/reveal/fact/link/creator/footer behavior. SR-13's whole-site navigation portion is finalized in R-007. |
+| SR-03..06/38 | R-003 | Stories progression/media/reduced behavior. |
+| SR-07/39 | R-004 | Topic selection/feedback behavior. |
+| SR-09/14..23 | R-005 | FAQ/default, per-answer, keyboard and interruption behavior. |
+| SR-25..32/39 | R-006 | Ticket invitation and host-dialog lifecycle. |
+| SR-10..13 | R-007, except R-001 closed-header prerequisite | Open menu, destinations, history and root/home navigation integration. |
+| SR-33 | TX-01 / R-006 boundary | Historical selectable-commerce evidence gap remains real, but exact commerce is excluded from the target product. |
+| SR-35/36 | P-10/PX-04 across R-001..R-007 | Responsive width/height boundaries are accepted in the owning feature surfaces, not as a standalone feature. |
+| SR-40 | P-10/PX-06 | Renderer/public-artifact evidence constrains implementation claims; it is not a user-facing feature. |
+| SR-41 | Evidence integrity / project verification | Evidence-file integrity and supersession provenance are project verification inputs, not product behavior. |
+| SR-42 | TR-01 across affected features | Asset/source/replacement availability and rights remain a cross-cutting input/release boundary. |
+| SR-43 | PRODUCT inspected absence | No first-party forms/search/pagination system exists; no feature is created for an absent system. |
+| SR-44 | TX-01 exclusion | External purchase/payment/submission/account/message flows and external designs are excluded. |
+| SR-45 | TU-01 | Expanded device/engine/AT/zoom/RTL/dark/DPR parity remains an allowed unknown unless scope expands. |
+| SR-46 | Evidence handoff / project verification | Evidence-package portability and replay are project evidence obligations, not an application feature. |
+
+**Coverage result: 46/46 SR rows have an explicit owner or non-feature disposition; no SR row is orphaned.**
+
 ## Review / execution gate
 
 The decomposition is complete but intentionally awaits review before delivery resumes.
