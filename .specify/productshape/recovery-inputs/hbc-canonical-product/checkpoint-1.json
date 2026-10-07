@@ -1,0 +1,327 @@
+{
+  "batch": 1,
+  "coverage": {
+    "schema": "product-definition-as-code/recovery-coverage/v1alpha1",
+    "sessionId": "hbc-canonical-product",
+    "generatedAt": "2026-10-07T04:48:49.504Z",
+    "sources": {
+      "total": 346,
+      "pending": 290,
+      "processed": 56,
+      "stale": 0,
+      "missing": 0,
+      "excluded": 0
+    },
+    "classifications": {
+      "represented": 24,
+      "duplicate": 5,
+      "contradiction": 6,
+      "question": 10,
+      "out-of-scope": 1,
+      "no-product-intent": 26
+    },
+    "candidates": {
+      "total": 37,
+      "byType": {
+        "actor": 1,
+        "structured-behaviour": 2,
+        "business-rule": 1,
+        "bounded-context": 1,
+        "domain-term": 3,
+        "journey": 6,
+        "constraint": 3,
+        "functional-requirement": 9,
+        "quality-requirement": 3,
+        "use-case": 8
+      }
+    },
+    "evidenceToCandidates": {
+      "E-0001": [
+        "CON-EVIDENCE-BOUNDS",
+        "CON-LOCAL-BOUNDARY"
+      ],
+      "E-0002": [
+        "CON-EVIDENCE-BOUNDS",
+        "CON-LOCAL-BOUNDARY"
+      ],
+      "E-0003": [
+        "ACT-VISITOR",
+        "BC-LOCAL-FIDELITY",
+        "BR-FAQ-SETTLED",
+        "CON-ADAPTATION-INPUTS",
+        "CON-EVIDENCE-BOUNDS",
+        "CON-LOCAL-BOUNDARY",
+        "FR-ENTRY",
+        "FR-FAQ",
+        "FR-INFORMATION",
+        "FR-MENU",
+        "FR-NAVIGATION",
+        "FR-STORIES",
+        "FR-TICKET",
+        "FR-TOPICS",
+        "JRN-FAQ-INTERACTION",
+        "JRN-FRAGMENT-NAVIGATION",
+        "JRN-FRESH-ENTRY",
+        "JRN-OUTBOUND-INFORMATION",
+        "JRN-STORY-PROGRESSION",
+        "JRN-TICKET-HOST",
+        "QR-ACCESSIBILITY",
+        "QR-MOTION",
+        "QR-VISUAL",
+        "SB-FAQ-REPLACE",
+        "SB-ROOT-RETURN",
+        "TERM-HOST-DIALOG",
+        "TERM-REFERENCE-FIXTURE",
+        "TERM-SOURCE-DECLARATION",
+        "UC-ENTRY",
+        "UC-FAQ",
+        "UC-INFORMATION",
+        "UC-MENU",
+        "UC-NAVIGATION",
+        "UC-STORIES",
+        "UC-TICKET",
+        "UC-TOPICS"
+      ],
+      "E-0005": [
+        "CON-EVIDENCE-BOUNDS",
+        "QR-MOTION",
+        "QR-VISUAL"
+      ],
+      "E-0006": [
+        "FR-ENTRY",
+        "FR-INFORMATION",
+        "FR-MENU",
+        "FR-TICKET",
+        "QR-MOTION",
+        "QR-VISUAL"
+      ],
+      "E-0007": [
+        "BR-FAQ-SETTLED",
+        "CON-LOCAL-BOUNDARY",
+        "FR-FAQ",
+        "FR-TOPICS",
+        "SB-FAQ-REPLACE"
+      ],
+      "E-0008": [
+        "CON-ADAPTATION-INPUTS",
+        "QR-MOTION",
+        "QR-VISUAL"
+      ],
+      "E-0009": [
+        "CON-EVIDENCE-BOUNDS"
+      ],
+      "E-0010": [
+        "BR-FAQ-SETTLED",
+        "FR-ENTRY",
+        "FR-FAQ",
+        "FR-INFORMATION",
+        "FR-MENU",
+        "FR-NAVIGATION",
+        "FR-STORIES",
+        "FR-TICKET",
+        "FR-TOPICS",
+        "JRN-FAQ-INTERACTION",
+        "JRN-FRAGMENT-NAVIGATION",
+        "JRN-FRESH-ENTRY",
+        "JRN-OUTBOUND-INFORMATION",
+        "JRN-STORY-PROGRESSION",
+        "JRN-TICKET-HOST",
+        "QR-ACCESSIBILITY",
+        "QR-MOTION",
+        "QR-VISUAL",
+        "SB-FAQ-REPLACE",
+        "SB-ROOT-RETURN",
+        "TERM-SOURCE-DECLARATION",
+        "UC-ENTRY",
+        "UC-FAQ",
+        "UC-INFORMATION",
+        "UC-MENU",
+        "UC-NAVIGATION",
+        "UC-STORIES",
+        "UC-TICKET",
+        "UC-TOPICS"
+      ],
+      "E-0011": [
+        "CON-ADAPTATION-INPUTS",
+        "FR-INFORMATION",
+        "FR-TOPICS",
+        "QR-VISUAL"
+      ],
+      "E-0012": [
+        "CON-EVIDENCE-BOUNDS",
+        "QR-VISUAL"
+      ],
+      "E-0013": [
+        "CON-ADAPTATION-INPUTS"
+      ],
+      "E-0014": [
+        "CON-EVIDENCE-BOUNDS",
+        "QR-MOTION"
+      ],
+      "E-0015": [
+        "CON-EVIDENCE-BOUNDS",
+        "CON-LOCAL-BOUNDARY"
+      ],
+      "E-0016": [
+        "FR-NAVIGATION",
+        "FR-TICKET",
+        "QR-ACCESSIBILITY",
+        "QR-MOTION",
+        "QR-VISUAL"
+      ],
+      "E-0017": [
+        "CON-EVIDENCE-BOUNDS",
+        "TERM-SOURCE-DECLARATION"
+      ],
+      "E-0018": [
+        "CON-ADAPTATION-INPUTS",
+        "TERM-SOURCE-DECLARATION"
+      ],
+      "E-0019": [
+        "CON-EVIDENCE-BOUNDS",
+        "CON-LOCAL-BOUNDARY"
+      ],
+      "E-0020": [
+        "ACT-VISITOR",
+        "CON-LOCAL-BOUNDARY",
+        "QR-MOTION",
+        "QR-VISUAL"
+      ],
+      "E-0021": [
+        "FR-ENTRY",
+        "FR-FAQ",
+        "FR-INFORMATION",
+        "FR-MENU",
+        "FR-NAVIGATION",
+        "FR-STORIES",
+        "FR-TICKET",
+        "FR-TOPICS",
+        "JRN-FAQ-INTERACTION",
+        "JRN-FRAGMENT-NAVIGATION",
+        "JRN-FRESH-ENTRY",
+        "JRN-OUTBOUND-INFORMATION",
+        "JRN-STORY-PROGRESSION",
+        "JRN-TICKET-HOST",
+        "QR-ACCESSIBILITY",
+        "QR-MOTION",
+        "QR-VISUAL",
+        "SB-FAQ-REPLACE",
+        "SB-ROOT-RETURN",
+        "UC-ENTRY",
+        "UC-FAQ",
+        "UC-INFORMATION",
+        "UC-MENU",
+        "UC-NAVIGATION",
+        "UC-STORIES",
+        "UC-TICKET",
+        "UC-TOPICS"
+      ],
+      "E-0022": [
+        "CON-EVIDENCE-BOUNDS",
+        "QR-VISUAL"
+      ],
+      "E-0023": [
+        "BR-FAQ-SETTLED",
+        "FR-ENTRY",
+        "FR-FAQ",
+        "FR-INFORMATION",
+        "FR-MENU",
+        "FR-NAVIGATION",
+        "FR-PAGE-PROGRESS",
+        "FR-STORIES",
+        "FR-TICKET",
+        "FR-TOPICS",
+        "SB-FAQ-REPLACE",
+        "SB-ROOT-RETURN",
+        "UC-ENTRY",
+        "UC-FAQ",
+        "UC-INFORMATION",
+        "UC-MENU",
+        "UC-NAVIGATION",
+        "UC-STORIES",
+        "UC-TICKET",
+        "UC-TOPICS"
+      ],
+      "E-0024": [
+        "FR-ENTRY",
+        "FR-INFORMATION",
+        "FR-PAGE-PROGRESS",
+        "FR-TICKET",
+        "FR-TOPICS",
+        "TERM-REFERENCE-FIXTURE"
+      ],
+      "E-0025": [
+        "FR-PAGE-PROGRESS",
+        "QR-ACCESSIBILITY",
+        "QR-MOTION",
+        "QR-VISUAL"
+      ],
+      "E-0050": [
+        "BR-FAQ-SETTLED",
+        "CON-EVIDENCE-BOUNDS"
+      ],
+      "E-0051": [
+        "CON-EVIDENCE-BOUNDS"
+      ],
+      "E-0054": [
+        "FR-TOPICS",
+        "QR-VISUAL"
+      ],
+      "E-0055": [
+        "FR-ENTRY",
+        "QR-VISUAL"
+      ],
+      "E-0056": [
+        "FR-INFORMATION",
+        "FR-TICKET",
+        "QR-VISUAL"
+      ]
+    },
+    "families": {
+      "actor": "candidates",
+      "journey": "candidates",
+      "use-case": "candidates",
+      "business-rule": "candidates",
+      "domain-term": "candidates",
+      "bounded-context": "candidates",
+      "functional-requirement": "candidates",
+      "quality-requirement": "candidates",
+      "constraint": "candidates",
+      "structured-behaviour": "candidates"
+    },
+    "leads": {
+      "open": 3,
+      "resolved": 0
+    },
+    "questions": {
+      "open": 12,
+      "answered": 0,
+      "deferred": 0
+    },
+    "validation": {
+      "at": "2026-10-07T04:48:44.344Z",
+      "errors": 0,
+      "warnings": 0,
+      "lowConfidence": [],
+      "fresh": true
+    },
+    "completion": {
+      "complete": false,
+      "criteria": {
+        "sourcesClassified": false,
+        "leadsResolved": false,
+        "questionsResolved": false,
+        "familiesProbed": true,
+        "duplicatesReconciled": true,
+        "validationPasses": true,
+        "validationFresh": true,
+        "noStaleEvidence": true,
+        "lowConfidenceReported": true,
+        "modelUntouched": true,
+        "outputOnlyChgInitial": true
+      }
+    }
+  },
+  "issues": [],
+  "outcome": "insufficient-evidence"
+}

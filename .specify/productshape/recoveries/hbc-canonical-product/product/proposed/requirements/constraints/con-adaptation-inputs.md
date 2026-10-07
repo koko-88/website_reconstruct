@@ -23,3 +23,7 @@ Declared: rights, available input bytes, evidence readiness, adaptation readines
 ## Consequences
 
 Declared: preserve fixture geometry/type/crop relationships or record deviations with measured consequences. Real purchases/submissions remain outside authority. Roadmap review still gates implementation; Q-0001 records stale PRODUCT gate wording.
+
+## Continuation batch 8 evidence reconciliation
+
+- E-0242: Sealed G2 integrity PASS/fidelity BLOCKED/asset BLOCKED/adaptation NOT REQUIRED preserve original evidence-only contract. Current PRODUCT local fixture scope changes prospective requirements, not historical gate result. Separate gates and unknown provider internals remain explicit.

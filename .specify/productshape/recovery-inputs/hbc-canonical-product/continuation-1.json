@@ -1,0 +1,192 @@
+{
+  "findings": [
+    {
+      "source": "E-0029",
+      "classification": "no-product-intent",
+      "reason": "Inspected reusable reconstruction methodology/template/adapter or synthetic regression code. It governs evidence handling and is not an HBC behavior declaration; its example timings/selectors do not enter the candidate product.",
+      "complete": true
+    },
+    {
+      "source": "E-0030",
+      "classification": "no-product-intent",
+      "reason": "Inspected reusable reconstruction methodology/template/adapter or synthetic regression code. It governs evidence handling and is not an HBC behavior declaration; its example timings/selectors do not enter the candidate product.",
+      "complete": true
+    },
+    {
+      "source": "E-0031",
+      "classification": "no-product-intent",
+      "reason": "Inspected reusable reconstruction methodology/template/adapter or synthetic regression code. It governs evidence handling and is not an HBC behavior declaration; its example timings/selectors do not enter the candidate product.",
+      "complete": true
+    },
+    {
+      "source": "E-0032",
+      "classification": "no-product-intent",
+      "reason": "Inspected reusable reconstruction methodology/template/adapter or synthetic regression code. It governs evidence handling and is not an HBC behavior declaration; its example timings/selectors do not enter the candidate product.",
+      "complete": true
+    },
+    {
+      "source": "E-0033",
+      "classification": "no-product-intent",
+      "reason": "Inspected reusable reconstruction methodology/template/adapter or synthetic regression code. It governs evidence handling and is not an HBC behavior declaration; its example timings/selectors do not enter the candidate product.",
+      "complete": true
+    },
+    {
+      "source": "E-0034",
+      "classification": "no-product-intent",
+      "reason": "Inspected reusable reconstruction methodology/template/adapter or synthetic regression code. It governs evidence handling and is not an HBC behavior declaration; its example timings/selectors do not enter the candidate product.",
+      "complete": true
+    },
+    {
+      "source": "E-0035",
+      "classification": "no-product-intent",
+      "reason": "Inspected reusable reconstruction methodology/template/adapter or synthetic regression code. It governs evidence handling and is not an HBC behavior declaration; its example timings/selectors do not enter the candidate product.",
+      "complete": true
+    },
+    {
+      "source": "E-0036",
+      "classification": "no-product-intent",
+      "reason": "Inspected reusable reconstruction methodology/template/adapter or synthetic regression code. It governs evidence handling and is not an HBC behavior declaration; its example timings/selectors do not enter the candidate product.",
+      "complete": true
+    },
+    {
+      "source": "E-0037",
+      "classification": "no-product-intent",
+      "reason": "Inspected reusable reconstruction methodology/template/adapter or synthetic regression code. It governs evidence handling and is not an HBC behavior declaration; its example timings/selectors do not enter the candidate product.",
+      "complete": true
+    },
+    {
+      "source": "E-0038",
+      "classification": "no-product-intent",
+      "reason": "Inspected reusable reconstruction methodology/template/adapter or synthetic regression code. It governs evidence handling and is not an HBC behavior declaration; its example timings/selectors do not enter the candidate product.",
+      "complete": true
+    },
+    {
+      "source": "E-0039",
+      "classification": "no-product-intent",
+      "reason": "Inspected reusable reconstruction methodology/template/adapter or synthetic regression code. It governs evidence handling and is not an HBC behavior declaration; its example timings/selectors do not enter the candidate product.",
+      "complete": true
+    },
+    {
+      "source": "E-0040",
+      "classification": "no-product-intent",
+      "reason": "Inspected reusable reconstruction methodology/template/adapter or synthetic regression code. It governs evidence handling and is not an HBC behavior declaration; its example timings/selectors do not enter the candidate product.",
+      "complete": true
+    },
+    {
+      "source": "E-0041",
+      "classification": "no-product-intent",
+      "reason": "Inspected reusable reconstruction methodology/template/adapter or synthetic regression code. It governs evidence handling and is not an HBC behavior declaration; its example timings/selectors do not enter the candidate product.",
+      "complete": true
+    },
+    {
+      "source": "E-0042",
+      "classification": "no-product-intent",
+      "reason": "Inspected reusable reconstruction methodology/template/adapter or synthetic regression code. It governs evidence handling and is not an HBC behavior declaration; its example timings/selectors do not enter the candidate product.",
+      "complete": true
+    },
+    {
+      "source": "E-0043",
+      "classification": "no-product-intent",
+      "reason": "Inspected reusable reconstruction methodology/template/adapter or synthetic regression code. It governs evidence handling and is not an HBC behavior declaration; its example timings/selectors do not enter the candidate product.",
+      "complete": true
+    },
+    {
+      "source": "E-0044",
+      "classification": "no-product-intent",
+      "reason": "Inspected reusable reconstruction methodology/template/adapter or synthetic regression code. It governs evidence handling and is not an HBC behavior declaration; its example timings/selectors do not enter the candidate product.",
+      "complete": true
+    },
+    {
+      "source": "E-0045",
+      "classification": "no-product-intent",
+      "reason": "Inspected reusable reconstruction methodology/template/adapter or synthetic regression code. It governs evidence handling and is not an HBC behavior declaration; its example timings/selectors do not enter the candidate product.",
+      "complete": true
+    },
+    {
+      "source": "E-0046",
+      "classification": "no-product-intent",
+      "reason": "Inspected reusable reconstruction methodology/template/adapter or synthetic regression code. It governs evidence handling and is not an HBC behavior declaration; its example timings/selectors do not enter the candidate product.",
+      "complete": true
+    },
+    {
+      "source": "E-0047",
+      "classification": "no-product-intent",
+      "reason": "Inspected reusable reconstruction methodology/template/adapter or synthetic regression code. It governs evidence handling and is not an HBC behavior declaration; its example timings/selectors do not enter the candidate product.",
+      "complete": true
+    },
+    {
+      "source": "E-0048",
+      "classification": "no-product-intent",
+      "reason": "Inspected reusable reconstruction methodology/template/adapter or synthetic regression code. It governs evidence handling and is not an HBC behavior declaration; its example timings/selectors do not enter the candidate product.",
+      "complete": true
+    },
+    {
+      "source": "E-0049",
+      "classification": "no-product-intent",
+      "reason": "Inspected reusable reconstruction methodology/template/adapter or synthetic regression code. It governs evidence handling and is not an HBC behavior declaration; its example timings/selectors do not enter the candidate product.",
+      "complete": true
+    },
+    {
+      "source": "E-0050",
+      "classification": "duplicate",
+      "artifacts": [
+        "CON-EVIDENCE-BOUNDS",
+        "BR-FAQ-SETTLED"
+      ],
+      "note": "Anchor audit reproduces 46 SR purpose/acceptance cells and obligation membership; FAQ single-settled correction retained. SR-43 host forms has no target obligations; SR-44 transactions excluded. Mapping is not new runtime proof.",
+      "complete": true
+    },
+    {
+      "source": "E-0051",
+      "classification": "duplicate",
+      "artifacts": [
+        "CON-EVIDENCE-BOUNDS"
+      ],
+      "note": "Evidence navigation index distinguishes inherited runtime, retained v2 artifacts and source-declaration line ranges. Linked sources retain their own conditions; indexing cannot establish appearance or new product intent.",
+      "complete": true
+    },
+    {
+      "source": "E-0052",
+      "classification": "no-product-intent",
+      "reason": "Historical PASS receipt verifies packet hashes/links/membership and bounded correction. Its October 4 structural result is not current runtime acceptance or asset authorization.",
+      "complete": true
+    },
+    {
+      "source": "E-0053",
+      "classification": "no-product-intent",
+      "reason": "Inspected local packet verifier. It reads additional forbidden historical paths and writes verification.json, so it was not executed. Substring/membership tests are traceability, not product authority.",
+      "complete": true
+    },
+    {
+      "source": "E-0054",
+      "classification": "duplicate",
+      "artifacts": [
+        "FR-TOPICS",
+        "QR-VISUAL"
+      ],
+      "note": "Inherited 1280x800 frame visibly shows Ghost Meter preceding numbered ESP topic and next section label. Supports ordering/typographic hierarchy only; no temporal, selected-image or settled-appearance assertion from this still.",
+      "complete": true
+    },
+    {
+      "source": "E-0055",
+      "classification": "duplicate",
+      "artifacts": [
+        "FR-ENTRY",
+        "QR-VISUAL"
+      ],
+      "note": "Inherited 1280x800 top frame shows branded header, ticket/menu controls, layered haunted-city hero and downward affordance. Supports visible composition; loader completion and fonts/decode need independent conditions.",
+      "complete": true
+    },
+    {
+      "source": "E-0056",
+      "classification": "duplicate",
+      "artifacts": [
+        "FR-INFORMATION",
+        "FR-TICKET",
+        "QR-VISUAL"
+      ],
+      "note": "Inherited 1024x768 bottom frame shows 4.9/5 Tripadvisor ticket cue separate from blurred creator content, footer credit and back-to-start. Blur is preserved capture appearance, not accepted permanent creator styling; Q-0011 stays open.",
+      "complete": true
+    }
+  ]
+}

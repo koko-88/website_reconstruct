@@ -1,0 +1,64 @@
+{
+  "findings": [
+    {
+      "source": "E-0337",
+      "classification": "no-product-intent",
+      "reason": "Inspected frozen reusable reconstruction methodology/helper/test source as static evidence only. Defines collection, portability, bounded probes, four separate gates and example/synthetic verification procedures; contains no HBC-specific product behavior. No helper or synthetic browser test executed, no template promoted into current product authority.",
+      "complete": true
+    },
+    {
+      "source": "E-0338",
+      "classification": "no-product-intent",
+      "reason": "Inspected frozen reusable reconstruction methodology/helper/test source as static evidence only. Defines collection, portability, bounded probes, four separate gates and example/synthetic verification procedures; contains no HBC-specific product behavior. No helper or synthetic browser test executed, no template promoted into current product authority.",
+      "complete": true
+    },
+    {
+      "source": "E-0339",
+      "classification": "no-product-intent",
+      "reason": "Inspected frozen reusable reconstruction methodology/helper/test source as static evidence only. Defines collection, portability, bounded probes, four separate gates and example/synthetic verification procedures; contains no HBC-specific product behavior. No helper or synthetic browser test executed, no template promoted into current product authority.",
+      "complete": true
+    },
+    {
+      "source": "E-0340",
+      "classification": "no-product-intent",
+      "reason": "Inspected frozen reusable reconstruction methodology/helper/test source as static evidence only. Defines collection, portability, bounded probes, four separate gates and example/synthetic verification procedures; contains no HBC-specific product behavior. No helper or synthetic browser test executed, no template promoted into current product authority.",
+      "complete": true
+    },
+    {
+      "source": "E-0341",
+      "classification": "no-product-intent",
+      "reason": "Inspected frozen reusable reconstruction methodology/helper/test source as static evidence only. Defines collection, portability, bounded probes, four separate gates and example/synthetic verification procedures; contains no HBC-specific product behavior. No helper or synthetic browser test executed, no template promoted into current product authority.",
+      "complete": true
+    },
+    {
+      "source": "E-0342",
+      "classification": "no-product-intent",
+      "reason": "Static capture adapter enforces new output, fresh context, bounded readiness/actions, origin guard, ambient animations allowed and phase/provenance records. CAPTURED denotes raw collection only. Adapter implementation is not HBC behavior or target architecture; not executed.",
+      "complete": true
+    },
+    {
+      "source": "E-0343",
+      "classification": "no-product-intent",
+      "reason": "Static manifest utility checks file closure, bytes/hash, JSON/image structure and local links, with explicit semantic/visual/rights limits. Structural PASS cannot certify product meaning. Seal/write helpers not executed against frozen evidence.",
+      "complete": true
+    },
+    {
+      "source": "E-0344",
+      "classification": "no-product-intent",
+      "reason": "Static shared probe measures bounded visible DOM/style/image/environment/media signals; no context creation, worker/closed-shadow/cross-origin inspection or rendered-font proof. These are evidence limits, not an HBC requirement to choose a renderer; not executed.",
+      "complete": true
+    },
+    {
+      "source": "E-0345",
+      "classification": "no-product-intent",
+      "reason": "Static source report uses substring scans including comments and bounded local map parsing; availability/tokens/nonempty mappings cannot prove runtime use or bundle correspondence. No fetch, endpoint guessing or execution undertaken.",
+      "complete": true
+    },
+    {
+      "source": "E-0346",
+      "classification": "no-product-intent",
+      "reason": "Static helper tests cover schema/readiness/provenance/closure and optional synthetic-browser pages. Unexecuted assertions and generic examples cannot create HBC acceptance results; no test run or application change authorized by their presence.",
+      "complete": true
+    }
+  ]
+}

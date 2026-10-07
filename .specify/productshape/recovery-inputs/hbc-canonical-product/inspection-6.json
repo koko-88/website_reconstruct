@@ -1,0 +1,280 @@
+[
+  {
+    "id": "E-0169",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/captures/E-085-facts-4.jpg",
+    "bytes": 148698,
+    "sha256": "6efda9dc63aea49b5c4b0924f518eb21ffc4158a5c320ed04d8231c6640aa865",
+    "kind": "image"
+  },
+  {
+    "id": "E-0170",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/captures/E-085-facts-5.jpg",
+    "bytes": 148710,
+    "sha256": "3d898ba613419839429c45ac5b8672ed7c1af140624299a6276ac4c335f81737",
+    "kind": "image"
+  },
+  {
+    "id": "E-0171",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/captures/E-086-preview-query.jpg",
+    "bytes": 77469,
+    "sha256": "43c00790cace675233affd5e9438eeaa966b54ddb11b6d95846ba272c812a406",
+    "kind": "image"
+  },
+  {
+    "id": "E-0172",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/captures/E-090-faq-keyboard-focus.jpg",
+    "bytes": 112682,
+    "sha256": "ef6ecd0b59d98d8dbc20baf80befd86592fd1f939f47dbe442fe41fd1fe7e885",
+    "kind": "image"
+  },
+  {
+    "id": "E-0173",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/helpers/README.md",
+    "bytes": 2915,
+    "sha256": "f03ab5ccb8cae21dc1736e1c28b0cbd240504e529987262aa5c9cc3c364852a7",
+    "kind": "text",
+    "lines": 26
+  },
+  {
+    "id": "E-0174",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/helpers/additional.mjs",
+    "bytes": 1692,
+    "sha256": "c50b5956705f5923957010dc146df093db5e03940b4ea2cc187f4ffe28a8a3f7",
+    "kind": "text",
+    "lines": 4
+  },
+  {
+    "id": "E-0175",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/helpers/baseline.mjs",
+    "bytes": 3221,
+    "sha256": "e143e215bd51f3bcbe47aa77c3742d8fadee1db3f5a249e3dfa20388d99e5d53",
+    "kind": "text",
+    "lines": 30
+  },
+  {
+    "id": "E-0176",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/helpers/cdp.mjs",
+    "bytes": 2786,
+    "sha256": "be7e4af36656299b130ae3daa5c4d417f110a031943494fd0e65fbbe1973df55",
+    "kind": "text",
+    "lines": 16
+  },
+  {
+    "id": "E-0177",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/helpers/edge-states.mjs",
+    "bytes": 4946,
+    "sha256": "442bb24fcf3f81f6d4e0f26da10c9d6367b0a169b44e046567526f078b5df982",
+    "kind": "text",
+    "lines": 16
+  },
+  {
+    "id": "E-0178",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/helpers/interactions.mjs",
+    "bytes": 7067,
+    "sha256": "a302695da837cebc0a3e7eda38f61ec0f051d93ac183db4d9608b8be720c2433",
+    "kind": "text",
+    "lines": 24
+  },
+  {
+    "id": "E-0179",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/helpers/keyboard.mjs",
+    "bytes": 1346,
+    "sha256": "512e24f049911c75d470eb0c67440411d0405136f911e702d12f555e21dff301",
+    "kind": "text",
+    "lines": 6
+  },
+  {
+    "id": "E-0180",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/helpers/measure-function.js",
+    "bytes": 2074,
+    "sha256": "4d2423daf76a82ff447ffdbc3b483f79692b0b592be53389001b09ef715897e0",
+    "kind": "text",
+    "lines": 1
+  },
+  {
+    "id": "E-0181",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/helpers/motion.mjs",
+    "bytes": 4590,
+    "sha256": "32e6c7a6fe0a6b3f986964bee07885dc24642280b5a614f7850778269e7af94e",
+    "kind": "text",
+    "lines": 23
+  },
+  {
+    "id": "E-0182",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/helpers/responsive.mjs",
+    "bytes": 2884,
+    "sha256": "1ed9b9ba888d27cf92c55f1d5f4c5ce1f3acb038cf0694ec16f9e8ae27085327",
+    "kind": "text",
+    "lines": 17
+  },
+  {
+    "id": "E-0183",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/helpers/settled.mjs",
+    "bytes": 3735,
+    "sha256": "921aba7688a6d8bfc39d58a7f46413fe91c82e8292202c477e3a3cb8add9b719",
+    "kind": "text",
+    "lines": 19
+  },
+  {
+    "id": "E-0184",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/helpers/verify-package.mjs",
+    "bytes": 8442,
+    "sha256": "3086f3d6dac9b7ae8092c49bbf07cd9bb2840a85e2dce098602ee04f66622cb3",
+    "kind": "text",
+    "lines": 37
+  },
+  {
+    "id": "E-0185",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/observations/E-001-inventory.json",
+    "bytes": 15940,
+    "sha256": "e2984b54765c9130e5a1bb2426e0126093851c4b1b31b6ba6f8603afc9ae12e6",
+    "kind": "text",
+    "lines": 11,
+    "keys": [
+      "recordedAt",
+      "result"
+    ]
+  },
+  {
+    "id": "E-0186",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/observations/E-005-css-runtime.json",
+    "bytes": 80117,
+    "sha256": "52a9840113608e40a1fcf404c4e17c46f2b98babd40351d0cb2c031d6d477a2c",
+    "kind": "text",
+    "lines": 11,
+    "keys": [
+      "recordedAt",
+      "result"
+    ]
+  },
+  {
+    "id": "E-0187",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/observations/E-006-app-runtime.json",
+    "bytes": 50156,
+    "sha256": "e7d77ea7c57025beccac5fca529966f5d9434e93c6739f1f781549d991e82b56",
+    "kind": "text",
+    "lines": 11,
+    "keys": [
+      "recordedAt",
+      "result"
+    ]
+  },
+  {
+    "id": "E-0188",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/observations/E-007-accessibility-desktop.json",
+    "bytes": 35374,
+    "sha256": "547942a9deae996b2fb86d335077f3d5dbedbf37df29b808191b4311c1edf712",
+    "kind": "text",
+    "lines": 11,
+    "keys": [
+      "recordedAt",
+      "result"
+    ]
+  },
+  {
+    "id": "E-0189",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/observations/E-008-geometry-4.json",
+    "bytes": 73507,
+    "sha256": "c1ba0c7d9e572b8691e3dd563c11cf54012d77dbdffc838fdc96186c831dd77d",
+    "kind": "text",
+    "lines": 11,
+    "keys": [
+      "recordedAt",
+      "result"
+    ]
+  },
+  {
+    "id": "E-0190",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/observations/E-009-geometry-2.json",
+    "bytes": 67257,
+    "sha256": "096b78373ba55ff2933e554974c0f5aed653a6bce0c0e23a06c1c310c0717b6f",
+    "kind": "text",
+    "lines": 11,
+    "keys": [
+      "recordedAt",
+      "result"
+    ]
+  },
+  {
+    "id": "E-0191",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/observations/E-020-tool-capabilities.json",
+    "bytes": 3115,
+    "sha256": "d959f1c659b244a8edb087a0ea56d4b8ac637ad7db87b57af11811dbc3466e06",
+    "kind": "text",
+    "lines": 67,
+    "keys": [
+      "timestamp",
+      "capabilities",
+      "polypaneProbe",
+      "limitations"
+    ]
+  },
+  {
+    "id": "E-0192",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/observations/E-021-cdp-session.json",
+    "bytes": 1228,
+    "sha256": "1fc1d0cdf4d0d5228d2eb9463b03017b1336fe370b8259a92ac045af49c8c4f2",
+    "kind": "text",
+    "lines": 42,
+    "keys": [
+      "timestamp",
+      "target",
+      "initial",
+      "method",
+      "originalMethodLabel",
+      "methodLabelCorrection"
+    ]
+  },
+  {
+    "id": "E-0193",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/observations/E-022-capture-summary.json",
+    "bytes": 384,
+    "sha256": "a4a7279785e8b48f9b69c703639a898ecc2f0dd9d0dd9e431afce47a0b59e39e",
+    "kind": "text",
+    "lines": 26,
+    "keys": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ]
+  },
+  {
+    "id": "E-0194",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/observations/E-030-1024x768-geometry.json",
+    "bytes": 121582,
+    "sha256": "9c4804868623affd39bf7ccddde22e69977326eaedaa5944c2fafa0cadbd9d2b",
+    "kind": "text",
+    "lines": 4046,
+    "keys": [
+      "environment",
+      "observations"
+    ]
+  },
+  {
+    "id": "E-0195",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/observations/E-030-1024x768-scroll.json",
+    "bytes": 16697,
+    "sha256": "86b10f8d26da207049782050f0ab462a99d94929600bfddd45f23ba2eba41012",
+    "kind": "text",
+    "lines": 687,
+    "keys": [
+      "environment",
+      "forward",
+      "reverseEnded",
+      "images"
+    ]
+  },
+  {
+    "id": "E-0196",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/observations/E-030-1440x900-geometry.json",
+    "bytes": 140633,
+    "sha256": "5d3f00bc73e3cd0dda28119202559817f013f8f225f97dbb0cb336e3ff5fd6b5",
+    "kind": "text",
+    "lines": 4837,
+    "keys": [
+      "environment",
+      "observations"
+    ]
+  }
+]

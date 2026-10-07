@@ -1,0 +1,29 @@
+{
+ "defaults":{"classification":"duplicate","artifacts":["QR-VISUAL"],"note":"Visually inspected inherited still/contact sheet: dark green single-page composition and captured typography/crop relationships. Several section headings/portraits remain blurred or absent at this checkpoint; do not infer settled appearance, exact font metrics, media readiness or temporal behavior. Original per-source dimensions and hash are in inspection-2.json."},
+ "items":{
+ "E-0058":{"classification":"duplicate","artifacts":["FR-ENTRY","QR-VISUAL"],"note":"1024 hero has side-by-side header controls and large two-style title over city/fog; captures composition only."},
+ "E-0059":{"classification":"duplicate","artifacts":["FR-INFORMATION","QR-VISUAL"],"note":"Wide intro shows marquee above numbered welcome label and multi-line heading; image/paragraph below remain blurred in this frame."},
+ "E-0060":{"classification":"duplicate","artifacts":["FR-INFORMATION","FR-TICKET"],"note":"Creator-targeted frame also includes preceding ticket CTA and review cue, footer; creator reveal is blurred, not a settled baseline."},
+ "E-0061":{"classification":"duplicate","artifacts":["FR-INFORMATION","FR-TICKET","FR-NAVIGATION"],"note":"Bottom wide frame shows ticket CTA/review, creator identity, footer credit and back-to-start; creator media still blurred."},
+ "E-0063":{"classification":"duplicate","artifacts":["FR-INFORMATION"],"note":"Local recommendations show numbered rows with names/descriptions and outbound arrow on right; heading is blurred at checkpoint."},
+ "E-0064":{"classification":"duplicate","artifacts":["FR-FAQ","QR-VISUAL"],"note":"Wide plan frame has left heading/ticket action and right stacked closed FAQ summaries; no answer state or single-open timing is proven by this still."},
+ "E-0065":{"classification":"duplicate","artifacts":["FR-STORIES"],"note":"Wide first story frame shows text/photo composition with ghost chapter; transition sequence not inferred."},
+ "E-0066":{"classification":"duplicate","artifacts":["FR-TICKET"],"note":"Wide ticket scene centers CTA under captured blurred title over fog; cannot serve as settled title appearance baseline."},
+ "E-0067":{"classification":"duplicate","artifacts":["FR-ENTRY"],"note":"Wide hero city crop and one-line lower copy differ from narrow layout while retaining header action/menu and two-style title."},
+ "E-0068":{"classification":"duplicate","artifacts":["FR-TOPICS","FR-STORIES"],"note":"Tour highlights frame follows visible three-tab story footer; heading and first topic are blurred. Context/order only."},
+ "E-0069":{"classification":"duplicate","artifacts":["FR-INFORMATION"],"note":"Venue frame has descriptive text and Get Directions outbound affordance; large heading/image still blurred."},
+ "E-0070":{"classification":"duplicate","artifacts":["FR-INFORMATION"],"note":"390 intro stacks small label and heading beneath cropped marquee; lower image remains blurred."},
+ "E-0071":{"classification":"duplicate","artifacts":["FR-INFORMATION","FR-TICKET"],"note":"390 creator frame includes preceding 4.9/5 Tripadvisor cue and following footer. Creator block is blurred; separates review and creator ownership under Q-0011."},
+ "E-0072":{"classification":"duplicate","artifacts":["FR-INFORMATION","FR-NAVIGATION"],"note":"390 bottom layout stacks creator/media and footer credit/back-to-start; media and reveal remain partially blurred."},
+ "E-0074":{"classification":"duplicate","artifacts":["FR-INFORMATION"],"note":"390 local section stacks label/heading/intro over named recommendation rows and arrow affordances."},
+ "E-0075":{"classification":"duplicate","artifacts":["FR-FAQ"],"note":"390 plan stacks heading and Find your tour action above full-width closed summaries; no disclosure temporal claim."},
+ "E-0076":{"classification":"duplicate","artifacts":["FR-STORIES"],"note":"390 story shows image background with text and huge outlined numeral; text blurred at capture."},
+ "E-0077":{"classification":"duplicate","artifacts":["FR-TICKET"],"note":"390 ticket scene vertically stacks heading/copy/button/Eventbrite caption/4.9 review. A still does not prove host readiness."},
+ "E-0078":{"classification":"duplicate","artifacts":["FR-ENTRY"],"note":"390 hero shows stacked title, wrapped tour copy and circular down control with compact logo/ticket/menu header."},
+ "E-0079":{"classification":"duplicate","artifacts":["FR-TOPICS"],"note":"390 highlights scene contains blurred heading/topic and line drawing; retain context, not exact active-topic or settled styling."},
+ "E-0080":{"classification":"duplicate","artifacts":["FR-INFORMATION"],"note":"390 venue stacks title, descriptive copy and Directions link; heading/photo blurred."},
+ "E-0081":{"classification":"duplicate","artifacts":["FR-INFORMATION","FR-TICKET","FR-NAVIGATION"],"note":"768 bottom frame separates ticket review and creator/media before footer credit/back-to-start."},
+ "E-0083":{"classification":"duplicate","artifacts":["FR-ENTRY"],"note":"768 portrait hero retains horizontal header controls and stacked title/city crop/copy/down affordance."},
+ "E-0084":{"classification":"duplicate","artifacts":["QR-VISUAL","FR-ENTRY"],"note":"1099x900 boundary hero sample inspected. One screenshot establishes sampled appearance only, not neighboring breakpoint behavior or universal viewport policy."}
+ }
+}

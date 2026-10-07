@@ -4,7 +4,7 @@
   "sessionId": "hbc-canonical-product",
   "cliVersion": "speckit-adapter",
   "createdAt": "2026-10-07T03:07:20.742Z",
-  "updatedAt": "2026-10-07T03:09:32.931Z",
+  "updatedAt": "2026-10-07T05:08:20.488Z",
   "changeId": "CHG-INITIAL",
   "changeDir": ".specify/productshape/recoveries/hbc-canonical-product/product",
   "brief": {
@@ -122,14 +122,14 @@
   "counters": {
     "evidence": 346,
     "lead": 3,
-    "question": 12
+    "question": 13
   },
   "nextAction": "Inventory recorded; process the first batch: prodshape recover next",
   "validation": {
-    "at": "2026-10-07T03:09:32.338Z",
+    "at": "2026-10-07T05:08:19.871Z",
     "errors": 0,
     "warnings": 0,
     "lowConfidence": [],
-    "changeDigest": "sha256:72581454c05ab2a11ccee49e8d43ffcd6a7f3af8be07dccac2d7851d45f96a6f"
+    "changeDigest": "sha256:8c1d95df5aae8b8aefe7727b3f684227529ecafbc8abecfc660c9dc400282dd5"
   }
 }

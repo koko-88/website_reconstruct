@@ -97,6 +97,14 @@
       "createdAt": "2026-10-07T03:07:30.257Z",
       "context": "Evidence, impact and responsible canonical owner are recorded in .specify/productshape/recoveries/hbc-canonical-product/audit.md F-12. No answer was supplied by the human and no contradiction is resolved silently.",
       "recommendation": "Review the cited declaration/observation and decide in its existing canonical owner; keep the question open until explicit review."
+    },
+    {
+      "id": "Q-0013",
+      "text": "What canonical phase/disposition applies to inherited E-051-390-faq-1.jpg whose filename suggests FAQ 1 but visible first answer is closed?",
+      "status": "open",
+      "createdAt": "2026-10-07T04:51:01.037Z",
+      "context": "E-0107 pixels show plus icon/closed first summary. This still cannot establish state timing; reconcile with its original action log/capture conditions before using it as a named open baseline. No frozen image is relabeled.",
+      "recommendation": "Keep the first-open baseline unproven by this frame; review original timing metadata and preserve or supersede in writable interpretation."
     }
   ]
 }

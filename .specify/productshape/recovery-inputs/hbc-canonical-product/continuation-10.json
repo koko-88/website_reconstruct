@@ -1,0 +1,302 @@
+{
+  "findings": [
+    {
+      "source": "E-0281",
+      "classification": "duplicate",
+      "artifacts": [
+        "FR-ENTRY",
+        "FR-MENU",
+        "QR-VISUAL",
+        "QR-ACCESSIBILITY"
+      ],
+      "note": "Desktop repair02 CLOSED/HOME paired sidecars and pixels inspected; hashes match, captureChanged false. Closed image shows unobscured hero and menu focus outline. Named repaired settled baseline supersedes original transient exit image, without defining unobserved focus arbitration.",
+      "complete": true
+    },
+    {
+      "source": "E-0282",
+      "classification": "duplicate",
+      "artifacts": [
+        "FR-ENTRY",
+        "FR-MENU",
+        "QR-VISUAL",
+        "QR-ACCESSIBILITY"
+      ],
+      "note": "Desktop repair02 CLOSED/HOME paired sidecars and pixels inspected; hashes match, captureChanged false. Closed image shows unobscured hero and menu focus outline. Named repaired settled baseline supersedes original transient exit image, without defining unobserved focus arbitration.",
+      "complete": true
+    },
+    {
+      "source": "E-0283",
+      "classification": "duplicate",
+      "artifacts": [
+        "FR-ENTRY",
+        "FR-MENU",
+        "QR-VISUAL",
+        "QR-ACCESSIBILITY"
+      ],
+      "note": "Desktop repair02 CLOSED/HOME paired sidecars and pixels inspected; hashes match, captureChanged false. Closed image shows unobscured hero and menu focus outline. Named repaired settled baseline supersedes original transient exit image, without defining unobserved focus arbitration.",
+      "complete": true
+    },
+    {
+      "source": "E-0284",
+      "classification": "duplicate",
+      "artifacts": [
+        "FR-ENTRY",
+        "FR-MENU",
+        "QR-VISUAL",
+        "QR-ACCESSIBILITY"
+      ],
+      "note": "Desktop repair02 CLOSED/HOME paired sidecars and pixels inspected; hashes match, captureChanged false. Closed image shows unobscured hero and menu focus outline. Named repaired settled baseline supersedes original transient exit image, without defining unobserved focus arbitration.",
+      "complete": true
+    },
+    {
+      "source": "E-0285",
+      "classification": "duplicate",
+      "artifacts": [
+        "FR-MENU",
+        "QR-VISUAL",
+        "CON-EVIDENCE-BOUNDS"
+      ],
+      "note": "Desktop repair02 OPEN pixels resolve all four numbered navigation titles/subtitles and lower ticket/directions content. Sidecar checks parent plus four visible link rectangles, rather than parent alone; paired hash matches. This is the settled menu baseline prescribed by persisted assessment.",
+      "complete": true
+    },
+    {
+      "source": "E-0286",
+      "classification": "duplicate",
+      "artifacts": [
+        "FR-MENU",
+        "QR-VISUAL",
+        "CON-EVIDENCE-BOUNDS"
+      ],
+      "note": "Desktop repair02 OPEN pixels resolve all four numbered navigation titles/subtitles and lower ticket/directions content. Sidecar checks parent plus four visible link rectangles, rather than parent alone; paired hash matches. This is the settled menu baseline prescribed by persisted assessment.",
+      "complete": true
+    },
+    {
+      "source": "E-0287",
+      "classification": "duplicate",
+      "artifacts": [
+        "FR-ENTRY",
+        "FR-MENU",
+        "QR-VISUAL",
+        "QR-ACCESSIBILITY"
+      ],
+      "note": "390x844 repair02 CLOSED/HOME pairs show clear narrow hero and closed menu focus outline. Paired hashes match with unchanged capture state; scope remains named narrow viewport and sampled input context.",
+      "complete": true
+    },
+    {
+      "source": "E-0288",
+      "classification": "duplicate",
+      "artifacts": [
+        "FR-ENTRY",
+        "FR-MENU",
+        "QR-VISUAL",
+        "QR-ACCESSIBILITY"
+      ],
+      "note": "390x844 repair02 CLOSED/HOME pairs show clear narrow hero and closed menu focus outline. Paired hashes match with unchanged capture state; scope remains named narrow viewport and sampled input context.",
+      "complete": true
+    },
+    {
+      "source": "E-0289",
+      "classification": "duplicate",
+      "artifacts": [
+        "FR-ENTRY",
+        "FR-MENU",
+        "QR-VISUAL",
+        "QR-ACCESSIBILITY"
+      ],
+      "note": "390x844 repair02 CLOSED/HOME pairs show clear narrow hero and closed menu focus outline. Paired hashes match with unchanged capture state; scope remains named narrow viewport and sampled input context.",
+      "complete": true
+    },
+    {
+      "source": "E-0290",
+      "classification": "duplicate",
+      "artifacts": [
+        "FR-ENTRY",
+        "FR-MENU",
+        "QR-VISUAL",
+        "QR-ACCESSIBILITY"
+      ],
+      "note": "390x844 repair02 CLOSED/HOME pairs show clear narrow hero and closed menu focus outline. Paired hashes match with unchanged capture state; scope remains named narrow viewport and sampled input context.",
+      "complete": true
+    },
+    {
+      "source": "E-0291",
+      "classification": "duplicate",
+      "artifacts": [
+        "FR-MENU",
+        "QR-VISUAL",
+        "CON-EVIDENCE-BOUNDS"
+      ],
+      "note": "Narrow repair02 OPEN shows all four navigation rows/descriptions and resolved lower ticket/meeting/directions content. Sidecar includes four visible link rectangles at x24,width342, not merely visible menu parent; hashes match. Settled appearance replaces original early capture only within recorded scope.",
+      "complete": true
+    },
+    {
+      "source": "E-0292",
+      "classification": "duplicate",
+      "artifacts": [
+        "FR-MENU",
+        "QR-VISUAL",
+        "CON-EVIDENCE-BOUNDS"
+      ],
+      "note": "Narrow repair02 OPEN shows all four navigation rows/descriptions and resolved lower ticket/meeting/directions content. Sidecar includes four visible link rectangles at x24,width342, not merely visible menu parent; hashes match. Settled appearance replaces original early capture only within recorded scope.",
+      "complete": true
+    },
+    {
+      "source": "E-0293",
+      "classification": "no-product-intent",
+      "reason": "Inspected frozen repair manifest/plan/run collection metadata. CAPTURED, waits and historical authorization describe evidence collection, not current product behavior or acceptance.",
+      "complete": true
+    },
+    {
+      "source": "E-0294",
+      "classification": "no-product-intent",
+      "reason": "Inspected frozen repair manifest/plan/run collection metadata. CAPTURED, waits and historical authorization describe evidence collection, not current product behavior or acceptance.",
+      "complete": true
+    },
+    {
+      "source": "E-0295",
+      "classification": "no-product-intent",
+      "reason": "Inspected frozen repair manifest/plan/run collection metadata. CAPTURED, waits and historical authorization describe evidence collection, not current product behavior or acceptance.",
+      "complete": true
+    },
+    {
+      "source": "E-0296",
+      "classification": "duplicate",
+      "artifacts": [
+        "FR-TICKET",
+        "QR-ACCESSIBILITY",
+        "QR-VISUAL"
+      ],
+      "note": "Original desktop CLOSED sidecar/pixel pair matches; dialog absent and ticket CTA has visible focus outline above review cue. Supports sampled host-close return state, not provider transaction behavior.",
+      "complete": true
+    },
+    {
+      "source": "E-0297",
+      "classification": "duplicate",
+      "artifacts": [
+        "FR-TICKET",
+        "QR-ACCESSIBILITY",
+        "QR-VISUAL"
+      ],
+      "note": "Original desktop CLOSED sidecar/pixel pair matches; dialog absent and ticket CTA has visible focus outline above review cue. Supports sampled host-close return state, not provider transaction behavior.",
+      "complete": true
+    },
+    {
+      "source": "E-0298",
+      "classification": "duplicate",
+      "artifacts": [
+        "FR-FAQ",
+        "BR-FAQ-SETTLED",
+        "QR-VISUAL"
+      ],
+      "note": "Original desktop FAQ paired hash matches. Pixels show first answer open with other visible answers closed, adjacent plan/find-tour content and nine FAQ rows. Supports single-active settled observation already owned by canonical correction.",
+      "complete": true
+    },
+    {
+      "source": "E-0299",
+      "classification": "duplicate",
+      "artifacts": [
+        "FR-FAQ",
+        "BR-FAQ-SETTLED",
+        "QR-VISUAL"
+      ],
+      "note": "Original desktop FAQ paired hash matches. Pixels show first answer open with other visible answers closed, adjacent plan/find-tour content and nine FAQ rows. Supports single-active settled observation already owned by canonical correction.",
+      "complete": true
+    },
+    {
+      "source": "E-0300",
+      "classification": "duplicate",
+      "artifacts": [
+        "FR-ENTRY",
+        "QR-VISUAL"
+      ],
+      "note": "Original desktop HOME paired pixels/sidecar match and show resolved hero. Named settled home context supports entry appearance; live fog is not a universal identical-frame requirement.",
+      "complete": true
+    },
+    {
+      "source": "E-0301",
+      "classification": "duplicate",
+      "artifacts": [
+        "FR-ENTRY",
+        "QR-VISUAL"
+      ],
+      "note": "Original desktop HOME paired pixels/sidecar match and show resolved hero. Named settled home context supports entry appearance; live fog is not a universal identical-frame requirement.",
+      "complete": true
+    },
+    {
+      "source": "E-0302",
+      "classification": "duplicate",
+      "artifacts": [
+        "FR-MENU",
+        "QR-MOTION",
+        "CON-EVIDENCE-BOUNDS"
+      ],
+      "note": "Original MENU-CLOSED is labeled raw settled with hero-visible check, but pixels retain low-contrast navigation/overlay remnants. Preserve canonical transient-exit classification and use repair02 CLOSED for settled appearance; raw label does not silently override measured phase.",
+      "complete": true
+    },
+    {
+      "source": "E-0303",
+      "classification": "duplicate",
+      "artifacts": [
+        "FR-MENU",
+        "QR-MOTION",
+        "CON-EVIDENCE-BOUNDS"
+      ],
+      "note": "Original MENU-CLOSED is labeled raw settled with hero-visible check, but pixels retain low-contrast navigation/overlay remnants. Preserve canonical transient-exit classification and use repair02 CLOSED for settled appearance; raw label does not silently override measured phase.",
+      "complete": true
+    },
+    {
+      "source": "E-0304",
+      "classification": "duplicate",
+      "artifacts": [
+        "FR-MENU",
+        "QR-MOTION",
+        "CON-EVIDENCE-BOUNDS"
+      ],
+      "note": "Original MENU raw settled check only proves visible menu parent. Pixels still show underlying hero/fog without readable settled navigation rows. Hash match does not establish visual readiness; canonical assessment routes settled appearance to repair02 OPEN.",
+      "complete": true
+    },
+    {
+      "source": "E-0305",
+      "classification": "duplicate",
+      "artifacts": [
+        "FR-MENU",
+        "QR-MOTION",
+        "CON-EVIDENCE-BOUNDS"
+      ],
+      "note": "Original MENU raw settled check only proves visible menu parent. Pixels still show underlying hero/fog without readable settled navigation rows. Hash match does not establish visual readiness; canonical assessment routes settled appearance to repair02 OPEN.",
+      "complete": true
+    },
+    {
+      "source": "E-0306",
+      "classification": "duplicate",
+      "artifacts": [
+        "FR-TICKET",
+        "CON-LOCAL-BOUNDARY",
+        "CON-EVIDENCE-BOUNDS"
+      ],
+      "note": "Original desktop TICKETS host/iframe visibility checks and matching pixels show entering host with provider text/image unresolved. Raw settled label is insufficient for provider readiness; retain canonical unsettled classification and repair01 REOPEN baseline. Excluded commerce does not create local fixture interior semantics.",
+      "complete": true
+    },
+    {
+      "source": "E-0307",
+      "classification": "duplicate",
+      "artifacts": [
+        "FR-TICKET",
+        "CON-LOCAL-BOUNDARY",
+        "CON-EVIDENCE-BOUNDS"
+      ],
+      "note": "Original desktop TICKETS host/iframe visibility checks and matching pixels show entering host with provider text/image unresolved. Raw settled label is insufficient for provider readiness; retain canonical unsettled classification and repair01 REOPEN baseline. Excluded commerce does not create local fixture interior semantics.",
+      "complete": true
+    },
+    {
+      "source": "E-0308",
+      "classification": "duplicate",
+      "artifacts": [
+        "FR-TICKET",
+        "CON-EVIDENCE-BOUNDS"
+      ],
+      "note": "Narrow CLOSED sidecar inspected at390x844, raw settled/captureChanged false with visible tickets section. Paired image lies outside this batch and is intentionally not read yet; metadata alone creates no new pixel claim.",
+      "complete": true
+    }
+  ]
+}

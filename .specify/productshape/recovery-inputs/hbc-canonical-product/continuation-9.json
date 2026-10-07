@@ -1,0 +1,255 @@
+{
+  "findings": [
+    {
+      "source": "E-0253",
+      "classification": "no-product-intent",
+      "reason": "Inspected historical capture plan/run/manifest. Its waits, selectors, source hashes and CAPTURED label describe collection procedure; no product requirement or current acceptance follows. No frozen helper/provider executed.",
+      "complete": true
+    },
+    {
+      "source": "E-0254",
+      "classification": "no-product-intent",
+      "reason": "Inspected historical capture plan/run/manifest. Its waits, selectors, source hashes and CAPTURED label describe collection procedure; no product requirement or current acceptance follows. No frozen helper/provider executed.",
+      "complete": true
+    },
+    {
+      "source": "E-0255",
+      "classification": "duplicate",
+      "artifacts": [
+        "QR-VISUAL"
+      ],
+      "note": "Acquired Display TTF opens via Pillow; intrinsic family/style is Anton/Regular, corroborating rendered alias evidence. Asset bytes are evidence inputs, not a license/acceptance grant.",
+      "complete": true
+    },
+    {
+      "source": "E-0256",
+      "classification": "out-of-scope",
+      "reason": "Inspected captured Eventbrite widget source API/options and iframe integration code. External provider checkout internals are excluded from current local reconstruction; named promo/waitlist/order callbacks do not invent local commerce behavior.",
+      "complete": true
+    },
+    {
+      "source": "E-0257",
+      "classification": "duplicate",
+      "artifacts": [
+        "QR-VISUAL",
+        "CON-EVIDENCE-BOUNDS"
+      ],
+      "note": "Manticore WOFF2 byte inventory/hash inspected as acquired typography evidence. FontTools unavailable, so no new independent name/glyph-coverage parsing claim; rendered identity is already separately observed. No reuse permission inferred.",
+      "complete": true
+    },
+    {
+      "source": "E-0258",
+      "classification": "duplicate",
+      "artifacts": [
+        "QR-VISUAL",
+        "CON-EVIDENCE-BOUNDS"
+      ],
+      "note": "Space Mono WOFF2 byte inventory/hash inspected as acquired typography evidence. No new glyph/metric coverage claim from binary inventory; historical rendered-font observation owns identity. No reuse permission inferred.",
+      "complete": true
+    },
+    {
+      "source": "E-0259",
+      "classification": "duplicate",
+      "artifacts": [
+        "QR-VISUAL",
+        "CON-EVIDENCE-BOUNDS"
+      ],
+      "note": "Desktop ALL sidecar paired hash matches pixels, captureChanged false/raw settled. Canonical assessment limits ALL to geometry/context because offscreen reveal layers hidden; stable parent geometry is not whole-page appearance.",
+      "complete": true
+    },
+    {
+      "source": "E-0260",
+      "classification": "duplicate",
+      "artifacts": [
+        "QR-VISUAL",
+        "CON-EVIDENCE-BOUNDS"
+      ],
+      "note": "1440x12505 ALL overview visually contains sparse/unrevealed sections after sweep/reset. Retains whole-page context only, not universal exact appearance baseline or absence of content.",
+      "complete": true
+    },
+    {
+      "source": "E-0261",
+      "classification": "duplicate",
+      "artifacts": [
+        "FR-ENTRY",
+        "QR-VISUAL"
+      ],
+      "note": "Desktop TOP sidecar paired hash verified, normal fresh1440x900/DPR1 fonts/readiness conditions captured; no captureChanged. Actual named top appearance supports hero only.",
+      "complete": true
+    },
+    {
+      "source": "E-0262",
+      "classification": "duplicate",
+      "artifacts": [
+        "FR-ENTRY",
+        "QR-VISUAL"
+      ],
+      "note": "Desktop TOP pixels show clear hero/header/action composition; normal fog remains active so universal identical live pixels not required.",
+      "complete": true
+    },
+    {
+      "source": "E-0263",
+      "classification": "duplicate",
+      "artifacts": [
+        "QR-VISUAL",
+        "CON-EVIDENCE-BOUNDS"
+      ],
+      "note": "Narrow ALL sidecar paired hash matches, raw settled/captureChanged false. Canonical whole-page appearance rejected while selected geometry/context remains supported.",
+      "complete": true
+    },
+    {
+      "source": "E-0264",
+      "classification": "duplicate",
+      "artifacts": [
+        "QR-VISUAL",
+        "CON-EVIDENCE-BOUNDS"
+      ],
+      "note": "390x10569 ALL overview shows retained page order with unrevealed sparse portions. Does not replace per-section settled appearance or prove missing content.",
+      "complete": true
+    },
+    {
+      "source": "E-0265",
+      "classification": "duplicate",
+      "artifacts": [
+        "FR-ENTRY",
+        "QR-VISUAL"
+      ],
+      "note": "Narrow TOP sidecar paired hash verified at390x844/DPR1/coarsePointer true/touch1 normal motion. Distinct input metadata retained; physical-device parity not asserted.",
+      "complete": true
+    },
+    {
+      "source": "E-0266",
+      "classification": "duplicate",
+      "artifacts": [
+        "FR-ENTRY",
+        "QR-VISUAL"
+      ],
+      "note": "Narrow TOP pixels show resolved hero, wrapped copy, compact header and down affordance; named top baseline only.",
+      "complete": true
+    },
+    {
+      "source": "E-0267",
+      "classification": "no-product-intent",
+      "reason": "Inspected historical capture plan/run/manifest. Its waits, selectors, source hashes and CAPTURED label describe collection procedure; no product requirement or current acceptance follows. No frozen helper/provider executed.",
+      "complete": true
+    },
+    {
+      "source": "E-0268",
+      "classification": "no-product-intent",
+      "reason": "Inspected historical capture plan/run/manifest. Its waits, selectors, source hashes and CAPTURED label describe collection procedure; no product requirement or current acceptance follows. No frozen helper/provider executed.",
+      "complete": true
+    },
+    {
+      "source": "E-0269",
+      "classification": "no-product-intent",
+      "reason": "Inspected historical capture plan/run/manifest. Its waits, selectors, source hashes and CAPTURED label describe collection procedure; no product requirement or current acceptance follows. No frozen helper/provider executed.",
+      "complete": true
+    },
+    {
+      "source": "E-0270",
+      "classification": "duplicate",
+      "artifacts": [
+        "FR-TICKET",
+        "QR-VISUAL",
+        "CON-EVIDENCE-BOUNDS"
+      ],
+      "note": "Repair01 paired sidecars/pixels inspected and SHA256 paired matches. BASE shows CTA scene; LOADING is explicitly transient dark overlay/entering title; PROVIDER postponed text visible but order image blank despite raw settled label; REOPEN has order image and close focus outline. Preserve canonical partial-provider versus settled-REOPEN precedence from persisted assessment; no selectable commerce or local fixture interior invented.",
+      "complete": true
+    },
+    {
+      "source": "E-0271",
+      "classification": "duplicate",
+      "artifacts": [
+        "FR-TICKET",
+        "QR-VISUAL",
+        "CON-EVIDENCE-BOUNDS"
+      ],
+      "note": "Repair01 paired sidecars/pixels inspected and SHA256 paired matches. BASE shows CTA scene; LOADING is explicitly transient dark overlay/entering title; PROVIDER postponed text visible but order image blank despite raw settled label; REOPEN has order image and close focus outline. Preserve canonical partial-provider versus settled-REOPEN precedence from persisted assessment; no selectable commerce or local fixture interior invented.",
+      "complete": true
+    },
+    {
+      "source": "E-0272",
+      "classification": "duplicate",
+      "artifacts": [
+        "FR-TICKET",
+        "QR-VISUAL",
+        "CON-EVIDENCE-BOUNDS"
+      ],
+      "note": "Repair01 paired sidecars/pixels inspected and SHA256 paired matches. BASE shows CTA scene; LOADING is explicitly transient dark overlay/entering title; PROVIDER postponed text visible but order image blank despite raw settled label; REOPEN has order image and close focus outline. Preserve canonical partial-provider versus settled-REOPEN precedence from persisted assessment; no selectable commerce or local fixture interior invented.",
+      "complete": true
+    },
+    {
+      "source": "E-0273",
+      "classification": "duplicate",
+      "artifacts": [
+        "FR-TICKET",
+        "QR-VISUAL",
+        "CON-EVIDENCE-BOUNDS"
+      ],
+      "note": "Repair01 paired sidecars/pixels inspected and SHA256 paired matches. BASE shows CTA scene; LOADING is explicitly transient dark overlay/entering title; PROVIDER postponed text visible but order image blank despite raw settled label; REOPEN has order image and close focus outline. Preserve canonical partial-provider versus settled-REOPEN precedence from persisted assessment; no selectable commerce or local fixture interior invented.",
+      "complete": true
+    },
+    {
+      "source": "E-0274",
+      "classification": "duplicate",
+      "artifacts": [
+        "FR-TICKET",
+        "QR-VISUAL",
+        "CON-EVIDENCE-BOUNDS"
+      ],
+      "note": "Repair01 paired sidecars/pixels inspected and SHA256 paired matches. BASE shows CTA scene; LOADING is explicitly transient dark overlay/entering title; PROVIDER postponed text visible but order image blank despite raw settled label; REOPEN has order image and close focus outline. Preserve canonical partial-provider versus settled-REOPEN precedence from persisted assessment; no selectable commerce or local fixture interior invented.",
+      "complete": true
+    },
+    {
+      "source": "E-0275",
+      "classification": "duplicate",
+      "artifacts": [
+        "FR-TICKET",
+        "QR-VISUAL",
+        "CON-EVIDENCE-BOUNDS"
+      ],
+      "note": "Repair01 paired sidecars/pixels inspected and SHA256 paired matches. BASE shows CTA scene; LOADING is explicitly transient dark overlay/entering title; PROVIDER postponed text visible but order image blank despite raw settled label; REOPEN has order image and close focus outline. Preserve canonical partial-provider versus settled-REOPEN precedence from persisted assessment; no selectable commerce or local fixture interior invented.",
+      "complete": true
+    },
+    {
+      "source": "E-0276",
+      "classification": "duplicate",
+      "artifacts": [
+        "FR-TICKET",
+        "QR-VISUAL",
+        "CON-EVIDENCE-BOUNDS"
+      ],
+      "note": "Repair01 paired sidecars/pixels inspected and SHA256 paired matches. BASE shows CTA scene; LOADING is explicitly transient dark overlay/entering title; PROVIDER postponed text visible but order image blank despite raw settled label; REOPEN has order image and close focus outline. Preserve canonical partial-provider versus settled-REOPEN precedence from persisted assessment; no selectable commerce or local fixture interior invented.",
+      "complete": true
+    },
+    {
+      "source": "E-0277",
+      "classification": "duplicate",
+      "artifacts": [
+        "FR-TICKET",
+        "QR-VISUAL",
+        "CON-EVIDENCE-BOUNDS"
+      ],
+      "note": "Repair01 paired sidecars/pixels inspected and SHA256 paired matches. BASE shows CTA scene; LOADING is explicitly transient dark overlay/entering title; PROVIDER postponed text visible but order image blank despite raw settled label; REOPEN has order image and close focus outline. Preserve canonical partial-provider versus settled-REOPEN precedence from persisted assessment; no selectable commerce or local fixture interior invented.",
+      "complete": true
+    },
+    {
+      "source": "E-0278",
+      "classification": "no-product-intent",
+      "reason": "Inspected historical capture plan/run/manifest. Its waits, selectors, source hashes and CAPTURED label describe collection procedure; no product requirement or current acceptance follows. No frozen helper/provider executed.",
+      "complete": true
+    },
+    {
+      "source": "E-0279",
+      "classification": "no-product-intent",
+      "reason": "Inspected historical capture plan/run/manifest. Its waits, selectors, source hashes and CAPTURED label describe collection procedure; no product requirement or current acceptance follows. No frozen helper/provider executed.",
+      "complete": true
+    },
+    {
+      "source": "E-0280",
+      "classification": "no-product-intent",
+      "reason": "Inspected historical capture plan/run/manifest. Its waits, selectors, source hashes and CAPTURED label describe collection procedure; no product requirement or current acceptance follows. No frozen helper/provider executed.",
+      "complete": true
+    }
+  ]
+}

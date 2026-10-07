@@ -6,17 +6,21 @@
       "id": "L-0001",
       "description": "Next authorized batch: inspect inherited-v1 E-050/E-080/E-085/E-086/E-090 and preference traces to independently corroborate FAQ, focus, timing and switched-history claims; do not treat report summaries as newly executed proof.",
       "kind": "repo",
-      "status": "open",
+      "status": "resolved",
       "createdAt": "2026-10-07T03:07:30.353Z",
-      "source": "E-0010"
+      "source": "E-0010",
+      "resolution": "Inspected inherited E-050/E-080/E-085/E-086/E-090 in continuation batch7 (E-0204/0205/0216/0218/0219/0220). Findings and candidate reconciliations distinguish fresh versus reused state, single settled FAQ, reversal/media, preview and observed dialog focus escape. Q-0004/Q-0008/Q-0010 remain open; repository inspection lead is exhausted, no policy answer implied.",
+      "resolvedAt": "2026-10-07T04:58:28.950Z"
     },
     {
       "id": "L-0002",
       "description": "Next authorized batch: independently read E2-013 canonical phase assessment and E2-014 exact geometry plus named image sidecars/pixels. Parent manifest validation does not validate appearance.",
       "kind": "repo",
-      "status": "open",
+      "status": "resolved",
       "createdAt": "2026-10-07T03:07:30.452Z",
-      "source": "E-0012"
+      "source": "E-0012",
+      "resolution": "Completed independent E2-013/E2-014 assessment/geometry inspection in batch8 and all named ALL/TOP, raw-run01 and repair01/02 sidecars/pixels across batches9-11 (E-0259..0326). Canonical phase precedence retained: ALL context/geometry only, original menus transient/unsettled, repaired menus settled, original desktop ticket/provider partial versus repair01 REOPEN settled. Paired hashes verified within batches; boundary-separated narrow CLOSED metadata/pixels independently inspected. Repository lead exhausted; Q-0005/Q-0007/Q-0009 and human fixture input remain open, no policy or acceptance decision implied.",
+      "resolvedAt": "2026-10-07T05:07:35.611Z"
     },
     {
       "id": "L-0003",

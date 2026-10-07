@@ -1,0 +1,198 @@
+[
+  {
+    "id": "E-0057",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/captures/E-030-1024x768-full.jpg",
+    "bytes": 506684,
+    "sha256": "ebbb7acaab7993529995545202805fc33582fac565095365835a218ca4c9916a",
+    "kind": "image"
+  },
+  {
+    "id": "E-0058",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/captures/E-030-1024x768-top.jpg",
+    "bytes": 119226,
+    "sha256": "6695637a018d65efb8d79d82b4f0d9c13e49ccc93410eca8786f85b89104a212",
+    "kind": "image"
+  },
+  {
+    "id": "E-0059",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/captures/E-030-1440x900-about.jpg",
+    "bytes": 99013,
+    "sha256": "fb1dd5830770ccbd25e5a7ff800251202b5fd7ce2b9b66f7b464184eda7d1afc",
+    "kind": "image"
+  },
+  {
+    "id": "E-0060",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/captures/E-030-1440x900-creator.jpg",
+    "bytes": 80722,
+    "sha256": "96b2cfc12e95c2a9c4e689c794a46d75b8916e8a4619668d958df338940face6",
+    "kind": "image"
+  },
+  {
+    "id": "E-0061",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/captures/E-030-1440x900-footer.jpg",
+    "bytes": 83245,
+    "sha256": "ec2809ee5aa119a31f1fc69206655d0e326fd235abb8f9a7d236c7cafde0076c",
+    "kind": "image"
+  },
+  {
+    "id": "E-0062",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/captures/E-030-1440x900-full.jpg",
+    "bytes": 690153,
+    "sha256": "cf17810e3a1fdba2957be9a17ce6575908f3bf9ad019b406be2c13bf95f860bc",
+    "kind": "image"
+  },
+  {
+    "id": "E-0063",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/captures/E-030-1440x900-local.jpg",
+    "bytes": 92844,
+    "sha256": "3ecfcf361ebd4e17a6e2989694679724ad97371572367faa4611420a641319dd",
+    "kind": "image"
+  },
+  {
+    "id": "E-0064",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/captures/E-030-1440x900-plan.jpg",
+    "bytes": 88399,
+    "sha256": "d559e1b726567825c049d2f211ebf402dc1bd50104f374101a4c97c176613ebd",
+    "kind": "image"
+  },
+  {
+    "id": "E-0065",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/captures/E-030-1440x900-stories.jpg",
+    "bytes": 155179,
+    "sha256": "33e7b4ed864e51f020931fd931cd4929a2e5e97f6828841afe43a9fc17bd92d7",
+    "kind": "image"
+  },
+  {
+    "id": "E-0066",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/captures/E-030-1440x900-tickets.jpg",
+    "bytes": 85870,
+    "sha256": "4f555ca6c5f62d9cbf1bbebe3bac4364653cc96898aa7ce77ff1c19b6d0eebe9",
+    "kind": "image"
+  },
+  {
+    "id": "E-0067",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/captures/E-030-1440x900-top.jpg",
+    "bytes": 153344,
+    "sha256": "92a36ca3837de90c7d530146231d04f71eea1f32208a2f5801b16f6c52982e23",
+    "kind": "image"
+  },
+  {
+    "id": "E-0068",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/captures/E-030-1440x900-tour-highlights.jpg",
+    "bytes": 58166,
+    "sha256": "c66fbc49bc6b9412a2c7429e13ffc2baf340bbc43f26cce66ff9ee253c44363c",
+    "kind": "image"
+  },
+  {
+    "id": "E-0069",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/captures/E-030-1440x900-zombies.jpg",
+    "bytes": 58552,
+    "sha256": "c64e25a24696f8c47728907a209dd5aea0f4e2498d3e602a37d445cc047af027",
+    "kind": "image"
+  },
+  {
+    "id": "E-0070",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/captures/E-030-390x844-about.jpg",
+    "bytes": 31435,
+    "sha256": "0e6a56a59ac65e3cf50c0ba53864b2590479690f53da8c58314c457bef043279",
+    "kind": "image"
+  },
+  {
+    "id": "E-0071",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/captures/E-030-390x844-creator.jpg",
+    "bytes": 20337,
+    "sha256": "2105764a7f6339e0b6d9cfed9c859cdae123cda3d9f431d54186062c22c56267",
+    "kind": "image"
+  },
+  {
+    "id": "E-0072",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/captures/E-030-390x844-footer.jpg",
+    "bytes": 23337,
+    "sha256": "11a77d732da552143312d4c0b8cbda1372a6bbc679842d8ddf51bd6834055a97",
+    "kind": "image"
+  },
+  {
+    "id": "E-0073",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/captures/E-030-390x844-full.jpg",
+    "bytes": 303611,
+    "sha256": "039260fde4164be6ad35a66c365861019a879616e4ef9091e49c18ba5c02f798",
+    "kind": "image"
+  },
+  {
+    "id": "E-0074",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/captures/E-030-390x844-local.jpg",
+    "bytes": 38830,
+    "sha256": "2fbdda2355d6ee389f21a51c46858f77eb5cbc9cf4afbcea1935d4bfd1777402",
+    "kind": "image"
+  },
+  {
+    "id": "E-0075",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/captures/E-030-390x844-plan.jpg",
+    "bytes": 27060,
+    "sha256": "6aecade10089508c457380f3d5f30a5470466592d89d4f837c4feb126463bce0",
+    "kind": "image"
+  },
+  {
+    "id": "E-0076",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/captures/E-030-390x844-stories.jpg",
+    "bytes": 36335,
+    "sha256": "2c9211d1d3e44920e8816088d8ecea4067eaa4e5ecfae89b1b23355a2c7fc9ca",
+    "kind": "image"
+  },
+  {
+    "id": "E-0077",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/captures/E-030-390x844-tickets.jpg",
+    "bytes": 37940,
+    "sha256": "c0386696e766b038539383ad60b59f14223bf166e677b9539de72f6657082aff",
+    "kind": "image"
+  },
+  {
+    "id": "E-0078",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/captures/E-030-390x844-top.jpg",
+    "bytes": 58349,
+    "sha256": "7b4996b548a937b6461f8f8a8fad72b2838eee44f0615fa915451d57b51d3175",
+    "kind": "image"
+  },
+  {
+    "id": "E-0079",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/captures/E-030-390x844-tour-highlights.jpg",
+    "bytes": 20485,
+    "sha256": "22d37b23d6663dde3102b43d2006472087133a417ce36c74cd0939f5b399e1e6",
+    "kind": "image"
+  },
+  {
+    "id": "E-0080",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/captures/E-030-390x844-zombies.jpg",
+    "bytes": 23160,
+    "sha256": "3ee43a56a3ab32b788960195f0b4f46745f148188da6751946ea521d2ee7d703",
+    "kind": "image"
+  },
+  {
+    "id": "E-0081",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/captures/E-030-768x1024-footer.jpg",
+    "bytes": 64567,
+    "sha256": "5918ab3a5a33e86dc27a1c3663591ae7e55a2fcc4d44fb2d3f445fb8d0b66158",
+    "kind": "image"
+  },
+  {
+    "id": "E-0082",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/captures/E-030-768x1024-full.jpg",
+    "bytes": 461030,
+    "sha256": "feb56e79b82ee6340ca9ffa82d695e6c334d4d0f81a7222fa8d52d1e7464a429",
+    "kind": "image"
+  },
+  {
+    "id": "E-0083",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/captures/E-030-768x1024-top.jpg",
+    "bytes": 104659,
+    "sha256": "a06909228a58f3cf40b8f4f16f1e750bb3dab531af442ad337175a892549a557",
+    "kind": "image"
+  },
+  {
+    "id": "E-0084",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/captures/E-040-boundary-1099.jpg",
+    "bytes": 130471,
+    "sha256": "70c4a1e1161d7146f864a7c9e915e455f164bcf9e3dbc8c9f8b1d56eeca056ac",
+    "kind": "image"
+  }
+]

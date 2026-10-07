@@ -1,0 +1,82 @@
+[
+  {
+    "id": "E-0337",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/tooling/reference-reconstruction/references/fidelity-contract.md",
+    "bytes": 2260,
+    "sha256": "2ed19f9cfb976ad6834d62532976f7cb3972bcd58c9bfb9683540a0addd0f437",
+    "kind": "text",
+    "lines": 18
+  },
+  {
+    "id": "E-0338",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/tooling/reference-reconstruction/references/implementation-handoff.md",
+    "bytes": 4975,
+    "sha256": "d897b06a323661442e0eb62a63f3a77874012bad506db0e554b59a39ad600a05",
+    "kind": "text",
+    "lines": 42
+  },
+  {
+    "id": "E-0339",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/tooling/reference-reconstruction/references/inspection.md",
+    "bytes": 10608,
+    "sha256": "41a8510d6a3003862a1b036729bc03c52a9298920fe0bf7bf9634b080fb466fb",
+    "kind": "text",
+    "lines": 76
+  },
+  {
+    "id": "E-0340",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/tooling/reference-reconstruction/references/migration-portability.md",
+    "bytes": 2183,
+    "sha256": "40079aa8b09b3e706a9e8e2eb1c762f527e5c22504e14f2342ff15a4648753b2",
+    "kind": "text",
+    "lines": 14
+  },
+  {
+    "id": "E-0341",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/tooling/reference-reconstruction/references/tool-selection.md",
+    "bytes": 3985,
+    "sha256": "ab181b89708cf7489dc56131cc37deb2dbd4b54e2dff98b04802c93396e74ea7",
+    "kind": "text",
+    "lines": 31
+  },
+  {
+    "id": "E-0342",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/tooling/reference-reconstruction/scripts/capture.mjs",
+    "bytes": 18859,
+    "sha256": "e47132aa93a26022d8412b619425b9fadd0773292f47c62929ffa1c1403a4626",
+    "kind": "text",
+    "lines": 243
+  },
+  {
+    "id": "E-0343",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/tooling/reference-reconstruction/scripts/package.mjs",
+    "bytes": 5733,
+    "sha256": "f27fe2ccd277b451b4eb0230209ea79aa0984e79279bc16bce40d0cf24227c7a",
+    "kind": "text",
+    "lines": 98
+  },
+  {
+    "id": "E-0344",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/tooling/reference-reconstruction/scripts/page-probe.js",
+    "bytes": 6165,
+    "sha256": "763f893f720da91b8d03ddbe54955e388baff02c2f891a9c8d32a2dc188cfd44",
+    "kind": "text",
+    "lines": 58
+  },
+  {
+    "id": "E-0345",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/tooling/reference-reconstruction/scripts/source-report.mjs",
+    "bytes": 2994,
+    "sha256": "7b9cd2bff6b0001ccc437ec07c537bb78b97ce87ca0657af55c027d4c0e3e98f",
+    "kind": "text",
+    "lines": 26
+  },
+  {
+    "id": "E-0346",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/tooling/reference-reconstruction/scripts/test-capture.mjs",
+    "bytes": 10142,
+    "sha256": "b3633d9471a9edfe343529e8c91054765d41ee60feecb82e027346fdf4cdbac1",
+    "kind": "text",
+    "lines": 98
+  }
+]

@@ -1,0 +1,254 @@
+[
+  {
+    "id": "E-0029",
+    "path": "skills/reference-reconstruction/assets/adaptation-contract.md",
+    "bytes": 2693,
+    "sha256": "df1307c7411341cd04c430bebb47660b690c933b00ffdb8f068e43aee1f70a26",
+    "kind": "text",
+    "lines": 47
+  },
+  {
+    "id": "E-0030",
+    "path": "skills/reference-reconstruction/assets/capture-plan.example.json",
+    "bytes": 1416,
+    "sha256": "fca6a9aeb63f969f7b86c16296fcb4785b4dc359f8346abe3c869502ac1e487b",
+    "kind": "text",
+    "lines": 44,
+    "keys": [
+      "schemaVersion",
+      "packageId",
+      "contractId",
+      "sourceId",
+      "authorization",
+      "allowedOrigins",
+      "publicQueryKeys",
+      "totalTimeoutMs",
+      "environments",
+      "cases"
+    ]
+  },
+  {
+    "id": "E-0031",
+    "path": "skills/reference-reconstruction/assets/fidelity-scope-contract.md",
+    "bytes": 1192,
+    "sha256": "49a80341e09d789be24c9a4b9936edf22bd611d27defb600258f1feafd49b462",
+    "kind": "text",
+    "lines": 19
+  },
+  {
+    "id": "E-0032",
+    "path": "skills/reference-reconstruction/assets/reference-evidence-package.md",
+    "bytes": 12737,
+    "sha256": "8328df8a2014d04fbb1256b6beee49f0f8c211955ed0bbf9739c888facc91970",
+    "kind": "text",
+    "lines": 180
+  },
+  {
+    "id": "E-0033",
+    "path": "skills/reference-reconstruction/references/capture-plan.md",
+    "bytes": 10017,
+    "sha256": "f51b43d22f56a23b7b9eb18350870ffcdf2cc12232e0e302aeb9db87ece34f44",
+    "kind": "text",
+    "lines": 50
+  },
+  {
+    "id": "E-0034",
+    "path": "skills/reference-reconstruction/references/capture.md",
+    "bytes": 4655,
+    "sha256": "cb21a3429fe5c5f924847079014713ba927552e4c869d21301ad94915a19b57f",
+    "kind": "text",
+    "lines": 26
+  },
+  {
+    "id": "E-0035",
+    "path": "skills/reference-reconstruction/references/completeness-gate.md",
+    "bytes": 4726,
+    "sha256": "de0df8f6c08f57ca4ea3518268df3b8c602755330e98535b237fbe7233c4be62",
+    "kind": "text",
+    "lines": 31
+  },
+  {
+    "id": "E-0036",
+    "path": "skills/reference-reconstruction/references/fidelity-contract.md",
+    "bytes": 2260,
+    "sha256": "2ed19f9cfb976ad6834d62532976f7cb3972bcd58c9bfb9683540a0addd0f437",
+    "kind": "text",
+    "lines": 18
+  },
+  {
+    "id": "E-0037",
+    "path": "skills/reference-reconstruction/references/implementation-handoff.md",
+    "bytes": 5367,
+    "sha256": "3429d90bb487c806078a3457f5f8abdcfba8e117e5f51c1ac2585aaaa5ff1e7d",
+    "kind": "text",
+    "lines": 42
+  },
+  {
+    "id": "E-0038",
+    "path": "skills/reference-reconstruction/references/inspection.md",
+    "bytes": 10608,
+    "sha256": "41a8510d6a3003862a1b036729bc03c52a9298920fe0bf7bf9634b080fb466fb",
+    "kind": "text",
+    "lines": 76
+  },
+  {
+    "id": "E-0039",
+    "path": "skills/reference-reconstruction/references/migration-portability.md",
+    "bytes": 2183,
+    "sha256": "40079aa8b09b3e706a9e8e2eb1c762f527e5c22504e14f2342ff15a4648753b2",
+    "kind": "text",
+    "lines": 14
+  },
+  {
+    "id": "E-0040",
+    "path": "skills/reference-reconstruction/references/settled-appearance.md",
+    "bytes": 9237,
+    "sha256": "a8d04e17809021db331cf5fd384f8cec6295bec4800ddf8a4122777f8ea0f8bb",
+    "kind": "text",
+    "lines": 59
+  },
+  {
+    "id": "E-0041",
+    "path": "skills/reference-reconstruction/references/tool-selection.md",
+    "bytes": 3985,
+    "sha256": "ab181b89708cf7489dc56131cc37deb2dbd4b54e2dff98b04802c93396e74ea7",
+    "kind": "text",
+    "lines": 31
+  },
+  {
+    "id": "E-0042",
+    "path": "skills/reference-reconstruction/scripts/capture.mjs",
+    "bytes": 19862,
+    "sha256": "f8daaeee6ff1672bcd4bc8943b18d523c47fff7e452cfa8d2cdaa64501106ee5",
+    "kind": "text",
+    "lines": 242
+  },
+  {
+    "id": "E-0043",
+    "path": "skills/reference-reconstruction/scripts/package.mjs",
+    "bytes": 5733,
+    "sha256": "f27fe2ccd277b451b4eb0230209ea79aa0984e79279bc16bce40d0cf24227c7a",
+    "kind": "text",
+    "lines": 98
+  },
+  {
+    "id": "E-0044",
+    "path": "skills/reference-reconstruction/scripts/page-probe.js",
+    "bytes": 12392,
+    "sha256": "ed4e3c3407f8bc02c200cbb41e9d499ad30c20556bc4fe5e24084cc97857ab55",
+    "kind": "text",
+    "lines": 120
+  },
+  {
+    "id": "E-0045",
+    "path": "skills/reference-reconstruction/scripts/run-tests.mjs",
+    "bytes": 855,
+    "sha256": "0541f98d8a8f46564c09df254227a342c6d47b4f6dcab464299d15e94b40a2bc",
+    "kind": "text",
+    "lines": 14
+  },
+  {
+    "id": "E-0046",
+    "path": "skills/reference-reconstruction/scripts/settled-appearance.mjs",
+    "bytes": 11836,
+    "sha256": "6292e0f2d3e0436ce3185ea681244d49970ce8002a9b854119be503da2f43bb2",
+    "kind": "text",
+    "lines": 136
+  },
+  {
+    "id": "E-0047",
+    "path": "skills/reference-reconstruction/scripts/source-report.mjs",
+    "bytes": 2994,
+    "sha256": "7b9cd2bff6b0001ccc437ec07c537bb78b97ce87ca0657af55c027d4c0e3e98f",
+    "kind": "text",
+    "lines": 26
+  },
+  {
+    "id": "E-0048",
+    "path": "skills/reference-reconstruction/scripts/test-capture.mjs",
+    "bytes": 10142,
+    "sha256": "b3633d9471a9edfe343529e8c91054765d41ee60feecb82e027346fdf4cdbac1",
+    "kind": "text",
+    "lines": 98
+  },
+  {
+    "id": "E-0049",
+    "path": "skills/reference-reconstruction/scripts/test-settled-appearance.mjs",
+    "bytes": 13733,
+    "sha256": "5d945d47091d88d8368f1326afb479332ed40ec5da706bb9a16c7758b67d58bd",
+    "kind": "text",
+    "lines": 122
+  },
+  {
+    "id": "E-0050",
+    "path": "implementation-scope/pre-build-packet/anchor-audit.json",
+    "bytes": 17700,
+    "sha256": "89b0b54674a9ee6271c1f4f5ef98357824dfac527f6c7d68826b1418385905b1",
+    "kind": "text",
+    "lines": 546,
+    "keys": [
+      "contractRevision",
+      "matrixPath",
+      "obligationSRMembership",
+      "rows"
+    ]
+  },
+  {
+    "id": "E-0051",
+    "path": "implementation-scope/pre-build-packet/evidence-map.json",
+    "bytes": 18582,
+    "sha256": "0aec2630232b082df1b763a25ae97716ddded5da0627bb2bf17645fd8da7d15a",
+    "kind": "text",
+    "lines": 447,
+    "keys": [
+      "packetId",
+      "root",
+      "entries"
+    ]
+  },
+  {
+    "id": "E-0052",
+    "path": "implementation-scope/pre-build-packet/verification.json",
+    "bytes": 2918,
+    "sha256": "fe3cd2bb36264a1cf0334f45a0171a20e6146d426679cf4ade8a84984de6faf1",
+    "kind": "text",
+    "lines": 111,
+    "keys": [
+      "packetId",
+      "verifiedAtUTC",
+      "result",
+      "failures",
+      "immutableReference",
+      "checks"
+    ]
+  },
+  {
+    "id": "E-0053",
+    "path": "implementation-scope/pre-build-packet/verify.py",
+    "bytes": 11489,
+    "sha256": "a8ff0ef6babc68922396eededd77ba5aa832da8e5735eac6996e4a33539ed397",
+    "kind": "text",
+    "lines": 169
+  },
+  {
+    "id": "E-0054",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/captures/E-004-polypane-1280-story.jpg",
+    "bytes": 26556,
+    "sha256": "17420b6484016d24ae7ff7d28d23ad933c7e2c18d719855862a76fc09bcd6e87",
+    "kind": "image"
+  },
+  {
+    "id": "E-0055",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/captures/E-010-top-4.jpg",
+    "bytes": 134620,
+    "sha256": "5b11bf1eb01f8457bf4b11d95a7a4c9735e1b4d5755b5db469599d93234f9e26",
+    "kind": "image"
+  },
+  {
+    "id": "E-0056",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/captures/E-030-1024x768-footer.jpg",
+    "bytes": 47015,
+    "sha256": "034419cfb39cb9e89a122b274d84ee57009214ed8c75617df1629a2d9fa91a41",
+    "kind": "image"
+  }
+]

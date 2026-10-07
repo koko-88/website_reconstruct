@@ -1,0 +1,455 @@
+[
+  {
+    "id": "E-0253",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/plans/capture-repair-01.json",
+    "bytes": 3496,
+    "sha256": "3e31ad566a01034e73d3b17fa57ff4b7827940183aa67a2fd3aed6f21c6f3529",
+    "kind": "text",
+    "lines": 128,
+    "keys": [
+      "schemaVersion",
+      "packageId",
+      "contractId",
+      "sourceId",
+      "authorization",
+      "allowedOrigins",
+      "publicQueryKeys",
+      "totalTimeoutMs",
+      "browserChannel",
+      "environments",
+      "cases"
+    ]
+  },
+  {
+    "id": "E-0254",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/plans/capture-repair-02.json",
+    "bytes": 5246,
+    "sha256": "6962f93f37eebdece0cedc8f5e6fe16877d72c71fa25b5bef81c87a067a0b220",
+    "kind": "text",
+    "lines": 201,
+    "keys": [
+      "schemaVersion",
+      "packageId",
+      "contractId",
+      "sourceId",
+      "authorization",
+      "allowedOrigins",
+      "publicQueryKeys",
+      "totalTimeoutMs",
+      "browserChannel",
+      "environments",
+      "cases"
+    ]
+  },
+  {
+    "id": "E-0255",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/public/display.ttf",
+    "bytes": 170812,
+    "sha256": "a4ba3a92350ebb031da0cb47630ac49eb265082ca1bc0450442f4a83ab947cab",
+    "kind": "binary"
+  },
+  {
+    "id": "E-0256",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/public/eb_widgets.js",
+    "bytes": 14805,
+    "sha256": "5de0299fce3160ea086e82ff6c8dcc38912cd93d599b782c7aa62f71c0984931",
+    "kind": "text",
+    "lines": 1
+  },
+  {
+    "id": "E-0257",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/public/manticore.woff2",
+    "bytes": 138348,
+    "sha256": "58dee0b74d93d9468b43cb4b62d74e2d4c994fa8d8ae1668c1ed536ce211fb58",
+    "kind": "binary"
+  },
+  {
+    "id": "E-0258",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/public/space-mono-400.woff2",
+    "bytes": 9464,
+    "sha256": "e0c8e616bda27642f4c3cebaecff6525d901e73afc8a227cbbb0f2af4810f300",
+    "kind": "binary"
+  },
+  {
+    "id": "E-0259",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/raw-geometry-01/D-GEOMETRY--ALL.json",
+    "bytes": 78818,
+    "sha256": "5b061cc0e65d944f554b13eb302ed8ac374d6e771af4383edb5b9359014e77dc",
+    "kind": "text",
+    "lines": 2561,
+    "keys": [
+      "evidenceId",
+      "sourceId",
+      "contractId",
+      "caseId",
+      "checkpointId",
+      "environmentId",
+      "requestedPhase",
+      "phase",
+      "readiness",
+      "actionsThroughCheckpoint",
+      "provenance",
+      "actualPublicURLBefore",
+      "screenshotStartedUTC",
+      "screenshotEndedUTC",
+      "screenshot",
+      "after",
+      "captureChanged",
+      "actualPublicURLAfter"
+    ]
+  },
+  {
+    "id": "E-0260",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/raw-geometry-01/D-GEOMETRY--ALL.png",
+    "bytes": 4447246,
+    "sha256": "7f58e0fecc64bbf9a46b37846b31ce11fd342c6d5a0f9c1c644389e8a97e1ce4",
+    "kind": "image"
+  },
+  {
+    "id": "E-0261",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/raw-geometry-01/D-GEOMETRY--TOP.json",
+    "bytes": 38478,
+    "sha256": "15f70ab997639970ddb111e59f6d9134e2bc7e5282079e76cf82498236f6b877",
+    "kind": "text",
+    "lines": 1409,
+    "keys": [
+      "evidenceId",
+      "sourceId",
+      "contractId",
+      "caseId",
+      "checkpointId",
+      "environmentId",
+      "requestedPhase",
+      "phase",
+      "readiness",
+      "actionsThroughCheckpoint",
+      "provenance",
+      "actualPublicURLBefore",
+      "screenshotStartedUTC",
+      "screenshotEndedUTC",
+      "screenshot",
+      "after",
+      "captureChanged",
+      "actualPublicURLAfter"
+    ]
+  },
+  {
+    "id": "E-0262",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/raw-geometry-01/D-GEOMETRY--TOP.png",
+    "bytes": 1589763,
+    "sha256": "509562646401f2c2237b6866f62f037048f44da2922a25b61d6fffd14a8d8f10",
+    "kind": "image"
+  },
+  {
+    "id": "E-0263",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/raw-geometry-01/M-GEOMETRY--ALL.json",
+    "bytes": 78306,
+    "sha256": "0072576272192d909eb5b4e19b62d94c877b68666934f82476212dc002d5c781",
+    "kind": "text",
+    "lines": 2561,
+    "keys": [
+      "evidenceId",
+      "sourceId",
+      "contractId",
+      "caseId",
+      "checkpointId",
+      "environmentId",
+      "requestedPhase",
+      "phase",
+      "readiness",
+      "actionsThroughCheckpoint",
+      "provenance",
+      "actualPublicURLBefore",
+      "screenshotStartedUTC",
+      "screenshotEndedUTC",
+      "screenshot",
+      "after",
+      "captureChanged",
+      "actualPublicURLAfter"
+    ]
+  },
+  {
+    "id": "E-0264",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/raw-geometry-01/M-GEOMETRY--ALL.png",
+    "bytes": 2005498,
+    "sha256": "78e3ae39f0c014f9ae7bef121940da2d23cbbbbc82e94fb8dd4fe285cfd98151",
+    "kind": "image"
+  },
+  {
+    "id": "E-0265",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/raw-geometry-01/M-GEOMETRY--TOP.json",
+    "bytes": 38001,
+    "sha256": "fb3dc367dbe516d09b0708072533277a85cdad774538ba6d234465d06a808c71",
+    "kind": "text",
+    "lines": 1409,
+    "keys": [
+      "evidenceId",
+      "sourceId",
+      "contractId",
+      "caseId",
+      "checkpointId",
+      "environmentId",
+      "requestedPhase",
+      "phase",
+      "readiness",
+      "actionsThroughCheckpoint",
+      "provenance",
+      "actualPublicURLBefore",
+      "screenshotStartedUTC",
+      "screenshotEndedUTC",
+      "screenshot",
+      "after",
+      "captureChanged",
+      "actualPublicURLAfter"
+    ]
+  },
+  {
+    "id": "E-0266",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/raw-geometry-01/M-GEOMETRY--TOP.png",
+    "bytes": 414569,
+    "sha256": "96f7bc3d92326821ee07efa30723efd9e7c2b63dad46c0c6b6d77eb3526f1f93",
+    "kind": "image"
+  },
+  {
+    "id": "E-0267",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/raw-geometry-01/manifest.json",
+    "bytes": 1742,
+    "sha256": "243a7ad62150d763a6c6fc855e6ab8c863a769cbd00b023862725979c1c825db",
+    "kind": "text",
+    "lines": 62,
+    "keys": [
+      "schemaVersion",
+      "sealedAtUTC",
+      "metadata",
+      "files"
+    ]
+  },
+  {
+    "id": "E-0268",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/raw-geometry-01/plan.json",
+    "bytes": 4487,
+    "sha256": "767a672c9496873d9eae561b6c6126fef52ff392c9d824941abc4a1dbd8d11c6",
+    "kind": "text",
+    "lines": 174,
+    "keys": [
+      "schemaVersion",
+      "packageId",
+      "contractId",
+      "sourceId",
+      "authorization",
+      "allowedOrigins",
+      "publicQueryKeys",
+      "totalTimeoutMs",
+      "browserChannel",
+      "environments",
+      "cases"
+    ]
+  },
+  {
+    "id": "E-0269",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/raw-geometry-01/run.json",
+    "bytes": 22186,
+    "sha256": "52d78a7ef2b57104647f6321e73a97a651d38f65728f5db2ffdf95d29aa99f67",
+    "kind": "text",
+    "lines": 789,
+    "keys": [
+      "schemaVersion",
+      "result",
+      "cases",
+      "errors",
+      "provenance",
+      "limits"
+    ]
+  },
+  {
+    "id": "E-0270",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/raw-repair-01/D-REPAIR--BASE.json",
+    "bytes": 37089,
+    "sha256": "f0b62185d367e68d40492ec6e97a48e18c3c85fe3ed7492508e1171347dc6d4b",
+    "kind": "text",
+    "lines": 1367,
+    "keys": [
+      "evidenceId",
+      "sourceId",
+      "contractId",
+      "caseId",
+      "checkpointId",
+      "environmentId",
+      "requestedPhase",
+      "phase",
+      "readiness",
+      "actionsThroughCheckpoint",
+      "provenance",
+      "actualPublicURLBefore",
+      "screenshotStartedUTC",
+      "screenshotEndedUTC",
+      "screenshot",
+      "after",
+      "captureChanged",
+      "actualPublicURLAfter"
+    ]
+  },
+  {
+    "id": "E-0271",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/raw-repair-01/D-REPAIR--BASE.png",
+    "bytes": 1295108,
+    "sha256": "5fdcc4804f97ddada12f952adf0772b2b5cc66efebeba4fd252f065d98a1a835",
+    "kind": "image"
+  },
+  {
+    "id": "E-0272",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/raw-repair-01/D-REPAIR--LOADING.json",
+    "bytes": 33180,
+    "sha256": "28079fb37a8f619c0b6ac843dedc33b4f1edd211d3b98481404eefdf33591e4d",
+    "kind": "text",
+    "lines": 1257,
+    "keys": [
+      "evidenceId",
+      "sourceId",
+      "contractId",
+      "caseId",
+      "checkpointId",
+      "environmentId",
+      "requestedPhase",
+      "phase",
+      "readiness",
+      "actionsThroughCheckpoint",
+      "provenance",
+      "actualPublicURLBefore",
+      "screenshotStartedUTC",
+      "screenshotEndedUTC",
+      "screenshot",
+      "after",
+      "captureChanged",
+      "actualPublicURLAfter"
+    ]
+  },
+  {
+    "id": "E-0273",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/raw-repair-01/D-REPAIR--LOADING.png",
+    "bytes": 663116,
+    "sha256": "e6105241b9a02870cbad698ca0b1638cadcfe168783388d0beb3e4284c6ea869",
+    "kind": "image"
+  },
+  {
+    "id": "E-0274",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/raw-repair-01/D-REPAIR--PROVIDER.json",
+    "bytes": 47737,
+    "sha256": "6e0e0942ca0b73ce9f2ed657fe338145f0a32b57dd9473fc26e6568bb4d5df8c",
+    "kind": "text",
+    "lines": 1685,
+    "keys": [
+      "evidenceId",
+      "sourceId",
+      "contractId",
+      "caseId",
+      "checkpointId",
+      "environmentId",
+      "requestedPhase",
+      "phase",
+      "readiness",
+      "actionsThroughCheckpoint",
+      "provenance",
+      "actualPublicURLBefore",
+      "screenshotStartedUTC",
+      "screenshotEndedUTC",
+      "screenshot",
+      "after",
+      "captureChanged",
+      "actualPublicURLAfter"
+    ]
+  },
+  {
+    "id": "E-0275",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/raw-repair-01/D-REPAIR--PROVIDER.png",
+    "bytes": 264493,
+    "sha256": "622ac3629821b1b86c60b04eb48689ca589bad4407d71a27f89629dec2d72c23",
+    "kind": "image"
+  },
+  {
+    "id": "E-0276",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/raw-repair-01/D-REPAIR--REOPEN.json",
+    "bytes": 56390,
+    "sha256": "e66f9ae08da99ab0bb8e28e80e66d73f57bcd0e844f81817b4843189097c7fe0",
+    "kind": "text",
+    "lines": 1979,
+    "keys": [
+      "evidenceId",
+      "sourceId",
+      "contractId",
+      "caseId",
+      "checkpointId",
+      "environmentId",
+      "requestedPhase",
+      "phase",
+      "readiness",
+      "actionsThroughCheckpoint",
+      "provenance",
+      "actualPublicURLBefore",
+      "screenshotStartedUTC",
+      "screenshotEndedUTC",
+      "screenshot",
+      "after",
+      "captureChanged",
+      "actualPublicURLAfter"
+    ]
+  },
+  {
+    "id": "E-0277",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/raw-repair-01/D-REPAIR--REOPEN.png",
+    "bytes": 418260,
+    "sha256": "c642c1aa08d5b070ca0a97ad9c16dc56c656ff9c2fc2d2aac945e40dfb5edfa9",
+    "kind": "image"
+  },
+  {
+    "id": "E-0278",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/raw-repair-01/manifest.json",
+    "bytes": 1748,
+    "sha256": "c548c484f0677c4a28f2e52843c8ee8c50de3cbe0dc62bf00764c6e6348915fb",
+    "kind": "text",
+    "lines": 62,
+    "keys": [
+      "schemaVersion",
+      "sealedAtUTC",
+      "metadata",
+      "files"
+    ]
+  },
+  {
+    "id": "E-0279",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/raw-repair-01/plan.json",
+    "bytes": 3569,
+    "sha256": "86f614c70d22b0e5263385fbf093b717e21b27395c72c0ffbe3d189d1870a9c8",
+    "kind": "text",
+    "lines": 132,
+    "keys": [
+      "schemaVersion",
+      "packageId",
+      "contractId",
+      "sourceId",
+      "authorization",
+      "allowedOrigins",
+      "publicQueryKeys",
+      "totalTimeoutMs",
+      "browserChannel",
+      "environments",
+      "cases"
+    ]
+  },
+  {
+    "id": "E-0280",
+    "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/raw-repair-01/run.json",
+    "bytes": 99223,
+    "sha256": "946e6bf7e5e35eb9b7d5838ef8121b5bfaa8b94c864884a474be7130661502bd",
+    "kind": "text",
+    "lines": 4307,
+    "keys": [
+      "schemaVersion",
+      "result",
+      "cases",
+      "errors",
+      "provenance",
+      "limits"
+    ]
+  }
+]

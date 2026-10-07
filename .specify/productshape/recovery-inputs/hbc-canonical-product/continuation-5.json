@@ -1,0 +1,284 @@
+{
+  "findings": [
+    {
+      "source": "E-0141",
+      "classification": "duplicate",
+      "artifacts": [
+        "QR-VISUAL",
+        "FR-INFORMATION"
+      ],
+      "note": "Inspected per-section wide/narrow settled-labeled frame. Supports clearer captured heading/portrait/venue/local-row composition and responsive ordering. Source filename does not by itself prove decode/fonts/time convergence; original conditions retained. Ticket review cue and five creator media marks remain separately owned (Q-0011).",
+      "complete": true
+    },
+    {
+      "source": "E-0142",
+      "classification": "duplicate",
+      "artifacts": [
+        "FR-ENTRY",
+        "QR-VISUAL"
+      ],
+      "note": "1440 clear home hero composition inspected with horizontal header controls and lower tour copy/down affordance.",
+      "complete": true
+    },
+    {
+      "source": "E-0143",
+      "classification": "duplicate",
+      "artifacts": [
+        "QR-VISUAL",
+        "FR-INFORMATION"
+      ],
+      "note": "Inspected per-section wide/narrow settled-labeled frame. Supports clearer captured heading/portrait/venue/local-row composition and responsive ordering. Source filename does not by itself prove decode/fonts/time convergence; original conditions retained. Ticket review cue and five creator media marks remain separately owned (Q-0011).",
+      "complete": true
+    },
+    {
+      "source": "E-0144",
+      "classification": "duplicate",
+      "artifacts": [
+        "FR-FAQ",
+        "QR-VISUAL"
+      ],
+      "note": "1440 clear plan heading and right-side closed FAQ stack inspected; settled-open behavior remains separately logged.",
+      "complete": true
+    },
+    {
+      "source": "E-0145",
+      "classification": "duplicate",
+      "artifacts": [
+        "FR-STORIES",
+        "QR-VISUAL"
+      ],
+      "note": "1440 clear first story background/text hierarchy inspected; no transition claim from still.",
+      "complete": true
+    },
+    {
+      "source": "E-0146",
+      "classification": "duplicate",
+      "artifacts": [
+        "FR-STORIES",
+        "QR-VISUAL"
+      ],
+      "note": "1440 UFO frame has readable chapter text but no prominent saucer/beam at this sampled ambient moment. Do not require universal identical live pixels or interpret settled as frozen video; media readiness stays bounded.",
+      "complete": true
+    },
+    {
+      "source": "E-0147",
+      "classification": "duplicate",
+      "artifacts": [
+        "FR-TICKET",
+        "QR-VISUAL"
+      ],
+      "note": "1440 clear ticket title/copy/action over city/fog inspected; provider interaction not performed.",
+      "complete": true
+    },
+    {
+      "source": "E-0148",
+      "classification": "duplicate",
+      "artifacts": [
+        "FR-TOPICS",
+        "QR-VISUAL"
+      ],
+      "note": "1440 highlights frame shows Hoover Dam active-style row over worker image with next outlined topic; supports visible hierarchy only, not binding from label inference.",
+      "complete": true
+    },
+    {
+      "source": "E-0149",
+      "classification": "duplicate",
+      "artifacts": [
+        "QR-VISUAL",
+        "FR-INFORMATION"
+      ],
+      "note": "Inspected per-section wide/narrow settled-labeled frame. Supports clearer captured heading/portrait/venue/local-row composition and responsive ordering. Source filename does not by itself prove decode/fonts/time convergence; original conditions retained. Ticket review cue and five creator media marks remain separately owned (Q-0011).",
+      "complete": true
+    },
+    {
+      "source": "E-0150",
+      "classification": "duplicate",
+      "artifacts": [
+        "QR-VISUAL",
+        "FR-INFORMATION"
+      ],
+      "note": "Inspected per-section wide/narrow settled-labeled frame. Supports clearer captured heading/portrait/venue/local-row composition and responsive ordering. Source filename does not by itself prove decode/fonts/time convergence; original conditions retained. Ticket review cue and five creator media marks remain separately owned (Q-0011).",
+      "complete": true
+    },
+    {
+      "source": "E-0151",
+      "classification": "duplicate",
+      "artifacts": [
+        "QR-VISUAL",
+        "FR-INFORMATION"
+      ],
+      "note": "Inspected per-section wide/narrow settled-labeled frame. Supports clearer captured heading/portrait/venue/local-row composition and responsive ordering. Source filename does not by itself prove decode/fonts/time convergence; original conditions retained. Ticket review cue and five creator media marks remain separately owned (Q-0011).",
+      "complete": true
+    },
+    {
+      "source": "E-0152",
+      "classification": "duplicate",
+      "artifacts": [
+        "QR-VISUAL",
+        "FR-INFORMATION"
+      ],
+      "note": "Inspected per-section wide/narrow settled-labeled frame. Supports clearer captured heading/portrait/venue/local-row composition and responsive ordering. Source filename does not by itself prove decode/fonts/time convergence; original conditions retained. Ticket review cue and five creator media marks remain separately owned (Q-0011).",
+      "complete": true
+    },
+    {
+      "source": "E-0153",
+      "classification": "duplicate",
+      "artifacts": [
+        "FR-ENTRY",
+        "QR-VISUAL"
+      ],
+      "note": "390 clear home hero inspected; compact horizontal controls, stacked title and wrapped copy with down affordance.",
+      "complete": true
+    },
+    {
+      "source": "E-0154",
+      "classification": "duplicate",
+      "artifacts": [
+        "QR-VISUAL",
+        "FR-INFORMATION"
+      ],
+      "note": "Inspected per-section wide/narrow settled-labeled frame. Supports clearer captured heading/portrait/venue/local-row composition and responsive ordering. Source filename does not by itself prove decode/fonts/time convergence; original conditions retained. Ticket review cue and five creator media marks remain separately owned (Q-0011).",
+      "complete": true
+    },
+    {
+      "source": "E-0155",
+      "classification": "duplicate",
+      "artifacts": [
+        "FR-FAQ",
+        "QR-VISUAL"
+      ],
+      "note": "390 clear plan heading/ticket action above closed FAQ rows inspected; first-open mismatch Q-0013 remains specific to prior inherited frame.",
+      "complete": true
+    },
+    {
+      "source": "E-0156",
+      "classification": "duplicate",
+      "artifacts": [
+        "FR-STORIES",
+        "QR-VISUAL"
+      ],
+      "note": "390 first story stacked composition over image inspected.",
+      "complete": true
+    },
+    {
+      "source": "E-0157",
+      "classification": "duplicate",
+      "artifacts": [
+        "FR-STORIES",
+        "QR-VISUAL"
+      ],
+      "note": "390 UFO chapter text and partial saucer/beam visible; viewport only, no playback assertion.",
+      "complete": true
+    },
+    {
+      "source": "E-0158",
+      "classification": "duplicate",
+      "artifacts": [
+        "FR-TICKET",
+        "QR-VISUAL"
+      ],
+      "note": "390 ticket scene shows resolved title, action and separate review cue beneath caption.",
+      "complete": true
+    },
+    {
+      "source": "E-0159",
+      "classification": "duplicate",
+      "artifacts": [
+        "FR-TOPICS",
+        "QR-VISUAL"
+      ],
+      "note": "390 highlights shows solid Hoover Dam then outlined Ghost Dog/First Murderer rows with numbered descriptive copy.",
+      "complete": true
+    },
+    {
+      "source": "E-0160",
+      "classification": "duplicate",
+      "artifacts": [
+        "QR-VISUAL",
+        "FR-INFORMATION"
+      ],
+      "note": "Inspected per-section wide/narrow settled-labeled frame. Supports clearer captured heading/portrait/venue/local-row composition and responsive ordering. Source filename does not by itself prove decode/fonts/time convergence; original conditions retained. Ticket review cue and five creator media marks remain separately owned (Q-0011).",
+      "complete": true
+    },
+    {
+      "source": "E-0161",
+      "classification": "duplicate",
+      "artifacts": [
+        "FR-STORIES",
+        "QR-MOTION"
+      ],
+      "note": "Inspected UFO forward/reverse-labeled stills: partial history/UFO adjacent panels and full UFO with different saucer/beam visibility. Selection/scroll relationship is evidenced visually; direction, video time and last-frame handling must use original runtime, without inventing timeline from filenames.",
+      "complete": true
+    },
+    {
+      "source": "E-0162",
+      "classification": "duplicate",
+      "artifacts": [
+        "FR-STORIES",
+        "QR-MOTION"
+      ],
+      "note": "Inspected UFO forward/reverse-labeled stills: partial history/UFO adjacent panels and full UFO with different saucer/beam visibility. Selection/scroll relationship is evidenced visually; direction, video time and last-frame handling must use original runtime, without inventing timeline from filenames.",
+      "complete": true
+    },
+    {
+      "source": "E-0163",
+      "classification": "duplicate",
+      "artifacts": [
+        "FR-STORIES",
+        "QR-MOTION"
+      ],
+      "note": "Inspected UFO forward/reverse-labeled stills: partial history/UFO adjacent panels and full UFO with different saucer/beam visibility. Selection/scroll relationship is evidenced visually; direction, video time and last-frame handling must use original runtime, without inventing timeline from filenames.",
+      "complete": true
+    },
+    {
+      "source": "E-0164",
+      "classification": "duplicate",
+      "artifacts": [
+        "FR-STORIES",
+        "QR-MOTION"
+      ],
+      "note": "Inspected UFO forward/reverse-labeled stills: partial history/UFO adjacent panels and full UFO with different saucer/beam visibility. Selection/scroll relationship is evidenced visually; direction, video time and last-frame handling must use original runtime, without inventing timeline from filenames.",
+      "complete": true
+    },
+    {
+      "source": "E-0165",
+      "classification": "duplicate",
+      "artifacts": [
+        "FR-TICKET",
+        "JRN-TICKET-HOST"
+      ],
+      "note": "Simulated-failure screenshot visibly shows host heading/close and dark box-office fallback with Contact Beer Zombies action and footer. This is induced failure evidence, not natural outage or authorized sending; exact local fixture/adoption still Q-0005.",
+      "complete": true
+    },
+    {
+      "source": "E-0166",
+      "classification": "duplicate",
+      "artifacts": [
+        "FR-INFORMATION",
+        "QR-MOTION"
+      ],
+      "note": "Facts timeline stills visibly contain transient randomized digits/letters and partially revealed cells before resolved values. This is decorative decoding, not mutable tour data. Exact timing/order and replay/reset semantics require E-085 timeline; Q-0004 remains open.",
+      "complete": true
+    },
+    {
+      "source": "E-0167",
+      "classification": "duplicate",
+      "artifacts": [
+        "FR-INFORMATION",
+        "QR-MOTION"
+      ],
+      "note": "Facts timeline stills visibly contain transient randomized digits/letters and partially revealed cells before resolved values. This is decorative decoding, not mutable tour data. Exact timing/order and replay/reset semantics require E-085 timeline; Q-0004 remains open.",
+      "complete": true
+    },
+    {
+      "source": "E-0168",
+      "classification": "duplicate",
+      "artifacts": [
+        "FR-INFORMATION",
+        "QR-MOTION"
+      ],
+      "note": "Facts timeline stills visibly contain transient randomized digits/letters and partially revealed cells before resolved values. This is decorative decoding, not mutable tour data. Exact timing/order and replay/reset semantics require E-085 timeline; Q-0004 remains open.",
+      "complete": true
+    }
+  ]
+}
