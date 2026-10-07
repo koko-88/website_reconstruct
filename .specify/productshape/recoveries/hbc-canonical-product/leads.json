@@ -1,0 +1,30 @@
+{
+  "schema": "product-definition-as-code/recovery-leads/v1alpha1",
+  "sessionId": "hbc-canonical-product",
+  "leads": [
+    {
+      "id": "L-0001",
+      "description": "Next authorized batch: inspect inherited-v1 E-050/E-080/E-085/E-086/E-090 and preference traces to independently corroborate FAQ, focus, timing and switched-history claims; do not treat report summaries as newly executed proof.",
+      "kind": "repo",
+      "status": "open",
+      "createdAt": "2026-10-07T03:07:30.353Z",
+      "source": "E-0010"
+    },
+    {
+      "id": "L-0002",
+      "description": "Next authorized batch: independently read E2-013 canonical phase assessment and E2-014 exact geometry plus named image sidecars/pixels. Parent manifest validation does not validate appearance.",
+      "kind": "repo",
+      "status": "open",
+      "createdAt": "2026-10-07T03:07:30.452Z",
+      "source": "E-0012"
+    },
+    {
+      "id": "L-0003",
+      "description": "Resolve available-media fixture inputs and concrete visual/video deviations for affected surfaces. No new download or external source is authorized; keep missing inputs separate from local reuse permission.",
+      "kind": "user",
+      "status": "open",
+      "createdAt": "2026-10-07T03:07:30.487Z",
+      "source": "E-0011"
+    }
+  ]
+}

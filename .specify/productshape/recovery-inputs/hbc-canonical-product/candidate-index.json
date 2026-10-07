@@ -1,0 +1,224 @@
+[
+  {
+    "id": "ACT-VISITOR",
+    "type": "actor",
+    "source": "PRODUCT.md Whole-product purpose and visitor outcomes; reference/haunted-boulder-city-v2/rev-2.0.0-real-01/state-route-matrix.md SR-01..32",
+    "confidence": "high"
+  },
+  {
+    "id": "BC-LOCAL-FIDELITY",
+    "type": "bounded-context",
+    "source": "PRODUCT.md Whole-product purpose / Local reference-validation mode / Exclusions",
+    "confidence": "medium"
+  },
+  {
+    "id": "TERM-REFERENCE-FIXTURE",
+    "type": "domain-term",
+    "source": "PRODUCT.md Fixture cardinality / TF-06 / TX-01; implementation-scope/pre-build-packet/README.md Precedence; implementation-scope/pre-build-packet/motion.md O/S/L",
+    "confidence": "high"
+  },
+  {
+    "id": "TERM-HOST-DIALOG",
+    "type": "domain-term",
+    "source": "PRODUCT.md Fixture cardinality / TF-06 / TX-01; implementation-scope/pre-build-packet/README.md Precedence; implementation-scope/pre-build-packet/motion.md O/S/L",
+    "confidence": "high"
+  },
+  {
+    "id": "TERM-SOURCE-DECLARATION",
+    "type": "domain-term",
+    "source": "PRODUCT.md Fixture cardinality / TF-06 / TX-01; implementation-scope/pre-build-packet/README.md Precedence; implementation-scope/pre-build-packet/motion.md O/S/L",
+    "confidence": "high"
+  },
+  {
+    "id": "CON-LOCAL-BOUNDARY",
+    "type": "constraint",
+    "source": "PRODUCT.md TX-01 / Local reference-validation mode / U-01 reassessment; AGENTS.md Canonical ownership",
+    "confidence": "high"
+  },
+  {
+    "id": "CON-EVIDENCE-BOUNDS",
+    "type": "constraint",
+    "source": "PRODUCT.md TU-01; reference/haunted-boulder-city-v2/rev-2.0.0-real-01/environment-matrix.md; reference/haunted-boulder-city-v2/rev-2.0.0-real-01/non-dom-rendering.md; implementation-scope/pre-build-packet/authority-crosswalk.md",
+    "confidence": "high"
+  },
+  {
+    "id": "CON-ADAPTATION-INPUTS",
+    "type": "constraint",
+    "source": "PRODUCT.md Asset and implementation-input availability / TA-01 / TR-01 / Separate readiness decisions",
+    "confidence": "high"
+  },
+  {
+    "id": "BR-FAQ-SETTLED",
+    "type": "business-rule",
+    "source": "implementation-scope/pre-build-packet/corrections.md COR-01; implementation-scope/pre-build-packet/motion.md M-09; reference/haunted-boulder-city-v2/rev-2.0.0-real-01/public/app.js 658..740",
+    "confidence": "high"
+  },
+  {
+    "id": "UC-ENTRY",
+    "type": "use-case",
+    "source": "PRODUCT.md P-01 / Entry; implementation-scope/pre-build-packet/motion.md M-01; reference/haunted-boulder-city-v2/rev-2.0.0-real-01/public/index.html 12",
+    "confidence": "high"
+  },
+  {
+    "id": "FR-ENTRY",
+    "type": "functional-requirement",
+    "source": "PRODUCT.md P-01 / Entry; implementation-scope/pre-build-packet/motion.md M-01; reference/haunted-boulder-city-v2/rev-2.0.0-real-01/public/index.html 12",
+    "confidence": "high"
+  },
+  {
+    "id": "UC-INFORMATION",
+    "type": "use-case",
+    "source": "PRODUCT.md P-02/05/09; implementation-scope/pre-build-packet/motion.md M-05/M-06; implementation-scope/pre-build-packet/typography-assets.md; reference/haunted-boulder-city-v2/rev-2.0.0-real-01/public/index.html 533..632",
+    "confidence": "high"
+  },
+  {
+    "id": "FR-INFORMATION",
+    "type": "functional-requirement",
+    "source": "PRODUCT.md P-02/05/09; implementation-scope/pre-build-packet/motion.md M-05/M-06; implementation-scope/pre-build-packet/typography-assets.md; reference/haunted-boulder-city-v2/rev-2.0.0-real-01/public/index.html 533..632",
+    "confidence": "high"
+  },
+  {
+    "id": "UC-STORIES",
+    "type": "use-case",
+    "source": "PRODUCT.md P-03; implementation-scope/pre-build-packet/motion.md M-06/M-07/M-12; reference/haunted-boulder-city-v2/rev-2.0.0-real-01/state-route-matrix.md SR-03..06",
+    "confidence": "high"
+  },
+  {
+    "id": "FR-STORIES",
+    "type": "functional-requirement",
+    "source": "PRODUCT.md P-03; implementation-scope/pre-build-packet/motion.md M-06/M-07/M-12; reference/haunted-boulder-city-v2/rev-2.0.0-real-01/state-route-matrix.md SR-03..06",
+    "confidence": "high"
+  },
+  {
+    "id": "UC-TOPICS",
+    "type": "use-case",
+    "source": "PRODUCT.md P-04; implementation-scope/pre-build-packet/corrections.md COR-03; implementation-scope/pre-build-packet/motion.md M-08; reference/haunted-boulder-city-v2/rev-2.0.0-real-01/public/index.html 557..578",
+    "confidence": "high"
+  },
+  {
+    "id": "FR-TOPICS",
+    "type": "functional-requirement",
+    "source": "PRODUCT.md P-04; implementation-scope/pre-build-packet/corrections.md COR-03; implementation-scope/pre-build-packet/motion.md M-08; reference/haunted-boulder-city-v2/rev-2.0.0-real-01/public/index.html 557..578",
+    "confidence": "high"
+  },
+  {
+    "id": "UC-FAQ",
+    "type": "use-case",
+    "source": "PRODUCT.md P-06; implementation-scope/pre-build-packet/corrections.md COR-01; implementation-scope/pre-build-packet/motion.md M-09",
+    "confidence": "high"
+  },
+  {
+    "id": "FR-FAQ",
+    "type": "functional-requirement",
+    "source": "PRODUCT.md P-06; implementation-scope/pre-build-packet/corrections.md COR-01; implementation-scope/pre-build-packet/motion.md M-09",
+    "confidence": "high"
+  },
+  {
+    "id": "UC-MENU",
+    "type": "use-case",
+    "source": "PRODUCT.md P-07; implementation-scope/pre-build-packet/motion.md M-10; reference/haunted-boulder-city-v2/rev-2.0.0-real-01/public/app.js 39..79",
+    "confidence": "high"
+  },
+  {
+    "id": "FR-MENU",
+    "type": "functional-requirement",
+    "source": "PRODUCT.md P-07; implementation-scope/pre-build-packet/motion.md M-10; reference/haunted-boulder-city-v2/rev-2.0.0-real-01/public/app.js 39..79",
+    "confidence": "high"
+  },
+  {
+    "id": "UC-NAVIGATION",
+    "type": "use-case",
+    "source": "PRODUCT.md PJ-02 / Scrolling-input; implementation-scope/pre-build-packet/motion.md M-06/M-10; reference/haunted-boulder-city-v2/rev-2.0.0-real-01/public/app.js 568..657",
+    "confidence": "high"
+  },
+  {
+    "id": "FR-NAVIGATION",
+    "type": "functional-requirement",
+    "source": "PRODUCT.md PJ-02 / Scrolling-input; implementation-scope/pre-build-packet/motion.md M-06/M-10; reference/haunted-boulder-city-v2/rev-2.0.0-real-01/public/app.js 568..657",
+    "confidence": "high"
+  },
+  {
+    "id": "UC-TICKET",
+    "type": "use-case",
+    "source": "PRODUCT.md P-08 / TF-06 / TX-01; implementation-scope/pre-build-packet/motion.md M-11; reference/haunted-boulder-city-v2/rev-2.0.0-real-01/state-route-matrix.md SR-25..32",
+    "confidence": "high"
+  },
+  {
+    "id": "FR-TICKET",
+    "type": "functional-requirement",
+    "source": "PRODUCT.md P-08 / TF-06 / TX-01; implementation-scope/pre-build-packet/motion.md M-11; reference/haunted-boulder-city-v2/rev-2.0.0-real-01/state-route-matrix.md SR-25..32",
+    "confidence": "high"
+  },
+  {
+    "id": "FR-PAGE-PROGRESS",
+    "type": "functional-requirement",
+    "source": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/public/index.html 505; reference/haunted-boulder-city-v2/rev-2.0.0-real-01/public/styles.css 5; reference/haunted-boulder-city-v2/rev-2.0.0-real-01/public/app.js 450..461",
+    "confidence": "medium"
+  },
+  {
+    "id": "JRN-FRESH-ENTRY",
+    "type": "journey",
+    "source": "PRODUCT.md Routes entry points and critical journeys; implementation-scope/pre-build-packet/motion.md",
+    "confidence": "high"
+  },
+  {
+    "id": "JRN-FRAGMENT-NAVIGATION",
+    "type": "journey",
+    "source": "PRODUCT.md Routes entry points and critical journeys; implementation-scope/pre-build-packet/motion.md",
+    "confidence": "high"
+  },
+  {
+    "id": "JRN-STORY-PROGRESSION",
+    "type": "journey",
+    "source": "PRODUCT.md Routes entry points and critical journeys; implementation-scope/pre-build-packet/motion.md",
+    "confidence": "high"
+  },
+  {
+    "id": "JRN-FAQ-INTERACTION",
+    "type": "journey",
+    "source": "PRODUCT.md Routes entry points and critical journeys; implementation-scope/pre-build-packet/motion.md",
+    "confidence": "high"
+  },
+  {
+    "id": "JRN-TICKET-HOST",
+    "type": "journey",
+    "source": "PRODUCT.md Routes entry points and critical journeys; implementation-scope/pre-build-packet/motion.md",
+    "confidence": "high"
+  },
+  {
+    "id": "JRN-OUTBOUND-INFORMATION",
+    "type": "journey",
+    "source": "PRODUCT.md Routes entry points and critical journeys; implementation-scope/pre-build-packet/motion.md",
+    "confidence": "high"
+  },
+  {
+    "id": "QR-VISUAL",
+    "type": "quality-requirement",
+    "source": "PRODUCT.md TF-01/02; implementation-scope/pre-build-packet/authority-crosswalk.md; implementation-scope/pre-build-packet/typography-assets.md",
+    "confidence": "high"
+  },
+  {
+    "id": "QR-MOTION",
+    "type": "quality-requirement",
+    "source": "PRODUCT.md TF-03/04 / PX-02..04; implementation-scope/pre-build-packet/motion.md; reference/haunted-boulder-city-v2/rev-2.0.0-real-01/environment-matrix.md",
+    "confidence": "high"
+  },
+  {
+    "id": "QR-ACCESSIBILITY",
+    "type": "quality-requirement",
+    "source": "PRODUCT.md TF-05 / PX-05; implementation-scope/pre-build-packet/motion.md M-09..12; reference/haunted-boulder-city-v2/rev-2.0.0-real-01/state-route-matrix.md SR-30",
+    "confidence": "high"
+  },
+  {
+    "id": "SB-FAQ-REPLACE",
+    "type": "structured-behaviour",
+    "source": "implementation-scope/pre-build-packet/corrections.md COR-01; implementation-scope/pre-build-packet/motion.md M-09",
+    "confidence": "high"
+  },
+  {
+    "id": "SB-ROOT-RETURN",
+    "type": "structured-behaviour",
+    "source": "PRODUCT.md PJ-01 / PJ-02; implementation-scope/pre-build-packet/motion.md M-06; reference/haunted-boulder-city-v2/rev-2.0.0-real-01/public/app.js 237..241",
+    "confidence": "high"
+  }
+]

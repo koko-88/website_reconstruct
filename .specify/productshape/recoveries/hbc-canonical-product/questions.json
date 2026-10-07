@@ -1,0 +1,102 @@
+{
+  "schema": "product-definition-as-code/recovery-questions/v1alpha1",
+  "sessionId": "hbc-canonical-product",
+  "questions": [
+    {
+      "id": "Q-0001",
+      "text": "Review F-01 in audit.md: Which current roadmap review gate should PRODUCT pointers name?",
+      "status": "open",
+      "createdAt": "2026-10-07T03:07:29.253Z",
+      "context": "Evidence, impact and responsible canonical owner are recorded in .specify/productshape/recoveries/hbc-canonical-product/audit.md F-01. No answer was supplied by the human and no contradiction is resolved silently.",
+      "recommendation": "Review the cited declaration/observation and decide in its existing canonical owner; keep the question open until explicit review."
+    },
+    {
+      "id": "Q-0002",
+      "text": "Review F-02 in audit.md: Confirm prospective correction of hero geometry summary against final CSS cascade.",
+      "status": "open",
+      "createdAt": "2026-10-07T03:07:29.364Z",
+      "context": "Evidence, impact and responsible canonical owner are recorded in .specify/productshape/recoveries/hbc-canonical-product/audit.md F-02. No answer was supplied by the human and no contradiction is resolved silently.",
+      "recommendation": "Review the cited declaration/observation and decide in its existing canonical owner; keep the question open until explicit review."
+    },
+    {
+      "id": "Q-0003",
+      "text": "Review F-03 in audit.md: Is page scroll-progress explicitly required, and which owner accepts it?",
+      "status": "open",
+      "createdAt": "2026-10-07T03:07:29.439Z",
+      "context": "Evidence, impact and responsible canonical owner are recorded in .specify/productshape/recoveries/hbc-canonical-product/audit.md F-03. No answer was supplied by the human and no contradiction is resolved silently.",
+      "recommendation": "Review the cited declaration/observation and decide in its existing canonical owner; keep the question open until explicit review."
+    },
+    {
+      "id": "Q-0004",
+      "text": "Review F-04 in audit.md: Which switched preference behaviours are retained, corrected or deliberately left unknown?",
+      "status": "open",
+      "createdAt": "2026-10-07T03:07:29.513Z",
+      "context": "Evidence, impact and responsible canonical owner are recorded in .specify/productshape/recoveries/hbc-canonical-product/audit.md F-04. No answer was supplied by the human and no contradiction is resolved silently.",
+      "recommendation": "Review the cited declaration/observation and decide in its existing canonical owner; keep the question open until explicit review."
+    },
+    {
+      "id": "Q-0005",
+      "text": "Review F-05 in audit.md: What exact non-transactional local host interior and loading/ready/fallback fixture is accepted?",
+      "status": "open",
+      "createdAt": "2026-10-07T03:07:29.619Z",
+      "context": "Evidence, impact and responsible canonical owner are recorded in .specify/productshape/recoveries/hbc-canonical-product/audit.md F-05. No answer was supplied by the human and no contradiction is resolved silently.",
+      "recommendation": "Review the cited declaration/observation and decide in its existing canonical owner; keep the question open until explicit review."
+    },
+    {
+      "id": "Q-0006",
+      "text": "Review F-06 in audit.md: What is the product disposition for loader/menu/dialog overlap and focus/Escape arbitration?",
+      "status": "open",
+      "createdAt": "2026-10-07T03:07:29.715Z",
+      "context": "Evidence, impact and responsible canonical owner are recorded in .specify/productshape/recoveries/hbc-canonical-product/audit.md F-06. No answer was supplied by the human and no contradiction is resolved silently.",
+      "recommendation": "Review the cited declaration/observation and decide in its existing canonical owner; keep the question open until explicit review."
+    },
+    {
+      "id": "Q-0007",
+      "text": "Review F-07 in audit.md: What focus and pointer eligibility is accepted during overlay closing before native hidden?",
+      "status": "open",
+      "createdAt": "2026-10-07T03:07:29.803Z",
+      "context": "Evidence, impact and responsible canonical owner are recorded in .specify/productshape/recoveries/hbc-canonical-product/audit.md F-07. No answer was supplied by the human and no contradiction is resolved silently.",
+      "recommendation": "Review the cited declaration/observation and decide in its existing canonical owner; keep the question open until explicit review."
+    },
+    {
+      "id": "Q-0008",
+      "text": "Review F-08 in audit.md: What focus/reset/persistence relationships apply to each navigation transition and input mode?",
+      "status": "open",
+      "createdAt": "2026-10-07T03:07:29.892Z",
+      "context": "Evidence, impact and responsible canonical owner are recorded in .specify/productshape/recoveries/hbc-canonical-product/audit.md F-08. No answer was supplied by the human and no contradiction is resolved silently.",
+      "recommendation": "Review the cited declaration/observation and decide in its existing canonical owner; keep the question open until explicit review."
+    },
+    {
+      "id": "Q-0009",
+      "text": "Review F-09 in audit.md: Which concrete available inputs or measured deviations satisfy each missing visual/media fixture?",
+      "status": "open",
+      "createdAt": "2026-10-07T03:07:30.001Z",
+      "context": "Evidence, impact and responsible canonical owner are recorded in .specify/productshape/recoveries/hbc-canonical-product/audit.md F-09. No answer was supplied by the human and no contradiction is resolved silently.",
+      "recommendation": "Review the cited declaration/observation and decide in its existing canonical owner; keep the question open until explicit review."
+    },
+    {
+      "id": "Q-0010",
+      "text": "Review F-10 in audit.md: Is correcting the observed dialog Tab escape required before local acceptance?",
+      "status": "open",
+      "createdAt": "2026-10-07T03:07:30.075Z",
+      "context": "Evidence, impact and responsible canonical owner are recorded in .specify/productshape/recoveries/hbc-canonical-product/audit.md F-10. No answer was supplied by the human and no contradiction is resolved silently.",
+      "recommendation": "Review the cited declaration/observation and decide in its existing canonical owner; keep the question open until explicit review."
+    },
+    {
+      "id": "Q-0011",
+      "text": "Review F-11 in audit.md: Which owner accepts the ticket review cue and which accepts creator-media proof?",
+      "status": "open",
+      "createdAt": "2026-10-07T03:07:30.158Z",
+      "context": "Evidence, impact and responsible canonical owner are recorded in .specify/productshape/recoveries/hbc-canonical-product/audit.md F-11. No answer was supplied by the human and no contradiction is resolved silently.",
+      "recommendation": "Review the cited declaration/observation and decide in its existing canonical owner; keep the question open until explicit review."
+    },
+    {
+      "id": "Q-0012",
+      "text": "Review F-12 in audit.md: What visibility/cancellation rule applies separately to each effect and overlay clock?",
+      "status": "open",
+      "createdAt": "2026-10-07T03:07:30.257Z",
+      "context": "Evidence, impact and responsible canonical owner are recorded in .specify/productshape/recoveries/hbc-canonical-product/audit.md F-12. No answer was supplied by the human and no contradiction is resolved silently.",
+      "recommendation": "Review the cited declaration/observation and decide in its existing canonical owner; keep the question open until explicit review."
+    }
+  ]
+}

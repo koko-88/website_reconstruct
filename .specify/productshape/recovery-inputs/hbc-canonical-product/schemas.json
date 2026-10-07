@@ -1,0 +1,1287 @@
+{
+  "schema": "product-definition-as-code/frontmatter-reference/v1alpha1",
+  "kinds": [
+    {
+      "kind": "actor",
+      "title": "Actor frontmatter",
+      "closed": true,
+      "fields": [
+        {
+          "name": "id",
+          "required": true,
+          "kind": "string",
+          "pattern": "^ACT-[A-Z0-9]+(-[A-Z0-9]+)*$"
+        },
+        {
+          "name": "type",
+          "required": true,
+          "kind": "const",
+          "constValue": "actor"
+        },
+        {
+          "name": "title",
+          "required": true,
+          "kind": "string",
+          "minLength": 1
+        },
+        {
+          "name": "status",
+          "required": true,
+          "kind": "enum",
+          "values": [
+            "draft",
+            "active",
+            "deprecated",
+            "retired"
+          ],
+          "description": "Lifecycle of a product artifact."
+        },
+        {
+          "name": "actor-kind",
+          "required": true,
+          "kind": "enum",
+          "values": [
+            "human",
+            "external-system",
+            "scheduled-process",
+            "product"
+          ]
+        },
+        {
+          "name": "provenance",
+          "required": false,
+          "kind": "object",
+          "description": "Evidence behind recovered knowledge. Set on recovered (brownfield) artifacts only.",
+          "properties": [
+            {
+              "name": "provenance.source",
+              "required": true,
+              "kind": "string",
+              "minLength": 1,
+              "description": "Where the knowledge came from: a file path, a URL, a ticket reference, or 'interview: <person>'."
+            },
+            {
+              "name": "provenance.confidence",
+              "required": true,
+              "kind": "enum",
+              "values": [
+                "high",
+                "medium",
+                "low"
+              ],
+              "description": "high: read directly from a specification scenario or a test. medium: inferred from structured prose. low: inferred from indirect evidence such as a variable name."
+            },
+            {
+              "name": "provenance.recovered-from",
+              "required": false,
+              "kind": "enum",
+              "values": [
+                "observation",
+                "inference",
+                "interview",
+                "documentation"
+              ],
+              "description": "How the knowledge was recovered from the evidence."
+            }
+          ]
+        }
+      ],
+      "idPrefix": "ACT",
+      "bodySections": [
+        "Purpose",
+        "Goals",
+        "Responsibilities",
+        "Boundaries"
+      ]
+    },
+    {
+      "kind": "bounded-context",
+      "title": "Bounded context frontmatter",
+      "closed": true,
+      "fields": [
+        {
+          "name": "id",
+          "required": true,
+          "kind": "string",
+          "pattern": "^BC-[A-Z0-9]+(-[A-Z0-9]+)*$"
+        },
+        {
+          "name": "type",
+          "required": true,
+          "kind": "const",
+          "constValue": "bounded-context"
+        },
+        {
+          "name": "title",
+          "required": true,
+          "kind": "string",
+          "minLength": 1
+        },
+        {
+          "name": "status",
+          "required": true,
+          "kind": "enum",
+          "values": [
+            "draft",
+            "active",
+            "deprecated",
+            "retired"
+          ],
+          "description": "Lifecycle of a product artifact."
+        },
+        {
+          "name": "provenance",
+          "required": false,
+          "kind": "object",
+          "description": "Evidence behind recovered knowledge. Set on recovered (brownfield) artifacts only.",
+          "properties": [
+            {
+              "name": "provenance.source",
+              "required": true,
+              "kind": "string",
+              "minLength": 1,
+              "description": "Where the knowledge came from: a file path, a URL, a ticket reference, or 'interview: <person>'."
+            },
+            {
+              "name": "provenance.confidence",
+              "required": true,
+              "kind": "enum",
+              "values": [
+                "high",
+                "medium",
+                "low"
+              ],
+              "description": "high: read directly from a specification scenario or a test. medium: inferred from structured prose. low: inferred from indirect evidence such as a variable name."
+            },
+            {
+              "name": "provenance.recovered-from",
+              "required": false,
+              "kind": "enum",
+              "values": [
+                "observation",
+                "inference",
+                "interview",
+                "documentation"
+              ],
+              "description": "How the knowledge was recovered from the evidence."
+            }
+          ]
+        }
+      ],
+      "description": "Term ownership is derived from Domain Term.defined-in; owns-terms is deliberately not an authored property.",
+      "idPrefix": "BC",
+      "bodySections": [
+        "Responsibility",
+        "Language",
+        "Boundaries",
+        "External Relationships"
+      ]
+    },
+    {
+      "kind": "business-rule",
+      "title": "Business rule frontmatter",
+      "closed": true,
+      "fields": [
+        {
+          "name": "id",
+          "required": true,
+          "kind": "string",
+          "pattern": "^BR-[A-Z0-9]+(-[A-Z0-9]+)*$"
+        },
+        {
+          "name": "type",
+          "required": true,
+          "kind": "const",
+          "constValue": "business-rule"
+        },
+        {
+          "name": "title",
+          "required": true,
+          "kind": "string",
+          "minLength": 1
+        },
+        {
+          "name": "status",
+          "required": true,
+          "kind": "enum",
+          "values": [
+            "draft",
+            "active",
+            "deprecated",
+            "retired"
+          ],
+          "description": "Lifecycle of a product artifact."
+        },
+        {
+          "name": "applies-to",
+          "required": false,
+          "kind": "array",
+          "items": {
+            "name": "applies-to[]",
+            "required": true,
+            "kind": "string",
+            "pattern": "^(JRN|UC|BC)-[A-Z0-9]+(-[A-Z0-9]+)*$",
+            "description": "A journey, use case or bounded context."
+          }
+        },
+        {
+          "name": "uses-terms",
+          "required": false,
+          "kind": "array",
+          "items": {
+            "name": "uses-terms[]",
+            "required": true,
+            "kind": "string",
+            "pattern": "^TERM-[A-Z0-9]+(-[A-Z0-9]+)*$"
+          }
+        },
+        {
+          "name": "provenance",
+          "required": false,
+          "kind": "object",
+          "description": "Evidence behind recovered knowledge. Set on recovered (brownfield) artifacts only.",
+          "properties": [
+            {
+              "name": "provenance.source",
+              "required": true,
+              "kind": "string",
+              "minLength": 1,
+              "description": "Where the knowledge came from: a file path, a URL, a ticket reference, or 'interview: <person>'."
+            },
+            {
+              "name": "provenance.confidence",
+              "required": true,
+              "kind": "enum",
+              "values": [
+                "high",
+                "medium",
+                "low"
+              ],
+              "description": "high: read directly from a specification scenario or a test. medium: inferred from structured prose. low: inferred from indirect evidence such as a variable name."
+            },
+            {
+              "name": "provenance.recovered-from",
+              "required": false,
+              "kind": "enum",
+              "values": [
+                "observation",
+                "inference",
+                "interview",
+                "documentation"
+              ],
+              "description": "How the knowledge was recovered from the evidence."
+            }
+          ]
+        }
+      ],
+      "idPrefix": "BR",
+      "bodySections": [
+        "Rule",
+        "Rationale",
+        "Examples",
+        "Exceptions"
+      ]
+    },
+    {
+      "kind": "constraint",
+      "title": "Constraint frontmatter",
+      "closed": true,
+      "fields": [
+        {
+          "name": "id",
+          "required": true,
+          "kind": "string",
+          "pattern": "^CON-[A-Z0-9]+(-[A-Z0-9]+)*$"
+        },
+        {
+          "name": "type",
+          "required": true,
+          "kind": "const",
+          "constValue": "constraint"
+        },
+        {
+          "name": "title",
+          "required": true,
+          "kind": "string",
+          "minLength": 1
+        },
+        {
+          "name": "status",
+          "required": true,
+          "kind": "enum",
+          "values": [
+            "draft",
+            "active",
+            "deprecated",
+            "retired"
+          ],
+          "description": "Lifecycle of a product artifact."
+        },
+        {
+          "name": "applies-to",
+          "required": false,
+          "kind": "array",
+          "items": {
+            "name": "applies-to[]",
+            "required": true,
+            "kind": "string",
+            "pattern": "^(JRN|UC|BC)-[A-Z0-9]+(-[A-Z0-9]+)*$",
+            "description": "A journey, use case or bounded context."
+          }
+        },
+        {
+          "name": "uses-terms",
+          "required": false,
+          "kind": "array",
+          "items": {
+            "name": "uses-terms[]",
+            "required": true,
+            "kind": "string",
+            "pattern": "^TERM-[A-Z0-9]+(-[A-Z0-9]+)*$"
+          }
+        },
+        {
+          "name": "provenance",
+          "required": false,
+          "kind": "object",
+          "description": "Evidence behind recovered knowledge. Set on recovered (brownfield) artifacts only.",
+          "properties": [
+            {
+              "name": "provenance.source",
+              "required": true,
+              "kind": "string",
+              "minLength": 1,
+              "description": "Where the knowledge came from: a file path, a URL, a ticket reference, or 'interview: <person>'."
+            },
+            {
+              "name": "provenance.confidence",
+              "required": true,
+              "kind": "enum",
+              "values": [
+                "high",
+                "medium",
+                "low"
+              ],
+              "description": "high: read directly from a specification scenario or a test. medium: inferred from structured prose. low: inferred from indirect evidence such as a variable name."
+            },
+            {
+              "name": "provenance.recovered-from",
+              "required": false,
+              "kind": "enum",
+              "values": [
+                "observation",
+                "inference",
+                "interview",
+                "documentation"
+              ],
+              "description": "How the knowledge was recovered from the evidence."
+            }
+          ]
+        }
+      ],
+      "description": "When applies-to is absent the constraint applies to the entire product.",
+      "idPrefix": "CON",
+      "bodySections": [
+        "Constraint",
+        "Rationale",
+        "Consequences"
+      ]
+    },
+    {
+      "kind": "domain-term",
+      "title": "Domain term frontmatter",
+      "closed": true,
+      "fields": [
+        {
+          "name": "id",
+          "required": true,
+          "kind": "string",
+          "pattern": "^TERM-[A-Z0-9]+(-[A-Z0-9]+)*$"
+        },
+        {
+          "name": "type",
+          "required": true,
+          "kind": "const",
+          "constValue": "domain-term"
+        },
+        {
+          "name": "title",
+          "required": true,
+          "kind": "string",
+          "minLength": 1
+        },
+        {
+          "name": "status",
+          "required": true,
+          "kind": "enum",
+          "values": [
+            "draft",
+            "active",
+            "deprecated",
+            "retired"
+          ],
+          "description": "Lifecycle of a product artifact."
+        },
+        {
+          "name": "defined-in",
+          "required": true,
+          "kind": "string",
+          "pattern": "^BC-[A-Z0-9]+(-[A-Z0-9]+)*$",
+          "description": "Canonical direction of term ownership. Bounded contexts never author owns-terms."
+        },
+        {
+          "name": "synonyms",
+          "required": false,
+          "kind": "array",
+          "items": {
+            "name": "synonyms[]",
+            "required": true,
+            "kind": "string",
+            "minLength": 1
+          }
+        },
+        {
+          "name": "uses-terms",
+          "required": false,
+          "kind": "array",
+          "items": {
+            "name": "uses-terms[]",
+            "required": true,
+            "kind": "string",
+            "pattern": "^TERM-[A-Z0-9]+(-[A-Z0-9]+)*$"
+          }
+        },
+        {
+          "name": "provenance",
+          "required": false,
+          "kind": "object",
+          "description": "Evidence behind recovered knowledge. Set on recovered (brownfield) artifacts only.",
+          "properties": [
+            {
+              "name": "provenance.source",
+              "required": true,
+              "kind": "string",
+              "minLength": 1,
+              "description": "Where the knowledge came from: a file path, a URL, a ticket reference, or 'interview: <person>'."
+            },
+            {
+              "name": "provenance.confidence",
+              "required": true,
+              "kind": "enum",
+              "values": [
+                "high",
+                "medium",
+                "low"
+              ],
+              "description": "high: read directly from a specification scenario or a test. medium: inferred from structured prose. low: inferred from indirect evidence such as a variable name."
+            },
+            {
+              "name": "provenance.recovered-from",
+              "required": false,
+              "kind": "enum",
+              "values": [
+                "observation",
+                "inference",
+                "interview",
+                "documentation"
+              ],
+              "description": "How the knowledge was recovered from the evidence."
+            }
+          ]
+        }
+      ],
+      "idPrefix": "TERM",
+      "bodySections": [
+        "Definition",
+        "Distinguish From",
+        "Usage"
+      ]
+    },
+    {
+      "kind": "functional-requirement",
+      "title": "Functional requirement frontmatter",
+      "closed": true,
+      "fields": [
+        {
+          "name": "id",
+          "required": true,
+          "kind": "string",
+          "pattern": "^FR-[A-Z0-9]+(-[A-Z0-9]+)*$"
+        },
+        {
+          "name": "type",
+          "required": true,
+          "kind": "const",
+          "constValue": "functional-requirement"
+        },
+        {
+          "name": "title",
+          "required": true,
+          "kind": "string",
+          "minLength": 1
+        },
+        {
+          "name": "status",
+          "required": true,
+          "kind": "enum",
+          "values": [
+            "draft",
+            "active",
+            "deprecated",
+            "retired"
+          ],
+          "description": "Lifecycle of a product artifact."
+        },
+        {
+          "name": "derived-from",
+          "required": true,
+          "kind": "array",
+          "minItems": 1,
+          "description": "Traceability to the use cases, business rules or constraints this requirement originates from.",
+          "items": {
+            "name": "derived-from[]",
+            "required": true,
+            "kind": "string",
+            "pattern": "^(UC|BR|CON)-[A-Z0-9]+(-[A-Z0-9]+)*$"
+          }
+        },
+        {
+          "name": "verification",
+          "required": true,
+          "kind": "array",
+          "minItems": 1,
+          "description": "One or more inline verification scenarios or Structured Behaviour references.",
+          "items": {
+            "name": "verification[]",
+            "required": true,
+            "kind": "one-of",
+            "variants": [
+              {
+                "name": "verification[]",
+                "required": true,
+                "kind": "object",
+                "properties": [
+                  {
+                    "name": "verification[].scenario",
+                    "required": true,
+                    "kind": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "name": "verification[].id",
+                    "required": false,
+                    "kind": "string",
+                    "pattern": "^[A-Z0-9]+(-[A-Z0-9]+)*$",
+                    "description": "Optional stable id, unique within the artifact. When present, the inline scenario is citable via anchor (see the Citation Contract)."
+                  }
+                ]
+              },
+              {
+                "name": "verification[]",
+                "required": true,
+                "kind": "object",
+                "properties": [
+                  {
+                    "name": "verification[].scenario-ref",
+                    "required": true,
+                    "kind": "string",
+                    "pattern": "^SB-[A-Z0-9]+(-[A-Z0-9]+)*$"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "uses-terms",
+          "required": false,
+          "kind": "array",
+          "items": {
+            "name": "uses-terms[]",
+            "required": true,
+            "kind": "string",
+            "pattern": "^TERM-[A-Z0-9]+(-[A-Z0-9]+)*$"
+          }
+        },
+        {
+          "name": "provenance",
+          "required": false,
+          "kind": "object",
+          "description": "Evidence behind recovered knowledge. Set on recovered (brownfield) artifacts only.",
+          "properties": [
+            {
+              "name": "provenance.source",
+              "required": true,
+              "kind": "string",
+              "minLength": 1,
+              "description": "Where the knowledge came from: a file path, a URL, a ticket reference, or 'interview: <person>'."
+            },
+            {
+              "name": "provenance.confidence",
+              "required": true,
+              "kind": "enum",
+              "values": [
+                "high",
+                "medium",
+                "low"
+              ],
+              "description": "high: read directly from a specification scenario or a test. medium: inferred from structured prose. low: inferred from indirect evidence such as a variable name."
+            },
+            {
+              "name": "provenance.recovered-from",
+              "required": false,
+              "kind": "enum",
+              "values": [
+                "observation",
+                "inference",
+                "interview",
+                "documentation"
+              ],
+              "description": "How the knowledge was recovered from the evidence."
+            }
+          ]
+        }
+      ],
+      "idPrefix": "FR",
+      "bodySections": [
+        "Requirement",
+        "Rationale"
+      ]
+    },
+    {
+      "kind": "journey",
+      "title": "Journey frontmatter",
+      "closed": true,
+      "fields": [
+        {
+          "name": "id",
+          "required": true,
+          "kind": "string",
+          "pattern": "^JRN-[A-Z0-9]+(-[A-Z0-9]+)*$"
+        },
+        {
+          "name": "type",
+          "required": true,
+          "kind": "const",
+          "constValue": "journey"
+        },
+        {
+          "name": "title",
+          "required": true,
+          "kind": "string",
+          "minLength": 1
+        },
+        {
+          "name": "status",
+          "required": true,
+          "kind": "enum",
+          "values": [
+            "draft",
+            "active",
+            "deprecated",
+            "retired"
+          ],
+          "description": "Lifecycle of a product artifact."
+        },
+        {
+          "name": "primary-actor",
+          "required": true,
+          "kind": "string",
+          "pattern": "^ACT-[A-Z0-9]+(-[A-Z0-9]+)*$"
+        },
+        {
+          "name": "steps",
+          "required": true,
+          "kind": "array",
+          "minItems": 1,
+          "description": "The main ordered journey. Branches and exceptional paths belong in the body.",
+          "items": {
+            "name": "steps[]",
+            "required": true,
+            "kind": "object",
+            "properties": [
+              {
+                "name": "steps[].use-case",
+                "required": true,
+                "kind": "string",
+                "pattern": "^UC-[A-Z0-9]+(-[A-Z0-9]+)*$"
+              }
+            ]
+          }
+        },
+        {
+          "name": "provenance",
+          "required": false,
+          "kind": "object",
+          "description": "Evidence behind recovered knowledge. Set on recovered (brownfield) artifacts only.",
+          "properties": [
+            {
+              "name": "provenance.source",
+              "required": true,
+              "kind": "string",
+              "minLength": 1,
+              "description": "Where the knowledge came from: a file path, a URL, a ticket reference, or 'interview: <person>'."
+            },
+            {
+              "name": "provenance.confidence",
+              "required": true,
+              "kind": "enum",
+              "values": [
+                "high",
+                "medium",
+                "low"
+              ],
+              "description": "high: read directly from a specification scenario or a test. medium: inferred from structured prose. low: inferred from indirect evidence such as a variable name."
+            },
+            {
+              "name": "provenance.recovered-from",
+              "required": false,
+              "kind": "enum",
+              "values": [
+                "observation",
+                "inference",
+                "interview",
+                "documentation"
+              ],
+              "description": "How the knowledge was recovered from the evidence."
+            }
+          ]
+        }
+      ],
+      "idPrefix": "JRN",
+      "bodySections": [
+        "Intended Outcome",
+        "Entry Conditions",
+        "Journey Narrative",
+        "Variants and Branches",
+        "Completion Conditions"
+      ]
+    },
+    {
+      "kind": "product-change",
+      "title": "Product change frontmatter",
+      "closed": true,
+      "fields": [
+        {
+          "name": "id",
+          "required": true,
+          "kind": "string",
+          "pattern": "^CHG-[A-Z0-9]+(-[A-Z0-9]+)*$"
+        },
+        {
+          "name": "type",
+          "required": true,
+          "kind": "const",
+          "constValue": "product-change"
+        },
+        {
+          "name": "title",
+          "required": true,
+          "kind": "string",
+          "minLength": 1
+        },
+        {
+          "name": "status",
+          "required": true,
+          "kind": "enum",
+          "values": [
+            "draft",
+            "proposed",
+            "approved",
+            "applied",
+            "rejected",
+            "superseded"
+          ],
+          "description": "Lifecycle of a product change."
+        },
+        {
+          "name": "base-revision",
+          "required": true,
+          "kind": "string",
+          "pattern": "^[0-9a-f]{7,40}$",
+          "description": "The baseline Git revision this change was created against. The exact string 0000000 is the no-baseline sentinel only for CHG-INITIAL."
+        },
+        {
+          "name": "operations",
+          "required": true,
+          "kind": "object",
+          "properties": [
+            {
+              "name": "operations.add",
+              "required": true,
+              "kind": "array",
+              "items": {
+                "name": "operations.add[]",
+                "required": true,
+                "kind": "string",
+                "pattern": "^(ACT|JRN|UC|BR|TERM|BC|FR|QR|CON|SB)-[A-Z0-9]+(-[A-Z0-9]+)*$",
+                "description": "Any artifact of the current product model."
+              }
+            },
+            {
+              "name": "operations.modify",
+              "required": true,
+              "kind": "array",
+              "items": {
+                "name": "operations.modify[]",
+                "required": true,
+                "kind": "string",
+                "pattern": "^(ACT|JRN|UC|BR|TERM|BC|FR|QR|CON|SB)-[A-Z0-9]+(-[A-Z0-9]+)*$",
+                "description": "Any artifact of the current product model."
+              }
+            },
+            {
+              "name": "operations.remove",
+              "required": true,
+              "kind": "array",
+              "items": {
+                "name": "operations.remove[]",
+                "required": true,
+                "kind": "string",
+                "pattern": "^(ACT|JRN|UC|BR|TERM|BC|FR|QR|CON|SB)-[A-Z0-9]+(-[A-Z0-9]+)*$",
+                "description": "Any artifact of the current product model."
+              }
+            }
+          ]
+        }
+      ],
+      "idPrefix": "CHG",
+      "bodySections": [
+        "Problem",
+        "Intended Product Outcome",
+        "Rationale",
+        "Affected Product Areas",
+        "Open Questions",
+        "Product Acceptance",
+        "Out of Scope"
+      ]
+    },
+    {
+      "kind": "quality-requirement",
+      "title": "Quality requirement frontmatter",
+      "closed": true,
+      "fields": [
+        {
+          "name": "id",
+          "required": true,
+          "kind": "string",
+          "pattern": "^QR-[A-Z0-9]+(-[A-Z0-9]+)*$"
+        },
+        {
+          "name": "type",
+          "required": true,
+          "kind": "const",
+          "constValue": "quality-requirement"
+        },
+        {
+          "name": "title",
+          "required": true,
+          "kind": "string",
+          "minLength": 1
+        },
+        {
+          "name": "status",
+          "required": true,
+          "kind": "enum",
+          "values": [
+            "draft",
+            "active",
+            "deprecated",
+            "retired"
+          ],
+          "description": "Lifecycle of a product artifact."
+        },
+        {
+          "name": "quality-attribute",
+          "required": true,
+          "kind": "string",
+          "minLength": 1
+        },
+        {
+          "name": "applies-to",
+          "required": true,
+          "kind": "array",
+          "minItems": 1,
+          "items": {
+            "name": "applies-to[]",
+            "required": true,
+            "kind": "string",
+            "pattern": "^(JRN|UC|BC)-[A-Z0-9]+(-[A-Z0-9]+)*$",
+            "description": "A journey, use case or bounded context."
+          }
+        },
+        {
+          "name": "verification",
+          "required": true,
+          "kind": "array",
+          "minItems": 1,
+          "description": "One or more inline verification scenarios or Structured Behaviour references.",
+          "items": {
+            "name": "verification[]",
+            "required": true,
+            "kind": "one-of",
+            "variants": [
+              {
+                "name": "verification[]",
+                "required": true,
+                "kind": "object",
+                "properties": [
+                  {
+                    "name": "verification[].scenario",
+                    "required": true,
+                    "kind": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "name": "verification[].id",
+                    "required": false,
+                    "kind": "string",
+                    "pattern": "^[A-Z0-9]+(-[A-Z0-9]+)*$",
+                    "description": "Optional stable id, unique within the artifact. When present, the inline scenario is citable via anchor (see the Citation Contract)."
+                  }
+                ]
+              },
+              {
+                "name": "verification[]",
+                "required": true,
+                "kind": "object",
+                "properties": [
+                  {
+                    "name": "verification[].scenario-ref",
+                    "required": true,
+                    "kind": "string",
+                    "pattern": "^SB-[A-Z0-9]+(-[A-Z0-9]+)*$"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "uses-terms",
+          "required": false,
+          "kind": "array",
+          "items": {
+            "name": "uses-terms[]",
+            "required": true,
+            "kind": "string",
+            "pattern": "^TERM-[A-Z0-9]+(-[A-Z0-9]+)*$"
+          }
+        },
+        {
+          "name": "provenance",
+          "required": false,
+          "kind": "object",
+          "description": "Evidence behind recovered knowledge. Set on recovered (brownfield) artifacts only.",
+          "properties": [
+            {
+              "name": "provenance.source",
+              "required": true,
+              "kind": "string",
+              "minLength": 1,
+              "description": "Where the knowledge came from: a file path, a URL, a ticket reference, or 'interview: <person>'."
+            },
+            {
+              "name": "provenance.confidence",
+              "required": true,
+              "kind": "enum",
+              "values": [
+                "high",
+                "medium",
+                "low"
+              ],
+              "description": "high: read directly from a specification scenario or a test. medium: inferred from structured prose. low: inferred from indirect evidence such as a variable name."
+            },
+            {
+              "name": "provenance.recovered-from",
+              "required": false,
+              "kind": "enum",
+              "values": [
+                "observation",
+                "inference",
+                "interview",
+                "documentation"
+              ],
+              "description": "How the knowledge was recovered from the evidence."
+            }
+          ]
+        }
+      ],
+      "idPrefix": "QR",
+      "bodySections": [
+        "Requirement",
+        "Measurement"
+      ]
+    },
+    {
+      "kind": "structured-behaviour",
+      "title": "Structured behaviour frontmatter",
+      "closed": true,
+      "fields": [
+        {
+          "name": "id",
+          "required": true,
+          "kind": "string",
+          "pattern": "^SB-[A-Z0-9]+(-[A-Z0-9]+)*$"
+        },
+        {
+          "name": "type",
+          "required": true,
+          "kind": "const",
+          "constValue": "structured-behaviour"
+        },
+        {
+          "name": "title",
+          "required": true,
+          "kind": "string",
+          "minLength": 1
+        },
+        {
+          "name": "status",
+          "required": true,
+          "kind": "enum",
+          "values": [
+            "draft",
+            "active",
+            "deprecated",
+            "retired"
+          ],
+          "description": "Lifecycle of a product artifact."
+        },
+        {
+          "name": "illustrates",
+          "required": true,
+          "kind": "array",
+          "minItems": 1,
+          "description": "Product semantics made concrete by this example.",
+          "items": {
+            "name": "illustrates[]",
+            "required": true,
+            "kind": "string",
+            "pattern": "^(UC|BR|CON)-[A-Z0-9]+(-[A-Z0-9]+)*$",
+            "description": "A use case, business rule or constraint."
+          }
+        },
+        {
+          "name": "given",
+          "required": false,
+          "kind": "array",
+          "minItems": 1,
+          "description": "Observable context or preconditions. Entries are ordered and conjunctive.",
+          "items": {
+            "name": "given[]",
+            "required": true,
+            "kind": "string",
+            "minLength": 1,
+            "description": "A format-neutral product-level clause without a leading GIVEN, WHEN, THEN or AND keyword in any letter case."
+          }
+        },
+        {
+          "name": "when",
+          "required": true,
+          "kind": "string",
+          "minLength": 1,
+          "description": "The single product-level stimulus, action or event."
+        },
+        {
+          "name": "then",
+          "required": true,
+          "kind": "array",
+          "minItems": 1,
+          "description": "Observable expected outcomes. Entries are ordered and conjunctive.",
+          "items": {
+            "name": "then[]",
+            "required": true,
+            "kind": "string",
+            "minLength": 1,
+            "description": "A format-neutral product-level clause without a leading GIVEN, WHEN, THEN or AND keyword in any letter case."
+          }
+        },
+        {
+          "name": "uses-terms",
+          "required": false,
+          "kind": "array",
+          "items": {
+            "name": "uses-terms[]",
+            "required": true,
+            "kind": "string",
+            "pattern": "^TERM-[A-Z0-9]+(-[A-Z0-9]+)*$"
+          }
+        },
+        {
+          "name": "provenance",
+          "required": false,
+          "kind": "object",
+          "description": "Evidence behind recovered knowledge. Set on recovered (brownfield) artifacts only.",
+          "properties": [
+            {
+              "name": "provenance.source",
+              "required": true,
+              "kind": "string",
+              "minLength": 1,
+              "description": "Where the knowledge came from: a file path, a URL, a ticket reference, or 'interview: <person>'."
+            },
+            {
+              "name": "provenance.confidence",
+              "required": true,
+              "kind": "enum",
+              "values": [
+                "high",
+                "medium",
+                "low"
+              ],
+              "description": "high: read directly from a specification scenario or a test. medium: inferred from structured prose. low: inferred from indirect evidence such as a variable name."
+            },
+            {
+              "name": "provenance.recovered-from",
+              "required": false,
+              "kind": "enum",
+              "values": [
+                "observation",
+                "inference",
+                "interview",
+                "documentation"
+              ],
+              "description": "How the knowledge was recovered from the evidence."
+            }
+          ]
+        }
+      ],
+      "idPrefix": "SB",
+      "bodySections": [
+        "Intent",
+        "Boundaries"
+      ]
+    },
+    {
+      "kind": "use-case",
+      "title": "Use case frontmatter",
+      "closed": true,
+      "fields": [
+        {
+          "name": "id",
+          "required": true,
+          "kind": "string",
+          "pattern": "^UC-[A-Z0-9]+(-[A-Z0-9]+)*$"
+        },
+        {
+          "name": "type",
+          "required": true,
+          "kind": "const",
+          "constValue": "use-case"
+        },
+        {
+          "name": "title",
+          "required": true,
+          "kind": "string",
+          "minLength": 1
+        },
+        {
+          "name": "status",
+          "required": true,
+          "kind": "enum",
+          "values": [
+            "draft",
+            "active",
+            "deprecated",
+            "retired"
+          ],
+          "description": "Lifecycle of a product artifact."
+        },
+        {
+          "name": "primary-actor",
+          "required": true,
+          "kind": "string",
+          "pattern": "^ACT-[A-Z0-9]+(-[A-Z0-9]+)*$"
+        },
+        {
+          "name": "supporting-actors",
+          "required": false,
+          "kind": "array",
+          "items": {
+            "name": "supporting-actors[]",
+            "required": true,
+            "kind": "string",
+            "pattern": "^ACT-[A-Z0-9]+(-[A-Z0-9]+)*$"
+          }
+        },
+        {
+          "name": "bounded-context",
+          "required": false,
+          "kind": "string",
+          "pattern": "^BC-[A-Z0-9]+(-[A-Z0-9]+)*$"
+        },
+        {
+          "name": "governed-by",
+          "required": false,
+          "kind": "array",
+          "items": {
+            "name": "governed-by[]",
+            "required": true,
+            "kind": "string",
+            "pattern": "^BR-[A-Z0-9]+(-[A-Z0-9]+)*$"
+          }
+        },
+        {
+          "name": "uses-terms",
+          "required": false,
+          "kind": "array",
+          "items": {
+            "name": "uses-terms[]",
+            "required": true,
+            "kind": "string",
+            "pattern": "^TERM-[A-Z0-9]+(-[A-Z0-9]+)*$"
+          }
+        },
+        {
+          "name": "provenance",
+          "required": false,
+          "kind": "object",
+          "description": "Evidence behind recovered knowledge. Set on recovered (brownfield) artifacts only.",
+          "properties": [
+            {
+              "name": "provenance.source",
+              "required": true,
+              "kind": "string",
+              "minLength": 1,
+              "description": "Where the knowledge came from: a file path, a URL, a ticket reference, or 'interview: <person>'."
+            },
+            {
+              "name": "provenance.confidence",
+              "required": true,
+              "kind": "enum",
+              "values": [
+                "high",
+                "medium",
+                "low"
+              ],
+              "description": "high: read directly from a specification scenario or a test. medium: inferred from structured prose. low: inferred from indirect evidence such as a variable name."
+            },
+            {
+              "name": "provenance.recovered-from",
+              "required": false,
+              "kind": "enum",
+              "values": [
+                "observation",
+                "inference",
+                "interview",
+                "documentation"
+              ],
+              "description": "How the knowledge was recovered from the evidence."
+            }
+          ]
+        }
+      ],
+      "idPrefix": "UC",
+      "bodySections": [
+        "Goal",
+        "Trigger",
+        "Preconditions",
+        "Main Flow",
+        "Alternative Flows",
+        "Failure Conditions",
+        "Postconditions"
+      ]
+    }
+  ]
+}

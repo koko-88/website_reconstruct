@@ -1,0 +1,55 @@
+schema: product-definition-as-code/recovery-brief/v1alpha1
+scope: Independently recover and challenge the Haunted Boulder City bounded local reference-fidelity product meaning; propose draft knowledge and expose omissions, contradictions, unsupported decisions, state ownership gaps and ambiguities without inventing behaviour.
+roots: ['.']
+include:
+  - AGENTS.md
+  - .specify/memory/constitution.md
+  - PRODUCT.md
+  - ROADMAP.md
+  - implementation-scope/pre-build-packet/**
+  - reference/haunted-boulder-city-v2/rev-2.0.0-real-01/**
+  - skills/reference-reconstruction/**
+exclude: []
+forbidden:
+  - specs/**
+  - skill-hardening/**
+  - model-selection/**
+  - reference/haunted-boulder-city/**
+ignore: []
+languages: [en]
+known-actors: [Visitor]
+known-journeys: []
+known-use-cases: []
+known-terminology: [local reference-validation, reference-equivalent fixture, target adaptation, host dialog, reduced motion]
+synonyms: {}
+known-contradictions:
+  - Historical multiple-open FAQ prose conflicts with measured single-settled-answer state and COR-01.
+  - PRODUCT.md describes ROADMAP.md as DECOMPOSITION REQUIRED although ROADMAP.md records decomposition complete pending review.
+authority:
+  - Human request defines the authorized evidence population and forbids product authority from specs/001-home-entry-fidelity.
+  - AGENTS.md and constitution own governance; PRODUCT.md owns current product policy.
+  - ROADMAP.md is decomposition context only, never evidence of product behaviour.
+  - Pre-build packet corrections govern prospective evidence interpretation; sealed observations remain immutable.
+  - Source declarations, runtime observations, inferences, decisions and unknowns must be distinguished.
+tiers:
+  - name: canonical-current-policy
+    globs: [AGENTS.md, .specify/memory/constitution.md, PRODUCT.md, ROADMAP.md]
+  - name: packet-interpretation
+    globs: ['implementation-scope/pre-build-packet/*.md']
+  - name: sealed-product-reports
+    globs: ['reference/haunted-boulder-city-v2/rev-2.0.0-real-01/*.md']
+  - name: sealed-source
+    globs: ['reference/haunted-boulder-city-v2/rev-2.0.0-real-01/public/app.js', 'reference/haunted-boulder-city-v2/rev-2.0.0-real-01/public/index.html', 'reference/haunted-boulder-city-v2/rev-2.0.0-real-01/public/styles.css']
+  - name: methodology
+    globs: ['skills/reference-reconstruction/**']
+  - name: authorized-supporting-observations
+    globs: ['reference/haunted-boulder-city-v2/rev-2.0.0-real-01/**', 'implementation-scope/pre-build-packet/**']
+secondary-evidence:
+  code: true
+  tests: false
+  issues: false
+  commit-history: false
+  external: false
+batch-size: 28
+confirm: []
+external-sources: []

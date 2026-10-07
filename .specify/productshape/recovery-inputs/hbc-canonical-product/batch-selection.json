@@ -1,0 +1,413 @@
+{
+  "session": {
+    "schema": "product-definition-as-code/recovery-state/v1alpha1",
+    "formatVersion": 1,
+    "sessionId": "hbc-canonical-product",
+    "cliVersion": "speckit-adapter",
+    "createdAt": "2026-10-07T03:07:20.742Z",
+    "updatedAt": "2026-10-07T03:07:20.742Z",
+    "changeId": "CHG-INITIAL",
+    "changeDir": ".specify/productshape/recoveries/hbc-canonical-product/product",
+    "brief": {
+      "roots": [
+        "."
+      ],
+      "include": [
+        "AGENTS.md",
+        ".specify/memory/constitution.md",
+        "PRODUCT.md",
+        "ROADMAP.md",
+        "implementation-scope/pre-build-packet/**",
+        "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/**",
+        "skills/reference-reconstruction/**"
+      ],
+      "exclude": [],
+      "forbidden": [
+        "**/*.key",
+        "**/*.pem",
+        "**/.env",
+        "**/.env.*",
+        "**/id_rsa*",
+        "**/secrets/**",
+        "model-selection/**",
+        "reference/haunted-boulder-city/**",
+        "skill-hardening/**",
+        "specs/**"
+      ],
+      "ignore": [],
+      "languages": [
+        "en"
+      ],
+      "knownActors": [
+        "Visitor"
+      ],
+      "knownJourneys": [],
+      "knownUseCases": [],
+      "knownTerminology": [
+        "local reference-validation",
+        "reference-equivalent fixture",
+        "target adaptation",
+        "host dialog",
+        "reduced motion"
+      ],
+      "synonyms": {},
+      "knownContradictions": [
+        "Historical multiple-open FAQ prose conflicts with measured single-settled-answer state and COR-01.",
+        "PRODUCT.md describes ROADMAP.md as DECOMPOSITION REQUIRED although ROADMAP.md records decomposition complete pending review."
+      ],
+      "authority": [
+        "Human request defines the authorized evidence population and forbids product authority from specs/001-home-entry-fidelity.",
+        "AGENTS.md and constitution own governance; PRODUCT.md owns current product policy.",
+        "ROADMAP.md is decomposition context only, never evidence of product behaviour.",
+        "Pre-build packet corrections govern prospective evidence interpretation; sealed observations remain immutable.",
+        "Source declarations, runtime observations, inferences, decisions and unknowns must be distinguished."
+      ],
+      "secondaryEvidence": {
+        "code": true,
+        "tests": false,
+        "issues": false,
+        "commitHistory": false,
+        "external": false
+      },
+      "batchSize": 28,
+      "confirm": [],
+      "tiers": [
+        {
+          "name": "canonical-current-policy",
+          "globs": [
+            "AGENTS.md",
+            ".specify/memory/constitution.md",
+            "PRODUCT.md",
+            "ROADMAP.md"
+          ]
+        },
+        {
+          "name": "packet-interpretation",
+          "globs": [
+            "implementation-scope/pre-build-packet/*.md"
+          ]
+        },
+        {
+          "name": "sealed-product-reports",
+          "globs": [
+            "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/*.md"
+          ]
+        },
+        {
+          "name": "sealed-source",
+          "globs": [
+            "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/public/app.js",
+            "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/public/index.html",
+            "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/public/styles.css"
+          ]
+        },
+        {
+          "name": "methodology",
+          "globs": [
+            "skills/reference-reconstruction/**"
+          ]
+        },
+        {
+          "name": "authorized-supporting-observations",
+          "globs": [
+            "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/**",
+            "implementation-scope/pre-build-packet/**"
+          ]
+        }
+      ],
+      "externalSources": [],
+      "scope": "Independently recover and challenge the Haunted Boulder City bounded local reference-fidelity product meaning; propose draft knowledge and expose omissions, contradictions, unsupported decisions, state ownership gaps and ambiguities without inventing behaviour."
+    },
+    "modelSnapshot": [],
+    "familyProbes": {},
+    "counters": {
+      "evidence": 346,
+      "lead": 0,
+      "question": 0
+    },
+    "nextAction": "Inventory recorded; process the first batch: prodshape recover next"
+  },
+  "batch": [
+    {
+      "id": "E-0001",
+      "kind": "repo-file",
+      "path": ".specify/memory/constitution.md",
+      "digest": "sha256:63fda1168c8ad88d17a2067396be3e37f81996b752f1b607584c68be93738116",
+      "authorization": "brief",
+      "status": "pending",
+      "findings": [],
+      "addedAt": "2026-10-07T03:07:20.742Z"
+    },
+    {
+      "id": "E-0002",
+      "kind": "repo-file",
+      "path": "AGENTS.md",
+      "digest": "sha256:5a72286a838db4b578edd081f01ff58d40e1b702cacd25e33c45305985bc210c",
+      "authorization": "brief",
+      "status": "pending",
+      "findings": [],
+      "addedAt": "2026-10-07T03:07:20.742Z"
+    },
+    {
+      "id": "E-0003",
+      "kind": "repo-file",
+      "path": "PRODUCT.md",
+      "digest": "sha256:c59ff49f6b186ddd9982f97892c13a981e71bf0de1c0db330fd6348d0c8727b0",
+      "authorization": "brief",
+      "status": "pending",
+      "findings": [],
+      "addedAt": "2026-10-07T03:07:20.742Z"
+    },
+    {
+      "id": "E-0004",
+      "kind": "repo-file",
+      "path": "ROADMAP.md",
+      "digest": "sha256:fd31c20a8fb04f4dab0dbc3458d2f8d09a5dac5c32f903e8319bdccc0de39d69",
+      "authorization": "brief",
+      "status": "pending",
+      "findings": [],
+      "addedAt": "2026-10-07T03:07:20.742Z"
+    },
+    {
+      "id": "E-0005",
+      "kind": "repo-file",
+      "path": "implementation-scope/pre-build-packet/README.md",
+      "digest": "sha256:e8d0f427bf68e621ea5313d571e6d3166048d85567a9ff9e8da08050865156f1",
+      "authorization": "brief",
+      "status": "pending",
+      "findings": [],
+      "addedAt": "2026-10-07T03:07:20.742Z"
+    },
+    {
+      "id": "E-0006",
+      "kind": "repo-file",
+      "path": "implementation-scope/pre-build-packet/authority-crosswalk.md",
+      "digest": "sha256:c57e7bcf9ec42e4bf45ea3fc156c6aecbd16e02eb6d85e7ba0df1cec02bd1f89",
+      "authorization": "brief",
+      "status": "pending",
+      "findings": [],
+      "addedAt": "2026-10-07T03:07:20.742Z"
+    },
+    {
+      "id": "E-0007",
+      "kind": "repo-file",
+      "path": "implementation-scope/pre-build-packet/corrections.md",
+      "digest": "sha256:3126e18ecbef46a21eede4b1fd801ffa4bbbf7facb1fc7d8be1dc7166ace8d5c",
+      "authorization": "brief",
+      "status": "pending",
+      "findings": [],
+      "addedAt": "2026-10-07T03:07:20.742Z"
+    },
+    {
+      "id": "E-0008",
+      "kind": "repo-file",
+      "path": "implementation-scope/pre-build-packet/evaluation.md",
+      "digest": "sha256:69362b088871a540c09957f18372b9f1d6f38457c77e0dddf549970fed4b8fa7",
+      "authorization": "brief",
+      "status": "pending",
+      "findings": [],
+      "addedAt": "2026-10-07T03:07:20.742Z"
+    },
+    {
+      "id": "E-0009",
+      "kind": "repo-file",
+      "path": "implementation-scope/pre-build-packet/evidence-index.md",
+      "digest": "sha256:0fdd7d45b4fb469b9d02a205150bc916777aaab8a9f103e4b8fc94512135be1f",
+      "authorization": "brief",
+      "status": "pending",
+      "findings": [],
+      "addedAt": "2026-10-07T03:07:20.742Z"
+    },
+    {
+      "id": "E-0010",
+      "kind": "repo-file",
+      "path": "implementation-scope/pre-build-packet/motion.md",
+      "digest": "sha256:8d5a67c566946dfe2833d349f55cae5e276b5c7028bd82d8aff5255df6d25b03",
+      "authorization": "brief",
+      "status": "pending",
+      "findings": [],
+      "addedAt": "2026-10-07T03:07:20.742Z"
+    },
+    {
+      "id": "E-0011",
+      "kind": "repo-file",
+      "path": "implementation-scope/pre-build-packet/typography-assets.md",
+      "digest": "sha256:df32e71767007613c4d0f814430bf1221e2436ec1b31862658a0b155d76e01ed",
+      "authorization": "brief",
+      "status": "pending",
+      "findings": [],
+      "addedAt": "2026-10-07T03:07:20.742Z"
+    },
+    {
+      "id": "E-0012",
+      "kind": "repo-file",
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/artifact-index.md",
+      "digest": "sha256:0b7fe713ede923ac515132d6b5ffe1899b5c9a4e200962d8907f065d6852f52f",
+      "authorization": "brief",
+      "status": "pending",
+      "findings": [],
+      "addedAt": "2026-10-07T03:07:20.742Z"
+    },
+    {
+      "id": "E-0013",
+      "kind": "repo-file",
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/asset-reuse.md",
+      "digest": "sha256:cce8e73e9b50fdf838bbda61c22265c5e3c8757a644de5ed8175224ae6cfcc21",
+      "authorization": "brief",
+      "status": "pending",
+      "findings": [],
+      "addedAt": "2026-10-07T03:07:20.742Z"
+    },
+    {
+      "id": "E-0014",
+      "kind": "repo-file",
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/environment-matrix.md",
+      "digest": "sha256:95143da7072af38c22878229d42d433f6255d8eab89c8d6e4bf61bebdcd2ad3b",
+      "authorization": "brief",
+      "status": "pending",
+      "findings": [],
+      "addedAt": "2026-10-07T03:07:20.742Z"
+    },
+    {
+      "id": "E-0015",
+      "kind": "repo-file",
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/fidelity-scope-contract.md",
+      "digest": "sha256:ca5a5c1c8d84e917f98b1c5f38ea220b50782d51e00d8b7ffa88119ce13e32c8",
+      "authorization": "brief",
+      "status": "pending",
+      "findings": [],
+      "addedAt": "2026-10-07T03:07:20.742Z"
+    },
+    {
+      "id": "E-0016",
+      "kind": "repo-file",
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/handoff.md",
+      "digest": "sha256:862e7a8a64cbf7744b60284ddcd3ebfcd594ebdd3ced846a1fd88bbf832bad64",
+      "authorization": "brief",
+      "status": "pending",
+      "findings": [],
+      "addedAt": "2026-10-07T03:07:20.742Z"
+    },
+    {
+      "id": "E-0017",
+      "kind": "repo-file",
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/non-dom-rendering.md",
+      "digest": "sha256:dff3d28845d702b26131c846ac56797b6294de1d12eeed05e5bd100f5a988026",
+      "authorization": "brief",
+      "status": "pending",
+      "findings": [],
+      "addedAt": "2026-10-07T03:07:20.742Z"
+    },
+    {
+      "id": "E-0018",
+      "kind": "repo-file",
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/public-artifacts.md",
+      "digest": "sha256:d57ffb61f193375a1c1e0b0e6df53b7463266066fd8565b8922e344d4daff46b",
+      "authorization": "brief",
+      "status": "pending",
+      "findings": [],
+      "addedAt": "2026-10-07T03:07:20.742Z"
+    },
+    {
+      "id": "E-0019",
+      "kind": "repo-file",
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/readiness-gates.md",
+      "digest": "sha256:5a1301aecd4a941c3aa80e30fbebb07555dec67138926a188ec2d721cbf06e00",
+      "authorization": "brief",
+      "status": "pending",
+      "findings": [],
+      "addedAt": "2026-10-07T03:07:20.742Z"
+    },
+    {
+      "id": "E-0020",
+      "kind": "repo-file",
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/reference-evidence.md",
+      "digest": "sha256:f3109e4818c26f775272f6a5bacf5df65e3abca5bf456f7f615af281a4f7ef30",
+      "authorization": "brief",
+      "status": "pending",
+      "findings": [],
+      "addedAt": "2026-10-07T03:07:20.742Z"
+    },
+    {
+      "id": "E-0021",
+      "kind": "repo-file",
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/state-route-matrix.md",
+      "digest": "sha256:16efd8e79a763617a5cc2346c26c732a25297201916efaca93b1e09cc643975c",
+      "authorization": "brief",
+      "status": "pending",
+      "findings": [],
+      "addedAt": "2026-10-07T03:07:20.742Z"
+    },
+    {
+      "id": "E-0022",
+      "kind": "repo-file",
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/validation-report.md",
+      "digest": "sha256:011babac2de6e09b4f3ea261c7b019bb24c1acb7a44f714b75275dfa8b9dae35",
+      "authorization": "brief",
+      "status": "pending",
+      "findings": [],
+      "addedAt": "2026-10-07T03:07:20.742Z"
+    },
+    {
+      "id": "E-0023",
+      "kind": "repo-file",
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/public/app.js",
+      "digest": "sha256:a9284d1e441eedefebb5d4f1768780a5fcec8dfeae7bce26948124065eb51f3a",
+      "authorization": "brief",
+      "status": "pending",
+      "findings": [],
+      "addedAt": "2026-10-07T03:07:20.742Z"
+    },
+    {
+      "id": "E-0024",
+      "kind": "repo-file",
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/public/index.html",
+      "digest": "sha256:50a08ba046926b0df25dc4ad1bd47a3d8adba01de7e871f11ed362a4e5c92d68",
+      "authorization": "brief",
+      "status": "pending",
+      "findings": [],
+      "addedAt": "2026-10-07T03:07:20.742Z"
+    },
+    {
+      "id": "E-0025",
+      "kind": "repo-file",
+      "path": "reference/haunted-boulder-city-v2/rev-2.0.0-real-01/public/styles.css",
+      "digest": "sha256:84f8d4afd287dec6d138861661793fee8f4c1fc72ea7afa9f3d8f6a11c6848dc",
+      "authorization": "brief",
+      "status": "pending",
+      "findings": [],
+      "addedAt": "2026-10-07T03:07:20.742Z"
+    },
+    {
+      "id": "E-0026",
+      "kind": "repo-file",
+      "path": "skills/reference-reconstruction/SKILL.md",
+      "digest": "sha256:050b3a32b4614892c7a8a47a00ca498789c22dc61d6bde300b7a4579f54c2a3a",
+      "authorization": "brief",
+      "status": "pending",
+      "findings": [],
+      "addedAt": "2026-10-07T03:07:20.742Z"
+    },
+    {
+      "id": "E-0027",
+      "kind": "repo-file",
+      "path": "skills/reference-reconstruction/agents/openai.yaml",
+      "digest": "sha256:85320a4711eedeecb5a473d3945cbacd95bd3578ee29d2a2dec13df695cb426b",
+      "authorization": "brief",
+      "status": "pending",
+      "findings": [],
+      "addedAt": "2026-10-07T03:07:20.742Z"
+    },
+    {
+      "id": "E-0028",
+      "kind": "repo-file",
+      "path": "skills/reference-reconstruction/assets/acceptance-plan.md",
+      "digest": "sha256:34851dc45b6d4b2df13b250cb46af7e0fa676789d23f2405f27fbcf6ccf514dd",
+      "authorization": "brief",
+      "status": "pending",
+      "findings": [],
+      "addedAt": "2026-10-07T03:07:20.742Z"
+    }
+  ]
+}
+

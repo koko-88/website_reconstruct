@@ -1,0 +1,679 @@
+{
+  "questions": [
+    {
+      "text": "Review F-01 in audit.md: Which current roadmap review gate should PRODUCT pointers name?",
+      "context": "Evidence, impact and responsible canonical owner are recorded in .specify/productshape/recoveries/hbc-canonical-product/audit.md F-01. No answer was supplied by the human and no contradiction is resolved silently.",
+      "recommendation": "Review the cited declaration/observation and decide in its existing canonical owner; keep the question open until explicit review."
+    },
+    {
+      "text": "Review F-02 in audit.md: Confirm prospective correction of hero geometry summary against final CSS cascade.",
+      "context": "Evidence, impact and responsible canonical owner are recorded in .specify/productshape/recoveries/hbc-canonical-product/audit.md F-02. No answer was supplied by the human and no contradiction is resolved silently.",
+      "recommendation": "Review the cited declaration/observation and decide in its existing canonical owner; keep the question open until explicit review."
+    },
+    {
+      "text": "Review F-03 in audit.md: Is page scroll-progress explicitly required, and which owner accepts it?",
+      "context": "Evidence, impact and responsible canonical owner are recorded in .specify/productshape/recoveries/hbc-canonical-product/audit.md F-03. No answer was supplied by the human and no contradiction is resolved silently.",
+      "recommendation": "Review the cited declaration/observation and decide in its existing canonical owner; keep the question open until explicit review."
+    },
+    {
+      "text": "Review F-04 in audit.md: Which switched preference behaviours are retained, corrected or deliberately left unknown?",
+      "context": "Evidence, impact and responsible canonical owner are recorded in .specify/productshape/recoveries/hbc-canonical-product/audit.md F-04. No answer was supplied by the human and no contradiction is resolved silently.",
+      "recommendation": "Review the cited declaration/observation and decide in its existing canonical owner; keep the question open until explicit review."
+    },
+    {
+      "text": "Review F-05 in audit.md: What exact non-transactional local host interior and loading/ready/fallback fixture is accepted?",
+      "context": "Evidence, impact and responsible canonical owner are recorded in .specify/productshape/recoveries/hbc-canonical-product/audit.md F-05. No answer was supplied by the human and no contradiction is resolved silently.",
+      "recommendation": "Review the cited declaration/observation and decide in its existing canonical owner; keep the question open until explicit review."
+    },
+    {
+      "text": "Review F-06 in audit.md: What is the product disposition for loader/menu/dialog overlap and focus/Escape arbitration?",
+      "context": "Evidence, impact and responsible canonical owner are recorded in .specify/productshape/recoveries/hbc-canonical-product/audit.md F-06. No answer was supplied by the human and no contradiction is resolved silently.",
+      "recommendation": "Review the cited declaration/observation and decide in its existing canonical owner; keep the question open until explicit review."
+    },
+    {
+      "text": "Review F-07 in audit.md: What focus and pointer eligibility is accepted during overlay closing before native hidden?",
+      "context": "Evidence, impact and responsible canonical owner are recorded in .specify/productshape/recoveries/hbc-canonical-product/audit.md F-07. No answer was supplied by the human and no contradiction is resolved silently.",
+      "recommendation": "Review the cited declaration/observation and decide in its existing canonical owner; keep the question open until explicit review."
+    },
+    {
+      "text": "Review F-08 in audit.md: What focus/reset/persistence relationships apply to each navigation transition and input mode?",
+      "context": "Evidence, impact and responsible canonical owner are recorded in .specify/productshape/recoveries/hbc-canonical-product/audit.md F-08. No answer was supplied by the human and no contradiction is resolved silently.",
+      "recommendation": "Review the cited declaration/observation and decide in its existing canonical owner; keep the question open until explicit review."
+    },
+    {
+      "text": "Review F-09 in audit.md: Which concrete available inputs or measured deviations satisfy each missing visual/media fixture?",
+      "context": "Evidence, impact and responsible canonical owner are recorded in .specify/productshape/recoveries/hbc-canonical-product/audit.md F-09. No answer was supplied by the human and no contradiction is resolved silently.",
+      "recommendation": "Review the cited declaration/observation and decide in its existing canonical owner; keep the question open until explicit review."
+    },
+    {
+      "text": "Review F-10 in audit.md: Is correcting the observed dialog Tab escape required before local acceptance?",
+      "context": "Evidence, impact and responsible canonical owner are recorded in .specify/productshape/recoveries/hbc-canonical-product/audit.md F-10. No answer was supplied by the human and no contradiction is resolved silently.",
+      "recommendation": "Review the cited declaration/observation and decide in its existing canonical owner; keep the question open until explicit review."
+    },
+    {
+      "text": "Review F-11 in audit.md: Which owner accepts the ticket review cue and which accepts creator-media proof?",
+      "context": "Evidence, impact and responsible canonical owner are recorded in .specify/productshape/recoveries/hbc-canonical-product/audit.md F-11. No answer was supplied by the human and no contradiction is resolved silently.",
+      "recommendation": "Review the cited declaration/observation and decide in its existing canonical owner; keep the question open until explicit review."
+    },
+    {
+      "text": "Review F-12 in audit.md: What visibility/cancellation rule applies separately to each effect and overlay clock?",
+      "context": "Evidence, impact and responsible canonical owner are recorded in .specify/productshape/recoveries/hbc-canonical-product/audit.md F-12. No answer was supplied by the human and no contradiction is resolved silently.",
+      "recommendation": "Review the cited declaration/observation and decide in its existing canonical owner; keep the question open until explicit review."
+    }
+  ],
+  "leads": [
+    {
+      "kind": "repo",
+      "source": "E-0010",
+      "description": "Next authorized batch: inspect inherited-v1 E-050/E-080/E-085/E-086/E-090 and preference traces to independently corroborate FAQ, focus, timing and switched-history claims; do not treat report summaries as newly executed proof."
+    },
+    {
+      "kind": "repo",
+      "source": "E-0012",
+      "description": "Next authorized batch: independently read E2-013 canonical phase assessment and E2-014 exact geometry plus named image sidecars/pixels. Parent manifest validation does not validate appearance."
+    },
+    {
+      "kind": "user",
+      "source": "E-0011",
+      "description": "Resolve available-media fixture inputs and concrete visual/video deviations for affected surfaces. No new download or external source is authorized; keep missing inputs separate from local reuse permission."
+    }
+  ],
+  "findings": [
+    {
+      "source": "E-0001",
+      "classification": "represented",
+      "artifacts": [
+        "CON-LOCAL-BOUNDARY",
+        "CON-EVIDENCE-BOUNDS"
+      ],
+      "note": "Current policy versus historical observations/source declarations are explicitly separated in candidates and audit.md. Source mechanisms are independently recovered, never copied into runtime code. Metadata/telemetry/fixture business prose do not add backend product requirements.",
+      "complete": false
+    },
+    {
+      "source": "E-0001",
+      "complete": true
+    },
+    {
+      "source": "E-0002",
+      "classification": "represented",
+      "artifacts": [
+        "CON-LOCAL-BOUNDARY",
+        "CON-EVIDENCE-BOUNDS"
+      ],
+      "note": "Current policy versus historical observations/source declarations are explicitly separated in candidates and audit.md. Source mechanisms are independently recovered, never copied into runtime code. Metadata/telemetry/fixture business prose do not add backend product requirements.",
+      "complete": false
+    },
+    {
+      "source": "E-0002",
+      "complete": true
+    },
+    {
+      "source": "E-0003",
+      "classification": "represented",
+      "artifacts": [
+        "ACT-VISITOR",
+        "BC-LOCAL-FIDELITY",
+        "TERM-REFERENCE-FIXTURE",
+        "TERM-HOST-DIALOG",
+        "TERM-SOURCE-DECLARATION",
+        "CON-LOCAL-BOUNDARY",
+        "CON-EVIDENCE-BOUNDS",
+        "CON-ADAPTATION-INPUTS",
+        "BR-FAQ-SETTLED",
+        "UC-ENTRY",
+        "FR-ENTRY",
+        "UC-INFORMATION",
+        "FR-INFORMATION",
+        "UC-STORIES",
+        "FR-STORIES",
+        "UC-TOPICS",
+        "FR-TOPICS",
+        "UC-FAQ",
+        "FR-FAQ",
+        "UC-MENU",
+        "FR-MENU",
+        "UC-NAVIGATION",
+        "FR-NAVIGATION",
+        "UC-TICKET",
+        "FR-TICKET",
+        "JRN-FRESH-ENTRY",
+        "JRN-FRAGMENT-NAVIGATION",
+        "JRN-STORY-PROGRESSION",
+        "JRN-FAQ-INTERACTION",
+        "JRN-TICKET-HOST",
+        "JRN-OUTBOUND-INFORMATION",
+        "QR-VISUAL",
+        "QR-MOTION",
+        "QR-ACCESSIBILITY",
+        "SB-FAQ-REPLACE",
+        "SB-ROOT-RETURN"
+      ],
+      "note": "Current policy versus historical observations/source declarations are explicitly separated in candidates and audit.md. Source mechanisms are independently recovered, never copied into runtime code. Metadata/telemetry/fixture business prose do not add backend product requirements.",
+      "complete": false
+    },
+    {
+      "source": "E-0003",
+      "classification": "contradiction",
+      "question": "Q-0001",
+      "note": "Audit F-01: source-policy uncertainty or acceptance ownership gap; no new behaviour adopted.",
+      "complete": false
+    },
+    {
+      "source": "E-0003",
+      "classification": "question",
+      "question": "Q-0003",
+      "note": "Audit F-03: source-policy uncertainty or acceptance ownership gap; no new behaviour adopted.",
+      "complete": false
+    },
+    {
+      "source": "E-0003",
+      "classification": "question",
+      "question": "Q-0004",
+      "note": "Audit F-04: source-policy uncertainty or acceptance ownership gap; no new behaviour adopted.",
+      "complete": false
+    },
+    {
+      "source": "E-0003",
+      "classification": "question",
+      "question": "Q-0005",
+      "note": "Audit F-05: source-policy uncertainty or acceptance ownership gap; no new behaviour adopted.",
+      "complete": false
+    },
+    {
+      "source": "E-0003",
+      "classification": "question",
+      "question": "Q-0006",
+      "note": "Audit F-06: source-policy uncertainty or acceptance ownership gap; no new behaviour adopted.",
+      "complete": false
+    },
+    {
+      "source": "E-0003",
+      "classification": "question",
+      "question": "Q-0007",
+      "note": "Audit F-07: source-policy uncertainty or acceptance ownership gap; no new behaviour adopted.",
+      "complete": false
+    },
+    {
+      "source": "E-0003",
+      "classification": "question",
+      "question": "Q-0008",
+      "note": "Audit F-08: source-policy uncertainty or acceptance ownership gap; no new behaviour adopted.",
+      "complete": false
+    },
+    {
+      "source": "E-0003",
+      "classification": "question",
+      "question": "Q-0009",
+      "note": "Audit F-09: source-policy uncertainty or acceptance ownership gap; no new behaviour adopted.",
+      "complete": false
+    },
+    {
+      "source": "E-0003",
+      "classification": "question",
+      "question": "Q-0010",
+      "note": "Audit F-10: source-policy uncertainty or acceptance ownership gap; no new behaviour adopted.",
+      "complete": false
+    },
+    {
+      "source": "E-0003",
+      "classification": "question",
+      "question": "Q-0011",
+      "note": "Audit F-11: source-policy uncertainty or acceptance ownership gap; no new behaviour adopted.",
+      "complete": false
+    },
+    {
+      "source": "E-0003",
+      "classification": "question",
+      "question": "Q-0012",
+      "note": "Audit F-12: source-policy uncertainty or acceptance ownership gap; no new behaviour adopted.",
+      "complete": false
+    },
+    {
+      "source": "E-0003",
+      "complete": true
+    },
+    {
+      "source": "E-0004",
+      "classification": "out-of-scope",
+      "reason": "Decomposition and execution context only by explicit human authorization; no product behavioural claim or candidate is derived from roadmap feature declarations.",
+      "note": "F-01 compares current context status against PRODUCT pointer; it does not promote ROADMAP to product evidence.",
+      "complete": true
+    },
+    {
+      "source": "E-0005",
+      "classification": "represented",
+      "artifacts": [
+        "CON-EVIDENCE-BOUNDS",
+        "QR-VISUAL",
+        "QR-MOTION"
+      ],
+      "note": "Current policy versus historical observations/source declarations are explicitly separated in candidates and audit.md. Source mechanisms are independently recovered, never copied into runtime code. Metadata/telemetry/fixture business prose do not add backend product requirements.",
+      "complete": false
+    },
+    {
+      "source": "E-0005",
+      "complete": true
+    },
+    {
+      "source": "E-0006",
+      "classification": "represented",
+      "artifacts": [
+        "QR-VISUAL",
+        "QR-MOTION",
+        "FR-ENTRY",
+        "FR-MENU",
+        "FR-TICKET",
+        "FR-INFORMATION"
+      ],
+      "note": "Current policy versus historical observations/source declarations are explicitly separated in candidates and audit.md. Source mechanisms are independently recovered, never copied into runtime code. Metadata/telemetry/fixture business prose do not add backend product requirements.",
+      "complete": false
+    },
+    {
+      "source": "E-0006",
+      "complete": true
+    },
+    {
+      "source": "E-0007",
+      "classification": "represented",
+      "artifacts": [
+        "BR-FAQ-SETTLED",
+        "FR-FAQ",
+        "FR-TOPICS",
+        "CON-LOCAL-BOUNDARY",
+        "SB-FAQ-REPLACE"
+      ],
+      "note": "Current policy versus historical observations/source declarations are explicitly separated in candidates and audit.md. Source mechanisms are independently recovered, never copied into runtime code. Metadata/telemetry/fixture business prose do not add backend product requirements.",
+      "complete": false
+    },
+    {
+      "source": "E-0007",
+      "classification": "contradiction",
+      "note": "Historical SR-23/AC2-05 multiple-open prose conflicts with COR-01 and source-declared zero/one desired/settled state. Current authority already supplies prospective disposition; old facts/prose remain immutable.",
+      "complete": false
+    },
+    {
+      "source": "E-0007",
+      "complete": true
+    },
+    {
+      "source": "E-0008",
+      "classification": "represented",
+      "artifacts": [
+        "CON-ADAPTATION-INPUTS",
+        "QR-VISUAL",
+        "QR-MOTION"
+      ],
+      "note": "Current policy versus historical observations/source declarations are explicitly separated in candidates and audit.md. Source mechanisms are independently recovered, never copied into runtime code. Metadata/telemetry/fixture business prose do not add backend product requirements.",
+      "complete": false
+    },
+    {
+      "source": "E-0008",
+      "complete": true
+    },
+    {
+      "source": "E-0009",
+      "classification": "represented",
+      "artifacts": [
+        "CON-EVIDENCE-BOUNDS"
+      ],
+      "note": "Current policy versus historical observations/source declarations are explicitly separated in candidates and audit.md. Source mechanisms are independently recovered, never copied into runtime code. Metadata/telemetry/fixture business prose do not add backend product requirements.",
+      "complete": false
+    },
+    {
+      "source": "E-0009",
+      "complete": true
+    },
+    {
+      "source": "E-0010",
+      "classification": "represented",
+      "artifacts": [
+        "TERM-SOURCE-DECLARATION",
+        "BR-FAQ-SETTLED",
+        "UC-ENTRY",
+        "FR-ENTRY",
+        "UC-INFORMATION",
+        "FR-INFORMATION",
+        "UC-STORIES",
+        "FR-STORIES",
+        "UC-TOPICS",
+        "FR-TOPICS",
+        "UC-FAQ",
+        "FR-FAQ",
+        "UC-MENU",
+        "FR-MENU",
+        "UC-NAVIGATION",
+        "FR-NAVIGATION",
+        "UC-TICKET",
+        "FR-TICKET",
+        "JRN-FRESH-ENTRY",
+        "JRN-FRAGMENT-NAVIGATION",
+        "JRN-STORY-PROGRESSION",
+        "JRN-FAQ-INTERACTION",
+        "JRN-TICKET-HOST",
+        "JRN-OUTBOUND-INFORMATION",
+        "QR-VISUAL",
+        "QR-MOTION",
+        "QR-ACCESSIBILITY",
+        "SB-FAQ-REPLACE",
+        "SB-ROOT-RETURN"
+      ],
+      "note": "Current policy versus historical observations/source declarations are explicitly separated in candidates and audit.md. Source mechanisms are independently recovered, never copied into runtime code. Metadata/telemetry/fixture business prose do not add backend product requirements.",
+      "complete": false
+    },
+    {
+      "source": "E-0010",
+      "complete": true
+    },
+    {
+      "source": "E-0011",
+      "classification": "represented",
+      "artifacts": [
+        "QR-VISUAL",
+        "CON-ADAPTATION-INPUTS",
+        "FR-INFORMATION",
+        "FR-TOPICS"
+      ],
+      "note": "Current policy versus historical observations/source declarations are explicitly separated in candidates and audit.md. Source mechanisms are independently recovered, never copied into runtime code. Metadata/telemetry/fixture business prose do not add backend product requirements.",
+      "complete": false
+    },
+    {
+      "source": "E-0011",
+      "classification": "contradiction",
+      "question": "Q-0002",
+      "note": "Packet says final hero height100svh/max1400 (narrow max1050); source CSS286 later declares height:auto/max-height:none and narrow rule retains no cap. Source not new runtime observation.",
+      "complete": false
+    },
+    {
+      "source": "E-0011",
+      "complete": true
+    },
+    {
+      "source": "E-0012",
+      "classification": "represented",
+      "artifacts": [
+        "QR-VISUAL",
+        "CON-EVIDENCE-BOUNDS"
+      ],
+      "note": "Current policy versus historical observations/source declarations are explicitly separated in candidates and audit.md. Source mechanisms are independently recovered, never copied into runtime code. Metadata/telemetry/fixture business prose do not add backend product requirements.",
+      "complete": false
+    },
+    {
+      "source": "E-0012",
+      "complete": true
+    },
+    {
+      "source": "E-0013",
+      "classification": "represented",
+      "artifacts": [
+        "CON-ADAPTATION-INPUTS"
+      ],
+      "note": "Current policy versus historical observations/source declarations are explicitly separated in candidates and audit.md. Source mechanisms are independently recovered, never copied into runtime code. Metadata/telemetry/fixture business prose do not add backend product requirements.",
+      "complete": false
+    },
+    {
+      "source": "E-0013",
+      "complete": true
+    },
+    {
+      "source": "E-0014",
+      "classification": "represented",
+      "artifacts": [
+        "CON-EVIDENCE-BOUNDS",
+        "QR-MOTION"
+      ],
+      "note": "Current policy versus historical observations/source declarations are explicitly separated in candidates and audit.md. Source mechanisms are independently recovered, never copied into runtime code. Metadata/telemetry/fixture business prose do not add backend product requirements.",
+      "complete": false
+    },
+    {
+      "source": "E-0014",
+      "complete": true
+    },
+    {
+      "source": "E-0015",
+      "classification": "represented",
+      "artifacts": [
+        "CON-EVIDENCE-BOUNDS",
+        "CON-LOCAL-BOUNDARY"
+      ],
+      "note": "Current policy versus historical observations/source declarations are explicitly separated in candidates and audit.md. Source mechanisms are independently recovered, never copied into runtime code. Metadata/telemetry/fixture business prose do not add backend product requirements.",
+      "complete": false
+    },
+    {
+      "source": "E-0015",
+      "complete": true
+    },
+    {
+      "source": "E-0016",
+      "classification": "represented",
+      "artifacts": [
+        "QR-VISUAL",
+        "QR-MOTION",
+        "QR-ACCESSIBILITY",
+        "FR-NAVIGATION",
+        "FR-TICKET"
+      ],
+      "note": "Current policy versus historical observations/source declarations are explicitly separated in candidates and audit.md. Source mechanisms are independently recovered, never copied into runtime code. Metadata/telemetry/fixture business prose do not add backend product requirements.",
+      "complete": false
+    },
+    {
+      "source": "E-0016",
+      "classification": "contradiction",
+      "note": "Historical SR-23/AC2-05 multiple-open prose conflicts with COR-01 and source-declared zero/one desired/settled state. Current authority already supplies prospective disposition; old facts/prose remain immutable.",
+      "complete": false
+    },
+    {
+      "source": "E-0016",
+      "complete": true
+    },
+    {
+      "source": "E-0017",
+      "classification": "represented",
+      "artifacts": [
+        "CON-EVIDENCE-BOUNDS",
+        "TERM-SOURCE-DECLARATION"
+      ],
+      "note": "Current policy versus historical observations/source declarations are explicitly separated in candidates and audit.md. Source mechanisms are independently recovered, never copied into runtime code. Metadata/telemetry/fixture business prose do not add backend product requirements.",
+      "complete": false
+    },
+    {
+      "source": "E-0017",
+      "complete": true
+    },
+    {
+      "source": "E-0018",
+      "classification": "represented",
+      "artifacts": [
+        "CON-ADAPTATION-INPUTS",
+        "TERM-SOURCE-DECLARATION"
+      ],
+      "note": "Current policy versus historical observations/source declarations are explicitly separated in candidates and audit.md. Source mechanisms are independently recovered, never copied into runtime code. Metadata/telemetry/fixture business prose do not add backend product requirements.",
+      "complete": false
+    },
+    {
+      "source": "E-0018",
+      "complete": true
+    },
+    {
+      "source": "E-0019",
+      "classification": "represented",
+      "artifacts": [
+        "CON-EVIDENCE-BOUNDS",
+        "CON-LOCAL-BOUNDARY"
+      ],
+      "note": "Current policy versus historical observations/source declarations are explicitly separated in candidates and audit.md. Source mechanisms are independently recovered, never copied into runtime code. Metadata/telemetry/fixture business prose do not add backend product requirements.",
+      "complete": false
+    },
+    {
+      "source": "E-0019",
+      "complete": true
+    },
+    {
+      "source": "E-0020",
+      "classification": "represented",
+      "artifacts": [
+        "ACT-VISITOR",
+        "CON-LOCAL-BOUNDARY",
+        "QR-VISUAL",
+        "QR-MOTION"
+      ],
+      "note": "Current policy versus historical observations/source declarations are explicitly separated in candidates and audit.md. Source mechanisms are independently recovered, never copied into runtime code. Metadata/telemetry/fixture business prose do not add backend product requirements.",
+      "complete": false
+    },
+    {
+      "source": "E-0020",
+      "complete": true
+    },
+    {
+      "source": "E-0021",
+      "classification": "represented",
+      "artifacts": [
+        "UC-ENTRY",
+        "FR-ENTRY",
+        "UC-INFORMATION",
+        "FR-INFORMATION",
+        "UC-STORIES",
+        "FR-STORIES",
+        "UC-TOPICS",
+        "FR-TOPICS",
+        "UC-FAQ",
+        "FR-FAQ",
+        "UC-MENU",
+        "FR-MENU",
+        "UC-NAVIGATION",
+        "FR-NAVIGATION",
+        "UC-TICKET",
+        "FR-TICKET",
+        "JRN-FRESH-ENTRY",
+        "JRN-FRAGMENT-NAVIGATION",
+        "JRN-STORY-PROGRESSION",
+        "JRN-FAQ-INTERACTION",
+        "JRN-TICKET-HOST",
+        "JRN-OUTBOUND-INFORMATION",
+        "QR-VISUAL",
+        "QR-MOTION",
+        "QR-ACCESSIBILITY",
+        "SB-FAQ-REPLACE",
+        "SB-ROOT-RETURN"
+      ],
+      "note": "Current policy versus historical observations/source declarations are explicitly separated in candidates and audit.md. Source mechanisms are independently recovered, never copied into runtime code. Metadata/telemetry/fixture business prose do not add backend product requirements.",
+      "complete": false
+    },
+    {
+      "source": "E-0021",
+      "classification": "contradiction",
+      "note": "Historical SR-23/AC2-05 multiple-open prose conflicts with COR-01 and source-declared zero/one desired/settled state. Current authority already supplies prospective disposition; old facts/prose remain immutable.",
+      "complete": false
+    },
+    {
+      "source": "E-0021",
+      "complete": true
+    },
+    {
+      "source": "E-0022",
+      "classification": "represented",
+      "artifacts": [
+        "CON-EVIDENCE-BOUNDS",
+        "QR-VISUAL"
+      ],
+      "note": "Current policy versus historical observations/source declarations are explicitly separated in candidates and audit.md. Source mechanisms are independently recovered, never copied into runtime code. Metadata/telemetry/fixture business prose do not add backend product requirements.",
+      "complete": false
+    },
+    {
+      "source": "E-0022",
+      "complete": true
+    },
+    {
+      "source": "E-0023",
+      "classification": "represented",
+      "artifacts": [
+        "BR-FAQ-SETTLED",
+        "UC-ENTRY",
+        "FR-ENTRY",
+        "UC-INFORMATION",
+        "FR-INFORMATION",
+        "UC-STORIES",
+        "FR-STORIES",
+        "UC-TOPICS",
+        "FR-TOPICS",
+        "UC-FAQ",
+        "FR-FAQ",
+        "UC-MENU",
+        "FR-MENU",
+        "UC-NAVIGATION",
+        "FR-NAVIGATION",
+        "UC-TICKET",
+        "FR-TICKET",
+        "FR-PAGE-PROGRESS",
+        "SB-FAQ-REPLACE",
+        "SB-ROOT-RETURN"
+      ],
+      "note": "Current policy versus historical observations/source declarations are explicitly separated in candidates and audit.md. Source mechanisms are independently recovered, never copied into runtime code. Metadata/telemetry/fixture business prose do not add backend product requirements.",
+      "complete": false
+    },
+    {
+      "source": "E-0023",
+      "complete": true
+    },
+    {
+      "source": "E-0024",
+      "classification": "represented",
+      "artifacts": [
+        "TERM-REFERENCE-FIXTURE",
+        "FR-PAGE-PROGRESS",
+        "FR-INFORMATION",
+        "FR-TOPICS",
+        "FR-ENTRY",
+        "FR-TICKET"
+      ],
+      "note": "Current policy versus historical observations/source declarations are explicitly separated in candidates and audit.md. Source mechanisms are independently recovered, never copied into runtime code. Metadata/telemetry/fixture business prose do not add backend product requirements.",
+      "complete": false
+    },
+    {
+      "source": "E-0024",
+      "complete": true
+    },
+    {
+      "source": "E-0025",
+      "classification": "represented",
+      "artifacts": [
+        "FR-PAGE-PROGRESS",
+        "QR-VISUAL",
+        "QR-MOTION",
+        "QR-ACCESSIBILITY"
+      ],
+      "note": "Current policy versus historical observations/source declarations are explicitly separated in candidates and audit.md. Source mechanisms are independently recovered, never copied into runtime code. Metadata/telemetry/fixture business prose do not add backend product requirements.",
+      "complete": false
+    },
+    {
+      "source": "E-0025",
+      "classification": "contradiction",
+      "question": "Q-0002",
+      "note": "Packet says final hero height100svh/max1400 (narrow max1050); source CSS286 later declares height:auto/max-height:none and narrow rule retains no cap. Source not new runtime observation.",
+      "complete": false
+    },
+    {
+      "source": "E-0025",
+      "complete": true
+    },
+    {
+      "source": "E-0026",
+      "classification": "no-product-intent",
+      "reason": "Reconstruction methodology, skill interface metadata or reusable blank acceptance template. These govern evidence discipline but add no HBC product behaviour.",
+      "complete": true
+    },
+    {
+      "source": "E-0027",
+      "classification": "no-product-intent",
+      "reason": "Reconstruction methodology, skill interface metadata or reusable blank acceptance template. These govern evidence discipline but add no HBC product behaviour.",
+      "complete": true
+    },
+    {
+      "source": "E-0028",
+      "classification": "no-product-intent",
+      "reason": "Reconstruction methodology, skill interface metadata or reusable blank acceptance template. These govern evidence discipline but add no HBC product behaviour.",
+      "complete": true
+    }
+  ],
+  "retractions": [],
+  "familyProbes": []
+}
