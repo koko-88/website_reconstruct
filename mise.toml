@@ -40,3 +40,12 @@ run = "node tooling/creative-capabilities/verify-workstation.mjs"
 [tasks."workstation:verify-strict"]
 description = "Fail when an expected reusable workstation capability is unavailable."
 run = "node tooling/creative-capabilities/verify-workstation.mjs --strict"
+
+# Direct script-name entrypoints. Existing workstation:* tasks remain compatible.
+[tasks."verify-host"]
+description = "Run tooling/skill-hardening/verify-host.mjs (read-only hardening capability preflight)."
+run = "node tooling/skill-hardening/verify-host.mjs"
+
+[tasks."verify-workstation"]
+description = "Run tooling/creative-capabilities/verify-workstation.mjs (reusable workstation capability checks)."
+run = "node tooling/creative-capabilities/verify-workstation.mjs"
