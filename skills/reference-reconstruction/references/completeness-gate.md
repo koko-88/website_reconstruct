@@ -11,6 +11,10 @@ Assess the named contract/package revision and exact route/state/environment sco
 
 Rights uncertainty does not corrupt an intact evidence package. An intact package can correctly have BLOCKED fidelity or reuse gates. Reuse established decisions; no automatic requirement for the user to sign every gate. Record missing decisions and responsible owner rather than research unrelated legal questions.
 
+## Asset availability and completeness
+
+For a phase requiring implementation assets, use [asset-acquisition.md](asset-acquisition.md). Link the exact sealed asset run, candidate dispositions, scoped coverage/obligations, verification/dependency closure, source-version match and implementation mappings. Required unavailable/unverified originals or material discovery limits block fidelity readiness. Rights NOT REQUIRED never excuses missing implementation bytes. Asset assessment PASS is an input to existing gates, not a fifth clearance shortcut; integrity alone still cannot clear reconstruction. Evidence-only delivery can retain a BLOCKED asset assessment. Old frozen packages/gates are unchanged; new requirements are assessed prospectively in a sidecar.
+
 ## Coverage and uncertainty
 
 Rows use Complete, Incomplete, N/A (inspected absence with evidence), or Excluded (actual scope authority). Include all unique route/state transitions and combinations that change layout/behavior; avoid a blind Cartesian product by documenting proven equivalent groups. A missing capability is unknown, never N/A.

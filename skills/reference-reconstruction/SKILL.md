@@ -1,8 +1,8 @@
 ---
 name: reference-reconstruction
-description: Inspect reference websites or supplied captures, produce evidence-linked fidelity specifications, and assess readiness for faithful reconstruction and content adaptation. Use for reference replication and fidelity audits, not general UI design or inspiration-only redesign.
+description: Inspect reference websites or supplied captures, acquire and verify original implementation assets, produce evidence-linked fidelity specifications, and assess readiness for faithful reconstruction and content adaptation. Use for reference replication and fidelity audits, not general UI design or inspiration-only redesign.
 metadata:
-  workflow-version: "2.1.2"
+  workflow-version: "2.2.0"
 ---
 
 # Reference Reconstruction
@@ -38,11 +38,13 @@ An empty heading or tool-used assertion is not an output. Reports may be section
 
 Read [references/capture.md](references/capture.md) when capturing or repairing saves/readiness/transfers. Reuse [scripts/page-probe.js](scripts/page-probe.js) for bounded structured browser reads. When repeated capture or local saves have a concrete gap, use the maintained declarative [scripts/capture.mjs](scripts/capture.mjs), not new website-specific helpers. [references/capture-plan.md](references/capture-plan.md) defines its plan and limitations. Static inspection and package hashing do not require Playwright.
 
+Before implementation asset handoff, read [references/asset-acquisition.md](references/asset-acquisition.md). Discover required originals across scoped routes/states/environments, acquire a new sealed sidecar, verify formats and dependency closure, and assess explicit availability/completeness obligations. Extend the existing capture runner with opt-in asset observation when needed; reuse adequate supplied originals. An intact screenshot package or successful download cannot establish asset completeness, source-version identity or reuse rights. Keep specialist/generated/unavailable assets explicit; no silent substitutes.
+
 ## 3. Assess separate gates
 
 Read [references/completeness-gate.md](references/completeness-gate.md). Record **integrity**, **fidelity readiness**, **adaptation readiness**, and **asset/reuse decisions** independently, with exact scope and evidence. File integrity never implies implementation clearance. Unknowns block only an obligation they materially affect; contract-bounded irrelevant unknowns remain unknown.
 
-No dependent reconstruction before integrity + fidelity pass and every asset/reuse decision **required by the active contract for the requested phase** is satisfied. An active contract may explicitly classify evidence-package asset use as **NOT REQUIRED as a reconstruction precondition** for a bounded local/non-distributed fidelity validation while preserving release/adaptation rights gates; never infer that exception merely from file availability. Adaptation additionally needs its own readiness gate. Evidence-only delivery may complete with blocked downstream gates. Routine gate assessment needs no new approval; consequential substitutions or unavailable essential inputs may require a specific decision. Continue independent work while a necessary decision is pending.
+Required original asset availability/completeness contributes to fidelity readiness, separately from reuse decisions. No dependent reconstruction before integrity + fidelity pass and every asset/reuse decision **required by the active contract for the requested phase** is satisfied. An active contract may explicitly classify evidence-package asset use as **NOT REQUIRED as a reconstruction precondition** for a bounded local/non-distributed fidelity validation while preserving release/adaptation rights gates; never infer that exception merely from file availability. Adaptation additionally needs its own readiness gate. Evidence-only delivery may complete with blocked downstream gates. Routine gate assessment needs no new approval; consequential substitutions or unavailable essential inputs may require a specific decision. Continue independent work while a necessary decision is pending.
 
 ## 4. Handoff and requested continuation
 

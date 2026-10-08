@@ -1,0 +1,258 @@
+Reference regression mode: browser-enabled, serial (test-concurrency=1)
+TAP version 13
+# Subtest: asset probe is a standalone passive function and default capture plan remains compatible
+ok 1 - asset probe is a standalone passive function and default capture plan remains compatible
+  ---
+  duration_ms: 5.8895
+  type: 'test'
+  ...
+# Subtest: maintained parsers cover responsive, pseudo, masks, fonts, imports and escaped URLs
+ok 2 - maintained parsers cover responsive, pseudo, masks, fonts, imports and escaped URLs
+  ---
+  duration_ms: 24.7902
+  type: 'test'
+  ...
+# Subtest: declared JS references are separated from inferred strings; no source execution
+ok 3 - declared JS references are separated from inferred strings; no source execution
+  ---
+  duration_ms: 9.4101
+  type: 'test'
+  ...
+# Subtest: streaming inventories acquire declared segments and retain encryption/template limits
+ok 4 - streaming inventories acquire declared segments and retain encryption/template limits
+  ---
+  duration_ms: 6.8352
+  type: 'test'
+  ...
+# Subtest: acquisition keeps query identity, deduplicates equal bytes, seals originals and checks reference hashes
+ok 5 - acquisition keeps query identity, deduplicates equal bytes, seals originals and checks reference hashes
+  ---
+  duration_ms: 1582.9101
+  type: 'test'
+  ...
+# Subtest: redirect, private query, partial, oversized and disguised HTML inputs never clear acquisition
+ok 6 - redirect, private query, partial, oversized and disguised HTML inputs never clear acquisition
+  ---
+  duration_ms: 425.618
+  type: 'test'
+  ...
+# Subtest: supplied dependency closure preserves inputs and resolves aliases, SVG fragments and embedded bytes
+ok 7 - supplied dependency closure preserves inputs and resolves aliases, SVG fragments and embedded bytes
+  ---
+  duration_ms: 1812.4643
+  type: 'test'
+  ...
+# Subtest: completeness is scoped and blocks missing dispositions, versions, reuse and unbound candidates
+ok 8 - completeness is scoped and blocks missing dispositions, versions, reuse and unbound candidates
+  ---
+  duration_ms: 627.3905
+  type: 'test'
+  ...
+# Subtest: format verification distinguishes invalid SVG/raster/WASM and unsupported textures
+ok 9 - format verification distinguishes invalid SVG/raster/WASM and unsupported textures
+  ---
+  duration_ms: 2047.0037
+  type: 'test'
+  ...
+# Subtest: glTF dependencies are loaded from confined acquired bytes without loader network
+ok 10 - glTF dependencies are loaded from confined acquired bytes without loader network
+  ---
+  duration_ms: 738.0412
+  type: 'test'
+  ...
+# Subtest: external verification is pinned and cannot override corrupted formats
+ok 11 - external verification is pinned and cannot override corrupted formats
+  ---
+  duration_ms: 391.0083
+  type: 'test'
+  ...
+# Subtest: opt-in capture discovers selected responsive sources, pseudo assets, shadows and worker requests
+ok 12 - opt-in capture discovers selected responsive sources, pseudo assets, shadows and worker requests
+  ---
+  duration_ms: 5246.0225
+  type: 'test'
+  ...
+# Subtest: bounded request timeout retains unavailable originals without leaking private URLs
+ok 13 - bounded request timeout retains unavailable originals without leaking private URLs
+  ---
+  duration_ms: 179.4451
+  type: 'test'
+  ...
+# Subtest: font verification records actual parsed family, glyph coverage and metrics
+ok 14 - font verification records actual parsed family, glyph coverage and metrics
+  ---
+  duration_ms: 496.3374
+  type: 'test'
+  ...
+# Subtest: installed FFprobe verifies original audio stream/container metadata
+ok 15 - installed FFprobe verifies original audio stream/container metadata
+  ---
+  duration_ms: 509.1477
+  type: 'test'
+  ...
+# Subtest: acquisition plan requires explicit portable identities and rejects unknown policies
+ok 16 - acquisition plan requires explicit portable identities and rejects unknown policies
+  ---
+  duration_ms: 5.1483
+  type: 'test'
+  ...
+# Subtest: example plan validates without requiring browser tooling
+ok 17 - example plan validates without requiring browser tooling
+  ---
+  duration_ms: 2.8964
+  type: 'test'
+  ...
+# Subtest: plan rejects scripts, duplicate ids, foreign navigation, private queries and unknown conditions
+ok 18 - plan rejects scripts, duplicate ids, foreign navigation, private queries and unknown conditions
+  ---
+  duration_ms: 2.96
+  type: 'test'
+  ...
+# Subtest: shared MCP probe is a complete standalone inspectable function
+ok 19 - shared MCP probe is a complete standalone inspectable function
+  ---
+  duration_ms: 2.2858
+  type: 'test'
+  ...
+# Subtest: a bounded promise terminates missing readiness
+ok 20 - a bounded promise terminates missing readiness
+  ---
+  duration_ms: 59.0556
+  type: 'test'
+  ...
+# Subtest: visible-image timeout and missing geometry cannot count as settled
+ok 21 - visible-image timeout and missing geometry cannot count as settled
+  ---
+  duration_ms: 1.3119
+  type: 'test'
+  ...
+# Subtest: manifest closure catches corrupted, unlisted and duplicate artifacts; seal refuses reuse
+ok 22 - manifest closure catches corrupted, unlisted and duplicate artifacts; seal refuses reuse
+  ---
+  duration_ms: 55.5206
+  type: 'test'
+  ...
+# Subtest: frozen/output destination is rejected before requiring Playwright
+ok 23 - frozen/output destination is rejected before requiring Playwright
+  ---
+  duration_ms: 2.9788
+  type: 'test'
+  ...
+# Subtest: an intact hash cannot excuse malformed JSON, truncated images or broken package links
+ok 24 - an intact hash cannot excuse malformed JSON, truncated images or broken package links
+  ---
+  duration_ms: 13.3937
+  type: 'test'
+  ...
+# Subtest: public-source inspection parses maps without fetching or executing; oversized is unknown
+ok 25 - public-source inspection parses maps without fetching or executing; oversized is unknown
+  ---
+  duration_ms: 10.0117
+  type: 'test'
+  ...
+# Subtest: live local fixtures: lazy images, phases, reversible states, mobile preferences, timeout, giant capture and provenance
+ok 26 - live local fixtures: lazy images, phases, reversible states, mobile preferences, timeout, giant capture and provenance
+  ---
+  duration_ms: 6705.3097
+  type: 'test'
+  ...
+# Subtest: appearance policy validates data-only assertions and bounded exceptions
+ok 27 - appearance policy validates data-only assertions and bounded exceptions
+  ---
+  duration_ms: 4.8853
+  type: 'test'
+  ...
+# Subtest: capture verification catches appearance changes without geometry changes
+ok 28 - capture verification catches appearance changes without geometry changes
+  ---
+  duration_ms: 0.9384
+  type: 'test'
+  ...
+# Subtest: synthetic settled-appearance regressions in a real browser
+    # Subtest: stable parent does not pass a delayed child opacity assertion
+    ok 1 - stable parent does not pass a delayed child opacity assertion
+      ---
+      duration_ms: 1095.9441
+      type: 'test'
+      ...
+    # Subtest: delayed finite transform/filter animation blocks even without a semantic assertion
+    ok 2 - delayed finite transform/filter animation blocks even without a semantic assertion
+      ---
+      duration_ms: 1267.5152
+      type: 'test'
+      ...
+    # Subtest: region readiness includes ancestors with delayed finite motion
+    ok 3 - region readiness includes ancestors with delayed finite motion
+      ---
+      duration_ms: 1276.6349
+      type: 'test'
+      ...
+    # Subtest: classified ambient motion stays observable and does not block static region convergence
+    ok 4 - classified ambient motion stays observable and does not block static region convergence
+      ---
+      duration_ms: 503.818
+      type: 'test'
+      ...
+    # Subtest: unclassified continuous motion cannot be silently ignored
+    ok 5 - unclassified continuous motion cannot be silently ignored
+      ---
+      duration_ms: 621.9472
+      type: 'test'
+      ...
+    # Subtest: cross-origin frame shell is not inner visual readiness
+    ok 6 - cross-origin frame shell is not inner visual readiness
+      ---
+      duration_ms: 1040.0925
+      type: 'test'
+      ...
+    # Subtest: viewport cannot be promoted to full-page appearance, even after a reveal sweep and reset
+    ok 7 - viewport cannot be promoted to full-page appearance, even after a reveal sweep and reset
+      ---
+      duration_ms: 2059.5446
+      type: 'test'
+      ...
+    # Subtest: timeout preserves pending signals instead of force passing
+    ok 8 - timeout preserves pending signals instead of force passing
+      ---
+      duration_ms: 628.0861
+      type: 'test'
+      ...
+    # Subtest: sample-budget exhaustion is honest and distinct from timeout
+    ok 9 - sample-budget exhaustion is honest and distinct from timeout
+      ---
+      duration_ms: 406.5848
+      type: 'test'
+      ...
+    # Subtest: region visual convergence detects changing canvas pixels beyond DOM geometry
+    ok 10 - region visual convergence detects changing canvas pixels beyond DOM geometry
+      ---
+      duration_ms: 744.9837
+      type: 'test'
+      ...
+    # Subtest: sample truncation and unavailable screenshot capability remain unresolved
+    ok 11 - sample truncation and unavailable screenshot capability remain unresolved
+      ---
+      duration_ms: 864.7591
+      type: 'test'
+      ...
+    # Subtest: screenshot pixel refusal invalidates successful viewport appearance
+    ok 12 - screenshot pixel refusal invalidates successful viewport appearance
+      ---
+      duration_ms: 1737.1236
+      type: 'test'
+      ...
+    1..12
+ok 29 - synthetic settled-appearance regressions in a real browser
+  ---
+  duration_ms: 13648.4564
+  type: 'test'
+  ...
+1..29
+# tests 41
+# suites 0
+# pass 41
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 35485.4878

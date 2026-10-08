@@ -1,0 +1,25 @@
+{
+  "name": "reference-reconstruction-tools",
+  "version": "2.2.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node scripts/run-tests.mjs",
+    "test:assets": "node --test scripts/test-assets.mjs"
+  },
+  "dependencies": {
+    "@gltf-transform/core": "4.5.1",
+    "@xmldom/xmldom": "0.9.12",
+    "acorn": "8.19.0",
+    "fontkit": "2.0.4",
+    "m3u8-parser": "7.2.0",
+    "parse-srcset": "1.0.2",
+    "parse5": "8.0.1",
+    "postcss": "8.5.29",
+    "postcss-value-parser": "4.2.0",
+    "sharp": "0.35.5"
+  }
+}

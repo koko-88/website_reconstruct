@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "contractId": "FC-01",
+  "sourceId": "REF-01",
+  "phase": "reconstruction",
+  "assetRunManifestSHA256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "assessor": "Replace with actual assessor",
+  "coverage": [
+    {
+      "id": "C-01",
+      "route": "/",
+      "state": "default",
+      "environmentId": "ENV-01",
+      "disposition": "unresolved",
+      "evidenceIds": [],
+      "surfaces": [
+        {
+          "kind": "source/runtime/responsive/fonts/non-DOM as relevant",
+          "disposition": "unresolved",
+          "reason": "Populate from actual discovery evidence",
+          "evidenceIds": []
+        }
+      ]
+    }
+  ],
+  "obligations": [
+    {
+      "id": "A-OB-01",
+      "mode": "original",
+      "coverageIds": [
+        "C-01"
+      ],
+      "evidenceIds": [],
+      "authority": "Populate from active contract",
+      "urls": [],
+      "slot": "hero",
+      "sourceMatch": {
+        "status": "pending",
+        "evidenceIds": []
+      },
+      "reuse": {
+        "result": "BLOCKED",
+        "authority": "Pending phase-specific decision",
+        "reason": "No reuse decision inferred from download",
+        "phase": "reconstruction"
+      }
+    }
+  ],
+  "dispositions": [],
+  "issueResolutions": [],
+  "verifications": []
+}

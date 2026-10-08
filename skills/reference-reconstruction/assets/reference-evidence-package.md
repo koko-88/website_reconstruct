@@ -84,6 +84,14 @@ Cover layout/gutters/columns/gaps, rhythm, color/gradients, borders/radii/shadow
 
 ### Assets
 
+When original implementation assets are required, use [asset-acquisition.md](../references/asset-acquisition.md) and attach the new sealed sidecar rather than storing decisions in a raw capture run.
+
+- Asset run / manifest hash / designated source-version match: [paths, hashes and evidence]
+- Availability/completeness assessment / exact route-state-environment obligations: [revision, result, evidence]
+- Candidate dispositions, verified dependency closure and implementation URL-to-local map: [links]
+- Remaining acquisition/decoder/rendering gaps and smallest resolving input: [IDs or none]
+- Original versus derived/substitute lineage and requested-phase reuse decisions: [links]
+
 | Asset ID / role | Source / local path / type | Intrinsic size / variants / selected source | Render size / crop / object-position / aspect ratio | Semantic/decorative / alt behavior | Acquisition/reuse status / replacement decision | Evidence IDs / uncertainty |
 | --- | --- | --- | --- | --- | --- | --- |
 

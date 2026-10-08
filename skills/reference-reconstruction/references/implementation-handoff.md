@@ -6,6 +6,8 @@ Use after scoped integrity/fidelity passage and satisfaction of every asset/reus
 
 Provide contract path/revision, package path/revision, four gate results and exact implementation clearance, source authority, artifact manifest, State & Route Coverage Matrix, Environment Matrix, Non-DOM Rendering Detection and Public Artifact/source-map reports, environment/reset recipes, evidence-linked design/component/responsive/behavior/motion requirements, asset/font decisions and residual low-impact issues. Include acceptance cases even if Playwright comes later. The recipient must locate artifacts and replay states without chat history.
 
+When implementation assets are required, carry the sealed availability/completeness assessment and [asset acquisition handoff](asset-acquisition.md): local original files and hashes, responsive/source aliases and occurrence conditions, font/media/renderer descriptors, dependency closure, source-version match, approved substitutions and phase-specific reuse. Reverify on receipt. Derive implementation paths/transforms from the URL-to-local map while retaining unchanged originals; do not wire the target to live reference hosts. A blocked asset packet grants no dependent implementation clearance.
+
 Read target repository constraints before translating requirements into components. Library defaults cannot replace observed contracts. Keep reference tracking, secrets and backend hosts out of the target.
 
 ## 1. Reference-equivalent reconstruction

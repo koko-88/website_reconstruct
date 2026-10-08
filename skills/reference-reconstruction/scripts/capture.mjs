@@ -4,6 +4,7 @@ import vm from 'node:vm';
 import os from 'node:os';
 import {createRequire} from 'node:module';
 import {fileURLToPath,pathToFileURL} from 'node:url';
+import {policy as assetPolicy} from './asset-policy.mjs';
 import {seal,sha256} from './package.mjs';
 import {appearancePolicy,probeOptions,waitAppearance,postAppearanceReasons,visualSample} from './settled-appearance.mjs';
 
@@ -25,8 +26,9 @@ function integer(value,min,max,label) { if(!Number.isInteger(value)||value<min||
 function id(value,label) { if(typeof value!=='string'||!identifier.test(value)) throw Error('Invalid '+label); }
 function strings(value,label,max=100) { if(!Array.isArray(value)||value.length>max||value.some(s=>typeof s!=='string'||!s||s.length>500)) throw Error('Invalid '+label); }
 export function validatePlan(plan) {
-  keys(plan,['schemaVersion','packageId','contractId','sourceId','authorization','allowedOrigins','publicQueryKeys','environments','cases','totalTimeoutMs','browserChannel'],'plan');
+  keys(plan,['schemaVersion','packageId','contractId','sourceId','authorization','allowedOrigins','publicQueryKeys','environments','cases','totalTimeoutMs','browserChannel','assetDiscovery'],'plan');
   if(plan.schemaVersion!==2) throw Error('Expected capture schema 2');
+  if(plan.assetDiscovery!==undefined)assetPolicy(plan.assetDiscovery);
   if(plan.browserChannel!==undefined&&!['chrome','msedge','chromium'].includes(plan.browserChannel)) throw Error('Unsupported browser channel');
   for(const field of ['packageId','contractId','sourceId']) id(plan[field],field);
   if(typeof plan.authorization!=='string'||!plan.authorization.trim()||plan.authorization.length>2000) throw Error('Record capture authorization');
@@ -135,6 +137,8 @@ async function perform(page,actions,log) {
 }
 export async function capture(planInput,out,modulePath) {
   const {plan,checkURL}=validatePlan(structuredClone(planInput));
+  let assetModule;
+  if(plan.assetDiscovery){assetModule=await import('./asset-observer.mjs');assetModule.validateDiscovery(plan.assetDiscovery);}
   out=path.resolve(out);
   // An existing/frozen output is never reused. Atomic leaf creation also prevents concurrent reuse.
   if(fs.existsSync(out)) throw Error('Output exists; use a new revision');
@@ -147,7 +151,7 @@ export async function capture(planInput,out,modulePath) {
   const runnerSHA256=sha256(fs.readFileSync(fileURLToPath(import.meta.url)));
   const provenance={schemaVersion:2,packageId:plan.packageId,contractId:plan.contractId,sourceId:plan.sourceId,playwrightVersion:version,runnerSHA256,probeSHA256:sha256(probeSource),appearancePolicySHA256:sha256(fs.readFileSync(path.join(here,'settled-appearance.mjs'))),planSHA256:sha256(fs.readFileSync(path.join(out,'plan.json'))),hostOS:{platform:os.platform(),release:os.release(),version:os.version(),architecture:os.arch()},headless:true,modifications:['Fresh browser context per case','Main-frame navigation guard via routing; HTTP cache disabled by interception','No source style/content/animation changes'],limits:['No auth/storage import','No physical-device/AT/browser-zoom/GPU parity claim','Same plan does not freeze live content, randomness or ambient frames']};
   let browser,timer,timedOut=false;
-  const cases=[],errors=[];
+  const cases=[],errors=[],assetCases=[];
   try {
     browser=await playwright.chromium.launch({headless:true,timeout:30000,chromiumSandbox:true,...(plan.browserChannel?{channel:plan.browserChannel}:{})});
     provenance.browserChannel=plan.browserChannel||'Playwright bundled Chromium';
@@ -160,6 +164,7 @@ export async function capture(planInput,out,modulePath) {
       const context=await browser.newContext({...contextOptions,acceptDownloads:false});
       const row={caseId:item.id,environmentId:envID,state:item.state,fixture,session,consent,reset:item.reset,actions:[],captures:[],network:[]};
       cases.push(row);
+      const assetObserver=assetModule?assetModule.observeAssets(context,plan.assetDiscovery,item.id):null;
       try {
         const page=await context.newPage();
         page.setDefaultTimeout(10000);page.setDefaultNavigationTimeout(20000);
@@ -219,15 +224,17 @@ export async function capture(planInput,out,modulePath) {
           }
           if(cp.phase==='settled'&&record.phase!=='settled') { record.readiness.appearance.state='unresolved';record.readiness.appearance.convergence.pass=false;record.readiness.appearance.why='Readiness or capture verification unresolved'; }
           if(cp.phase==='settled'&&record.phase!=='settled') errors.push(prefix+': '+record.readiness.reasons.join(', '));
+          if(assetObserver){try{await bounded(assetObserver.checkpoint(page,prefix,envID,item.state),Math.min(cp.timeoutMs,10000),'asset checkpoint');}catch{assetObserver.note('asset checkpoint failed/timed out: '+prefix);errors.push(prefix+': asset checkpoint unavailable');}}
           write(prefix+'.json',record);row.captures.push({evidenceId:prefix,path:prefix+'.json',phase:record.phase});
         }
       } catch(error) { row.error=error.message;errors.push(item.id+': '+error.message); }
-      finally { await context.close(); }
+      finally { if(assetObserver)assetCases.push(assetObserver.finish());await context.close(); }
     }
   } catch(error) { errors.push(error.message); }
   finally { clearTimeout(timer);if(browser) await browser.close(); }
   if(timedOut) errors.push('Total capture deadline exceeded');
   write('run.json',{schemaVersion:2,result:errors.length?'INCOMPLETE':'CAPTURED',cases,errors,provenance,limits:'Raw capture status only; semantic coverage, reports, gates and asset decisions require inspection'});
+  if(assetModule)write('asset-observations.json',{schemaVersion:1,sourceId:plan.sourceId,contractId:plan.contractId,probeSHA256:assetModule.assetProbeSHA256,cases:assetCases});
   seal(out,{packageId:plan.packageId,kind:'raw-capture-run',result:errors.length?'INCOMPLETE':'CAPTURED'});
   return {out,result:errors.length?'INCOMPLETE':'CAPTURED',cases:cases.length,errors};
 }

@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "packageId": "ASSETS-01",
+  "contractId": "FC-01",
+  "sourceId": "REF-01",
+  "phase": "reconstruction",
+  "policy": {
+    "authorization": "Replace with the existing scoped acquisition instruction",
+    "allowedOrigins": [
+      "https://reference.example"
+    ],
+    "publicQueryKeys": [
+      "width",
+      "format"
+    ],
+    "limits": {
+      "maxAssets": 1000,
+      "maxAssetBytes": 32000000,
+      "maxTotalBytes": 256000000,
+      "maxDepth": 8,
+      "requestTimeoutMs": 20000,
+      "totalTimeoutMs": 300000,
+      "maxSourceBytes": 5000000,
+      "maxPixels": 40000000
+    }
+  },
+  "sources": [
+    {
+      "id": "SOURCE-01",
+      "type": "file",
+      "root": "./supplied",
+      "path": "index.html",
+      "url": "https://reference.example/"
+    }
+  ],
+  "seeds": []
+}

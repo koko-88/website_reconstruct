@@ -1,0 +1,236 @@
+{
+  "schemaVersion": 1,
+  "stage": "implementation",
+  "candidateWorkflowVersion": "2.2.0",
+  "baseRevisionAtHandoff": "c19c541204f11d1932533b1c50dbb854665b5ddb",
+  "branch": "main",
+  "committed": false,
+  "pushed": false,
+  "installedAdoption": false,
+  "independentEvaluation": false,
+  "engineeringChecks": {
+    "canonical": {
+      "passed": 41,
+      "failed": 0,
+      "skipped": 0,
+      "log": "engineering-regressions.log"
+    },
+    "portableWithoutDependencies": {
+      "passed": 12,
+      "failed": 0,
+      "skipped": 17,
+      "log": "portable-core-regressions.log"
+    },
+    "skillValidator": "PASS",
+    "syntaxJSONLocalLinks": "PASS",
+    "gitWhitespace": "PASS",
+    "npmAuditVulnerabilities": 0
+  },
+  "runtime": {
+    "node": "v24.19.0",
+    "browser": "Installed Chrome through existing Playwright module",
+    "ffprobe": "9.0.2-full_build",
+    "fontFixture": "Existing system font; no font redistributed"
+  },
+  "dependencies": {
+    "@gltf-transform/core": "4.5.1",
+    "@xmldom/xmldom": "0.9.12",
+    "acorn": "8.19.0",
+    "fontkit": "2.0.4",
+    "m3u8-parser": "7.2.0",
+    "parse-srcset": "1.0.2",
+    "parse5": "8.0.1",
+    "postcss": "8.5.29",
+    "postcss-value-parser": "4.2.0",
+    "sharp": "0.35.5"
+  },
+  "sourceFiles": [
+    {
+      "path": "agents/openai.yaml",
+      "bytes": 136,
+      "sha256": "80139fa662f33411e9d6c65ac4fe9f35c8a876b6abdf31e5796114375f03ea53"
+    },
+    {
+      "path": "assets/acceptance-plan.md",
+      "bytes": 4097,
+      "sha256": "34851dc45b6d4b2df13b250cb46af7e0fa676789d23f2405f27fbcf6ccf514dd"
+    },
+    {
+      "path": "assets/adaptation-contract.md",
+      "bytes": 2693,
+      "sha256": "df1307c7411341cd04c430bebb47660b690c933b00ffdb8f068e43aee1f70a26"
+    },
+    {
+      "path": "assets/asset-plan.example.json",
+      "bytes": 811,
+      "sha256": "7c3a9ed7c9ce9f0c10bc3d3c454b1466282e4d683be271032e1925a4cf48c484"
+    },
+    {
+      "path": "assets/asset-review.example.json",
+      "bytes": 1301,
+      "sha256": "803d14988642b969fe11901dc36740e9b1c5cecaecbbade192b758b6aeb85b63"
+    },
+    {
+      "path": "assets/capture-plan.example.json",
+      "bytes": 1416,
+      "sha256": "fca6a9aeb63f969f7b86c16296fcb4785b4dc359f8346abe3c869502ac1e487b"
+    },
+    {
+      "path": "assets/fidelity-scope-contract.md",
+      "bytes": 1192,
+      "sha256": "49a80341e09d789be24c9a4b9936edf22bd611d27defb600258f1feafd49b462"
+    },
+    {
+      "path": "assets/reference-evidence-package.md",
+      "bytes": 13423,
+      "sha256": "c16909be9715b75e8bd4247d91825a68894d9d21e4d0d96b307e3549f8a7706b"
+    },
+    {
+      "path": "package-lock.json",
+      "bytes": 32516,
+      "sha256": "4efc02c556ef8ea5313db8ec356ed512ae7a9fc8f67b600752bb444437d96b78"
+    },
+    {
+      "path": "package.json",
+      "bytes": 571,
+      "sha256": "27c0a2b7b8ba3f16ce9dbee562d8e45ee48d1648ea841dbc47f27e832a5f3fa2"
+    },
+    {
+      "path": "references/asset-acquisition.md",
+      "bytes": 13208,
+      "sha256": "093c230eb39fb28b0841fc0198b38b71e50fa2c238168a7b4699b1558eb4ed17"
+    },
+    {
+      "path": "references/capture-plan.md",
+      "bytes": 10749,
+      "sha256": "195025c914a3cbf160b9c00c2f7a17578e481108c95ee374a3222da407031029"
+    },
+    {
+      "path": "references/capture.md",
+      "bytes": 4655,
+      "sha256": "cb21a3429fe5c5f924847079014713ba927552e4c869d21301ad94915a19b57f"
+    },
+    {
+      "path": "references/completeness-gate.md",
+      "bytes": 5459,
+      "sha256": "c6a4b30de9d9aa36a84ef4b23166a33d10aa9b8390044362a64ef49c1fe567c4"
+    },
+    {
+      "path": "references/fidelity-contract.md",
+      "bytes": 2260,
+      "sha256": "2ed19f9cfb976ad6834d62532976f7cb3972bcd58c9bfb9683540a0addd0f437"
+    },
+    {
+      "path": "references/implementation-handoff.md",
+      "bytes": 5927,
+      "sha256": "daaf81605ed80d749f494e4b1ad48dd403ce4ef493bad171f367cb2a2caa55ca"
+    },
+    {
+      "path": "references/inspection.md",
+      "bytes": 10801,
+      "sha256": "223e00013be32773f57a74b45e18326eb8eef5000226a26dbf93a63d17ab660c"
+    },
+    {
+      "path": "references/migration-portability.md",
+      "bytes": 2598,
+      "sha256": "41b3997d740241476014c711f7b059cef335b284b16f70686a498442cc4d11a6"
+    },
+    {
+      "path": "references/settled-appearance.md",
+      "bytes": 9237,
+      "sha256": "a8d04e17809021db331cf5fd384f8cec6295bec4800ddf8a4122777f8ea0f8bb"
+    },
+    {
+      "path": "references/tool-selection.md",
+      "bytes": 4365,
+      "sha256": "18a46b80aac66be26713df788d0fbb42d3b5ff8fc635bf57a6ea2a944fe227cd"
+    },
+    {
+      "path": "scripts/asset-discovery.mjs",
+      "bytes": 14383,
+      "sha256": "15cf4b0f4d2e554e207b741c9439743308a2a140c409c15970e4e07d5e11b075"
+    },
+    {
+      "path": "scripts/asset-observer.mjs",
+      "bytes": 4319,
+      "sha256": "ad8672efd84a6da6f1bd35627986ef6fbe322e14a67f696982274482bf8a017c"
+    },
+    {
+      "path": "scripts/asset-policy.mjs",
+      "bytes": 5879,
+      "sha256": "b1646c7c889d57a576aea63906f1e5594f9fe7bbf48d680a18e75d3087dfb576"
+    },
+    {
+      "path": "scripts/asset-probe.js",
+      "bytes": 3999,
+      "sha256": "a37f81f94934cb1c21fe74defe67552092aed252da6977effb4e4216db44536c"
+    },
+    {
+      "path": "scripts/asset-verify.mjs",
+      "bytes": 7970,
+      "sha256": "948f2d8b6b18eb93662de8a62b77e4dd063909dec677b075fd78a353d7d0dbfb"
+    },
+    {
+      "path": "scripts/assets.mjs",
+      "bytes": 26274,
+      "sha256": "8f5bae1d1d4103e02545a7a6d4f025c3083ecefbf24c9cb9adc5c76215907098"
+    },
+    {
+      "path": "scripts/capture.mjs",
+      "bytes": 20547,
+      "sha256": "44d339c5c2a6765ff079d8f857b38a55cbd9111049097dff6f280dd74615a0e7"
+    },
+    {
+      "path": "scripts/package.mjs",
+      "bytes": 5733,
+      "sha256": "f27fe2ccd277b451b4eb0230209ea79aa0984e79279bc16bce40d0cf24227c7a"
+    },
+    {
+      "path": "scripts/page-probe.js",
+      "bytes": 12392,
+      "sha256": "ed4e3c3407f8bc02c200cbb41e9d499ad30c20556bc4fe5e24084cc97857ab55"
+    },
+    {
+      "path": "scripts/run-tests.mjs",
+      "bytes": 918,
+      "sha256": "ff79d7c8f8facc69fd361b21c777d43d4960bbf9043de734e2f74bd784bc0d72"
+    },
+    {
+      "path": "scripts/settled-appearance.mjs",
+      "bytes": 11836,
+      "sha256": "6292e0f2d3e0436ce3185ea681244d49970ce8002a9b854119be503da2f43bb2"
+    },
+    {
+      "path": "scripts/source-report.mjs",
+      "bytes": 2994,
+      "sha256": "7b9cd2bff6b0001ccc437ec07c537bb78b97ce87ca0657af55c027d4c0e3e98f"
+    },
+    {
+      "path": "scripts/test-assets.mjs",
+      "bytes": 22367,
+      "sha256": "188d2f539128af556750765c9e6d768e4d4aa5892f76df6885c3d154043ff62d"
+    },
+    {
+      "path": "scripts/test-capture.mjs",
+      "bytes": 10142,
+      "sha256": "b3633d9471a9edfe343529e8c91054765d41ee60feecb82e027346fdf4cdbac1"
+    },
+    {
+      "path": "scripts/test-settled-appearance.mjs",
+      "bytes": 13733,
+      "sha256": "5d945d47091d88d8368f1326afb479332ed40ec5da706bb9a16c7758b67d58bd"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 8544,
+      "sha256": "aed2a51723e8f27b1898b61e821b5d8935738c23801d1833812f8e914b4d76d7"
+    }
+  ],
+  "boundaries": {
+    "frozenReferenceWrites": false,
+    "preExistingToolingDeletionsModified": false,
+    "globalSkillWrites": false,
+    "rightsInferred": false
+  },
+  "beadsIssue": "web_reconstruction-f5f"
+}
