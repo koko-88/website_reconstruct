@@ -1,0 +1,45 @@
+name: Skill Hardening (offline contract)
+
+on:
+  pull_request:
+    paths:
+      - "tooling/skill-hardening/**"
+      - "skills/reference-reconstruction/**"
+      - "mise.toml"
+      - "mise.lock"
+      - ".github/workflows/skill-hardening.yml"
+  push:
+    branches: [main]
+    paths:
+      - "tooling/skill-hardening/**"
+      - "skills/reference-reconstruction/**"
+      - "mise.toml"
+      - "mise.lock"
+      - ".github/workflows/skill-hardening.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  offline-contract:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Checkout
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+
+      - name: Use locked toolchain
+        uses: jdx/mise-action@e6a8b3978addb5a52f2b4cd9d91eafa7f0ab959d
+        with:
+          version: "2026.10.3"
+          install_args: "--locked"
+
+      - name: Verify Stage 2 preflight syntax and offline contract
+        run: |
+          node --check tooling/skill-hardening/verify-host.mjs
+          node --check skills/reference-reconstruction/scripts/capture.mjs
+          mise run hardening:preflight-test
+
+      # Asset-acquisition integration and skill-eval acceptance suites are a separate
+      # unimplemented Stage-2 gate; no target traffic, Docker or model credits here.
