@@ -75,3 +75,5 @@ sync:
     remote: "git+https://github.com/koko-88/website_reconstruct.git"
 dolt:
     shared-server: true
+export:
+    auto: true
