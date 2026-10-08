@@ -40,3 +40,12 @@ run = "node tooling/creative-capabilities/verify-workstation.mjs"
 [tasks."workstation:verify-strict"]
 description = "Fail when an expected reusable workstation capability is unavailable."
 run = "node tooling/creative-capabilities/verify-workstation.mjs --strict"
+
+
+[tasks."hardening:preflight"]
+description = "Read-only Stage 2 skill-hardening tool inventory; never downloads or modifies local state."
+run = "node tooling/skill-hardening/verify-host.mjs"
+
+[tasks."hardening:preflight-test"]
+description = "Deterministic offline tests for Stage 2 host preflight."
+run = "node --test tooling/skill-hardening/verify-host.test.mjs"
