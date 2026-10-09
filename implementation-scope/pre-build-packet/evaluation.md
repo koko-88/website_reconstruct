@@ -46,4 +46,4 @@ FIRST IMPLEMENTATION VALIDATION: CLEARED FROM EVIDENCE PERSPECTIVE
 
 Evidence preparation is complete. These declarations do not authorize public redistribution, reference source-code copying, or real target adaptation, and they do not prove a completed/tested website. FC-TARGET-DESIGN-01 revision4 preserves that evidence/asset clearance but makes ROADMAP decomposition and review the current implementation-admission gate.
 
-Recheck locally from repository root with `python implementation-scope/pre-build-packet/verify.py`. It reads existing evidence and writes only the packet verification receipt; no browser tooling is invoked.
+Recheck locally from repository root with `python implementation-scope/pre-build-packet/verify.py`. It reads existing evidence and prints current results without changing the historical packet receipt. To retain results, use `--output artifacts/<unique-run>/logic.json` with a new destination as defined in [logic verification](../../LOGIC_VERIFICATION.md); no browser tooling is invoked.

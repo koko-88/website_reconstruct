@@ -61,7 +61,7 @@ async function referenceProbe(options = {}) {
       const regionRect=regionNodes.length===1?rect(regionNodes[0]):null;
       const inViewport=regionRect&&regionRect.x>=0&&regionRect.y>=0&&regionRect.x+regionRect.width<=innerWidth&&regionRect.y+regionRect.height<=innerHeight&&regionRect.width>0&&regionRect.height>0;
       const scopeRect=regionRect||viewport;
-      const region=policy.scope==='region'?{count:regionNodes.length,rect:regionRect,inViewport:!!inViewport,clip:inViewport?{...regionRect,x:regionRect.x+scrollX,y:regionRect.y+scrollY}:null}:null;
+      const region=policy.scope==='region'?{count:regionNodes.length,rect:regionRect,inViewport:!!inViewport,clip:inViewport?{...regionRect}:null}:null;
       const walker=document.createTreeWalker(document.documentElement,NodeFilter.SHOW_ELEMENT);
       const nodes=[],frames=[];let scanned=0,truncated=false,node=walker.currentNode;
       while(node) {

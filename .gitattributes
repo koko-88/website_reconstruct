@@ -1,0 +1,17 @@
+# Sealed evidence keeps its recorded bytes, independent of core.autocrlf.
+reference/** -text
+
+# These originals were sealed with CRLF before Git normalized their blobs.
+# Restore that exact checkout representation on every platform.
+reference/haunted-boulder-city/observations/E-093-skill-provenance.json text eol=crlf
+reference/haunted-boulder-city-v2/rev-2.0.0-real-01/inherited-v1/observations/E-093-skill-provenance.json text eol=crlf
+reference/haunted-boulder-city-v2/rev-2.0.0-real-01/observations/E2-005-source-report.json text eol=crlf
+reference/haunted-boulder-city-v2/rev-2.0.0-real-01/observations/E2-011-widget-source-report.json text eol=crlf
+reference/haunted-boulder-city-v2/rev-2.0.0-real-01/observations/image-decode.json text eol=crlf
+reference/haunted-boulder-city-v2/rev-2.0.0-real-01/observations/v1-after.json text eol=crlf
+reference/haunted-boulder-city-v2/rev-2.0.0-real-01/observations/v1-before.json text eol=crlf
+reference/haunted-boulder-city-v2/rev-2.0.0-real-01/observations/v1-integrity-after.json text eol=crlf
+reference/haunted-boulder-city-v2/rev-2.0.0-real-01/observations/write-preflight.txt text eol=crlf
+reference/haunted-boulder-city-v2/rev-2.0.0-real-01/tooling/reference-reconstruction/agents/openai.yaml text eol=crlf
+reference/haunted-boulder-city-v2/rev-2.0.0-real-01/tooling/reference-reconstruction/SKILL.md text eol=crlf
+reference/haunted-boulder-city-v2/rev-2.0.0-real-01.preseal-manifest.json text eol=crlf

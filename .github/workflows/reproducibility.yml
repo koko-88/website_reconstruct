@@ -11,7 +11,7 @@ on:
       - "implementation-scope/pre-build-packet/**"
       - "reference/**"
       - "specs/**"
-      - "model-selection/*.md"
+      - "model-selection/**"
       - ".specify/**"
       - "PRODUCT.md"
       - "ROADMAP.md"
@@ -20,6 +20,12 @@ on:
       - ".github/workflows/reproducibility.yml"
       - "AGENTS.md"
       - ".gitignore"
+      - ".gitattributes"
+      - "CLAUDE.md"
+      - ".agents/skills/**"
+      - ".cursor/skills/**"
+      - ".clinerules/workflows/**"
+      - ".opencode/commands/**"
   pull_request:
     paths:
       - "mise.toml"
@@ -29,7 +35,7 @@ on:
       - "implementation-scope/pre-build-packet/**"
       - "reference/**"
       - "specs/**"
-      - "model-selection/*.md"
+      - "model-selection/**"
       - ".specify/**"
       - "PRODUCT.md"
       - "ROADMAP.md"
@@ -38,6 +44,12 @@ on:
       - ".github/workflows/reproducibility.yml"
       - "AGENTS.md"
       - ".gitignore"
+      - ".gitattributes"
+      - "CLAUDE.md"
+      - ".agents/skills/**"
+      - ".cursor/skills/**"
+      - ".clinerules/workflows/**"
+      - ".opencode/commands/**"
   workflow_dispatch:
 
 permissions:
@@ -70,8 +82,13 @@ jobs:
       - name: Require declared asset parsers
         run: node --input-type=module -e "await import('./skills/reference-reconstruction/scripts/assets.mjs')"
 
-      - name: Verify reproducibility contract
-        run: mise run repro:verify
+      - name: Verify tooling regressions with optional integrations explicitly scoped
+        run: |
+          mise run repro:verify
+          printf '%s\n' 'Tooling regressions passed. Optional browser/font/media checks are NOT_RUN when their inputs are absent; consult native test output for skips. This job does not certify browser integration or website acceptance.' >> "$GITHUB_STEP_SUMMARY"
 
       - name: Verify evidence and linked governance
-        run: python3 implementation-scope/pre-build-packet/verify.py
+        run: mise exec -- python implementation-scope/pre-build-packet/verify.py
+
+      - name: Verify evidence checkout portability
+        run: mise exec -- python -m unittest discover -s implementation-scope/pre-build-packet -p 'test_*.py'

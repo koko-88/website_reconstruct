@@ -179,7 +179,10 @@ Use complementary levels, not duplicative tests:
 Use Playwright Test directly with serial canonical workers and zero automatic acceptance retries.
 One final invocation covers portable, canonical and variant projects, each explicitly labeled; three
 fresh trials per HOME-D/M/R retain all nine outcomes. A unique run ID selects output/report/trace
-paths; refuse an existing output directory. Native metadata and test attachments preserve pinned
+paths. Every checkpoint/final/diagnostic invocation uses a fresh run ID. Set native `outputDir` to
+its `playwright/` child and reports to `reports/`; reject existing native children, while keeping
+preparation/calibration/reviews/acceptance as siblings outside cleanup. Final acceptance covers its
+own complete invocation; earlier checkpoints remain linked evidence. Native metadata and test attachments preserve pinned
 spec/build/fixture/calibration/environment identity and failure evidence. Diagnostic reruns use a new
 run ID linked to the failed run. The minimal feature validator checks native JSON results and the
 feature catalogue for missing, skipped or incomplete checks, input drift and required review; it

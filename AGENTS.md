@@ -107,3 +107,11 @@ Local verification and CI execution, including integration checks and temporary 
 services, are authorized. Other GitHub operations, commits/pushes, installation, deployment, paid
 provider expansion and launching an external orchestrator require user authorization. CI permission
 does not authorize repository/PR/settings changes or advance product delivery/release gates.
+
+## Codebase intelligence
+
+When code-review-graph is available, use its architecture/search/impact tools first to narrow code
+reads. Check the graph revision and freshness; do not assume hooks or automatic updates. Verify
+findings in the current source and relevant tests. Empty results or zero risk scores do not establish
+absence or correctness. When unavailable, use native source search and Git inspection, recording the
+capability limit. Structural graph analysis does not substitute for independent engineering review.

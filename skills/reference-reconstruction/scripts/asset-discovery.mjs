@@ -17,6 +17,7 @@ export function kindFor(url,mime='') {
   if(type.startsWith('image/')||/\.(png|jpe?g|webp|gif|avif|apng|ico|bmp|tiff?|ktx2?|dds|hdr|exr)$/i.test(pathname))return 'image';
   if(['application/font-woff','application/font-sfnt','application/vnd.ms-opentype','application/x-font-ttf','application/x-font-opentype'].includes(type)||type.startsWith('font/')||/\.(woff2?|[ot]tf|ttc|otc)$/i.test(pathname))return 'font';
   if(/\.(m3u8|mpd)$/i.test(pathname)||/mpegurl|dash\+xml/.test(type))return 'media';
+  if(/\.m4s$/i.test(pathname))return 'media-segment';
   if(type.startsWith('video/')||/\.(mp4|webm|mov|m4v|ogv)$/i.test(pathname))return 'video';
   if(type.startsWith('audio/')||/\.(mp3|wav|ogg|m4a|flac|opus)$/i.test(pathname))return 'audio';
   if(/\.(m3u8|mpd)$/i.test(pathname))return 'media';
@@ -144,9 +145,9 @@ export function discover(bytes,kind,baseURL,maxBytes=5000000) {
         for(const playlist of [...(manifest.playlists||[]),...(manifest.iFramePlaylists||[])])add(playlist.uri,'media','hls-playlist',{attributes:playlist.attributes});
         for(const [type,groups] of Object.entries(manifest.mediaGroups||{}))for(const [group,labels] of Object.entries(groups))for(const [label,rendition] of Object.entries(labels))if(rendition.uri)add(rendition.uri,'media','hls-rendition',{type,group,label,language:rendition.language});
         for(const segment of manifest.segments||[]) {
-          add(segment.uri,undefined,'hls-segment',{duration:segment.duration,byterange:segment.byterange||null});
-          if(segment.map?.uri)add(segment.map.uri,undefined,'hls-initialization',{byterange:segment.map.byterange||null});
-          for(const part of segment.parts||[])add(part.uri,undefined,'hls-part');
+          add(segment.uri,'media-segment','hls-segment',{duration:segment.duration,byterange:segment.byterange||null});
+          if(segment.map?.uri)add(segment.map.uri,'media-segment','hls-initialization',{byterange:segment.map.byterange||null});
+          for(const part of segment.parts||[])add(part.uri,'media-segment','hls-part');
           if(segment.key?.method&&segment.key.method!=='NONE')limits.push('Encrypted HLS: keys are not acquired; owner/DRM decision required');
         }
         if(!manifest.endList)limits.push('Live HLS: future segments unknown');
@@ -158,8 +159,8 @@ export function discover(bytes,kind,baseURL,maxBytes=5000000) {
           const children=Array.from({length:node.childNodes.length},(_,i)=>node.childNodes.item(i));
           for(const child of children)if(child.nodeType===1&&child.localName==='BaseURL')local=new URL(child.textContent.trim(),local).href;
           for(const child of children)if(child.nodeType===1){
-            if(child.localName==='SegmentURL'&&child.hasAttribute('media'))add(new URL(child.getAttribute('media'),local).href,undefined,'dash-segment');
-            if(child.localName==='Initialization'&&child.hasAttribute('sourceURL'))add(new URL(child.getAttribute('sourceURL'),local).href,undefined,'dash-initialization');
+            if(child.localName==='SegmentURL'&&child.hasAttribute('media'))add(new URL(child.getAttribute('media'),local).href,'media-segment','dash-segment');
+            if(child.localName==='Initialization'&&child.hasAttribute('sourceURL'))add(new URL(child.getAttribute('sourceURL'),local).href,'media-segment','dash-initialization');
             if(child.localName==='SegmentTemplate')limits.push('DASH SegmentTemplate needs observed/explicit segments; no speculative expansion');
             if(child.localName==='ContentProtection')limits.push('Protected DASH needs owner/DRM decision');
             walk(child,local);

@@ -240,6 +240,13 @@ def main() -> None:
     parser.add_argument("mode", choices=["inspect", "agentcompass"])
     parser.add_argument("--output", type=Path)
     args = parser.parse_args()
+    if args.output:
+        output = args.output.resolve()
+        if output.exists() or output in [Path(__file__).with_name(name).resolve()
+                                        for name in ('inspect-verification.json', 'agentcompass-verification.json')]:
+            parser.error('Output must be a new file outside historical receipts')
+    else:
+        output = Path(tempfile.mkdtemp(prefix='benchmark-verification-')) / f'{args.mode}-verification.json'
     os.environ["HF_HUB_OFFLINE"] = "1"
     os.environ["HF_DATASETS_OFFLINE"] = "1"
     os.environ["LITELLM_LOCAL_MODEL_COST_MAP"] = "True"
@@ -250,14 +257,14 @@ def main() -> None:
         if name in EXPECTED:
             assert version == EXPECTED[name], (name, version, EXPECTED[name])
     assert platform.python_version() == "3.12.15", platform.python_version()
-    output = args.output or Path(tempfile.gettempdir()) / f"{args.mode}-verification.json"
     checks = inspect_checks(output) if args.mode == "inspect" else compass_checks()
     result = {"checked_at_utc": datetime.now(timezone.utc).isoformat(), "mode": args.mode, "versions": versions,
               "python": platform.python_version(), "platform": platform.platform(),
               "network": "external sockets blocked; loopback IPC permitted for Windows asyncio", "model_calls": 0, "agent_runs": 0,
               "status": checks.get("status", "READY"), "checks": checks}
     output.parent.mkdir(parents=True, exist_ok=True)
-    output.write_text(json.dumps(result, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    with output.open('x', encoding='utf-8') as stream:
+        stream.write(json.dumps(result, indent=2, ensure_ascii=False) + "\n")
     print(json.dumps({"mode": args.mode, "versions": versions, "status": result["status"], "output": str(output)}))
 
 

@@ -36,13 +36,13 @@ export async function inspectFormat(file,kind,mime,limits,resources={}) {
         return {family:f.familyName,subfamily:f.subfamilyName,postscriptName:f.postscriptName,numGlyphs:f.numGlyphs,unitsPerEm:f.unitsPerEm,characterSet:f.characterSet,variationAxes:f.variationAxes||{}};
       });
       Object.assign(result,{verifier:'fontkit',metadata,level:'font parsing/metrics and boundary glyph outlines; rendered glyph/font parity separate'});
-    } else if(kind==='video'||kind==='audio') {
+    } else if(kind==='video'||kind==='audio'||kind==='media-segment') {
       if(text.startsWith('#EXTM3U')||/^\s*<\?xml/.test(text))return {status:'unverified',reason:'Streaming manifest needs segment/DRM inventory'};
       const run=spawnSync('ffprobe',['-v','error','-protocol_whitelist','file,pipe','-show_format','-show_streams','-of','json',file],{encoding:'utf8',timeout:limits.requestTimeoutMs,maxBuffer:2000000,windowsHide:true});
       if(run.error?.code==='ENOENT')return {status:'unverified',reason:'FFprobe unavailable'};
       if(run.error||run.status!==0)throw Error('FFprobe failed');
       const meta=JSON.parse(run.stdout);
-      if(!meta.streams?.some(s=>kind==='video'?s.codec_type==='video':s.codec_type==='audio'))throw Error('Required media stream missing');
+      if(!meta.streams?.some(s=>kind==='media-segment'?['video','audio','subtitle'].includes(s.codec_type):kind==='video'?s.codec_type==='video':s.codec_type==='audio'))throw Error('Required media stream missing');
       Object.assign(result,{verifier:'ffprobe',level:'container/stream metadata; full decode/playback separate',metadata:{format:meta.format?.format_name,duration:meta.format?.duration,streams:meta.streams.map(s=>({codec:s.codec_name,type:s.codec_type,width:s.width,height:s.height,sampleRate:s.sample_rate,channels:s.channels}))}});
     } else if(kind==='wasm') {if(!WebAssembly.validate(bytes))throw Error('Invalid WASM module');result.verifier='WebAssembly.validate; no execution';}
     else if(kind==='gltf') {

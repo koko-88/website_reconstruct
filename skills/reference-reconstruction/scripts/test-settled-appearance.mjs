@@ -35,6 +35,7 @@ test('synthetic settled-appearance regressions in a real browser',{skip:!moduleP
     '/ambient':base({css:'#ambient{width:120px;height:120px;overflow:hidden}#child{animation:ambient 2s linear infinite}@keyframes ambient{to{transform:rotate(360deg)}}',html:'<main><section id="ambient"><div id="child">Ambient</div></section></main>'}),
     '/frame':base({html:'<main><iframe src="'+providerURL+'" width="200" height="100"></iframe></main>'}),
     '/offscreen':base({html:'<main>Top</main><div style="height:1500px"></div><div id="child" style="opacity:0">Offscreen reveal</div>',js:'addEventListener("scroll",()=>{document.querySelector("#child").style.opacity=scrollY>1200?1:0})'}),
+    '/scrolled':base({css:'main{margin-top:900px;background:red}',html:'<main><div id="child">Scrolled region</div></main>'}),
     '/never':base({html:'<main><div id="child" style="opacity:0">Never ready</div></main>'}),
     '/static':base({html:'<main><div id="child">Static</div></main>'}),
     '/visual':base({html:'<main><canvas id="pixels" width="100" height="40"></canvas></main>',js:'const c=document.querySelector("canvas").getContext("2d");let n=0;const timer=setInterval(()=>{c.fillStyle=(++n%2)?"red":"blue";c.fillRect(0,0,100,40);if(n===8)clearInterval(timer)},80)'})
@@ -97,6 +98,20 @@ test('synthetic settled-appearance regressions in a real browser',{skip:!moduleP
     });
     await t.test('region visual convergence detects changing canvas pixels beyond DOM geometry',async()=>{
       const r=await run('/visual',checkpoint({appearance:{scope:'region',selector:'main',visual:true,minStableMs:350}}));assert.equal(r.status,'settled');assert.ok(r.elapsedMs>=640);const hashes=r.appearance.samples.map(s=>s.visual?.sha256).filter(Boolean);assert.ok(new Set(hashes).size>1);assert.equal(r.appearance.convergence.visual.scope,'region');
+    });
+    await t.test('scrolled region visual sampling uses viewport coordinates',async()=>{
+      await page.goto('http://127.0.0.1:'+server.address().port+'/scrolled');
+      await page.evaluate(()=>scrollTo(0,800));
+      assert.ok(await page.evaluate(()=>scrollY)>0);
+      const r=await waitReady(page,checkpoint({required:['#child'],stableSelectors:['#child'],appearance:{scope:'region',selector:'main',visual:true}}));
+      assert.equal(r.status,'settled',JSON.stringify(r.reasons));
+      const region=r.snapshot.appearance.region;
+      assert.equal(r.appearance.convergence.visual.clip.y,region.rect.y);
+      const {default:sharp}=await import('sharp');
+      const sample=await page.screenshot({clip:r.appearance.convergence.visual.clip});
+      const {data,info}=await sharp(sample).raw().toBuffer({resolveWithObject:true});
+      const edge=(info.width-1)*info.channels;
+      assert.equal(data[edge],255);assert.equal(data[edge+1],0);assert.equal(data[edge+2],0);
     });
     await t.test('sample truncation and unavailable screenshot capability remain unresolved',async()=>{
       await page.goto('http://127.0.0.1:'+server.address().port+'/static');await page.evaluate(()=>{for(let n=0;n<30;n++)document.querySelector('main').appendChild(document.createElement('span')).textContent='x'});

@@ -90,6 +90,9 @@ def main():
     parser.add_argument("--source-root", required=True, type=Path)
     parser.add_argument("--output", required=True, type=Path)
     args = parser.parse_args()
+    args.output = args.output.resolve()
+    if args.output.exists() or args.output == Path(__file__).with_name('vista-audit-receipt.json').resolve():
+        parser.error('Output must be a new file outside the historical receipt')
     root = args.source_root.resolve()
     path = root / "tasks/tools/eval_run.py"
     expected = "70cc6e3a5a037c2c1a2ef5759751e4bec8959b6b655dd2528a6f874bc6df6c70"
@@ -228,7 +231,8 @@ def main():
             limitation="Arithmetic verified from published artifacts; no independent browser rescore or agent rerun.")
     receipt["source_sha256"] = {str(p.relative_to(root)).replace("\\", "/"): hashlib.sha256(p.read_bytes()).hexdigest()
         for p in sorted(root.rglob("*")) if p.is_file() and "trajectories" not in p.parts}
-    args.output.write_text(json.dumps(receipt, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    with args.output.open('x', encoding='utf-8') as stream:
+        stream.write(json.dumps(receipt, indent=2, ensure_ascii=False) + "\n")
     print(json.dumps(dict(controls=len(cases), totals=totals, source_sha256=digest,
                          model_calls=0, duplicate_id_findings=len(malformed))))
 

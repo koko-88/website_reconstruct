@@ -26,7 +26,12 @@ Responsive cases: widths759/760/761,1099/1100/1101,1799/1800/1801 under each E-0
 
 Use Playwright Test directly. A single final invocation includes labeled portable, canonical and
 variant projects with workers1/retries0. `HBC_ACCEPTANCE_RUN` supplies a unique directory
-`artifacts/home/<run-id>/`; configuration refuses reuse before Playwright can clean output.
+`artifacts/home/<run-id>/`. Every checkpoint, final invocation and diagnostic run gets a fresh run ID.
+Set Playwright `outputDir` only to that root's `playwright/` child; JSON/HTML reports use `reports/`.
+Configuration rejects existing `playwright/` or `reports/` before the runner can clean them. The root
+may already contain preparation/calibration inputs bound to this run; those and later reviews or
+acceptance.json are siblings outside native cleanup. Final acceptance reads only its own complete
+invocation; earlier checkpoints remain linked evidence and cannot fill missing final checks.
 Native metadata and attachments record immutable spec/build/fixture/calibration/environment identity,
 commands, cases/trials and artifacts. Keep all nine fresh canonical results plus every required variant.
 Diagnostic reruns use a new run ID linked to the failed run; retain original reports and failures.

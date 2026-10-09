@@ -40,6 +40,10 @@ New-Item -ItemType Directory -Path $paths.FEATURE_DIR -Force | Out-Null
 
 # Copy plan template if plan doesn't already exist
 if (Test-Path $paths.IMPL_PLAN -PathType Leaf) {
+    if ((Get-Item -LiteralPath $paths.IMPL_PLAN).Length -eq 0) {
+        [Console]::Error.WriteLine("ERROR: Existing plan is empty; repair it before planning")
+        exit 1
+    }
     if ($Json) {
         [Console]::Error.WriteLine("Plan already exists at $($paths.IMPL_PLAN), skipping template copy")
     } else {
@@ -58,16 +62,8 @@ if (Test-Path $paths.IMPL_PLAN -PathType Leaf) {
             Write-Output "Copied plan template to $($paths.IMPL_PLAN)"
         }
     } else {
-        # Match the bash twin's wording and stream routing (stderr in -Json so
-        # stdout stays pure JSON, stdout otherwise), consistent with the sibling
-        # "Copied plan template" message above.
-        if ($Json) {
-            [Console]::Error.WriteLine("Warning: Plan template not found")
-        } else {
-            Write-Output "Warning: Plan template not found"
-        }
-        # Create a basic plan file if template doesn't exist
-        New-Item -ItemType File -Path $paths.IMPL_PLAN -Force | Out-Null
+        [Console]::Error.WriteLine("ERROR: Plan template not found; repair the template before planning")
+        exit 1
     }
 }
 

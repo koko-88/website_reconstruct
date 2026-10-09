@@ -45,7 +45,10 @@ npm run validate:home-results -- --run $env:HBC_ACCEPTANCE_RUN
 Expected: portable contracts labeled separately; nine independent canonical attempts retained; normal loading/parting-overlap/ready and reduced fast-entry/ready captured; ready predicates and three stable samples pass within10s from navigation; all13 recorded size variants plus width/input cross-checks pass; every mandatory FR/SC check covered. Native hidden/blur checks use a confirmed headed background action or an explicit recorded manual result if headless automation cannot produce it. No failure disappears through retry.
 
 `test:browser` invokes Playwright Test directly. Configuration requires a new run ID and namespaces
-native results/reports/traces so old evidence is retained. Native metadata and attachments carry
+native test output in `playwright/` and reports in `reports/` so old evidence is retained.
+Every checkpoint/final/diagnostic invocation uses a new run ID. Configuration rejects existing native
+children before cleanup; preparation/calibration/reviews/acceptance remain siblings outside cleanup.
+Final acceptance reads its own complete invocation, with earlier checkpoints linked separately. Native metadata and attachments carry
 input identity and check/trial results. Projects home-d/m/r each contain three fresh cases; variants
 and portable contracts remain labeled separately in the same invocation. The minimal feature result
 validator checks the native report for all catalogue entries, nine trials, calibrated comparisons and

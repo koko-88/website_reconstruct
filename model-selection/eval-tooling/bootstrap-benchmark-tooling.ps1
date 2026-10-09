@@ -47,9 +47,14 @@ if (-not (Get-Command uv -ErrorAction SilentlyContinue)) {
     throw 'uv is required. Install it using https://docs.astral.sh/uv/getting-started/installation/ and rerun.'
 }
 if (-not $EvidenceDirectory) {
-    $EvidenceDirectory = Join-Path ([System.IO.Path]::GetTempPath()) 'benchmark-tooling-verification'
+    $EvidenceDirectory = Join-Path ([System.IO.Path]::GetTempPath()) ('benchmark-tooling-verification-' + [guid]::NewGuid().ToString('N'))
 }
 New-Item -ItemType Directory -Force -Path $EvidenceDirectory | Out-Null
+foreach ($commandName in $selectedCommands) {
+    if (Test-Path -LiteralPath (Join-Path $EvidenceDirectory ($commandName + '-verification.json'))) {
+        throw 'Verification receipt exists; select a new evidence directory before running.'
+    }
+}
 $savedTimeout = $env:UV_HTTP_TIMEOUT
 try {
     $env:UV_HTTP_TIMEOUT = '300'

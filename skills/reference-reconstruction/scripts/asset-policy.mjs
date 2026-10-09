@@ -3,7 +3,7 @@ import path from 'node:path';
 import {sha256} from './package.mjs';
 
 export const json = file => JSON.parse(fs.readFileSync(file,'utf8').replace(/^\uFEFF/,''));
-export const assetKinds=['html','css','javascript','image','svg','font','video','audio','media','gltf','wasm','shader','json','binary','unknown'];
+export const assetKinds=['html','css','javascript','image','svg','font','video','audio','media','media-segment','gltf','wasm','shader','json','binary','unknown'];
 export const idPattern=/^[A-Za-z0-9][A-Za-z0-9_-]{0,79}$/;
 export function fields(value, names, label) {
   if(!value||typeof value!=='object'||Array.isArray(value)) throw Error(label+' must be an object');

@@ -11,6 +11,7 @@ artifacts/
 test-results/
 playwright-report/
 blob-report/
+__pycache__/
 
 # Local-only implementation fixtures and generated serving stage
 local-fixtures/
@@ -26,3 +27,5 @@ mise.local.toml
 mise.local.lock
 mise.*.local.toml
 mise.*.local.lock
+# Added by code-review-graph
+.code-review-graph/

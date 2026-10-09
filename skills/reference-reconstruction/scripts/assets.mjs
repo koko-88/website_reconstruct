@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import {pathToFileURL,fileURLToPath} from 'node:url';
-import {validateAcquisition,checkURL,confined,newOutput,writeJSON,json,identity,text,strings,fields,hash} from './asset-policy.mjs';
+import {validateAcquisition,checkURL,confined,newOutput,writeJSON,json,identity,text,strings,fields,hash,idPattern} from './asset-policy.mjs';
 import {sha256,seal,verify} from './package.mjs';
 import {discover,kindFor} from './asset-discovery.mjs';
 import {verifyAsset} from './asset-verify.mjs';
@@ -185,6 +185,9 @@ export function loadRun(root) {
   if(integrity.result!=='PASS')throw Error('Asset run integrity failed');
   const run=json(confined(root,'asset-run.json'));
   if(run.schemaVersion!==1||!Array.isArray(run.assets))throw Error('Invalid asset run');
+  for(const key of ['packageId','contractId','sourceId'])if(typeof run[key]!=='string'||!idPattern.test(run[key]))throw Error('Invalid asset run '+key);
+  text(run.phase,'asset run phase',100);
+  for(const row of run.assets)if(typeof row.url!=='string'||identity(row.url)!==row.url)throw Error('Invalid asset URL identity');
   for(const row of run.assets)if(row.file){
     const bytes=fs.readFileSync(confined(root,row.file));
     if(sha256(bytes)!==row.sha256||bytes.length!==row.bytes)throw Error('Asset pin mismatch');
@@ -194,6 +197,8 @@ export function loadRun(root) {
 export function assessAssets(root,review) {
   const loaded=loadRun(root),run=loaded.run;
   fields(review,['schemaVersion','contractId','sourceId','phase','assetRunManifestSHA256','coverage','obligations','dispositions','issueResolutions','verifications','assessor'],'asset review');
+  for(const key of ['contractId','sourceId'])if(typeof review[key]!=='string'||!idPattern.test(review[key]))throw Error('Invalid review '+key);
+  text(review.phase,'review phase',100);
   if(review.schemaVersion!==1||review.contractId!==run.contractId||review.sourceId!==run.sourceId||review.phase!==run.phase||review.assetRunManifestSHA256!==loaded.manifestSHA256)throw Error('Review scope/revision mismatch');
   text(review.assessor,'assessor');
   for(const name of ['coverage','obligations','dispositions','issueResolutions'])if(!Array.isArray(review[name]))throw Error('Expected review '+name);

@@ -5,7 +5,8 @@ import os from 'node:os';
 import path from 'node:path';
 import http from 'node:http';
 import vm from 'node:vm';
-import {sha256,inventory,verify} from './package.mjs';
+import {spawnSync} from 'node:child_process';
+import {sha256,inventory,verify,seal} from './package.mjs';
 import {capture,validatePlan} from './capture.mjs';
 
 let tools,discovery,format,policy;
@@ -70,7 +71,7 @@ assetTest('streaming inventories acquire declared segments and retain encryption
   assert.ok(hls.limits.some(l=>l.includes('Encrypted')));
   const master=discovery.discover(Buffer.from('#EXTM3U\n#EXT-X-MEDIA:TYPE=AUDIO,GROUP-ID="aud",NAME="English",URI="audio.m3u8"\n#EXT-X-STREAM-INF:BANDWIDTH=100000,AUDIO="aud"\nvideo.m3u8\n'),'media','https://example.com/master.m3u8');assert.ok(master.references.some(r=>r.url==='https://example.com/audio.m3u8'));
   const dash=discovery.discover(Buffer.from('<MPD><Period><BaseURL>media/</BaseURL><AdaptationSet><Representation><SegmentList><Initialization sourceURL="init.mp4"/><SegmentURL media="first.m4s"/></SegmentList><SegmentTemplate media="segment-$Number$.m4s"/></Representation></AdaptationSet></Period></MPD>'),'media','https://example.com/main.mpd');
-  assert.ok(dash.references.some(r=>r.url==='https://example.com/media/first.m4s'));
+  assert.ok(dash.references.some(r=>r.url==='https://example.com/media/first.m4s'&&r.kind==='media-segment'));
   assert.ok(dash.limits.some(l=>l.includes('SegmentTemplate')));
 });
 assetTest('acquisition keeps query identity, deduplicates equal bytes, seals originals and checks reference hashes',async()=>{
@@ -138,6 +139,23 @@ assetTest('completeness is scoped and blocks missing dispositions, versions, reu
     assert.throws(()=>tools.assessAssets(root,review),/integrity failed/);
   });
 });
+assetTest('sealed imported runs and reviews require nonempty scope identities',async()=>{
+  await fixture(async({dir,origin,plan})=>{
+    const root=path.join(dir,'run');await tools.acquireAssets(plan,root);
+    const good=reviewFor(root,origin);
+    for(const key of ['contractId','sourceId','phase']){
+      const review=structuredClone(good);delete review[key];
+      assert.throws(()=>tools.assessAssets(root,review),/Invalid|Record|scope/);
+      const imported=path.join(dir,'missing-'+key);fs.cpSync(root,imported,{recursive:true});
+      const run=JSON.parse(fs.readFileSync(path.join(imported,'asset-run.json')));delete run[key];
+      fs.writeFileSync(path.join(imported,'asset-run.json'),JSON.stringify(run));
+      fs.unlinkSync(path.join(imported,'manifest.json'));seal(imported,{kind:'asset-acquisition-run'});
+      delete review[key];review.assetRunManifestSHA256=sha256(fs.readFileSync(path.join(imported,'manifest.json')));
+      if(key==='phase')delete review.obligations[0].reuse.phase;
+      assert.throws(()=>tools.assessAssets(imported,review),/Invalid|Record/);
+    }
+  });
+});
 assetTest('format verification distinguishes invalid SVG/raster/WASM and unsupported textures',async()=>{
   await fixture(async({dir,plan})=>{
     const limits=policy.policy(plan.policy).limits,file=path.join(dir,'asset.bin');
@@ -166,6 +184,7 @@ assetTest('external verification is pinned and cannot override corrupted formats
     assert.equal(tools.assessAssets(root,review).result,'BLOCKED');
     review.verifications=[{url,sha256:sha256(bytes),result:'PASS',tool:'synthetic installed decoder',level:'Engineering verification receipt only',authority:'Synthetic fixture',evidenceIds:['E-TEX']}];
     assert.equal(tools.assessAssets(root,review).result,'PASS');
+    review.verifications[0].url+='#verification-fragment';assert.equal(tools.assessAssets(root,review).result,'PASS');
     review.verifications[0].sha256='0'.repeat(64);assert.equal(tools.assessAssets(root,review).result,'BLOCKED');
   });
 });
@@ -234,5 +253,38 @@ assetTest('acquisition plan requires explicit portable identities and rejects un
     for(const key of ['packageId','contractId','sourceId']){const bad=structuredClone(plan);delete bad[key];assert.throws(()=>policy.validateAcquisition(bad),/Invalid/);}
     const bad=structuredClone(plan);bad.policy.execute='untrusted';assert.throws(()=>policy.validateAcquisition(bad),/Unknown/);
     const query=structuredClone(plan);query.seeds[0].url+='&token=private';assert.throws(()=>policy.validateAcquisition(query),/private/);
+  });
+});
+
+assetTest('generic-MIME streaming segments use native media verification without classifying TypeScript as video',async t=>{
+  await fixture(async({dir,origin,plan})=>{
+    assert.equal(discovery.kindFor(origin+'/source.ts'),'unknown');
+    const input=path.join(dir,'input');fs.mkdirSync(input);
+    const segment=path.join(input,'segment.ts');
+    const generated=spawnSync('ffmpeg',['-v','error','-f','lavfi','-i','sine=frequency=440:sample_rate=8000','-t','0.2','-c:a','mp2','-f','mpegts',segment],{timeout:10000,windowsHide:true});
+    if(generated.error?.code==='ENOENT'){t.skip('Optional installed FFmpeg segment fixture generator');return;}
+    assert.equal(generated.status,0,String(generated.stderr));
+    fs.writeFileSync(path.join(input,'playlist.m3u8'),'#EXTM3U\n#EXT-X-TARGETDURATION:1\n#EXTINF:0.2,\nsegment.ts\n#EXT-X-ENDLIST\n');
+    plan.seeds=[];plan.sources=[{id:'PLAYLIST',type:'file',root:input,path:'playlist.m3u8',url:origin+'/playlist.m3u8',kind:'media'},
+      {id:'SEGMENT',type:'file',root:input,path:'segment.ts',url:origin+'/segment.ts',mime:'application/octet-stream'}];
+    const root=path.join(dir,'stream');await tools.acquireAssets(plan,root);
+    const {run}=tools.loadRun(root),asset=run.assets.find(a=>a.url===origin+'/segment.ts');
+    assert.equal(asset.kind,'media-segment');assert.equal(asset.verification.status,'verified',JSON.stringify(asset.verification));
+    assert.equal(run.result,'ACQUIRED');
+    const subtitle=path.join(dir,'subtitles.vtt');fs.writeFileSync(subtitle,'WEBVTT\n\n00:00.000 --> 00:00.100\nSynthetic subtitle\n');
+    const subtitles=discovery.discover(Buffer.from('#EXTM3U\n#EXT-X-TARGETDURATION:1\n#EXTINF:0.1,\nsubtitles.vtt\n#EXT-X-ENDLIST\n'),'media',origin+'/subtitles.m3u8');
+    assert.equal(subtitles.references[0].kind,'media-segment');
+    const subtitleResult=await format.verifyAsset(subtitle,subtitles.references[0].kind,'application/octet-stream',policy.limitsDefault);
+    assert.equal(subtitleResult.status,'verified',JSON.stringify(subtitleResult));assert.equal(subtitleResult.metadata.streams[0].type,'subtitle');
+    const fragment=path.join(dir,'fragment.m4s');fs.writeFileSync(fragment,Buffer.from([0,0,0,8,109,111,111,102]));
+    const verdict=await format.verifyAsset(fragment,'media-segment','application/octet-stream',policy.limitsDefault);
+    assert.equal(verdict.status,'failed');
+    const init=path.join(input,'init.mp4');const initBytes=Buffer.from([0,0,0,8,102,116,121,112]);fs.writeFileSync(init,initBytes);
+    const invalidPlan=structuredClone(plan);invalidPlan.sources=[{id:'INIT',type:'file',root:input,path:'init.mp4',url:origin+'/init.mp4',kind:'media-segment'}];
+    const invalidRoot=path.join(dir,'invalid-init');await tools.acquireAssets(invalidPlan,invalidRoot);
+    const invalidReview=reviewFor(invalidRoot,origin);invalidReview.obligations[0].urls=[origin+'/init.mp4'];
+    invalidReview.verifications=[{url:origin+'/init.mp4',sha256:sha256(initBytes),result:'PASS',tool:'Synthetic external decoder',level:'Regression receipt',authority:'Synthetic fixture only',evidenceIds:['E-INIT']}];
+    assert.equal(tools.loadRun(invalidRoot).run.assets[0].verification.status,'failed');
+    assert.equal(tools.assessAssets(invalidRoot,invalidReview).result,'BLOCKED');
   });
 });

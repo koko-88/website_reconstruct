@@ -1,7 +1,7 @@
 # Runtime availability — RR-HBC-01
 
 Status: **ACTIVE — session capability record, no permanent control plane**
-Revision: **4** | Date: **2026-10-09** (Africa/Cairo)
+Revision: **5** | Date: **2026-10-09** (Africa/Cairo)
 
 [RP-HBC-01](routing-policy.md) owns execution selection. This registry owns runtime availability and
 configuration, not model qualification or product acceptance. Candidate/benchmark records are
@@ -34,3 +34,10 @@ the user's execution mode. Inspect AI/Evals and AgentCompass have historical ins
 fresh runtime checks are necessary for use. See the
 [capability audit](../IMPLEMENTATION_VERIFICATION.md#capability-and-redundancy-audit) for dependencies,
 retained mechanisms and limits. No external workflow was started or model route certified by this audit.
+
+Current production audit: Qodo CLI 1.4.0 host authentication and pinned codebase reads succeed;
+PR-history intelligence is unavailable (MT-UPSTREAM-DOWN); cross-repo/rule queries return no results,
+without proving absence. Graph source/test-edge coverage is limited and its snapshot is stale relative
+to edits. Existing local browser/font/media tooling integration passes; Inspect Evals/MCP are missing
+from the optional benchmark environment. See the [current audit dispositions](../IMPLEMENTATION_VERIFICATION.md#production-engineering-audit-and-corrections-2026-10-09)
+for native evidence, independent review coverage and outstanding hosted/app checks.
