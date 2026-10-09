@@ -23,7 +23,7 @@ Maintained integrations: Playwright for runtime page/worker response observation
 
 Tools cannot prove all dynamic paths or recover private/generated/GPU-only resources. These remain reviewed obligations. Supplied archives retain their version; later GET is a new observation requiring a version match decision. DRM/streaming, closed shadows, service workers, codecs and renderer dependencies need focused evidence or owner-supplied originals when material. Visibility/downloads never grant rights.
 
-Pre-existing tooling deletions are untouched. Their committed catalog was read with git show. Beads was recovered by starting the configured local shared Dolt server. No Git/Dolt commit or remote sync is authorized.
+Pre-existing tooling deletions are untouched. Their committed catalog was read with git show. No Git commit or remote sync is authorized.
 
 ## Integration sources
 
@@ -52,6 +52,6 @@ The existing capture/manifest schema 2, four readiness gates, source-report help
 
 No implementation-stage blocker remains. Per-project protected/generated assets, closed or inaccessible surfaces, live/DRM/templated media, required GPU decoder extensions, unsupported encodings and unconfirmed versions/rights remain explicit scoped obligations with acquisition/export/specialist verification or authorized replacement paths. Their discovery/verification cannot be inferred from a screenshot or manifest. The pipeline records and blocks material gaps rather than promising universal discovery of arbitrary dynamic programs.
 
-Work is on main, uncommitted and unpushed. Pre-existing tooling deletions and the untracked all_skills collection were left untouched. Beads issue web_reconstruction-f5f tracks this implementation; its passive export is an additional working-tree artifact. Suggested future commit: include the skill and this implementation receipt after the separately requested evaluation/adoption decision; do not include unrelated pre-existing deletions without their own authority.
+Work is on main, uncommitted and unpushed. Pre-existing tooling deletions and the untracked all_skills collection were left untouched. Suggested future commit: include the skill and this implementation receipt after the separately requested evaluation/adoption decision; do not include unrelated pre-existing deletions without their own authority.
 
 Independent skill evaluation, dedicated validation and final installed adoption have **not** been performed and remain the separate stage requested by the user.

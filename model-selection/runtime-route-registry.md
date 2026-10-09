@@ -1,8 +1,8 @@
 # Runtime route registry — RR-HBC-01
 
 Status: **ACTIVE-PROVISIONAL — execution-gating registry; no Critical route is qualified yet.**  
-Revision: **1**  
-Date: **2026-10-05**  
+Revision: **3**
+Date: **2026-10-08**
 Applies to: **RP-HBC-01 / WP-HBC-01 / FC-TARGET-DESIGN-01**
 
 ## Purpose
@@ -13,13 +13,13 @@ A model family appearing in the candidate pool does **not** authorize execution.
 
 ## Selected control plane
 
-- **Orchestrator:** Claw Orchestrator.
-- **Primary operator/host surface:** Codex with the Claw MCP integration.
-- **Observability:** Claw dashboard/server may be used separately when useful.
-- **Optional installed platform:** OpenClaw may be retained for future hosting/gateway use, but it is not the active control plane for the first implementation path.
-- **Source of truth for work:** this repository + Spec Kit artifacts + RP-HBC-01 + deterministic acceptance evidence.
+- **Primary coding agent/orchestrator:** Codex, using available native multi-agent tools.
+- **Task state and handoffs:** the active Spec Kit task list and existing project artifacts, including task ownership, dependencies, progress and blockers.
+- **Context recovery:** read the root [AGENTS.md](../AGENTS.md), active task artifacts and recorded checkpoints before resuming work.
+- **Optional installed capabilities:** Claw/OpenClaw are not the selected control plane and are not started or reconfigured by this integration.
+- **Scope/decomposition/acceptance authority:** this repository + Spec Kit artifacts + RP-HBC-01 + deterministic acceptance evidence.
 
-The user has confirmed that Claw is installed and the Claw MCP server is connected in Codex. A paid model smoke test is intentionally deferred; the first representative qualification task will validate the execution path while producing useful project evidence.
+Codex is the selected control plane. Native delegation availability must be verified in each session. A read-only delegation check does not qualify a Critical author/reviewer route; representative route qualification remains required before Critical execution. No project implementation, service startup or paid route test is authorized by the integration setup.
 
 ## Route-state rules
 
@@ -38,7 +38,7 @@ Changing any material part of that tuple creates a new route or requires requali
 
 ## Current route registry
 
-| Candidate family | Intended Claw engine/access path | Exact runtime model/config | Current state | Critical lanes qualified | Required next evidence |
+| Candidate family | Intended execution access path | Exact runtime model/config | Current state | Critical lanes qualified | Required next evidence |
 | --- | --- | --- | --- | --- | --- |
 | GPT-6 Astra | Codex route if exposed by the installed Codex account/client | **UNVERIFIED** exact model slug/effort | CANDIDATE | none | Verify actual selectable identifier/config, then run representative L2 qualification |
 | GPT-6.1 Sol | Codex route if exposed by the installed Codex account/client | **UNVERIFIED** exact model slug/effort | CANDIDATE | none | Verify actual selectable identifier/config, then run representative L1/L3 qualification |
@@ -53,7 +53,7 @@ Changing any material part of that tuple creates a new route or requires requali
 Before changing a route to **QUALIFIED**, commit or persist a receipt that records:
 
 - route identifier and candidate family;
-- Claw engine/access path;
+- execution engine/access path;
 - exact model identifier and effort/configuration;
 - tool/permission envelope and relevant browser/MCP capabilities;
 - repo base SHA;
@@ -83,4 +83,4 @@ If any item fails, the task is **BLOCKED_BEFORE_EXECUTION** rather than silently
 
 ## Requalification triggers
 
-Requalify or suspend a route when the exact model identifier, material effort/configuration, execution engine, permission/tool envelope, Claw integration, or acceptance workload changes enough to invalidate prior evidence. Routine leaderboard movement alone does not invalidate a qualified route.
+Requalify or suspend a route when the exact model identifier, material effort/configuration, execution engine, permission/tool envelope, native agent integration, or acceptance workload changes enough to invalidate prior evidence. Routine leaderboard movement alone does not invalidate a qualified route.

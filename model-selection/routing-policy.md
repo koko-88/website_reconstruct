@@ -1,8 +1,8 @@
 # Routing policy — RP-HBC-01
 
 Status: **ACTIVE-PROVISIONAL — lane architecture approved; per-task assignments and preference order remain subject to project-specific evaluation.**  
-Revision: **1**  
-Date: **2026-10-05**  
+Revision: **3**
+Date: **2026-10-08**
 Applies to: **WP-HBC-01 / FC-TARGET-DESIGN-01**
 
 ## Purpose
@@ -269,15 +269,15 @@ That separation lets the project change orchestrators or model providers without
 
 ## Orchestration runtime decision
 
-**Claw Orchestrator is the selected execution runtime for this project.** The current operator surface is Codex with the Claw MCP integration; OpenClaw may remain installed as an optional future host/gateway, but it is not the active production control plane for this project unless a later explicit decision changes that.
+**Codex is the primary coding agent and selected orchestrator for this project.** Use its available native multi-agent tools for eligible independent work, with the active Spec Kit tasks and existing project artifacts for task status, dependencies, blockers and handoffs. Verify tool availability and concurrency limits in each session; if unavailable, execute eligible work sequentially. The coordination workflow is owned by [AGENTS.md](../AGENTS.md).
 
-The authoritative runtime capability and route-readiness record is [RR-HBC-01](runtime-route-registry.md). Paperclip and other orchestrators are no longer active candidates for the first implementation path; re-evaluate only if Claw fails a required capability or materially changes.
+The authoritative runtime capability and route-readiness record is [RR-HBC-01](runtime-route-registry.md). Existing Claw/OpenClaw installations are optional capabilities, not the selected control plane. Do not install or start an alternate orchestrator to fill a session capability gap without explicit authorization. This runtime choice does not advance roadmap gates or qualify any Critical route.
 
 A separate dynamic-router product is not required for the current path. Add one only if a concrete runtime/engine gap demonstrates the need and the added layer preserves resolved-model identity, route qualification and reproducibility.
 
 ## Orchestration-runtime requirements derived from this policy
 
-The selected runtime must support, natively or through a thin configuration layer:
+For autonomous Critical execution, the selected runtime must demonstrably support:
 
 - per-role/per-task model and engine selection;
 - explicit resolved model identity for critical routes;
@@ -289,7 +289,7 @@ The selected runtime must support, natively or through a thin configuration laye
 - human gates;
 - restart/resume without silently rerunning already accepted work.
 
-These requirements are now **acceptance requirements for the Claw configuration**, not a generic orchestrator bakeoff. Failure of a required capability reopens the runtime decision; otherwise do not re-run tool selection.
+These are **acceptance requirements for the Codex execution route**, not a generic orchestrator bakeoff. Record task/run receipts in the owning project artifacts with links to canonical specification and verification evidence. If a required capability is missing, record the affected task as blocked before execution; do not add custom orchestration infrastructure or silently weaken admission requirements.
 
 ## Re-evaluation triggers
 
