@@ -1,311 +1,67 @@
-# Routing policy — RP-HBC-01
-
-Status: **ACTIVE-PROVISIONAL — lane architecture approved; per-task assignments and preference order remain subject to project-specific evaluation.**  
-Revision: **3**
-Date: **2026-10-08**
-Applies to: **WP-HBC-01 / FC-TARGET-DESIGN-01**
-
-## Purpose
-
-This policy converts the project workload and candidate evidence into a reproducible routing layer for later multi-agent execution.
-
-It intentionally sits **above concrete Spec Kit tasks**:
-
-```text
-project workload + fidelity contract + benchmark evidence
-                        ↓
-                 routing policy
-                        ↓
-                Spec Kit task set
-                        ↓
-          runtime task classification
-                        ↓
-          agent/model/worktree assignment
-                        ↓
-             review + verification + CI
-```
-
-The policy defines **which kinds of work may go to which candidate pools and which gates apply**. It does not pre-assign every W-ID to one model and it does not replace task decomposition.
-
-## Authority and precedence
-
-Start from the root [AGENTS.md](../AGENTS.md). RP-HBC-01 owns task-lane, review, escalation and routing policy only; it does not define product scope or rewrite evidence.
-
-Routing never overrides the [Spec Kit Constitution](../.specify/memory/constitution.md), FC-TARGET-DESIGN-01, task/spec acceptance, or authoritative evidence. Benchmark and candidate documents inform preference but do not create product requirements.
-
-If a route conflicts with evidence authority, scope, asset/reuse gates, or acceptance obligations, the route loses.
-
-## Core production rules
-
-1. **Route tasks, not workload IDs.** W-01..W-13 are capability requirements and tags; they are not executable tasks.
-2. **Critical quality first.** For Critical obligations, model capability and verification come before cost/latency.
-3. **No opaque critical routing.** A critical task must record the resolved model, effort/configuration and execution engine. Cursor Auto or any other opaque auto-selector is allowed only when the resolved route is captured; otherwise it is support-only.
-4. **Independent critical review.** A critical code change must be reviewed by a different model family from the author when a viable alternative exists.
-5. **Machine verification outranks self-report.** An agent saying "done" is not acceptance. Repository tests/browser checks/acceptance contracts/CI decide completion.
-6. **Shared repo, isolated writes.** Concurrent write tasks use isolated branches/worktrees. Agents do not concurrently mutate the same working tree.
-7. **Bounded retries and explicit escalation.** Repeated failure changes the route; it does not create an unbounded same-agent loop.
-8. **No silent provider expansion.** The runtime may use only approved existing access paths unless the user explicitly approves a new paid provider/API.
-9. **Specs stay portable.** Spec Kit artifacts should describe the work and acceptance, not hard-code a vendor/model unless a genuine capability constraint requires it.
-10. **Critical execution requires qualification.** Inclusion in a candidate pool or public benchmark rank does not authorize a model/harness route for Critical work. A Critical task may execute only on a route marked **QUALIFIED** for its dominant lane in [RR-HBC-01](runtime-route-registry.md).
-
-## Route qualification lifecycle
-
-Every model + engine + effort/tool configuration moves through an explicit lifecycle:
-
-1. **CANDIDATE** — research evidence is sufficient to keep the route under consideration; no Critical execution authority.
-2. **EVALUATION-PERMITTED** — the exact runtime path is runnable enough for bounded project-specific qualification work; outputs may not be integrated as Critical production work solely on this status.
-3. **QUALIFIED** — a pinned model/engine/configuration has passed representative project-specific checks for one or more named lanes. Qualification is lane-scoped, not global.
-4. **SUSPENDED** — a previously qualified route is temporarily ineligible because of availability, configuration drift, repeated failures or contradictory evidence.
-
-A qualification receipt must record at minimum: route identifier; engine/harness; exact model and effort/configuration; tool/permission envelope; repo/spec revision; representative task(s); lane(s) covered; acceptance checks and per-check outcomes; date; and any limitations. **Critical acceptance failures are not averaged away.**
-
-Before concrete Spec Kit tasks exist, routes may remain CANDIDATE. Once representative tasks exist, qualification runs are prerequisites to autonomous Critical execution, not prerequisites to specification/planning.
-
-## Task routing envelope
-
-Once Spec Kit creates concrete tasks, each routable task should expose or allow the orchestrator to derive:
-
-- **task_id / spec revision**
-- **workload_refs:** relevant W-01..W-13
-- **criticality:** Critical or Secondary
-- **dominant capability:** planning/evidence, fidelity-motion, repo-engineering, review-verification, support-mechanical
-- **change scope:** read-only, local, multi-file, repo-wide
-- **risk flags:** visual, motion/stateful, responsive, accessibility, evidence-sensitive, browser/tool-heavy, destructive-simplification risk
-- **acceptance refs:** TF/M/AC/test/browser checks that must pass
-
-These attributes determine the lane. Model names stay in this policy rather than in every task.
-
-## Routing lanes
-
-### L1 — Architecture, planning, evidence and long-horizon reasoning
-
-**Typical triggers**
-- W-01, W-02, W-10, W-12, W-13
-- repo-wide planning or dependency reasoning
-- conflicting/ambiguous evidence
-- scope/adaptation decisions
-- tasks whose wrong decomposition would cause large rework
-
-**Preferred candidate pool**
-1. **Claude Opus 5.5**
-2. **GPT-6.1 Sol**
-3. **Claude Sonnet 5.5** for bounded/constrained planning
-
-**Rules**
-- L1 may be read-only planning before an implementation lane executes.
-- A model in the support-only pool may gather information but may not approve a critical scope/evidence decision.
-- A scope/evidence conflict that cannot be resolved from repository authority triggers a human gate rather than implementation.
-
-### L2 — Visual fidelity, frontend, motion and stateful interaction
-
-**Typical triggers**
-- W-03, W-04, W-05, W-06, W-07, W-11
-- TF-01..TF-05
-- M-01..M-12 mechanics
-- screenshot/reference reconstruction, typography, breakpoint behavior, scroll state, animation interruption/reversal, reduced-motion/touch branches
-
-**Preferred candidate pool**
-1. **GPT-6 Astra**
-2. **Claude Opus 5.5**
-3. **Claude Sonnet 5.5**
-4. **GPT-6.1 Sol** when the task is equally repo/engineering-heavy
-
-**Selection guidance**
-- Prefer **GPT-6 Astra** when the dominant uncertainty is visual/reference reconstruction or frontend fidelity.
-- Prefer **Claude Opus 5.5** when fidelity is coupled to high ambiguity, broad coordination or difficult state reasoning.
-- Prefer **Claude Sonnet 5.5** for bounded iterative frontend work after the architecture/behavior contract is already clear.
-- Critical L2 changes always require L4 review plus machine/browser acceptance.
-
-### L3 — Repository engineering, tooling, debugging and recovery
-
-**Typical triggers**
-- W-01, W-08, W-09, W-10, W-13
-- multi-file defects
-- browser/MCP/tool execution and recovery
-- build/test failures
-- integration and maintainability work whose dominant risk is engineering correctness rather than visual interpretation
-
-**Preferred candidate pool**
-1. **GPT-6.1 Sol**
-2. **Claude Opus 5.5**
-3. **GPT-5.6 Sol**
-4. **Claude Sonnet 5.5**
-
-**Selection guidance**
-- Prefer **GPT-6.1 Sol** for repo-wide implementation/debugging and tool-heavy engineering.
-- Prefer **GPT-5.6 Sol** when direct Codex/repository evidence is useful or as an independent engineering reviewer.
-- Escalate to Opus when repeated debugging reveals requirement/evidence ambiguity rather than a local defect.
-
-### L4 — Independent review and verification
-
-L4 is cross-cutting and is added to every **Critical** implementation route.
-
-**Reviewer rule**
-- If the author is an OpenAI-family model, prefer a Claude-family reviewer.
-- If the author is a Claude-family model, prefer GPT-6.1 Sol or GPT-5.6 Sol; use GPT-6 Astra when visual fidelity is the dominant review risk.
-- If the author is GLM/Qwen/local, use a frontier candidate from the task's dominant lane.
-
-**Reviewer responsibilities**
-- inspect the diff against specification/evidence authority;
-- look for destructive simplification and missing states;
-- challenge unsupported claims;
-- check acceptance coverage;
-- never replace deterministic verification with opinion.
-
-The reviewer is advisory until machine/browser/CI checks pass.
-
-### L5 — Support, mechanical and low-risk bounded work
-
-**Typical triggers**
-- Secondary obligations
-- repetitive edits
-- deterministic test scaffolding
-- low-ambiguity documentation/transforms
-- bounded code changes with strong automated acceptance
-
-**Preferred candidate pool**
-1. **Claude Sonnet 5.5**
-2. **GLM 5.3**
-3. **Qwen3.8-27B local**
-4. **GPT-5.6 Sol** when available and economical in the chosen execution path
-
-**Restrictions**
-- L5 may not be the sole owner of a Critical visual/motion/evidence decision.
-- A support model may implement a bounded critical subtask only when L1/L2/L3 has already fixed the design and L4 + machine acceptance are mandatory.
-- The local Qwen route remains support-only until internal project evaluation promotes it.
-
-## Mixed-task composition
-
-A task can pass through more than one lane.
-
-Use this order for high-risk mixed tasks:
-
-```text
-L1 plan/evidence resolution
-        ↓
-dominant execution lane (L2 or L3)
-        ↓
-L4 independent review
-        ↓
-machine/browser acceptance
-        ↓
-integration/CI
-```
-
-Examples:
-
-- A repo-wide scroll-story reconstruction with unclear state relationships: **L1 → L2 → L4**.
-- A browser/MCP failure preventing visual validation: **L3 → L4**, then return to L2 only if the implementation itself needs fidelity repair.
-- A deterministic unit-test expansion after accepted behavior is fixed: **L5**, with normal repository checks.
-
-## Escalation and fallback
-
-### Verification failure
-
-Each routable task carries cumulative execution counters that survive model switches, lane switches, process restarts and resume:
-
-- **max_attempts_total:** default **4** author execution attempts across all model families;
-- **max_family_switches:** default **2** switches between model families;
-- **repair_per_author_attempt:** at most **1** repair pass for a clear local defect before escalation;
-- **execution_deadline:** must be declared by the task/orchestrator before autonomous Critical execution. A missing deadline blocks Critical execution rather than implying an unlimited run.
-
-Flow:
-
-1. First implementation failure caused by a clear local defect: allow one repair pass by the current author, consuming the same task budget.
-2. Repeated failure of the same acceptance class, or a failed repair: switch to a different **QUALIFIED** model family in the same dominant lane if the cumulative counters permit it.
-3. If the failure indicates unclear requirements/evidence: stop coding and route to **L1**; the original task counters remain attached to the task.
-4. If a critical reviewer and author still disagree after one response cycle: trigger a **human gate**.
-5. If **max_attempts_total**, **max_family_switches**, or the execution deadline is exhausted, terminate autonomous execution as **BLOCKED_EXECUTION** and require a human decision. Changing model, lane, process or worktree never resets these counters.
-
-### Availability fallback
-
-If the preferred model is unavailable:
-- select the next eligible candidate in the same lane;
-- preserve criticality and reviewer requirements;
-- record the fallback reason;
-- do not silently switch to Auto or introduce a new paid provider.
-
-### Visual/motion failure
-
-A failed critical visual/motion acceptance must return to **L2**. Do not downgrade the repair to a support-only model solely to save cost.
-
-## Git and concurrency policy
-
-- GitHub is the shared source of truth.
-- Every concurrent **write** assignment gets an isolated worktree/branch rooted at the same approved base SHA.
-- Read-only planners/reviewers may inspect the same pinned repository snapshot.
-- No agent pushes directly to protected `main`.
-- Integration happens only after required review and acceptance checks.
-- Parallel tasks must not modify overlapping ownership surfaces unless the orchestrator serializes them or explicitly creates an integration task.
-
-## Reproducibility receipt
-
-The orchestration layer selected later must be able to record at minimum:
-
-- task ID and spec revision;
-- base repo SHA;
-- workload refs / routing attributes;
-- chosen lane(s);
-- execution engine/agent;
-- exact model and effort/configuration;
-- branch/worktree;
-- author and reviewer identities;
-- route/fallback/escalation reason;
-- acceptance contract/check identifiers;
-- verification result;
-- final integrated SHA/PR when applicable.
-
-If the runtime cannot expose enough information to reconstruct why a critical route happened, it is not suitable as the sole production control plane.
-
-## Spec Kit integration
-
-This policy is intentionally created **before** Spec Kit task materialization.
-
-Spec Kit should later produce portable specification/plan/tasks. The generated tasks should carry enough semantic information to derive the routing envelope, but should avoid embedding vendor/model choices.
-
-The orchestrator then evaluates each concrete task against RP-HBC-01 and binds it to an agent/model/worktree at runtime.
-
-That separation lets the project change orchestrators or model providers without rewriting the specification.
-
-## Orchestration runtime decision
-
-**Codex is the primary coding agent and selected orchestrator for this project.** Use its available native multi-agent tools for eligible independent work, with the active Spec Kit tasks and existing project artifacts for task status, dependencies, blockers and handoffs. Verify tool availability and concurrency limits in each session; if unavailable, execute eligible work sequentially. The coordination workflow is owned by [AGENTS.md](../AGENTS.md).
-
-The authoritative runtime capability and route-readiness record is [RR-HBC-01](runtime-route-registry.md). Existing Claw/OpenClaw installations are optional capabilities, not the selected control plane. Do not install or start an alternate orchestrator to fill a session capability gap without explicit authorization. This runtime choice does not advance roadmap gates or qualify any Critical route.
-
-A separate dynamic-router product is not required for the current path. Add one only if a concrete runtime/engine gap demonstrates the need and the added layer preserves resolved-model identity, route qualification and reproducibility.
-
-## Orchestration-runtime requirements derived from this policy
-
-For autonomous Critical execution, the selected runtime must demonstrably support:
-
-- per-role/per-task model and engine selection;
-- explicit resolved model identity for critical routes;
-- isolated worktrees/branches;
-- bounded retry/repair loops;
-- independent reviewer assignment;
-- deterministic verifier/acceptance gates outside agent self-report;
-- durable route/run logs;
-- human gates;
-- restart/resume without silently rerunning already accepted work.
-
-These are **acceptance requirements for the Codex execution route**, not a generic orchestrator bakeoff. Record task/run receipts in the owning project artifacts with links to canonical specification and verification evidence. If a required capability is missing, record the affected task as blocked before execution; do not add custom orchestration infrastructure or silently weaken admission requirements.
-
-## Re-evaluation triggers
-
-Reopen model preference order when one of these occurs:
-
-- material new benchmark evidence for a candidate;
-- a candidate becomes unavailable or materially changes;
-- internal Shadow Eval/micro-bakeoff contradicts the external evidence;
-- repeated production failures cluster in one lane;
-- the workload/fidelity contract changes materially;
-- the orchestration runtime changes in a way that alters tool access, permissions or model behavior.
-
-Do **not** reopen the lane architecture merely because a leaderboard rank moves a few places.
-
-## Current decision
-
-RP-HBC-01 is ready to guide Spec Kit and orchestration design.
-
-The lane architecture is the decision. Exact per-task routing starts only after concrete tasks/specifications exist, and the initial preference order remains provisional until project-specific evaluation validates it.
+# Execution and routing policy — RP-HBC-01
+
+Status: **ACTIVE** | Revision: **4** | Date: **2026-10-09** (Africa/Cairo)
+
+This policy owns execution selection, routing and recovery. Start at [AGENTS.md](../AGENTS.md).
+Product and delivery gates remain in [PRODUCT.md](../PRODUCT.md) and [ROADMAP.md](../ROADMAP.md).
+Verification and risk-based review are owned exclusively by
+[logic verification](../LOGIC_VERIFICATION.md) and
+[implementation verification](../IMPLEMENTATION_VERIFICATION.md).
+
+## Execution selection
+
+The user selects the environment. No coding agent, model family or orchestrator has permanent
+ownership. A direct coding-agent session defaults to sequential execution, including eligible `[P]`
+tasks. An externally orchestrated workflow uses its approved concurrency, isolation and resource
+configuration. Native delegation is used only within an explicitly approved execution mode.
+
+If session context does not establish the mode, ask for approval in this session and wait before
+dependent execution. Selection pending is not an execution failure or a BLOCKED task. Do not silently
+switch to parallel or sequential execution, change runtime, or launch an external orchestrator.
+An approved mode persists until the user changes it; availability alone does not change it.
+
+## Task routing
+
+Use the existing task ID, prerequisites, allowed files and acceptance references. Workload tags from
+[WP-HBC-01](workload-profile.md) describe capabilities, not assignments. These lane names remain
+available to interpret existing task metadata:
+
+| Lane | Capability |
+| --- | --- |
+| L1 / planning/evidence | Scope, authority, architecture and consistency |
+| L2 / fidelity-motion | Visual, responsive, motion, input and state behavior |
+| L3 / repo-engineering | Code, tooling, integration and debugging |
+| L4 / review-verification | Verification and review appropriate to change risk |
+| L5 / support-mechanical | Bounded mechanical work |
+
+Select capabilities needed by the task in the user-selected environment.
+[Candidate research](candidate-models.md) is advisory, not an allowlist or a mandatory preference order.
+No blanket benchmark qualification, model-family switch, separate reviewer route, deadline or counter
+protocol is required to start authorized direct work. Actual tool/input availability, coherent
+requirements, feature prerequisites and meaningful acceptance gates still apply. Extra admission
+conditions in an explicitly approved external workflow remain specific to that workflow.
+
+## Isolation and integration
+
+Read-only concurrent work may share a pinned snapshot. Concurrent writers require separate
+worktrees/branches at the approved base revision; otherwise serialize writes under the approved
+configuration only if it permits that fallback, or wait for current-session approval. Serialize
+integration and shared instruction/configuration edits. No simultaneous
+writers in a shared working tree. Review and required checks precede integration. Permission to run
+CI does not grant permission to push, merge, create issues/PRs or change GitHub settings.
+
+## Recovery and continuity
+
+Reproduce a failure, classify it, repair its demonstrated cause and rerun affected checks. Keep failed
+results; never loosen acceptance or reset history to make a run pass. Stop repeating an unchanged
+failed approach when it yields no new evidence. Request input when the remaining action needs a user
+decision, unavailable input or permission. Record actual missing prerequisites as blockers in the
+owning task/plan; leave mode selection pending while awaiting the user.
+
+Direct sessions need no model-switch quotas or cumulative retry journal. Approved external workflows
+may impose bounded resources and retries through their native controls. A runtime/provider fallback
+must preserve authorized mode, scope, permissions and acceptance; ask before a change outside them.
+
+Use task/plan checkpoints and native reports/logs for resume. Record revision, changed files,
+commands/results, remaining limitations and next action once in the owning artifact. Do not introduce
+a second task database, custom orchestration infrastructure or duplicate execution receipts.

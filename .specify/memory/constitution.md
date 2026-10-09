@@ -24,22 +24,30 @@ scoped requirement. Internally simpler mechanisms are permitted only when the ob
 remains equivalent and verified.
 
 ### IV. Verification Over Self-Report
-Agent completion is not acceptance. Critical work MUST be validated by the executable checks required
-by its specification and plan, including browser or deterministic checks where applicable, and by any
-independent review required by the active routing policy. Static screenshots MUST NOT substitute for
+Agent completion is not acceptance. Work MUST be validated by the executable checks required
+by its specification and plan, including browser or deterministic checks where applicable, and by
+risk-based review under the centralized implementation verification authority. Static screenshots MUST NOT substitute for
 temporal/state verification. Thresholds, fixtures, or comparison references MUST NOT be changed only
 to hide a failure.
 
 ### V. Portable Specifications & Reproducible Execution
 Specification artifacts MUST describe product intent, behavior, constraints, acceptance, and
 implementation planning without binding product requirements to a particular model vendor. Runtime
-routing, model qualification, orchestration, and provider selection belong to their execution-policy
-owners. Critical execution MUST remain reproducible from recorded task/spec revision, repository
-revision, runtime route/configuration, and verification result.
+routing, orchestration, and provider selection belong to their execution-policy owners. The user
+selects the environment; no agent or orchestrator has permanent ownership. Direct sessions default
+to sequential execution; external workflows follow their approved concurrency/isolation configuration.
+Ambiguous mode selection requires current-session approval and waiting, not silent switching or a
+BLOCKED task. Execution MUST remain reproducible from task/spec and repository revision, relevant
+runtime/configuration and verification results, using native records rather than duplicate receipts.
 
 ## Project Constraints
 
 - `AGENTS.md` is the tool-neutral repository entry point and ownership map.
+- Exactly two centralized Markdown verification authorities exist: `LOGIC_VERIFICATION.md` for
+  product/roadmap/specification/requirements/governance consistency and `IMPLEMENTATION_VERIFICATION.md`
+  for code/integration/runtime/engineering acceptance. Feature-specific acceptance stays in its owner.
+- Local verification and CI execution, including integration checks, are authorized. Other GitHub
+  operations and commits/pushes remain user-controlled. Verification does not advance delivery gates.
 - Feature/site-specific truth belongs in the active product/domain contract and linked evidence, not
   in this constitution.
 - Spec Kit artifacts MUST reference canonical evidence instead of duplicating whole evidence packages.
@@ -88,4 +96,4 @@ Versioning follows semantic versioning:
 - MINOR for a new principle or materially expanded governance requirement;
 - PATCH for non-semantic clarification or wording corrections.
 
-**Version**: 1.1.0 | **Ratified**: 2026-10-05 | **Last Amended**: 2026-10-06
+**Version**: 1.2.0 | **Ratified**: 2026-10-05 | **Last Amended**: 2026-10-09

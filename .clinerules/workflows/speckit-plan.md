@@ -10,6 +10,11 @@ handoffs:
     prompt: Create a checklist for the following domain...
 ---
 
+Repository policy: read [AGENTS.md](../../AGENTS.md),
+[logic verification](../../LOGIC_VERIFICATION.md) and
+[implementation verification](../../IMPLEMENTATION_VERIFICATION.md) before this workflow.
+Task parallel markers do not authorize delegation; use the execution mode approved under AGENTS.
+
 ## User Input
 
 ```text

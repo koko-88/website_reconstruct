@@ -8,7 +8,7 @@ Agent entry point: [AGENTS.md](AGENTS.md). Project-wide rules live in the [Spec 
 
 **COMPLETE FOR ROADMAP DECOMPOSITION**
 
-This status means the material observable product surfaces, journeys, stateful behaviors, cross-cutting obligations, exclusions, unknowns, and current-phase input constraints have an explicit product-level owner. It does **not** mean implementation is admitted; ROADMAP.md remains **DECOMPOSITION REQUIRED** until independently testable feature boundaries, dependencies, coverage, and acceptance ownership are derived and approved.
+This status means the material observable product surfaces, journeys, stateful behaviors, cross-cutting obligations, exclusions, unknowns, and current-phase input constraints have an explicit product-level owner. It does **not** mean implementation is admitted; [ROADMAP.md](ROADMAP.md) owns the current decomposition and review/execution status. Verify product-to-feature consistency under [logic verification](LOGIC_VERIFICATION.md); engineering acceptance follows [implementation verification](IMPLEMENTATION_VERIFICATION.md).
 
 ## Whole-product purpose and visitor outcomes
 

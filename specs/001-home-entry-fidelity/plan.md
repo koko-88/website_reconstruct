@@ -8,6 +8,8 @@
 
 **Technical replanning**: 2026-10-06 (Africa/Cairo), checked-out `main` HEAD `48eafc8eb78964a6d23bacb5192fa3e333688cfc`. Verdict **TARGETED_REPLAN_REQUIRED**: preserve rendering/motion/acceptance architecture; isolate the application package from provisional root npm state, strengthen staged/build fixture integrity, and explicitly evaluate CEC-WR-01. The original planning base/receipt remain historical. No application, tasks, dependency install, commit or capability qualification is performed in this pass.
 
+**2026-10-09 governance consolidation:** [logic verification](../../LOGIC_VERIFICATION.md) and [implementation verification](../../IMPLEMENTATION_VERIFICATION.md) own verification process. RP/RR govern user-selected execution; historical planning receipts remain historical. Native Playwright reports replace planned run wrappers/journals; all FR/SC/check IDs and calibration/environment/fixture obligations remain.
+
 ## Summary
 
 Independently reconstruct the root loader and ready home/header as a production-quality, locally served fidelity experiment. Preserve the loader/hero overlap, type metrics, responsive crops, ambient layers, pointer/touch/reduced branches and keyboard relationships. The slice stops at the closed header and home boundary: it does not deliver the complete production website, downstream controls, commerce, adaptation or publication.
@@ -42,10 +44,16 @@ Gate assessed before Phase 0 and again after Phase 1:
 | II Integrity/uncertainty | PASS: existing evidence only; O/S/U/D separated | PASS: fixtures copied/read-only, reference hashes verified, missing bytes/deviations explicit; no recapture or historical receipt rewrite |
 | III Fidelity | PASS: FR-001..018 preserved | PASS: state graph, distinct timing origins, native capability branch, content-driven height and role-specific type retained; no maximum-height shortcut |
 | IV Verification | PASS: specification supplies named acceptance | PASS: contract matrix covers all FR/SC; separate temporal, geometry, raster and independent review gates; no target acceptance claimed |
-| V Portability/reproducibility | PASS: planning can precede route qualification | PASS: exact lock/browser/fixture/spec/run receipts planned; execution decisions remain in RP/RR, not embedded model selection |
+| V Portability/reproducibility | PASS: planning and execution selection are separate | PASS: exact lock/browser/fixture/spec/run receipts planned; execution decisions remain in RP/RR, not embedded model selection |
 | Workflow | PASS: bounded specification exists | PASS: plan stops at Phase 1; task generation and cross-artifact analysis precede Critical implementation |
 
-No unjustified constitutional violation exists. Scope, asset availability, route admission and target acceptance are different gates. RR-HBC-01 currently qualifies no Critical route; this does not block planning, and this plan does not qualify one. Critical implementation needs the applicable routing/reviewer/deadline/retry admission before assignment, or a separately admitted bounded qualification run. Refer to [RP-HBC-01](../../model-selection/routing-policy.md) and [RR-HBC-01](../../model-selection/runtime-route-registry.md); do not duplicate their rules in new project policy.
+No constitutional exception is required. Scope, asset availability, execution selection and target
+acceptance are separate gates. Resolve the user-selected mode and required capabilities under
+[RP-HBC-01](../../model-selection/routing-policy.md) and
+[RR-HBC-01](../../model-selection/runtime-route-registry.md). Direct sessions default to sequential;
+approved external workflows keep their concurrency/isolation configuration. Review is risk-based
+under implementation verification; no model-family qualification or universal deadline/counter gate
+applies. ROADMAP still requires review before HBC delivery.
 
 ## Project Structure
 
@@ -65,7 +73,7 @@ specs/001-home-entry-fidelity/
   design-validation.json          planning checks only
 ```
 
-`tasks.md` belongs to the later speckit-tasks phase and is not generated here.
+`tasks.md` now exists; its completion checkboxes own implementation progress.
 
 ### Planned implementation layout (not present yet)
 
@@ -95,8 +103,6 @@ app/                                one independent npm package; no workspace
     verify-fixtures.mjs             source/stage/build allowlist and integrity
     validate-home-inputs.mjs         package/environment/calibration preflight
     compare-home.mjs                region comparator using maintained libraries
-    prepare-home-run.mjs            immutable run manifest and invocation journal
-    run-home-browser.mjs            thin Playwright invocation/output wrapper
     validate-home-results.mjs       completeness/zero-missing-results gate
   tests/
     unit/entry.test.ts / typography.test.ts / hero.test.ts
@@ -140,7 +146,7 @@ Use the three available font inspection fixtures as local copies; body Arial rem
 
 ### Motion/input
 
-CEC-WR-01 now makes GSAP/authoring/GPU diagnostics visible, but selection is requirement-led. The current [research audit](research.md#r-10-capability-replanning-audit) keeps CSS/TypeScript: no scoped interactive seek/replay/reversal or unexplained GPU surface warrants another engine. GSAP labels, context cleanup and CustomEase are viable alternatives, not unavailable tools; reconsider only after a concrete bounded fidelity/lifecycle defect demonstrates a material benefit. Such a change updates property ownership, lock and acceptance coverage before implementation; it never makes GSAP ticker time the navigation/setup clock. Browser DOM/styles/animation inventory, paint/layer and performance traces are the primary diagnostics. GPU tooling is unselected; diagnostics never certify fidelity.
+Creative tools are optional capabilities; their current audit is in implementation verification. Selection is requirement-led. The current [research audit](research.md#r-10-capability-replanning-audit) keeps CSS/TypeScript: no scoped interactive seek/replay/reversal or unexplained GPU surface warrants another engine. GSAP labels, context cleanup and CustomEase are viable alternatives, not unavailable tools; reconsider only after a concrete bounded fidelity/lifecycle defect demonstrates a material benefit. Such a change updates property ownership, lock and acceptance coverage before implementation; it never makes GSAP ticker time the navigation/setup clock. Browser DOM/styles/animation inventory, paint/layer and performance traces are the primary diagnostics. GPU tooling is unselected; diagnostics never certify fidelity.
 
 Retain declared entry easings/durations and independent fog/mark clocks from M-01..04/12; contracts enumerate timing and state assertions. Use CSS transforms/opacity on bounded layers. Ambient visibility activation uses IntersectionObserver where available; document hidden explicitly pauses CSS fog and cancels frame work. Unsupported observer capability retains the visible baseline rather than hiding content.
 
@@ -168,9 +174,18 @@ Use complementary levels, not duplicative tests:
 2. Built-output browser tests assert semantic state, readiness descendants and generated styles, font success/media decode, actual layer geometry, input cancellation, reduced/no-script paths and keyboard order. Observe real clocks with bounded polling; do not fast-forward animations or use network-idle as readiness.
 3. Canonical raw viewport captures and phase/timestamp records retain live motion. Region raster/geometry/type/crop comparison uses immutable canonical inputs and separately calibrated numerical limits. A screenshot proves its named phase only.
 4. Accessibility checks cover all specification semantics/focus and targeted automated violations. Record any correction with evidence/reason/consequence/assertion; automation does not establish uninspected assistive-technology parity.
-5. Independent eligible review inspects source independence, evidence precedence, missing states, capture integrity and deviations after machine/browser checks. Route selection remains an execution-policy concern.
+5. Independent risk-based review inspects source independence, evidence precedence, missing states, capture integrity and deviations before integration. This stateful fidelity slice is high risk; a competent human or separately tasked reviewer may assess it in the approved execution mode.
 
-Serial canonical capture workers and zero automatic acceptance retries preserve each of the nine fresh results. One explicit acceptance-run ID links portable, canonical and variant invocations through an append-only session manifest; each invocation owns a unique output directory so Playwright cleanup cannot erase previous results. Diagnostic reruns receive new invocation IDs linked to the original failure. The aggregate validator reads the selected run manifest and refuses missing or overwritten attempts. Portable Chromium can run deterministic smoke/contract tests; fidelity comparisons require the recorded reference profile or an explicit calibrated environment deviation. Firefox/WebKit are optional future diagnostics, not proof of reference parity.
+Use Playwright Test directly with serial canonical workers and zero automatic acceptance retries.
+One final invocation covers portable, canonical and variant projects, each explicitly labeled; three
+fresh trials per HOME-D/M/R retain all nine outcomes. A unique run ID selects output/report/trace
+paths; refuse an existing output directory. Native metadata and test attachments preserve pinned
+spec/build/fixture/calibration/environment identity and failure evidence. Diagnostic reruns use a new
+run ID linked to the failed run. The minimal feature validator checks native JSON results and the
+feature catalogue for missing, skipped or incomplete checks, input drift and required review; it
+must not build a second runner or invocation journal. Portable Chromium proves functional contracts;
+fidelity still requires the reference profile or a calibrated deviation. Firefox/WebKit are optional
+diagnostics, not proof of reference parity.
 
 The complete requirement-to-check matrix, capture procedure, result fields and calibration gate are in [verification contract](contracts/verification.md). Read [quickstart](quickstart.md) for future commands. The scripts/configuration above are planned deliverables, not existing runnable application tests.
 
@@ -188,7 +203,7 @@ Masks name only supported uncontrollable ambient regions and cannot cover requir
 
 | Stage | Concrete outcome / gate |
 | --- | --- |
-| Preparation | Generate tasks from this plan; analyze spec/plan/tasks consistency; admit execution route; pin toolchain/lock/browser and fixture manifest; preserve reference hashes. Resolve media and establish calibration before fidelity verdicts. |
+| Preparation | Use existing tasks; analyze spec/plan/tasks consistency; establish authorized execution mode/capabilities; pin toolchain/lock/browser and fixture manifest; preserve reference hashes. Resolve media and establish calibration before fidelity verdicts. |
 | Static home | Complete semantic HTML, no-script baseline, typography/crop/header/height/layers; ready-state assertions at D/M/R and responsive edges. |
 | Entry | Bootstrap guard, idempotent lifecycle and overlapping entrances; exact clock tests plus normal/delayed/reduced/failsafe browser phases. |
 | Home motion | Independent fog/mark/light/scroll/touch behavior; cancellation, reverse-to-top and capability fallback checks. |
@@ -202,7 +217,7 @@ No constitutional exception or speculative infrastructure is requested. The few 
 
 ## Planning completion record
 
-**Replanning gate disposition:** no open product/technical decision blocks task generation or later cross-artifact analysis. Missing town/fog/logo bytes block dependent visual implementation and SC-007/region acceptance, while isolated logic/markup can proceed. Exact package versions/lock and clean-checkout package-boundary checks are implementation bootstrap gates. Browser/OS/Arial qualification and numerical calibration block fidelity acceptance; exact-route admission blocks Critical execution. GIMP resolution or inactive optional MCP bridges do not block this DOM slice. Adaptation/publication retain FC's later gates. These dependencies must become ordered preparation work in tasks; they are not newly invented behavior or grounds to relax acceptance.
+**Replanning gate disposition:** no open product/technical decision blocks task generation or later cross-artifact analysis. Missing town/fog/logo bytes block dependent visual implementation and SC-007/region acceptance, while isolated logic/markup can proceed. Exact package versions/lock and clean-checkout package-boundary checks are implementation bootstrap gates. Browser/OS/Arial qualification and numerical calibration block fidelity acceptance; execution selection and actual missing capabilities gate only dependent work. GIMP resolution or inactive optional MCP bridges do not block this DOM slice. Adaptation/publication retain FC's later gates. These dependencies must become ordered preparation work in tasks; they are not newly invented behavior or grounds to relax acceptance.
 
 **2026-10-06 result:** ready for `speckit-tasks`, then cross-artifact analysis; no tasks generated here. Changed decisions are application package location/isolation, explicit direct dev identities, and fail-closed staged/build fixture validation. DOM/CSS/TypeScript, native timing/input/reduced branches, fixture provenance, independent review and all FR/SC obligations are deliberately preserved. Only existing feature planning artifacts are edited. Reusable installation/configuration/reachability data eventually belongs to a host/global inventory; this feature remains executable from its selected package, contracts and explicit inputs without optional creative tools.
 

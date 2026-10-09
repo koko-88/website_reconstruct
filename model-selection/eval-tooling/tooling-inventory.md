@@ -2,6 +2,13 @@
 
 Checked 2026-10-04 (Africa/Cairo), against [WP-HBC-01 revision 1](../workload-profile.md). **Benchmark Verification Tooling Gate: PARTIAL.** Inspect AI and Inspect Evals are ready for offline inspection and custom evaluation development. AgentCompass installs and exposes useful harness/analyzer components, but full benchmark discovery fails on native Windows. No external benchmark result or candidate-model score was reproduced.
 
+**2026-10-09 maintenance:** this dated installation/capability record is supporting research, not a
+verification authority or current execution gate. Use [logic verification](../../LOGIC_VERIFICATION.md)
+and [implementation verification](../../IMPLEMENTATION_VERIFICATION.md). The bootstrap now selects
+Inspect AI/Evals by default; `-IncludeAgentCompass` explicitly includes the optional overlapping tool
+in installation or verification. Existing AgentCompass installations/pins/receipts are retained.
+Fresh checks still determine current availability; no package is uninstalled by this change.
+
 ## Machine, installation and scope
 
 Windows 10 Pro 22H2, x86_64, build 19045. `uv 0.12.22` was already installed. Elevated read-only inspection found Python 3.14.3 (system/default), 3.13.2, 3.11.0, 3.10.6 and 3.9.13. The Python launcher initially exposed only 3.14; `uv python list --only-installed` found the others. No pipx, Conda, Poetry, PDM or Hatch command was on PATH. Docker CLI and WSL 2 were present; Docker's Linux-engine pipe was absent and the default WSL distribution was `docker-desktop`. No general-purpose Linux distribution was established by these checks. See [machine receipt](machine-inspection.json).
@@ -153,14 +160,17 @@ Inspect Evals **depends on and complements Inspect AI**; it is not a competing r
 
 ## Reusable bootstrap and reproducibility limits
 
-[bootstrap-benchmark-tooling.ps1](bootstrap-benchmark-tooling.ps1) is compatible with Windows PowerShell 5.1+ and can be copied with this directory into future repositories. It requires an existing uv installation, selects managed Python 3.12.15, installs the exact releases in separate tool environments and constrains every dependency using the installed snapshots. It checks process exit codes, dependencies, versions, offline smoke results and launcher identity. It reports the known AgentCompass PARTIAL condition explicitly.
+[bootstrap-benchmark-tooling.ps1](bootstrap-benchmark-tooling.ps1) is compatible with Windows PowerShell 5.1+ and can be copied with this directory into future repositories. It requires an existing uv installation, selects managed Python 3.12.15, installs the selected exact releases in separate tool environments and constrains every dependency using the installed snapshots. It checks process exit codes, dependencies, versions, offline smoke results and launcher identity. With -IncludeAgentCompass it reports the known AgentCompass PARTIAL condition explicitly.
 
 ```powershell
-# Install or safely rerun; the switch fixes missing/shadowed user launchers.
+# Install selected tools only with user authorization; the switch fixes missing/shadowed launchers.
 & .\model-selection\eval-tooling\bootstrap-benchmark-tooling.ps1 -AddUserPath
 
-# Verify installed tooling without installing packages.
-& .\model-selection\eval-tooling\bootstrap-benchmark-tooling.ps1 -VerifyOnly -AddUserPath
+# Verify selected installed tooling without installing packages (omit -AddUserPath for read-only host checks).
+& .\model-selection\eval-tooling\bootstrap-benchmark-tooling.ps1 -VerifyOnly
+
+# Explicitly include the optional overlapping tool.
+& .\model-selection\eval-tooling\bootstrap-benchmark-tooling.ps1 -VerifyOnly -IncludeAgentCompass
 ```
 
 No virtualenv activation, execution-policy change, administrator Python installation, provider credentials, `.env`, model endpoint or new account is required. Output goes to a temporary evidence directory by default; `-EvidenceDirectory` selects another location. User-level uv cache/runtime/tool writes require normal access to that user's profile. Native sandbox restrictions may require authorization for those writes. If uv is missing, the script stops with its official installation link instead of downloading/executing an installer. Runtime and every installed distribution are checked against the snapshots before installation, so matching environments are left in place. This avoids an observed uv 0.12.22 interpreter-matching issue that unnecessarily recreated the otherwise compatible Inspect environment on repeated direct `uv tool install` calls. A differing graph is reconciled; verification-only mode reports the difference. Keep future task-specific extras in a separate task environment or deliberately revise these base snapshots.

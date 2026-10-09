@@ -57,7 +57,7 @@ Fields: version/status (NOT_CALIBRATED/CALIBRATED), cases/reference IDs/hashes, 
 
 ## AcceptanceRun and Deviation
 
-Run fields: run ID, append-only session manifest, unique invocation IDs and immutable output paths/attempt linkage, spec/plan/task/base revision, actual branch/worktree, toolchain/lock/browser/OS/fixture/calibration identity, author/reviewer route receipt references where applicable, commands, all attempted case/trial results, FR/SC coverage, captures/samples/diffs/traces, timestamps, test-continuation context, deviations/limitations and final result. Detailed shape in verification contract. No discarded retries, overwritten invocation artifacts or automatic baselines.
+Run fields: run ID, native Playwright report/metadata and attachments, unique run output paths/case-trial linkage, spec/plan/task/base revision, actual branch/worktree, toolchain/lock/browser/OS/fixture/calibration identity, author/reviewer/native report references where applicable, commands, all attempted case/trial results, FR/SC coverage, captures/samples/diffs/traces, timestamps, test-continuation context, deviations/limitations and final result. Detailed shape in verification contract. No discarded retries, overwritten run artifacts or automatic baselines.
 
 Replanned package identity: record `applicationRoot=app`, application manifest/lock hashes, exact direct dependency inventory, actual tool resolution, staged/build fixture checks and clean-checkout execution result. Paths such as `artifacts/home/` and `tests/calibration/` in the verification interface are application-relative. The root provisional package/lock are never the acceptance dependency identity.
 

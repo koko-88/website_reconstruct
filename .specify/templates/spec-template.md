@@ -8,6 +8,8 @@
 
 **Input**: User description: "$ARGUMENTS"
 
+Verification process follows [logic verification](../../LOGIC_VERIFICATION.md) and [implementation verification](../../IMPLEMENTATION_VERIFICATION.md); feature acceptance remains in the specification and its contracts.
+
 ## User Scenarios & Testing *(mandatory)*
 
 <!--

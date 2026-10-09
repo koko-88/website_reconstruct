@@ -7,7 +7,7 @@
     "node": ">=22"
   },
   "scripts": {
-    "test": "node scripts/run-tests.mjs",
+    "test": "node --test --test-concurrency=1 --test-timeout=180000 scripts/test-capture.mjs scripts/test-settled-appearance.mjs scripts/test-assets.mjs",
     "test:assets": "node --test scripts/test-assets.mjs"
   },
   "dependencies": {

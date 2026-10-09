@@ -8,6 +8,11 @@ metadata:
 ---
 
 
+Repository policy: read [AGENTS.md](../../../AGENTS.md),
+[logic verification](../../../LOGIC_VERIFICATION.md) and
+[implementation verification](../../../IMPLEMENTATION_VERIFICATION.md) before this workflow.
+Task parallel markers do not authorize delegation; use the execution mode approved under AGENTS.
+
 ## User Input
 
 ```text
@@ -151,7 +156,7 @@ You **MUST** consider the user input before proceeding (if not empty).
 
 6. Execute implementation following the task plan:
    - **Phase-by-phase execution**: Complete each phase before moving to the next
-   - **Respect dependencies**: Run sequential tasks in order, parallel tasks [P] can run together
+   - **Respect dependencies**: Run sequential tasks in order, parallel tasks [P] are eligible to run together only in an approved concurrent mode
    - **Follow TDD approach**: Execute test tasks before their corresponding implementation tasks
    - **File-based coordination**: Tasks affecting the same files must run sequentially
    - **Validation checkpoints**: Verify each phase completion before proceeding

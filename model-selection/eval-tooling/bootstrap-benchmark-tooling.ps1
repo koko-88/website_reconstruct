@@ -2,6 +2,7 @@
 [CmdletBinding()]
 param(
     [switch]$VerifyOnly,
+    [switch]$IncludeAgentCompass,
     [switch]$AddUserPath,
     [string]$EvidenceDirectory
 )
@@ -11,6 +12,12 @@ $pythonVersion = '3.12.15'
 $inspectVersion = '0.3.276'
 $evalsVersion = '0.23.0'
 $compassVersion = '1.0.0'
+$selectedTools = @('inspect-ai')
+$selectedCommands = @('inspect')
+if ($IncludeAgentCompass) {
+    $selectedTools += 'agentcompass'
+    $selectedCommands += 'agentcompass'
+}
 
 function Invoke-Checked {
     param([string]$Executable, [string[]]$Arguments)
@@ -55,7 +62,7 @@ try {
         $inspectArguments = @('tool', 'install', '--python', $pythonVersion,
             '--with', "inspect-evals==$evalsVersion", '--with', 'mcp')
         $compassArguments = @('tool', 'install', '--python', $pythonVersion)
-        foreach ($snapshotName in @('inspect', 'agentcompass')) {
+        foreach ($snapshotName in $selectedCommands) {
             $constraint = Join-Path $PSScriptRoot ($snapshotName + '-constraints.txt')
             if (-not (Test-Path -LiteralPath $constraint)) {
                 throw "Missing dependency snapshot: $constraint"
@@ -63,7 +70,9 @@ try {
         }
         $inspectArguments += @('--constraints', (Join-Path $PSScriptRoot 'inspect-constraints.txt'), "inspect-ai==$inspectVersion")
         $compassArguments += @('--constraints', (Join-Path $PSScriptRoot 'agentcompass-constraints.txt'), "agentcompass==$compassVersion")
-        foreach ($item in @(@('inspect-ai', 'inspect', $inspectArguments), @('agentcompass', 'agentcompass', $compassArguments))) {
+        $installItems = ,@('inspect-ai', 'inspect', $inspectArguments)
+        if ($IncludeAgentCompass) { $installItems += ,@('agentcompass', 'agentcompass', $compassArguments) }
+        foreach ($item in $installItems) {
             $constraint = Join-Path $PSScriptRoot ($item[1] + '-constraints.txt')
             $existingPython = Join-Path $toolRoot ($item[0] + '\Scripts\python.exe')
             $launcher = Join-Path $binRoot ($item[1] + '.exe')
@@ -91,7 +100,7 @@ try {
             $_ -and $_.TrimEnd('\') -ine $binRoot.TrimEnd('\') })
         $env:Path = (@($binRoot) + $processEntries) -join ';'
     }
-    foreach ($toolName in @('inspect-ai', 'agentcompass')) {
+    foreach ($toolName in $selectedTools) {
         $toolPython = Join-Path $toolRoot "$toolName\Scripts\python.exe"
         if (-not (Test-Path -LiteralPath $toolPython)) { throw "Missing environment: $toolName" }
         $mode = if ($toolName -eq 'inspect-ai') { 'inspect' } else { 'agentcompass' }
@@ -106,7 +115,7 @@ try {
             Write-Warning "$mode status: $($receipt.status). $($receipt.checks.runtime_discovery)"
         }
     }
-    foreach ($commandName in @('inspect', 'agentcompass')) {
+    foreach ($commandName in $selectedCommands) {
         $command = Get-Command $commandName -ErrorAction SilentlyContinue
         if (-not $command) {
             throw "$commandName is not on this shell's PATH. Rerun with -AddUserPath or refresh the shell after adding $binRoot to user PATH."
@@ -117,7 +126,8 @@ try {
         Invoke-Checked $command.Source @('--help')
     }
     Write-Output "Verification evidence: $EvidenceDirectory"
-    Write-Output 'CLI/import readiness only. AgentCompass native Windows benchmark execution is unsupported.'
+    Write-Output 'CLI/import readiness only; not production acceptance.'
+    if ($IncludeAgentCompass) { Write-Output 'AgentCompass native Windows benchmark execution is unsupported.' }
 }
 finally {
     $env:UV_HTTP_TIMEOUT = $savedTimeout

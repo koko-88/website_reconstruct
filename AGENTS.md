@@ -20,10 +20,11 @@ Use progressive disclosure. Do **not** recursively read the repository before ac
    [WP-HBC-01](model-selection/workload-profile.md),
    [RP-HBC-01](model-selection/routing-policy.md), and
    [RR-HBC-01](model-selection/runtime-route-registry.md) as appropriate.
-7. If the task concerns motion, visual effects, GPU rendering, media, 3D, texture/asset production,
-   or related debugging, read the [creative capability shelf](tooling/creative-capabilities/README.md)
-   and use only the capability class required by the accepted task.
-8. If the task concerns workstation/project reproducibility, tool versions, setup commands or reproducibility CI, read root `mise.toml`/`mise.lock` and [the reusable workstation profile](tooling/reconstruction-workstation/README.md).
+7. For verification, use [logic verification](LOGIC_VERIFICATION.md) and
+   [implementation verification](IMPLEMENTATION_VERIFICATION.md), the only centralized Markdown
+   verification authorities. Feature acceptance remains in its specification and linked contracts.
+8. For reproducibility or creative capabilities, read root `mise.toml`/`mise.lock` and the capability
+   audit in implementation verification. Verify availability before selecting or repairing a tool.
 9. Use the [reference-reconstruction skill](skills/reference-reconstruction/SKILL.md) only for
    reconstruction/evidence methodology work.
 
@@ -39,12 +40,12 @@ Use progressive disclosure. Do **not** recursively read the repository before ac
 | Technical implementation decisions | Active Spec Kit `plan.md` and its linked design artifacts |
 | Executable work decomposition | Active Spec Kit `tasks.md` |
 | Workload/capability taxonomy | WP-HBC-01 |
-| Task lane, review, escalation, and model-family policy | RP-HBC-01 |
-| Exact model/engine/configuration admission | RR-HBC-01 |
+| Execution mode, task routing and recovery | RP-HBC-01 |
+| Session runtime availability and configuration | RR-HBC-01 |
+| Product/specification/governance consistency verification | `LOGIC_VERIFICATION.md` |
+| Code/integration/runtime/engineering verification and review | `IMPLEMENTATION_VERIFICATION.md` |
 | Reconstruction inspection methodology | reference-reconstruction skill |
-| Creative execution capability availability/integration | `tooling/creative-capabilities/` |
 | Project reproducibility interface and locked toolchain | `mise.toml` + `mise.lock` |
-| Reusable host/workstation provisioning | `tooling/reconstruction-workstation/mise.toml` |
 
 Resolve conflicts by domain ownership, not by newest-file-wins or search rank.
 
@@ -60,7 +61,7 @@ Resolve conflicts by domain ownership, not by newest-file-wins or search rank.
 - Historical receipts stay historical and do not become current phase authority.
 - Spec Kit templates and generated integration instructions are tooling scaffolds; they do not create
   project requirements by themselves.
-- `tooling/creative-capabilities/` is a capability catalog and integration map, not product scope.
+- Capability inventories and installed skills are not product scope.
   Agents MUST NOT reinstall a workstation capability blindly; verify availability first and only install
   or repair a missing capability. Project runtime libraries remain project-local dependencies and are
   added only when an implementation task actually selects them.
@@ -80,23 +81,29 @@ exception genuinely requires it.
 
 The Spec Kit constitution at `.specify/memory/constitution.md` is the single canonical constitution.
 
-## Codex coordination
+## Execution coordination
 
-Codex is the primary coding agent and orchestrator. Use the active Spec Kit task IDs, acceptance
+The user selects the execution environment; no agent or orchestrator permanently owns this project.
+Direct coding-agent sessions default to sequential execution. Externally orchestrated workflows follow
+their approved concurrency and isolation configuration. If the mode is unclear, ask for approval in
+the current session and wait; do not switch modes, launch an orchestrator, or mark work BLOCKED
+merely because selection is pending. Use the active Spec Kit task IDs, acceptance
 criteria and existing project artifacts for task progress, dependencies, blockers and handoffs.
 Inspect existing work before creating new tasks; do not duplicate accepted or in-progress work.
 Persist resumable checkpoints in the owning task/plan artifact when applicable.
 
-Verify native agent tools and concurrency limits in each session. Dispatch independent eligible
-work concurrently when those tools are available; otherwise work sequentially. Give each assignment
-its task ID, acceptance references, allowed files, dependencies and write mode. Follow RP-HBC-01 /
-RR-HBC-01 for routing, isolation, review and admission. Tool availability does not qualify a Critical
-route, and task readiness does not advance roadmap or execution gates.
+Tool availability and `[P]` task markers indicate capability or eligibility, never permission to
+delegate. For approved concurrent work, verify native tools and concurrency limits and give each
+assignment its task ID, acceptance references, allowed files, dependencies and write mode. Follow
+RP-HBC-01 / RR-HBC-01. Task readiness does not advance roadmap or execution gates.
 
 Read-only agents may share a pinned snapshot. Concurrent writers require isolated worktrees/branches
-at the approved base SHA; serialize writes when isolation is unavailable. Serialize integration and
+at the approved base SHA. If isolation is unavailable, wait for approval unless the selected
+configuration already permits serialization. Serialize integration and
 shared instruction/configuration changes. Before handoff, record changed files, validation results,
 remaining blockers and the next action, then inspect `git status`.
 
-Do not run Git commits/pushes, install tools, introduce orchestration infrastructure, run CI, start
-services or launch project execution without user approval.
+Local verification and CI execution, including integration checks and temporary loopback test
+services, are authorized. Other GitHub operations, commits/pushes, installation, deployment, paid
+provider expansion and launching an external orchestrator require user authorization. CI permission
+does not authorize repository/PR/settings changes or advance product delivery/release gates.

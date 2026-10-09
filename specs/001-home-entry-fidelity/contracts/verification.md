@@ -1,6 +1,6 @@
 # Verification Interface: Home Fidelity Acceptance
 
-Applies to [spec](../spec.md) and [plan](../plan.md). This is the planned target acceptance interface, not an executed result. The reference capture helpers/plans are evidence/replay seeds; do not run sealed reference application code or overwrite original receipts to validate this slice. Implement only small target environment/readiness/recording/comparison helpers, using maintained Playwright/image libraries.
+Applies to [spec](../spec.md) and [plan](../plan.md). This is feature-specific acceptance data and recipes; centralized process belongs to [logic verification](../../../LOGIC_VERIFICATION.md) and [implementation verification](../../../IMPLEMENTATION_VERIFICATION.md). This is the planned target acceptance interface, not an executed result. The reference capture helpers/plans are evidence/replay seeds; do not run sealed reference application code or overwrite original receipts to validate this slice. Implement only small target environment/readiness/recording/comparison helpers, using maintained Playwright/image libraries.
 
 **2026-10-06 package boundary:** application commands, `tests/`, `artifacts/`, `fixtures/`, `public/` and `dist/` paths in this interface are relative to `app/`. Canonical reference locators remain repository-relative/read-only. RC-01 preflight records application manifest/lock identities, rejects undeclared/parent-root package resolution and verifies a clean checkout runs with only application dependencies. The provisional root npm bundle is outside the accepted architecture and remains untouched. Before browser runs, build must automatically stage/verify selected fixtures and check exact staged/built file sets and passthrough hashes under the [fixture contract](fixtures.md). Local ignore status alone is insufficient. These are reproducibility checks within FR-018/SC-007/008; no existing requirement/check is removed.
 
@@ -24,7 +24,16 @@ Responsive cases: widths759/760/761,1099/1100/1101,1799/1800/1801 under each E-0
 
 ### Run identity and output preservation
 
-Before the first browser invocation, `acceptance:prepare` reads an explicit unique `HBC_ACCEPTANCE_RUN` ID and creates `artifacts/home/<run-id>/session.json`, recording the immutable spec/build/fixture/calibration identity and planned check catalogue. Every invocation requires a unique `HBC_ACCEPTANCE_INVOCATION` ID, writes only `artifacts/home/<run-id>/invocations/<invocation-id>/`, and appends its command/start/end/status/attempt pointers to the session journal. The Playwright outputDir and report/trace destinations use that invocation namespace. Refuse existing IDs and altered run inputs; never clean the acceptance-run root. Keep portable/canonical/variant outputs distinct within the same session. Diagnostic reruns are additional linked invocations, never replacement files or hidden retries. `validate:home-results --run <run-id>` reads that exact manifest, requires all planned groups and nine fresh canonical outcomes, checks artifact hashes and combines receipts into acceptance.json. An incomplete invocation is a retained failure/NOT_RUN, not a missing attempt silently ignored.
+Use Playwright Test directly. A single final invocation includes labeled portable, canonical and
+variant projects with workers1/retries0. `HBC_ACCEPTANCE_RUN` supplies a unique directory
+`artifacts/home/<run-id>/`; configuration refuses reuse before Playwright can clean output.
+Native metadata and attachments record immutable spec/build/fixture/calibration/environment identity,
+commands, cases/trials and artifacts. Keep all nine fresh canonical results plus every required variant.
+Diagnostic reruns use a new run ID linked to the failed run; retain original reports and failures.
+The minimal `validate:home-results --run <run-id>` reads native JSON results and attachments against
+the feature catalogue, verifies hashes/input consistency and required review, and writes acceptance.json.
+Incomplete, filtered or skipped required groups cannot become PASS. No custom runner, prepare-run
+wrapper or append-only invocation journal is required.
 
 ### Scroll-only verification context
 
@@ -92,8 +101,8 @@ Categorical limits independent of calibration: zero missing required strings/rol
 
 Planned `artifacts/home/<run-id>/acceptance.json` contains:
 
-- `schemaVersion`, `runId`, session manifest/hash and every invocation/attempt linkage, wall-clock and navigation-relative origins, scope/local-only phase;
-- spec/plan/task/base/final revisions, actual branch/worktree, author/reviewer and applicable route receipt references;
+- `schemaVersion`, `runId`, native report/input identity and every case/trial linkage, wall-clock and navigation-relative origins, scope/local-only phase;
+- spec/plan/task/base/final revisions, actual branch/worktree, author/reviewer and native report references;
 - exact Node/npm/package-lock/manifest/calibration IDs and hashes, command list and exit codes;
 - browser executable/hash/version/channel/headless/flags, OS build, actual font identity, viewport/root/body/hero widths/gutter, DPR/visual scale/zoom-knownness, UA, input media/touch, locale/timezone/direction/light/motion, fresh storage/scroll setup;
 - every case/trial, all required check IDs/FR/SC mappings, phase timestamps/samples, readiness predicates, finite/ambient classification, screenshot interval/hash/path, region/diff/geometry/type results, test-continuation context and diagnostics;
@@ -102,6 +111,6 @@ Planned `artifacts/home/<run-id>/acceptance.json` contains:
 
 Check statuses: PASS (proved within contract), FAIL (observed violation), BLOCKED (required asset/environment/calibration/tool precondition missing), NOT_RUN (not attempted). Aggregate PASS requires all mandatory checks/trials PASS and documented permitted deviations; BLOCKED/NOT_RUN cannot be silently treated as passes. Deferred menu/section/provider journeys are scoped exclusions, not passed checks.
 
-Retain all artifacts long enough for the required review and route receipt; durable result pointers must resolve after integration. Human visual/browser acceptance examines D/M/R region composition, loader overlap, type/crop, recorded edge cases, live motion and focused controls; record the specific checks and outcome rather than an unstructured approval. This review supplements machine checks. Independent eligible implementation review remains required by RP/RR; this planning run does not perform or substitute for it.
+Retain all artifacts long enough for required review and replay; durable result pointers must resolve after integration. Human visual/browser acceptance examines D/M/R region composition, loader overlap, type/crop, recorded edge cases, live motion and focused controls; record the specific checks and outcome rather than an unstructured approval. This review supplements machine checks. Independent risk-based implementation review remains required for this stateful fidelity slice before integration; this planning run does not perform or substitute for it.
 
-Revalidate frozen/sealed reference digests after acceptance, never rewrite E2-013, packet `verification.json`, capture sidecars or originals. The packet verifier has a historical evidence-only change gate and writes its own receipt; it is not the target acceptance runner. Target helpers may reuse the published method/contracts, not copy reference application code or repurpose historical PASS as new results.
+Revalidate frozen/sealed reference digests after acceptance, never rewrite E2-013, packet `verification.json`, capture sidecars or originals. The packet verifier preserves its historical receipt and prints current results by default; it is not the target acceptance runner. Target helpers may reuse the published method/contracts, not copy reference application code or repurpose historical PASS as new results.

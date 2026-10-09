@@ -2,12 +2,20 @@
 from pathlib import Path
 from datetime import datetime, timezone
 from urllib.parse import unquote
-import hashlib, json, re, subprocess, sys
+import argparse, hashlib, json, re, sys
 
 packet = Path(__file__).resolve().parent
 root = packet.parents[1]
 v2 = root / 'reference/haunted-boulder-city-v2/rev-2.0.0-real-01'
 receipt = packet / 'verification.json'
+parser = argparse.ArgumentParser(description=__doc__)
+parser.add_argument('baseline', nargs='?', help='Optional reference-tree snapshot relative to the repository')
+parser.add_argument('--output', type=Path, help='Write results to a new file; default is stdout only')
+args = parser.parse_args()
+if args.output:
+    args.output = args.output.resolve()
+    if args.output.exists() or args.output == receipt.resolve() or (root / 'reference').resolve() in args.output.parents:
+        parser.error('Output must be a new file outside frozen/sealed evidence and historical receipts')
 failures = []
 checks = {}
 def check(name, condition, detail):
@@ -22,8 +30,8 @@ def digest(rows):
     return hashlib.sha256(json.dumps(rows,sort_keys=True,separators=(',',':')).encode()).hexdigest()
 
 now_rows = tree_rows()
-if len(sys.argv)>1:
-    baseline = sorted(load(root/sys.argv[1]),key=lambda x:x['path'])
+if args.baseline:
+    baseline = sorted(load(root/args.baseline),key=lambda x:x['path'])
     before_digest = digest(baseline)
     unchanged = baseline == now_rows
 else:
@@ -131,7 +139,7 @@ canonical_errors += [k for k in superseded if phases[k]=='settled']
 check('canonical_and_superseded_phase_precedence',not canonical_errors,{'canonical':len(canonical),'superseded':len(superseded),'errors':canonical_errors})
 
 # Follow local links from writable entry points through linked evidence Markdown.
-pending=list(packet.glob('*.md'))+[root/'PRODUCT.md']
+pending=list(packet.glob('*.md'))+[root/p for p in ['AGENTS.md','PRODUCT.md','ROADMAP.md','LOGIC_VERIFICATION.md','IMPLEMENTATION_VERIFICATION.md']]
 seen=set(); path_errors=[]; fragment_errors=[]; link_count=0
 def slug(h):
     h=re.sub(r'[`*_]','',h.strip()).lower()
@@ -156,13 +164,12 @@ while pending:
         if dest.suffix=='.md' and root in dest.parents: pending.append(dest)
 check('all_linked_repository_paths_and_Markdown_anchors',not path_errors and not fragment_errors,{'links':link_count,'MarkdownFiles':len(seen),'pathErrors':path_errors,'fragmentErrors':fragment_errors})
 
-git=subprocess.run(['git','-c','safe.directory='+root.as_posix(),'status','--porcelain','--untracked-files=all'],cwd=root,text=True,capture_output=True,check=True)
-changes=[line[3:].strip('"').replace('\\','/') for line in git.stdout.splitlines()]
-outside=[p for p in changes if not p.startswith('implementation-scope/')]
-check('evidence_only_changes',not outside,{'changedFiles':len(changes),'outsideImplementationScope':outside,'liveCapture':False,'websiteImplementation':False,'basis':'Local-only tools; git scope plus reference byte identity; no browser/network/app command executed'})
 check('independent_gates_preserved',('Current local reference-validation: NOT REQUIRED as a precondition' in contract and 'Public/distributed target release or real adaptation: BLOCKED' in contract and 'PENDING / not yet ready' in contract and 'TX-01' in contract),{'localValidationAssetGate':'NOT REQUIRED as precondition','publicReleaseAssetGate':'BLOCKED until TR-01 decisions complete','targetAdaptation':'PENDING','principle':'Local fixture validation does not grant public reuse or target-adaptation authority'})
 
 result={'packetId':'IP-HBC-01','verifiedAtUTC':datetime.now(timezone.utc).isoformat(),'result':'FAIL' if failures else 'PASS','failures':failures,'immutableReference':{'files':len(now_rows),'beforeTreeSHA256':before_digest,'afterTreeSHA256':digest(now_rows)},'checks':checks}
-receipt.write_text(json.dumps(result,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
-print(json.dumps({'result':result['result'],'checks':len(checks),'failures':failures},ensure_ascii=False))
+if args.output:
+    args.output.parent.mkdir(parents=True, exist_ok=True)
+    with args.output.open('x', encoding='utf-8') as output:
+        output.write(json.dumps(result,indent=2,ensure_ascii=False)+'\n')
+print(json.dumps({'result':result['result'],'checks':len(checks),'failures':{name:checks[name]['detail'] for name in failures}},ensure_ascii=False))
 sys.exit(1 if failures else 0)

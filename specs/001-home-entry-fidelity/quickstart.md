@@ -1,6 +1,6 @@
 # Quickstart: Planned Home Fidelity Validation
 
-This is a validation/run guide for the future implementation of [plan.md](plan.md), not a claim that an application package/lock or test commands exist now. The root npm bundle is provisional capability/bootstrap state, not an application. Phase 1/replanning creates design artifacts only. Generate tasks and run cross-artifact analysis before Critical implementation; its execution admission remains under RP/RR. No production deployment or provider service is required. All application-relative paths/commands below use `app/`.
+This is a validation/run guide for the future implementation of [plan.md](plan.md), not a claim that an application package/lock or test commands exist now. The root npm bundle is provisional capability/bootstrap state, not an application. Phase 1/replanning creates design artifacts only. Tasks exist; run cross-artifact analysis under [logic verification](../../LOGIC_VERIFICATION.md) before implementation. Use RP/RR for execution selection and [implementation verification](../../IMPLEMENTATION_VERIFICATION.md) for engineering acceptance/review. No production deployment or provider service is required. All application-relative paths/commands below use `app/`.
 
 ## Prerequisites
 
@@ -38,19 +38,19 @@ Use the implementation's environment file/configuration to point to the recorded
 ```powershell
 npm run validate:home-inputs
 $env:HBC_ACCEPTANCE_RUN = 'home-' + [guid]::NewGuid().ToString('N')
-npm run acceptance:prepare
-$env:HBC_ACCEPTANCE_INVOCATION = 'portable-01'
-npm run test:browser -- --project=portable-contracts
-$env:HBC_ACCEPTANCE_INVOCATION = 'canonical-01'
-npm run test:browser -- --project=home-d --project=home-m --project=home-r --workers=1 --retries=0
-$env:HBC_ACCEPTANCE_INVOCATION = 'variants-01'
-npm run test:browser -- --project=home-variants --workers=1 --retries=0
+npm run test:browser -- --project=portable-contracts --project=home-d --project=home-m --project=home-r --project=home-variants --workers=1 --retries=0
 npm run validate:home-results -- --run $env:HBC_ACCEPTANCE_RUN
 ```
 
 Expected: portable contracts labeled separately; nine independent canonical attempts retained; normal loading/parting-overlap/ready and reduced fast-entry/ready captured; ready predicates and three stable samples pass within10s from navigation; all13 recorded size variants plus width/input cross-checks pass; every mandatory FR/SC check covered. Native hidden/blur checks use a confirmed headed background action or an explicit recorded manual result if headless automation cannot produce it. No failure disappears through retry.
 
-`acceptance:prepare` creates the selected run manifest; `test:browser` wraps Playwright Test and requires unique invocation IDs. Output/report/trace folders are namespaced per invocation so later commands cannot erase earlier attempts. Projects `home-d/m/r` each contain three fresh cases/trials; `home-variants` contains responsive, motion/input, keyboard and fault/fallback groups. `validate:home-results` reads the explicit run manifest, checks all invocation/attempt coverage plus calibrated per-region comparisons and review completeness; it cannot return overall PASS before required review records exist. No command updates expected snapshots.
+`test:browser` invokes Playwright Test directly. Configuration requires a new run ID and namespaces
+native results/reports/traces so old evidence is retained. Native metadata and attachments carry
+input identity and check/trial results. Projects home-d/m/r each contain three fresh cases; variants
+and portable contracts remain labeled separately in the same invocation. The minimal feature result
+validator checks the native report for all catalogue entries, nine trials, calibrated comparisons and
+required review. It cannot pass incomplete/skipped groups. Diagnostics use a new linked run ID;
+there is no prepare-run script, subprocess wrapper or session journal. No command updates baselines.
 
 ## Required fault and accessibility scenarios
 
@@ -60,6 +60,6 @@ Check primary pointer tracking/clamp/leave/blur/hidden/touch/capability cleanup;
 
 ## Review output and failure handling
 
-Open the retained report/traces and `artifacts/home/<run-id>/acceptance.json`; inspect unmasked D/M/R images, five-region overlays/diffs, timestamped motion samples, size variants and focus. A complete receipt distinguishes commands executed, cases PASS/FAIL/BLOCKED/NOT_RUN, every attempted trial and deviations. Required eligible independent implementation review and human/browser visual dispositions must be attached before acceptance.
+Open the retained report/traces and `artifacts/home/<run-id>/acceptance.json`; inspect unmasked D/M/R images, five-region overlays/diffs, timestamped motion samples, size variants and focus. A complete receipt distinguishes commands executed, cases PASS/FAIL/BLOCKED/NOT_RUN, every attempted trial and deviations. Independent implementation review appropriate to the high-risk slice and human/browser visual dispositions must be attached before acceptance.
 
 Missing media, unqualified reference conditions or NOT_CALIBRATED thresholds produce BLOCKED results, not placeholder screenshots or a new baseline. A structural/type/crop/timing failure requires repair or a justified explicit deviation and rerun under the unchanged calibrated contract. Preserve reference inputs and all failed attempts. Local slice acceptance never authorizes public distribution, adaptation, downstream journeys or Eventbrite commerce.

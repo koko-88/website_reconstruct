@@ -8,6 +8,10 @@ This file is the canonical Spec-of-Specs / project decomposition owner. The deco
 
 No implementation is authorized until this roadmap decomposition is reviewed and the execution gate is explicitly advanced.
 
+This gate covers HBC feature delivery. Authorized repository governance/tooling maintenance and local
+verification do not advance it. Review consistency under [logic verification](LOGIC_VERIFICATION.md)
+and engineering acceptance under [implementation verification](IMPLEMENTATION_VERIFICATION.md).
+
 ## Epic
 
 **Haunted Boulder City Local Reference-Fidelity Reconstruction**

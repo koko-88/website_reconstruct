@@ -32,6 +32,11 @@ description: Generate a custom checklist for the current feature based on user r
 - An agent may assist with evaluating items only when explicitly asked by the reviewer.
 - `checklists/requirements.md` is a separate built-in spec-quality checklist maintained by `/speckit-specify` and `/speckit-clarify`; do not treat that exception as applying to custom checklists generated here.
 
+Repository policy: read [AGENTS.md](../../AGENTS.md),
+[logic verification](../../LOGIC_VERIFICATION.md) and
+[implementation verification](../../IMPLEMENTATION_VERIFICATION.md) before this workflow.
+Task parallel markers do not authorize delegation; use the execution mode approved under AGENTS.
+
 ## User Input
 
 ```text

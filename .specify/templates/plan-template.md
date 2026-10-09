@@ -6,6 +6,8 @@
 
 **Note**: This template is filled in by the `$speckit-plan` command; its definition describes the execution workflow.
 
+Verification process follows [logic verification](../../LOGIC_VERIFICATION.md) and [implementation verification](../../IMPLEMENTATION_VERIFICATION.md); feature acceptance remains in the specification and its contracts.
+
 ## Summary
 
 [Extract from feature spec: primary requirement + technical approach from research]

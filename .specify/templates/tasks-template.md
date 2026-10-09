@@ -13,9 +13,14 @@ description: "Task list template for feature implementation"
 
 **Organization**: Tasks are grouped by user story to enable independent implementation and testing of each story.
 
+Verification process: [logic verification](../../LOGIC_VERIFICATION.md) and
+[implementation verification](../../IMPLEMENTATION_VERIFICATION.md). Feature acceptance belongs
+in its specification/contracts. Follow [AGENTS.md](../../AGENTS.md) for execution mode and isolation.
+Direct sessions execute sequentially; examples below show eligibility only.
+
 ## Format: `[ID] [P?] [Story] Description`
 
-- **[P]**: Can run in parallel (different files, no dependencies)
+- **[P]**: Eligible for parallel execution (different files, prerequisites satisfied); permission comes from the approved execution mode, not this marker.
 - **[Story]**: Which user story this task belongs to (e.g., US1, US2, US3)
 - Include exact file paths in descriptions
 

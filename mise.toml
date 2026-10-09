@@ -12,40 +12,7 @@ node = "24.19.0"
 "npm:@babylonjs/mcp-servers" = "9.28.0"
 
 [tasks."repro:verify"]
-description = "Verify the committed reproducibility contract without requiring host-only creative tools."
+description = "Run native reconstruction tooling regressions with serial suite workers."
 run = [
-  "node --check tooling/creative-capabilities/verify-workstation.mjs",
-  "node tooling/creative-capabilities/verify-workstation.mjs --ci"
+  "node --test --test-concurrency=1 --test-timeout=180000 skills/reference-reconstruction/scripts/test-capture.mjs skills/reference-reconstruction/scripts/test-settled-appearance.mjs skills/reference-reconstruction/scripts/test-assets.mjs"
 ]
-
-[tasks."workstation:status"]
-description = "Inspect reusable workstation bootstrap state without changing the machine."
-dir = "tooling/reconstruction-workstation"
-run = "mise bootstrap status"
-
-[tasks."workstation:plan"]
-description = "Preview reusable workstation changes without applying them."
-dir = "tooling/reconstruction-workstation"
-run = "mise bootstrap --dry-run"
-
-[tasks."workstation:apply"]
-description = "Apply the reusable workstation profile."
-dir = "tooling/reconstruction-workstation"
-run = "mise bootstrap --yes"
-
-[tasks."workstation:verify"]
-description = "Verify the current host's reusable creative capabilities and integration surfaces."
-run = "node tooling/creative-capabilities/verify-workstation.mjs"
-
-[tasks."workstation:verify-strict"]
-description = "Fail when an expected reusable workstation capability is unavailable."
-run = "node tooling/creative-capabilities/verify-workstation.mjs --strict"
-
-# Direct script-name entrypoints. Existing workstation:* tasks remain compatible.
-[tasks."verify-host"]
-description = "Run tooling/skill-hardening/verify-host.mjs (read-only hardening capability preflight)."
-run = "node tooling/skill-hardening/verify-host.mjs"
-
-[tasks."verify-workstation"]
-description = "Run tooling/creative-capabilities/verify-workstation.mjs (reusable workstation capability checks)."
-run = "node tooling/creative-capabilities/verify-workstation.mjs"

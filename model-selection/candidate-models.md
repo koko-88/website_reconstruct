@@ -1,13 +1,13 @@
 # Candidate models — WP-HBC-01
 
-Status: **Candidate pool refreshed for routing-policy design. No champion selected.**  
+Status: **Historical advisory research; no execution allowlist or champion selected.**
 Date: **2026-10-05**.  
 Evidence source: [benchmark-evidence.md](benchmark-evidence.md).  
 Workload authority: [workload-profile.md](workload-profile.md).
 
 ## Selection rule
 
-The pool is intentionally broader than a single-model bakeoff because the project now targets a multi-agent orchestration layer.
+These dated capability comparisons support optional runtime selection. They do not require multi-agent execution, select the environment or limit the user to a vendor/model pool.
 
 A model stays in the pool only if it adds a distinct value for at least one project lane: frontier planning/reasoning, visual/reference implementation, repo/tool debugging, independent review, or lower-cost/local support.
 
@@ -15,7 +15,7 @@ Leaderboard labels such as **Max** and **xHigh** describe published configuratio
 
 ## Critical candidate pool
 
-This pool contains families that are **eligible to seek Critical qualification**. Membership is not itself qualification; autonomous Critical assignment still requires a lane-scoped **QUALIFIED** route in [RR-HBC-01](runtime-route-registry.md).
+The following families were research candidates at the assessment date. Their published signals do not establish current runtime availability or feature acceptance. [RP-HBC-01](routing-policy.md) governs authorized execution and [RR-HBC-01](runtime-route-registry.md) records capabilities; neither requires blanket benchmark qualification for direct work.
 
 | Candidate family | Why it remains | Current external signal | Intended routing value |
 | --- | --- | --- | --- |
@@ -26,13 +26,13 @@ This pool contains families that are **eligible to seek Critical qualification**
 | **GPT-5.6 Sol** | Direct project-relevant Codex/repository evidence remains unusually useful even though newer models lead current WebDev | SWE-rebench direct Codex methodology **62.3% Result@1**; local VISTA audit retains direct Codex evidence with caveats | Debugging, verification-oriented engineering, independent review, comparison anchor |
 ## Challenger / support pool
 
-**GLM 5.3** remains a challenger for lower-cost support, bounded implementation and secondary review. It is **not in the Critical candidate pool** until project-specific qualification evidence explicitly promotes a pinned GLM route for one or more lanes.
+**GLM 5.3** remains a challenger for lower-cost support, bounded implementation and secondary review. Its capability evidence was weaker at the assessment date; this is advisory research, not a current execution prohibition.
 
 ## Support-only local worker
 
 **Qwen3.8-27B local** remains available for low-risk/support work where local execution is valuable.
 
-Public Qwen3.8 family results are useful only as family-level context; they are **not** assumed to equal the user's exact local quantization/runtime. It is not authorized as the sole owner of a critical HBC obligation until internal evaluation proves that route.
+Public Qwen3.8 family results are useful only as family-level context; they are **not** assumed to equal the user's exact local quantization/runtime. Evaluate its actual capabilities against the selected task and acceptance rather than inferring them from family rankings.
 
 ## Not promoted into the current pool
 
@@ -45,7 +45,7 @@ Public Qwen3.8 family results are useful only as family-level context; they are 
 
 The routing policy should prefer models already reachable through the user's existing subscriptions, installed CLIs, Cursor, OpenCode, or local runtime.
 
-No route may silently introduce a new paid API/subscription. If a logical candidate is unavailable in the selected execution engine, use the next eligible candidate from the same lane and record the fallback.
+No route may silently introduce a new paid API/subscription. If an option is unavailable, preserve the approved execution configuration and follow RP recovery; ask before changing environment or authorization.
 
 ## Gate outcome
 

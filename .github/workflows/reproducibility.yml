@@ -7,8 +7,16 @@ on:
       - "mise.toml"
       - "mise.lock"
       - ".mise/locks/**"
-      - "tooling/reconstruction-workstation/**"
-      - "tooling/creative-capabilities/**"
+      - "skills/reference-reconstruction/**"
+      - "implementation-scope/pre-build-packet/**"
+      - "reference/**"
+      - "specs/**"
+      - "model-selection/*.md"
+      - ".specify/**"
+      - "PRODUCT.md"
+      - "ROADMAP.md"
+      - "LOGIC_VERIFICATION.md"
+      - "IMPLEMENTATION_VERIFICATION.md"
       - ".github/workflows/reproducibility.yml"
       - "AGENTS.md"
       - ".gitignore"
@@ -17,8 +25,16 @@ on:
       - "mise.toml"
       - "mise.lock"
       - ".mise/locks/**"
-      - "tooling/reconstruction-workstation/**"
-      - "tooling/creative-capabilities/**"
+      - "skills/reference-reconstruction/**"
+      - "implementation-scope/pre-build-packet/**"
+      - "reference/**"
+      - "specs/**"
+      - "model-selection/*.md"
+      - ".specify/**"
+      - "PRODUCT.md"
+      - "ROADMAP.md"
+      - "LOGIC_VERIFICATION.md"
+      - "IMPLEMENTATION_VERIFICATION.md"
       - ".github/workflows/reproducibility.yml"
       - "AGENTS.md"
       - ".gitignore"
@@ -48,5 +64,14 @@ jobs:
           mise lock
           git diff --exit-code -- mise.lock .mise/locks
 
+      - name: Install committed reconstruction test dependencies
+        run: npm ci --prefix skills/reference-reconstruction
+
+      - name: Require declared asset parsers
+        run: node --input-type=module -e "await import('./skills/reference-reconstruction/scripts/assets.mjs')"
+
       - name: Verify reproducibility contract
         run: mise run repro:verify
+
+      - name: Verify evidence and linked governance
+        run: python3 implementation-scope/pre-build-packet/verify.py

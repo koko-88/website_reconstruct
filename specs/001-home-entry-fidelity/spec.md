@@ -8,7 +8,9 @@
 
 **Status**: Roadmap-aligned draft — requirements quality reviewed; implementation acceptance pending.
 
-**Parent Roadmap**: R-001 in [ROADMAP.md](../../ROADMAP.md)\n\n**Input**: R-001 of Haunted Boulder City's local reference-fidelity validation: reconstruct initial root navigation, loader lifecycle and transition into the fully ready home/hero experience, including relevant desktop, mobile/touch, fresh reduced-motion and keyboard behavior. This specification authorizes no implementation until the ROADMAP review/execution gate admits delivery; its existing technical plan and tasks remain pre-implementation artifacts.
+**Parent Roadmap**: R-001 in [ROADMAP.md](../../ROADMAP.md)
+
+**Input**: R-001 of Haunted Boulder City's local reference-fidelity validation: reconstruct initial root navigation, loader lifecycle and transition into the fully ready home/hero experience, including relevant desktop, mobile/touch, fresh reduced-motion and keyboard behavior. This specification authorizes no implementation until the ROADMAP review/execution gate admits delivery; its existing technical plan and tasks remain pre-implementation artifacts.
 
 ## User Scenarios & Testing *(mandatory)*
 
