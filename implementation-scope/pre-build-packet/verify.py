@@ -2,6 +2,7 @@
 from pathlib import Path
 from datetime import datetime, timezone
 from urllib.parse import unquote
+from html.parser import HTMLParser
 import argparse, hashlib, json, re, sys
 
 packet = Path(__file__).resolve().parent
@@ -105,7 +106,7 @@ for line in contract.splitlines():
         cells=[x.strip() for x in line.split('|')[1:-1]]
         key=cells[0].split(' /')[0]; evidence=cells[3]
         segments=re.findall(r'SR-[\d./]+',evidence)
-        actual=sorted(set(n for segment in segments for n in sr_expand(segment)))
+        actual=sorted({n for segment in segments for n in sr_expand(segment)})
         expected=sorted(audit['obligationSRMembership'][key])
         if actual!=expected: contract_errors.append({'id':key,'actual':actual,'expected':expected})
         audited.append(key)
@@ -113,10 +114,44 @@ for line in contract.splitlines():
         if 'SR-'+n not in matrix_rows: contract_errors.append('unknown SR-'+n)
 check('writable_contract_SR_membership',not contract_errors and len(audited)==8,{'obligations':audited,'errors':contract_errors})
 
+class TopicBindings(HTMLParser):
+    """Read topic labels and original asset bindings without backtracking over HTML."""
+    def __init__(self):
+        super().__init__()
+        self.topics = []
+        self.images = {}
+        self.topic = None
+        self.heading = None
+
+    def handle_starttag(self, tag, attributes):
+        attrs = dict(attributes)
+        if tag == 'li' and attrs.get('class', '').startswith('topic'):
+            self.topic = attrs.get('data-topic')
+        if tag == 'h3' and self.topic is not None:
+            self.heading = []
+        image = attrs.get('data-topic-image')
+        source = attrs.get('src', '')
+        if image is not None and source.startswith('/assets/'):
+            self.images[image] = source.removeprefix('/assets/')
+
+    def handle_data(self, data):
+        if self.heading is not None:
+            self.heading.append(data)
+
+    def handle_endtag(self, tag):
+        if tag == 'h3' and self.heading is not None:
+            self.topics.append((self.topic, ''.join(self.heading)))
+            self.heading = None
+        if tag == 'li':
+            self.topic = None
+
 html=(v2/'public/index.html').read_text(encoding='utf-8')
-topics=re.findall(r'<li class="topic[^>]*data-topic="([^"]+)"[^>]*>.*?<h3>(.*?)</h3>',html)
+bindings = TopicBindings()
+bindings.feed(html)
+bindings.close()
+topics = bindings.topics
+images = bindings.images
 expected_topics=[('dam','HOOVER DAM'),('ghost','GHOST DOG'),('murderer','FIRST MURDERER'),('sky','AREA 51'),('bodies','BURIED BODIES'),('celebs','STRANGE CELEBS'),('guide','GHOST METER'),('esp','ESP')]
-images=dict(re.findall(r'data-topic-image="([^"]+)" src="/assets/([^"]+)"',html))
 expected_images={'dam':'hoover-dam.webp','ghost':'ghost-dog.webp','murderer':'first-murderer.webp','sky':'flying-saucer.webp','bodies':'dam-workers.webp','celebs':'strange-celebs.webp','guide':'buried-bodies.webp','esp':'esp-gambling.webp'}
 check('topic_label_identifier_image_crosswalk',topics==expected_topics and images==expected_images,{'rows':len(topics),'imageBindings':len(images)})
 

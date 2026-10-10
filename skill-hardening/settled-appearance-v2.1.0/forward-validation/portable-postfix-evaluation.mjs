@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import vm from 'node:vm';
+import referenceProbe from '../../../skills/reference-reconstruction/scripts/page-probe.js';
 import assert from 'node:assert/strict';
 import {fileURLToPath} from 'node:url';
 import {capture,waitReady} from '../../../skills/reference-reconstruction/scripts/capture.mjs';
@@ -22,7 +23,8 @@ const all=[root,wrapper,menu,child,toggle];
 const styleDefaults={display:'block',visibility:'visible',opacity:'1',transform:'none',filter:'none',clipPath:'none',color:'rgb(0, 0, 0)',backgroundColor:'rgba(0, 0, 0, 0)',fontFamily:'sans-serif',fontSize:'16px',fontWeight:'400',lineHeight:'normal',letterSpacing:'normal',content:'none',direction:'ltr'};
 const document={documentElement:root,readyState:'complete',fonts:{status:'loaded'},images:[],activeElement:null,querySelectorAll(selector){return selector==='main'?[menu]:selector==='#toggle'?[toggle]:[];},createTreeWalker(){let index=0;return {currentNode:root,nextNode:()=>all[++index]||null};}};
 const context={document,NodeFilter:{SHOW_ELEMENT:1},location:{href:'http://fixture.example/'},innerWidth:640,innerHeight:480,scrollX:0,scrollY:0,devicePixelRatio:1,visualViewport:null,navigator:{userAgent:'Synthetic',platform:'Synthetic',language:'en-US',maxTouchPoints:0},matchMedia:()=>({matches:false}),performance:{now:()=>0,timeOrigin:0},getComputedStyle:(el,pseudo)=>({...styleDefaults,opacity:el===wrapper&&!pseudo?String(alpha):'1'}),URL,Intl,Date,setTimeout,clearTimeout};
-const probe=vm.runInNewContext('('+fs.readFileSync(path.join(skill,'scripts/page-probe.js'),'utf8')+'\n)',context);
+// Evaluate only the statically imported self-contained probe in this synthetic DOM.
+const probe=vm.runInNewContext('('+referenceProbe.toString()+'\n)',context);
 const regionSnapshots=[];
 const page={async evaluate(_fn,options){alpha=alpha>=.9?.1:alpha+.1;const snapshot=await probe(options);regionSnapshots.push(snapshot);return snapshot;}};
 const changingRegion=await waitReady(page,cp);

@@ -21,6 +21,7 @@ on:
       - "AGENTS.md"
       - ".gitignore"
       - ".gitattributes"
+      - ".sonarcloud.properties"
       - "CLAUDE.md"
       - ".agents/skills/**"
       - ".cursor/skills/**"
@@ -45,6 +46,7 @@ on:
       - "AGENTS.md"
       - ".gitignore"
       - ".gitattributes"
+      - ".sonarcloud.properties"
       - "CLAUDE.md"
       - ".agents/skills/**"
       - ".cursor/skills/**"
@@ -77,7 +79,7 @@ jobs:
           git diff --exit-code -- mise.lock .mise/locks
 
       - name: Install committed reconstruction test dependencies
-        run: npm ci --prefix skills/reference-reconstruction
+        run: npm ci --ignore-scripts --prefix skills/reference-reconstruction
 
       - name: Require declared asset parsers
         run: node --input-type=module -e "await import('./skills/reference-reconstruction/scripts/assets.mjs')"

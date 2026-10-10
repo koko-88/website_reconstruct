@@ -4,7 +4,7 @@ import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import http from 'node:http';
-import vm from 'node:vm';
+import probe from './page-probe.js';
 import {fileURLToPath} from 'node:url';
 import {bounded,validatePlan,capture,readyReasons} from './capture.mjs';
 import {inventory,seal,verify} from './package.mjs';
@@ -14,11 +14,13 @@ const here=path.dirname(fileURLToPath(import.meta.url));
 const fresh=()=>fs.mkdtempSync(path.join(os.tmpdir(),'reference-v2-test-'));
 const example=()=>JSON.parse(fs.readFileSync(path.join(here,'../assets/capture-plan.example.json'),'utf8'));
 function tempTest(fn) {
-  return async()=> { const dir=fresh();try { await fn(dir); } finally {
-    const resolved=path.resolve(dir);
-    if(path.dirname(resolved)!==path.resolve(os.tmpdir())||!path.basename(resolved).startsWith('reference-v2-test-')) throw Error('Unexpected temporary cleanup target');
-    fs.rmSync(resolved,{recursive:true,force:true});
-  } };
+  return async()=> {
+    const dir=fresh(),resolved=path.resolve(dir);
+    if(path.dirname(resolved)!==path.resolve(os.tmpdir())||!path.basename(resolved).startsWith('reference-v2-test-')) { throw new Error('Unexpected temporary cleanup target'); }
+    try { await fn(dir); }
+    finally { fs.rmSync(resolved,{recursive:true,force:true}); }
+  };
+
 }
 test('example plan validates without requiring browser tooling',()=>assert.equal(validatePlan(example()).plan.schemaVersion,2));
 test('plan rejects scripts, duplicate ids, foreign navigation, private queries and unknown conditions',()=>{
@@ -27,8 +29,8 @@ test('plan rejects scripts, duplicate ids, foreign navigation, private queries a
   }
 });
 test('shared MCP probe is a complete standalone inspectable function',()=>{
-  const code=fs.readFileSync(path.join(here,'page-probe.js'),'utf8');
-  assert.equal(typeof vm.runInNewContext('('+code+'\n)'),'function');
+  assert.equal(typeof probe,'function');
+  assert.match(probe.toString(),/^async function referenceProbe\(/);
 });
 test('a bounded promise terminates missing readiness',async()=>{
   const start=Date.now();await assert.rejects(bounded(new Promise(()=>{}),50,'readiness'),/deadline/);assert.ok(Date.now()-start<1000);
@@ -62,7 +64,7 @@ test('public-source inspection parses maps without fetching or executing; oversi
 const modulePath=process.env.REFERENCE_PLAYWRIGHT_MODULE;
 test('live local fixtures: lazy images, phases, reversible states, mobile preferences, timeout, giant capture and provenance', {skip:!modulePath,timeout:90000},tempTest(async dir=>{
   const server=http.createServer((req,res)=>{
-    if(req.url==='/never.png') return; // Deliberately pending lazy image below the viewport.
+    if(req.url==='/never.png') { return; } // Deliberately pending lazy image below the viewport.
     if(req.url==='/broken.png') { res.writeHead(404);res.end();return; }
     res.setHeader('Content-Type','text/html');
     const busy=req.url==='/busy';const giant=req.url==='/giant';

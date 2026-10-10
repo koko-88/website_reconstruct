@@ -48,7 +48,7 @@ def source_record(path: Path) -> dict:
     return result
 
 
-def inspect_checks(output: Path) -> dict:
+def inspect_checks() -> dict:
     import yaml
     import inspect_ai
     import inspect_evals
@@ -171,6 +171,37 @@ def inspect_checks(output: Path) -> dict:
             "eval_registry": registry_result, "eval_metadata": metadata, "relevant_source_inventory": sources}
 
 
+def shipped_registrations(root):
+    registrations = {}
+    # Enumerate shipped registration declarations even when full discovery fails.
+    # These declarations must never be described as a working runtime registry.
+    kinds = ("BENCHMARKS", "HARNESSES", "ENVIRONMENTS", "RECIPES", "ANALYZERS")
+    for kind in kinds:
+        registrations[kind.lower()] = []
+    for path in sorted(root.rglob("*.py")):
+        tree = ast.parse(path.read_text(encoding="utf-8-sig"))
+        for node in tree.body:
+            if isinstance(node, ast.ClassDef):
+                register_class_declarations(node, path, root, kinds, registrations)
+    return registrations
+
+
+def register_class_declarations(node, path, root, kinds, registrations):
+    for decorator in node.decorator_list:
+        if not (isinstance(decorator, ast.Call) and isinstance(decorator.func, ast.Attribute)
+                and decorator.func.attr == "register" and isinstance(decorator.func.value, ast.Name)
+                and decorator.func.value.id in kinds):
+            continue
+        name = None
+        for assignment in node.body:
+            if isinstance(assignment, ast.Assign) and any(isinstance(t, ast.Name) and t.id in ("id", "kind")
+                    for t in assignment.targets) and isinstance(assignment.value, ast.Constant):
+                name = assignment.value.value
+        registrations[decorator.func.value.id.lower()].append({"name": name or node.name,
+            "class": node.name, "file": path.relative_to(root).as_posix(), "line": node.lineno,
+            "evidence": "shipped source declaration", "source": source_record(path)})
+
+
 def compass_checks() -> dict:
     import agentcompass
     from agentcompass.runtime import registry
@@ -189,29 +220,7 @@ def compass_checks() -> dict:
     for module, label in (("harnesses", "HARNESSES"), ("environments", "ENVIRONMENTS"), ("analyzers", "ANALYZERS")):
         importlib.import_module("agentcompass." + module)
         result["runtime_available_registries"][label.lower()] = getattr(registry, label).names()
-    # Enumerate shipped registration declarations even when full discovery fails.
-    # These declarations must never be described as a working runtime registry.
-    kinds = ("BENCHMARKS", "HARNESSES", "ENVIRONMENTS", "RECIPES", "ANALYZERS")
-    for kind in kinds:
-        result["registries"][kind.lower()] = []
-    for path in sorted(root.rglob("*.py")):
-        tree = ast.parse(path.read_text(encoding="utf-8-sig"))
-        for node in tree.body:
-            if not isinstance(node, ast.ClassDef):
-                continue
-            for decorator in node.decorator_list:
-                if not (isinstance(decorator, ast.Call) and isinstance(decorator.func, ast.Attribute)
-                        and decorator.func.attr == "register" and isinstance(decorator.func.value, ast.Name)
-                        and decorator.func.value.id in kinds):
-                    continue
-                name = None
-                for assignment in node.body:
-                    if isinstance(assignment, ast.Assign) and any(isinstance(t, ast.Name) and t.id in ("id", "kind")
-                            for t in assignment.targets) and isinstance(assignment.value, ast.Constant):
-                        name = assignment.value.value
-                result["registries"][decorator.func.value.id.lower()].append({"name": name or node.name,
-                    "class": node.name, "file": path.relative_to(root).as_posix(), "line": node.lineno,
-                    "evidence": "shipped source declaration", "source": source_record(path)})
+    result["registries"] = shipped_registrations(root)
     codex = next(entry for entry in result["registries"]["harnesses"] if entry["name"] == "codex")
     result["codex"] = {"class": codex["class"], "registration_declaration": True,
                        "runtime_registry_verified": "codex" in registry.HARNESSES.names(), "executed": False}
@@ -222,7 +231,7 @@ def compass_checks() -> dict:
     run_result = RunResult(task_id=task.task_id, status=TaskStatus.COMPLETED, trajectory=trajectory)
     analyzer = registry.ANALYZERS.create("EmptyContentAnalyzer")
     analysis = asyncio.run(analyzer.analysis(task, None, run_result, None, None))
-    assert analysis.is_badcase is True and analysis.score == 1.0
+    assert analysis.is_badcase is True and abs(analysis.score - 1.0) <= 1e-12
     assert json.loads(json.dumps(run_result.json, default=str))["trajectory"]["schema_version"] == "ACTF_v1.0"
     result["synthetic_trajectory_analysis"] = {"analyzer": "EmptyContentAnalyzer", "is_badcase": analysis.is_badcase,
                                               "score": analysis.score, "serialization": "PASS"}
@@ -257,7 +266,7 @@ def main() -> None:
         if name in EXPECTED:
             assert version == EXPECTED[name], (name, version, EXPECTED[name])
     assert platform.python_version() == "3.12.15", platform.python_version()
-    checks = inspect_checks(output) if args.mode == "inspect" else compass_checks()
+    checks = inspect_checks() if args.mode == "inspect" else compass_checks()
     result = {"checked_at_utc": datetime.now(timezone.utc).isoformat(), "mode": args.mode, "versions": versions,
               "python": platform.python_version(), "platform": platform.platform(),
               "network": "external sockets blocked; loopback IPC permitted for Windows asyncio", "model_calls": 0, "agent_runs": 0,

@@ -1,5 +1,5 @@
-async function referenceProbe(options = {}) {
-  if (typeof options === 'string') options = JSON.parse(options);
+export default async function referenceProbe(options = {}) {
+  if (typeof options === 'string') { options = JSON.parse(options); }
   const limit = Math.min(200, Math.max(1, options.limit || 100));
   const cleanURL = value => {
     try { const u = new URL(value,location.href); return {origin:u.origin,path:u.pathname,queryKeys:[...u.searchParams.keys()],fragmentPresent:!!u.hash}; }
@@ -36,48 +36,41 @@ async function referenceProbe(options = {}) {
   const surfaceRecords=surfaces.slice(0,limit).map(el=>{
     const tag=el.tagName.toLowerCase();
     const value={tag,rect:rect(el),visible:visible(el),source:el.getAttribute('src')?cleanURL(el.getAttribute('src')):null};
-    if(tag==='canvas') Object.assign(value,{width:el.width,height:el.height,renderer:'unknown; context not requested to avoid changing it'});
+    if(tag==='canvas') { Object.assign(value,{width:el.width,height:el.height,renderer:'unknown; context not requested to avoid changing it'}); }
     if(tag==='iframe') {
       try { value.inspectability=el.contentDocument?'same-origin document available':'cross-origin or not loaded'; }
       catch { value.inspectability='cross-origin inaccessible'; }
     }
-    if(tag==='video'||tag==='audio') Object.assign(value,{readyState:el.readyState,currentTime:el.currentTime,duration:Number.isFinite(el.duration)?el.duration:null,paused:el.paused,source:cleanURL(el.currentSrc||el.src)});
+    if(tag==='video'||tag==='audio') { Object.assign(value,{readyState:el.readyState,currentTime:el.currentTime,duration:Number.isFinite(el.duration)?el.duration:null,paused:el.paused,source:cleanURL(el.currentSrc||el.src)}); }
     return value;
   });
   const sourceNodes=[...document.querySelectorAll('script[src],link[rel~="stylesheet"],link[rel="manifest"]')];
   const sourceRecords=sourceNodes.slice(0,limit).map(el=>({tag:el.tagName.toLowerCase(),rel:el.getAttribute('rel'),source:cleanURL(el.src||el.href)}));
 
   // Optional appearance policy is plain data, usable through any evaluate adapter.
-  let appearance;
-  if(options.appearance) {
-    const policy=options.appearance;
+  function measureAppearance(policy) {
     const properties=['display','visibility','opacity','transform','filter','clipPath','color','backgroundColor','fontFamily','fontSize','fontWeight','lineHeight','letterSpacing'];
     const styleRecord=(node,pseudo)=>{const s=getComputedStyle(node,pseudo);return Object.fromEntries(properties.map(k=>[k,s[k]]));};
-    const effectiveOpacity=node=>{let alpha=1;for(let el=node;el;el=el.parentElement){const s=getComputedStyle(el);if(s.display==='none'||s.visibility==='hidden'||s.visibility==='collapse')return 0;alpha*=Number(s.opacity);}return alpha;};
+    const effectiveOpacity=node=>{let alpha=1;for(let el=node;el;el=el.parentElement){const s=getComputedStyle(el);if(s.display==='none'||s.visibility==='hidden'||s.visibility==='collapse'){ return 0; }alpha*=Number(s.opacity);}return alpha;};
     const intersects=(a,b)=>a.width>0&&a.height>0&&a.x+a.width>b.x&&a.y+a.height>b.y&&a.x<b.x+b.width&&a.y<b.y+b.height;
-    try {
-      const viewport={x:0,y:0,width:innerWidth,height:innerHeight};
-      const regionNodes=policy.scope==='region'?[...document.querySelectorAll(policy.selector)]:[];
-      const regionRect=regionNodes.length===1?rect(regionNodes[0]):null;
-      const inViewport=regionRect&&regionRect.x>=0&&regionRect.y>=0&&regionRect.x+regionRect.width<=innerWidth&&regionRect.y+regionRect.height<=innerHeight&&regionRect.width>0&&regionRect.height>0;
-      const scopeRect=regionRect||viewport;
-      const region=policy.scope==='region'?{count:regionNodes.length,rect:regionRect,inViewport:!!inViewport,clip:inViewport?{...regionRect}:null}:null;
-      const walker=document.createTreeWalker(document.documentElement,NodeFilter.SHOW_ELEMENT);
-      const nodes=[],frames=[];let scanned=0,truncated=false,node=walker.currentNode;
-      while(node) {
-        if(++scanned>10000) {truncated=true;break;}
-        const r=rect(node),belongs=policy.scope!=='region'||regionNodes.some(root=>root===node||root.contains(node));
-        const scopeAncestor=policy.scope==='region'&&regionNodes.some(root=>node!==root&&node.contains(root));
-        if(scopeAncestor||(belongs&&(policy.scope==='full-page'||intersects(r,scopeRect)))) {
-          if(nodes.length>=policy.maxNodes) {truncated=true;break;}
+    function measureAssertionNode(el,assertion,failures,observed) {
+          const computed=styleRecord(el),opacity=effectiveOpacity(el),isVisible=visible(el)&&opacity>0;
+          const attributes=Object.fromEntries(Object.keys(assertion.attributes||{}).map(k=>[k,el.getAttribute(k)]));
+          observed.push({computed,attributes,effectiveOpacity:opacity,visible:isVisible});
+          if(assertion.visible!==undefined&&assertion.visible!==isVisible) { failures.push('visible'); }
+          if(assertion.minOpacity!==undefined&&opacity<assertion.minOpacity) { failures.push('opacity'); }
+          for(const [k,v] of Object.entries(assertion.styles||{})) { if(computed[k]!==v) { failures.push('style:'+k); } }
+          for(const [k,v] of Object.entries(assertion.attributes||{})) { if(attributes[k]!==v) { failures.push('attribute:'+k); } }
+    }
+    function observeNode(node,r,scanned,nodes,frames) {
           const matchesAmbient=policy.ambient.filter(a=>node.matches(a.selector)||!!node.closest(a.selector));
           const ambientProperties=[...new Set(matchesAmbient.flatMap(a=>a.properties))];
           let animations=[];
-          if(typeof node.getAnimations==='function') animations=node.getAnimations().map(animation=>{
+          if(typeof node.getAnimations==='function') { animations=node.getAnimations().map(animation=>{
             const timing=animation.effect?.getComputedTiming();
             const keyframes=animation.effect?.getKeyframes()||[];
             return {active:animation.playState!=='finished'&&animation.playState!=='idle',playState:animation.playState,pending:animation.pending,currentTime:typeof animation.currentTime==='number'?animation.currentTime:null,delay:timing?.delay,duration:timing?.duration,endTime:Number.isFinite(timing?.endTime)?timing.endTime:null,iterations:Number.isFinite(timing?.iterations)?timing.iterations:null,properties:[...new Set(keyframes.flatMap(f=>Object.keys(f).filter(k=>!['offset','computedOffset','easing','composite'].includes(k))))]};
-          });
+          }); }
           const key=scanned+':'+node.tagName.toLowerCase();
           const layout=ambientProperties.includes('transform')?{x:node.offsetLeft,y:node.offsetTop,width:node.offsetWidth,height:node.offsetHeight}:Object.fromEntries(Object.entries(r).map(([k,v])=>[k,Math.round(v*2)/2]));
           nodes.push({key,tag:node.tagName.toLowerCase(),rect:r,layout,computed:styleRecord(node),effectiveOpacity:effectiveOpacity(node),pseudo:['::before','::after'].map(pseudo=>({pseudo,...styleRecord(node,pseudo),content:getComputedStyle(node,pseudo).content})),ambientProperties,animations,animationCapability:typeof node.getAnimations==='function'});
@@ -86,27 +79,43 @@ async function referenceProbe(options = {}) {
             let inspectability;try {inspectability=node.contentDocument?'same-origin document accessible, not sampled':'cross-origin or not loaded';}catch {inspectability='cross-origin inaccessible';}
             frames.push({key,mode:framePolicy?.mode||'content',selector:framePolicy?.selector||null,inspectability,reason:framePolicy?.reason||'No trustworthy content readiness signal supplied'});
           }
+    }
+    function collectNodes(regionNodes,scopeRect) {
+      const walker=document.createTreeWalker(document.documentElement,NodeFilter.SHOW_ELEMENT);
+      const nodes=[],frames=[];let scanned=0,truncated=false,node=walker.currentNode;
+      while(node) {
+        if(++scanned>10000) {truncated=true;break;}
+        const r=rect(node),belongs=policy.scope!=='region'||regionNodes.some(root=>root===node||root.contains(node));
+        const scopeAncestor=policy.scope==='region'&&regionNodes.some(root=>node!==root&&node.contains(root));
+        if(scopeAncestor||(belongs&&(policy.scope==='full-page'||intersects(r,scopeRect)))) {
+          if(nodes.length>=policy.maxNodes) {truncated=true;break;}
+          observeNode(node,r,scanned,nodes,frames);
         }
         node=walker.nextNode();
       }
+      return {nodes,frames,scanned,truncated};
+    }
+    try {
+      const viewport={x:0,y:0,width:innerWidth,height:innerHeight};
+      const regionNodes=policy.scope==='region'?[...document.querySelectorAll(policy.selector)]:[];
+      const regionRect=regionNodes.length===1?rect(regionNodes[0]):null;
+      const inViewport=regionRect&&regionRect.x>=0&&regionRect.y>=0&&regionRect.x+regionRect.width<=innerWidth&&regionRect.y+regionRect.height<=innerHeight&&regionRect.width>0&&regionRect.height>0;
+      const scopeRect=regionRect||viewport;
+      const region=policy.scope==='region'?{count:regionNodes.length,rect:regionRect,inViewport:!!inViewport,clip:inViewport?{...regionRect}:null}:null;
+      const {nodes,frames,scanned,truncated}=collectNodes(regionNodes,scopeRect);
       const assertions=policy.assertions.map(assertion=>{
         const matches=[...document.querySelectorAll(assertion.selector)],failures=[],observed=[];
-        if(matches.length<assertion.minCount||matches.length>assertion.maxCount) failures.push('count');
-        if(matches.length>policy.maxNodes) failures.push('assertion-node-budget');
+        if(matches.length<assertion.minCount||matches.length>assertion.maxCount) { failures.push('count'); }
+        if(matches.length>policy.maxNodes) { failures.push('assertion-node-budget'); }
         for(const el of matches.slice(0,policy.maxNodes)) {
-          const computed=styleRecord(el),opacity=effectiveOpacity(el),isVisible=visible(el)&&opacity>0;
-          const attributes=Object.fromEntries(Object.keys(assertion.attributes||{}).map(k=>[k,el.getAttribute(k)]));
-          observed.push({computed,attributes,effectiveOpacity:opacity,visible:isVisible});
-          if(assertion.visible!==undefined&&assertion.visible!==isVisible) failures.push('visible');
-          if(assertion.minOpacity!==undefined&&opacity<assertion.minOpacity) failures.push('opacity');
-          for(const [k,v] of Object.entries(assertion.styles||{})) if(computed[k]!==v) failures.push('style:'+k);
-          for(const [k,v] of Object.entries(assertion.attributes||{})) if(attributes[k]!==v) failures.push('attribute:'+k);
+          measureAssertionNode(el,assertion,failures,observed);
         }
         return {selector:assertion.selector,count:matches.length,pass:!failures.length,failures:[...new Set(failures)],observed};
       });
-      appearance={scope:policy.scope,region,nodes,frames,assertions,scanned,scanBudget:10000,truncated,limits:['Light DOM and generated before/after styles only; shadow trees, raster producers and frame internals require an independent signal.']};
-    } catch(error) {appearance={scope:policy.scope,error:error.message,nodes:[],frames:[],assertions:[],truncated:false};}
+      return {scope:policy.scope,region,nodes,frames,assertions,scanned,scanBudget:10000,truncated,limits:['Light DOM and generated before/after styles only; shadow trees, raster producers and frame internals require an independent signal.']};
+    } catch(error) {return {scope:policy.scope,error:error.message,nodes:[],frames:[],assertions:[],truncated:false};}
   }
+  const appearance=options.appearance?measureAppearance(options.appearance):undefined;
 
   const root=document.documentElement;
   return {

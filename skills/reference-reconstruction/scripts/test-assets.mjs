@@ -4,18 +4,19 @@ import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import http from 'node:http';
-import vm from 'node:vm';
+import assetProbe from './asset-probe.js';
+import {mediaExecutable} from './native-media.mjs';
 import {spawnSync} from 'node:child_process';
 import {sha256,inventory,verify,seal} from './package.mjs';
 import {capture,validatePlan} from './capture.mjs';
 
 let tools,discovery,format,policy;
 try {tools=await import('./assets.mjs');discovery=await import('./asset-discovery.mjs');format=await import('./asset-verify.mjs');policy=await import('./asset-policy.mjs');}
-catch(error){if(error.code!=='ERR_MODULE_NOT_FOUND')throw error;}
+catch(error){if(error.code!=='ERR_MODULE_NOT_FOUND'){ throw error; }}
 const assetTest=(name,fn)=>test(name,{skip:!tools},fn);
 let png=Buffer.from('iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+aS1kAAAAASUVORK5CYII=','base64');
 if(tools){const {default:sharp}=await import('sharp');png=await sharp({create:{width:4,height:4,channels:4,background:{r:0,g:0,b:0,alpha:1}}}).png().toBuffer();}
-function removeFixture(dir){const target=fs.realpathSync(dir),parent=fs.realpathSync(os.tmpdir());if(path.dirname(target)!==parent||!path.basename(target).startsWith('reference-'))throw Error('Unsafe test cleanup');fs.rmSync(target,{recursive:true,force:true});}
+function removeFixture(dir){const target=fs.realpathSync(dir),parent=fs.realpathSync(os.tmpdir());if(path.dirname(target)!==parent||!path.basename(target).startsWith('reference-')){ throw new Error('Unsafe test cleanup'); }fs.rmSync(target,{recursive:true,force:true});}
 async function fixture(fn){
   const dir=fs.mkdtempSync(path.join(os.tmpdir(),'reference-assets-'));
   const hits=[];
@@ -41,8 +42,8 @@ function reviewFor(root,origin){
 }
 
 test('asset probe is a standalone passive function and default capture plan remains compatible',()=>{
-  const source=fs.readFileSync(new URL('./asset-probe.js',import.meta.url),'utf8');
-  assert.equal(typeof vm.runInNewContext('('+source+'\n)'),'function');
+  assert.equal(typeof assetProbe,'function');
+  assert.match(assetProbe.toString(),/^async function assetProbe\(/);
   const plan=JSON.parse(fs.readFileSync(new URL('../assets/capture-plan.example.json',import.meta.url)));
   assert.equal(validatePlan(plan).plan.schemaVersion,2);
 });
@@ -53,7 +54,7 @@ assetTest('maintained parsers cover responsive, pseudo, masks, fonts, imports an
   assert.equal(parsed.references.find(r=>r.kind==='font').detail.font['font-weight'],'100 900');
   assert.ok(parsed.references.find(r=>r.url.endsWith('a.png')).detail.conditions.length);
   const html=discovery.discover(Buffer.from('<base href="/media/"><picture><source media="(min-width: 800px)" srcset="wide.png 2x"><img src="small.png" srcset="small.png 1x, large.png 2x"></picture><video poster="poster.png"><source src="movie.mp4"></video><svg xmlns="http://www.w3.org/2000/svg"><use href="icons.svg#mark"/></svg>'),'html','https://example.com/page');
-  for(const name of ['wide.png','small.png','large.png','poster.png','movie.mp4','icons.svg#mark'])assert.ok(html.references.some(r=>r.url==='https://example.com/media/'+name));
+  for(const name of ['wide.png','small.png','large.png','poster.png','movie.mp4','icons.svg#mark']){ assert.ok(html.references.some(r=>r.url==='https://example.com/media/'+name)); }
   assert.ok(html.references.some(r=>r.via==='inline-svg'&&r.url.startsWith('data:')));
   const svg=discovery.discover(Buffer.from('<svg xmlns="http://www.w3.org/2000/svg" xml:base="/icons/"><g xml:base="nested/"><image href="image.png"/></g></svg>'),'svg','https://example.com/page.svg');assert.ok(svg.references.some(r=>r.url==='https://example.com/icons/nested/image.png'));
 });
@@ -151,7 +152,7 @@ assetTest('sealed imported runs and reviews require nonempty scope identities',a
       fs.writeFileSync(path.join(imported,'asset-run.json'),JSON.stringify(run));
       fs.unlinkSync(path.join(imported,'manifest.json'));seal(imported,{kind:'asset-acquisition-run'});
       delete review[key];review.assetRunManifestSHA256=sha256(fs.readFileSync(path.join(imported,'manifest.json')));
-      if(key==='phase')delete review.obligations[0].reuse.phase;
+      if(key==='phase'){ delete review.obligations[0].reuse.phase; }
       assert.throws(()=>tools.assessAssets(imported,review),/Invalid|Record/);
     }
   });
@@ -204,7 +205,7 @@ assetTest('opt-in capture discovers selected responsive sources, pseudo assets, 
       const out=path.join(dir,'raw');const result=await capture(plan,out,process.env.REFERENCE_PLAYWRIGHT_MODULE);assert.equal(result.result,'CAPTURED',JSON.stringify(result));
       const observations=JSON.parse(fs.readFileSync(path.join(out,'asset-observations.json')));
       const item=observations.cases[0],refs=item.checkpoints.flatMap(cp=>cp.frames.flatMap(f=>f.references||[]));
-      for(const name of ['large.png','pseudo.png','shadow.png'])assert.ok(refs.some(r=>r.url===base+'/'+name),name);
+      for(const name of ['large.png','pseudo.png','shadow.png']){ assert.ok(refs.some(r=>r.url===base+'/'+name),name); }
       assert.ok(item.network.some(r=>r.url===base+'/texture.png'));
       assert.ok(refs.some(r=>r.via==='declared-srcset'&&r.detail.variant.d===2));
       assert.equal(verify(out,JSON.parse(fs.readFileSync(path.join(out,'manifest.json')))).result,'PASS');
@@ -238,6 +239,7 @@ assetTest('font verification records actual parsed family, glyph coverage and me
   assert.ok(result.metadata[0].numGlyphs>0);assert.ok(result.metadata[0].characterSet.length>0);assert.ok(result.metadata[0].family);
 });
 assetTest('installed FFprobe verifies original audio stream/container metadata',async t=>{
+  if(!mediaExecutable('ffprobe')){t.skip('Configure REFERENCE_FFPROBE_PATH for native media verification');return;}
   const dir=fs.mkdtempSync(path.join(os.tmpdir(),'reference-asset-media-'));
   try{
     const bytes=Buffer.alloc(44+1600);bytes.write('RIFF');bytes.writeUInt32LE(bytes.length-8,4);bytes.write('WAVE',8);bytes.write('fmt ',12);bytes.writeUInt32LE(16,16);bytes.writeUInt16LE(1,20);bytes.writeUInt16LE(1,22);bytes.writeUInt32LE(8000,24);bytes.writeUInt32LE(16000,28);bytes.writeUInt16LE(2,32);bytes.writeUInt16LE(16,34);bytes.write('data',36);bytes.writeUInt32LE(1600,40);
@@ -261,7 +263,9 @@ assetTest('generic-MIME streaming segments use native media verification without
     assert.equal(discovery.kindFor(origin+'/source.ts'),'unknown');
     const input=path.join(dir,'input');fs.mkdirSync(input);
     const segment=path.join(input,'segment.ts');
-    const generated=spawnSync('ffmpeg',['-v','error','-f','lavfi','-i','sine=frequency=440:sample_rate=8000','-t','0.2','-c:a','mp2','-f','mpegts',segment],{timeout:10000,windowsHide:true});
+    const executable=mediaExecutable('ffmpeg');
+    if(!executable||!mediaExecutable('ffprobe')){t.skip('Configure REFERENCE_FFMPEG_PATH and REFERENCE_FFPROBE_PATH for native media fixtures');return;}
+    const generated=spawnSync(executable,['-v','error','-f','lavfi','-i','sine=frequency=440:sample_rate=8000','-t','0.2','-c:a','mp2','-f','mpegts',segment],{timeout:10000,windowsHide:true});
     if(generated.error?.code==='ENOENT'){t.skip('Optional installed FFmpeg segment fixture generator');return;}
     assert.equal(generated.status,0,String(generated.stderr));
     fs.writeFileSync(path.join(input,'playlist.m3u8'),'#EXTM3U\n#EXT-X-TARGETDURATION:1\n#EXTINF:0.2,\nsegment.ts\n#EXT-X-ENDLIST\n');
@@ -287,4 +291,21 @@ assetTest('generic-MIME streaming segments use native media verification without
     assert.equal(tools.loadRun(invalidRoot).run.assets[0].verification.status,'failed');
     assert.equal(tools.assessAssets(invalidRoot,invalidReview).result,'BLOCKED');
   });
+});
+
+test('native media tools require explicit absolute paths and ignore inherited PATH',()=>{
+  assert.equal(mediaExecutable('ffprobe',{PATH:process.cwd()}),null);
+  assert.throws(()=>mediaExecutable('ffprobe',{REFERENCE_FFPROBE_PATH:'ffprobe'}),/absolute/);
+  assert.throws(()=>mediaExecutable('ffprobe',{REFERENCE_FFPROBE_PATH:process.cwd()}),/file/);
+  assert.equal(mediaExecutable('ffprobe',{REFERENCE_FFPROBE_PATH:process.execPath}),fs.realpathSync(process.execPath));
+  assert.throws(()=>mediaExecutable('other'),/Unsupported/);
+});
+
+test('native media configuration rejects a regular non-executable file',()=>{
+  const directory=fs.mkdtempSync(path.join(os.tmpdir(),'reference-media-path-'));
+  try {
+    const filename=path.join(directory,'not-executable.txt');
+    fs.writeFileSync(filename,'fixture',{mode:0o600});
+    assert.throws(()=>mediaExecutable('ffprobe',{REFERENCE_FFPROBE_PATH:filename}));
+  } finally {removeFixture(directory);}
 });

@@ -5,7 +5,7 @@ import {sha256} from './package.mjs';
 
 export function inspectSource(file, maxBytes=5_000_000) {
   const size=fs.statSync(file).size;
-  if (size>maxBytes) return {file:path.basename(file),bytes:size,status:'not-inspected',reason:'Size budget exceeded; no negative finding'};
+  if (size>maxBytes) { return {file:path.basename(file),bytes:size,status:'not-inspected',reason:'Size budget exceeded; no negative finding'}; }
   const bytes=fs.readFileSync(file),text=bytes.toString('utf8');
   const refs=[...text.matchAll(/(?:\/\/[#@]|\/\*[#@])\s*sourceMappingURL\s*=\s*([^\s*]+)/g)].map(match=>match[1]);
   const folded=text.toLowerCase();
@@ -19,7 +19,7 @@ export function inspectSource(file, maxBytes=5_000_000) {
 }
 if (process.argv[1] && import.meta.url===pathToFileURL(path.resolve(process.argv[1])).href) {
   try {
-    if (!process.argv[2]) throw Error('Usage: node source-report.mjs FILE [FILE ...] (local public/supplied artifacts only)');
+    if (!process.argv[2]) { throw new Error('Usage: node source-report.mjs FILE [FILE ...] (local public/supplied artifacts only)'); }
     console.log(JSON.stringify({schemaVersion:2,inspectedAtUTC:new Date().toISOString(),tool:{name:'source-report.mjs',sha256:sha256(fs.readFileSync(fileURLToPath(import.meta.url)))},files:process.argv.slice(2).map(f=>inspectSource(f))},null,2));
   } catch(error) { console.error(error.message); process.exitCode=1; }
 }

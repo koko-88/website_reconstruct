@@ -60,7 +60,9 @@ existing Playwright module directory and `REFERENCE_BROWSER_CHANNEL` to an insta
 parsers resolve from the skill's declared installation. Do not install missing dependencies silently.
 Serial suite workers preserve the demonstrated native-memory safeguard. The native three-minute
 test timeout bounds host launch/shutdown stalls; feature readiness deadlines remain separate.
-All skips must be reported.
+Native media checks require `REFERENCE_FFPROBE_PATH` and streaming test fixtures additionally require
+`REFERENCE_FFMPEG_PATH`, each an absolute path to an existing trusted executable. PATH lookup is not
+used. All skips must be reported.
 Application commands remain prospective in the [home quickstart](specs/001-home-entry-fidelity/quickstart.md).
 
 ## Capability and redundancy audit
@@ -132,7 +134,7 @@ rewritten as current policy. Initial local changes to `.gitignore` and the gener
 in `AGENTS.md` were accounted for. Root provisional package/lock/dependencies were preserved.
 
 There is no tracked `app/` application, application package, runtime dependency graph, deployment,
-or implemented website acceptance result to certify. ROADMAP lines 9 and 175–184 explicitly retain
+or implemented website acceptance result to certify. ROADMAP lines 9 and 175â€“184 explicitly retain
 the delivery gate; the home quickstart labels its commands prospective. Application state-machine,
 accessibility, performance and browser-fidelity risks remain specified obligations, not observed
 production defects. Tooling test success does not prove those obligations.
@@ -193,7 +195,7 @@ its native result and are not invented numeric severities.
 | ID / severity / scope | Exact source and supporting evidence | Impact and disposition |
 | --- | --- | --- |
 | A01 P1, repository evidence/CI | `.github/workflows/reproducibility.yml`; `.gitattributes`; `implementation-scope/pre-build-packet/verification.json`; `reference/haunted-boulder-city-v2/rev-2.0.0-real-01/manifest.json`. Connected run 37911342897 fails byte identity and eleven sealed-manifest entries. Raw Git blobs versus recorded checkout bytes show twelve newline-only differences including preseal data. | Linux checkout changes sealed originals. Added native Git `-text` evidence default and twelve exact `text eol=crlf` exceptions; no manifest/digest normalization. New `implementation-scope/pre-build-packet/test_checkout.py` verifies both Git conversion profiles and rejects deliberate newline corruption. Fixed locally; hosted confirmation pending. |
-| A02 P1, planned feature contract, not implemented runtime | `specs/001-home-entry-fidelity/contracts/verification.md` run identity; `tasks.md` T008/T033/T034/T040/T046/T051/T052–T058; `plan.md`, `quickstart.md`, `data-model.md`. Qodo 7022b070 identified preflight/calibration and successive invocations competing for the same output root. | Playwright cleanup could erase retained evidence or the proposed reuse guard could reject preparation. Corrected native `playwright/` and `reports/` children, sibling preparation/calibration/reviews, and a fresh ID for every checkpoint/final/diagnostic invocation. Final acceptance uses its own complete invocation; previous attempts remain linked. Runtime enforcement remains T008 future work. |
+| A02 P1, planned feature contract, not implemented runtime | `specs/001-home-entry-fidelity/contracts/verification.md` run identity; `tasks.md` T008/T033/T034/T040/T046/T051/T052â€“T058; `plan.md`, `quickstart.md`, `data-model.md`. Qodo 7022b070 identified preflight/calibration and successive invocations competing for the same output root. | Playwright cleanup could erase retained evidence or the proposed reuse guard could reject preparation. Corrected native `playwright/` and `reports/` children, sibling preparation/calibration/reviews, and a fresh ID for every checkpoint/final/diagnostic invocation. Final acceptance uses its own complete invocation; previous attempts remain linked. Runtime enforcement remains T008 future work. |
 | A03 P2, current workflow | `.specify/workflows/speckit/workflow.yml`; `.specify/workflows/workflow-registry.json`; `LOGIC_VERIFICATION.md`. Qodo 9aaac979: analyze went directly to implement. Installed Spec Kit engine supports an existing gate type, pauses noninteractive gates and aborts rejection. | Material analysis failures could be followed by automatic implementation. Added native review-analysis gate requiring resolution and ROADMAP admission, registry/workflow version 1.0.3. Native workflow info recognizes eight steps. No custom verdict framework or workflow launch. |
 | A04 P2, current CI/dependencies | `mise.toml`, `mise.lock`, `.github/workflows/reproducibility.yml`. Qodo 07c6b196: checker used runner-default Python outside the lock. | Reproducibility excluded a required interpreter. Locked existing Python 3.12.15 with platform URLs/checksums and invoked CI through mise. Existing installed 3.12.15 executed local regressions; lock dry-run unchanged. No interpreter was installed. |
 | A05 P2, current CI coverage | `.github/workflows/reproducibility.yml` push/pull_request paths. Qodo 1244b5ae: `model-selection/*.md` excluded nested tooling inventory. | Governance/dependency changes could bypass CI. Changed to `model-selection/**` and included Git byte policy and active agent adapters. |
@@ -233,8 +235,8 @@ task/document leftovers above were the remaining concrete contradictions identif
 
 ### Architecture, dependencies and mature replacements
 
-The maintainable boundary is canonical product/roadmap/spec intent → feature plan/tasks → a future
-independent `app/` package → native engineering evidence. Constitution owns non-negotiable policy;
+The maintainable boundary is canonical product/roadmap/spec intent â†’ feature plan/tasks â†’ a future
+independent `app/` package â†’ native engineering evidence. Constitution owns non-negotiable policy;
 PRODUCT and ROADMAP own their separate product/decomposition domains; the two verification files
 own logic versus runtime verification. Thin adapters consume those authorities. A generated adapter,
 skill inventory, historical receipt or retrieval rank cannot introduce another authority.
@@ -343,7 +345,7 @@ on connected skill commands): `--version`; `read whoami --json`; `read tools` di
 `codebase`, `pull-request`, `cross-repo`, `rules`; `read codebase ls`, `get-commit`, `read-file`;
 `read pull-request stats` (unavailable); `read cross-repo relations --shallow`; `read rules search`
 with structured primary/cross-cutting searches and bounded broadened retry; `review --help`;
-`review --base … --deep --async --json --context-file -`; full-source variant with `--full` and
+`review --base â€¦ --deep --async --json --context-file -`; full-source variant with `--full` and
 pathspec exclusions; `review status <operation-id> --json`. Submission success is not review completion.
 
 Other connected evidence tools used: code-review-graph `get_architecture_overview_tool`,

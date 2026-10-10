@@ -23,6 +23,9 @@ import statistics
 from types import SimpleNamespace
 
 
+APP_ORIGIN = "http://app"
+
+
 FUNCTIONS = {
     "iou", "center_distance", "text_similarity_score", "pick_best",
     "annotation_tier", "_jaccard", "_visible_words", "check_navigate",
@@ -36,10 +39,11 @@ def selected_functions(path: Path) -> dict:
     tree = ast.parse(path.read_text(encoding="utf-8"))
     nodes = []
     for node in tree.body:
-        if isinstance(node, ast.FunctionDef) and node.name in FUNCTIONS:
-            nodes.append(node)
-        elif isinstance(node, ast.Assign) and any(
-            isinstance(t, ast.Name) and t.id in CONSTANTS for t in node.targets
+        if (
+            isinstance(node, ast.FunctionDef) and node.name in FUNCTIONS
+        ) or (
+            isinstance(node, ast.Assign)
+            and any(isinstance(t, ast.Name) and t.id in CONSTANTS for t in node.targets)
         ):
             nodes.append(node)
     module = ast.Module(body=nodes, type_ignores=[])
@@ -85,66 +89,7 @@ class FakePage:
         return None
 
 
-def main():
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--source-root", required=True, type=Path)
-    parser.add_argument("--output", required=True, type=Path)
-    args = parser.parse_args()
-    args.output = args.output.resolve()
-    if args.output.exists() or args.output == Path(__file__).with_name('vista-audit-receipt.json').resolve():
-        parser.error('Output must be a new file outside the historical receipt')
-    root = args.source_root.resolve()
-    path = root / "tasks/tools/eval_run.py"
-    expected = "70cc6e3a5a037c2c1a2ef5759751e4bec8959b6b655dd2528a6f874bc6df6c70"
-    digest = hashlib.sha256(path.read_bytes()).hexdigest()
-    assert digest == expected, "Scorer bytes differ from the audited commit; stop and review the revision"
-    f = selected_functions(path)
-    cases = []
-
-    def record(name, observed, expected, implication):
-        assert observed == expected, (name, observed, expected)
-        cases.append(dict(name=name, observed=observed, expected=expected,
-                          implication=implication))
-
-    target = dict(x=0, y=0, width=100, height=100)
-    wrong_label = dict(target, text="unrelated control")
-    record("overlap_ignores_wrong_label", f["pick_best"](target, [wrong_label])[1], 1,
-           "Geometry can identify a semantically wrong control at full L=1.")
-    record("no_candidate", f["pick_best"](target, [])[1], 0, "Missing controls get L=0.")
-    distant = dict(x=2000, y=2000, width=100, height=100, text="search products")
-    record("distant_text_match", f["pick_best"](target, [distant], {"reasoning": "search products"})[1], 5,
-           "An arbitrarily displaced matching label can earn L=0.1.")
-    near = dict(x=150, y=0, width=100, height=100)
-    record("distance_boundary", f["pick_best"](target, [near])[1], 3,
-           "The inclusive 150px tier earns L=0.3.")
-    record("generic_noop", f["check_generic_click"](FakePage(), wrong_label, {})[0], 0.5,
-           "No-op functional clicks can get B=0.5, hence S=0.5 at L=1.")
-    record("wrong_destination", f["check_navigate"](FakePage(after="unrelated error screen"), wrong_label,
-           {"navigateTo": {"name": "Checkout"}}, "http://app")[0], 1.0,
-           "A content change is sufficient without destination validation.")
-    record("empty_destination", f["check_navigate"](FakePage(after=""), wrong_label,
-           {"navigateTo": {"name": "Checkout"}}, "http://app")[0], 1.0,
-           "Empty/destroyed body can be treated as successful navigation.")
-    record("navigation_noop_control", f["check_navigate"](FakePage(), wrong_label, {}, "http://app")[0], 0.0,
-           "Unchanged word sets fail the navigation test.")
-    record("cosmetic_toggle", f["check_toggle"](FakePage(snapshots=({"cls": "a"}, {"cls": "b"})),
-           wrong_label, {})[0], 1.0, "A cosmetic class change can satisfy toggle behavior.")
-    record("internal_absolute_external", f["check_external"](None, {"href": "http://app/internal"}, {})[0], 1.0,
-           "Absolute internal links pass the external-link test.")
-    record("hidden_dialog_count", f["check_popout"](FakePage(counts=(0, 1)), wrong_label, {})[0], 1.0,
-           "The count probe has no visibility/content/focus requirement.")
-    dom = dict(distant, tag="button", testid="search")
-    anchor = {"ann_id": 1, "testid": "search", "bbox_png": {"x": 0, "y": 0, "w": 100, "h": 100}}
-    matched = f["find_anchors_from_anchor_json"](FakePage(doms=[dom]), [anchor], 1)
-    record("distant_testid_anchor", matched[0]["score"], 1.0,
-           "Curated testid match returns score=1 despite a >2,000px displacement; main short-circuits to tier 1.")
-    record("critical_music_click", f["annotation_tier"]({"type": "click", "subtype": "click_play_music"}), "critical",
-           "The generic music probe affects the headline denominator.")
-    record("unknown_navigation_bonus", f["annotation_tier"]({"type": "click", "subtype": "click_unknown_nav"}), "bonus",
-           "Bonus annotations do not affect critical S.")
-    record("dead_click_skipped", f["annotation_tier"]({"type": "click", "subtype": "click_dead"}), "skip",
-           "Intentionally dead controls are excluded.")
-
+def audit_annotations(root, f):
     apps = []
     all_annotations = []
     malformed = []
@@ -161,42 +106,12 @@ def main():
             if len(ids) != len(set(ids)):
                 malformed.append(directory.name + "/" + d["page_name"] + ": duplicate IDs")
         all_annotations.extend(annotations)
-        apps.append(dict(task=directory.name, pages=len(manifests),
-                         anchor_pages=len(anchors), anchors=sum(map(len, anchors.values())),
-                         interaction_pages=len(documents), annotations=len(annotations),
-                         tiers=dict(collections.Counter(f["annotation_tier"](a) for a in annotations)),
-                         widths=sorted(set(d.get("figma_meta", {}).get("figma_w") for d in documents))))
+        apps.append({'task': directory.name, 'pages': len(manifests), 'anchor_pages': len(anchors), 'anchors': sum(map(len, anchors.values())), 'interaction_pages': len(documents), 'annotations': len(annotations), 'tiers': dict(collections.Counter(f["annotation_tier"](a) for a in annotations)), 'widths': sorted({d.get("figma_meta", {}).get("figma_w") for d in documents})})
 
-    # Inspect scorer API used directly on local metadata; no Task, model or
-    # generate/eval call. Network guard permits only loopback asyncio IPC.
-    original_connect = socket.socket.connect
-    def guarded_connect(sock, address):
-        if isinstance(address, tuple) and address[0] not in ("127.0.0.1", "::1", "localhost"):
-            raise AssertionError("External network is forbidden during the probe")
-        return original_connect(sock, address)
-    socket.socket.connect = guarded_connect
-    from inspect_ai.scorer import scorer, Score, accuracy
-    @scorer(metrics=[accuracy()])
-    def joint_audit():
-        async def score(state, target):
-            pairs = state.metadata["pairs"]
-            return Score(value=sum(a*b for a, b in pairs) / len(pairs))
-        return score
-    async def check_inspect():
-        result = await joint_audit()(SimpleNamespace(metadata={"pairs": [(1.0, 0.0), (0.0, 1.0)]}), None)
-        record("inspect_mean_of_products", result.value, 0.0,
-               "mean(L*B)=0, while mean(L)*mean(B)=0.25; aggregation must preserve pairing.")
-    asyncio.run(check_inspect())
-    totals = {k: sum(a[k] for a in apps) for k in ("pages", "anchors", "interaction_pages", "annotations")}
-    assert totals == dict(pages=128, anchors=458, interaction_pages=126, annotations=3253)
-    receipt = dict(benchmark_commit="dce2756fdeca450310af91034e78bd57203a001a",
-                   scorer_sha256=digest, packages={name: importlib.metadata.version(name)
-                   for name in ("inspect-ai", "inspect-evals")}, model_calls=0,
-                   browser_calls=0, controls=cases, dataset=dict(apps=apps, totals=totals,
-                   tier_counts=dict(collections.Counter(f["annotation_tier"](a) for a in all_annotations)),
-                   annotation_types=dict(collections.Counter(a.get("type") for a in all_annotations)),
-                   speculative_reasoning_count=sum(bool(re.search(r"\b(likely|implied|probably)\b", a.get("reasoning", ""), re.I))
-                                                   for a in all_annotations), duplicate_id_findings=malformed))
+    return apps, all_annotations, malformed
+
+
+def audit_published_arithmetic(root, receipt):
     result_root = root / "trajectories/_runs_cursor_grok4.6_high_3x"
     if result_root.is_dir():
         batches = collections.defaultdict(list)
@@ -223,18 +138,101 @@ def main():
                 dates.extend(t["ts"] for t in summary.get("turns", []) if t.get("ts"))
         assert len(batches) == 3 and all(len(values) == 10 for values in batches.values())
         means = [statistics.mean(values) for values in batches.values()]
-        receipt["published_arithmetic"] = dict(model_label="Grok 4.6", harness_label="cursor-agent 2026.08.11",
-            condition="C4", batch_means=dict(zip(batches, means)), mean=statistics.mean(means),
-            sample_sd=statistics.stdev(means), rounded_batch_means={k: statistics.mean(v) for k, v in batch_rounded.items()},
-            valid_task_runs=30, authentication_bypass_runs=bypass, positive_no_effect_critical_annotations=no_effect,
-            observed_trajectory_date_range=[min(dates), max(dates)] if dates else [], result_sha256=result_hashes,
-            limitation="Arithmetic verified from published artifacts; no independent browser rescore or agent rerun.")
+        receipt["published_arithmetic"] = {'model_label': "Grok 4.6", 'harness_label': "cursor-agent 2026.08.11", 'condition': "C4", 'batch_means': dict(zip(batches, means)), 'mean': statistics.mean(means), 'sample_sd': statistics.stdev(means), 'rounded_batch_means': {k: statistics.mean(v) for k, v in batch_rounded.items()}, 'valid_task_runs': 30, 'authentication_bypass_runs': bypass, 'positive_no_effect_critical_annotations': no_effect, 'observed_trajectory_date_range': [min(dates), max(dates)] if dates else [], 'result_sha256': result_hashes, 'limitation': "Arithmetic verified from published artifacts; no independent browser rescore or agent rerun."}
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--source-root", required=True, type=Path)
+    parser.add_argument("--output", required=True, type=Path)
+    args = parser.parse_args()
+    args.output = args.output.resolve()
+    if args.output.exists() or args.output == Path(__file__).with_name('vista-audit-receipt.json').resolve():
+        parser.error('Output must be a new file outside the historical receipt')
+    root = args.source_root.resolve()
+    path = root / "tasks/tools/eval_run.py"
+    expected = "70cc6e3a5a037c2c1a2ef5759751e4bec8959b6b655dd2528a6f874bc6df6c70"
+    digest = hashlib.sha256(path.read_bytes()).hexdigest()
+    assert digest == expected, "Scorer bytes differ from the audited commit; stop and review the revision"
+    f = selected_functions(path)
+    cases = []
+
+    def record(name, observed, expected, implication):
+        assert observed == expected, (name, observed, expected)
+        cases.append({'name': name, 'observed': observed, 'expected': expected, 'implication': implication})
+
+    target = {'x': 0, 'y': 0, 'width': 100, 'height': 100}
+    wrong_label = {**target, "text": "unrelated control"}
+    record("overlap_ignores_wrong_label", f["pick_best"](target, [wrong_label])[1], 1,
+           "Geometry can identify a semantically wrong control at full L=1.")
+    record("no_candidate", f["pick_best"](target, [])[1], 0, "Missing controls get L=0.")
+    distant = {'x': 2000, 'y': 2000, 'width': 100, 'height': 100, 'text': "search products"}
+    record("distant_text_match", f["pick_best"](target, [distant], {"reasoning": "search products"})[1], 5,
+           "An arbitrarily displaced matching label can earn L=0.1.")
+    near = {'x': 150, 'y': 0, 'width': 100, 'height': 100}
+    record("distance_boundary", f["pick_best"](target, [near])[1], 3,
+           "The inclusive 150px tier earns L=0.3.")
+    record("generic_noop", f["check_generic_click"](FakePage(), wrong_label, {})[0], 0.5,
+           "No-op functional clicks can get B=0.5, hence S=0.5 at L=1.")
+    record("wrong_destination", f["check_navigate"](FakePage(after="unrelated error screen"), wrong_label,
+           {"navigateTo": {"name": "Checkout"}}, APP_ORIGIN)[0], 1.0,
+           "A content change is sufficient without destination validation.")
+    record("empty_destination", f["check_navigate"](FakePage(after=""), wrong_label,
+           {"navigateTo": {"name": "Checkout"}}, APP_ORIGIN)[0], 1.0,
+           "Empty/destroyed body can be treated as successful navigation.")
+    record("navigation_noop_control", f["check_navigate"](FakePage(), wrong_label, {}, APP_ORIGIN)[0], 0.0,
+           "Unchanged word sets fail the navigation test.")
+    record("cosmetic_toggle", f["check_toggle"](FakePage(snapshots=({"cls": "a"}, {"cls": "b"})),
+           wrong_label, {})[0], 1.0, "A cosmetic class change can satisfy toggle behavior.")
+    record("internal_absolute_external", f["check_external"](None, {"href": "http://app/internal"}, {})[0], 1.0,
+           "Absolute internal links pass the external-link test.")
+    record("hidden_dialog_count", f["check_popout"](FakePage(counts=(0, 1)), wrong_label, {})[0], 1.0,
+           "The count probe has no visibility/content/focus requirement.")
+    dom = {**distant, "tag": "button", "testid": "search"}
+    anchor = {"ann_id": 1, "testid": "search", "bbox_png": {"x": 0, "y": 0, "w": 100, "h": 100}}
+    matched = f["find_anchors_from_anchor_json"](FakePage(doms=[dom]), [anchor], 1)
+    record("distant_testid_anchor", matched[0]["score"], 1.0,
+           "Curated testid match returns score=1 despite a >2,000px displacement; main short-circuits to tier 1.")
+    record("critical_music_click", f["annotation_tier"]({"type": "click", "subtype": "click_play_music"}), "critical",
+           "The generic music probe affects the headline denominator.")
+    record("unknown_navigation_bonus", f["annotation_tier"]({"type": "click", "subtype": "click_unknown_nav"}), "bonus",
+           "Bonus annotations do not affect critical S.")
+    record("dead_click_skipped", f["annotation_tier"]({"type": "click", "subtype": "click_dead"}), "skip",
+           "Intentionally dead controls are excluded.")
+
+    apps, all_annotations, malformed = audit_annotations(root, f)
+
+    # Inspect scorer API used directly on local metadata; no Task, model or
+    # generate/eval call. Network guard permits only loopback asyncio IPC.
+    original_connect = socket.socket.connect
+    def guarded_connect(sock, address):
+        if isinstance(address, tuple) and address[0] not in ("127.0.0.1", "::1", "localhost"):
+            raise AssertionError("External network is forbidden during the probe")
+        return original_connect(sock, address)
+    socket.socket.connect = guarded_connect
+    from inspect_ai.scorer import scorer, Score, accuracy
+    @scorer(metrics=[accuracy()])
+    def joint_audit():
+        async def score(state, target):
+            pairs = state.metadata["pairs"]
+            return Score(value=sum(a*b for a, b in pairs) / len(pairs))
+        return score
+    async def check_inspect():
+        result = await joint_audit()(SimpleNamespace(metadata={"pairs": [(1.0, 0.0), (0.0, 1.0)]}), None)
+        record("inspect_mean_of_products", result.value, 0.0,
+               "mean(L*B)=0, while mean(L)*mean(B)=0.25; aggregation must preserve pairing.")
+    asyncio.run(check_inspect())
+    totals = {k: sum(a[k] for a in apps) for k in ("pages", "anchors", "interaction_pages", "annotations")}
+    assert totals == {'pages': 128, 'anchors': 458, 'interaction_pages': 126, 'annotations': 3253}
+    receipt = {'benchmark_commit': "dce2756fdeca450310af91034e78bd57203a001a", 'scorer_sha256': digest, 'packages': {name: importlib.metadata.version(name)
+                   for name in ("inspect-ai", "inspect-evals")}, 'model_calls': 0, 'browser_calls': 0, 'controls': cases, 'dataset': {'apps': apps, 'totals': totals, 'tier_counts': dict(collections.Counter(f["annotation_tier"](a) for a in all_annotations)), 'annotation_types': dict(collections.Counter(a.get("type") for a in all_annotations)), 'speculative_reasoning_count': sum(bool(re.search(r"\b(likely|implied|probably)\b", a.get("reasoning", ""), re.I))
+                                                   for a in all_annotations), 'duplicate_id_findings': malformed}}
+    audit_published_arithmetic(root, receipt)
     receipt["source_sha256"] = {str(p.relative_to(root)).replace("\\", "/"): hashlib.sha256(p.read_bytes()).hexdigest()
         for p in sorted(root.rglob("*")) if p.is_file() and "trajectories" not in p.parts}
     with args.output.open('x', encoding='utf-8') as stream:
         stream.write(json.dumps(receipt, indent=2, ensure_ascii=False) + "\n")
-    print(json.dumps(dict(controls=len(cases), totals=totals, source_sha256=digest,
-                         model_calls=0, duplicate_id_findings=len(malformed))))
+    print(json.dumps({'controls': len(cases), 'totals': totals, 'source_sha256': digest, 'model_calls': 0, 'duplicate_id_findings': len(malformed)}))
 
 
 if __name__ == "__main__":

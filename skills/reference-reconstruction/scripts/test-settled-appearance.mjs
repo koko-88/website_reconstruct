@@ -12,7 +12,7 @@ const checkpoint=(extra={})=>({id:'STATE',phase:'settled',required:['main'],abse
 const stateAssertion={selector:'#child',visible:true,minOpacity:0.99};
 test('appearance policy validates data-only assertions and bounded exceptions',()=>{
   assert.equal(appearancePolicy(checkpoint()).scope,'viewport');
-  for(const appearance of [{evaluate:'unsafe'}, {intervalMs:0},{maxNodes:1},{ambient:[{selector:'body',properties:['visibility'],reason:'bad'}]},{frames:[{selector:'iframe',mode:'shell-only'}]},{assertions:[{selector:'body',styles:{unlisted:'x'}}]},{mode:'geometry-only'}]) assert.throws(()=>appearancePolicy(checkpoint({appearance})));
+  for(const appearance of [{evaluate:'unsafe'}, {intervalMs:0},{maxNodes:1},{ambient:[{selector:'body',properties:['visibility'],reason:'bad'}]},{frames:[{selector:'iframe',mode:'shell-only'}]},{assertions:[{selector:'body',styles:{unlisted:'x'}}]},{mode:'geometry-only'}]) { assert.throws(()=>appearancePolicy(checkpoint({appearance}))); }
   const example=JSON.parse(fs.readFileSync(new URL('../assets/capture-plan.example.json',import.meta.url),'utf8'));
   example.cases[0].checkpoints[0].appearance={assertions:[stateAssertion]};assert.equal(validatePlan(example).plan.schemaVersion,2);
 });
@@ -114,23 +114,24 @@ test('synthetic settled-appearance regressions in a real browser',{skip:!moduleP
       assert.equal(data[edge],255);assert.equal(data[edge+1],0);assert.equal(data[edge+2],0);
     });
     await t.test('sample truncation and unavailable screenshot capability remain unresolved',async()=>{
-      await page.goto('http://127.0.0.1:'+server.address().port+'/static');await page.evaluate(()=>{for(let n=0;n<30;n++)document.querySelector('main').appendChild(document.createElement('span')).textContent='x'});
+      await page.goto('http://127.0.0.1:'+server.address().port+'/static');await page.evaluate(()=>{for(let n=0;n<30;n++){ document.querySelector('main').appendChild(document.createElement('span')).textContent='x' }});
       const capped=await waitReady(page,checkpoint({timeoutMs:400,appearance:{maxNodes:10}}));assert.equal(capped.status,'unsettled');assert.ok(capped.reasons.includes('appearance-node-budget'));
       const unsupported=await waitReady({evaluate:page.evaluate.bind(page)},checkpoint({timeoutMs:400,appearance:{visual:true}}));assert.equal(unsupported.status,'unsettled');assert.ok(unsupported.reasons.some(s=>s.includes('capability unavailable')));
     });
     await t.test('screenshot pixel refusal invalidates successful viewport appearance',async()=>{
       const dir=fs.mkdtempSync(path.join(os.tmpdir(),'reference-appearance-test-'));
+      if(path.dirname(path.resolve(dir))!==path.resolve(os.tmpdir())||!path.basename(dir).startsWith('reference-appearance-test-')){ throw new Error('Unexpected cleanup target'); }
       try {
         const plan=JSON.parse(fs.readFileSync(new URL('../assets/capture-plan.example.json',import.meta.url),'utf8'));
         const origin='http://127.0.0.1:'+server.address().port;plan.allowedOrigins=[origin];plan.browserChannel=process.env.REFERENCE_BROWSER_CHANNEL||'chrome';plan.environments[0].viewport={width:8000,height:8000};
         plan.cases=[{id:'PIXEL',environmentId:'ENV-D',url:origin+'/static',state:'Stable but no screenshot',reset:'fresh-context',checkpoints:[checkpoint()]}];
         const output=path.join(dir,'run'),r=await capture(plan,output,modulePath);assert.equal(r.result,'INCOMPLETE');
         const record=JSON.parse(fs.readFileSync(path.join(output,'PIXEL--STATE.json'),'utf8'));assert.equal(record.phase,'unsettled');assert.equal(record.readiness.appearance.state,'unresolved');assert.equal(record.readiness.appearance.convergence.pass,false);assert.ok(record.readiness.reasons.includes('capture-pixel-budget-exceeded'));assert.ok(!record.screenshot);
-      } finally {if(path.dirname(path.resolve(dir))!==path.resolve(os.tmpdir())||!path.basename(dir).startsWith('reference-appearance-test-'))throw Error('Unexpected cleanup target');fs.rmSync(dir,{recursive:true,force:true});}
+      } finally {fs.rmSync(dir,{recursive:true,force:true});}
     });
   } finally {
-    if(context)await context.close();if(browser)await browser.close();
+    if(context){ await context.close(); }if(browser){ await browser.close(); }
     server.closeAllConnections();provider.closeAllConnections();await Promise.all([new Promise(r=>server.close(r)),new Promise(r=>provider.close(r))]);
-    if(process.env.REFERENCE_APPEARANCE_RESULTS) fs.writeFileSync(path.resolve(process.env.REFERENCE_APPEARANCE_RESULTS),JSON.stringify({browserVersion:browser?.version(),playwrightVersion:require(path.join(modulePath,'package.json')).version,records},null,2)+'\n');
+    if(process.env.REFERENCE_APPEARANCE_RESULTS) { fs.writeFileSync(path.resolve(process.env.REFERENCE_APPEARANCE_RESULTS),JSON.stringify({browserVersion:browser?.version(),playwrightVersion:require(path.join(modulePath,'package.json')).version,records},null,2)+'\n'); }
   }
 });
