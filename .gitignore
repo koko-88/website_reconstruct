@@ -13,6 +13,9 @@ playwright-report/
 blob-report/
 __pycache__/
 
+# Hermes Kanban worktrees are generated, local-only workspaces
+/.worktrees/
+
 # Local-only implementation fixtures and generated serving stage
 local-fixtures/
 public/fixtures/home/
