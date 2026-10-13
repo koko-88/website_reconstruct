@@ -115,3 +115,7 @@ reads. Check the graph revision and freshness; do not assume hooks or automatic 
 findings in the current source and relevant tests. Empty results or zero risk scores do not establish
 absence or correctness. When unavailable, use native source search and Git inspection, recording the
 capability limit. Structural graph analysis does not substitute for independent engineering review.
+
+## Creative Production
+
+For original creative authoring, use [skills/creative-production/SKILL.md](skills/creative-production/SKILL.md), [capability routing](tooling/creative/capabilities.json), and [the maintained workbench](projects/creative-workbench/package.json). Future applications belong under projects/. Select only their required creative packages and engine peers. This capability does not advance HBC delivery gates or change reconstruction evidence contracts. Creative Production acceptance belongs to [its specification](specs/creative-production/spec.md); runtime results remain in IMPLEMENTATION_VERIFICATION.md.

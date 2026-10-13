@@ -1,0 +1,1 @@
+{"name":"@ai-factory/creative-assets","version":"1.0.0","private":true,"type":"module","exports":"./pipeline.mjs","bin":{"creative-assets":"./cli.mjs"},"dependencies":{"sharp":"0.35.5","@gltf-transform/core":"4.5.1"},"scripts":{"test":"node --test pipeline.test.mjs"}}

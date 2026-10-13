@@ -1,0 +1,39 @@
+{
+  "source": "poster.svg",
+  "sourceSha256": "6d68b90f2fb36016ca1054cea0ef0d3ea3e4e4b40bf9499ec5ab805abeb69383",
+  "attribution": {
+    "source": "Original procedural artwork authored for the Creative Workbench",
+    "license": "LicenseRef-Project-Original"
+  },
+  "outputs": [
+    {
+      "file": "poster-480.webp",
+      "bytes": 4570,
+      "sha256": "2c75bf460b4334e93f254ac8b3b8aa7e033ed75dc7ef947a7a857d27084c94dc",
+      "width": 480
+    },
+    {
+      "file": "poster-480.avif",
+      "bytes": 5054,
+      "sha256": "aec2c73a3f0acfef750e8280c2d09cbd7a057adc576eedbb1e1a748feadfb979",
+      "width": 480
+    },
+    {
+      "file": "poster-960.webp",
+      "bytes": 10014,
+      "sha256": "a0c474f2429e315322ca0bdd020e898bb8b8bdcc030e1fd30749c73211fd0451",
+      "width": 960
+    },
+    {
+      "file": "poster-960.avif",
+      "bytes": 10239,
+      "sha256": "c251be304d35517edb55d61bfc6d60159c198948e187ed39e45330ef947508f9",
+      "width": 960
+    },
+    {
+      "file": "poster.webp",
+      "bytes": 4570,
+      "sha256": "2c75bf460b4334e93f254ac8b3b8aa7e033ed75dc7ef947a7a857d27084c94dc"
+    }
+  ]
+}

@@ -353,3 +353,173 @@ Other connected evidence tools used: code-review-graph `get_architecture_overvie
 `get_affected_flows_tool`; GitHub commit-workflow discovery, generic fetch, workflow run jobs and
 workflow job logs. Native Git/source inspection and Node/Python/Spec Kit/mise checks verify their
 results. Graph tools and GitHub are separate integrations, not Qodo tools.
+
+## Creative Production integration, inspected 2026-10-12; finalized 2026-10-13
+
+Scope: [CP specification](specs/creative-production/spec.md), [plan](specs/creative-production/plan.md)
+and [tasks](specs/creative-production/tasks.md). Inspection base:
+`7a6236880f2e7579ac4af534d67444821b4c0d8c`. Work is local/uncommitted. HBC delivery,
+Reference Intelligence and frozen reconstruction evidence are outside this change.
+
+### Decision
+
+Creative Production is operational on this device for the tested profiles: five selectable source
+packages, agent discovery/routing/skill adapters, maintained original browser instruments and the
+immersive SHIFT reference under projects/. All 18 selected packages, 15 routed skills and seven
+native entrypoints resolve; actual workflows below establish more than discovery. No required
+local workflow is blocked. Independent review coverage remains incomplete; hosted CI and the
+optional provider/runtime workflows below remain unverified. Future projects select their required engine peers and own their art,
+assets, budgets and final visual acceptance.
+
+The user selected [WebLoved](https://www.youtube.com/@WebLoved) as the visual ambition target.
+First-party browser inspection included [assembled/close-up/exploded product states](https://www.youtube.com/shorts/vd8IE8Cl4Jc)
+and [scroll-driven scene presentation](https://www.youtube.com/shorts/VwFlsB1dqRw).
+The [authoring contract](skills/creative-production/references/authoring.md) requires a storyboard,
+signature interaction, coherent typography/materials/light and actual browser visual review.
+SHIFT implements original exploded glTF, a moving camera, shader particles, outlined type and
+responsive/manual chapters. Neither a video nor functional tests prove channel-wide visual parity.
+
+Workstation: Xeon E5-2697 v4 (18 cores/36 threads), approximately 32 GB RAM, NVIDIA Quadro P2000
+with 5,120 MiB VRAM (nvidia-smi; WMI underreported memory), driver 582.78, Windows 10 Pro 19045.
+Native Blender 5.2.2 LTS, KTX 4.4.2, glTF Transform 4.5.1, gltfpack 1.3.0 and FFmpeg/FFprobe
+7.1.1 were exercised; Node 24.19.0/npm 11.17.0 ran checks. Inspection covered development tools
+and relevant installation locations, without crawling unrelated private files/accounts.
+
+React 19.3.0, Three 0.186.1, Fiber 9.8.1, Drei 10.7.9, react-three/postprocessing 3.2.0,
+postprocessing 6.39.5, GSAP 3.15.0, Motion 12.43.0 and PixiJS 8.22.0 are selected in the
+maintained consumer. Postprocessing constrains Three to <0.187. Provisioned tools and mature
+skills were reused. Existing mise/Storybook edits and dirty attached worktrees remain intact.
+Only missing ImageMagick was installed, under the user's explicit repair authorization:
+7.1.2-33 from the existing Scoop manifest, checked installer SHA256
+`e5f1e14f8520b3720e626185700489fe4267026611834d74fbf4cd598ffa0788`.
+Original SVG -> 480x480 decoded WebP passed. Existing Codex processes need the installation
+directory on PATH and its native module environment; a new process inherits the repaired user
+environment. The failed first DLL lookup and successful configured run are retained.
+No existing workstation capability was reinstalled; no paid generation, deployment, commit or push.
+
+### Executed workflows
+
+Artifacts are under `artifacts/creative-production/`; ignored native reports are local evidence.
+
+| Capability | Result and practical boundary |
+| --- | --- |
+| Discovery/routing | Registry separates engine peers, native tools and MCP probes. discovery-final-verified.json resolves 18 packages/15 skills/seven native entrypoints; 481 creative/input tools are exposed, not individually certified. Session metadata contains 1,168 total tools, with 533 creative/review entries retained in mcp-inventory-final.json. |
+| Agent access | Canonical creative-production skill and thin Codex/.agents, Claude, Cursor, Cline and OpenCode adapters. Existing UI UX Pro Max/GSAP/Pixi guidance reused. Skill format validates; actual design-system and motion/accessibility searches return results. |
+| Engine selection | DOM-only scoped installation used two packages, with React and no Three/Pixi. Assets-only scoped installation used nine packages without React/Three/Pixi; its current 16 asset checks pass (final-assets-only-ownership-tests.log). The asset package has no renderer peer. KTX production explicitly selects Three-compatible decoder bytes or CREATIVE_BASIS_SOURCE_DIR. |
+| GSAP/Motion | Scoped useGSAP cleanup, reversible ScrollTrigger and Motion transitions. Pause preserves pose. Standalone SHIFT resets public scroll restoration memory before trigger creation/resume; eight uninstrumented reduced-motion repetitions and the complete final suite pass. No per-frame React state. |
+| Three/R3F/Drei | Original loaded GLB, live shader, material/orientation/orbit controls, optional bloom and KTX2. Eco disables/unchecks Bloom; High exposes the actual selection. The isolated High-without/with-bloom pixel check passes in all three profiles. Instance materials are disposed; loader geometry stays cached. Readiness covers delayed model replacement, selected texture loading, failures and lost context. |
+| Immersive reference | /showcase.html consumes reusable SceneJourney: camera/material progression, exploded four-mesh sculpture, deterministic 1,200/2,800 shader points and optional bloom. Quality replaces/disposes owned geometry. Native/manual/reduced/pause/offscreen/loading-time loss pass. Manual visual review led to a text scrim and accurate static-view instructions. |
+| PixiJS v8 | Private capped ticker, pointer/keyboard orientation, spread, resize, remount, partial-init rejection and context-loss cleanup. Rotation is centered. WebGL selected; WebGPU/Canvas untested. |
+| Blender/glTF | Separate factory-startup headless exporter preserves the live scene. Maintained original .blend/raw GLB and dedup pipeline. Served GLB: 67,720 bytes, four meshes, 4,688 triangles, no required extensions. Native gltfpack -noq alternative: 90,252 bytes, one mesh, 4,688 triangles. |
+| Images/texture assets | Original SVG -> WebP/AVIF 480/960/poster, hashes/attribution, 20-million-pixel decoded cap and 64 MiB streamed encoded-source cap. Hashes bind the captured image/texture bytes; media uses an owned input snapshot. File hashing streams: an independent 256 MiB fixture digest matched, with measured RSS growth 73,670,656 bytes (hash-stream-profile-verified.json); this sample is not a universal memory guarantee. KTX2 is mipmapped UASTC/Zstd, 22,966 bytes, with local hashed Basis JS/WASM and Apache-2.0 LICENSE/NOTICE. Real directory-link/source isolation and decoder-source separation checks pass. |
+| Export failure preservation | All profiles stage outputs/provenance before publication. One small Node filesystem helper prepares all same-filesystem replacements/backups, renames each file and rolls back earlier replacements if a later rename fails; failed recovery retains backups and reports paths. Single local writer only: no multi-file crash transaction or concurrent-writer claim. Real blocked image destination, invalid optimized GLB, obstructed decoder destination, invalid media source and incompatible probe preserve prior served bytes/provenance. Model failure also preserves the original saved blend/raw GLB. Existing output links and colliding destinations are rejected. Static GLB inspection rejects empty/orphan geometry, malformed/out-of-range indices and nonfinite positions; this bounded inspector is not a full glTF specification validator. Intermediate encoder PNG is outside public and removed in finally. |
+| Native verification | Portable routing/assets 19/19 (portable-handoff-final.log). Selected Blender/glTF/KTX 2/2 (native-ownership-corrected.log). Native media/browser 1/1 (media-metadata-final.log), including successful regeneration, failed-source/probe preservation and final Chrome playback. Selected native suites fail clearly if tools are missing and do not install or skip them. |
+| Media | Original 321x181 FFV1 -> even 320x180 H.264/yuv420p, muted/faststart, FFprobe metadata/full decode and Chrome readyState 4/currentTime >0.1/error null. Width <=1280, duration <=30s, network protocols excluded. Inherited metadata/chapters are removed; bounded FFprobe fields and basename-only filenames avoid log truncation and builder-path disclosure. A source comment exceeding 16 kB verifies this correction. Audio mastering/streaming/DRM outside profile. |
+| Browser/GPU review | Complete repaired-final/browser.json: 48 expected, zero unexpected/flaky/skipped, browser-repaired-final.log. The subsequent test-only stronger Bloom comparison passes 3/3 (bloom-isolated-final/browser.json); frontend source is unchanged from the full suite. Spector loaded instrument/SHIFT, captured five calls/two programs/no GL errors at Eco and returned shaders; fresh repaired-session WebGL2 context responds. Its duration field was not treated as GPU timing. |
+| Performance | Actual ANGLE NVIDIA P2000/D3D11, native draw interception: instrument/SHIFT High+bloom 22 calls per sampled frame, approximately 59.9-60.7 sampled display FPS. Reduced profiles zero continuous draws. Short samples do not prove sustained throughput, physical mobile or whole-site Core Web Vitals. |
+| Accessibility/responsive | Axe across disciplines/SHIFT, keyboard navigation/sliders, narrow/touch/reduced, no horizontal overflow, pause/live preference/offscreen/resize/fallback. GPU-only pose comparison isolates DOM; measured two pixels by one 8-bit level, bounded to <=10 pixels/<=1 level. Failures/traces retained. Background visibility is simulated; real background tabs, screen readers, physical devices and Safari/Firefox untested. |
+| Bundle/reproducibility | TypeScript/Vite pass. Initial instrument JS about 158 kB gzip, CSS about 2.4 kB; Three 211.2 kB/spatial 105.5 kB gzip optional. Initial motion HTML does not preload engine/model/decoder. Fresh scoped lockfile npm ci installed 127 packages in about 50 seconds (final-clean-install.log); build passed. Current-source clean verification passes 19/19 (final-clean-handoff-check.log), separate from root provisioning. Earlier extraction stalls and the subsequent successful clean attempts are retained. |
+| Preservation | Reconstruction 46/46, zero skips (reconstruction-full.log); unchanged initial ten-second media fixture timeout retained. Git diff confirms reference, reconstruction skill, constitution, PRODUCT, ROADMAP and LOGIC_VERIFICATION unchanged. Packet 11/11 PASS: 481 reference files/identical tree hash (logic-handoff-final.json), including the final pointer check. |
+| CI | Authored/read-only ubuntu-24.04 workflow: scoped install/build/portable checks, probe or repair missing FFmpeg, installed official Chrome H.264 playback after browser dependencies, software Chromium rendering and pinned official upload-artifact v7.0.2. YAML validates. Hosted NOT_RUN: no push. Software GPU is not workstation performance certification. Runner/codec choice follows [official runner inventory](https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2404-Readme.md) and [Playwright codec guidance](https://playwright.dev/docs/browsers#media-codecs). |
+
+### Local integration repairs and optional boundaries
+
+- Live Blender now responds: addon up-to-date, protocol 13 matches, Blender 5.2.2; scene inspection
+  and read-only Python execution pass. Started the existing enabled auto-starting add-on, without
+  preference changes or replacing a scene. Libraries/generators are off; telemetry remains false.
+- Polypane now responds at loopback 5858, using its [documented startup flag](https://polypane.app/docs/mcp-server/).
+  SHIFT renders ready in existing panes at 1280x800, 500x766 and 320x567 without horizontal overflow.
+  Electron rejects Chrome Target.createTarget/createBrowserContext; guidance uses existing pane IDs.
+  This is an API limitation, not an unrepairable disconnected endpoint.
+- Chrome DevTools isolated page and screenshot pass. Both browser MCPs save to permitted OS-temp
+  paths; authorized filesystem copy retains chrome-mcp-final.png/polypane-mcp-final.png. Their
+  client-negotiated roots exclude the repository; path protections were preserved.
+- tooling/creative/start-workstation.ps1 reuses listening Blender/Polypane endpoints and refuses
+  to restart existing applications. Launch alone is not health certification. Re-probe each session.
+- Figma authentication, Higgsfield 3D model catalog and Firecrawl public documentation retrieval
+  respond. Optional inputs route through their installed skills. File authoring, provider generation,
+  payment/entitlement expansion and publishing are unselected/NOT_RUN.
+- All seven Babylon graph-list backends responded; current MCP package is 9.30.0 while the
+  separately provisioned mise CLI is 9.28.0. No Babylon consumer was selected. Graph export/runtime
+  rendering is untested and no engine is added to future projects by default. Live schemas/version
+  must be re-probed when selecting one; these distinct tool installations do not change Three peers.
+- Code-review graph was incrementally updated to inspection HEAD with no errors. Its tracked
+  source scope does not certify the new untracked Creative Production files; source/tests/Qodo
+  supply their assessment. No embedding/provider installation was requested.
+- Future Next.js/server consumers need client boundaries and suitable transpilation/dynamic loading;
+  only maintained Vite consumers are tested. Native computer UI control is disabled in this session;
+  browser MCPs, CLI export and Playwright provide the verified paths.
+
+tool-repair-health.json, discovery-final-verified.json, imagemagick-installed-manifest.json,
+imagemagick-repair-install.log and imagemagick-path-repaired.log retain the repair evidence.
+Original failed attempts remain alongside successful checks.
+
+### Independent engineering review
+
+The user approved the private Creative Production payload/destination after automatic approval
+review rejected its initial submission. Existing authenticated Qodo CLI 1.4.0 was reused.
+Issue/compliance reviewers ran at checkpoint/auto-final depth. Reviews repeatedly report
+incomplete_input/coverage.complete=false; skills/spec/UI/persona/cross-repo reviewers were skipped.
+Binary/large omissions are upload limits. This is independent issue review with explicit incomplete
+coverage, not clean or comprehensive certification.
+
+Retained operations and current-source dispositions:
+
+- f1b00971-b1e4-4e7b-9f44-ef222cc2d8c3: partial Pixi initialization cleanup, GSAP paused pose
+  and nested source-output checks fixed. Texture routing clarified. Missing GLB/KTX/WASM findings
+  were uploader omissions; actual bytes/hashes/loading verified.
+- 4e4107b7-3cfb-46d4-afa3-af3009ba7ea4: pivot, texture/media source isolation, model/lost-context
+  readiness and Chrome alias fixed. Timer-leak claim rejected against clearTimeout on close/error
+  and a real prompt-exit regression.
+- 14520fee-216a-43dc-9637-d3004c0980b3: requested texture readiness, glTF CLI override and
+  discipline hash navigation fixed with functional regressions.
+- b77d42f6-0e1e-41ef-9620-98e1e05cd219: slider consistency, queued hash cancellation and pixel
+  caps fixed. Missing-poster claim was binary omission; actual decode/provenance verified.
+- 9f5e4457-446e-40c0-b926-718496bc4450: loading-time context listener and odd-size media fixed.
+- d83bc155-6cb4-4901-85ba-ec63ac041d46: directory-link isolation and CI media coverage fixed.
+  Independent minimal-install checks also exposed/fixed the optional Three peer leak.
+- c2681fc4-7efd-4043-aa82-ab9076540e73: public intermediate PNG moved to checked OS-temp with
+  finally cleanup; rejected encoder regression and actual texture regeneration pass.
+- b2ada6d6-eeda-4a17-81e4-29e1cc7df625: media failure preservation and CI browser decoding fixed.
+  Native source/probe failure, successful replacement and real playback checks verify it.
+- 3f3768b0-ff69-4322-ac29-9478a8f559d3: image/model/texture failure publication confirmed and
+  fixed together by validated staging and shared bounded publication; portable/native checks pass.
+- aeb942ff-2da0-48c5-966e-bc98dc2717c0: colliding texture/decoder outputs and Bloom control
+  truthfulness fixed; collision preservation and High/Eco browser controls pass.
+- 38d01772-0d59-4b36-a06c-b8ef9e8b653b: media filename privacy, empty GLB acceptance and strict
+  MP4/KTX2 suffixes fixed with portable/native regressions.
+- aa149deb-2d13-43b1-8d3b-ae7f2341098a: streamed hashing and absolute regular-file discovery
+  overrides fixed. Invalid overrides do not silently fall back; the 256 MiB hash sample passed.
+- a6f1d31c-65ca-4563-a928-36481a754de3: index validation, existing output-link preservation,
+  owned process-tree termination and exact captured source bindings fixed. Timeout regression
+  verifies a descendant writer stops before return. POSIX uses an owned process group; Windows
+  awaits taskkill and child close. If termination cannot be confirmed, staging is retained and
+  its location reported; processes that escape the owned group are outside this tool contract.
+- 0d7f4e64-e5e7-4764-91a9-004d7eef2d94: collected in qodo-ownership-collected.json. New finding
+  63daf373-642f-4845-9804-c3651cd3b8d1 identified FFprobe JSON truncation on large inherited
+  metadata. Final correction strips inherited tags/chapters and requests bounded probe fields;
+  real >16 kB source metadata, full native decode and Chrome playback pass. This final correction
+  and the stronger Bloom test were not subsequently submitted to Qodo.
+
+Qodo's server ledger also returns historical out-of-scope HBC/reconstruction/governance findings
+and older Creative Production records despite fixes. They were not remotely dismissed. Those
+historical records do not authorize changing frozen contracts or expand this task; current-source
+dispositions above and preserved evidence distinguish resolved issues, upload omissions and backlog.
+All submitted operations were collected and their relevant current-source findings dispositioned.
+The repeated review loop is closed for this local handoff. Incomplete independent coverage and
+the final correction's absence of subsequent independent review remain explicit limitations;
+no clean-review, hosted-CI, deployment or HBC delivery certification is claimed.
+
+### Handoff
+
+CP-T01 through CP-T07 are complete for the selected local capability scope. Future applications
+belong under projects/ and route through tooling/creative/capabilities.json. Run
+`npm run creative:dev` for the instrument and /showcase.html; the retained production preview
+is at http://localhost:4173/showcase.html. Use creative:route before selecting engine peers,
+creative:check for portable checks, creative:test for browser acceptance and the documented
+creative:verify-assets/creative:verify-media commands when selecting native production.
+The standalone maintained Blender exporter stages its own script/blend/raw outputs; arbitrary
+exporters with relative imports or external files need an explicit source profile. Snapshotting
+media needs temporary disk space for the full input. Original source, derived bytes, provenance,
+failure traces, screenshots and verification logs remain available locally. Final git inspection
+preserves unrelated provisioning/worktree changes; no commit, push or deployment was performed.

@@ -1,0 +1,3 @@
+Basis Universal GPU texture transcoder, Binomial LLC. Apache License 2.0.
+https://github.com/BinomialLLC/basis_universal
+Redistributed unchanged from the selected local decoder source.

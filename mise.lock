@@ -33,6 +33,12 @@ aube = { path = ".mise/locks/npm-gltfpack/1.3.0", digest = "sha256:6f7cf168150c4
 backend = "npm:gltfpack"
 specifiers = ["1.3.0"]
 
+[[tools."npm:storybook"]]
+version = "10.6.1"
+aube = { path = ".mise/locks/npm-storybook/10.6.1", digest = "sha256:6583f81a841b1b4538e20f827176a9740bf0a928fcac30d134152e9e402a4726" }
+backend = "npm:storybook"
+specifiers = ["10.6.1"]
+
 [[tools.python]]
 version = "3.12.15"
 backend = "core:python"
