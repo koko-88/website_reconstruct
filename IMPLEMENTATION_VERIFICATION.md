@@ -523,3 +523,218 @@ exporters with relative imports or external files need an explicit source profil
 media needs temporary disk space for the full input. Original source, derived bytes, provenance,
 failure traces, screenshots and verification logs remain available locally. Final git inspection
 preserves unrelated provisioning/worktree changes; no commit, push or deployment was performed.
+
+## Creative Production Skill Hardening, 2026-10-13
+
+Scope: CP-H01 through CP-H05 in the existing specification/plan/tasks. This historical hardening inspection used the
+attached C: worktree of the K: repository at its branch snapshot, with earlier dirty work preserved.
+Its original-pipeline backlog describes that snapshot; the merge reconciliation below owns current status. This task changes authoring instructions, skill metadata/routing and review tooling;
+it does not create a website, replace rendering engines, or implement autonomous self-refinement.
+
+### Integrated capability and differential
+
+The [canonical skill](skills/creative-production/SKILL.md) now loads only the relevant guidance:
+[direction](skills/creative-production/references/direction.md),
+[scene score and motion](skills/creative-production/references/story-motion.md),
+[asset continuity](skills/creative-production/references/asset-continuity.md),
+[specialist handoffs](skills/creative-production/references/composition.md), and
+[visual/temporal review](skills/creative-production/references/visual-review.md).
+The concise [source map](skills/creative-production/references/source-map.md) records adopted,
+already-present and rejected capabilities against the exact supplied sources/pinned revisions.
+
+Read the supplied WebLoved workflow's complete auto-caption transcript and representative visible
+frames. Integrated image-grounded direction, consistent subjects, causal sequence, easing/landing,
+receiving-surface shadows and precise feedback. Scroll Craft's feeling/uniqueness/device/verification
+guidance and engine/harness were inspected: reuse the principles, not its coupled device runtime,
+global fingerprint mandate, KIE provider or universal photographic/continuous-scroll style.
+Reuse installed UI UX Pro Max/Frontend Design and GSAP/Pixi specialists. Current upstream UI UX
+data differs from the working installed version; no blind update or broader provider suite install.
+Project purpose, approved brand, truthful content and accessibility resolve conflicting advice.
+
+Routing adds Frontend Design, GSAP timeline/utils, existing Sharp review support and direct guidance
+pointers without adding dependencies/engines. `creative:discover -- --consumer projects/<name>`
+resolves selected workspace-local peers and never executes their modules. Thin Codex/.agents,
+Claude, Cursor and OpenCode descriptions now expose the richer trigger; Cline keeps its canonical
+pointer. The refreshed app skill catalog reflects the updated repository adapter.
+
+Read-only Higgsfield search/model constraints responded; ordinary model versus named preset
+handoff is explicit. Its website is not a tool schema. Built-in imagegen transparency and the
+exposed Canva cutout schema for an already-uploaded MEDIA are selected alternatives; no callable
+Higgsfield background-removal tool was found. No generation, identity training, private-account
+inventory, external asset upload or paid entitlement was exercised. Provider/input/spend approval
+is explicit, and source rights/identity/alpha/contact anchors must be inspected after production.
+
+### Fresh functional evidence
+
+Evidence directory: `artifacts/creative-production/skill-hardening/` (ignored local artifacts).
+
+| Check | Result and boundary |
+| --- | --- |
+| Reproducible provisioning | Missing current-worktree node_modules restored with the existing scoped root lockfile: 127 workbench/assets packages. Existing locked reconstruction tool package restored separately: 37 packages. No version/dependency change or workstation reinstall. Logs install.log/reference-install.log. |
+| Official Skill Creator format | Canonical skill and all three skill-shaped adapters validate with the installed quick_validate.py. Main instruction body remains under 500 lines; specialist manuals are not copied. |
+| Availability/routing | discovery-final.json: 19 selected modules/18 routed skills resolve, and 521 relevant exposed tool names including optional Canva. Resolution root is the selected workbench. Installed/exposed is not health/generation/runtime certification. |
+| Portable integration | 32/32, zero failures/skips: portable-delivery-final.log. Includes existing 14 asset tests, five routing/discovery tests and thirteen capture-review tests. Source identities, hard links, actual filesystem case aliases, regular-file/byte/pixel bounds, semantic crop/state equality, alpha-only changes, intended holds, reverse and unchanged originals are checked. |
+| Real browser review integration | 1/1: contact-sheet-complete-final.log. Ten real existing-SHIFT desktop/manual/reverse and mobile/reduced captures -> labeled decoded sheet/report with original hashes. Source build HTML hash and actual capture metadata retained. No new site. Captures under captures-final-handles-complete-20261013/; humanApproval remains pending. |
+| Existing workbench | Build/TypeScript pass (build.log). Isolated complete browser suite 48/48, zero failures/skips (browser-isolated.log; skill-hardening-browser-isolated/browser.json). First full run was 47/48 with a reduced-motion resume failure; three isolated repetitions and the isolated full suite pass unchanged frontend source. The initial trace is retained; no root cause or permanent-fix claim. |
+| Reconstruction preservation | Native existing regression 46/46, zero failures/skips (reconstruction-native.log). Initially scoped install yielded skipped coverage, then sandbox capture timed out; attempts retained. Explicit local Playwright/font/FFmpeg paths and approved host execution pass without source changes. |
+| Sealed evidence/HBC | preservation.json: 11/11; 481 frozen files and identical tree hash. Git diff is empty for reference, reconstruction skill, constitution, PRODUCT, ROADMAP and LOGIC_VERIFICATION. source-preservation.json is a live cross-check against K:, not an initial immutable baseline; five pre-existing C: source files differ from live K: and were not overwritten by this task. |
+
+Review tooling uses existing Playwright capture and Sharp, with a bounded manifest interface, no
+new runtime/framework. It rejects source/output identity collisions, pipes/devices and linked destinations; validated file handles bind source reads, and exclusive output creation preserves earlier rounds. Alpha is compared over black/white backgrounds; hidden RGB does not fake progress.
+Rendered state compares semantically; null is unknown. Suspected holds are triage, not a defect
+verdict or aesthetic score. Intentional holds and mobile/reduced states still need human review.
+Sharp's sandbox Fontconfig cache warnings were retained; captions render/decoding and inspected
+sheets pass. No unrelated cache/preferences change was made. Mac, Linux/hosted CI and physical
+phones are not newly certified by the Windows identity tests.
+
+### Official paired skill evaluation
+
+Three realistic planning prompts, each with a fresh old-snapshot and hardened-skill agent, were
+serialized under repository execution policy. Skill Creator explicitly authorizes evaluation
+agents. Outputs/transcripts/grades/timing live in ignored
+`skills/creative-production-workspace/iteration-1/`; maintained prompts are in the skill's evals.json.
+
+Inline grading follows the installed grader schema. Official aggregate_benchmark and generate_review
+produced [benchmark evidence](artifacts/creative-production/skill-hardening/skill-benchmark.md) and
+the [human review viewer](artifacts/creative-production/skill-hardening/skill-review.html).
+Objective orchestration expectations: hardened 15/15; old 6/15. One run per case/configuration;
+this is instruction coverage, not an aesthetic score, site output guarantee, trigger-accuracy
+measurement or statistically reliable improvement estimate. Both versions preserve optional-engine,
+brand and responsive basics. Human qualitative feedback and final creative approval remain pending.
+
+Official aggregation defaults were corrected to the actual one run/configuration and with-skill-first
+ordering. Missing executor token/tool counts are unavailable, not fabricated zero usage; timing is
+parent-observed wall time including orchestration overhead. Engineering utility fixes continued
+during/after the serialized draft evaluations; those functional fixes are verified independently,
+not claimed as a new paired website-output experiment. No autonomous taste loop, description
+optimizer/provider expansion or unrelated showcase was run. App opening of the static viewer
+was queued; opening is not evidence the user reviewed or approved it.
+
+### Original engineering findings at the hardening branch snapshot
+
+Predecessor a6f1d31c-65ca-4563-a928-36481a754de3 was assessed from the retained K: result with
+incomplete coverage. Current-task full-factory reviews confirm four original findings and expose
+two additional unchanged-pipeline cases. None is silently marked resolved:
+
+- Invalid GLB indices/positions can pass the small scene inspector; bounds/finite geometry remain
+  unverified beyond the valid original model. Predecessor finding 6d068212-8fb5-4c26-b272-8199fb3518e3.
+- Publication replaces existing destination links; link identity restoration is not guaranteed.
+  397fad0b-7643-4798-8d0e-4ddb1cb15732.
+- runTool rejects at timeout without confirmed process/tree termination before staging cleanup.
+  3d15a12b-b9b2-4f60-bca8-f4bac265354c.
+- Source path hashing and actual buffered/encoded bytes can differ if the source changes during
+  production. 9e0a4aed-12f1-4ad8-99fd-5dd58d24c5a3.
+- A successful Blender script producing no fresh outputs can reuse stale export files.
+  c3ba62c6-ad55-430f-98a7-b032a35460b8.
+- Source-file links can alias a derivative despite directory separation.
+  e3aa8a22-f7bb-4b80-a36e-f3fd2d2a842a.
+
+These remain CP-T06 backlog; the original asset pipeline was not modified by this skill-hardening
+task. Its baseline is validated on immutable owned originals and ordinary destinations. The skill
+now names those limitations and requires project-scoped repair/verification before selecting the
+unverified edge cases. Original provider generation, rigs/animations, WebGPU, physical devices,
+screen readers, Safari/Firefox and hosted CI remain unselected/untested as previously recorded.
+
+### Independent hardening review and final disposition
+
+Reused authenticated Qodo CLI 1.5.0 and the user's existing explicit Creative Production payload
+authorization. Sandbox credential lookup failed; the exact read-only host retry succeeded.
+No account/repository settings or review ledger statuses were changed. Independent issue/compliance
+review ran at auto depth; skills/spec/UI/persona/cross-repo reviewers were skipped. Most complete
+result envelopes still declare coverage.complete=false. This is assessed partial engineering
+review, not comprehensive or clean certification.
+
+| Operation | Current disposition |
+| --- | --- |
+| 4e72359f-4430-49ec-a66a-e0a7cc223f2e | Hard-linked output finding fixed with identity/link protection. Existing lockfile omission reconciled by actual scoped install and inclusion in later payload. Four original asset issues plus stale export/source link cases remain in the unchanged C: pipeline backlog. |
+| f58663ca-7a60-4f38-b36d-e989056cd027 | Regular-file input, equivalent crop and consumer-local resolver findings fixed and tested. |
+| 0ef0647b-1210-42f0-84f3-4874a272bbcc | Failed managed-agent transport; retained as failure. Earlier successful same-repo reviews do not imply a disconnected account. One bounded retry used the whole hardening scope. |
+| 3ec54419-099d-4264-9c0a-00934f3db53c | Painted-state key order and alpha-only changes fixed using native semantic equality and compositing. The workspace-missing claim came from narrowed payload dependency omission; later payload includes the existing sources. Its coverage.complete=true does not include skipped specialist reviewers or later fixes. |
+| 2bc1fd37-6c49-4b23-9fbb-b201e67c4c0d | Case-insensitive non-Windows source collision fixed with bigint device/inode identity, not OS-name assumptions. Actual filesystem alias/hard-link regressions pass; Mac execution is not claimed. |
+| 093c4e26-51a3-4c7d-bdeb-54bf05fdc2f4 | Input pathname replacement/output link substitution fixed with validated FileHandle reads and exclusive wx creation. Controlled real-file replacement/link insertion tests preserve evidence. GLB/poster/KTX/WASM absence claims were binary upload omissions. |
+| ce1314cc-fc26-4803-a93d-6ed292ce2d07 | Relative/empty-PATH resolution fixed without weakening strict absolute overrides; executable metadata is still not an execution certificate. |
+| d5cb713c-8f57-428b-b31a-f44e66fc7646 | Latest collected review reports only the repeated binary/source omission (3598c66a-ffad-4792-b552-a609bc59ac81); actual untracked/not-ignored .blend/GLB/images/KTX/WASM exist and match provenance/loading/decoding checks. No new actionable hardening source finding. Coverage remains incomplete, so no clean-review claim. Stop the automatic loop on this repeated input limitation. |
+
+Result envelopes/context/submissions are retained in the local evidence directory. Original
+asset findings and older out-of-scope server ledger entries were not remotely dismissed. No
+current-tool guard finding is silently accepted: each actionable one was corrected and functionally
+verified. Latest evidence: 32/32 portable, actual review integration 1/1, existing isolated browser
+48/48, native reconstruction 46/46 and packet 11/11. Final source remains uncommitted/unpushed.
+
+Human qualitative skill-output feedback, subjective direction/final creative approval, provider
+generation/alpha/identity acceptance and physical-device coverage remain pending or unselected.
+The C: and live K: checkouts differ in five pre-existing package/workbench source files; their
+current hashes/timestamps are a cross-check, not an immutable initial baseline or attribution of
+changes. This task did not synchronize or overwrite those files. No new site/engine/vendor,
+commit/push/publication, or deferred autonomous self-refinement system was introduced.
+
+
+## Creative Production merge reconciliation, 2026-10-13
+
+Current merge: main 84dd500fe44d2226a733863c9b41583688033add and Skill Hardening
+945d53dacaf0063705d406390174595f504939a9, base 7a6236880f2e7579ac4af534d67444821b4c0d8c.
+Twenty-one conflicts were inspected against both index stages; original versions/markers and
+per-file semantic decisions are retained under artifacts/creative-production/merge-84dd500-945d53d/.
+The native graph predates both parents (built at base); change-frequency analysis timed out.
+It narrowed inspection but does not certify current source. Native diffs/source/tests are authoritative.
+
+Main's later asset fixes and stronger regression coverage are retained: streamed raster byte caps,
+finite/in-range triangle inspection, output-link refusal, owned-tree shutdown before cleanup,
+exact captured-byte provenance, fresh staged Blender source and large-metadata-safe media probing.
+The hardening branch's richer original-art direction, storyboard/causal motion, asset continuity,
+provider boundaries, mobile composition, temporal contact sheets and human approval distinctions
+are integrated with original native/runtime references and agent adapters. Consumer-local discovery,
+relative/empty PATH resolution, optional Canva metadata and all existing engine boundaries remain.
+Root dependencies and lockfile are unchanged; scripts include both implementations' checks.
+
+Historical hardening claims of six open original-pipeline findings are not current evidence.
+Main resolves geometry validation, destination-link replacement, timeout cleanup, source-byte hash
+binding and stale Blender exports with corresponding regressions. Source-file aliases to derived
+outputs need current review/disposition; ordinary owned sources remain the tested production profile.
+Paired hardening prompt evaluations are preserved as historical planning evidence, not rerun here
+or treated as merged-site aesthetic certification. Human qualitative approval remains pending.
+
+Fresh evidence directory: artifacts/creative-production/merge-84dd500-945d53d/.
+
+| Integrated check | Result |
+| --- | --- |
+| Build / TypeScript | PASS, build.log. Workbench/engine source and dependencies are unchanged from main; lockfile byte-identical to both parents. |
+| Union portable checks | 34/34, zero skips: 16 original asset, five composed routing/discovery and thirteen new review checks; portable.log. |
+| Complete browser suite | 48/48, zero unexpected/flaky/skipped; browser.log and browser/browser.json. Includes unchanged High Bloom comparison, lifecycle, failures, desktop/touch/reduced and reverse/interruption behavior. |
+| Native Blender/glTF/KTX | 2/2, zero skips; native-assets.log, preserving both source blend/raw and serving model/texture/provenance on failed publication. |
+| Native media / Chrome | 1/1, zero skips; native-media.log. Large inherited metadata, native full decode and actual Chrome H.264 playback (320x180, readyState 4, time 0.542103, no error). |
+| Browser-to-contact-sheet | 1/1, ten actual SHIFT desktop/manual/reverse/mobile/reduced captures, no page errors; review-browser.log. Decoded labeled sheet inspected; humanApproval remains pending. Captures are under skill-hardening/captures-merge-84dd500-945d53d/. |
+| Reconstruction | 46/46, zero skips; reconstruction-final.log. Initial wrong package-entry configuration failed and remains in reconstruction.log; source-confirmed package-directory configuration passes unchanged reconstruction code. |
+| Skill format | Canonical and three skill-shaped adapters pass the existing official quick_validate.py. Existing native references and Cline canonical pointer remain. |
+| Discovery | 19 modules, 18 routed skills and seven native entrypoints resolve; discovery-verified.json. The first ImageMagick override was incorrect and retained in discovery.json; the existing recorded/versioned entrypoint was verified and used. No installation or capability health claim from metadata. |
+| Historical evidence | 175 original hardening artifact/evaluation files, 8,887,559 bytes, copied/matched by SHA256 from the verified incoming C: worktree without changing it; hardening-evidence-preserved.json. Restores actual benchmark/viewer links. Failed first protected-path copy was retried under authorized host execution; no evidence invented or overwritten. |
+| Preservation / pointers | Final packet report preservation-final.json: 11/11 PASS, 481 sealed reference files/identical tree hash. Frozen evidence, reference-reconstruction, constitution, PRODUCT, ROADMAP, LOGIC_VERIFICATION, mise and root lock unchanged against the merge parents. Original missing-artifact link failure is retained in preservation.json. |
+
+Requested Qodo plugin review used the existing authenticated CLI 1.5.0, auto final depth and the
+verified pushed merge base, covering the full intended Creative Production/hardening scope.
+Operation 43fb1d91-31b2-4fab-8800-aae9ff2ce5da was collected in qodo-collected.log.
+Issue/compliance reviewers ran; skills/spec/UI/persona/cross-repo were skipped. The envelope says
+incomplete_input and coverage.complete=false, and binary inputs were excluded during submission.
+The initial malformed local context was rejected before submission; corrected self-contained
+context/submission are retained. No extra review was submitted to chase complete coverage.
+
+Two supported CI coverage findings remain explicitly open:
+
+- 0a0a82aa-1918-4668-a1b4-6bff517bd114: the existing hosted workflow does not select/provision
+  Blender/Toktx and run creative:verify-assets. Both native checks pass locally; hosted coverage
+  requires a selected, reproducible native-tool runner profile. This merge preserves existing CI.
+- 34b09d4c-475c-4c16-8700-e7572460b567: the hosted workflow does not run the added
+  creative:verify-review against a running preview. Its actual local integration passes; hosted
+  wiring remains follow-up work. No hosted CI run occurred, and neither finding was dismissed.
+
+No source-file-alias guarantee is inferred from absent new findings: owned originals and ordinary
+unlinked destinations are the tested native profile. Full hostile/concurrent filesystem safety,
+physical devices, Safari/Firefox, provider jobs and subjective human quality approval remain
+outside this merge's certification. No merge/runtime failure remains in the exercised profiles;
+partial independent review and the two hosted coverage gaps are not a clean-review certificate.
+
+All twenty-one conflict resolutions are verified and staged. The two current-guidance crosswalk
+corrections are staged and original automatic merge additions remain. No unmerged index entries
+or conflict markers remain; the staged whitespace check passes. Final Git status/index/parent checks are retained in final-state.json.
+Leave MERGE_HEAD intact and HEAD at main 84dd500 for the user's manual merge commit/push.
+No commit, push, merge abort, history reset, worktree deletion or unrelated implementation.

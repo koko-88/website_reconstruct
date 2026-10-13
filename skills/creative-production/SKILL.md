@@ -1,76 +1,107 @@
 ---
 name: creative-production
-description: Produce original interactive websites with design direction, motion, 3D, shaders, particles and original assets using the AI Factory workbench. Use for creative authoring; reference inspection and fidelity evidence remain owned by reference-reconstruction.
+description: Build and refine original commercial websites with distinctive art direction, image-grounded moodboards, cinematic storytelling, causal motion, 3D, shaders, particles and consistent assets through the AI Factory. Use for original creative frontend authoring, expressive landing pages, scroll experiences, mobile art direction and browser visual critique, even when no engine is named. Reference inspection and reconstruction evidence belong to reference-reconstruction.
 ---
 
 # Creative Production
 
-Read repository AGENTS.md and the active project contract. This skill owns original authoring and
-capability selection. It does not change reconstruction evidence, HBC gates or Reference Intelligence.
+Read repository AGENTS.md and the active project contract. This skill orchestrates original
+authoring; it does not change reconstruction evidence, HBC gates or Reference Intelligence.
+Work in the existing project or a selected consumer under projects/. The maintained workbench is
+an implementation reference, not the default identity or dependency list for every site.
 
-## Discover and select
+## Discover only what the project needs
 
-Run `npm run creative:discover` from the factory root. Supply `-- --mcp-inventory FILE --output FILE`
-only with a real inventory from the current agent tool catalog. Discovery reports installed/exposed,
-never certified. Read `tooling/creative/capabilities.json`, then use
-`npm run creative:route -- dom motion spatial review` with only the required profiles.
-Probe the selected native executable/service before use; configuration is not connectivity.
+Run `npm run creative:discover` from the factory root. Pass `-- --mcp-inventory FILE --output FILE`
+only with a real current-agent inventory. Installed/exposed is not exercised or certified.
+For a selected consumer use `-- --consumer projects/<name>` so workspace-local peers resolve.
+Read tooling/creative/capabilities.json; select `npm run creative:route -- dom motion review`,
+adding spatial, particles, assets or textures only when needed. Probe selected executables/services.
+Repair missing capabilities within authorization; do not install advertised upstream stacks blindly.
+Load [specialized handoffs](references/composition.md) for the selected discipline. Use skill paths
+from discovery; do not duplicate GSAP/Pixi/design manuals. Project audience, approved identity and
+accessibility resolve conflicting design advice.
 
-Use the maintained `projects/creative-workbench` as the runnable reference, and consume its source
-packages in a new project under `projects/<name>`. Full root install includes the reference app.
-A consumer selects individual packages/peers; do not copy the workbench's dependency list by default.
+## Establish a direction the visitor can recognize
 
-- DOM/layout: creative-core plus installed frontend-ui-engineering and UI UX Pro Max.
-- UI transitions/scroll: creative-motion, installed GSAP core/react/scrolltrigger/performance skills;
-  Motion for component transitions. Give one library ownership of each animated property.
-- 3D/glTF/shader: creative-three, Three/R3F/Drei. Read [spatial patterns](references/spatial.md).
-- 2D fields/sprites: creative-pixi plus installed pixijs router and its selected specialist skills.
-- KTX2 textures: select the textures profile explicitly; it requires the chosen Three installation for local Basis decoders.
-- Source assets: creative-assets; read [asset workflow](references/assets.md). Blender, glTF
-  Transform, gltfpack, KTX and FFmpeg are optional native tools, never automatic reinstall targets.
-- Validation: Playwright/axe plus available browser-testing-with-devtools, Polypane or Spector.
-  Match the tool to the check and verify service connectivity before depending on it.
+Read [direction and visual intelligence](references/direction.md) for new concepts or a makeover.
+Capture purpose, audience, commercial action, content/proof, feeling and constraints in the
+project's owning design/spec artifact. Infer known answers; ask only for consequential missing
+decisions. A simple page may need a paragraph and a frame; an expressive experience needs a scene
+score and representative desktop/mobile compositions.
 
-Find installed skill paths in discovery output; do not duplicate their manuals. If design intelligence
-is unavailable, derive an explicit project design contract rather than falsely claiming a search.
-Figma and image/video generation are optional authoring inputs; use their installed skills and
-provider tools only when selected by the task. No paid generation or public publishing is implied.
+Ground decisions in visible images, composition studies and material/type/light references.
+Annotate each moodboard item with what it teaches and what stays original. Inspiration does not
+authorize copying identity, assets, claims or proprietary layouts. Delegate reference acquisition
+and evidence contracts to reference-reconstruction when inspection is needed; keep creative
+interpretations separate from immutable observations.
 
-## Author and verify
+Make structural originality concrete: a subject, visual grammar, commercial insight or signature
+interaction recognizable without the logo/palette. Avoid generic decoration and universal style
+bans. A quiet commercial page can be exceptional without a GPU scene. Get explicit human approval
+of a concrete visual direction before treating subjective taste as settled. Existing approval
+persists; prepare reviewable compositions through reversible work. Silence/test passes/agent taste
+are not human approval.
 
-Before implementation, write purpose, audience, visual direction, typography/palette, responsive
-rules, interaction states and acceptance in the project's owning spec/design artifact.
-Use [authoring and review](references/authoring.md). Preserve source assets and record attribution,
-license and hashes separately from derived serving assets. A hash does not grant reuse rights.
+## Score scenes, then select mechanisms
 
-Run `npm run creative:build`, `npm run creative:check` and `npm run creative:test` for workbench
-changes. Future projects own their own acceptance tests; workbench success is not acceptance of a
-different website. Inspect screenshots AND temporal/state tests. Check reverse/interrupted scroll,
-keyboard/touch, live reduced-motion changes, pause, offscreen/hidden rendering, resize, route cleanup,
-load failures and lost graphics. Measure the actual renderer, DPR, draw calls and frame timings.
-Essential content and actions stay in DOM; GPU failure needs a meaningful static view.
+Read [story and motion](references/story-motion.md) for scroll, a persistent subject or cinematic
+choreography. Give each beat a visitor feeling, information/proof, visible cause and response,
+framing, motion ownership, reading/settling hold, mobile variant and resolution. Plan a memorable
+moment when justified; resolve it into the commercial action. Emotional drama cannot displace
+essential truthful content.
 
-Record performed checks, missing integrations and review disposition under
-IMPLEMENTATION_VERIFICATION.md and the owning task/plan. Keep frozen evidence intact.
+Keep a persistent hero only when it carries the story. Preserve identity and visual scale, compose
+text around it, and make shadows respond to subject and receiving surfaces. Motion needs a cause,
+deliberate order, launch/settle curves and stable landing. Repeated fades do not create a story.
+Native scrolling and short readable compositions remain valid choices.
 
-Use the user-selected WebLoved visual ambition and the maintained immersive /showcase.html
-reference when a project calls for expressive scenes. Carry the reference into a project-specific
-storyboard and actual visual review; see authoring and review. SceneJourney combines camera,
-exploded glTF and shader particles without adding another rendering engine. Functional checks do
-not establish channel-equivalent visual quality by themselves.
+Reuse core/motion/Three/Pixi packages and [maintained patterns](references/authoring.md) and
+[spatial guidance](references/spatial.md). Give one library ownership of each animated property.
+Prefer transforms/opacity, scoped GSAP cleanup and demand rendering; avoid per-frame React state.
+Do not add smooth-scroll middleware without a real requirement. Select Three/R3F/Drei/postprocessing
+for scenes, Pixi for 2D fields, Motion for component transitions.
 
+## Produce a coherent asset family
 
-For an installed but stopped Windows Blender/Polypane bridge, use
-`pwsh -File tooling/creative/start-workstation.ps1 -Capability blender -Executable ABSOLUTE_BLENDER_EXE`
-or the polypane capability with its verified executable. The launcher preserves existing processes
-and never installs, replaces scenes, changes preferences or enables provider accounts. Re-probe the
-MCP after launching. Polypane uses the documented --remote-debugging-port=5858; navigate an existing
-pane with its page ID because its Electron runtime does not support Chrome's new-page/context APIs.
-Chrome/Polypane MCP filesystem access may permit only the OS temporary directory when the client
-has not negotiated repository roots. Save there, then copy the returned file into project artifacts
-with normal authorized filesystem tools; do not disable the service's path protections.
+Read [asset continuity and provider handoff](references/asset-continuity.md) when commissioning,
+generating, cutting out or replacing assets, and [native workflows](references/assets.md) for
+commands. Specify identity, camera/orientation, silhouette, light, color/material, crop/alpha,
+contact anchor and variants. Carry the approved subject through scenes. Review replacements in
+every pose and mobile frame, not only the hero.
 
-Optional asset inputs are discoverable in capabilities.json: Figma, built-in imagegen, Higgsfield
-image/video/3D catalogs and Firecrawl research. Use each selected provider's installed skill and
-actual schema. Catalog/authentication health does not certify generation or a project's final assets.
+Use actual provider schemas and installed skills. Catalog/authentication is not generation.
+Paid generation and external data transmission require explicit authorization for provider,
+inputs and spend limit; a skill cannot grant it. Prepare the concrete request first. Do not
+silently submit jobs, train identities, upload private assets, add accounts or publish. Keep
+originals separate, record rights/provenance and use Blender/glTF/Sharp/FFmpeg/KTX for derivatives.
+Hashes establish bytes, not rights or visual consistency.
 
+## Review the browser, not the build alone
+
+Read [visual and temporal review](references/visual-review.md) for captures, contact sheets,
+dead-scroll triage and precise feedback. Inspect representative states and transitions on desktop,
+touch/mobile and reduced motion: start/middle/end, entry/exit, reverse, fast/slow and interruption.
+A moving background cannot prove story progression. Label intentional holds and judge whether
+the reader has useful content during them.
+
+Reuse Playwright/DevTools/Polypane/Spector. Create a sheet from actual captures with
+`npm run creative:review -- --manifest CAPTURES.json --output REVIEW_DIRECTORY`; schema/example are
+in visual-review. The helper does not capture, alter originals, judge aesthetics or refine
+autonomously. Its flags need the scene score and actual interaction.
+
+Collect feedback in bounded rounds: annotated capture, viewport/state/progress, observed problem,
+intended result and affected scenes. Apply concrete authorized fixes and retain round evidence.
+Require explicit human direction/final creative approval separately from engineering acceptance.
+Do not build an autonomous self-refinement loop or fabricate subjective parity.
+
+For changed workbench code run creative:build, creative:check and creative:test; consumers own their
+checks. Verify keyboard/touch/focus, live reduced-motion, pause, resize, failures, lost graphics,
+offscreen/hidden rendering and teardown. Keep essential content/actions in DOM with meaningful
+static fallback. Measure actual renderer/DPR/draw calls/timings on target devices. Software GPU,
+axe and screenshots provide bounded evidence, not full certification.
+
+Record checks, omissions, outstanding reviews and human approval state in the owning task/plan and
+IMPLEMENTATION_VERIFICATION.md. Preserve frozen evidence. Functional success cannot establish
+WebLoved-wide visual equivalence. Read [source decisions](references/source-map.md) for the
+differential and rejected upstream mandates; it is supporting rationale, not new project policy.

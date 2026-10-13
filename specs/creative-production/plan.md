@@ -51,3 +51,48 @@ four-mesh GLB with instance material ownership, bounded shader points and an opt
 Three composition chapters assemble, separate and resolve the sculpture. DOM narrative and
 keyboard/manual progress remain usable at rest and during GPU failure. CSS sticky positioning
 keeps native scrolling. No additional engine, proprietary scene format or remote runtime asset.
+
+## Skill hardening plan
+
+The hardening branch used a C: worktree, preserving its existing dirty work. Snapshot the old
+canonical skill in ignored skills/creative-production-workspace/skill-snapshot. Analyze the exact
+first-party video transcript and visible frames plus pinned source repositories. Extend the
+canonical skill and existing routing, adding no renderer or provider account. Reuse installed
+design/GSAP/Pixi skills and Playwright/Sharp. A capture-manifest review utility supplies contact
+sheets and temporal triage without adopting Scroll Craft's coupled engine/device schema.
+
+Use three paired fresh-context evaluations, serialized to preserve repository execution mode;
+Skill Creator explicitly authorizes evaluation subagents. Use official aggregation/viewer in the
+sibling workspace. Judge objective orchestration; subjective creative judgment stays human.
+Description-trigger optimization is unselected. No separate website, commit or push.
+
+Prior Qodo operation a6f1d31c-65ca-4563-a928-36481a754de3 was collected in K: artifacts and has
+incomplete coverage with four asset-integrity findings. Reconcile their dispositions explicitly;
+the old pending review prose does not establish completed certification.
+
+Hardening checkpoint: canonical progressive references, composed routing/consumer discovery,
+source/provider handoff and capture-manifest reviewer are implemented. Portable 32/32, actual
+workbench sheet integration 1/1, isolated browser 48/48, native reconstruction 46/46 and sealed
+packet 11/11 pass. First browser and sandbox reconstruction failures are retained; no root cause
+is fabricated. Three serialized paired prompt evaluations cover objective orchestration only
+(15/15 hardened, 6/15 old). Official review viewer exists; human feedback remains pending.
+These hardening-branch asset findings are reconciled against the later main fixes during this merge;
+current dispositions and fresh integrated checks belong to IMPLEMENTATION_VERIFICATION.md.
+Historical paired planning results do not certify the merged runtime or subjective quality.
+
+## Merge reconciliation, 2026-10-13
+
+Merge main 84dd500 with hardening 945d53d in the existing K: checkout. Preserve main's later
+asset/lifecycle/metadata fixes and stronger tests; integrate all hardening references/evals,
+review utility, consumer-local discovery and routing. No new engine/dependencies/site or agents.
+Verify build, the union portable suite, full browser suite, actual review captures, selected native
+assets/media, reconstruction and sealed pointers. Collect requested Qodo review, disposition
+against current source, then stage only reconciled merge files. Leave MERGE_HEAD intact and
+HEAD unchanged for the user's manual commit/push. Results belong to the central verification owner.
+
+Merge checkpoint: integrated build, portable 34/34, browser 48/48, native assets 2/2, media/Chrome
+1/1, capture-review 1/1 and reconstruction 46/46 pass without skips. Historical hardening evidence
+is preserved and final packet/pointers pass 11/11. Requested Qodo operation is collected with
+partial coverage and two explicitly open hosted CI gaps; no runtime merge failure in tested
+profiles. Current merge/index/parent state and evidence paths are owned by the central report.
+Human subjective approval/untested profiles remain explicit. No commit or push.

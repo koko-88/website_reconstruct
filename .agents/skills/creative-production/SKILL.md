@@ -1,6 +1,6 @@
 ---
 name: creative-production
-description: Build original interactive websites using the AI Factory Creative Production packages, native asset workflows and browser validation.
+description: Build and refine original websites with distinctive direction, cinematic storytelling, consistent assets, causal motion and browser visual acceptance through the AI Factory.
 ---
 
 Read the repository [AGENTS.md](../../../AGENTS.md), then the canonical

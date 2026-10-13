@@ -1,5 +1,5 @@
 ---
-description: Produce original interactive websites with the AI Factory Creative Production layer
+description: Build and refine original websites with distinctive direction, cinematic storytelling, consistent assets, causal motion and browser visual acceptance through the AI Factory.
 ---
 
 Read [AGENTS.md](../../AGENTS.md) and the canonical

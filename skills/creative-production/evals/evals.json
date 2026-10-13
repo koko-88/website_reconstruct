@@ -1,0 +1,44 @@
+{
+  "skill_name": "creative-production",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "We have an approved acoustic guitar cutout and two electric guitar cutouts, all front-facing with alpha. Design an original commercial guitar-shop scroll experience under projects/guitar-shop, ambitious enough to be memorable, using our existing factory. The acoustic should connect the story to the final product choice. No new generated assets are approved. Produce a concise actionable direction/story/implementation/acceptance handoff, including phone behavior, before source implementation. Do not create a website or edit factory source in this evaluation.",
+      "expected_output": "A coherent original product story and proportional native capability handoff.",
+      "files": [],
+      "expectations": [
+        "Uses the supplied subject consistently and defines orientation/contact/shadow constraints rather than proposing independent scene regeneration.",
+        "Connects a specific visible motion cause to a later visual response with order/easing/landing behavior.",
+        "Defines a feeling-to-visible-cause progression and a concrete commercial resolution.",
+        "Defines deliberate mobile framing and reduced/manual alternatives retaining essential product choice.",
+        "Requires explicit human creative direction/final acceptance separately from functional tests."
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "Plan a restrained, distinctive landing page for an infrastructure monitoring product. Buyers need to understand the benefit and request a demo quickly. Our approved identity is blue/white with licensed Inter; keep it. No 3D, long pinned scroll, generated media or paid providers. Use AI Factory selectively and produce a concise actionable design/engineering/acceptance handoff. Do not create a website or edit factory source in this evaluation.",
+      "expected_output": "Commercially useful deliberate design without style/engine overreach.",
+      "files": [],
+      "expectations": [
+        "Preserves approved blue/white and Inter instead of imposing an unrelated signature style.",
+        "Selects DOM capabilities without Three, Pixi or a universal all-engine install.",
+        "Proposes a product-specific structural/interaction distinction that supports understanding or demo action.",
+        "Composes installed design intelligence and frontend guidance conditionally with project requirements winning conflicts.",
+        "Scales artifacts and approval to a small page while separating human visual acceptance from engineering checks."
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "A cinematic product page's build and axe pass. On desktop, atmospheric particles change while the product sometimes appears stuck; phone crops obscure the subject's edge; the final landing sometimes overshoots in reverse. The team has screenshots and a claimed clean provider catalog, but no approved paid generation or private-asset upload. Plan one precise browser review and feedback round using existing factory tooling before accepting the page. Distinguish measured findings from these user reports and explain what remains unproven. Do not create a website, submit provider jobs, or edit factory source in this evaluation.",
+      "expected_output": "Evidence-aware temporal feedback with continuity/provider/human boundaries.",
+      "files": [],
+      "expectations": [
+        "Samples scene entry/middle/exit, reverse and interruption rather than relying only on static screenshots/build/axe.",
+        "Uses actual captures/contact-sheet review and isolates subject/story from ambient pixel activity when triaging holds.",
+        "Distinguishes intentional reading/static/reduced holds from suspected unexpected dead scroll without an aesthetic score.",
+        "Defines exact viewport/state/observed-versus-intended screenshot feedback and mobile-specific framing correction.",
+        "Does not treat provider catalog as generation or authorization and preserves human final creative approval."
+      ]
+    }
+  ]
+}

@@ -38,3 +38,20 @@ Verify existing installations before repair; retain version/checksum and functio
 Discovery remains read-only. A selected native application launcher preserves existing processes
 and scenes. Optional external accounts/jobs are probed only through suitable read-only health or
 catalog operations; generation, paid-provider expansion and publication remain separately selected.
+
+## Skill hardening (2026-10-13)
+
+- CP-H01: differential analysis of the supplied WebLoved workflow, pinned Scroll Craft, UI UX Pro
+  Max, Anthropic Frontend Design and live Higgsfield. Separate observations and local decisions.
+- CP-H02: progressive direction, image-grounded moodboards, structural uniqueness, proportional
+  storyboards/feeling curves, causal motion and mobile art direction. Project requirements win.
+- CP-H03: subject/source continuity, alpha/contact anchors, approved provider handoff, derivatives
+  and provenance. Paid generation/external transmission require explicit authorization.
+- CP-H04: actual contact sheets and conservative temporal hold triage using existing capture/Sharp.
+  Preserve originals/metadata; test forward, reverse, interruption and reduced states. Flags need
+  human interpretation; no aesthetic score or autonomous refinement.
+- CP-H05: official Skill Creator validation and paired old/new evaluations, functional integration,
+  precise review disposition and human review artifact. Subjective creative approval stays human.
+
+Preserve existing workbench/packages/adapters/tests and reconstruction/HBC gates. No separate
+showcase, commit or push. Human skill-output feedback remains pending until the user supplies it.

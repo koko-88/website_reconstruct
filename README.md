@@ -9,7 +9,7 @@ is outside this change. Start coding-agent work from [AGENTS.md](AGENTS.md).
 
 Node 24.19.0 / npm 11.17.0; native workstation tools remain locked in mise.
 ```text
-npm ci --ignore-scripts
+npm ci --workspace @ai-factory/creative-workbench --workspace @ai-factory/creative-assets --include-workspace-root=false --ignore-scripts
 npm run creative:dev
 npm run creative:build
 npm run creative:check
@@ -64,3 +64,14 @@ FFprobe; set CREATIVE_MEDIA_BROWSER=1 for real Chrome H.264 playback. The portab
 independent of native application installation. See the canonical skill for the Windows MCP
 launcher and permitted temporary screenshot handoff. Optional Figma/imagegen/Higgsfield/Firecrawl
 inputs are routed through their existing skills and real provider schemas.
+
+Creative direction, scene scoring, asset continuity and subjective approval are routed through
+the hardened canonical skill's progressive references. See its source-map for adopted practices
+and consciously deferred integrations. Generate a labeled contact sheet from actual browser
+captures with `npm run creative:review -- --manifest CAPTURES.json --output REVIEW_DIRECTORY`.
+The visual-review reference defines the manifest and conservative hold flags; it never grants
+creative approval. To verify integration against a running built workbench, set
+CREATIVE_REVIEW_URL to its loopback origin and run `npm run creative:verify-review`.
+Use a fresh review directory each round. Verification creates a unique capture round; an explicit
+CREATIVE_REVIEW_RUN_ID must be new. Prior captures/reports remain intact. See the centralized
+verification record for reconciled engineering findings, merge checks and pending human feedback.

@@ -35,11 +35,13 @@
     "creative:build": "npm run build --workspace @ai-factory/creative-workbench",
     "creative:assets": "node packages/creative-assets/cli.mjs",
     "creative:dev": "npm run dev --workspace @ai-factory/creative-workbench",
-    "creative:check": "node --test tooling/creative/route.test.mjs packages/creative-assets/pipeline.test.mjs",
+    "creative:check": "node --test tooling/creative/route.test.mjs tooling/creative/review.test.mjs packages/creative-assets/pipeline.test.mjs",
     "creative:test": "npm run test --workspace @ai-factory/creative-workbench --",
     "creative:discover": "node tooling/creative/discover.mjs",
     "creative:route": "node tooling/creative/route.mjs",
     "creative:verify-media": "node --test packages/creative-assets/native-media.test.mjs",
-    "creative:verify-assets": "node --test packages/creative-assets/native-assets.test.mjs"
+    "creative:verify-assets": "node --test packages/creative-assets/native-assets.test.mjs",
+    "creative:review": "node tooling/creative/review.mjs",
+    "creative:verify-review": "node --test tooling/creative/review.browser.test.mjs"
   }
 }
