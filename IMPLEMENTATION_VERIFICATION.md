@@ -353,3 +353,283 @@ Other connected evidence tools used: code-review-graph `get_architecture_overvie
 `get_affected_flows_tool`; GitHub commit-workflow discovery, generic fetch, workflow run jobs and
 workflow job logs. Native Git/source inspection and Node/Python/Spec Kit/mise checks verify their
 results. Graph tools and GitHub are separate integrations, not Qodo tools.
+
+## Creative Production integration: initial workstation verification, 2026-10-12/13
+
+Scope: [CP specification](specs/creative-production/spec.md), [plan](specs/creative-production/plan.md)
+and [tasks](specs/creative-production/tasks.md). Inspection base:
+`7a6236880f2e7579ac4af534d67444821b4c0d8c`. Work is local/uncommitted. HBC delivery,
+Reference Intelligence and frozen reconstruction evidence are outside this change.
+
+### Decision
+
+At the initial K: workstation checkpoint, Creative Production was operational for tested profiles: five selectable source
+packages, agent discovery/routing/skill adapters, maintained original browser instruments and the
+immersive SHIFT reference under projects/. All 18 selected packages, 15 routed skills and seven
+native entrypoints resolve; actual workflows below establish more than discovery. These initial results do not resolve the later asset-integrity findings recorded below. Future projects select their required engine peers and own their art,
+assets, budgets and final visual acceptance.
+
+The user selected [WebLoved](https://www.youtube.com/@WebLoved) as the visual ambition target.
+First-party browser inspection included [assembled/close-up/exploded product states](https://www.youtube.com/shorts/vd8IE8Cl4Jc)
+and [scroll-driven scene presentation](https://www.youtube.com/shorts/VwFlsB1dqRw).
+The [authoring contract](skills/creative-production/references/authoring.md) requires a storyboard,
+signature interaction, coherent typography/materials/light and actual browser visual review.
+SHIFT implements original exploded glTF, a moving camera, shader particles, outlined type and
+responsive/manual chapters. Neither a video nor functional tests prove channel-wide visual parity.
+
+Workstation: Xeon E5-2697 v4 (18 cores/36 threads), approximately 32 GB RAM, NVIDIA Quadro P2000
+with 5,120 MiB VRAM (nvidia-smi; WMI underreported memory), driver 582.78, Windows 10 Pro 19045.
+Native Blender 5.2.2 LTS, KTX 4.4.2, glTF Transform 4.5.1, gltfpack 1.3.0 and FFmpeg/FFprobe
+7.1.1 were exercised; Node 24.19.0/npm 11.17.0 ran checks. Inspection covered development tools
+and relevant installation locations, without crawling unrelated private files/accounts.
+
+React 19.3.0, Three 0.186.1, Fiber 9.8.1, Drei 10.7.9, react-three/postprocessing 3.2.0,
+postprocessing 6.39.5, GSAP 3.15.0, Motion 12.43.0 and PixiJS 8.22.0 are selected in the
+maintained consumer. Postprocessing constrains Three to <0.187. Provisioned tools and mature
+skills were reused. Existing mise/Storybook edits and dirty attached worktrees remain intact.
+Only missing ImageMagick was installed, under the user's explicit repair authorization:
+7.1.2-33 from the existing Scoop manifest, checked installer SHA256
+`e5f1e14f8520b3720e626185700489fe4267026611834d74fbf4cd598ffa0788`.
+Original SVG -> 480x480 decoded WebP passed. Existing Codex processes need the installation
+directory on PATH and its native module environment; a new process inherits the repaired user
+environment. The failed first DLL lookup and successful configured run are retained.
+No existing workstation capability was reinstalled; no paid generation, deployment, commit or push.
+
+### Executed workflows
+
+Artifacts are under `artifacts/creative-production/`; ignored native reports are local evidence.
+
+| Capability | Result and practical boundary |
+| --- | --- |
+| Discovery/routing | Registry separates engine peers, native tools and MCP probes. discovery-repaired.json resolves 18 packages/15 skills/seven native entrypoints; 481 creative/input tools are exposed, not individually certified. Session metadata contains 1,168 total tools, with 533 creative/review entries retained in mcp-inventory-final.json. |
+| Agent access | Canonical creative-production skill and thin Codex/.agents, Claude, Cursor, Cline and OpenCode adapters. Existing UI UX Pro Max/GSAP/Pixi guidance reused. Skill format validates; actual design-system and motion/accessibility searches return results. |
+| Engine selection | DOM-only scoped installation used two packages, with React and no Three/Pixi. Assets-only scoped installation used nine packages without Three/Pixi. The asset package has no renderer peer. KTX production explicitly selects Three-compatible decoder bytes or CREATIVE_BASIS_SOURCE_DIR. |
+| GSAP/Motion | Scoped useGSAP cleanup, reversible ScrollTrigger and Motion transitions. Pause preserves pose. Standalone SHIFT resets public scroll restoration memory before trigger creation/resume; eight uninstrumented reduced-motion repetitions and the complete final suite pass. No per-frame React state. |
+| Three/R3F/Drei | Original loaded GLB, live shader, material/orientation/orbit controls, optional bloom and KTX2. Instance materials are disposed; loader geometry stays cached. Readiness covers delayed model replacement, selected texture loading, failures and lost context. |
+| Immersive reference | /showcase.html consumes reusable SceneJourney: camera/material progression, exploded four-mesh sculpture, deterministic 1,200/2,800 shader points and optional bloom. Quality replaces/disposes owned geometry. Native/manual/reduced/pause/offscreen/loading-time loss pass. Manual visual review led to a text scrim and accurate static-view instructions. |
+| PixiJS v8 | Private capped ticker, pointer/keyboard orientation, spread, resize, remount, partial-init rejection and context-loss cleanup. Rotation is centered. WebGL selected; WebGPU/Canvas untested. |
+| Blender/glTF | Separate factory-startup headless exporter preserves the live scene. Maintained original .blend/raw GLB and dedup pipeline. Served GLB: 67,720 bytes, four meshes, 4,688 triangles, no required extensions. Native gltfpack -noq alternative: 90,252 bytes, one mesh, 4,688 triangles. |
+| Images/texture assets | Original SVG -> WebP/AVIF 480/960/poster, hashes/attribution and 20-million-pixel input cap. KTX2 is mipmapped UASTC/Zstd, 22,966 bytes, with local hashed Basis JS/WASM and Apache-2.0 LICENSE/NOTICE. Real directory-link/source isolation and decoder-source separation checks pass. |
+| Export failure preservation | All profiles stage outputs/provenance before publication. One small Node filesystem helper prepares all same-filesystem replacements/backups, renames each file and rolls back earlier replacements if a later rename fails; failed recovery retains backups and reports paths. Single local writer only: no multi-file crash transaction or concurrent-writer claim. Real blocked image destination, invalid optimized GLB, obstructed decoder destination, invalid media source and incompatible probe preserve prior served bytes/provenance. Intermediate encoder PNG is outside public and removed in finally. |
+| Native verification | Historical K: latest portable routing/assets 17/17 (portable-streaming-final.log). Selected Blender/glTF/KTX 2/2 (native-staged-assets.log). Native media/browser 1/1 (media-staged-all-final.log), including successful regeneration, failed-source/probe preservation and final Chrome playback. Selected native suites fail clearly if tools are missing and do not install or skip them. |
+| Media | Original 321x181 FFV1 -> even 320x180 H.264/yuv420p, muted/faststart, FFprobe metadata/full decode and Chrome readyState 4/currentTime >0.1/error null. Width <=1280, duration <=30s, network protocols excluded. Audio mastering/streaming/DRM outside profile. |
+| Browser/GPU review | Complete delivery/browser.json: 48 expected, zero unexpected/flaky/skipped, browser-delivery.log. Spector loaded instrument/SHIFT, captured five calls/two programs/no GL errors at Eco and returned shaders; fresh repaired-session WebGL2 context responds. Its duration field was not treated as GPU timing. |
+| Performance | Actual ANGLE NVIDIA P2000/D3D11, native draw interception: instrument/SHIFT High+bloom 22 calls per sampled frame, approximately 59.9-60.7 sampled display FPS. Reduced profiles zero continuous draws. Short samples do not prove sustained throughput, physical mobile or whole-site Core Web Vitals. |
+| Accessibility/responsive | Axe across disciplines/SHIFT, keyboard navigation/sliders, narrow/touch/reduced, no horizontal overflow, pause/live preference/offscreen/resize/fallback. GPU-only pose comparison isolates DOM; measured two pixels by one 8-bit level, bounded to <=10 pixels/<=1 level. Failures/traces retained. Background visibility is simulated; real background tabs, screen readers, physical devices and Safari/Firefox untested. |
+| Bundle/reproducibility | TypeScript/Vite pass. Initial instrument JS about 158 kB gzip, CSS about 2.4 kB; Three 211.2 kB/spatial 105.5 kB gzip optional. Initial motion HTML does not preload engine/model/decoder. Scoped lockfile installation/build/portable verification is separate from root provisioning. Earlier extraction stalls and the subsequent successful clean attempts are retained. |
+| Preservation | Reconstruction 46/46, zero skips (reconstruction-full.log); unchanged initial ten-second media fixture timeout retained. Git diff confirms reference, reconstruction skill, constitution, PRODUCT, ROADMAP and LOGIC_VERIFICATION unchanged. Packet 11/11 PASS: 481 reference files/identical tree hash (logic-complete.json); final pointer check recorded separately. |
+| CI | Authored/read-only ubuntu-24.04 workflow: scoped install/build/portable checks, probe or repair missing FFmpeg, installed official Chrome H.264 playback after browser dependencies, software Chromium rendering and pinned official upload-artifact v7.0.2. YAML validates. Hosted NOT_RUN: no push. Software GPU is not workstation performance certification. Runner/codec choice follows [official runner inventory](https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2404-Readme.md) and [Playwright codec guidance](https://playwright.dev/docs/browsers#media-codecs). |
+
+### Local integration repairs and optional boundaries
+
+- Live Blender now responds: addon up-to-date, protocol 13 matches, Blender 5.2.2; scene inspection
+  and read-only Python execution pass. Started the existing enabled auto-starting add-on, without
+  preference changes or replacing a scene. Libraries/generators are off; telemetry remains false.
+- Polypane now responds at loopback 5858, using its [documented startup flag](https://polypane.app/docs/mcp-server/).
+  SHIFT renders ready in existing panes at 1280x800, 500x766 and 320x567 without horizontal overflow.
+  Electron rejects Chrome Target.createTarget/createBrowserContext; guidance uses existing pane IDs.
+  This is an API limitation, not an unrepairable disconnected endpoint.
+- Chrome DevTools isolated page and screenshot pass. Both browser MCPs save to permitted OS-temp
+  paths; authorized filesystem copy retains chrome-mcp-final.png/polypane-mcp-final.png. Their
+  client-negotiated roots exclude the repository; path protections were preserved.
+- tooling/creative/start-workstation.ps1 reuses listening Blender/Polypane endpoints and refuses
+  to restart existing applications. Launch alone is not health certification. Re-probe each session.
+- Figma authentication, Higgsfield 3D model catalog and Firecrawl public documentation retrieval
+  respond. Optional inputs route through their installed skills. File authoring, provider generation,
+  payment/entitlement expansion and publishing are unselected/NOT_RUN.
+- All seven Babylon graph-list backends responded; current MCP package is 9.30.0 while the
+  separately provisioned mise CLI is 9.28.0. No Babylon consumer was selected. Graph export/runtime
+  rendering is untested and no engine is added to future projects by default. Live schemas/version
+  must be re-probed when selecting one; these distinct tool installations do not change Three peers.
+- Code-review graph was incrementally updated to inspection HEAD with no errors. Its tracked
+  source scope does not certify the new untracked Creative Production files; source/tests/Qodo
+  supply their assessment. No embedding/provider installation was requested.
+- Future Next.js/server consumers need client boundaries and suitable transpilation/dynamic loading;
+  only maintained Vite consumers are tested. Native computer UI control is disabled in this session;
+  browser MCPs, CLI export and Playwright provide the verified paths.
+
+tool-repair-health.json, discovery-repaired.json, imagemagick-installed-manifest.json,
+imagemagick-repair-install.log and imagemagick-path-repaired.log retain the repair evidence.
+Original failed attempts remain alongside successful checks.
+
+### Independent engineering review
+
+The user approved the private Creative Production payload/destination after automatic approval
+review rejected its initial submission. Existing authenticated Qodo CLI 1.4.0 was reused.
+Issue/compliance reviewers ran at checkpoint/auto-final depth. Reviews repeatedly report
+incomplete_input/coverage.complete=false; skills/spec/UI/persona/cross-repo reviewers were skipped.
+Binary/large omissions are upload limits. This is independent issue review with explicit incomplete
+coverage, not clean or comprehensive certification.
+
+Retained operations and current-source dispositions:
+
+- f1b00971-b1e4-4e7b-9f44-ef222cc2d8c3: partial Pixi initialization cleanup, GSAP paused pose
+  and nested source-output checks fixed. Texture routing clarified. Missing GLB/KTX/WASM findings
+  were uploader omissions; actual bytes/hashes/loading verified.
+- 4e4107b7-3cfb-46d4-afa3-af3009ba7ea4: pivot, texture/media source isolation, model/lost-context
+  readiness and Chrome alias fixed. Timer-leak claim rejected against clearTimeout on close/error
+  and a real prompt-exit regression.
+- 14520fee-216a-43dc-9637-d3004c0980b3: requested texture readiness, glTF CLI override and
+  discipline hash navigation fixed with functional regressions.
+- b77d42f6-0e1e-41ef-9620-98e1e05cd219: slider consistency, queued hash cancellation and pixel
+  caps fixed. Missing-poster claim was binary omission; actual decode/provenance verified.
+- 9f5e4457-446e-40c0-b926-718496bc4450: loading-time context listener and odd-size media fixed.
+- d83bc155-6cb4-4901-85ba-ec63ac041d46: directory-link isolation and CI media coverage fixed.
+  Independent minimal-install checks also exposed/fixed the optional Three peer leak.
+- c2681fc4-7efd-4043-aa82-ab9076540e73: public intermediate PNG moved to checked OS-temp with
+  finally cleanup; rejected encoder regression and actual texture regeneration pass.
+- b2ada6d6-eeda-4a17-81e4-29e1cc7df625: media failure preservation and CI browser decoding fixed.
+  Native source/probe failure, successful replacement and real playback checks verify it.
+- 3f3768b0-ff69-4322-ac29-9478a8f559d3: image/model/texture failure publication confirmed and
+  fixed together by validated staging and shared bounded publication; portable/native checks pass.
+- aeb942ff-2da0-48c5-966e-bc98dc2717c0: earlier pending marker retained as history; this task did not collect that operation. Latest available predecessor a6f1d31c-65ca-4563-a928-36481a754de3 was collected from its K: artifact and assessed below.
+
+Qodo's server ledger also returns historical out-of-scope HBC/reconstruction/governance findings
+and older Creative Production records despite fixes. They were not remotely dismissed. Those
+historical records do not authorize changing frozen contracts or expand this task; current-source
+dispositions above and preserved evidence distinguish resolved issues, upload omissions and backlog.
+CP-T06 remains open for substantive original asset-pipeline review findings; see the current hardening disposition below.
+
+## Creative Production Skill Hardening, 2026-10-13
+
+Scope: CP-H01 through CP-H05 in the existing specification/plan/tasks. Current execution is the
+attached C: worktree of the K: repository, at the same inspection HEAD, with all earlier dirty work
+preserved. This task changes authoring instructions, skill metadata/routing and review tooling;
+it does not create a website, replace rendering engines, or implement autonomous self-refinement.
+
+### Integrated capability and differential
+
+The [canonical skill](skills/creative-production/SKILL.md) now loads only the relevant guidance:
+[direction](skills/creative-production/references/direction.md),
+[scene score and motion](skills/creative-production/references/story-motion.md),
+[asset continuity](skills/creative-production/references/asset-continuity.md),
+[specialist handoffs](skills/creative-production/references/composition.md), and
+[visual/temporal review](skills/creative-production/references/visual-review.md).
+The concise [source map](skills/creative-production/references/source-map.md) records adopted,
+already-present and rejected capabilities against the exact supplied sources/pinned revisions.
+
+Read the supplied WebLoved workflow's complete auto-caption transcript and representative visible
+frames. Integrated image-grounded direction, consistent subjects, causal sequence, easing/landing,
+receiving-surface shadows and precise feedback. Scroll Craft's feeling/uniqueness/device/verification
+guidance and engine/harness were inspected: reuse the principles, not its coupled device runtime,
+global fingerprint mandate, KIE provider or universal photographic/continuous-scroll style.
+Reuse installed UI UX Pro Max/Frontend Design and GSAP/Pixi specialists. Current upstream UI UX
+data differs from the working installed version; no blind update or broader provider suite install.
+Project purpose, approved brand, truthful content and accessibility resolve conflicting advice.
+
+Routing adds Frontend Design, GSAP timeline/utils, existing Sharp review support and direct guidance
+pointers without adding dependencies/engines. `creative:discover -- --consumer projects/<name>`
+resolves selected workspace-local peers and never executes their modules. Thin Codex/.agents,
+Claude, Cursor and OpenCode descriptions now expose the richer trigger; Cline keeps its canonical
+pointer. The refreshed app skill catalog reflects the updated repository adapter.
+
+Read-only Higgsfield search/model constraints responded; ordinary model versus named preset
+handoff is explicit. Its website is not a tool schema. Built-in imagegen transparency and the
+exposed Canva cutout schema for an already-uploaded MEDIA are selected alternatives; no callable
+Higgsfield background-removal tool was found. No generation, identity training, private-account
+inventory, external asset upload or paid entitlement was exercised. Provider/input/spend approval
+is explicit, and source rights/identity/alpha/contact anchors must be inspected after production.
+
+### Fresh functional evidence
+
+Evidence directory: `artifacts/creative-production/skill-hardening/` (ignored local artifacts).
+
+| Check | Result and boundary |
+| --- | --- |
+| Reproducible provisioning | Missing current-worktree node_modules restored with the existing scoped root lockfile: 127 workbench/assets packages. Existing locked reconstruction tool package restored separately: 37 packages. No version/dependency change or workstation reinstall. Logs install.log/reference-install.log. |
+| Official Skill Creator format | Canonical skill and all three skill-shaped adapters validate with the installed quick_validate.py. Main instruction body remains under 500 lines; specialist manuals are not copied. |
+| Availability/routing | discovery-final.json: 19 selected modules/18 routed skills resolve, and 521 relevant exposed tool names including optional Canva. Resolution root is the selected workbench. Installed/exposed is not health/generation/runtime certification. |
+| Portable integration | 32/32, zero failures/skips: portable-delivery-final.log. Includes existing 14 asset tests, five routing/discovery tests and thirteen capture-review tests. Source identities, hard links, actual filesystem case aliases, regular-file/byte/pixel bounds, semantic crop/state equality, alpha-only changes, intended holds, reverse and unchanged originals are checked. |
+| Real browser review integration | 1/1: contact-sheet-complete-final.log. Ten real existing-SHIFT desktop/manual/reverse and mobile/reduced captures -> labeled decoded sheet/report with original hashes. Source build HTML hash and actual capture metadata retained. No new site. Captures under captures-final-handles-complete-20261013/; humanApproval remains pending. |
+| Existing workbench | Build/TypeScript pass (build.log). Isolated complete browser suite 48/48, zero failures/skips (browser-isolated.log; skill-hardening-browser-isolated/browser.json). First full run was 47/48 with a reduced-motion resume failure; three isolated repetitions and the isolated full suite pass unchanged frontend source. The initial trace is retained; no root cause or permanent-fix claim. |
+| Reconstruction preservation | Native existing regression 46/46, zero failures/skips (reconstruction-native.log). Initially scoped install yielded skipped coverage, then sandbox capture timed out; attempts retained. Explicit local Playwright/font/FFmpeg paths and approved host execution pass without source changes. |
+| Sealed evidence/HBC | preservation.json: 11/11; 481 frozen files and identical tree hash. Git diff is empty for reference, reconstruction skill, constitution, PRODUCT, ROADMAP and LOGIC_VERIFICATION. source-preservation.json is a live cross-check against K:, not an initial immutable baseline; five pre-existing C: source files differ from live K: and were not overwritten by this task. |
+
+Review tooling uses existing Playwright capture and Sharp, with a bounded manifest interface, no
+new runtime/framework. It rejects source/output identity collisions, pipes/devices and linked destinations; validated file handles bind source reads, and exclusive output creation preserves earlier rounds. Alpha is compared over black/white backgrounds; hidden RGB does not fake progress.
+Rendered state compares semantically; null is unknown. Suspected holds are triage, not a defect
+verdict or aesthetic score. Intentional holds and mobile/reduced states still need human review.
+Sharp's sandbox Fontconfig cache warnings were retained; captions render/decoding and inspected
+sheets pass. No unrelated cache/preferences change was made. Mac, Linux/hosted CI and physical
+phones are not newly certified by the Windows identity tests.
+
+### Official paired skill evaluation
+
+Three realistic planning prompts, each with a fresh old-snapshot and hardened-skill agent, were
+serialized under repository execution policy. Skill Creator explicitly authorizes evaluation
+agents. Outputs/transcripts/grades/timing live in ignored
+`skills/creative-production-workspace/iteration-1/`; maintained prompts are in the skill's evals.json.
+
+Inline grading follows the installed grader schema. Official aggregate_benchmark and generate_review
+produced [benchmark evidence](artifacts/creative-production/skill-hardening/skill-benchmark.md) and
+the [human review viewer](artifacts/creative-production/skill-hardening/skill-review.html).
+Objective orchestration expectations: hardened 15/15; old 6/15. One run per case/configuration;
+this is instruction coverage, not an aesthetic score, site output guarantee, trigger-accuracy
+measurement or statistically reliable improvement estimate. Both versions preserve optional-engine,
+brand and responsive basics. Human qualitative feedback and final creative approval remain pending.
+
+Official aggregation defaults were corrected to the actual one run/configuration and with-skill-first
+ordering. Missing executor token/tool counts are unavailable, not fabricated zero usage; timing is
+parent-observed wall time including orchestration overhead. Engineering utility fixes continued
+during/after the serialized draft evaluations; those functional fixes are verified independently,
+not claimed as a new paired website-output experiment. No autonomous taste loop, description
+optimizer/provider expansion or unrelated showcase was run. App opening of the static viewer
+was queued; opening is not evidence the user reviewed or approved it.
+
+### Outstanding original engineering findings
+
+Predecessor a6f1d31c-65ca-4563-a928-36481a754de3 was assessed from the retained K: result with
+incomplete coverage. Current-task full-factory reviews confirm four original findings and expose
+two additional unchanged-pipeline cases. None is silently marked resolved:
+
+- Invalid GLB indices/positions can pass the small scene inspector; bounds/finite geometry remain
+  unverified beyond the valid original model. Predecessor finding 6d068212-8fb5-4c26-b272-8199fb3518e3.
+- Publication replaces existing destination links; link identity restoration is not guaranteed.
+  397fad0b-7643-4798-8d0e-4ddb1cb15732.
+- runTool rejects at timeout without confirmed process/tree termination before staging cleanup.
+  3d15a12b-b9b2-4f60-bca8-f4bac265354c.
+- Source path hashing and actual buffered/encoded bytes can differ if the source changes during
+  production. 9e0a4aed-12f1-4ad8-99fd-5dd58d24c5a3.
+- A successful Blender script producing no fresh outputs can reuse stale export files.
+  c3ba62c6-ad55-430f-98a7-b032a35460b8.
+- Source-file links can alias a derivative despite directory separation.
+  e3aa8a22-f7bb-4b80-a36e-f3fd2d2a842a.
+
+These remain CP-T06 backlog; the original asset pipeline was not modified by this skill-hardening
+task. Its baseline is validated on immutable owned originals and ordinary destinations. The skill
+now names those limitations and requires project-scoped repair/verification before selecting the
+unverified edge cases. Original provider generation, rigs/animations, WebGPU, physical devices,
+screen readers, Safari/Firefox and hosted CI remain unselected/untested as previously recorded.
+
+### Independent hardening review and final disposition
+
+Reused authenticated Qodo CLI 1.5.0 and the user's existing explicit Creative Production payload
+authorization. Sandbox credential lookup failed; the exact read-only host retry succeeded.
+No account/repository settings or review ledger statuses were changed. Independent issue/compliance
+review ran at auto depth; skills/spec/UI/persona/cross-repo reviewers were skipped. Most complete
+result envelopes still declare coverage.complete=false. This is assessed partial engineering
+review, not comprehensive or clean certification.
+
+| Operation | Current disposition |
+| --- | --- |
+| 4e72359f-4430-49ec-a66a-e0a7cc223f2e | Hard-linked output finding fixed with identity/link protection. Existing lockfile omission reconciled by actual scoped install and inclusion in later payload. Four original asset issues plus stale export/source link cases remain in the unchanged C: pipeline backlog. |
+| f58663ca-7a60-4f38-b36d-e989056cd027 | Regular-file input, equivalent crop and consumer-local resolver findings fixed and tested. |
+| 0ef0647b-1210-42f0-84f3-4874a272bbcc | Failed managed-agent transport; retained as failure. Earlier successful same-repo reviews do not imply a disconnected account. One bounded retry used the whole hardening scope. |
+| 3ec54419-099d-4264-9c0a-00934f3db53c | Painted-state key order and alpha-only changes fixed using native semantic equality and compositing. The workspace-missing claim came from narrowed payload dependency omission; later payload includes the existing sources. Its coverage.complete=true does not include skipped specialist reviewers or later fixes. |
+| 2bc1fd37-6c49-4b23-9fbb-b201e67c4c0d | Case-insensitive non-Windows source collision fixed with bigint device/inode identity, not OS-name assumptions. Actual filesystem alias/hard-link regressions pass; Mac execution is not claimed. |
+| 093c4e26-51a3-4c7d-bdeb-54bf05fdc2f4 | Input pathname replacement/output link substitution fixed with validated FileHandle reads and exclusive wx creation. Controlled real-file replacement/link insertion tests preserve evidence. GLB/poster/KTX/WASM absence claims were binary upload omissions. |
+| ce1314cc-fc26-4803-a93d-6ed292ce2d07 | Relative/empty-PATH resolution fixed without weakening strict absolute overrides; executable metadata is still not an execution certificate. |
+| d5cb713c-8f57-428b-b31a-f44e66fc7646 | Latest collected review reports only the repeated binary/source omission (3598c66a-ffad-4792-b552-a609bc59ac81); actual untracked/not-ignored .blend/GLB/images/KTX/WASM exist and match provenance/loading/decoding checks. No new actionable hardening source finding. Coverage remains incomplete, so no clean-review claim. Stop the automatic loop on this repeated input limitation. |
+
+Result envelopes/context/submissions are retained in the local evidence directory. Original
+asset findings and older out-of-scope server ledger entries were not remotely dismissed. No
+current-tool guard finding is silently accepted: each actionable one was corrected and functionally
+verified. Latest evidence: 32/32 portable, actual review integration 1/1, existing isolated browser
+48/48, native reconstruction 46/46 and packet 11/11. Final source remains uncommitted/unpushed.
+
+Human qualitative skill-output feedback, subjective direction/final creative approval, provider
+generation/alpha/identity acceptance and physical-device coverage remain pending or unselected.
+The C: and live K: checkouts differ in five pre-existing package/workbench source files; their
+current hashes/timestamps are a cross-check, not an immutable initial baseline or attribution of
+changes. This task did not synchronize or overwrite those files. No new site/engine/vendor,
+commit/push/publication, or deferred autonomous self-refinement system was introduced.

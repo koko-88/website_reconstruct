@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "lane": "creative-production",
+  "profiles": {
+    "dom": {
+      "purpose": "Accessible responsive HTML/CSS and design direction",
+      "packages": [
+        "@ai-factory/creative-core"
+      ],
+      "peers": [
+        "react"
+      ],
+      "skills": [
+        "frontend-design",
+        "frontend-ui-engineering",
+        "ui-ux-pro-max"
+      ],
+      "tools": [],
+      "engines": []
+    },
+    "motion": {
+      "purpose": "DOM timelines, reversible scroll and UI transitions",
+      "packages": [
+        "@ai-factory/creative-motion"
+      ],
+      "peers": [
+        "react",
+        "gsap",
+        "@gsap/react",
+        "motion"
+      ],
+      "skills": [
+        "gsap-core",
+        "gsap-react",
+        "gsap-timeline",
+        "gsap-scrolltrigger",
+        "gsap-performance",
+        "gsap-utils"
+      ],
+      "tools": [],
+      "engines": []
+    },
+    "spatial": {
+      "purpose": "Three.js, R3F/Drei, glTF, shaders and optional bloom",
+      "packages": [
+        "@ai-factory/creative-three"
+      ],
+      "peers": [
+        "react",
+        "react-dom",
+        "three",
+        "@react-three/fiber",
+        "@react-three/drei",
+        "@react-three/postprocessing",
+        "postprocessing"
+      ],
+      "skills": [
+        "creative-production"
+      ],
+      "tools": [
+        "blender",
+        "gltf-transform",
+        "gltfpack",
+        "toktx"
+      ],
+      "engines": [
+        "three"
+      ]
+    },
+    "particles": {
+      "purpose": "PixiJS interactive 2D fields and graphics",
+      "packages": [
+        "@ai-factory/creative-pixi"
+      ],
+      "peers": [
+        "react",
+        "pixi.js"
+      ],
+      "skills": [
+        "pixijs",
+        "pixijs-application",
+        "pixijs-events",
+        "pixijs-ticker",
+        "pixijs-performance"
+      ],
+      "tools": [],
+      "engines": [
+        "pixi.js"
+      ]
+    },
+    "assets": {
+      "purpose": "Original images, media and Blender/glTF handoff",
+      "packages": [
+        "@ai-factory/creative-assets"
+      ],
+      "peers": [],
+      "skills": [
+        "creative-production",
+        "imagegen"
+      ],
+      "tools": [
+        "blender",
+        "gltf-transform",
+        "gltfpack",
+        "ffmpeg",
+        "ffprobe",
+        "magick"
+      ],
+      "engines": []
+    },
+    "textures": {
+      "purpose": "KTX2 production with local Three-compatible Basis decoders",
+      "packages": [
+        "@ai-factory/creative-assets"
+      ],
+      "peers": [
+        "three"
+      ],
+      "skills": [
+        "creative-production"
+      ],
+      "tools": [
+        "toktx"
+      ],
+      "engines": [
+        "three"
+      ]
+    },
+    "review": {
+      "purpose": "Functional, visual, accessibility and GPU validation",
+      "packages": [],
+      "peers": [
+        "@playwright/test",
+        "@axe-core/playwright",
+        "sharp"
+      ],
+      "skills": [
+        "browser-testing-with-devtools",
+        "verification-before-completion"
+      ],
+      "tools": [],
+      "mcp": [
+        "chrome-devtools",
+        "polypane-devtools",
+        "spector"
+      ],
+      "engines": []
+    }
+  },
+  "optionalMcp": [
+    "figma",
+    "blender",
+    "higgsfield",
+    "firecrawl",
+    "babylon-material",
+    "babylon-geometry",
+    "babylon-render-graph",
+    "babylon-particles",
+    "babylon-gui",
+    "babylon-flow-graph",
+    "babylon-smart-filters",
+    "spector",
+    "chrome-devtools",
+    "polypane-devtools",
+    "canva"
+  ],
+  "optionalInputs": {
+    "figma": "Selected design files through the installed Figma skills; authentication is not file-authoring acceptance.",
+    "imagegen": "Built-in raster generation through the installed imagegen skill when original bitmap assets are selected.",
+    "higgsfield": "Image/video/3D model discovery and selected asset generation through the installed Higgsfield skill; preserve provenance and explicit paid-job authorization.",
+    "firecrawl": "Public design/reference/document research through the installed Firecrawl skill; inspection evidence remains owned by reference-reconstruction.",
+    "babylon": "Optional shader/geometry/particle/GUI/flow/render/filter graph authoring. Select a matching consumer runtime only when a project requires it.",
+    "canva": "Optional exposed semantic background removal for an already-uploaded MEDIA source in the connected Canva account. Verify schema, authorization, alpha and rights; no new upload, account or entitlement is implied."
+  },
+  "boundaries": {
+    "inspection": "skills/reference-reconstruction/SKILL.md",
+    "production": "skills/creative-production/SKILL.md",
+    "referenceIntelligence": "Outside this implementation"
+  },
+  "guidance": {
+    "direction": "skills/creative-production/references/direction.md",
+    "motion": "skills/creative-production/references/story-motion.md",
+    "continuity": "skills/creative-production/references/asset-continuity.md",
+    "composition": "skills/creative-production/references/composition.md",
+    "review": "skills/creative-production/references/visual-review.md"
+  }
+}

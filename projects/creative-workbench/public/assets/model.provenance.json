@@ -1,0 +1,21 @@
+{
+  "source": "form.blend",
+  "sourceSha256": "2d401420992ee0fa79ffb4aa7b0284d0bc6efc627226ba6d1d9dd65cc4b96c82",
+  "exporter": "export-form.py",
+  "exporterSha256": "e6c623458e90ee4c0022ecd15b08d25634838ce11ee2701579463ef850d55ca0",
+  "rawSha256": "b727d6d96b32390ad93d34061ce74c8ced7cf2e380054d830ab97b041f9baf6d",
+  "attribution": {
+    "source": "Original procedural sculpture authored for this project",
+    "license": "LicenseRef-Project-Original",
+    "distribution": "Local development; publication requires project authorization"
+  },
+  "output": {
+    "file": "form.glb",
+    "bytes": 67720,
+    "sha256": "f35d1f1de692e61a392999ec5f75941c2be9f5fb3e5b89d8c49591198ec9d4d9",
+    "meshes": 4,
+    "triangles": 4688,
+    "scenes": 1,
+    "requiredExtensions": []
+  }
+}

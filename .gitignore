@@ -2,9 +2,6 @@
 node_modules/
 dist/
 
-# Provisional reusable-workstation bootstrap kept local, never project source
-/package.json
-/package-lock.json
 
 # Test / acceptance outputs
 artifacts/
@@ -29,3 +26,4 @@ mise.*.local.toml
 mise.*.local.lock
 # Added by code-review-graph
 .code-review-graph/
+skills/creative-production-workspace/
