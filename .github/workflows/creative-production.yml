@@ -1,27 +1,28 @@
 name: Creative Production
 on:
   pull_request:
-    paths: ['packages/**', 'projects/creative-workbench/**', 'tooling/creative/**', 'skills/creative-production/**', 'package.json', 'package-lock.json', '.github/workflows/creative-production.yml']
+    paths: ['packages/**', 'projects/creative-workbench/**', 'tooling/creative/**', 'skills/creative-production/**', 'package.json', 'package-lock.json', 'mise.toml', 'mise.lock', '.mise/locks/**', '.github/workflows/creative-production.yml']
   push:
     branches: [main]
-    paths: ['packages/**', 'projects/creative-workbench/**', 'tooling/creative/**', 'skills/creative-production/**', 'package.json', 'package-lock.json', '.github/workflows/creative-production.yml']
+    paths: ['packages/**', 'projects/creative-workbench/**', 'tooling/creative/**', 'skills/creative-production/**', 'package.json', 'package-lock.json', 'mise.toml', 'mise.lock', '.mise/locks/**', '.github/workflows/creative-production.yml']
   workflow_dispatch:
 permissions:
   contents: read
 jobs:
   workbench:
     runs-on: ubuntu-24.04
-    timeout-minutes: 15
+    timeout-minutes: 25
     env:
       CREATIVE_BROWSER_CHANNEL: chromium
       CREATIVE_SOFTWARE_GPU: '1'
+      CREATIVE_TEST_PROFILE: portable
       CREATIVE_RUN_ID: ci
     steps:
       - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
       - uses: jdx/mise-action@e6a8b3978addb5a52f2b4cd9d91eafa7f0ab959d
         with:
           version: '2026.10.3'
-          install_args: '--locked node'
+          install_args: '--locked node npm:@gltf-transform/cli'
       - run: npm ci --workspace @ai-factory/creative-workbench --workspace @ai-factory/creative-assets --include-workspace-root=false --ignore-scripts
       - run: npm run creative:check
       - name: Ensure native media tools
@@ -36,8 +37,15 @@ jobs:
             native_variable="CREATIVE_${native_tool^^}_PATH"
             printf '%s=%s\n' "$native_variable" "$native_path" >> "$GITHUB_ENV"
           done
-      - run: npm run creative:build
       - run: npx --no-install playwright install --with-deps chromium
+      - name: Provision checksum-pinned native asset tools
+        run: bash tooling/creative/provision-native.sh
+      - name: Verify real Blender, glTF and KTX2 workflows
+        shell: bash
+        run: |
+          mkdir -p artifacts/creative-production/ci
+          npm run creative:verify-assets 2>&1 | tee artifacts/creative-production/ci/native-assets.log
+      - run: npm run creative:build
       - name: Verify native and browser media decoding
         env:
           CREATIVE_MEDIA_BROWSER: '1'
@@ -45,7 +53,8 @@ jobs:
         run: |
           command -v google-chrome >/dev/null || npx --no-install playwright install chrome
           npm run creative:verify-media
-      - run: npm run creative:test
+      - name: Portable rendering, lifecycle and real contact-sheet integration
+        run: npm run creative:test
       - name: Preserve browser evidence
         if: always()
         uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2, verified official release
@@ -56,4 +65,5 @@ jobs:
           if-no-files-found: warn
       - name: State coverage boundary
         if: always()
-        run: echo 'Creative browser checks use software WebGL. They do not certify workstation GPU performance, Blender MCP, paid providers, or HBC fidelity.' >> "$GITHUB_STEP_SUMMARY"
+        run: |
+          echo 'Portable software WebGL rendering/draw/lifecycle, native Blender/glTF/KTX2 exports and actual browser contact sheets are configured; inspect step outcomes and artifacts for executed results. Hardware FPS acceptance: NOT_RUN; run the default hardware profile on a verified target GPU before performance acceptance. Physical mobile, subjective quality, Blender MCP, paid providers and HBC fidelity remain outside this job.' >> "$GITHUB_STEP_SUMMARY"

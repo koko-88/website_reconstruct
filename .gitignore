@@ -27,3 +27,9 @@ mise.*.local.lock
 # Added by code-review-graph
 .code-review-graph/
 skills/creative-production-workspace/
+
+# Local Git worktrees are independent checkouts, never project submodules.
+.worktrees/
+# Machine-generated discovery inventories and debug logs are not source.
+all_skills(global & project)/
+debug-storybook.log

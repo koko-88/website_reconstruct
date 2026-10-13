@@ -55,3 +55,21 @@ catalog operations; generation, paid-provider expansion and publication remain s
 
 Preserve existing workbench/packages/adapters/tests and reconstruction/HBC gates. No separate
 showcase, commit or push. Human skill-output feedback remains pending until the user supplies it.
+
+## Factory architecture and execution hardening (2026-10-13)
+
+- CP-F01: canonical agent policy, native adapters and task-scoped capability discovery; distinguish
+  installation/exposure/connectivity from verified operations.
+- CP-F02: audit tracked surfaces; remove disposable redundancy and accidental gitlinks, retaining
+  local worktrees/branches, evidence, contracts and working packages.
+- CP-F03: portable software WebGL passes rendering, draw budgets, idle/preference/lifecycle checks.
+  Hardware acceptance retains >15 FPS and <40 calls/frame, requires an observed hardware renderer
+  and remains a separate target check; portable CI cannot certify it.
+- CP-F04: portable documentation never depends on ignored reports; preserve local evidence as
+  explicit local-only locators without weakening the packet checker.
+- CP-F05: hosted Ubuntu asset tests select checksum-pinned Blender 5.2.2/KTX 4.4.2 and locked glTF
+  Transform 4.5.1, run real exports/preservation and browser contact-sheet integration, retain reports
+  and fail on absent tools. Windows workflows remain.
+- CP-F06: verify policy/routing, clean-checkout links, browser/native tests and workflows with
+  independent review; distinguish local/hosted results. Work on main, uncommitted/unpushed,
+  record unresolved physical/subjective acceptance.

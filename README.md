@@ -3,18 +3,19 @@
 Reusable capability infrastructure with project applications under `projects/`.
 This checkout implements Creative Production. Reference Inspection remains provided by the mature
 [reference-reconstruction skill](skills/reference-reconstruction/SKILL.md); Reference Intelligence
-is outside this change. Start coding-agent work from [AGENTS.md](AGENTS.md).
+uses available repository/source-search, documentation, browser and connected research tools; no
+dedicated tracked intelligence app is implemented. Start from [AGENTS.md](AGENTS.md).
 
 ## Run the Creative Workbench
 
-Node 24.19.0 / npm 11.17.0; native workstation tools remain locked in mise.
+Node 24.19.0 / npm 11.17.0 are locked; native tools use selected verified profiles.
 ```text
 npm ci --workspace @ai-factory/creative-workbench --workspace @ai-factory/creative-assets --include-workspace-root=false --ignore-scripts
 npm run creative:dev
 npm run creative:build
 npm run creative:check
 npm run creative:test
-npm run creative:discover
+npm run creative:discover -- dom motion review
 npm run creative:route -- dom motion spatial review
 ```
 
@@ -75,3 +76,17 @@ CREATIVE_REVIEW_URL to its loopback origin and run `npm run creative:verify-revi
 Use a fresh review directory each round. Verification creates a unique capture round; an explicit
 CREATIVE_REVIEW_RUN_ID must be new. Prior captures/reports remain intact. See the centralized
 verification record for reconciled engineering findings, merge checks and pending human feedback.
+
+## Verification environments
+
+`creative:test` defaults to hardware acceptance and fails on software/masked/unclassified renderers.
+For a software runner set `CREATIVE_TEST_PROFILE=portable` and `CREATIVE_SOFTWARE_GPU=1`.
+Portable checks retain rendering, draw budgets, idle/lifecycle, accessibility and failure acceptance;
+FPS attachments are diagnostic. Run the default profile on a verified target GPU for the unchanged
+>15 FPS / <40 calls per frame acceptance. Emulated touch is not physical-device acceptance.
+
+Hosted Creative Production selects checksum-pinned official Blender/KTX Linux archives, locked
+mise glTF Transform and real browser contact sheets under the managed preview lifecycle. It records
+hardware performance as NOT_RUN. Local Windows still uses existing verified absolute tool paths.
+Ignored historical execution reports are local locators, not required documentation links. Current
+results and outstanding hosted/physical/human checks belong to IMPLEMENTATION_VERIFICATION.md.

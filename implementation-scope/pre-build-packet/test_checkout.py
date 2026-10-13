@@ -4,6 +4,10 @@ import json
 from pathlib import Path
 import subprocess
 import unittest
+import shutil
+import tempfile
+import re
+from urllib.parse import unquote
 
 ROOT = Path(__file__).resolve().parents[2]
 GIT = ['git', '-c', f'safe.directory={ROOT.as_posix()}']
@@ -57,6 +61,36 @@ class EvidenceCheckoutTests(unittest.TestCase):
         self.assertIn(b'\r\n', files[name])
         files[name] = files[name].replace(b'\r\n', b'\n')
         self.assertNotEqual(digest(files), self.expected)
+
+class PortableDocumentationTests(unittest.TestCase):
+    def test_current_linked_docs_exist_without_ignored_workstation_outputs(self):
+        # Follow the same repository link syntax as verify.py. Only tracked current files
+        # and native instruction adapters are copied, never artifacts or workstation inventories.
+        names = git('ls-files', '-z', '--cached', '--others', '--exclude-standard').decode().split('\0')
+        with tempfile.TemporaryDirectory(prefix='factory-doc-checkout-') as directory:
+            checkout = Path(directory)
+            for name in names:
+                source = ROOT / name
+                if source.is_file() and not source.is_symlink():
+                    target = checkout / name
+                    target.parent.mkdir(parents=True, exist_ok=True)
+                    shutil.copyfile(source, target)
+            pending = [checkout / name for name in ['AGENTS.md', 'README.md', 'PRODUCT.md', 'ROADMAP.md',
+                       'LOGIC_VERIFICATION.md', 'IMPLEMENTATION_VERIFICATION.md', 'CLAUDE.md',
+                       '.cursor/rules/factory.mdc', '.clinerules/00-factory.md'] if (checkout / name).is_file()]
+            pending += list((checkout / 'implementation-scope/pre-build-packet').glob('*.md'))
+            seen = set()
+            while pending:
+                source = pending.pop().resolve()
+                if source in seen: continue
+                seen.add(source)
+                for target in re.findall(r'\[[^\]]*\]\(([^)]+)\)', source.read_text(encoding='utf-8-sig')):
+                    target = target.strip('<>')
+                    if re.match(r'^[a-zA-Z][a-zA-Z0-9+.-]*:', target): continue
+                    pathpart = unquote(target).partition('#')[0]
+                    destination = (source.parent / pathpart).resolve() if pathpart else source
+                    self.assertTrue(destination.is_file(), f'{source.relative_to(checkout)} -> {target}: absent from portable checkout')
+                    if destination.suffix == '.md' and checkout in destination.parents: pending.append(destination)
 
 if __name__ == '__main__':
     unittest.main()

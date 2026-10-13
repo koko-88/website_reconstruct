@@ -23,9 +23,12 @@ on:
       - ".gitattributes"
       - ".sonarcloud.properties"
       - "CLAUDE.md"
+      - ".claude/skills/**"
+      - "README.md"
       - ".agents/skills/**"
       - ".cursor/skills/**"
-      - ".clinerules/workflows/**"
+      - ".cursor/rules/**"
+      - ".clinerules/**"
       - ".opencode/commands/**"
   pull_request:
     paths:
@@ -48,9 +51,12 @@ on:
       - ".gitattributes"
       - ".sonarcloud.properties"
       - "CLAUDE.md"
+      - ".claude/skills/**"
+      - "README.md"
       - ".agents/skills/**"
       - ".cursor/skills/**"
-      - ".clinerules/workflows/**"
+      - ".cursor/rules/**"
+      - ".clinerules/**"
       - ".opencode/commands/**"
   workflow_dispatch:
 

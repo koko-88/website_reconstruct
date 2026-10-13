@@ -46,3 +46,30 @@ The 2026-10-13 merge integrates this hardening with main 84dd500's later verifie
 Earlier C: availability/graph/backlog statements describe that historical execution. Current K:
 source and fresh merge checks own operational status; preserve both instruction improvements and
 runtime fixes. Historical paired planning evaluations do not certify the merged implementation.
+
+## Factory hardening reference inspection, 2026-10-13
+
+The user's [factory video](https://www.youtube.com/watch?v=ctoaIC4LHmI) was analyzed through the
+supplied auto-caption transcript. Its spec/build/review/human-gate sequence, reusable tool modules,
+worktree isolation and observable results reinforce the existing Spec Kit/native-test/Qodo owners.
+Automatic merges, permanent agent teams, issue/metrics intake and deployment monitors remain
+unselected: no demonstrated requirement justifies another control plane or release permission.
+The transcript's model/cost/quality claims are source statements, not independently verified facts.
+
+Direct retrieval initially failed, then browser inspection reached the supplied
+[WebLoved Shorts channel](https://www.youtube.com/@WebLoved/shorts) and two actual video examples:
+
+- [Product assembly/explosion](https://www.youtube.com/shorts/vd8IE8Cl4Jc): observed an orange
+  camera-product hero and later separated components beside explanatory content. Adopt subject
+  continuity, information-driven transformation, controlled framing and readable landing states.
+  Existing glTF/SceneJourney/GSAP and asset-continuity/review handoffs already supply these mechanisms.
+- [Editorial composition](https://www.youtube.com/shorts/IJyJ-1yutz0): observed oversized white type,
+  a foreground sculptural subject and green accents, with that palette/identity continuing into
+  later image sections. Adopt deliberate hierarchy, subject/type relationships and cross-section
+  continuity; select the DOM/image or spatial profile from actual project requirements.
+
+These are observed video frames/progression, not inspection of the demonstrated sites' source,
+production data, hidden states, mobile variants, performance or exact library/model implementation.
+One-shot/model branding does not prove engineering quality. Do not copy camera/statue assets,
+identity or layout, impose three colours/3D on every project, or claim output parity. Concrete
+browser review, target-device verification and human creative approval remain required.

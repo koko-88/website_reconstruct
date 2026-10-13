@@ -1,8 +1,12 @@
 import { defineConfig, devices } from '@playwright/test';
+import { testProfile } from '../../tooling/creative/renderer.mjs';
+const profile = testProfile(process.env.CREATIVE_TEST_PROFILE);
 const run = process.env.CREATIVE_RUN_ID || new Date().toISOString().replaceAll(/[:.]/g, '-');
+// Workers reload this config; propagate the parent identity instead of generating another timestamp.
+process.env.CREATIVE_RUN_ID = run;
 const artifacts = `../../artifacts/creative-production/${run}`;
 export default defineConfig({
-  testDir: './tests', timeout: 45000, expect: { timeout: 15000 }, workers: 1, retries: 0,
+  testDir: './tests', testIgnore: profile === 'portable' ? '**/hardware.spec.ts' : [], forbidOnly: !!process.env.CI, timeout: 45000, expect: { timeout: 15000 }, workers: 1, retries: 0,
   outputDir: `${artifacts}/browser-results`,
   reporter: [['list'], ['json', { outputFile: `${artifacts}/browser.json` }], ['html', { outputFolder: `${artifacts}/browser-report`, open: 'never' }]],
   use: { baseURL: 'http://127.0.0.1:4173', channel: process.env.CREATIVE_BROWSER_CHANNEL || 'chrome', trace: 'retain-on-failure', screenshot: 'only-on-failure', launchOptions: { args: process.env.CREATIVE_SOFTWARE_GPU === '1' ? ['--use-angle=swiftshader', '--enable-unsafe-swiftshader'] : [] } },

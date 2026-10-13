@@ -1,0 +1,2 @@
+Read [AGENTS.md](../AGENTS.md) before repository work. Follow its authority, capability
+discovery, evidence, permissions and verification rules. This adapter adds no separate policy.

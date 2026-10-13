@@ -15,3 +15,6 @@ reference/haunted-boulder-city-v2/rev-2.0.0-real-01/observations/write-preflight
 reference/haunted-boulder-city-v2/rev-2.0.0-real-01/tooling/reference-reconstruction/agents/openai.yaml text eol=crlf
 reference/haunted-boulder-city-v2/rev-2.0.0-real-01/tooling/reference-reconstruction/SKILL.md text eol=crlf
 reference/haunted-boulder-city-v2/rev-2.0.0-real-01.preseal-manifest.json text eol=crlf
+
+# Hosted native provisioning runs in Bash on Linux.
+*.sh text eol=lf

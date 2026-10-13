@@ -4,18 +4,27 @@ import { createRequire } from 'node:module';
 import { homedir } from 'node:os';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { registry } from './route.mjs';
+import { registry, routeCapabilities } from './route.mjs';
 const root = fileURLToPath(new URL('../..', import.meta.url));
-const consumerArg = process.argv.indexOf('--consumer');
-let consumerRoot = root;
-if (consumerArg >= 0) {
-  if (!process.argv[consumerArg + 1]) throw new Error('--consumer requires an existing consumer workspace directory.');
-  consumerRoot = path.resolve(process.argv[consumerArg + 1]);
-  if (!statSync(path.join(consumerRoot, 'package.json')).isFile()) throw new Error('Selected consumer needs a regular package.json.');
+const options = { profiles: [], consumer: root, inventory: null, output: null };
+for (let i = 2; i < process.argv.length; i++) {
+  const argument = process.argv[i];
+  if (['--consumer', '--mcp-inventory', '--output'].includes(argument)) {
+    const value = process.argv[++i];
+    if (!value || value.startsWith('--')) throw new Error(`${argument} requires a value.`);
+    const key = { '--consumer': 'consumer', '--mcp-inventory': 'inventory', '--output': 'output' }[argument];
+    options[key] = path.resolve(value);
+  } else if (argument.startsWith('--')) throw new Error(`Unknown discovery option: ${argument}`);
+  else options.profiles.push(argument);
 }
+// Omitted profiles retain the explicit all-profile diagnostic interface.
+const selected = options.profiles.length ? options.profiles : Object.keys(registry.profiles);
+const route = routeCapabilities(selected); // Validate before probes or output writes.
+const consumerRoot = options.consumer;
+if (!statSync(path.join(consumerRoot, 'package.json')).isFile()) throw new Error('Selected consumer needs a regular package.json.');
 const require = createRequire(path.join(consumerRoot, 'package.json'));
 const skillRoots = process.env.CREATIVE_SKILL_ROOTS?.split(path.delimiter) ?? [path.join(root, 'skills'), path.join(homedir(), '.agents', 'skills'), path.join(homedir(), '.codex', 'skills'), path.join(homedir(), '.codex', 'skills', '.system')];
-const modules = [...new Set(Object.values(registry.profiles).flatMap(profile => [...profile.packages, ...profile.peers]))];
+const modules = [...new Set([...route.packages, ...route.peers])];
 const packages = [];
 for (const name of modules) {
   try {
@@ -27,11 +36,11 @@ for (const name of modules) {
     packages.push({ name, status: 'installed', version: metadata?.version ?? 'unknown', entry: resolved, peers: metadata?.peerDependencies });
   } catch (error) { packages.push({ name, status: 'unavailable', reason: error.code }); }
 }
-const skills = [...new Set(Object.values(registry.profiles).flatMap(profile => profile.skills))].map(name => {
+const skills = route.skills.map(name => {
   const file = skillRoots.map(directory => path.join(directory, name, 'SKILL.md')).find(existsSync);
   return { name, status: file ? 'installed' : 'not-found-in-search-roots', path: file ?? null };
 });
-const commands = [...new Set(Object.values(registry.profiles).flatMap(profile => profile.tools))].map(name => {
+const commands = route.toolsToProbe.map(name => {
   const envName = name === 'gltf-transform' ? 'CREATIVE_GLTF_TRANSFORM_CLI' : `CREATIVE_${name.replaceAll('-', '_').toUpperCase()}_PATH`;
   const explicit = process.env[envName];
   const regularFile = file => { try { return path.isAbsolute(file) && statSync(file).isFile(); } catch { return false; } };
@@ -41,12 +50,11 @@ const commands = [...new Set(Object.values(registry.profiles).flatMap(profile =>
   return { name, status: file ? 'entrypoint-found-not-exercised' : 'not-found', path: file ?? null, override: envName };
 });
 let mcp = { status: 'not-supplied', note: 'Session exposure must be obtained from the calling agent; local config is not live service health.' };
-const mcpArg = process.argv.indexOf('--mcp-inventory');
-if (mcpArg >= 0) {
-  const inventory = JSON.parse(await readFile(process.argv[mcpArg + 1], 'utf8'));
+if (options.inventory) {
+  const inventory = JSON.parse(await readFile(options.inventory, 'utf8'));
+  if (!Array.isArray(inventory) || inventory.some(tool => typeof tool?.name !== 'string')) throw new Error('MCP inventory must be an array of actual session tool metadata.');
   mcp = { status: 'exposed-not-certified', tools: inventory.filter(tool => /blender|babylon|spector|figma|canva|higgsfield|firecrawl|image_gen|chrome[-_]devtools|polypane/.test(tool.name)).map(tool => tool.name) };
 }
-const report = { timestamp: new Date().toISOString(), lane: registry.lane, resolutionRoot: consumerRoot, node: process.version, platform: process.platform, packages, skills, commands, mcp, certification: 'Discovery only; see executed functional evidence in IMPLEMENTATION_VERIFICATION.md.' };
-const outputArg = process.argv.indexOf('--output');
-if (outputArg >= 0) await writeFile(process.argv[outputArg + 1], JSON.stringify(report, null, 2) + '\n');
+const report = { timestamp: new Date().toISOString(), lane: registry.lane, profiles: selected, resolutionRoot: consumerRoot, node: process.version, platform: process.platform, packages, skills, commands, mcp, certification: 'Discovery only; see executed functional evidence in IMPLEMENTATION_VERIFICATION.md.' };
+if (options.output) await writeFile(options.output, JSON.stringify(report, null, 2) + '\n');
 console.log(JSON.stringify(report, null, 2));

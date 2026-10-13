@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "platform": "linux-x64",
+  "blender": {
+    "version": "5.2.2",
+    "url": "https://download.blender.org/release/Blender5.2/blender-5.2.2-linux-x64.tar.xz",
+    "sha256": "84098912789dc450e95697c4184fb8a90acbe5111c2ba4aede3fecb57806a168",
+    "directory": "blender-5.2.2-linux-x64",
+    "executable": "blender"
+  },
+  "ktx": {
+    "version": "4.4.2",
+    "url": "https://github.com/KhronosGroup/KTX-Software/releases/download/v4.4.2/KTX-Software-4.4.2-Linux-x86_64.tar.bz2",
+    "sha256": "a8781bad05f9624edbf910b7f258cd0a4ba7d3e63b49ecc0a0ab440bf6a0a245",
+    "directory": "KTX-Software-4.4.2-Linux-x86_64",
+    "executable": "bin/toktx"
+  }
+}

@@ -23,3 +23,10 @@ See IMPLEMENTATION_VERIFICATION.md.
 - [x] CP-M01 - preserve both merge parents; semantic conflict/adapters/routing/source reconciliation.
 - [x] CP-M02 - fresh union build/check/browser/native/reconstruction and preservation validation.
 - [x] CP-M03 - requested Qodo assessment, current disposition, staged uncommitted merge handoff.
+
+- [x] CP-F01 - canonical policy, native adapters and scoped discovery tests.
+- [x] CP-F02 - tracked architecture/consumer audit and safe disposable/index cleanup.
+- [x] CP-F03 - portable GPU behavior versus hardware acceptance, unchanged budgets.
+- [x] CP-F04 - ignored-evidence portability and clean-checkout regression.
+- [x] CP-F05 - pinned native assets and actual browser review CI integration.
+- [x] CP-F06 - local verification, independent review and hosted/physical limits.

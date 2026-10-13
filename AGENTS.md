@@ -2,6 +2,37 @@
 
 This is the tool-neutral entry point for coding agents in this repository.
 
+## Agent execution
+
+1. Establish the task, authority, existing implementation and acceptance first. Reuse maintained
+   skills, packages, native tools and patterns before adding code or infrastructure. Routine repairs
+   use existing spec/task owners; do not create another governance file or task system.
+2. Discover only task-relevant capabilities through current session tools and the lane entry points
+   below. Verify required paths, versions, permissions and integrations before selection.
+   Installed = present locally; exposed = callable in this session; connected = authenticated/reachable;
+   operational = the selected operation succeeded; verified = acceptance passed for stated inputs,
+   revision and environment. Unavailable and untested remain explicit; none implies another.
+3. Ground decisions in current source, tests and attributable evidence. Label observations,
+   inferences and unknowns. When evidence is insufficient, use relevant repository intelligence,
+   source search, official documentation, browser inspection or connected research. An empty search,
+   stale graph, historical receipt or tool catalog cannot prove absence or correctness.
+4. Fail closed for the dependent action when permissions, material requirements or critical
+   dependencies are missing, contradictory or unverified. Continue independent authorized work;
+   escalate only the specific unresolved decision/input. Do not fabricate facts, silently fall back
+   across permission/acceptance boundaries, or repeatedly retry without new evidence.
+5. Scale investigation, review and verification to risk. No exhaustive workstation inventory,
+   recursive context dump, compulsory agent team or new approval for a minor reversible decision.
+   Preserve user authorization and report the actual scope of checks and remaining limits.
+
+| Factory lane | Discover/select through | Acceptance owner |
+| --- | --- | --- |
+| Reference Inspection | [reference-reconstruction](skills/reference-reconstruction/SKILL.md), its evidence/source and bounded asset-discovery tools | Active reference contract and sealed packet; no creative reinterpretation of observations |
+| Creative Production | [creative-production](skills/creative-production/SKILL.md), [registry](tooling/creative/capabilities.json), `creative:route` and task-filtered `creative:discover` | [Creative specification](specs/creative-production/spec.md), consumer tests and implementation verification |
+| Reference Intelligence | Current session repository/source-search, documentation, browser and connected research tools; verify access to the selected source | Attributable findings in the task's existing owner; no dedicated tracked intelligence application is currently implemented |
+
+Codex/OpenCode read this entry point; Claude uses [CLAUDE.md](CLAUDE.md); Cursor and Cline
+load thin native rule adapters. Skill adapters route back here and add no competing policy.
+
 ## Read path
 
 Use progressive disclosure. Do **not** recursively read the repository before acting.
@@ -42,6 +73,7 @@ Use progressive disclosure. Do **not** recursively read the repository before ac
 | Workload/capability taxonomy | WP-HBC-01 |
 | Execution mode, task routing and recovery | RP-HBC-01 |
 | Session runtime availability and configuration | RR-HBC-01 |
+| Creative capability selection and task-scoped discovery | `tooling/creative/capabilities.json` + `tooling/creative/discover.mjs` |
 | Product/specification/governance consistency verification | `LOGIC_VERIFICATION.md` |
 | Code/integration/runtime/engineering verification and review | `IMPLEMENTATION_VERIFICATION.md` |
 | Reconstruction inspection methodology | reference-reconstruction skill |

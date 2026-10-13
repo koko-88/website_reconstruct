@@ -14,10 +14,11 @@ test('real workbench manual/reverse/mobile/reduced captures integrate with the c
   if (!baseURL || !/^http:\/\/(127\.0\.0\.1|localhost):\d+$/.test(baseURL)) throw new Error('CREATIVE_REVIEW_URL must identify the running loopback workbench.');
   const run=process.env.CREATIVE_REVIEW_RUN_ID || randomUUID();
   if(!/^[a-zA-Z0-9-]{1,80}$/.test(run)) throw new Error('CREATIVE_REVIEW_RUN_ID must be a short alphanumeric/hyphen round ID.');
-  const output=path.resolve(fileURLToPath(new URL(`../../artifacts/creative-production/skill-hardening/captures-${run}/`,import.meta.url)));
+  const outputRoot=process.env.CREATIVE_REVIEW_OUTPUT_ROOT || fileURLToPath(new URL('../../artifacts/creative-production/skill-hardening/',import.meta.url));
+  const output=path.resolve(outputRoot,`captures-${run}`);
   await mkdir(path.dirname(output),{recursive:true});
   await mkdir(output); // A repeated explicit round ID must not overwrite earlier captures.
-  const browser=await chromium.launch({channel:process.env.CREATIVE_BROWSER_CHANNEL || 'chrome'});
+  const browser=await chromium.launch({channel:process.env.CREATIVE_BROWSER_CHANNEL || 'chrome', args:process.env.CREATIVE_SOFTWARE_GPU === '1' ? ['--use-angle=swiftshader','--enable-unsafe-swiftshader'] : []});
   try {
     const frames=[];
     for(const variant of [{name:'desktop',width:1440,height:1000,reducedMotion:'no-preference'},{name:'mobile-reduced',width:390,height:844,reducedMotion:'reduce'}]) {
@@ -40,7 +41,7 @@ test('real workbench manual/reverse/mobile/reduced captures integrate with the c
       assert.deepEqual(errors,[]); await context.close();
     }
     const build=createHash('sha256').update(await readFile(new URL('../../projects/creative-workbench/dist/showcase.html',import.meta.url))).digest('hex');
-    const source=path.join(output,'captures.json'); await writeFile(source,JSON.stringify({schemaVersion:1,url:baseURL+'/showcase.html',build:{showcaseHtmlSha256:build,scope:'built HTML references hashed JS filenames; uncommitted local build'},captureMode:'paused manual poses; native scroll tested separately',frames},null,2));
+    const source=path.join(output,'captures.json'); await writeFile(source,JSON.stringify({schemaVersion:1,url:baseURL+'/showcase.html',build:{showcaseHtmlSha256:build,scope:'built HTML references hashed JS filenames',revision:process.env.GITHUB_SHA || null},captureMode:'paused manual poses; native scroll tested separately',frames},null,2));
     const report=await reviewCaptures(source,path.join(output,'review'));
     assert.equal(report.frames.length,10); assert.equal(report.humanApproval,'pending');
     assert.ok(report.intervals.some(interval=>interval.status==='review-transition' && interval.meanPixelDifference>1));

@@ -96,3 +96,38 @@ is preserved and final packet/pointers pass 11/11. Requested Qodo operation is c
 partial coverage and two explicitly open hosted CI gaps; no runtime merge failure in tested
 profiles. Current merge/index/parent state and evidence paths are owned by the central report.
 Human subjective approval/untested profiles remain explicit. No commit or push.
+
+## Factory hardening, 2026-10-13
+
+Base main 7c4aacea; sequential execution, preserve user deletions and all worktrees.
+CP-F01/F02: canonical AGENTS/constitution policy and native Cursor/Cline pointers; reuse registries,
+source packages and research tools. Filter discovery by profiles with fail-closed arguments; no new
+control plane or intelligence app. Remove obsolete inventories/debug log and five accidental index
+gitlinks only. Preserve sealed reference, skill-hardening history and ProductShape recovery.
+CP-F03: separate portable render/lifecycle/draw-budget checks from hardware FPS acceptance;
+validate renderer and attach metrics. Retain thresholds/default hardware acceptance; CI selects
+portable and reports hardware NOT_RUN. No additional GPU infrastructure.
+CP-F04/F05: ignored Skill Creator outputs become local locators. Provision pinned Linux archives
+in runner temp using SHA256 before extraction; reuse mise glTF CLI/native tests. Execute contact
+sheets with Playwright's managed preview and software renderer.
+CP-F06: contract regressions, clean-checkout links, full suites, workflow/shell validation and Qodo
+review. Results stay in IMPLEMENTATION_VERIFICATION.md; hosted confirmation requires commit/push.
+Cross-artifact analysis: traces CP-F01..06/CP-01/05/06/08/CP-H04; no HBC gate advancement,
+evidence mutation, provider expansion or additional agents.
+
+Factory checkpoint: CP-F01..05 implemented. Portable Node 37/37/build pass; browser 49 pass with
+two duplicate-wrapper skips, actual review included; hardware4/4 with reduced FPS cases inapplicable;
+native assets2/2/media1/1, all46 reconstruction cases across full+font runs and sealed packet11/11
+pass. Checkout3/3, instruction/configuration validation and actual no-drift lock check pass.
+Authorized Qodo auto review returned two supported issues, both repaired and covered by 38/38
+portable checks and a child-failure transcript control. Independent coverage is partial; final fix
+review/handoff remains CP-F06. Hosted modified commit, physical devices and subjective quality
+remain NOT_RUN; no new governance artifacts, installation, commit or push.
+
+Final factory checkpoint: CP-F01..06 complete for the authorized uncommitted handoff. Four supported
+Qodo findings repaired, native checks 38/38 and positive/negative/default-run review controls pass;
+final Qodo operation 4b8ac859 collects zero new findings with partial coverage and a retained ledger.
+Default native run identity now survives worker config reloads. New WebLoved Shorts observations
+and the supplied factory transcript are mapped in the existing creative source-map. Central report
+owns exact results/dispositions and remaining hosted/physical/human acceptance; no certification
+claim from partial service coverage or video branding. Main remains 7c4aacea, no commit/push.

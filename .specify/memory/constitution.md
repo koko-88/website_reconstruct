@@ -40,6 +40,15 @@ Ambiguous mode selection requires current-session approval and waiting, not sile
 BLOCKED task. Execution MUST remain reproducible from task/spec and repository revision, relevant
 runtime/configuration and verification results, using native records rather than duplicate receipts.
 
+## Capability-Aware Execution
+
+Agents MUST discover and verify task-critical capabilities before selection, prefer maintained
+integrations over custom infrastructure, and research material unknowns using attributable sources.
+Installed, exposed, connected, operational and acceptance-verified capabilities are distinct.
+Missing permissions, contradictory requirements and unverified critical dependencies MUST stop
+only dependent actions; independent authorized work continues. Investigation and approvals MUST
+be proportional to risk, following the operational policy in `AGENTS.md`.
+
 ## Project Constraints
 
 - `AGENTS.md` is the tool-neutral repository entry point and ownership map.
@@ -65,6 +74,10 @@ runtime/configuration and verification results, using native records rather than
 - Large work MUST be decomposed into bounded, independently testable slices before implementation.
 - Implementation slices MUST be durable parts of the intended final project. A knowingly temporary or baseline-for-now implementation that requires later rebuilding MUST NOT be used unless an explicit engineering transition is genuinely required and documented.
 - A slice MUST have an explicit specification and acceptance obligations before technical planning.
+  Existing user requirements and canonical feature artifacts satisfy this for maintenance; routine
+  repairs do not require a new specification tree, ceremony file or approval lifecycle.
+  Existing user requirements and canonical feature artifacts satisfy this for maintenance; routine
+  repairs do not require a new specification tree, ceremony file or approval lifecycle.
 - Ambiguities that materially affect scope or behavior MUST be resolved before implementation rather
   than filled with invented assumptions.
 - Technical planning MUST remain consistent with the specification and this constitution.
@@ -96,4 +109,4 @@ Versioning follows semantic versioning:
 - MINOR for a new principle or materially expanded governance requirement;
 - PATCH for non-semantic clarification or wording corrections.
 
-**Version**: 1.2.0 | **Ratified**: 2026-10-05 | **Last Amended**: 2026-10-09
+**Version**: 1.3.0 | **Ratified**: 2026-10-05 | **Last Amended**: 2026-10-13

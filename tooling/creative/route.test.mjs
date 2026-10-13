@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { routeCapabilities } from './route.mjs';
 import { execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
-import { mkdtempSync, mkdirSync, writeFileSync, rmSync, realpathSync } from 'node:fs';
+import { mkdtempSync, mkdirSync, writeFileSync, readFileSync, rmSync, realpathSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import path from 'node:path';
 test('DOM/motion routing never selects a rendering engine', () => {
@@ -61,4 +61,31 @@ test('discovery resolves relative and empty PATH entries without weakening absol
     assert.equal(report.commands.find(entry=>entry.name==='magick').path,path.join(directory,'magick.exe'));
     assert.equal(report.commands.find(entry=>entry.name==='toktx').status,'entrypoint-found-not-exercised');
   } finally { assert.ok(realpathSync(directory).startsWith(prefix)); rmSync(directory,{recursive:true,force:true}); }
+});
+
+test('task-scoped discovery does not probe irrelevant engines or invalid overrides', () => {
+  const cli = fileURLToPath(new URL('./discover.mjs', import.meta.url));
+  const report = JSON.parse(execFileSync(process.execPath, [cli, 'dom', 'motion'], {
+    encoding: 'utf8', env: { ...process.env, CREATIVE_BLENDER_PATH: 'invalid irrelevant override' }, timeout: 15000,
+  }));
+  assert.deepEqual(report.profiles, ['dom', 'motion']); assert.deepEqual(report.commands, []);
+  assert.ok(!report.packages.some(item => item.name === 'three' || item.name === 'pixi.js'));
+  assert.ok(!report.skills.some(item => item.name === 'pixijs'));
+  for (const args of [['missing'], ['--unknown'], ['--consumer'], ['--output'], ['--mcp-inventory']]) {
+    assert.throws(() => execFileSync(process.execPath, [cli, ...args], { encoding: 'utf8', stdio: 'pipe', timeout: 15000 }));
+  }
+});
+
+test('explicit discovery output refreshes a current snapshot without retaining stale profiles', () => {
+  const prefix = path.join(tmpdir(), 'creative-discovery-'); const directory = mkdtempSync(prefix);
+  try {
+    const output = path.join(directory, 'current.json'); const cli = fileURLToPath(new URL('./discover.mjs', import.meta.url));
+    writeFileSync(output, JSON.stringify({ profiles: ['stale'], commands: ['obsolete'] }));
+    execFileSync(process.execPath, [cli, 'dom', '--output', output], { stdio: 'pipe', timeout: 15000 });
+    assert.deepEqual(JSON.parse(readFileSync(output, 'utf8')).profiles, ['dom']);
+    execFileSync(process.execPath, [cli, 'motion', '--output', output], { stdio: 'pipe', timeout: 15000 });
+    const current = JSON.parse(readFileSync(output, 'utf8'));
+    assert.deepEqual(current.profiles, ['motion']); assert.deepEqual(current.commands, []);
+    assert.ok(current.packages.some(entry => entry.name === 'gsap'));
+  } finally { assert.ok(realpathSync(directory).startsWith(prefix)); rmSync(directory, { recursive: true, force: true }); }
 });

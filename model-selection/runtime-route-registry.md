@@ -1,7 +1,7 @@
 # Runtime availability — RR-HBC-01
 
 Status: **ACTIVE — session capability record, no permanent control plane**
-Revision: **5** | Date: **2026-10-09** (Africa/Cairo)
+Revision: **6** | Date: **2026-10-13** (Africa/Cairo)
 
 [RP-HBC-01](routing-policy.md) owns execution selection. This registry owns runtime availability and
 configuration, not model qualification or product acceptance. Candidate/benchmark records are
@@ -11,7 +11,8 @@ research observations; they do not select the current environment or admit deliv
 
 1. Establish the user-selected environment and execution mode from current session authorization.
    Direct sessions default to sequential; ambiguous selection requires approval and waiting.
-2. Verify the tools actually needed by the accepted task. A callable tool or installed CLI proves
+2. Apply [AGENTS execution policy](../AGENTS.md#agent-execution); discover only the tools needed
+   by the accepted task through its lane entry points. A callable tool or installed CLI proves
    exposure, not authentication, service reachability, browser parity or successful integration.
 3. Record actual engine/model/configuration when exposed, relevant permissions, repository/task
    revision and commands/results in the owning task/plan or native run metadata. Unknown values stay
@@ -41,3 +42,10 @@ without proving absence. Graph source/test-edge coverage is limited and its snap
 to edits. Existing local browser/font/media tooling integration passes; Inspect Evals/MCP are missing
 from the optional benchmark environment. See the [current audit dispositions](../IMPLEMENTATION_VERIFICATION.md#production-engineering-audit-and-corrections-2026-10-09)
 for native evidence, independent review coverage and outstanding hosted/app checks.
+
+## Factory hardening session, 2026-10-13
+
+Sequential on main 7c4aacea. Task-scoped discovery remains read-only; historical availability
+observations above are not current certification. The [factory hardening record](../IMPLEMENTATION_VERIFICATION.md#factory-architecture-and-agent-execution-hardening-2026-10-13)
+owns current tests, renderer/native/hosted boundaries and independent review status. No provider,
+installation, delegation or release permission follows from capability exposure.

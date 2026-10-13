@@ -595,8 +595,11 @@ agents. Outputs/transcripts/grades/timing live in ignored
 `skills/creative-production-workspace/iteration-1/`; maintained prompts are in the skill's evals.json.
 
 Inline grading follows the installed grader schema. Official aggregate_benchmark and generate_review
-produced [benchmark evidence](artifacts/creative-production/skill-hardening/skill-benchmark.md) and
-the [human review viewer](artifacts/creative-production/skill-hardening/skill-review.html).
+produced local-only `artifacts/creative-production/skill-hardening/skill-benchmark.md` and
+`artifacts/creative-production/skill-hardening/skill-review.html`. These ignored outputs remain on
+the originating workstation; a clean checkout does not contain them. They are historical execution
+locators, not portable documentation links or required acceptance inputs. Maintained evaluation
+prompts remain in `skills/creative-production/evals/evals.json`; human review is still pending.
 Objective orchestration expectations: hardened 15/15; old 6/15. One run per case/configuration;
 this is instruction coverage, not an aesthetic score, site output guarantee, trigger-accuracy
 measurement or statistically reliable improvement estimate. Both versions preserve optional-engine,
@@ -738,3 +741,136 @@ corrections are staged and original automatic merge additions remain. No unmerge
 or conflict markers remain; the staged whitespace check passes. Final Git status/index/parent checks are retained in final-state.json.
 Leave MERGE_HEAD intact and HEAD at main 84dd500 for the user's manual merge commit/push.
 No commit, push, merge abort, history reset, worktree deletion or unrelated implementation.
+
+## Factory architecture and agent execution hardening, 2026-10-13
+
+Current revision: main `7c4aacea81b3636f28eb84c05c77d1cd53bd94af`, sequential, uncommitted/unpushed.
+This is current status; earlier merge receipts remain historical. No HBC scope/gates, frozen bytes,
+provider jobs, installations or accounts changed. Native local evidence is under
+`artifacts/factory-hardening/`; these ignored paths are execution locators, not portable links.
+
+Architecture: classify all 1,012 base index entries; after removing five accidental gitlinks the
+current 1,007-entry manifest records file hashes, duplicate groups and all six workspace consumers
+in `architecture.json`. This is structural coverage, not independent line-by-line certification.
+The graph is stale (84dd500 versus 7c4aacea); source/tests/Git resolve conclusions. Keep skills for
+lane orchestration/evidence, packages for reusable source, projects for consumers and existing
+creative tooling for routing/review/native CI. Keep canonical owners, sealed reference, skill-hardening
+history and ProductShape recovery. Duplicate adapters serve distinct native discovery paths;
+recovery candidates and before/after copies preserve provenance. No cosmetic relocation, new
+framework/control plane/intelligence app or additional governance document. Reference Intelligence
+uses current source/repository/document/browser/research capabilities with attribution.
+
+Policy: AGENTS/constitution require task-relevant verification, maintained mechanisms, attributable
+research and explicit uncertainty; material gaps stop only dependent actions. Installed, exposed,
+connected, operational and verified are distinct. Native Cursor/Cline rules join Codex/OpenCode/
+Claude entry points; eight entry adapters and every installed manifest path validate. Discovery
+filters requested profiles, rejects unknown/malformed options and supplied tool metadata, and
+refreshes explicitly selected discovery snapshots (fresh paths retain historical probes). All-profile discovery remains an explicit diagnostic, not certification.
+
+Removed ceremony: user-deleted generated `all_skills(global & project)` inventories and the obsolete
+`debug-storybook.log`; regeneration is ignored. Five `.worktrees/*` entries were removed from the
+index only and ignored; before/after registered-worktree lists match. Local files, registrations,
+branches and user work remain. Index removals are staged; no commit, push or history reset.
+
+Actual [Creative run 38367706408](https://github.com/koko-88/website_reconstruct/actions/runs/38367706408)
+(job 115196717364) passed install/check/build/media then failed four forced-SwiftShader FPS assertions:
+7.4115, 2.4914, 14.4120, 6.8133 versus >15. Portable tests retain readiness/rendering, <40 calls/frame,
+actual draw activity, reduced/idle/hidden lifecycle, interaction/accessibility/visual/failure behavior.
+Renderer/viewport/timing attachments distinguish diagnostics from hardware acceptance. Separate
+hardware tests retain >15 FPS/<40 calls, reject forced/software/masked/unclassified renderers and
+remain in default local acceptance. Hosted CI selects portable and reports hardware NOT_RUN.
+No thresholds/retries weakened. [Playwright profiles](https://playwright.dev/docs/test-projects)
+provide the existing execution mechanism, without inventing GPU runner infrastructure.
+
+Actual [Reproducibility run 38367706295](https://github.com/koko-88/website_reconstruct/actions/runs/38367706295)
+(job 115196716998) passed locks/regressions then failed exactly two ignored Skill Creator links.
+Genuine local reports are now explicit historical local-only locators; tracked prompts remain.
+No fabricated artifacts, removed evidence or checker exception. A new native clean-checkout
+regression follows current docs without ignored workstation outputs; the packet checker is unchanged.
+
+Hosted native assets use official [Blender 5.2.2 SHA256](https://download.blender.org/release/Blender5.2/blender-5.2.2.sha256)
+and [KTX 4.4.2](https://github.com/KhronosGroup/KTX-Software/releases/tag/v4.4.2), pinned in
+`tooling/creative/native-tools.lock.json`; bounded Bash downloads verify before extraction in runner
+temp. Existing locked mise glTF Transform 4.5.1 and real export/preservation tests are reused.
+Browser dependencies precede native verification; Bash pipefail propagates failures and logs are
+uploaded. No Docker or live Blender scene mutation; existing Windows paths/workflows remain.
+Cross-platform compressed bytes are not claimed identical. Real browser contact-sheet integration
+runs inside Playwright's managed preview, propagates software flags, retains fresh ten-frame desktop/
+mobile/reduced/manual/reverse captures and sheets, and keeps human approval pending. Two duplicate
+wrapper instances are skipped because that one integration performs both viewport variants internally.
+
+| Local verification | Result / boundary |
+| --- | --- |
+| Portable Node / production build | 38/38 after review fixes, zero skips; TypeScript/Vite pass |
+| Blender/glTF/KTX2 / native media+Chrome | 2/2 and 1/1, zero skips; installed Blender 5.2.2, KTX 4.4.2, glTF Transform 4.5.1 and FFmpeg/FFprobe 7.1.1 |
+| Reconstruction | 45/46 initially, one missing-font-input skip; omitted font separately 1/1 with existing sealed display.ttf. All 46 cases exercised, not one zero-skip invocation |
+| Packet / clean checkout | 11/11 preserving 481 reference files; 3/3 checkout tests, repeated with locked Python 3.12.15 |
+| Mise / npm lock integrity | Actual mise lock followed by Git diff: no drift. Dry-run alone is not equality proof |
+| Instructions / workflow configuration | Eight adapters, all manifest paths, two YAML workflows, Bash syntax and changed JS syntax pass; actionlint/Linux execution NOT_RUN locally |
+| Portable browser | Fresh corrected run 49 pass, two intentional duplicate-wrapper skips, zero failures; artifacts/creative-production/factory-portable-final |
+| Hardware browser | 4/4 active desktop/emulated-touch cases pass; two reduced-motion FPS cases intentionally skip. Observed ANGLE NVIDIA Quadro P2000; unchanged budgets pass. Not physical mobile |
+
+First portable attempt remains retained: 47 pass, two failures, two duplicate skips. Its contact-sheet
+child passed but the wrapper assumed TAP formatting; repaired using native exit status and explicit
+reporter. Chrome initially exited during launch with no confirmed root cause. No invented repair or
+retry setting; fresh run passes. Failure evidence remains in factory-portable and the local logs.
+
+Independent review: authenticated Qodo 1.6.0 read the exact published workflow successfully.
+Initial automatic approval rejection prevented local-diff transmission; the user then explicitly
+authorized the intended diff/context to sdk.qodo.ai. The first context had unsupported local-path
+refs and was rejected before submission; corrected self-contained context was accepted. Final auto
+operation `fd0fad93-90a5-4daf-9b04-011d0f2fbede`, review `833c04d6-ad39-4a3c-b680-535f8459ebf0`,
+covered the full intended diff plus nine new files; ignored artifacts and the deleted binary inventory
+were excluded. Native result: qodo-result.json. Issue/compliance ran; skills/spec/UI/persona/cross-repo
+and safety net did not. `coverage.complete=false`, `analysis.reason=incomplete_input`; do not claim
+comprehensive independent certification. Forty-six still-open records refer to historical revisions;
+retain the native ledger and prior canonical dispositions, not fabricated service closure.
+
+Two new supported findings were repaired: `269f20b5` (failed child transcript lost before attachment)
+now catches/attaches stdout/stderr before rethrowing the same native error; a deliberately invalid
+review-run ID proves both fatal failure and retained TAP diagnostics (factory-review-negative).
+`03a3cb92` (undocumented discovery refresh regression) restores the prior explicitly selected output
+refresh, documents fresh paths for historical probes and passes a stale-to-current profile regression.
+Discovery snapshots and exclusive capture/review evidence have different lifetimes. Portable checks
+now pass 38/38. The second auto operation `95e66ed8-14a5-4349-8fa1-898e37f9f2a0` collected two additional
+supported issues: `80e26d2e` (default-run capture ownership) and `f9034c25` (UTF-8 punctuation).
+Capture output now derives from native project outputDir, and the parent-generated run identity is
+propagated through config reloads to workers/child browsers; a default-ID real run verifies captures,
+contact sheet and browser report share one owner. The first ownership probe exposed parent/worker
+timestamp drift and is retained, rather than treated as successful acceptance. UTF-8 punctuation
+is restored without unrelated historical evidence edits. Hosted build metadata now records a supplied
+GITHUB_SHA or explicit null rather than labeling every build uncommitted local. Actual positive
+integration after the corrections passes 1/1; negative child-transcript control remains verified.
+Second coverage remains partial; native ledger records 47 still-open and one resolved record.
+Final auto operation `4b8ac859-639a-446a-b94f-f3d31cf61f1b` is collected in
+qodo-handoff-result.json: zero current findings, two detected resolved records, and 47 retained
+still-open ledger records. Coverage remains incomplete_input/complete=false; issue/compliance ran,
+five other dimensions and safety net did not. The retained current-base `269f20b5` child-output record
+is not falsely presented as service-closed: current source attaches diagnostics before rethrowing,
+and the negative control proves retained TAP failure output; this is an engineering disposition, not a ledger mutation.
+Historical CI records also remain in that ledger; revised workflow wiring/local integration is
+verified, while hosted confirmation is still NOT_RUN. No unchanged review was purchased to chase
+complete coverage or empty history. Four new supported review findings were addressed in code and
+verified; partial independent review cannot certify the entire factory or subjective quality.
+
+Modified-commit hosted confirmation remains NOT_RUN until the user commits/pushes and both workflows
+actually succeed. No hosted-green claim. Physical mobile, Safari/Firefox, target-device calibration,
+subjective WebLoved parity, optional MCP/provider jobs and human direction/final quality approval
+remain unverified. Initial direct retrieval failed; subsequent browser inspection reached the supplied WebLoved
+channel and observed actual product-explosion and editorial Shorts progression. The supplied factory
+transcript and those first-party observations are mapped into the existing source-map. They reinforce
+subject/type/asset/story continuity and reuse, not visual parity, hidden implementation or production
+performance certification. The video's
+automatic agent/merge loop was not adopted: existing bounded acceptance/review/permission contracts
+already serve this factory. No additional agents were launched.
+
+Final handoff: CP-F01..06 implemented and locally verified; the completion-only documentation
+updates follow the reviewed code snapshot. Default-ID parent/worker/capture/report ownership is
+verified under `artifacts/creative-production/2026-10-13T10-02-26-003Z/`; positive review passes 1/1
+and the retained negative control proves failure transcript attachment. UTF-8 headings match the
+original punctuation. Source packages/assets, npm/mise locks, HBC owners/gates, sealed reference,
+skill-hardening and all worktree registrations remain preserved. Native logs, reports and captures
+are retained; temporary editing scripts and the inspected download archive were removed. No new
+ceremony document, commit, push, deployment, account change or external orchestrator.
+Next external acceptance: after the user's commit/push, inspect both modified workflow executions;
+retain physical-device/subjective approval boundaries until actually exercised.

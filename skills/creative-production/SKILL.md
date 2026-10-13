@@ -12,8 +12,12 @@ an implementation reference, not the default identity or dependency list for eve
 
 ## Discover only what the project needs
 
-Run `npm run creative:discover` from the factory root. Pass `-- --mcp-inventory FILE --output FILE`
-only with a real current-agent inventory. Installed/exposed is not exercised or certified.
+Select profiles first with `npm run creative:route -- dom motion review`, then run
+`npm run creative:discover -- dom motion review` from the factory root. Omit profiles only for an
+explicit all-profile diagnostic; discovery does not certify connectivity or acceptance. Pass `-- --mcp-inventory FILE --output FILE`
+only with a real current-agent inventory. `--output` refreshes the selected discovery snapshot;
+use a fresh path when retaining a historical probe. Capture/review rounds remain exclusive and
+never overwrite evidence. Installed/exposed is not exercised or certified.
 For a selected consumer use `-- --consumer projects/<name>` so workspace-local peers resolve.
 Read tooling/creative/capabilities.json; select `npm run creative:route -- dom motion review`,
 adding spatial, particles, assets or textures only when needed. Probe selected executables/services.
